@@ -1,0 +1,10 @@
+.nabb {
+    color: rgb(78, 190, 228); 
+}
+.drop-down-menu .dropdown-item {
+    border-radius: 0 !important; /* Remove border radius */
+}
+.drop-down:hover {
+    color: rgb(28, 204, 195); 
+    font-weight: bold
+}
