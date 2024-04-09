@@ -21,20 +21,18 @@ layout = html.Div([
                          dcc.Markdown('* Current Density', style={'font-size':'25px','textAlign':'left','font-weight':'bold'}),
                          dbc.Col([
                              html.H5(('- Current density represents the quantity of current flowing through a unit cross-sectional area [mA/cm\u00b2]. Often in the literature, it is expressed in terms of current per unit active material loading [mA/g]. However, it is enssential to also provide the areal active material loading [mg/cm\u00b2] concurrently. Without this information, misleading performrance evaluations can occur, especially when the active loading of cells is low, which may not accuratley represent the true performance'), style={'textAlign':'justify','margin-left':'20px'}),
-                             
+                             html.H5(('- Additionally, current density depends on the C-rate. When specifying a current density, it should be indicated under which C-rate it applies. Without this specification, a rate 1C is typically assumed. furthermore, when rate performance is claimed, the highest rate should correspond to 80% capacity retention. For example, if the capacity can maintain 80% at 3C, it can be claim that this cell can discharge/charge at 3C'), style={'textAlign':'justify','margin-left':'20px'}),
+                             html.H5(('- With this parameter, areal capacity can also be obtained by multiplying it with time.'), style={'textAlign':'justify','margin-left':'20px'}),
                          ], width={"size":8},
                          xs=12, sm=12, md=12, lg=8, xl=8
                          ),
+                        
                         dbc.Col([
-                            html.H5(('- Additionally, current density depends on the C-rate. When specifying a current density, it should be indicated under which C-rate it applies. Without this specification, a rate 1C is typically assumed. furthermore, when rate performance is claimed, the highest rate should correspond to 80% capacity retention. For example, if the capacity can maintain 80% at 3C, it can be claim that this cell can discharge/charge at 3C'), style={'textAlign':'justify','margin-left':'20px'}),     
-                         ], width={"size":8},
-                         xs=12, sm=12, md=12, lg=8, xl=8
-                         ),
-                        dbc.Col([
-                            html.H5(('- With this parameter, areal capacity can also be obtained by multiplying it with time.'), style={'textAlign':'justify','margin-left':'20px'}),     
-                         ], width={"size":8},
-                         xs=12, sm=12, md=12, lg=8, xl=8
-                         ),
+                        html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/04eebykwg2dgxfr4o2bns/voltage-curve.png?rlkey=1iwh8vmh9cuax2r41gspsvopf&raw=1', style={"width":"100%"}), 
+                                 ),
+                        ], width={"size": 3},
+                        xs=12, sm=12, md=6, lg=6, xl=3
+                        ),
                      ]),
                     html.Br(),
                     dmc.Divider(size="md", color="grey"),
