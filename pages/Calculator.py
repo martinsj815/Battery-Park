@@ -7,6 +7,7 @@ import dash_mantine_components as dmc
 import plotly.graph_objs as go
 import plotly.express as px
 import dash_mantine_components as dmc
+import math
 
 dash.register_page(
     __name__, name="Calculator", top_nav=True, path="/calculator"
@@ -16,7 +17,7 @@ module = ['Single cell', 'Series-connected module', 'Parallel-connected module']
 layout = html.Div([
             dbc.Row([
                 dbc.Col([
-                    html.H1(('Single Cell Calculator'), 
+                    html.H1(('Single Cell Calculator (Stacked Design)'), 
                         style={'textAlign':'left', 'font-weight':'bold','color':'purple'}),
                     html.Br(),
                     html.Br(),
@@ -25,7 +26,7 @@ layout = html.Div([
                     html.Br(),
                     html.Br(),
                     ], width={"size":12},
-                xs=10, sm=12, md=12, lg=10, xl=12,
+                xs=6, sm=8, md=12, lg=10, xl=12,
                 ),
                 ],
             style={'justify':'center','text-align':'left'},
@@ -35,7 +36,7 @@ layout = html.Div([
                     dbc.Row([
                         html.Br(),
                         html.Br(),
-                        html.H5('Positive Electrode Parameters', style={"margin-bottom":"0em", "color":"red"}),
+                        html.H5('Cathode Parameters', style={"margin-bottom":"0em", "color":"red"}),
                         html.Div([html.P('Electrode density (g/cm3)', style={"height": "auto", "margin-bottom": "auto"}),
                             dcc.Input(id="input-m", type="number", value='0.5', step='0.001', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Electrode thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
@@ -80,7 +81,7 @@ layout = html.Div([
                 ),
                 dbc.Col([
                     dbc.Row([
-                        html.H5('Negative Electrode Parameters', style={"margin-bottom":"1em", "color":"blue"}),
+                        html.H5('Anode Parameters', style={"margin-bottom":"1em", "color":"blue"}),
                         html.Div([html.P('Electrode density (g/cm3)', style={"height": "auto", "margin-bottom": "auto"}),
                             dcc.Input(id="input-i", type="number", value='2', step='0.001', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Electrode thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
@@ -180,7 +181,7 @@ layout = html.Div([
                     ),
                 ],
                 width={"size":3}, style={'margin-left':'5px'},
-                xs=6, sm=6, md=6, lg=6, xl=3,
+                xs=6, sm=10, md=6, lg=6, xl=3,
                 ),
                 dbc.Col([
                     dbc.Row([
@@ -203,6 +204,94 @@ layout = html.Div([
         html.Br(),
         dmc.Divider(size="md", color="grey"),
         html.Br(),
+        dbc.Row([
+                dbc.Col([
+                    html.H1(('Single Cell Calculator (Jelly-roll Design)'), 
+                        style={'textAlign':'left', 'font-weight':'bold','color':'purple'}),
+                    html.Br(),
+                    html.Br(),
+                    dcc.Markdown(('- Calculating and plotting of the Li-ion battery cell properties for the cylindrical cell'), 
+                        style={'textAlign':'left', 'font-size':'20px'}),
+                    html.Br(),
+                    html.Br(),
+                    ], width={"size":12},
+                xs=6, sm=8, md=12, lg=10, xl=12,
+                ),
+                ],
+            style={'justify':'center','text-align':'left'},
+        ),
+        dbc.Row([
+                dbc.Col([
+                    dbc.Row([
+                        html.Br(),
+                        html.Br(),
+                        html.H5('Cathode Parameters', style={"margin-bottom":"0em", "color":"red"}),
+                        html.Div([html.P('Coating thickness (Single-side) (um)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="input-c1", type="number", value='52.5', step='0.001', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Al foil thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="input-c2", type="number", value='20', step='0.1', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Discharge capacity of active material (mAh/g)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="input-c3", type="number", value='200', step='0.1', style={"margin-bottom":"1em"}) ]),                        
+                        html.Div([html.P('Density of electrode material (g/cm3)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="input-c4", type="number", value='4.87', step='0.01', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Active material loading ratio', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="input-c5", type="number", value='0.8', step='0.01', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Estimated porosity', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="input-c6", type="number", value='0.35', step='0.01', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Electrode width (cm)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="input-c7", type="number", value='6.8', step='0.01', style={"margin-bottom":"1em"}) ]),
+                        html.Br(),
+                        html.Br(),
+                        ],
+                    style={'textAlign':'center'},
+                    ),
+                ],width={"size":4},
+                xs=6, sm=6, md=6, lg=3, xl=4,
+                ),
+                dbc.Col([   
+                    dbc.Row([
+                        html.H5('Other cell parameters', style={"margin-bottom":"0.5em", "color":"Purple"}),
+                        html.Div([html.P('Anode coating thickness (Single-side) (um)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="input-c8", type="number", value='58', step='0.01', style={"margin-bottom":"1em"}) ]),                      
+                        html.Div([html.P('Cu foil thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="input-c9", type="number", value='10', step='0.1', style={"margin-bottom":"1em"}) ]),                      
+                        html.Div([html.P('Separator thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="input-c10", type="number", value='16', step='0.1', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Outer diameter of the cell (mm)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="input-c11", type="number", value='47', step='0.001', style={"margin-bottom":"1em"}) ]),              
+                        html.Div([html.P('Cell Can thickness (mm)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="input-c12", type="number", value='0.5', step='0.001', style={"margin-bottom":"1em"}) ]),              
+                        html.Div([html.P('Inner diameter of the cell (mm)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="input-c13", type="number", value='2', step='0.001', style={"margin-bottom":"1em"}) ]),                                
+                        html.Br(),
+                        html.Br(),
+                        ],
+                    style={'textAlign':'center'},
+                    ),
+                    ], 
+                width={"size":4}, style={'margin-left':'5px'},
+                xs=6, sm=6, md=6, lg=3, xl=4,
+                ),
+                dbc.Col([
+                    dbc.Row([
+                        html.Br(),
+                        html.Br(),
+                        html.Span(id='outcome9', style={"font-size":"150%", "color":"blue","margin-top":"2em"}),
+                        html.Span(id='outcome10', style={"font-size":"150%", "color":"blue","margin-top":"2em"}),
+                        html.Span(id='outcome11', style={"font-size":"150%", "color":"red","margin-top":"2em"}),
+                        html.Span(id='outcome12', style={"font-size":"150%", "color":"red","margin-top":"2em"}),
+                        ],
+                        style={"margin-left":"80px","margin-top":"40px"},
+                    ),
+                    ],
+                    style={'textAlign':'center'}, 
+                width={"size":"6"},
+                xs=10, sm=12, md=10, lg=6, xl=6,
+                ),
+            ]),
+            html.Br(),
+            dmc.Divider(size="md", variant="dotted", color="grey"),
+            html.Br(), 
         dbc.Row([
                 dbc.Col([
                     html.H1(('Li cell performance predictor'), 
@@ -559,4 +648,50 @@ def update_content(input_i, input_j, input_k, input_l, input_m, input_n, input_o
             "",
             {}, {}
             )
-        
+
+@callback([Output('outcome9', 'children'), Output('outcome10', 'children'), Output('outcome11', 'children'), 
+               Output('outcome12','children')],
+                [Input('input-c1', 'value'),
+                Input('input-c2', 'value'),
+                Input('input-c3', 'value'),
+                Input('input-c4', 'value'),
+                Input('input-c5', 'value'),
+                Input('input-c6', 'value'),
+                Input('input-c7', 'value'),
+                Input('input-c8', 'value'),
+                Input('input-c9', 'value'),
+                Input('input-c10', 'value'),
+                Input('input-c11', 'value'),
+                Input('input-c12', 'value'),
+                Input('input-c13', 'value'),  
+                ], 
+            )        
+def update_content(input_c1, input_c2, input_c3, input_c4, input_c5, input_c6, input_c7, input_c8, input_c9, input_c10, input_c11, input_c12, input_c13):
+    if all([input_c1 and input_c2 and input_c3 and input_c4 and input_c5 and input_c6 and input_c7 and input_c8 and input_c9 and input_c10 and input_c11 and input_c12 and input_c13]):
+        d_asc = float(input_c1)*2+float(input_c2)+float(input_c8)*2+float(input_c9)+float(input_c10)*2
+        a=d_asc/(2*np.pi)*(0.000001)
+        d_o=float(input_c11)-2*float(input_c12)
+        r_o=d_o*(0.001)/2
+        d_i=float(input_c13)
+        r_i=d_i*(0.001)/2
+        sigma_1=r_o/a
+        sigma_0=r_i/a
+        L1=(sigma_1/2)*(pow(((sigma_1)*(sigma_1)+1),0.5))+0.5*np.log(sigma_1+pow(((sigma_1)*(sigma_1)+1),0.5))
+        L0=(sigma_0/2)*(pow(((sigma_0)*(sigma_0)+1),0.5))+0.5*np.log(sigma_0+pow(((sigma_1)*(sigma_1)+1),0.5))
+        L_t=(L1-L0)*d_asc/(2*np.pi)*0.000001
+        outcome9 = L_t #Length of the cathode
+        cathode_length=dcc.Markdown("The length of the cathode is **{}** m.".format(round(outcome9,2)), dangerously_allow_html=True),
+        outcome10 = (sigma_1-sigma_0)/(2*np.pi) #Number of turns of the cathode in the cell
+        winding_number=dcc.Markdown("The number of winding(turn) is **{}**.".format(round(outcome10,1)), dangerously_allow_html=True),
+        outcome11 = float(input_c4)*float(input_c5)*(1-float(input_c6))*(float(input_c1)*(0.0001))*float(input_c3) #Areal cathode capacity
+        areal_capacity=dcc.Markdown("The areal cathode capacity is **{}** mAh/cm2.".format(round(outcome11,2)), dangerously_allow_html=True),
+        outcome12 = outcome11*outcome9*100*float(input_c7)/1000 #Areal cathode capacity
+        cell_capacity=dcc.Markdown("The predicted cell capacity is **{}** Ah.".format(round(outcome12,2)), dangerously_allow_html=True),
+        return (
+            cathode_length,
+            winding_number,
+            areal_capacity,
+            cell_capacity,
+        )
+    else:
+        return "", "", "", ""

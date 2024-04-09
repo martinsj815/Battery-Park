@@ -35,11 +35,12 @@ data_election = OrderedDict(
              "LG ES, Samsung SDI, SK On, Panasonic, Verkor"
              ],
         ),
-        ("Prismatic Cell", 
-         ["*Good battery space utilization/packing density \n *Size flexibility", 
-          "*Lack of standardized design \n*Manufacturing can be expensive",
-          "100-300",
-          "LG ES, Samsung SDI, CATL, Northvolt, BYD"]),
+        (
+            "Prismatic Cell", 
+            ["*Good battery space utilization/packing density \n *Size flexibility", 
+            "*Lack of standardized design \n*Manufacturing can be expensive",
+            "100-300",
+            "LG ES, Samsung SDI, CATL, Northvolt, BYD"]),
         (
         "Pouch Cell",
         [
@@ -244,7 +245,7 @@ layout = html.Div([
                         dmc.Divider(size="md", color="grey"),
                         html.Br(),
                         html.Br(),
-                        dcc.Markdown('* Comparing Cell Formats', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
+                        dcc.Markdown('* Comparing Cell Formats (for EV Batteries)', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold', 'margin-bottom':'40px'}),
                         dash_table.DataTable(
                                 markdown_options={"html": True},
                                 style_cell={'font-family': 'Arial', 'font-size': '18px', 'text-align':'left', 'margin-top':'10px'}, 
