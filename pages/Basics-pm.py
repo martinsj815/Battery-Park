@@ -28,7 +28,7 @@ layout = html.Div([
                          ),
                         
                         dbc.Col([
-                        html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/04eebykwg2dgxfr4o2bns/voltage-curve.png?rlkey=1iwh8vmh9cuax2r41gspsvopf&raw=1', style={"width":"100%"}), 
+                        html.Div( html.Img(src='https://www.dropbox.com/scl/fi/y8vsd5rcg0tu026bzxe60/CurrentDensity.png?rlkey=sfghzpokmu30bcr6603lhz8e6&raw=1', style={"width":"150%"}), 
                                  ),
                         ], width={"size": 3},
                         xs=12, sm=12, md=6, lg=6, xl=3
