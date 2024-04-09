@@ -16,7 +16,7 @@ module = ['Single cell', 'Series-connected module', 'Parallel-connected module']
 layout = html.Div([
             dbc.Row([
                 dbc.Col([
-                    html.H1(('Single Cell Calculator'), 
+                    html.H1(('Single Cell Calculator (Stacked Design)'), 
                         style={'textAlign':'left', 'font-weight':'bold','color':'purple'}),
                     html.Br(),
                     html.Br(),
