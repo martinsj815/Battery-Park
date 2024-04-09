@@ -37,7 +37,7 @@ layout = html.Div([
                         html.Br(),
                         html.Br(),
                         html.H5('Cathode Parameters', style={"margin-bottom":"0em", "color":"red"}),
-                        html.Div([html.P('Electrode density (g/cm3)', style={"height": "auto", "margin-bottom": "auto"}),
+                        html.Div([dcc.Markdown('Electrode density (g/cm<sup>3</sup>)', dangerously_allow_html=True, style={"height": "1.3em", "margin-bottom": "auto"}),
                             dcc.Input(id="input-m", type="number", value='0.5', step='0.001', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Electrode thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
                             dcc.Input(id="input-n", type="number", value='50', step='0.01', style={"margin-bottom":"1em"}) ]),                      
@@ -45,7 +45,7 @@ layout = html.Div([
                             dcc.Input(id="input-o", type="number", value='0.8', step='0.01', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Discharge capacity of active material (mAh/g)', style={"height": "auto", "margin-bottom": "auto"}),
                             dcc.Input(id="input-p", type="number", value='150', step='0.1', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Electrode area (mm2)', style={"height": "auto", "margin-bottom": "auto"}),
+                        html.Div([dcc.Markdown('Electrode area (mm<sup>2</sup>)', dangerously_allow_html=True, style={"height": "1.3em", "margin-bottom": "auto"}),
                             dcc.Input(id="input-q", type="number", value='1500', step='0.01', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Number of layers', style={"height": "auto", "margin-bottom": "auto"}),
                             dcc.Input(id="input-r", type="number", value='5', step='1', style={"margin-bottom":"1em"}) ]),
@@ -82,7 +82,7 @@ layout = html.Div([
                 dbc.Col([
                     dbc.Row([
                         html.H5('Anode Parameters', style={"margin-bottom":"1em", "color":"blue"}),
-                        html.Div([html.P('Electrode density (g/cm3)', style={"height": "auto", "margin-bottom": "auto"}),
+                        html.Div([dcc.Markdown('Electrode density (g/cm<sup>3</sup>)', dangerously_allow_html=True, style={"height": "1.3em", "margin-bottom": "auto"}),
                             dcc.Input(id="input-i", type="number", value='2', step='0.001', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Electrode thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
                             dcc.Input(id="input-j", type="number", value='50', step='0.01', style={"margin-bottom":"1em"}) ]),                      
@@ -90,7 +90,7 @@ layout = html.Div([
                             dcc.Input(id="input-k", type="number", value='0.9', step='0.01', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Discharge capacity of active material (mAh/g)', style={"height": "auto", "margin-bottom": "auto"}),
                             dcc.Input(id="input-l", type="number", value='500', step='0.1', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Electrode area (mm2)', style={"height": "auto", "margin-bottom": "auto"}),
+                        html.Div([dcc.Markdown('Electrode area (mm<sup>2</sup>)', dangerously_allow_html=True, style={"height": "1.3em", "margin-bottom": "auto"}),
                             dcc.Input(id="input-w", type="number", value='1000', step='0.01', style={"margin-bottom":"1em"}) ]),        
                         html.Br(),
                         html.Br(),
@@ -232,7 +232,7 @@ layout = html.Div([
                             dcc.Input(id="input-c2", type="number", value='20', step='0.1', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Discharge capacity of active material (mAh/g)', style={"height": "auto", "margin-bottom": "auto"}),
                             dcc.Input(id="input-c3", type="number", value='200', step='0.1', style={"margin-bottom":"1em"}) ]),                        
-                        html.Div([html.P('Density of electrode material (g/cm3)', style={"height": "auto", "margin-bottom": "auto"}),
+                        html.Div([dcc.Markdown('Density of electrode material (g/cm<sup>3</sup>)', dangerously_allow_html=True, style={"height": "1.3em", "margin-bottom": "auto"}),
                             dcc.Input(id="input-c4", type="number", value='4.87', step='0.01', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Active material loading ratio', style={"height": "auto", "margin-bottom": "auto"}),
                             dcc.Input(id="input-c5", type="number", value='0.8', step='0.01', style={"margin-bottom":"1em"}) ]),
@@ -684,7 +684,7 @@ def update_content(input_c1, input_c2, input_c3, input_c4, input_c5, input_c6, i
         outcome10 = (sigma_1-sigma_0)/(2*np.pi) #Number of turns of the cathode in the cell
         winding_number=dcc.Markdown("The number of winding(turn) is **{}**.".format(round(outcome10,1)), dangerously_allow_html=True),
         outcome11 = float(input_c4)*float(input_c5)*(1-float(input_c6))*(float(input_c1)*(0.0001))*float(input_c3) #Areal cathode capacity
-        areal_capacity=dcc.Markdown("The areal cathode capacity is **{}** mAh/cm2.".format(round(outcome11,2)), dangerously_allow_html=True),
+        areal_capacity=dcc.Markdown("The areal cathode capacity is **{}** mAh/cm<sup>2</sup>.".format(round(outcome11,2)), dangerously_allow_html=True),
         outcome12 = outcome11*outcome9*100*float(input_c7)/1000 #Areal cathode capacity
         cell_capacity=dcc.Markdown("The predicted cell capacity is **{}** Ah.".format(round(outcome12,2)), dangerously_allow_html=True),
         return (
