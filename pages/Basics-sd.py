@@ -96,6 +96,7 @@ layout = html.Div([
                     html.Br(),
                     dmc.Divider(size="md", color="grey"),
                     html.Br(),
+                    dcc.Markdown("Reference: ")
                 ],style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},),
              ],),
              html.Div(id='Options-content'),

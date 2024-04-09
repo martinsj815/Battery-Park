@@ -1,6 +1,6 @@
 import os
 import dash
-from dash import Dash, html, dcc, callback, Input, Output
+from dash import Dash, html, dcc, callback, Input, Output, State
 import dash_bootstrap_components as dbc
 from dash.exceptions import PreventUpdate
 from dash_bootstrap_components._components.Container import Container
@@ -31,7 +31,7 @@ masthead_content = dbc.Col(
 )
 
 navbar_children=[
-    dbc.NavItem(dbc.NavLink("Home", href="" or "/", className="navbar-link", style={'font-size':'20px', 'font-weight':'bold', 'margin-right':'40px'})),    
+    dbc.NavItem(dbc.NavLink("Home", href="" or "/", id="home-link", className="navbar-link", style={'font-size':'20px', 'font-weight':'bold', 'margin-right':'40px'})),    
     dbc.DropdownMenu(
             children=[
                 dbc.DropdownMenuItem("Cells", href="/basics-c", className="drop-down"),
@@ -43,6 +43,7 @@ navbar_children=[
             in_navbar=True,
             label=html.Span("Basics", style={"font-size":'20px', 'font-weight':'bold'}),
             menu_variant=('dark'),
+            id="basic-link",
             className='dropdown',
             style={'margin-right':'40px', 'display':'block'},
     ),
@@ -60,26 +61,33 @@ navbar_children=[
     ),    
 ]
 container_style = {
-    "display": "flex", 
-    "justifyContent": "left", 
+    "display": "block", 
+    "justifyContent": "center", 
     "alignItems": "left", 
     "height":"160px",
     "background-image": "linear-gradient(to bottom, rgb(234, 228, 228), rgb(78, 81, 244))",
-    "border-radius":"0px"
+    "width":"auto"
 }  
 
 #navbar_toggler = dbc.NavbarToggler(id="navbar-toggler")
 
 navbar = dbc.NavbarSimple(
-        navbar_children,
-        color="light",
-        dark=False,
-        expand="md",
-        sticky="top", 
-        style={"padding":"15px"},
-        links_left=True,
-)
-
+            navbar_children,
+            color="light",
+            dark=False,
+            expand="md",
+            sticky="top", 
+            style={"padding":"15px"},
+            links_left=True,
+        )
+       # dbc.NavbarToggler(id="navbar-toggler", n_clicks=0),
+       #         dbc.Collapse(
+       #         id="navbar-collapse",
+       #         is_open=False,
+       #         navbar=True,
+       #         ),
+       # ], fluid=True,
+#)
 page_content = html.Div(id='page-content')
 
 
@@ -102,14 +110,23 @@ app.layout = html.Div([
                     html.Br(),
                     page_content,
                     dash.page_container,
-                ],
+                    ],
                 ),
             ], 
             fluid=False,
             )
 ])
+#@app.callback(
+#    Output("navbar-collapse", "is_open"),
+#    [Input("navbar-toggler", "n_clicks")],
+#    [State("navbar-collapse", "is_open")],
+#)
+#def toggle_navbar_collapse(n, is_open):
+#    if n:
+#        return not is_open
+#    return is_open
 
 if __name__ == '__main__':
-    app.run_server(debug=True, host='127.0.0.1', port=8050)
+    app.run_server(debug=True, host='0.0.0.0', port=8050)
 
 

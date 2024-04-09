@@ -180,7 +180,7 @@ layout = html.Div([
                     ),
                 ],
                 width={"size":3}, style={'margin-left':'5px'},
-                xs=6, sm=6, md=6, lg=6, xl=3,
+                xs=6, sm=10, md=6, lg=6, xl=3,
                 ),
                 dbc.Col([
                     dbc.Row([
