@@ -337,6 +337,8 @@ layout = html.Div([
                         dbc.Col([
                             dcc.Markdown(('* References'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'30px', 'font-weight':'bold'}),                                               
+                            dcc.Markdown(('F. Degen, et al, "Energy consumption of current and future production of lithium-ion and post lithium-ion battery cells", _**Nature Energy**_, 8, 1284 (2023)'), 
+                                style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),
                             dcc.Markdown(('Naoki Nitta, et al, "Li-ion battery materials: present and future", _**Mater. Today**_, 18, 252 (2015)'), 
                                 style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),
                             dcc.Markdown(('Florian Schipper, et al, "Review—Recent Advances and Remaining Challenges for Lithium Ion Battery Cathodes", _**J. Electrochem. Soc.**_, 164, A6220 (2017)'), 

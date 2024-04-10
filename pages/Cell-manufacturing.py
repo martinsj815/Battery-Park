@@ -14,6 +14,21 @@ dash.register_page(
     __name__, name="Cell Manufacturing", top_nav=True, path="/cell-manufacturing"
     )
 
+labels = ['Batch mixing',
+          'Coating & Drying',
+            'Calendaring',
+            'Slitting/Cutting',
+            'Vacuum Drying',
+            'Stacking',
+            'Welding/Packing/Filling/Closing',
+            'Washing',
+            'Formating/Aging',
+            'Others(Materials handling/Dry rooms)'
+            ]
+values_1 = [0.21, 7.43, 0.43, 0.26, 1.14, 0.15, 0.99, 1.24, 7.06, 7.91]
+values_2 = [0.17, 6.22, 0.36, 0.22, 0.96, 0.13, 0.83, 1.04, 5.91, 6.62]
+values_3 = [0.14, 5.64, 0.33, 0.20, 0.87, 0.12, 0.75, 0.94, 5.36, 6.00]
+values_4 = [0.27, 10.38, 0.61, 0.36, 1.59, 0.22, 1.39, 1.73, 9.87, 11.05]
 
 layout = html.Div([
             dbc.Row([
@@ -232,6 +247,125 @@ layout = html.Div([
                                 dcc.Markdown(('Jianlin Li, et al., "From Materials to Cell: State-of-the-Art and Prospective Technologies for Lithium-Ion Battery Electrode Processing", _**Chem. Review**_, 122, 903 (2022)'), style={'textAlign':'justify', 'font-size':'20px'}),                                                                                 
                                 dcc.Markdown(('Yangtao Liu, et al., "Current and future lithium-ion battery manufacturing", _**iScience**_, 24, 102332 (2021)'), style={'textAlign':'justify', 'font-size':'20px'}),                                                                                      
                                 dcc.Markdown(('W. Blake Hawley, et al., "Electrode Manufacturing for Lithium-Ion Batteries - Analysis of Current and Next Generation Processing", _**J. Energy Storage**_, 25, 100862 (2019)'), style={'textAlign':'justify', 'font-size':'20px'}),                                                                                     
+                        ]),
+                        html.Br(),
+                        dmc.Divider(size="md", color="grey"),
+                        html.Br(),
+                        dbc.Row([
+                                dcc.Markdown(('- Total energy consumption for cell production'), style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),    
+                                dbc.Row([
+                                        dbc.Col([
+                                                dcc.Graph(
+                                                        id='pie-chart-1',
+                                                        figure={
+                                                        'data': [go.Pie(labels=labels, values=values_1, insidetextorientation='radial', hole=.3)],
+                                                        'layout': {
+                                                                'title': {
+                                                                        'text':'NCM622 & 100% C',
+                                                                        'font': {'size': 20, 'family': 'Arial'}, 
+                                                                },
+                                                                'legend': {  
+                                                                        'font': {'size': 12}, 
+                                                                        'orientation':'h',
+                                                                        'x': -0.5,  
+                                                                        'y': 1.1
+                                                                },
+                                                                'plot_bgcolor':'rgba(0,0,0,0)',  
+                                                                'paper_bgcolor':'rgba(0,0,0,0)',    
+                                                        },
+                                                        },
+                                                ),
+                                                ], width={"size": 6},
+                                                xs=12, sm=12, md=12, lg=6, xl=6
+                                        ), 
+                                        dbc.Col([
+                                                dcc.Graph(
+                                                        id='pie-chart-2',
+                                                        figure={
+                                                        'data': [go.Pie(labels=labels, values=values_2, insidetextorientation='radial', hole=.3)],
+                                                        'layout': {
+                                                                'title': {
+                                                                        'text':'NCM811 & 95% C, 5% SiO',
+                                                                        'font': {'size': 20, 'family': 'Arial'}, 
+                                                                },
+                                                                'legend': {  
+                                                                        'font': {'size': 12}, 
+                                                                        'orientation':'h',
+                                                                        'x': -0.5,  
+                                                                        'y': 1.1
+                                                                },
+                                                                'plot_bgcolor':'rgba(0,0,0,0)',  
+                                                                'paper_bgcolor':'rgba(0,0,0,0)',    
+                                                        },
+                                                        },
+                                                ),
+                                                ], width={"size": 6},
+                                                xs=12, sm=12, md=12, lg=6, xl=6
+                                        ),   
+                                ]),   
+                                html.Br(),
+                                html.Br(),
+                                html.Br(),
+                                dbc.Row([   
+                                        dbc.Col([
+                                                dcc.Graph(
+                                                        id='pie-chart-3',
+                                                        figure={
+                                                        'data': [go.Pie(labels=labels, values=values_3, insidetextorientation='radial', hole=.3)],
+                                                        'layout': {
+                                                                'title': {
+                                                                        'text':'NCM900 & 90% C, 10% Si',
+                                                                        'font': {'size': 20, 'family': 'Arial'}, 
+                                                                },
+                                                                'legend': {  
+                                                                        'font': {'size': 12}, 
+                                                                        'orientation':'h',
+                                                                        'x': -0.5,  
+                                                                        'y': 1.1
+                                                                },
+                                                                'plot_bgcolor':'rgba(0,0,0,0)',  
+                                                                'paper_bgcolor':'rgba(0,0,0,0)',    
+                                                        },
+                                                        },
+                                                ),
+                                                ], width={"size": 6},
+                                                xs=12, sm=12, md=12, lg=6, xl=6
+                                        ),     
+                                        dbc.Col([
+                                                dcc.Graph(
+                                                        id='pie-chart-4',
+                                                        figure={
+                                                        'data': [go.Pie(labels=labels, values=values_4, insidetextorientation='radial', hole=.3)],
+                                                        'layout': {
+                                                                'title': {
+                                                                        'text':'LFP & 100% C',
+                                                                        'font': {'size': 20, 'family': 'Arial'}, 
+                                                                },
+                                                                'legend': {  
+                                                                        'font': {'size': 12}, 
+                                                                        'orientation':'h',
+                                                                        'x': -0.5,  
+                                                                        'y': 1.1
+                                                                },
+                                                                'plot_bgcolor':'rgba(0,0,0,0)',  
+                                                                'paper_bgcolor':'rgba(0,0,0,0)',    
+                                                        },
+                                                        },
+                                                ),
+                                                ], width={"size": 6},
+                                                xs=12, sm=12, md=12, lg=6, xl=6
+                                        ),
+                                ]),  
+                                dbc.Row([   
+                                        dbc.Col([
+                                            html.Div('The pie charts above are plotted based on the source data provided by the following reference:', style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}), 
+                                            html.Br(),
+                                            dcc.Markdown('- F. Degen, et al, "Energy consumption of current and future production of lithium-ion and post lithium-ion battery cells", _**Nature Energy**_, 8, 1284 (2023)',  style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),                           
+                                ],
+                                width={"size": 12},
+                                                xs=12, sm=12, md=12, lg=10, xl=12
+                                ),                           
+                        ]),
                         ]),
                     ]), 
                 ],style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},),
