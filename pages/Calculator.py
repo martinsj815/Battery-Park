@@ -210,17 +210,47 @@ layout = html.Div([
                         style={'textAlign':'left', 'font-weight':'bold','color':'purple'}),
                     html.Br(),
                     html.Br(),
-                    dcc.Markdown(('- Calculating and plotting of the Li-ion battery cell properties for the cylindrical cell'), 
+                    dcc.Markdown(('- This calculator can be used to compute the metrics for the cylindrical cell consisting of a jelly-roll of cathode, anode, and separator sheets.'), 
                         style={'textAlign':'left', 'font-size':'20px'}),
+                    dcc.Markdown(('- To calculate the cylindrical cell electrode length, Archimedean spiral with a polar coordinate can be used:'), 
+                        style={'textAlign':'left', 'font-size':'20px'}),
+                    dcc.Markdown(('- For the spiral length:'), 
+                        style={'textAlign':'left', 'font-size':'20px', 'font-weight':'bold','margin-left':'40px'}),
+                    dcc.Markdown('''$$
+                                     L=\\frac{a}{2\pi}(\\frac{\phi_{1}}{2}\\sqrt{\phi_{1}^2+1}+\\frac{1}{2}ln(\phi_{1}+\\sqrt{\phi_{1}^2+1})-\\frac{\phi_{0}}{2}\\sqrt{\phi_{0}^2+1}-\\frac{1}{2}ln(\phi_{0}+\\sqrt{\phi_{0}^2+1}))
+                                     $$
+                                     ''', mathjax=True, style={'textAlign':'left','font-size':"20px"}),
+                    dcc.Markdown(('- Number of windings:'), 
+                        style={'textAlign':'left', 'font-size':'20px', 'font-weight':'bold','margin-left':'40px'}),
+                    dcc.Markdown('''$$
+                                     Nw=\\frac{\phi_{1}-\phi_{0}}{2\pi}
+                                     $$
+                                     ''', mathjax=True, style={'textAlign':'left','font-size':"20px"}),
+                    dcc.Markdown('where $$\phi$$ = rotation angle and $$a$$ = electrode thickness (double-sided cathode thickness + double-sided anode thickness + 2*separator thickness)', mathjax=True, style={'textAlign':'left', 'font-size':'18px', 'font-weight':'bold', 'margin-left':'50px'}),              
+                    dcc.Markdown('Note: cell outer diameter = $$\\frac{a}{\pi}\phi_{1}$$ & cell inner diameter = $$\\frac{a}{\pi}\phi_{0}$$', mathjax=True, style={'textAlign':'left', 'font-size':'18px', 'margin-left':'50px'}),              
+                    html.Br(),
                     html.Br(),
                     html.Br(),
                     ], width={"size":12},
-                xs=6, sm=8, md=12, lg=10, xl=12,
+                xs=8, sm=10, md=12, lg=10, xl=12,
                 ),
                 ],
             style={'justify':'center','text-align':'left'},
         ),
         dbc.Row([
+                dbc.Col([
+                    dbc.Row([
+                        html.Br(),
+                        html.Br(),
+                        html.Div(html.Img(src='https://www.dropbox.com/scl/fi/l4b853tep0e9r52k7oun1/cylindrical-spiral_wcaption.png?rlkey=noe3s94xw0p7rxkhx772b53l9&raw=1', style={"width":"120%", "margin-bottom":"20px"})), 
+                        html.Br(),
+                        html.Br(),
+                        ],
+                    style={'textAlign':'center'},
+                    ),
+                ],width={"size":4},
+                xs=6, sm=8, md=6, lg=3, xl=4,
+                ),
                 dbc.Col([
                     dbc.Row([
                         html.Br(),
@@ -246,7 +276,7 @@ layout = html.Div([
                     style={'textAlign':'center'},
                     ),
                 ],width={"size":4},
-                xs=6, sm=6, md=6, lg=3, xl=4,
+                xs=6, sm=8, md=6, lg=5, xl=4,
                 ),
                 dbc.Col([   
                     dbc.Row([
@@ -269,10 +299,11 @@ layout = html.Div([
                     style={'textAlign':'center'},
                     ),
                     ], 
-                width={"size":4}, style={'margin-left':'5px'},
-                xs=6, sm=6, md=6, lg=3, xl=4,
+                width={"size":4}, style={'margin-left':'0px'},
+                xs=6, sm=8, md=6, lg=5, xl=4,
                 ),
-                dbc.Col([
+            ]),
+            dbc.Col([
                     dbc.Row([
                         html.Br(),
                         html.Br(),
@@ -285,13 +316,12 @@ layout = html.Div([
                     ),
                     ],
                     style={'textAlign':'center'}, 
-                width={"size":"6"},
-                xs=10, sm=12, md=10, lg=6, xl=6,
-                ),
-            ]),
-            html.Br(),
-            dmc.Divider(size="md", variant="dotted", color="grey"),
-            html.Br(), 
+                width={"size":"12"},
+                xs=8, sm=10, md=10, lg=12, xl=12,
+            ),
+        html.Br(),
+        dmc.Divider(size="md", color="grey"),
+        html.Br(), 
         dbc.Row([
                 dbc.Col([
                     html.H1(('Li cell performance predictor'), 
@@ -680,9 +710,9 @@ def update_content(input_c1, input_c2, input_c3, input_c4, input_c5, input_c6, i
         L0=(sigma_0/2)*(pow(((sigma_0)*(sigma_0)+1),0.5))+0.5*np.log(sigma_0+pow(((sigma_1)*(sigma_1)+1),0.5))
         L_t=(L1-L0)*d_asc/(2*np.pi)*0.000001
         outcome9 = L_t #Length of the cathode
-        cathode_length=dcc.Markdown("The length of the cathode is **{}** m.".format(round(outcome9,2)), dangerously_allow_html=True),
+        cathode_length=dcc.Markdown("The length of the cathode inside the cell is **{}** m.".format(round(outcome9,2)), dangerously_allow_html=True),
         outcome10 = (sigma_1-sigma_0)/(2*np.pi) #Number of turns of the cathode in the cell
-        winding_number=dcc.Markdown("The number of winding(turn) is **{}**.".format(round(outcome10,1)), dangerously_allow_html=True),
+        winding_number=dcc.Markdown("The number of winding(turn) inside the cell is **{}**.".format(round(outcome10,1)), dangerously_allow_html=True),
         outcome11 = float(input_c4)*float(input_c5)*(1-float(input_c6))*(float(input_c1)*(0.0001))*float(input_c3) #Areal cathode capacity
         areal_capacity=dcc.Markdown("The areal cathode capacity is **{}** mAh/cm<sup>2</sup>.".format(round(outcome11,2)), dangerously_allow_html=True),
         outcome12 = outcome11*outcome9*100*float(input_c7)/1000 #Areal cathode capacity
