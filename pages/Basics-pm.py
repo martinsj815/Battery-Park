@@ -31,7 +31,7 @@ layout = html.Div([
                         html.Div( html.Img(src='https://www.dropbox.com/scl/fi/y8vsd5rcg0tu026bzxe60/CurrentDensity.png?rlkey=sfghzpokmu30bcr6603lhz8e6&raw=1', style={"width":"150%"}), 
                                  ),
                         ], width={"size": 3},
-                        xs=12, sm=12, md=6, lg=6, xl=3
+                        xs=8, sm=8, md=6, lg=6, xl=3
                         ),
                      ]),
                     html.Br(),
