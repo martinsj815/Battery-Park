@@ -252,7 +252,7 @@ layout = html.Div([
                         dmc.Divider(size="md", color="grey"),
                         html.Br(),
                         dbc.Row([
-                                dcc.Markdown(('- Total energy consumption for cell production'), style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),    
+                                dcc.Markdown('- Total energy consumption for cell production (kWh<sub>cons</sub>/kWh<sub>cell</sub>)', dangerously_allow_html=True, style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),    
                                 dbc.Row([
                                         dbc.Col([
                                                 dcc.Graph(
@@ -271,7 +271,7 @@ layout = html.Div([
                                                                         'y': 1.1
                                                                 },
                                                                 'plot_bgcolor':'rgba(0,0,0,0)',  
-                                                                'paper_bgcolor':'rgba(0,0,0,0)',    
+                                                                'paper_bgcolor':'rgba(0,0,0,0)',  
                                                         },
                                                         },
                                                 ),
