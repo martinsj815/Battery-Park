@@ -10,7 +10,7 @@ import dash_mantine_components as dmc
 import math
 
 dash.register_page(
-    __name__, name="Calculator", top_nav=True, path="/calculator"
+    __name__, name="Modeling", top_nav=True, path="/calculator"
 )
 module = ['Single cell', 'Series-connected module', 'Parallel-connected module']
 
