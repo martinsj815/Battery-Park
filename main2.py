@@ -56,7 +56,7 @@ navbar_children=[
             nav=True,
             in_navbar=True,
             label=html.Span("Industry", style={"font-size":'20px', 'font-weight':'bold'}),
-            menu_variant=('dark'),
+            #menu_variant=('dark'),
             style={'margin-right':'40px', 'display':'block'},
     ),    
 ]
