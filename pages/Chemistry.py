@@ -111,7 +111,7 @@ layout = html.Div([
              dbc.Row([
                 dbc.Col([
                     html.Div(
-                        dcc.Markdown('Li ion battery', style={'font-size':'35px', 'textAlign':'center','font-weight':'bold'},),
+                        dcc.Markdown('Li ion battery', style={'font-size':'30px', 'textAlign':'center','font-weight':'bold'},),
                         style={'text-align':'center'}),
                     html.Br(),
                     dbc.Row([

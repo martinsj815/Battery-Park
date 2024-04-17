@@ -186,7 +186,7 @@ layout = html.Div([
                         dbc.Row([
                                 dcc.Markdown(('- Welding'), style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),    
                                 dbc.Col([
-                                        html.H5('-	Contact resistance determines the quality of welding between tabs and current collectors. Ultrasonic welding uses high frequency to induce heat under applied pressure for welding. Resistance spot welding uses materials’ resistance for heat generation to join materials.'),                                                 
+                                        html.H5('-	Contact resistance determines the quality of welding between tabs and current collectors. Ultrasonic welding uses high frequency to induce heat under applied pressure for welding. Resistance spot welding uses materials’ resistance for heat generation to join materials. Laser welding happens through the adsorption of laser beams on the materials at the certain point to heat, melt, and create joints.'),                                                 
                                         ], width={"size": 8},
                                         xs=16, sm=16, md=10, lg=8, xl=8
                                         ), 

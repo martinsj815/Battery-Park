@@ -102,22 +102,22 @@ layout = html.Div([
              dbc.Row([
                 dbc.Col([
                     dbc.Row([
+                        dcc.Markdown('* Electrochemical Cell', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
                         dbc.Col([
-                         dcc.Markdown('* Electrochemical Cell', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
                          html.H5(('- A cell is the smallest building unit of the battery. Main constituents are cathode and anode that are immersed in electrolyte and undergo reduction/oxidation. Cations migrate inside the electrolyte while electrons move through the external load to do the work.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px'}),
                          html.H5(('- When a cell is discharged, cations and electrons from the negative electrode move towards the positive electrode, where the reduction takes place (while the negative electrode is oxidized). Different from the case of primary batteries, this process can be reversed through charging in secondary rechargeable batteries.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px'}),
                          html.H5(('- Cells also include the separator that isolate the positive and negative electrodes to prevent the electron flow and permit only the ion flow and the current collectors - metal foils where the electrodes are attached and that conduct electrical current to the external circuit.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px'}),
-                        ], width={"size": 8},
-                        xs=12, sm=10, md=10, lg=8, xl=8
+                        ], width={"size": 7},
+                        xs=7, sm=10, md=10, lg=7, xl=7
                         ),
                         dbc.Col([
-                            html.Div( html.Img(src='https://cdn.pixabay.com/photo/2017/03/01/18/14/batteries-2109241_1280.png', style={"width":"100%"}), 
+                            html.Div( html.Img(src='https://www.dropbox.com/scl/fi/hc0318st6fcb8hsk7kw11/cell-image.png?rlkey=uutzhyefy4uhb1sie5qdr6wpl&raw=1', style={"width":"100%"}), 
                                  ),
-                        ], width={"size": 3},
-                        xs=12, sm=12, md=6, lg=6, xl=3
+                        ], width={"size": 5},
+                        xs=8, sm=8, md=6, lg=5, xl=5
                         ),
                     ],),
                     html.Br(),

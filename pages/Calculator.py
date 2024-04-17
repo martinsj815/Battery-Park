@@ -17,7 +17,7 @@ module = ['Single cell', 'Series-connected module', 'Parallel-connected module']
 layout = html.Div([
             dbc.Row([
                 dbc.Col([
-                    html.H1(('Single Cell Calculator (Stacked Design)'), 
+                    html.H1(('Cell Calculator (Stacked Design)'), 
                         style={'textAlign':'left', 'font-weight':'bold','color':'purple'}),
                     html.Br(),
                     html.Br(),
@@ -206,7 +206,7 @@ layout = html.Div([
         html.Br(),
         dbc.Row([
                 dbc.Col([
-                    html.H1(('Single Cell Calculator (Jelly-roll Design)'), 
+                    html.H1(('Cell Calculator (Jelly-roll Design)'), 
                         style={'textAlign':'left', 'font-weight':'bold','color':'purple'}),
                     html.Br(),
                     html.Br(),
@@ -257,19 +257,19 @@ layout = html.Div([
                         html.Br(),
                         html.H5('Cathode Parameters', style={"margin-bottom":"0em", "color":"red"}),
                         html.Div([html.P('Coating thickness (Single-side) (um)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-c1", type="number", value='52.5', step='0.001', style={"margin-bottom":"1em"}) ]),
+                            dcc.Input(id="input-c1", type="number", value='60', step='0.001', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Al foil thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-c2", type="number", value='20', step='0.1', style={"margin-bottom":"1em"}) ]),
+                            dcc.Input(id="input-c2", type="number", value='15', step='0.1', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Discharge capacity of active material (mAh/g)', style={"height": "auto", "margin-bottom": "auto"}),
                             dcc.Input(id="input-c3", type="number", value='200', step='0.1', style={"margin-bottom":"1em"}) ]),                        
                         html.Div([dcc.Markdown('Density of electrode material (g/cm<sup>3</sup>)', dangerously_allow_html=True, style={"height": "1.3em", "margin-bottom": "auto"}),
                             dcc.Input(id="input-c4", type="number", value='4.87', step='0.01', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Active material loading ratio', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-c5", type="number", value='0.8', step='0.01', style={"margin-bottom":"1em"}) ]),
+                            dcc.Input(id="input-c5", type="number", value='0.95', step='0.01', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Estimated porosity', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-c6", type="number", value='0.35', step='0.01', style={"margin-bottom":"1em"}) ]),
+                            dcc.Input(id="input-c6", type="number", value='0.2', step='0.01', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Electrode width (cm)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-c7", type="number", value='6.8', step='0.01', style={"margin-bottom":"1em"}) ]),
+                            dcc.Input(id="input-c7", type="number", value='5', step='0.01', style={"margin-bottom":"1em"}) ]),
                         html.Br(),
                         html.Br(),
                         ],
@@ -282,15 +282,15 @@ layout = html.Div([
                     dbc.Row([
                         html.H5('Other cell parameters', style={"margin-bottom":"0.5em", "color":"Purple"}),
                         html.Div([html.P('Anode coating thickness (Single-side) (um)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-c8", type="number", value='58', step='0.01', style={"margin-bottom":"1em"}) ]),                      
+                            dcc.Input(id="input-c8", type="number", value='50', step='0.01', style={"margin-bottom":"1em"}) ]),                      
                         html.Div([html.P('Cu foil thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
                             dcc.Input(id="input-c9", type="number", value='10', step='0.1', style={"margin-bottom":"1em"}) ]),                      
                         html.Div([html.P('Separator thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-c10", type="number", value='16', step='0.1', style={"margin-bottom":"1em"}) ]),
+                            dcc.Input(id="input-c10", type="number", value='25', step='0.1', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Outer diameter of the cell (mm)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-c11", type="number", value='47', step='0.001', style={"margin-bottom":"1em"}) ]),              
+                            dcc.Input(id="input-c11", type="number", value='45', step='0.001', style={"margin-bottom":"1em"}) ]),              
                         html.Div([html.P('Cell Can thickness (mm)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-c12", type="number", value='0.5', step='0.001', style={"margin-bottom":"1em"}) ]),              
+                            dcc.Input(id="input-c12", type="number", value='1.5', step='0.001', style={"margin-bottom":"1em"}) ]),              
                         html.Div([html.P('Inner diameter of the cell (mm)', style={"height": "auto", "margin-bottom": "auto"}),
                             dcc.Input(id="input-c13", type="number", value='2', step='0.001', style={"margin-bottom":"1em"}) ]),                                
                         html.Br(),
@@ -336,7 +336,7 @@ layout = html.Div([
             dbc.Col([
                     dbc.Row([
                         html.Div([html.P('Coulombic Efficiency (%)', style={"height": "auto", "margin-bottom": "auto"}),
-                        dcc.Input(id="input-zz", type="number", value='95', step='0.1', style={"margin-bottom":"1em"}) ]),
+                        dcc.Input(id="input-zz", type="number", value='95', step='0.01', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Capacity Retention (%)', style={"height": "auto", "margin-bottom": "auto"}),
                         dcc.Input(id="input-g", type="number", value='80', step='0.1', style={"margin-bottom":"1em"}) ]),
                         html.Br(),
@@ -364,7 +364,7 @@ layout = html.Div([
             dbc.Col([
                     dbc.Row([
                         html.Div([html.P('Coulombic Efficiency (%)', style={"height": "auto", "margin-bottom": "auto"}),
-                        dcc.Input(id="input-f", type="number", value='95', step='0.1', style={"margin-bottom":"1em"}) ]),
+                        dcc.Input(id="input-f", type="number", value='95', step='0.01', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P('Desired cycle number', style={"height": "auto", "margin-bottom": "auto"}),
                         dcc.Input(id="input-h", type="number", value='80', step='0.1', style={"margin-bottom":"1em"}) ]),
                         html.Br(),
