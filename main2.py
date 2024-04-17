@@ -42,7 +42,6 @@ navbar_children=[
             nav=True,
             in_navbar=True,
             label=html.Span("Basics", style={"font-size":'20px', 'font-weight':'bold'}),
-            menu_variant=('dark'),
             id="basic-link",
             className='dropdown',
             style={'margin-right':'40px', 'display':'block'},
@@ -67,7 +66,9 @@ container_style = {
     "alignItems": "left", 
     "height":"160px",
     "background-image": "linear-gradient(to bottom, rgb(234, 228, 228), rgb(78, 81, 244))",
-    "width":"auto"
+    "width":"auto",
+    #"background-color":"rgb(201,76,76)",
+    
 }  
 
 #navbar_toggler = dbc.NavbarToggler(id="navbar-toggler")
@@ -80,6 +81,7 @@ navbar = dbc.NavbarSimple(
             sticky="top", 
             style={"padding":"15px"},
             links_left=True,
+            
         )
        # dbc.NavbarToggler(id="navbar-toggler", n_clicks=0),
        #         dbc.Collapse(
