@@ -84,7 +84,7 @@ layout = html.Div([
                          html.Div( html.Img(src='https://www.dropbox.com/scl/fi/l9zmll5xggmb8wkerdug8/Resistance.png?rlkey=uy8dus0jmvbpoghs6r26tz4q7&raw=1', style={"width":"150%"}), 
                                   ),
                          ], width={"size": 3},
-                         xs=12, sm=12, md=6, lg=6, xl=3
+                         xs=12, sm=8, md=6, lg=6, xl=3
                          ),
                     ],style={'marginTop': '20px'},
                     ),]

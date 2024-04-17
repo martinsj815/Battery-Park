@@ -1,14 +1,17 @@
 .nav-link.navbar-link:hover {
-    color: rgb(28, 204, 195); 
+    color: rgb(15, 83, 160); 
     transition: color 0.3s;
+    /*background-color: rgb(234, 228, 228);*/
 }
 .dropdown:focus {
     outline: none !important;
     font-weight:bold;
-    box-shadow: 0 0 10px #719ECE;
+    box-shadow: 0 0px 10px #719ECE;
 }
 .drop-down .dropdown-item {
     font-size: 18px; /* Adjust font size as needed */
     font-weight: normal; /* Reset font weight */
     color: #000000; /* Text color */
+    background-color: blue;
 }
+
