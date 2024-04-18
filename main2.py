@@ -46,10 +46,10 @@ navbar_children=[
             className='dropdown',
             style={'margin-right':'40px', 'display':'block'},
     ),
-    #dbc.NavItem(dbc.NavLink("Modeling", href="/calculator", className="navbar-link", style={'font-size':'20px', 'margin-right':'40px', 'font-weight':'bold'})),
+    dbc.NavItem(dbc.NavLink("Modeling", href="/calculator", className="navbar-link", style={'font-size':'20px', 'margin-right':'40px', 'font-weight':'bold'})),
     dbc.DropdownMenu(
             children=[
-                dbc.DropdownMenuItem("Cell", href="/modeling-cell", className="drop-down"),
+                dbc.DropdownMenuItem("Cell", href="/modeling-cells", className="drop-down"),
                 dbc.DropdownMenuItem("Pack", href="/modeling-pack", className="drop-down"),
             ],
             nav=True,
