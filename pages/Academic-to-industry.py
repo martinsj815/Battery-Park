@@ -30,15 +30,15 @@ data_election = OrderedDict(
             ], 
         ),
         (
-            "Coin Cell 2032 (Lab) (Li metal)",
+            "Coin Cell 2032 (Lab, <10mAh) (Li metal)",
             [
-                "<1", 
-                ">50", 
-                ">50",
-                ">70",
-                "<60",
-                ">250",
-                ">40%",       
+                "&lt;1", 
+                "&gt;50", 
+                "&gt;50",
+                "&gt;70",
+                "&lt;60",
+                "&gt;250",
+                "&gt;40",       
                 "Jun Liu, et al., “Pathways for practical high-energy long-cycling lithium metal batteries”, Nature Energy, 4, 180 (2019)"      
             ],
         ),
@@ -123,19 +123,19 @@ layout = html.Div([
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
                         ],
                         width={"size": 7},
-                        xs=7, sm=10, md=10, lg=7, xl=7
+                        xs=9, sm=12, md=12, lg=6, xl=7
                         ),
                         dbc.Col([
-                            html.Div( html.Img(src='https://www.dropbox.com/scl/fi/rpitq4tea2jdczua3un9b/industry_academia.png?rlkey=wxshe0dl8i9uhxlypfxuu4j3l&raw=1', style={"width":"100%", "display":"block", "margin":"auto"}), 
+                            html.Div( html.Img(src='https://www.dropbox.com/scl/fi/rpitq4tea2jdczua3un9b/industry_academia.png?rlkey=wxshe0dl8i9uhxlypfxuu4j3l&raw=1', style={"width":"100%", "display":"block", "margin-bottom":"20px"}), 
                                  ),
                         ], width={"size": 5},
-                        xs=4, sm=10, md=8, lg=5, xl=5
+                        xs=7, sm=10, md=8, lg=6, xl=5
                         ),
                     ]),   
-                    dcc.Markdown(('- A table below shows how different are the research lab test metrics from those in the industry setting. The columns highlighted in pink are those from the labs.'), 
+                    dcc.Markdown(('- A table below shows how different are the research lab test metrics from those in the industry setting. The columns highlighted in pink/blue are those from the labs/industry.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),                     
                     dash_table.DataTable(
-                                style_cell={'font-family': 'Arial', 'font-size': '16px', 'text-align':'center', 'margin-top':'10px', 'padding':2}, 
+                                style_cell={'font-family': 'Arial', 'font-size': '16px', 'text-align':'center', 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px', 'margin-top':'10px', 'padding':2}, 
                                 markdown_options={"html": True},
                                 style_table={'overflowX': 'auto'},
                                 style_data={
@@ -148,15 +148,31 @@ layout = html.Div([
                                 style_data_conditional=[
                                 {
                                     'if': {'column_id': 'Coin Cell 2032 (Lab) (Li metal)'},
-                                    'backgroundColor': 'rgb(255, 197, 209)', 
+                                    'backgroundColor': 'rgb(255, 197, 209)', 'padding-left':'10px'
                                 },
                                 {
                                     'if': {'column_id': 'Pouch Cell (Lab, 1Ah) (NCM622/Li)'},
-                                    'backgroundColor': 'rgb(255, 197, 209)', 
+                                    'backgroundColor': 'rgb(255, 197, 209)', 'padding-left':'10px'
                                 },
                                 {
                                     'if': {'column_id': ''},
                                     'fontWeight':'bold',
+                                },
+                                {
+                                    'if': {'column_id': 'Li-ion pouch cell (VW ID.3, 78Ah) (NCM622-811/Gr)'},
+                                    'backgroundColor': 'rgb(77, 188, 238)', 'padding-left':'10px'
+                                },
+                                {
+                                    'if': {'column_id': 'Panasonic NCR18650B, 3.3 Ah (NCA/Gr)'},
+                                    'backgroundColor': 'rgb(77, 188, 238)', 'padding-left':'10px'
+                                },
+                                {
+                                    'if': {'column_id': 'Tesla 4680, 22 Ah (NCM811/Gr)'},
+                                    'backgroundColor': 'rgb(77, 188, 238)', 'padding-left':'10px'
+                                },
+                                {
+                                    'if': {'column_id': 'Tesla Prismatic, 161.5 Ah (LFP/Gr)'},
+                                    'backgroundColor': 'rgb(77, 188, 238)', 'padding-left':'10px'
                                 },
                                 ],
                                 style_header={
@@ -173,6 +189,8 @@ layout = html.Div([
                         ),
                         html.Br(),
                         html.Br(),
+                        dcc.Markdown(('- As shown in the table above, in the research lab, a thinner cathode is often preferred over the thicker one (especially when uncalendared) for coin cell tests to display high capacity with good reversibility by preventing possible polarization and minimizing the degree of Li stripping and deposition.  Further, putting an excessive amount of electrolyte during the coin cell assembly translates to good cycle performance without any concern of electrolyte drying that leads to rapid capacity decay. Although these measures make the data more appealing for publication, these are far from being practical in the industrial perspective owing to the loss of cell energy density.'), 
+                                 style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),    
                         ],style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},
                 width={"size": 16},
                 xs=5, sm=10, md=10, lg=10, xl=16,
