@@ -34,7 +34,7 @@ tab_selected_style = {
 layout = html.Div([
     dcc.Markdown('This pages for giving simple numeric estmiation of cell performance.'),
     dcc.Tabs(id="Cells", value='tab-cs', children=[
-        dcc.Tab(label='A Single Cell', value="tab-lip", style=tabs_styles, selected_style=tab_selected_style, children=[
+        dcc.Tab(label='Single Cell', value="tab-lip", style=tabs_styles, selected_style=tab_selected_style, children=[
             dbc.Row([
                 dbc.Row([
                     dcc.Markdown('* Estimation of Cycle Life', style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
@@ -42,10 +42,10 @@ layout = html.Div([
                     dbc.Col([
                         dbc.Row([
                             html.Div([html.P('Coulombic Efficiency (%)', style={"height":"auto","margin-bottom":"auto"}),
-                                      dcc.Input(id="input_zz", type="number",value="99", step="0.01", style={"margin-bottom":"1em"})]),
+                                      dcc.Input(id="input-zz", type="number",value="99", step="0.01", style={"margin-bottom":"1em"})]),
                             html.Div([html.P('Capacity Retention (%)', style={"height":"auto","margin-bottom":"auto"}),
-                                      dcc.Input(id="input_g", type="number", value="80", step="0.1", style={"margin-bottom":"1em"})]),
-                            html.Span(id='outcome2', style={"font-size":"150%", "color":"red"}),
+                                      dcc.Input(id="input-g", type="number", value="80", step="0.1", style={"margin-bottom":"1em"})]),
+                            html.Span(id='outcome', style={"font-size":"150%", "color":"red"}),
                         ],
                         style={"margin-left":"10px","margin-top":"50px"},
                         ),
@@ -65,33 +65,30 @@ layout = html.Div([
             ])
         ]),
 
-    dcc.Tab(label="Stacked Cell", value='tab-sc', style=tabs_styles,selected_style=tab_selected_style, children=[
-        dbc.Row([
-            dcc.Markdown('* Stacked Cell Design')
-        ])
-    ]),         
-    dcc.Tab(label="Jelly-Roll Cell", value='tab-j', style=tabs_styles,selected_style=tab_selected_style, children=[
-        dbc.Row([
-            dcc.Markdown('* Jelly-Roll Cell Design')
-        ])
-    ]),
+        dcc.Tab(label="Stacked Cell", value='tab-sc', style=tabs_styles,selected_style=tab_selected_style, children=[
+            dbc.Row([
+                dcc.Markdown('* Stacked Cell Design')
+            ])
+        ]),         
+        dcc.Tab(label="Jelly-Roll Cell", value='tab-j', style=tabs_styles,selected_style=tab_selected_style, children=[
+            dbc.Row([
+                dcc.Markdown('* Jelly-Roll Cell Design')
+            ])
+        ]),
     ]),
     html.Div(id='tabs-content'),
 ])
 
 
-@callback([Output('plot','figure'), Output('outcome2','children')],
-                [#Input('input-f', 'value'),
-                Input('input_g', 'value'),
-                #Input('input-h', 'value'),
-                Input('input_zz','value'),  
+@callback([Output('outcome','children'), Output('plot','figure')],
+                [
+                Input('input-g', 'value'),
+                Input('input-zz','value'),  
                 ], 
             )
 
 def update_figure(input_g, input_zz):
-    if input_g is not None and input_zz is not None:
-        
-        fig=go.Figure()
+    if input_g and input_zz:    
         outcome = np.log10(float(input_g)/100)/np.log10(float(input_zz)/100)
         #outcome2 = np.exp(float(input_h)*np.log10(float(input_f)/100))*100
         x2=np.arange(98,100,0.05)
@@ -101,12 +98,9 @@ def update_figure(input_g, input_zz):
         #f=np.poly1d(z)
         #x_new=np.linspace(0,10,500)
         #y_new=f(x_new)
-        fig.add_trace(go.Scatter(x=x2, y=y2, name='cyclelife', mode='lines'))
-        #trace3 = go.Scatter(x=x2, y=y3, name='data3', mode='lines')
-    
-        #data3=[trace3]
-        
-        #fig3 = go.Figure(data=data3)
+        trace2 = go.Scatter(x=x2, y=y2, name='data2', mode='lines')
+        data2=[trace2]
+        fig = go.Figure(data=data2)
         fig.update_layout(
             plot_bgcolor='rgb(234, 228, 228)',
             paper_bgcolor='rgb(211, 211, 211)',
@@ -134,33 +128,6 @@ def update_figure(input_g, input_zz):
             linecolor='black',
             gridcolor='lightgrey'
         )
-        #fig3.update_layout(
-        #    plot_bgcolor='rgb(234, 228, 228)',
-        #    paper_bgcolor='rgb(211, 211, 211)',
-        #    title="Coulombic Efficiency vs Capacity Retention",
-        #    title_x=0.5,
-        #    xaxis_title="Coulombic Efficiency (%)",
-        #    yaxis_title="Capacity Retention (%)",
-        #    font=dict(
-        #        family="arial, monospace",
-        #        size=16,
-        #        color="black"
-        #    )
-        #)
-        #fig3.update_xaxes(
-        #    mirror=False,
-        #    ticks='outside',
-        #    showline=True,
-        #    linecolor='black',
-        #    gridcolor='lightgrey'
-        #)
-        #fig3.update_yaxes(
-        #    mirror=True,
-        #    ticks='outside',
-        #    showline=True,
-        #    linecolor='black',
-        #    gridcolor='lightgrey'
-        #)
 
 
         return dcc.Markdown("The cell is expected to undergo **{}** cycles".format(round(outcome,2)), dangerously_allow_html=True), fig
