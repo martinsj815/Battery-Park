@@ -49,6 +49,19 @@ navbar_children=[
     dbc.NavItem(dbc.NavLink("Modeling", href="/calculator", className="navbar-link", style={'font-size':'20px', 'margin-right':'40px', 'font-weight':'bold'})),
     dbc.DropdownMenu(
             children=[
+                dbc.DropdownMenuItem("Cell", href="/modeling-cells", className="drop-down"),
+                dbc.DropdownMenuItem("Pack", href="/modeling-pack", className="drop-down"),
+            ],
+            nav=True,
+            in_navbar=True,
+            label=html.Span("Modeling", style={"font-size":'20px', 'font-weight':'bold'}),
+            id="basic-link",
+            className='dropdown',
+            style={'margin-right':'40px', 'display':'block'},
+    ),
+    
+    dbc.DropdownMenu(
+            children=[
                 dbc.DropdownMenuItem("Academic-to-Industry", href="/academic-to-industry", className="drop-down"),
                 dbc.DropdownMenuItem("Cell Manufacturing", href="/cell-manufacturing", className="drop-down"),
                 dbc.DropdownMenuItem("Battery Packs", href="/battery-p", className="drop-down"),
