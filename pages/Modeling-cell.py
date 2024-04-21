@@ -9,7 +9,7 @@ import dash_mantine_components as dmc
 from dash.exceptions import PreventUpdate
 
 dash.register_page(
-    __name__, name="Modeling", top_nav=True, path="/modeling-cells"
+    __name__, name="CP Modeling", top_nav=True, path="/modeling-cells"
 )
 
 tabs_styles={

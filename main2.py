@@ -59,7 +59,6 @@ navbar_children=[
             className='dropdown',
             style={'margin-right':'40px', 'display':'block'},
     ),
-    
     dbc.DropdownMenu(
             children=[
                 dbc.DropdownMenuItem("Academic-to-Industry", href="/academic-to-industry", className="drop-down"),
