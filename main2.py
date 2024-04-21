@@ -14,7 +14,7 @@ app = dash.Dash(__name__,
                 external_stylesheets=[dbc.themes.SANDSTONE, 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'], 
                 suppress_callback_exceptions=True,
                 use_pages=True,
-                meta_tags=[{'name': 'viewport', 'content': 'width=device-width, initial-scale=1'}]
+                meta_tags=[{'name': 'viewport', 'content': 'width=device-width, initial-scale=1'}],
                 )
 app.config.suppress_callback_exceptions = True
 app.css.config.serve_locally = True
@@ -46,7 +46,7 @@ navbar_children=[
             className='dropdown',
             style={'margin-right':'40px', 'display':'block'},
     ),
-    dbc.NavItem(dbc.NavLink("Modeling", href="/calculator", className="navbar-link", style={'font-size':'20px', 'margin-right':'40px', 'font-weight':'bold'})),
+    #dbc.NavItem(dbc.NavLink("Modeling", href="/calculator", className="navbar-link", style={'font-size':'20px', 'margin-right':'40px', 'font-weight':'bold'})),
     dbc.DropdownMenu(
             children=[
                 dbc.DropdownMenuItem("Cell", href="/modeling-cells", className="drop-down"),
@@ -55,7 +55,7 @@ navbar_children=[
             nav=True,
             in_navbar=True,
             label=html.Span("Modeling", style={"font-size":'20px', 'font-weight':'bold'}),
-            id="basic-link",
+            id="modeling-link",
             className='dropdown',
             style={'margin-right':'40px', 'display':'block'},
     ),
