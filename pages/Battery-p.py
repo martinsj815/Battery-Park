@@ -150,7 +150,7 @@ data_election2 = OrderedDict(
                 "12s1p",
                 "6s2p",
                 "24<sup>b</sup> cells",
-                "8 x 10s3p / 2 x 8s3p",
+                "8 x 10s3p + 2 x 8s3p",
                 "8s3p",
                 "",
                 "864 cells",
