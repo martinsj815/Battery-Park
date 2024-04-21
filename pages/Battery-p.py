@@ -137,7 +137,7 @@ data_election2 = OrderedDict(
                 "Ultium(Cell)",
                 "Bolt",
                 "MEB (ID.4, ID.5, Buzz)",
-                "Mach-E (2023)",
+                "Mach-E SR (2023)",
                 "R1T/R1S Standard/Large",      
                 "Model S Plaid"               
             ],
@@ -160,7 +160,7 @@ data_election2 = OrderedDict(
         (
             "Capacity (Ah)",
             [
-                "66.2",
+                "112.6",
                 "152",
                 "120",
                 "111.2",
@@ -175,7 +175,7 @@ data_election2 = OrderedDict(
         (
             "Nominal Voltage (V)",
             [
-                "7.4",
+                "14.6",
                 "55",
                 "45",
                 "21.8",
@@ -190,7 +190,7 @@ data_election2 = OrderedDict(
         (
             "Modules/Pack",
             [
-                "48",
+                "24",
                 "12",
                 "8",
                 "32<sup>a</sup>",
@@ -220,16 +220,16 @@ data_election2 = OrderedDict(
         (
             "Note",
             [
-                "",
-                "",
-                "",
+                "40 kWh",
+                "100 kWh",
+                "42 kWh",
                 "<sup>a</sup>For 77.4 kWh pack",
                 "<sup>b</sup>Different configuration possible, <sup>c</sup>Cell Level",
                 "Cell Level",
-                "",
-                "<sup>d</sup>Cell Level",
-                "2170 cell \n <sup>e</sup> Cell level",
-                "18650 cell",
+                "82 kWh",
+                "<sup>d</sup>Cell Level \n 75 kWh",
+                "2170 cell \n <sup>e</sup> Cell level \n 135 kWh",
+                "18650 cell \n 100 kWh",
             ],
         ),
         (
