@@ -9,7 +9,7 @@ import dash_mantine_components as dmc
 from dash.exceptions import PreventUpdate
 
 dash.register_page(
-    __name__, name="Modeling", top_nav=True, path="/modeling-cells"
+    __name__, name="CP Modeling", top_nav=True, path="/modeling-cells"
 )
 
 tabs_styles={
@@ -35,17 +35,16 @@ layout = html.Div([
     dcc.Markdown('This pages for giving simple numeric estmiation of cell performance.'),
     dcc.Tabs(id="Cells", value='tab-cs', children=[
         dcc.Tab(label='Single Cell', value="tab-lip", style=tabs_styles, selected_style=tab_selected_style, children=[
-            dbc.Row([
                 dbc.Row([
                     dcc.Markdown('* Estimation of Cycle Life', style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
                     dcc.Markdown(" This is for estimating cycle life when cells cycle with a specific columbic efficiency each cycles."),
                     dbc.Col([
                         dbc.Row([
                             html.Div([html.P('Coulombic Efficiency (%)', style={"height":"auto","margin-bottom":"auto"}),
-                                      dcc.Input(id="input-zz", type="number",value="99", step="0.01", style={"margin-bottom":"1em"})]),
+                                      dcc.Input(id="input-d2", type="number",value="99", step="0.01", style={"margin-bottom":"1em"})]),
                             html.Div([html.P('Capacity Retention (%)', style={"height":"auto","margin-bottom":"auto"}),
-                                      dcc.Input(id="input-g", type="number", value="80", step="0.1", style={"margin-bottom":"1em"})]),
-                            html.Span(id='outcome', style={"font-size":"150%", "color":"red"}),
+                                      dcc.Input(id="input-d1", type="number", value="80", step="0.1", style={"margin-bottom":"1em"})]),
+                            html.Span(id='outcome15', style={"font-size":"150%", "color":"red"}),
                         ],
                         style={"margin-left":"10px","margin-top":"50px"},
                         ),
@@ -53,16 +52,13 @@ layout = html.Div([
                     width={"size":"6"},
                     xs=12,sm=12, md=10, lg=6, xl=6,
                     ),
-                dbc.Col([
-                    #dcc.Loading(
-                    #    id='loading', type='graph', children=[html.Div(id='cyclelife')]
-                    #)
-                    dbc.Row([
-                        dcc.Graph(id='plot', style={"width":"120vh", "height":"50vh","margin-top":"0px"})
-                    ])
-                ], width={"size":"6"}, xs=12, sm=12, md=10, lg=6, xl=6,),
+                    dbc.Col([
+                        dbc.Row([
+                            dcc.Graph(id='plot10', style={"width":"120vh", "height":"50vh","margin-top":"0px"})
+                        ])
+                        ], width={"size":"6"}, xs=12, sm=12, md=10, lg=6, xl=6,
+                    ),
                 ])
-            ])
         ]),
 
         dcc.Tab(label="Stacked Cell", value='tab-sc', style=tabs_styles,selected_style=tab_selected_style, children=[
@@ -76,32 +72,33 @@ layout = html.Div([
             ])
         ]),
     ]),
-    html.Div(id='tabs-content'),
+    html.Div(id='options-content'),
 ])
 
 
-@callback([Output('outcome','children'), Output('plot','figure')],
+@callback([Output('outcome15','children'), Output('plot10','figure')],
                 [
-                Input('input-g', 'value'),
-                Input('input-zz','value'),  
+                Input('tab-lip', 'value'),
+                Input('input-d1', 'value'),
+                Input('input-d2','value'),  
                 ], 
             )
 
-def update_figure(input_g, input_zz):
-    if input_g and input_zz:    
-        outcome = np.log10(float(input_g)/100)/np.log10(float(input_zz)/100)
+def update_content(tab_lip, input_d1, input_d2):
+    if tab_lip and input_d1 and input_d2:    
+        outcome15 = np.log10(float(input_d1)/100)/np.log10(float(input_d2)/100)
         #outcome2 = np.exp(float(input_h)*np.log10(float(input_f)/100))*100
-        x2=np.arange(98,100,0.05)
-        y2=np.log10(float(input_g)/100)/np.log10(x2/100)
+        x10=np.arange(98,100,0.05)
+        y10=np.log10(float(input_d1)/100)/np.log10(x10/100)
         #y3=np.exp(float(input_h)*np.log10(x2/100))*100
         #z=np.polyfit(x,y,1)
         #f=np.poly1d(z)
         #x_new=np.linspace(0,10,500)
         #y_new=f(x_new)
-        trace2 = go.Scatter(x=x2, y=y2, name='data2', mode='lines')
-        data2=[trace2]
-        fig = go.Figure(data=data2)
-        fig.update_layout(
+        trace6 = go.Scatter(x=x10, y=y10, name='data6', mode='lines')
+        data6=[trace6]
+        fig10 = go.Figure(data=data6)
+        fig10.update_layout(
             plot_bgcolor='rgb(234, 228, 228)',
             paper_bgcolor='rgb(211, 211, 211)',
             title="Coulombic Efficiency vs Cycle Number",
@@ -114,14 +111,14 @@ def update_figure(input_g, input_zz):
                 color="black"
             )
         )
-        fig.update_xaxes(
+        fig10.update_xaxes(
             mirror=False,
             ticks='outside',
             showline=True,
             linecolor='black',
             gridcolor='lightgrey'
         )
-        fig.update_yaxes(
+        fig10.update_yaxes(
             mirror=True,
             ticks='outside',
             showline=True,
@@ -130,6 +127,12 @@ def update_figure(input_g, input_zz):
         )
 
 
-        return dcc.Markdown("The cell is expected to undergo **{}** cycles".format(round(outcome,2)), dangerously_allow_html=True), fig
+        return (
+                "The cell is expected to undergo **{}** cycles".format(round(outcome15,2)), 
+                fig10
+                )
     else:
-        return "",{}
+        return (
+                "",
+                {}
+        )

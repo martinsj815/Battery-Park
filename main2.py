@@ -54,12 +54,11 @@ navbar_children=[
             ],
             nav=True,
             in_navbar=True,
-            label=html.Span("Modeling", style={"font-size":'20px', 'font-weight':'bold'}),
+            label=html.Span("CP Modeling", style={"font-size":'20px', 'font-weight':'bold'}),
             id="basic-link",
             className='dropdown',
             style={'margin-right':'40px', 'display':'block'},
     ),
-    
     dbc.DropdownMenu(
             children=[
                 dbc.DropdownMenuItem("Academic-to-Industry", href="/academic-to-industry", className="drop-down"),
