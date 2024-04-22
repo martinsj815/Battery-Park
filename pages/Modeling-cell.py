@@ -38,10 +38,22 @@ tab1 = dbc.Row([
                      dcc.Markdown(" This is for estimating cycle life when cells cycle with a specific columbic efficiency each cycles."),
                      dbc.Col([
                          dbc.Row([
+                             dcc.Markdown("Option 1: Estimiate Cycle Number ", style={'font-weight':'bold'}),
                              html.Div([html.P('Coulombic Efficiency (%)', style={"height":"auto","margin-bottom":"auto"}),
-                                       dcc.Input(id="input_zz", type="number",value="99", step="0.01", style={"margin-bottom":"1em"})]),
-                             #html.Div([html.P('Capacity Retention (%)', style={"height":"auto","margin-bottom":"auto"}),
-                             #          dcc.Input(id="input_g", type="number", value="80", step="0.1", style={"margin-bottom":"1em"})]),
+                                       dcc.Input(id="input_zz", type="number",value="99", step="0.01", multiple=True, style={"margin-bottom":"1em"})]),
+                             html.Div([html.P('Capacity Retention (%)', style={"height":"auto","margin-bottom":"auto"}),
+                                       dcc.Input(id="input_g", type="number", value="80", step="0.1", style={"margin-bottom":"1em"})]),
+                             html.Br(),
+                             html.Br(),
+                             html.Span(id="option1_outcome", style={"font-size":"150%", "font-weight":"bold"}),
+                             dcc.Markdown("Option 2: Estimate required Coulombic Efficiency (%) to achieve N cycle life",style={'font-weight':'bold'}),
+                             html.Div([html.P('targeted capacity retention (%)', style={"height":"auto","margin-bottom":"auto"}),
+                                       dcc.Input(id="input_cap2", type="number",value="80", step="0.01", multiple=True, style={"margin-bottom":"1em"})]),
+                             html.Div([html.P('targeted cycle life', style={"height":"auto","margin-bottom":"auto"}),
+                                       dcc.Input(id="input_cycle", type="number", value="100", step="1", style={"margin-bottom":"1em"})]),
+                             html.Br(),
+                             html.Br(),
+                             html.Span(id="option2_outcome", style={"font-size":"150%", "font-weight":"bold"})
                          ],
                          style={"margin-left":"10px","margin-top":"50px"},
                          ),
@@ -310,30 +322,47 @@ def render_content(tab):
         return tab3
     
 
+def option1(zz,g):
+    fig=go.Figure()
+    if zz and g is not None:
+        opt1_cn= np.arange(1,3000,1)
+        opt1_cap = np.power(float(zz)/100, opt1_cn)
+        find_index = np.argmin(np.abs(np.array(opt1_cap)-(float(g)/100)))
+        cycle_life = opt1_cn[find_index]
+        cap = float(g)/100
 
-@callback(Output('cyclelife','figure'),Input('input_zz','value'))
-def update_figure(CE):
-    fig = go.Figure()
-    if CE is not None:
-        x2=np.arange(1,1000,1)
-        #y2=np.log10(float(CE)/100)/np.log10(x2/100)
-        y2=np.power(CE/100, x2)
-    
-        fig.add_trace(go.Scatter(x=x2, y=y2, mode='lines'))
+        fig.add_trace(go.Scatter(x=opt1_cn, y=opt1_cap, mode='lines'))
+        
+        fig.add_trace(go.Scatter(x=[0,cycle_life], y=[0.8,0.8], mode='lines',line=dict(dash='dash',color="gray")))
+        fig.add_trace(go.Scatter(x=[cycle_life, cycle_life], y=[0, 0.8], mode='lines',line=dict(dash='dash',color="gray")))
+        fig.add_trace(go.Scatter(x=[cycle_life], y=[cap], mode='markers', marker_symbol='circle', marker_size=15))
+        fig.update_layout(xaxis_range=[0,cycle_life+100])
 
         fig.update_layout(
-            plot_bgcolor='rgb(234,228,228)',
-            paper_bgcolor='rgb(211,211,211)',
-            title='Capacity Retention vs Cycle Number',
+            plot_bgcolor='rgb(234, 228, 228)',
+            paper_bgcolor='rgb(211, 211, 211)',
+            title=" Coulombic Efficiency vs Capacity Retention",
             title_x=0.5,
-            xaxis_title="Cycle Number",
-            yaxis_title="Capacity Retention",
+            xaxis_title="Coulombic Efficiency (%)",
+            yaxis_title="Capacity Retention (%)",
             font=dict(
                 family="arial, monospace",
                 size=16,
                 color="black"
-            )
+            ),
+            showlegend=False
         )
-        return fig
+        return dcc.Markdown("The cell is expected to undergo **{}** cycles".format(cycle_life), dangerously_allow_html=True), fig
+    else:
+        return "",{}
+
+
+
+@callback([Output('option1_outcome', 'children'),Output('cyclelife','figure')],[Input('input_zz','value'),Input('input_g','value')])
+def update_figure(zz, g):
+    if zz and g is not None:
+        return option1(zz,g)
+    else:
+        return dcc.Markdown("It is not working, sorry ")
 
 
