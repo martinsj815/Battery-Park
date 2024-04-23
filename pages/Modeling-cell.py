@@ -299,7 +299,7 @@ tab3= dbc.Row([
 ])
 
 layout = html.Div([
-     dcc.Markdown('This pages for giving simple numeric estmiation of cell performance.'),
+     dcc.Markdown('This pages for giving simple numeric estimation of cell performance.'),
      dcc.Tabs(id="tabs", value='tab-1', parent_className='custom-tabs', className='custom-tabs-container', children=[
          dcc.Tab(label='A Single Cell',value='tab-1', style=tabs_styles, selected_style=tab_selected_style),
          dcc.Tab(label="Stacked Cell", id='tab-2', style=tabs_styles,selected_style=tab_selected_style),       
@@ -343,7 +343,7 @@ def option1(zz,g):
             paper_bgcolor='rgb(211, 211, 211)',
             title=" Coulombic Efficiency vs Capacity Retention",
             title_x=0.5,
-            xaxis_title="Coulombic Efficiency (%)",
+            xaxis_title="Cycle Number",
             yaxis_title="Capacity Retention (%)",
             font=dict(
                 family="arial, monospace",
