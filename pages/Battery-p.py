@@ -269,7 +269,7 @@ layout = html.Div([
                     dbc.Row([
                          dbc.Col([
                          dcc.Markdown('* Battery Module/Pack', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
-                         html.Div(('- A battery Module is a collection of cells connected in series or in parallel to achieve desired voltage and energy density. Cells are electrically interconnected using the busbars via various much popular joining technologies including ultrasonic welding and wire bonding.'), 
+                         html.Div(('- A battery Module is a collection of cells connected in series or in parallel to achieve desired voltage and energy density. Cells are typically connected electrically using the busbars via various joining technologies such as laser welding and ultrasonic wire bonding. The interconnect geometry may vary among different form factors.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px'}),
                          html.Br(),
                          html.Div(('- A battery Pack is consisting of one or more modules (or cells) that are connected (likely in series if modules), assembled with the electrical interconnects and packaged into a single unit. Packs are usually located at the lower part compartment of the EV chassis for better design flexibility and uniform weight distribution.'), 
