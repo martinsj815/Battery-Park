@@ -31,7 +31,7 @@ masthead_content = dbc.Col(
 )
 
 navbar_children=[
-    dbc.NavItem(dbc.NavLink("Home", href="" or "/", id="home-link", className="navbar-link", style={'font-size':'20px', 'font-weight':'bold', 'margin-right':'40px'})),    
+    dbc.NavItem(dbc.NavLink("Home", href="" or "/", id="home-link", className="drop-down", style={'font-size':'20px', 'font-weight':'bold', 'margin-right':'40px'})),    
     dbc.DropdownMenu(
             children=[
                 dbc.DropdownMenuItem("Cells", href="/basics-c", className="drop-down"),
@@ -43,7 +43,7 @@ navbar_children=[
             in_navbar=True,
             label=html.Span("Basics", style={"font-size":'20px', 'font-weight':'bold'}),
             id="basic-link",
-            className='dropdown',
+            className='drop-down',
             style={'margin-right':'40px', 'display':'block'},
     ),
     #dbc.NavItem(dbc.NavLink("Modeling", href="/calculator", className="navbar-link", style={'font-size':'20px', 'margin-right':'40px', 'font-weight':'bold'})),
@@ -56,7 +56,7 @@ navbar_children=[
             in_navbar=True,
             label=html.Span("Modeling", style={"font-size":'20px', 'font-weight':'bold'}),
             id="modeling-link",
-            className='dropdown',
+            className='drop-down',
             style={'margin-right':'40px', 'display':'block'},
     ),
     dbc.DropdownMenu(
@@ -69,6 +69,7 @@ navbar_children=[
             in_navbar=True,
             label=html.Span("Industry", style={"font-size":'20px', 'font-weight':'bold'}),
             #menu_variant=('dark'),
+            className='drop-down',
             style={'margin-right':'40px', 'display':'block'},
     ),    
 ]

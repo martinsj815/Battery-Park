@@ -1,15 +1,11 @@
-.nabb {
-    /*color: rgb(78, 190, 228);*/
-    color: rgb(248, 40, 3); 
-}
-/*.drop-down-menu .dropdown-item {
-    border-radius: 1 !important; /* Remove border radius */
-    
-/*}*/
-
+.dropdown .dropbtn {
+    font-size: 16px;
+    background-color: inherit;
+    font-family: inherit; 
+  }
 .drop-down:hover {
     color: rgb(6, 27, 61); 
     font-weight: bold;
     background-color: rgb(148, 166, 186);
+    display: block;
 }
-
