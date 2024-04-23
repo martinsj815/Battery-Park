@@ -38,6 +38,7 @@ tab1 = dbc.Row([
                      dcc.Markdown(" This is for estimating cycle life when cells cycle with a specific columbic efficiency each cycles."),
                      dbc.Col([
                          dbc.Row([
+                             #dcc.Dropdown(['Option1:Cylce Life','Option2: Required CE'], id='option1',placeholder="select a option"),
                              dcc.Markdown("Option 1: Estimiate Cycle Number ", style={'font-weight':'bold'}),
                              html.Div([html.P('Coulombic Efficiency (%)', style={"height":"auto","margin-bottom":"auto"}),
                                        dcc.Input(id="input_zz", type="number",value="99", step="0.01", multiple=True, style={"margin-bottom":"1em"})]),
