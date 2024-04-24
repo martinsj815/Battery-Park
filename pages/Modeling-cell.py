@@ -315,28 +315,28 @@ layout = html.Div([
  ])
 
 cyclelife = html.Div([
-    dbc.Col([
-    html.Br(),
-    html.Br(),
-    dcc.Markdown("Option 1: Estimiate Cycle Number ", style={'font-weight':'bold'}),
-    html.Div([html.P('Coulombic Efficiency (%)', style={"height":"auto","margin-bottom":"auto"}),
-    dcc.Input(id="input_zz", type="number",value="99", step="0.01", multiple=True, style={"margin-bottom":"1em"})]),
-    html.Div([html.P('Capacity Retention (%)', style={"height":"auto","margin-bottom":"auto"}),
-    dcc.Input(id="input_g", type="number", value="80", step="0.1", style={"margin-bottom":"1em"})]),
-    html.Br(),
-    html.Br(),
-    html.Span(id="option1_outcome", style={"font-size":"150%", "font-weight":"bold"}),
-    ],width={"size":"4"},xs=12,sm=12, md=10, lg=4, xl=4,),
-    dbc.Col([
-        dbc.Row([
+    dbc.Row([
+        dbc.Col([
+            html.Br(),
+            html.Br(),
+            dcc.Markdown("Option 1: Estimiate Cycle Number ", style={'font-weight':'bold'}),
+            html.Div([html.P('Coulombic Efficiency (%)', style={"height":"auto","margin-bottom":"auto"}),
+            dcc.Input(id="input_zz", type="number",value="99", step="0.01", multiple=True, style={"margin-bottom":"1em"})]),
+            html.Div([html.P('Capacity Retention (%)', style={"height":"auto","margin-bottom":"auto"}),
+            dcc.Input(id="input_g", type="number", value="80", step="0.1", style={"margin-bottom":"1em"})]),
+            html.Br(),
+            html.Br(),
+            html.Span(id="option1_outcome", style={"font-size":"150%", "font-weight":"bold"}),
+            ],width={"size":"4"},xs=12,sm=12, md=10, lg=4, xl=4,
+        ),
+        dbc.Col([
             dcc.Graph(id='cyclelife',figure={}, style={"margin-top":"0px"}),
-        ]),
-    ], width={"size":"6"}, xs=12, sm=12, md=10, lg=6, xl=6,),
+        ], width={"size":"6"}, xs=12, sm=12, md=10, lg=6, xl=6,),
+    ]),
 ])
-
 requiredCE = html.Div([
-    dbc.Col([ 
-        dbc.Row([
+    dbc.Row([ 
+        dbc.Col([
             html.Br(),
             html.Br(),
             dcc.Markdown("Option 2: Estimate required Coulombic Efficiency (%) to achieve N cycle life",style={'font-weight':'bold'}),
@@ -347,15 +347,14 @@ requiredCE = html.Div([
             html.Br(),
             html.Br(),
             html.Span(id="option2_outcome", style={"font-size":"150%", "font-weight":"bold"})
-            ],style={"margin-left":"10px", "margin-top":"50px"},)
-    ],width={"size":"4"},xs=12,sm=12, md=10, lg=4, xl=4,),
-    dbc.Col([
-        dbc.Row([
+            ],style={"margin-left":"10px", "margin-top":"50px"}, width={"size":"4"},xs=12,sm=12, md=10, lg=4, xl=4,
+        ),
+        dbc.Col([
             dcc.Graph(id='CElife',figure={}, style={"margin-top":"0px"}),
-        ]),
-    ], width={"size":"6"}, xs=12, sm=12, md=10, lg=6, xl=6,),
+            ], width={"size":"6"}, xs=12, sm=12, md=10, lg=6, xl=6,
+        ),  
+    ])
 ])
-
 @callback(
         Output('output-container','children'),
         Input('Opts', 'value')
