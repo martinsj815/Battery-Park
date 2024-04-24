@@ -38,45 +38,35 @@ tab1 = dbc.Row([
     dcc.Markdown(" This is for estimating cycle life when cells cycle with a specific columbic efficiency each cycles."),
     dcc.Dropdown({ 'Opt1': 'Option1: Cycle Life','Opt2':'Option2: Required CE'}, value="Opt1",id='Opts', 
                  clearable=False, style={'width':'50%'}),
-    html.Div(id="output-container")
-                     #dbc.Col([
-                     #    dbc.Row([
-                             
-                             
-                             #dcc.Markdown("Option 1: Estimiate Cycle Number ", style={'font-weight':'bold'}),
-                             #html.Div([html.P('Coulombic Efficiency (%)', style={"height":"auto","margin-bottom":"auto"}),
-                             #          dcc.Input(id="input_zz", type="number",value="99", step="0.01", multiple=True, style={"margin-bottom":"1em"})]),
-                             #html.Div([html.P('Capacity Retention (%)', style={"height":"auto","margin-bottom":"auto"}),
-                             #          dcc.Input(id="input_g", type="number", value="80", step="0.1", style={"margin-bottom":"1em"})]),
-                             #html.Br(),
-                             #html.Br(),
-                             #html.Span(id="option1_outcome", style={"font-size":"150%", "font-weight":"bold"}),
-                             #dcc.Markdown("Option 2: Estimate required Coulombic Efficiency (%) to achieve N cycle life",style={'font-weight':'bold'}),
-                             #html.Div([html.P('targeted capacity retention (%)', style={"height":"auto","margin-bottom":"auto"}),
-                             #          dcc.Input(id="input_cap2", type="number",value="80", step="0.01", multiple=True, style={"margin-bottom":"1em"})]),
-                             #html.Div([html.P('targeted cycle life', style={"height":"auto","margin-bottom":"auto"}),
-                             #          dcc.Input(id="input_cycle", type="number", value="100", step="1", style={"margin-bottom":"1em"})]),
-                             #html.Br(),
-                             #html.Br(),
-                             #html.Span(id="option2_outcome", style={"font-size":"150%", "font-weight":"bold"})
-                      #   ],
-                      #   style={"margin-left":"10px","margin-top":"50px"},
-                      #   ),
-                #      ],
-                #      width={"size":"6"},
-                #      xs=12,sm=12, md=10, lg=6, xl=6,
-                #      ),
-                #  dbc.Col([
-                #       #dcc.Loading(
-                #       #    id='loading', type='graph', children=[html.Div(id='cyclelife')]
-                #       #)
-                #       dbc.Row([
-                #           dcc.Graph(id='cyclelife',figure={}, style={"width":"120vh", "height":"50vh","margin-top":"0px"}),
-                #           #dcc.Graph(id='CElife',figure={}, style={"width":"120vh", "height":"50vh","margin-top":"0px"})
-                #       ])
-                #  ], width={"size":"6"}, xs=12, sm=12, md=10, lg=6, xl=6,),
-                #  ])
-                ])
+    html.Div(id="output-container"),
+    html.Br(),
+    html.Br(),
+    dmc.Divider(size="md", color="grey"),
+    html.Br(),
+    dcc.Markdown('* Estimation of Li-metal thickness', style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
+    dbc.Row([
+        dbc.Col([
+            dbc.Row([
+                html.Div([html.P('Li Areal Capacity [mAh/cm\u00b2]', style={"height": "auto", "margin-bottom": "auto"}),
+                dcc.Input(id="liarealcap", type="number", value='3',step='0.1',style={"margin-bottom":"1em"})]),
+                html.Span(id='thickness_outcome', style={"font-size":"150%", "color":"black"}),
+                dcc.Markdown(" Note that this is theoretical estimation and calculated by assuming perfectly flat and smooth film of Li. ")
+
+            ],style={"margin-left":"10px","margin-top":"50px"},
+            )
+            ],width={"size":"6"},
+                xs=12, sm=12, md=10, lg=6, xl=6,
+            ),
+        dbc.Col([
+            dbc.Row([
+                dcc.Graph(id='thicknessplot', style={"width":"120vh", "height":"50vh","margin-top":"0px"})
+            ]),
+        ], width={"size":"6"},xs=12, sm=12, md=10, lg=6, xl=6,
+        ),
+
+    ],),
+
+ ])
 
 tab2=dbc.Row([
     dcc.Markdown('* Estimation of Cycle Life', style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
@@ -327,11 +317,11 @@ cyclelife = html.Div([
             html.Br(),
             html.Br(),
             html.Span(id="option1_outcome", style={"font-size":"150%", "font-weight":"bold"}),
-            ],width={"size":"4"},xs=12,sm=12, md=10, lg=4, xl=4,
+            ],width={"size":"6"},xs=12,sm=12, md=10, lg=5, xl=5,
         ),
         dbc.Col([
-            dcc.Graph(id='cyclelife',figure={}, style={"margin-top":"0px"}),
-        ], width={"size":"6"}, xs=12, sm=12, md=10, lg=6, xl=6,),
+            dcc.Graph(id='cyclelife',figure={}, style={"width":"80vh", "height":"50vh","margin-top":"0px"}),
+        ], width={"size":"5"}, xs=12, sm=12, md=10, lg=4, xl=5,),
     ]),
 ])
 requiredCE = html.Div([
@@ -347,14 +337,15 @@ requiredCE = html.Div([
             html.Br(),
             html.Br(),
             html.Span(id="option2_outcome", style={"font-size":"150%", "font-weight":"bold"})
-            ],style={"margin-left":"10px", "margin-top":"50px"}, width={"size":"4"},xs=12,sm=12, md=10, lg=4, xl=4,
+            ], width={"size":"6"},xs=12,sm=12, md=10, lg=5, xl=5,
         ),
         dbc.Col([
-            dcc.Graph(id='CElife',figure={}, style={"margin-top":"0px"}),
-            ], width={"size":"6"}, xs=12, sm=12, md=10, lg=6, xl=6,
+            dcc.Graph(id='CElife',figure={}, style={"width":"80vh", "height":"50vh","margin-top":"0px"}),
+            ], width={"size":"5"}, xs=12, sm=12, md=10, lg=4, xl=5,
         ),  
     ])
 ])
+
 @callback(
         Output('output-container','children'),
         Input('Opts', 'value')
@@ -418,16 +409,17 @@ def option2(cap2, raw_cycle):
     cy_x = np.arange(cycle*0.2, cycle*1.5)
     ce_y = [np.exp((np.log(float(cap2)/100))/xval) for xval in cy_x ]
     y_0 = np.exp((np.log(float(cap2)/100))/cy_x[0])
-    res_CE = round(req_CE, 6)*100
+    res_CE = req_CE*100
     fig.add_trace(go.Scatter(x=cy_x, y=ce_y, mode='lines'))
-    fig.add_trace(go.Scatter(x=[cycle], y=[req_CE], mode='markers', marker_symbol='star', marker_size=15))
     fig.add_trace(go.Scatter(x=[cy_x[0],cycle], y=[req_CE,req_CE], mode='lines',line=dict(dash='dash',color="gray")))
     fig.add_trace(go.Scatter(x=[cycle, cycle], y=[y_0, req_CE], mode='lines',line=dict(dash='dash',color="gray")))
+    fig.add_trace(go.Scatter(x=[cycle], y=[req_CE], mode='markers', marker_symbol='circle', marker_size=15))
 
     fig.update_layout(
         plot_bgcolor='rgb(234, 228, 228)',
         paper_bgcolor='rgb(211, 211, 211)',
-        title=" Coulombic Efficiency vs Cycle No. at {}% capcity retention".format(cap2),
+        #title=" Coulombic Efficiency with {}% capacity retention".format(cap2),
+        title=" Coulombic Efficiency vs Cycle Number",
         title_x=0.5,
         xaxis_title="Cycle Number",
         yaxis_title="Coulmbic Efficiency",
@@ -438,7 +430,7 @@ def option2(cap2, raw_cycle):
         ),
         showlegend=False
     )
-    return dcc.Markdown("The cell is requried **{}** % CE to achieve {} cycle life with {}% capacity retention".format(res_CE, int(cycle), cap2), dangerously_allow_html=True), fig
+    return dcc.Markdown("The cell is requried **{}** % CE to achieve {} cycle life with {}% capacity retention".format(round(res_CE,4), int(cycle), cap2), dangerously_allow_html=True), fig
 
 @callback(Output('option1_outcome', 'children'),Output('cyclelife','figure'),Input('input_zz','value'),Input('input_g','value'))
 def update_figure(zz, g):
@@ -452,3 +444,39 @@ def update_figure(cap2, cyclno):
         return option2(cap2,cyclno)
     else:
         return dcc.Markdown("It is not working, sorry ")
+    
+
+def li_thickness(arealcap=3.00):
+    fig=go.Figure()
+    cap_x = np.arange(float(arealcap)*0.2, float(arealcap)*1.5,0.01)
+    thick_Li =[10000*x*6.941/(26801.4814*0.534) for x in cap_x]
+    T_Li = 10000*float(arealcap)*6.941/(26801.4814*0.534)
+    S_Li = 10000*float(cap_x[0])*6.941/(26801.4814*0.534)
+    fig.add_trace(go.Scatter(x=cap_x, y=thick_Li, mode='lines'))
+    fig.add_trace(go.Scatter(x=[cap_x[0],float(arealcap)], y=[T_Li,T_Li], mode='lines',line=dict(dash='dash',color="gray")))
+    fig.add_trace(go.Scatter(x=[float(arealcap), float(arealcap)], y=[S_Li, T_Li], mode='lines',line=dict(dash='dash',color="gray")))
+    fig.add_trace(go.Scatter(x=[float(arealcap)], y=[T_Li], mode='markers', marker_symbol='circle', marker_size=15))
+
+    fig.update_layout(
+        plot_bgcolor='rgb(234, 228, 228)',
+        paper_bgcolor='rgb(211, 211, 211)',
+        title="Areal capacity of Li with respect to its thickness",
+        title_x=0.5,
+        xaxis_title="Cycle Number",
+        yaxis_title="Coulmbic Efficiency",
+        font=dict(
+            family="arial, monospace",
+            size=16,
+            color="black"
+        ),
+        showlegend=False
+    )    
+    return dcc.Markdown("With Areal capacity of Li, {} \u03bcm Li is stripped or deposited".format(round(T_Li,2)), dangerously_allow_html=True), fig
+
+@callback([Output('thickness_outcome', 'children'),Output('thicknessplot','figure')],Input('liarealcap','value'))
+def update_arealcap(liareal_cap):
+    if liareal_cap is not None:
+        areal_cap = float(liareal_cap)
+        return li_thickness(areal_cap)
+    else:
+        return li_thickness()
