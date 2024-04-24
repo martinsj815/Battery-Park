@@ -192,10 +192,8 @@ data_election2 = OrderedDict(
 dt2 = pd.DataFrame(data_election2)
 
 layout = html.Div([
-                html.Link(rel='stylesheet', href='/assets/table.css'),      
+                html.Link(rel='stylesheet', href='/assets/table.css'),  
             dbc.Row([
-                dbc.Col([
-                    dbc.Row([
                         dcc.Markdown('- Academic-to-Industry', style={'font-size':'30px', 'font-weight':'bold','margin-bottom':'20px'},),
                         dbc.Col([                      
                             dcc.Markdown(('- There is a clear technological gap and lack of the bridge between academic research and industry requirements. Academic research uses the testing parameters and conditions that are way off from those that are adopted in commercial cell manufacturing. Adjusting key metrics including cathode/anode active loading, N/P ratio, and electrolyte amounts to the industrial demand is not the primary target in academia as its focus is not on reducing the cost but, instead, much on materials discovery and cell performance enhancement, which can be realized quite frequently through small cell assembly and testing. For EV battery suppliers and automative OEMs who need to meet requirements/demands on safety, cell energy density and power capability, it is also inevitable to think about the cost and energy consumption for manufacturing and hence are keen on making improvement in those metrics.'), 
@@ -210,7 +208,10 @@ layout = html.Div([
                         ], width={"size": 5},
                         xs=7, sm=10, md=8, lg=6, xl=5
                         ),
-                    ]),   
+                    ], style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},
+                    ),    
+            dbc.Row([
+                dbc.Col([ 
                     dcc.Markdown(('- A table below shows how different are the research lab test metrics from those in the industry setting. The columns highlighted in pink/blue are those from the labs/industry.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),                  
                     html.Br(),

@@ -105,6 +105,53 @@ data_election = OrderedDict(
 
 dt = pd.DataFrame(data_election)
 
+data_election2 = OrderedDict(
+    [
+        (
+            "Type",
+            [
+                "Sulfide (S-SIE)",
+                "Oxide (O-SIE)",
+                "Polymer",
+            ], 
+        ),
+        (
+            "Example System",
+            [
+                "- Li<sub>9.54</sub>Si<sub>1.74</sub>P<sub>1.44</sub>S<sub>11.7</sub>Cl<sub>0.3</sub> \n - Li<sub>3.833</sub>Sn<sub>0.833</sub>As<sub>0.166</sub>S<sub>4</sub> \n - Li<sub>6</sub>PS<sub>5</sub>Br \n - Li<sub>7</sub>P<sub>3</sub>S<sub>11</sub> \n - Li<sub>10</sub>GeP<sub>2</sub>S<sub>12</sub>", 
+                "- Li<sub>7</sub>La<sub>3</sub>Zr<sub>2</sub>O<sub>12</sub> (Garnet) \n - Li<sub>0.5</sub>La<sub>0.5</sub>TiO<sub>3</sub> (Perovskite) \n - Li<sub>3</sub>OCl (Antiperovskite) \n - LISICON, NASICON", 
+                "- LiTFSI-PEO(Mw=5000000) \n - LiClO<sub>4</sub>-PEO(Mw=600000) \n - LiClO<sub>4</sub>-PEO with 5wt&#37; elliptical TiO<sub>2</sub> rods \n - LiClO4-PEO with 5wt&#37; elliptical TiO<sub>2</sub> rods",          
+            ],
+        ),
+        (
+            "Conductivity (mS/cm)", 
+            [
+                "0.1-50", 
+                "0.01-1",
+                "0.1-1 (at 90 oC)",
+            ]
+        ),
+        (
+            "Advantages",
+            [
+                "- High ionic condutivity \n - Good mechanical strength and flexibilty",
+                "- High chemical and electrochemical stability (High  electrochemical oxidation voltage) \n - High mechanical strength",
+                "- Stable with lithium metal \n - Flexibility and low shear modulus \n - Easy to produce a large area membrance",
+            ],
+        ),
+        (
+            "Disadvantages",
+            [
+                "- Sensitive to moisture and produces H2S from decomposition \n - Poor compatibiltiy with cathode materials due to low oxidation stability",
+                "- Non-flexible and brittle \n - Expensive large-scale production (require sintering process)",
+                "- Limited thermal stability \n - Low ionic conductivity \n  - Low oxidation voltage (< 4V)",
+            ],
+        ),
+    ],
+)
+
+dt2 = pd.DataFrame(data_election2)
+
 
 layout = html.Div([
              html.Link(rel='stylesheet', href='/assets/table.css'),            
@@ -156,9 +203,12 @@ layout = html.Div([
                         ),   
                     ]),    
                     html.Br(),    
-                    dash_table.DataTable(
-                                style_cell={'font-family': 'Arial', 'font-size': '16px', 'text-align':'center', 'margin-top':'10px', 'padding':5}, 
+                    dbc.Row([
+                        dbc.Col([
+                            dash_table.DataTable(
+                                style_cell={'font-family': 'Arial', 'font-size': '16px', 'text-align':'center', 'margin-top':'10px', 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px', 'padding':5}, 
                                 markdown_options={"html": True},
+                                style_table={'overflowX': 'auto'},
                                 style_data={
                                         'whiteSpace': 'normal',
                                         'color': 'black',
@@ -174,7 +224,6 @@ layout = html.Div([
                                 ],
                                 style_header={
                                     'whiteSpace': 'normal',
-                                    #'backgroundColor': 'rgb(210, 210, 210)',
                                     'backgroundColor': 'black',
                                     'color': 'white',
                                     'fontWeight': 'bold',
@@ -184,6 +233,11 @@ layout = html.Div([
                                 data=dt.to_dict('records'),
                                 columns=[{'id': c, 'name': c,"presentation": "markdown"} for c in dt.columns],
                         ),
+                        ],  
+                        width={"size": 16},
+                        xs=5, sm=10, md=10, lg=10, xl=16,
+                        ),
+                    ]),
                     html.Br(),
                     dbc.Row([
                         dbc.Col([
@@ -338,11 +392,11 @@ layout = html.Div([
                         html.Br(),
                         dbc.Row([
                             dbc.Col([
-                            html.Div(('A solid electrolyte is a solid ionic conductor that acts as a medium for ion transport between the cathode and the anode cells. These materials should be electronically insulating but ionically conductive, and electrochemically stable at both the cathode and anode. The solid electrolyte replaces the liquid electrolyte and separator of existing batteries.'), 
+                            html.Div(('A solid electrolyte is a solid ionic conductor that acts as a medium for ion transport between the cell cathode and the anode. These materials should be electrically insulating but ionically conductive, and electrochemically stable with both the cathode and anode. The solid electrolyte can replace the liquid electrolyte and separator of the cell.'), 
                                  style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px', 'margin-bottom':'10px'}),  
-                            html.Div(('Solid electrolytes are attracting commercial attention as core battery materials for next-generation all-solid-state batteries due to their excellent thermal stability, high energy density, and fast charge capability. The most promising solid electrolyte materials can be classified into sulfide solid inorganic electrolytes (S-SIE), oxide solid inorganic electrolyte (O-SIE), and solid polymer electrolytes (SPE).'), 
+                            html.Div(('Solid electrolytes are attracting a large interest since it enables all-solid-state batteries with excellent thermal stability, high energy density, and fast charge capability. The solid electrolyte materials can be classified into sulfide solid inorganic electrolytes (S-SIE), oxide solid inorganic electrolyte (O-SIE), and solid polymer electrolytes (SPE).'), 
                                  style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px', 'margin-bottom':'10px'}),  
-                            dcc.Markdown(dangerously_allow_html=True, children=('To compete with conventional liquid electrolytes, the ionic conductivity should be the order of 1 mS/cm at room temperature. S-SIE has generally higher ionic conductivity and forms a good interface with electrodes due to its soft Li-S bonding properties, but has the performance disadvantages of stability due to the narrow electrochemical stability window. O-SEI has good electrochemical stability but is difficult to handle in large-scale production. While SPE has low ionic conductivity and requires high temperature to operate, it is stable with lithium metal, forming a good interface with the electrode, and can be applied in current roll-to-roll process. '), 
+                            dcc.Markdown(dangerously_allow_html=True, children=('To compete with conventional liquid electrolytes, the ionic conductivity should be in the order of 1 mS/cm at room temperature. S-SIE has generally higher ionic conductivity and forms a good interface with electrodes due to its soft Li-S bonding properties, but has the performance disadvantages of stability due to the narrow electrochemical stability window. O-SEI has good electrochemical stability but is difficult to handle in large-scale production. While SPE has low ionic conductivity and requires high temperature to operate, it is stable with lithium metal, forming a good interface with the electrode, and can be applied in a current roll-to-roll process. '), 
                                  style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px', 'margin-bottom':'10px'}),    
                               ], width={"size": 7},
                             xs=10, sm=10, md=10, lg=7, xl=7,
@@ -356,6 +410,41 @@ layout = html.Div([
                             ),   
                         ],  style={"margin-bottom":'2em'},
                         ),
+                        dbc.Row([
+                            dbc.Col([
+                            dash_table.DataTable(
+                                style_cell={'font-family': 'Arial', 'font-size': '16px', 'text-align':'center', 'margin-top':'10px', 'padding':5}, 
+                                markdown_options={"html": True},
+                                style_table={'overflowX': 'auto'},
+                                style_data={
+                                        'whiteSpace': 'normal',
+                                        'color': 'black',
+                                        'backgroundColor': 'white',
+                                        'height':'auto',
+                                        'lineheight':'10px',
+                                },
+                                style_data_conditional=[
+                                {
+                                    'if': {'column_id': 'Type'},
+                                    'fontWeight': 'bold', 
+                                },
+                                ],
+                                style_header={
+                                    'whiteSpace': 'normal',
+                                    'backgroundColor': 'black',
+                                    'color': 'white',
+                                    'fontWeight': 'bold',
+                                    'font-size': '18px',
+                                    'text-align':'center'
+                                },
+                                data=dt2.to_dict('records'),
+                                columns=[{'id': c, 'name': c,"presentation": "markdown"} for c in dt2.columns],
+                                ),
+                            ],
+                            width={"size": 16}, style={"margin-bottom":'20px'},
+                            xs=5, sm=10, md=10, lg=10, xl=16,
+                            ),
+                        ]),
                         html.Br(),
                         dmc.Divider(size="md", color="grey"),
                         html.Br(),

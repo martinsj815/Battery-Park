@@ -269,7 +269,7 @@ layout = html.Div([
                     dbc.Row([
                          dbc.Col([
                          dcc.Markdown('* Battery Module/Pack', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
-                         html.Div(('- A battery Module is a collection of cells connected in series or in parallel to achieve desired voltage and energy density. Cells are typically connected electrically using the busbars via various joining technologies such as laser welding and ultrasonic wire bonding. The interconnect geometry may vary among different form factors.'), 
+                         html.Div(('- A battery Module is a collection of cells connected in series or in parallel to achieve desired voltage and energy density.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px'}),
                          html.Br(),
                          html.Div(('- A battery Pack is consisting of one or more modules (or cells) that are connected (likely in series if modules), assembled with the electrical interconnects and packaged into a single unit. Packs are usually located at the lower part compartment of the EV chassis for better design flexibility and uniform weight distribution.'), 
@@ -294,6 +294,25 @@ layout = html.Div([
                     html.Br(),
                     dmc.Divider(size="md", color="grey"),
                     html.Br(),
+                    dbc.Row([
+                         dbc.Col([
+                         dcc.Markdown('* Cell Interconnect', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
+                         html.Div(('- Cells are typically connected electrically using the busbars via various joining technologies such as laser welding and ultrasonic wire bonding. Interconnect design can vary depending on the cell form factor. The schematics on the right show the single-sided interconnect of the cells.'), 
+                                 style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px'}),
+                         html.Br(),
+                        ], width={"size": 4},
+                        xs=5, sm=6, md=7, lg=5, xl=4,
+                        ),
+                        dbc.Col(
+                            [
+                            html.Div(html.Img(src='https://www.dropbox.com/scl/fi/7rt7b2kc90oel23u7yeph/Cell-Interconnect.png?rlkey=7wds8k7mwvo4pscqi0g8585qf&st=ydcwny3b&raw=1', style={"width":"70%", "display": "block", "margin": "auto"}), ),
+                            ], width={"size": 8},
+                            xs=4, sm=7, md=7, lg=7, xl=8,
+                        ),
+                    ],),
+                    html.Br(),
+                    dmc.Divider(size="md", color="grey"),
+                    html.Br(),                    
                     dcc.Markdown('* Tesla EV Model Specs', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
                         dash_table.DataTable(
                                 style_cell={'font-family': 'Arial', 'font-size': '18px', 'text-align':'left', 'margin-top':'10px'}, 
