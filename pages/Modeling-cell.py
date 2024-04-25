@@ -54,7 +54,7 @@ tab1 = dbc.Row([
                 dcc.Input(id="liarealcap", type="number", value='3',step='0.1',style={"margin-bottom":"1em"})]),
                 html.Span(id='thickness_outcome', style={"font-size":"150%", "color":"black"}),
 
-            ],style={"margin-left":"10px","margin-top":"50px"},
+            ],style={"margin-top":"50px"},
             )
             ],width={"size":"6"},
                 xs=12, sm=12, md=10, lg=5, xl=5,
