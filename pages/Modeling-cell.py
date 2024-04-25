@@ -432,7 +432,7 @@ def option2(cap2, raw_cycle):
         ),
         showlegend=False
     )
-    return dcc.Markdown("The cell is requried **{}** % CE to achieve {} cycle life with {}% capacity retention".format(round(res_CE,4), int(cycle), cap2), dangerously_allow_html=True), fig
+    return dcc.Markdown("The cell is requried **{}** % CE to achieve {} cycle life.".format(round(res_CE,4), int(cycle)), dangerously_allow_html=True), fig
 
 @callback(Output('option1_outcome', 'children'),Output('cyclelife','figure'),Input('input_zz','value'),Input('input_g','value'))
 def update_figure(zz, g):
@@ -464,8 +464,8 @@ def li_thickness(arealcap=3.00):
         paper_bgcolor='rgb(211, 211, 211)',
         title="Areal capacity of Li with respect to its thickness",
         title_x=0.5,
-        xaxis_title="Cycle Number",
-        yaxis_title="Coulmbic Efficiency",
+        xaxis_title="Li Areal Capacity [mAh/cm\u00b2]",
+        yaxis_title="Li Thickness [\u03bcm]",
         font=dict(
             family="arial, monospace",
             size=16,
