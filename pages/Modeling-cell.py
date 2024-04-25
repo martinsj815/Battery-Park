@@ -35,7 +35,8 @@ tab_selected_style = {
 
 tab1 = dbc.Row([
     dcc.Markdown('* Estimation of Cycle Life', style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
-    dcc.Markdown(" This is for estimating cycle life when cells cycle with a specific columbic efficiency each cycles."),
+    dcc.Markdown(" This calculation estimates the cycle life when cell cycles at a specific columbic efficiency each cycle (Option1) or estimates the required coulombic efficiency to achieve achieve a target cycle life (Option2)."),
+    dcc.Markdown(" This calculation assumes that the coulombic efficiency is maintained throughout the entire cycle. This estimation therefore provides an upper bound on cycle life (Option1) and a lower bound on coulombic efficiency (Option2)."),
     dcc.Dropdown({ 'Opt1': 'Option1: Cycle Life','Opt2':'Option2: Required CE'}, value="Opt1",id='Opts', 
                  clearable=False, style={'width':'50%'}),
     html.Div(id="output-container"),
@@ -44,13 +45,14 @@ tab1 = dbc.Row([
     dmc.Divider(size="md", color="grey"),
     html.Br(),
     dcc.Markdown('* Estimation of Li-metal thickness', style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
+    dcc.Markdown(" This calculation estimates the amount of Li deposition or exfoliation during charge/discharge reactions depending on the applied areal current density."),
+    dcc.Markdown(" Note that this is theoretical estimation and calculated by assuming perfectly flat and smooth film of Li. "),
     dbc.Row([
         dbc.Col([
             dbc.Row([
                 html.Div([html.P('Li Areal Capacity [mAh/cm\u00b2]', style={"height": "auto", "margin-bottom": "auto"}),
                 dcc.Input(id="liarealcap", type="number", value='3',step='0.1',style={"margin-bottom":"1em"})]),
                 html.Span(id='thickness_outcome', style={"font-size":"150%", "color":"black"}),
-                dcc.Markdown(" Note that this is theoretical estimation and calculated by assuming perfectly flat and smooth film of Li. ")
 
             ],style={"margin-left":"10px","margin-top":"50px"},
             )
@@ -61,7 +63,7 @@ tab1 = dbc.Row([
             dbc.Row([
                 dcc.Graph(id='thicknessplot', style={"width":"100vh", "height":"50vh","margin-top":"0px"})
             ]),
-        ], width={"size":"6"},xs=12, sm=12, md=10, lg=8, xl=6,
+        ], width={"size":"6"},xs=12, sm=12, md=10, lg=5, xl=6,
         ),
 
     ],),
