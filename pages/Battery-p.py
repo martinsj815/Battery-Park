@@ -297,17 +297,20 @@ layout = html.Div([
                     dbc.Row([
                          dbc.Col([
                          dcc.Markdown('* Cell Interconnect', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
-                         html.Div(('- Cells are typically connected electrically using the busbars via various joining technologies such as laser welding and ultrasonic wire bonding. Interconnect design can vary depending on the cell form factor. The schematics on the right show the single-sided interconnect of the cells.'), 
+                         html.Div(('- Cells are connected electrically using the busbars via various joining technologies such as laser welding and ultrasonic wire bonding. Interconnect design can vary depending on the cell form factor. The schematics on the right show the single-sided interconnect of the cells.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px'}),
                          html.Br(),
-                        ], width={"size": 4},
-                        xs=5, sm=6, md=7, lg=5, xl=4,
+                         html.Div(('- Older Tesla Models 3/S/X use wire bonding while newer Model S Plaid and Model Y use laser welding possibly for robustness of the connection, away from the breaking of the fragile wires that leads to cell failure.'), 
+                                 style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px'}),
+                         html.Br(),
+                        ], width={"size": 5},
+                        xs=5, sm=6, md=7, lg=5, xl=5,
                         ),
                         dbc.Col(
                             [
                             html.Div(html.Img(src='https://www.dropbox.com/scl/fi/7rt7b2kc90oel23u7yeph/Cell-Interconnect.png?rlkey=7wds8k7mwvo4pscqi0g8585qf&st=ydcwny3b&raw=1', style={"width":"70%", "display": "block", "margin": "auto"}), ),
-                            ], width={"size": 8},
-                            xs=4, sm=7, md=7, lg=7, xl=8,
+                            ], width={"size": 7},
+                            xs=4, sm=7, md=7, lg=7, xl=7,
                         ),
                     ],),
                     html.Br(),
