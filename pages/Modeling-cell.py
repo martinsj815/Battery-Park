@@ -55,13 +55,13 @@ tab1 = dbc.Row([
             ],style={"margin-left":"10px","margin-top":"50px"},
             )
             ],width={"size":"6"},
-                xs=12, sm=12, md=10, lg=6, xl=6,
+                xs=12, sm=12, md=10, lg=5, xl=5,
             ),
         dbc.Col([
             dbc.Row([
-                dcc.Graph(id='thicknessplot', style={"width":"120vh", "height":"50vh","margin-top":"0px"})
+                dcc.Graph(id='thicknessplot', style={"width":"100vh", "height":"50vh","margin-top":"0px"})
             ]),
-        ], width={"size":"6"},xs=12, sm=12, md=10, lg=6, xl=6,
+        ], width={"size":"6"},xs=12, sm=12, md=10, lg=8, xl=6,
         ),
 
     ],),
