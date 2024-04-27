@@ -191,33 +191,31 @@ data_election2 = OrderedDict(
 
 dt2 = pd.DataFrame(data_election2)
 
-layout = html.Div([
-                html.Link(rel='stylesheet', href='/assets/table.css'),  
+layout = html.Div([  
             dbc.Row([
-                        dcc.Markdown('- Academic-to-Industry', style={'font-size':'30px', 'font-weight':'bold','margin-bottom':'20px'},),
-                        dbc.Col([                      
+                dbc.Row([
+                    dcc.Markdown('- Academic-to-Industry', style={'font-size':'30px', 'font-weight':'bold','margin-bottom':'20px'},),
+                    dbc.Col([                      
                             dcc.Markdown(('- There is a clear technological gap and lack of the bridge between academic research and industry requirements. Academic research uses the testing parameters and conditions that are way off from those that are adopted in commercial cell manufacturing. Adjusting key metrics including cathode/anode active loading, N/P ratio, and electrolyte amounts to the industrial demand is not the primary target in academia as its focus is not on reducing the cost but, instead, much on materials discovery and cell performance enhancement, which can be realized quite frequently through small cell assembly and testing. For EV battery suppliers and automative OEMs who need to meet requirements/demands on safety, cell energy density and power capability, it is also inevitable to think about the cost and energy consumption for manufacturing and hence are keen on making improvement in those metrics.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
                         ],
-                        width={"size": 7},
-                        xs=9, sm=12, md=12, lg=6, xl=7
+                    width={"size": 7},
+                    xs=9, sm=12, md=12, lg=6, xl=7
+                    ),
+                    dbc.Col([
+                        html.Div( html.Img(src='https://www.dropbox.com/scl/fi/rpitq4tea2jdczua3un9b/industry_academia.png?rlkey=wxshe0dl8i9uhxlypfxuu4j3l&raw=1', style={"width":"100%", "display":"block", "margin-bottom":"20px"}), 
                         ),
-                        dbc.Col([
-                            html.Div( html.Img(src='https://www.dropbox.com/scl/fi/rpitq4tea2jdczua3un9b/industry_academia.png?rlkey=wxshe0dl8i9uhxlypfxuu4j3l&raw=1', style={"width":"100%", "display":"block", "margin-bottom":"20px"}), 
-                                 ),
                         ], width={"size": 5},
                         xs=7, sm=10, md=8, lg=6, xl=5
-                        ),
-                    ], style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},
-                    ),    
-            dbc.Row([
-                dbc.Col([ 
+                    ),   
                     dcc.Markdown(('- A table below shows how different are the research lab test metrics from those in the industry setting. The columns highlighted in pink/blue are those from the labs/industry.'), 
-                                 style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),                  
-                    html.Br(),
-                    html.Br(),
-                    dcc.Markdown(('- Table of comparison between cells tested in the lab scale vs manufactured in the industry'), 
+                            style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),      
+                ]),             
+                html.Br(),
+                html.Br(),
+                dcc.Markdown(('- Table of comparison between cells tested in the lab scale vs manufactured in the industry'), 
                                  style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'20px', 'font-weight':'bold'}),      
+                dbc.Row([
                     dash_table.DataTable(
                                 style_cell={'font-family': 'Arial', 'font-size': '16px', 'text-align':'center', 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px', 'margin-top':'10px', 'padding':2}, 
                                 markdown_options={"html": True},
@@ -270,17 +268,19 @@ layout = html.Div([
                                 },
                                 data=dt.to_dict('records'),
                                 columns=[{'id': c, 'name': c,"presentation": "markdown"} for c in dt.columns],
-                        ),
-                        html.Br(),
-                        html.Br(),
-                        dcc.Markdown(('- As shown in the table above, in the research lab, a thinner cathode is often preferred over the thicker one (especially when uncalendared) for coin cell tests to display high capacity with good reversibility by preventing possible polarization and minimizing the degree of Li stripping and deposition.  Further, putting an excessive amount of electrolyte during the coin cell assembly translates to good cycle performance without any concern of electrolyte drying that leads to rapid capacity decay. Although these measures make the data more appealing for publication, these are far from being practical in the industrial perspective owing to the loss of cell energy density.'), 
+                    ),
+                ], style={'margin-bottom':'20px'},
+                ),
+                html.Br(),
+                html.Br(),
+                dcc.Markdown(('- As shown in the table above, in the research lab, a thinner cathode is often preferred over the thicker one (especially when uncalendared) for coin cell tests to display high capacity with good reversibility by preventing possible polarization and minimizing the degree of Li stripping and deposition.  Further, putting an excessive amount of electrolyte during the coin cell assembly translates to good cycle performance without any concern of electrolyte drying that leads to rapid capacity decay. Although these measures make the data more appealing for publication, these are far from being practical in the industrial perspective owing to the loss of cell energy density.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),    
-                        dcc.Markdown(('* The table below reveals that increasing the cathode coating, reducing Li thickness, and reducing the electrolyte amount is detrimental to capacity retention of the cell.'), 
+                dcc.Markdown(('* The table below reveals that increasing the cathode coating, reducing Li thickness, and reducing the electrolyte amount is detrimental to capacity retention of the cell.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}), 
-                        html.Br(),
-                        dcc.Markdown(('- Influence of metrics on the coin cell (Li/NCM622) cycle performance'), 
+                html.Br(),
+                dcc.Markdown(('- Influence of metrics on the coin cell (Li/NCM622) cycle performance'), 
                                  style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'20px', 'font-weight':'bold'}),                                   
-                        dash_table.DataTable(
+                dash_table.DataTable(
                                 style_cell={'font-family': 'Arial', 'font-size': '16px', 'text-align':'center', 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px', 'margin-top':'10px', 'padding':2}, 
                                 markdown_options={"html": True},
                                 style_table={'overflowX': 'auto'},
@@ -332,35 +332,39 @@ layout = html.Div([
                                 },
                                 data=dt2.to_dict('records'),
                                 columns=[{'id': d, 'name': d,"presentation": "markdown"} for d in dt2.columns],
-                        ),
-                        dcc.Markdown(('* The data from the following paper: Shuru Chen, et al., "Critical Parameters for Evaluating Coin Cells and Pouch Cells of Rechargeale Li-Metal Batteries", 3, 1094 (2019)'), 
+                            ),
+                dcc.Markdown(('* The data from the following paper: Shuru Chen, et al., "Critical Parameters for Evaluating Coin Cells and Pouch Cells of Rechargeale Li-Metal Batteries", 3, 1094 (2019)'), 
                                  style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'12px', 'font-style':'italic'}),    
-                        html.Br(),                       
-                        html.Br(),
-                        dcc.Markdown(('- Will finding the new cathode material be the solution?'), 
+                html.Br(),                       
+                html.Br(),
+                dcc.Markdown(('- Will finding the new cathode material be the solution?'), 
                                  style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'20px', 'font-weight':'bold'}),  
-                        html.Br(),
-                        dcc.Markdown(('- One metric to improve the cell performance is increasing the cathode areal capacity. Apparently, simply increasing the coathing thickness will not do the job due to an increase in polarization and low material utilization. Hence, finding a new cathode system with high specific capacity can be desirable, but this cannot easily be realized.'), 
+                html.Br(),
+                dcc.Markdown(('- One metric to improve the cell performance is increasing the cathode areal capacity. Apparently, simply increasing the coathing thickness will not do the job due to an increase in polarization and low material utilization. Hence, finding a new cathode system with high specific capacity can be desirable, but this cannot easily be realized.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),    
-                        dbc.Row([
-                           dbc.Col([                      
+                dbc.Row([
+                    dbc.Col([                      
                                html.Div( html.Img(src='https://www.dropbox.com/scl/fi/op512yfz60irl6hc1te6f/LFPvsNCA.png?rlkey=4hcmb8tdnwq73lyfy74jfy0em&st=x4ql2qx7&raw=1', style={"width":"100%", "display":"block", "margin-bottom":"20px"}), 
-                                ),
-                            ],
+                        ),
+                        ],
                             width={"size": 5},
                             xs=9, sm=12, md=12, lg=6, xl=5
                             ),
-                            dbc.Col([
+                    dbc.Col([
                                  dcc.Markdown(('- The perspective article by Frith et al., shows nicely the graphical comparison of performance between the cells consisting of NCA/Graphite-SiOx and LFP/Graphite from theoretical estimation to the pack assembly level. (see the graph on the left.) At the theory level, the differences between the cells in both gravimetric (699 Wh/kg vs. 373 Wh/kg) and volumetric energy densities (2391 Wh/L vs. 1100 Wh/L) are huge; NCA/Graphite-SiOx outperforms LFP/Graphite by almost double. However, the margin is gradually reduced during various stages of implementation- ultimately the energy densities are almost the same as each other after considering reversibility, lifetime, proportion of inactive components, and cell-to-pack technology.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
+                                 html.Br(),
+                                 dcc.Markdown(('**Reference**: James T Frith, et al., "A non-academic perspective on the future of lithium-based batteries",_**Nature Commun.**_, 14, 420 (2023)'), 
+                                 style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),                                 
                             ], width={"size": 7},
                             xs=7, sm=12, md=12, lg=6, xl=7
                             ),
-                        ]),                      
-                        ],style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},
-                width={"size": 16},
-                xs=5, sm=10, md=10, lg=10, xl=16,
-                ), 
-                ]),
-                html.Div(id='Options-content'),
-        ])
+                        ]
+                ),                      
+            ],
+            style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},
+        ),
+        html.Div(id='Options-content'),
+        ],
+    )
+    

@@ -23,8 +23,8 @@ data_election = OrderedDict(
                 "Lithium Manganese Oxide",
                 "Lithium Iron Phosphate (LFP)",
                 "Lithium Nickel Cobalt Manganese Oxide (NCM)",
-                "",
-                "",
+                "Lithium Nickel Cobalt Manganese Oxide (NCM)",
+                "Lithium Nickel Cobalt Manganese Oxide (NCM)",
                 "Lithium Nickel Cobalt Aluminum Oxide (NCA)",
             ], 
         ),
@@ -71,8 +71,8 @@ data_election = OrderedDict(
                 "4.1",
                 "3.4",
                 "3.7",
-                "",
-                "",
+                "3.7",
+                "3.7",
                 "3.7",
             ],
         ),
@@ -182,14 +182,14 @@ layout = html.Div([
                     dmc.Divider(size="md", color="grey", style={"width":"100%", "display":"block", "margin":"auto"}),
                     html.Br(),
                     dbc.Row([
+                        dcc.Markdown('* Cathode Materials', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),      
+                        html.Br(),
                         dbc.Col([
-                            dcc.Markdown('* Cathode Materials', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),      
-                            html.Br(),
                             dcc.Markdown(("* Since the voltage is dictated by the redox energy difference between the cathode and the anode, it is imperative to have the cathode to reach the lower energy band of a metal ion at the higher oxidation state to increase the cell voltage."), dangerously_allow_html=True,
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),   
                             dcc.Markdown(("* The use of transition metal oxide instead of sulfide (e.g. TiS<sub>2</sub>) enables an increase in cell voltage by accessing the energy bands lying low in the energy band diagram as the O<sup>2-</sup> 2p band lies at a lower energy below a S<sup>2-</sup> 3p band."), dangerously_allow_html=True,
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),          
-                            dcc.Markdown(("* Typical oxides used for the cathode have spinel, layered, or olivine structures that undergo Li (de-)intercalation."), dangerously_allow_html=True,
+                            dcc.Markdown(("* Typical transition metal oxides used for the cathode have spinel, layered, or olivine structures that undergo Li (de-)intercalation."), dangerously_allow_html=True,
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}), 
                         ], width={"size": 7},
                         xs=6, sm=10, md=10, lg=7, xl=7
@@ -203,11 +203,12 @@ layout = html.Div([
                         ),   
                     ]),    
                     html.Br(),    
-                    dbc.Row([
-                        dbc.Col([
+                    #dbc.Row([
+                    #    dbc.Col([
                             dash_table.DataTable(
-                                style_cell={'font-family': 'Arial', 'font-size': '16px', 'text-align':'center', 'margin-top':'10px', 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px', 'padding':5}, 
+                                style_cell={'font-family': 'Arial', 'font-size': '16px', 'text-align':'auto', 'margin-top':'auto', 'minWidth': '160px', 'width': '160px', 'maxWidth': '160px', 'padding':5}, 
                                 markdown_options={"html": True},
+                                #virtualization=True,
                                 style_table={'overflowX': 'auto'},
                                 style_data={
                                         'whiteSpace': 'normal',
@@ -219,7 +220,7 @@ layout = html.Div([
                                 style_data_conditional=[
                                 {
                                     'if': {'column_id': 'Cathode Name'},
-                                    'fontWeight': 'bold', 
+                                    'fontWeight': 'bold', 'merge_duplicate_columns':'True',
                                 },
                                 ],
                                 style_header={
@@ -233,11 +234,11 @@ layout = html.Div([
                                 data=dt.to_dict('records'),
                                 columns=[{'id': c, 'name': c,"presentation": "markdown"} for c in dt.columns],
                         ),
-                        ],  
-                        width={"size": 16},
-                        xs=5, sm=10, md=10, lg=10, xl=16,
-                        ),
-                    ]),
+                    #    ],  
+                    #    width={"size": 16},
+                    #    xs=5, sm=10, md=10, lg=10, xl=16,
+                    #    ),
+                    #]),
                     html.Br(),
                     dbc.Row([
                         dbc.Col([
@@ -485,8 +486,9 @@ layout = html.Div([
                     ],
                     ),
                 ],
-                style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},
                 ),
-             ],),
+             ],
+             style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},
+             ),
              html.Div(id='Options-content'),
     ])

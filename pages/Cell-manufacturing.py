@@ -48,10 +48,13 @@ layout = html.Div([
                         dbc.Row([
                                 dcc.Markdown(('- Slurry Mixing'), style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),
                                 dbc.Col([
-                                        html.H5('- A typical slurry consists of the cathode (or anode) active material, conductive additive, and binder. A commonly used conductive additive is carbon black. An organic binder is usually a dielectric polymer like polyvinylidene fluoride (PVDF) with a wide good electrochemical stability window. As a binder solvent, N-methyl-2-pyrrolidone (NMP) is used to dissolve PVDF. Water-based binders such as carboxymethylcellulose (CMC) and styrene butadiene rubber (SBR) are considered as alternatives for cost-efficient and non-toxic processing.'),
-                                        html.H5('- There are hydrodynamic shear mixing, ball-milling, and ultrasonic homogenization. Shear mixers (e.g. planetary mixers) are the most common for the industrial use. For mixing, sequence and additive properties (e.g. adhesion) are important.'),
-                                        html.H5('- Since organic solvent drying is time-consuming and costly and commonly used NMP is toxic, water-based binders such as cellulose are proposed despite water not being compatible with many cathodes. Hence, increasing slurry concentration and even dry mixing are considered for improved cost, time, and energy efficiency later for coating/drying.'),
-                                        html.H5('- Rheology of the slurry (e.g. viscosity, flow yield stress, wettability) is to be considered for slurry optimization, especially for later coating different thickness. Slurry viscosity can be determined by factors such as total solid loading, active material size and relative amount, binder molecular weight, etc.')
+                                        html.Div('- A typical slurry consists of the cathode (or anode) active material, conductive additive, and binder. A commonly used conductive additive is carbon black. An organic binder is usually a dielectric polymer like polyvinylidene fluoride (PVDF) with a wide good electrochemical stability window. As a binder solvent, N-methyl-2-pyrrolidone (NMP) is used to dissolve PVDF. Water-based binders such as carboxymethylcellulose (CMC) and styrene butadiene rubber (SBR) are considered as alternatives for cost-efficient and non-toxic processing.', style={'textAlign':'justify', 'font-size':'18px'}),
+                                        html.Br(),
+                                        html.Div('- There are hydrodynamic shear mixing, ball-milling, and ultrasonic homogenization. Shear mixers (e.g. planetary mixers) are the most common for the industrial use. For mixing, sequence and additive properties (e.g. adhesion) are important.', style={'textAlign':'justify', 'font-size':'18px'}),
+                                        html.Br(),
+                                        html.Div('- Since organic solvent drying is time-consuming and costly and commonly used NMP is toxic, water-based binders such as cellulose are proposed despite water not being compatible with many cathodes. Hence, increasing slurry concentration and even dry mixing are considered for improved cost, time, and energy efficiency later for coating/drying.', style={'textAlign':'justify', 'font-size':'18px'}),
+                                        html.Br(),
+                                        html.Div('- Rheology of the slurry (e.g. viscosity, flow yield stress, wettability) is to be considered for slurry optimization, especially for later coating different thickness. Slurry viscosity can be determined by factors such as total solid loading, active material size and relative amount, binder molecular weight, etc.', style={'textAlign':'justify', 'font-size':'18px'}),
                                         ], width={"size": 8}, style={"textAlign":"justify"},
                                         xs=16, sm=16, md=10, lg=8, xl=8
                                         ),
@@ -69,22 +72,27 @@ layout = html.Div([
                         dbc.Row([
                                 dcc.Markdown(('- Coating'), style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),    
                                 dbc.Col([
-                                        html.H5('- Cathode materials are coated onto an aluminum current collector while the anode materials are coated onto a copper electrode.'),
-                                         html.H5('- It is desirable that the surface tension of the mixed slurry matches with the surface energy of the current collector for proper wetting and coating.'),
-                                        html.H5('- Solvent-based coating techqniues are the following:'),
+                                        html.Div('- Cathode materials are coated onto an aluminum current collector while the anode materials are coated onto a copper electrode.', style={'textAlign':'justify', 'font-size':'18px'}),
+                                        html.Br(),
+                                        html.Div('- It is desirable that the surface tension of the mixed slurry matches with the surface energy of the current collector for proper wetting and coating.', style={'textAlign':'justify', 'font-size':'18px'}),
+                                        html.Br(),
+                                        html.Div('- Solvent-based coating techqniues are the following:', style={'textAlign':'justify', 'font-size':'18px'}),
+                                        html.Br(),
                                         dcc.Markdown('* <b>Doctor blade coating</b>: Moving the doctor blade along the surface to even out the thickness and ensure that the active material is evenly distributed. It is most commonly used at the lab-scale for research.', dangerously_allow_html=True,
-                                                     style={'textAlign':'justify', 'font-size':'20px', 'margin-left':'20px', 'line-height':'1.2'}),
+                                                     style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'20px', 'line-height':'1.2'}),
                                         dcc.Markdown('* <b>Slot die coating</b>: Dispersing the slurry pushed through a narrow and adjustable slot-die onto the current collector. It is most widely used at the industrial level. Changing flow rate requires a change in pumping with good pressure drop control, which can be done by adjusting the slot gap using a thicker shim. Features are:', dangerously_allow_html=True,
-                                                     style={'textAlign':'justify', 'font-size':'20px', 'margin-left':'20px', 'line-height':'1.2'}),                                                     
+                                                     style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'20px', 'line-height':'1.2'}),                                                     
                                         dcc.Markdown('<b>a.</b> Advanced approach for enhanced thickness control, reproducibility, and flexibility \n\n<b>b.</b>Capable of coating multiple layers of different materials simultaneously and deposition of gradient or patterned coatings \n\n<b>c.</b> Key parameters: Slurry flow rate, pressure, temperature, shear, substrate speed, and distance from slot', dangerously_allow_html=True,
-                                                     style={'textAlign':'justify', 'font-size':'20px', 'margin-left':'60px', 'line-height':'1.2'}),                                                    
-                                        html.H5('- Solvent-free coating is under active investigation:'),
+                                                     style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'60px', 'line-height':'1.2'}),                                                    
+                                        html.Br(),
+                                        html.Div('- Solvent-free coating is under active investigation:', style={'textAlign':'justify', 'font-size':'18px'}),
+                                        html.Br(),
                                         dcc.Markdown('* <b>Maxwell-type</b> (developed by Maxwell Technologies): Include fibrillating that involves hot rolling and calendaring. (Narrow binder choice)', dangerously_allow_html=True, 
-                                                     style={'textAlign':'justify', 'font-size':'20px', 'margin-left':'20px', 'line-height':'1.2'}),
+                                                     style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'20px', 'line-height':'1.2'}),
                                         dcc.Markdown(('* <b>Electrostatic spraying</b>: Spraying dry mixture on a electrically grounded foil using an electrostatically charged gun. Followed by hot rolling for rigid adhesion with a current collector. (Wider binder choice)'), dangerously_allow_html=True, 
-                                                     style={'textAlign':'justify', 'font-size':'20px', 'margin-left':'20px', 'line-height':'1.2'}),
+                                                     style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'20px', 'line-height':'1.2'}),
                                         dcc.Markdown(('* <b>Hot pressing & melting</b>: Applicable to solid-state polymer electrolytes.'), dangerously_allow_html=True, 
-                                                     style={'textAlign':'justify', 'font-size':'20px', 'margin-left':'20px', 'line-height':'1.2'}), 
+                                                     style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'20px', 'line-height':'1.2'}), 
                                         ], width={"size": 8},
                                         xs=16, sm=16, md=10, lg=8, xl=8
                                         ), 
@@ -106,9 +114,9 @@ layout = html.Div([
                         dbc.Row([
                                 dcc.Markdown(('- Drying'), style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),    
                                 dbc.Col([
-                                        html.H5('- A wet electrode then dried for solvent evaporation. NMP solvent is recovered by a condenser and distillation. '),
-                                        html.H5('- The wet slurry drying goes through the following - Slurry (Aggregation), Semi-slurry (Firm consolidation), Solid with solvent residue (Film shrinkage and formation of a condensed layer), and Solid (Pore empyting, segregation and bonding, formation of a compacted solid film coating) before full drying.'),
-                                        html.H5('- A slurry mixed with water-based binder may take a longer time to dry than that with traditional NMP-based slurry despite being cost and time efficient for not having to go through the solvent recovery step.')
+                                        html.Div('- A wet electrode then dried for solvent evaporation. NMP solvent is recovered by a condenser and distillation.', style={'textAlign':'justify', 'font-size':'18px'}),
+                                        html.Div('- The wet slurry drying goes through the following - Slurry (Aggregation), Semi-slurry (Firm consolidation), Solid with solvent residue (Film shrinkage and formation of a condensed layer), and Solid (Pore empyting, segregation and bonding, formation of a compacted solid film coating) before full drying.', style={'textAlign':'justify', 'font-size':'18px'}),
+                                        html.Div('- A slurry mixed with water-based binder may take a longer time to dry than that with traditional NMP-based slurry despite being cost and time efficient for not having to go through the solvent recovery step.', style={'textAlign':'justify', 'font-size':'18px'})
                                         ], width={"size": 8},
                                         xs=16, sm=16, md=10, lg=8, xl=8
                                         ), 
@@ -127,8 +135,8 @@ layout = html.Div([
                         dbc.Row([
                                 dcc.Markdown(('- Calendaring'), style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),    
                                 dbc.Col([
-                                        html.H5('- Process of smoothing and compressing a material during production by passing a single continuous sheet in between a pair of rolls.'),                                                 
-                                        html.H5('- Reduces electrode porosity and alters pore microstructure with increased tortuosity. Increases the bonding strength between the electrode and the current collector. Improved particle contacts lead to energy and power density enhancement.'),
+                                        html.Div('- Process of smoothing and compressing a material during production by passing a single continuous sheet in between a pair of rolls.', style={'textAlign':'justify', 'font-size':'18px'}),                                                 
+                                        html.Div('- Reduces electrode porosity and alters pore microstructure with increased tortuosity. Increases the bonding strength between the electrode and the current collector. Improved particle contacts lead to energy and power density enhancement.', style={'textAlign':'justify', 'font-size':'18px'}),
                                         ], width={"size": 8},
                                         xs=16, sm=16, md=10, lg=8, xl=8
                                         ), 
@@ -147,8 +155,8 @@ layout = html.Div([
                         dbc.Row([
                                 dcc.Markdown(('- Slitting'), style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),    
                                 dbc.Col([
-                                        html.H5('-	Conventional process of cutting the large, coated film is by using a blade or chisel.'),                                                 
-                                        html.H5('-	Laser cutting with good power and speed control is widely applied for improved shape and edge quality of the electrode.'),
+                                        html.Div('- Conventional process of cutting the large, coated film is by using a blade or chisel.', style={'textAlign':'justify', 'font-size':'18px'}),                                                 
+                                        html.Div('- Laser cutting with good power and speed control is widely applied for improved shape and edge quality of the electrode.', style={'textAlign':'justify', 'font-size':'18px'}),
                                         ], width={"size": 8},
                                         xs=16, sm=16, md=10, lg=8, xl=8
                                         ), 
@@ -205,8 +213,8 @@ layout = html.Div([
                         dbc.Row([
                                 dcc.Markdown(('- Enclosing'), style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),    
                                 dbc.Col([
-                                        html.H5('-Enclosing includes packaging and electrolyte filling. The filling process is done in vacuum through the desired pressure level using a high-precision injection device and is followed by wetting.'),                                                 
-                                        html.H5('-Electrolyte wetting is influenced by electrode surface energy and morphology (e.g. pore structures), electrolyte viscosity and surface tension, etc.'),    
+                                        html.Div('-Enclosing includes packaging and electrolyte filling. The filling process is done in vacuum through the desired pressure level using a high-precision injection device and is followed by wetting.', style={'textAlign':'justify', 'font-size':'18px'}),                                                 
+                                        html.Div('-Electrolyte wetting is influenced by electrode surface energy and morphology (e.g. pore structures), electrolyte viscosity and surface tension, etc.', style={'textAlign':'justify', 'font-size':'18px'}),    
                                         ], width={"size": 8},
                                         xs=16, sm=16, md=10, lg=8, xl=8
                                         ), 
@@ -225,8 +233,8 @@ layout = html.Div([
                         dbc.Row([
                                 dcc.Markdown(('- Formation/Aging'), style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),    
                                 dbc.Col([
-                                        html.H5('-Formation of the dense and robust SEI layer is needed for good battery performance without over-consumption of the electrolyte, especially for the graphite anode with intercalation potential lower than the reduction potential of electrolyte. The formation and aging process can be delicate and time-consuming as the amount of electrolyte relative to the materials that it covers; temperature, and pressure need to be controlled.'),
-                                        html.H5('-Gases generated from formation cycles are released before final sealing or re-sealing.'),                                                 
+                                        html.Div('-Formation of the dense and robust SEI layer is needed for good battery performance without over-consumption of the electrolyte, especially for the graphite anode with intercalation potential lower than the reduction potential of electrolyte. The formation and aging process can be delicate and time-consuming as the amount of electrolyte relative to the materials that it covers; temperature, and pressure need to be controlled.', style={'textAlign':'justify', 'font-size':'18px'}),
+                                        html.Div('-Gases generated from formation cycles are released before final sealing or re-sealing.', style={'textAlign':'justify', 'font-size':'18px'}),                                                 
                                         ], width={"size": 8},
                                         xs=16, sm=16, md=10, lg=8, xl=8
                                         ), 
@@ -244,9 +252,9 @@ layout = html.Div([
                         html.Br(),
                         dbc.Row([
                                 dcc.Markdown(('- References'), style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),  
-                                dcc.Markdown(('Jianlin Li, et al., "From Materials to Cell: State-of-the-Art and Prospective Technologies for Lithium-Ion Battery Electrode Processing", _**Chem. Review**_, 122, 903 (2022)'), style={'textAlign':'justify', 'font-size':'20px'}),                                                                                 
-                                dcc.Markdown(('Yangtao Liu, et al., "Current and future lithium-ion battery manufacturing", _**iScience**_, 24, 102332 (2021)'), style={'textAlign':'justify', 'font-size':'20px'}),                                                                                      
-                                dcc.Markdown(('W. Blake Hawley, et al., "Electrode Manufacturing for Lithium-Ion Batteries - Analysis of Current and Next Generation Processing", _**J. Energy Storage**_, 25, 100862 (2019)'), style={'textAlign':'justify', 'font-size':'20px'}),                                                                                     
+                                dcc.Markdown(('Jianlin Li, et al., "From Materials to Cell: State-of-the-Art and Prospective Technologies for Lithium-Ion Battery Electrode Processing", _**Chem. Review**_, 122, 903 (2022)'), style={'textAlign':'justify', 'font-size':'18px'}),                                                                                 
+                                dcc.Markdown(('Yangtao Liu, et al., "Current and future lithium-ion battery manufacturing", _**iScience**_, 24, 102332 (2021)'), style={'textAlign':'justify', 'font-size':'18px'}),                                                                                      
+                                dcc.Markdown(('W. Blake Hawley, et al., "Electrode Manufacturing for Lithium-Ion Batteries - Analysis of Current and Next Generation Processing", _**J. Energy Storage**_, 25, 100862 (2019)'), style={'textAlign':'justify', 'font-size':'18px'}),                                                                                     
                         ]),
                         html.Br(),
                         dmc.Divider(size="md", color="grey"),

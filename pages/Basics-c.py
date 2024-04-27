@@ -104,12 +104,12 @@ layout = html.Div([
                     dbc.Row([
                         dcc.Markdown('* Electrochemical Cell', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
                         dbc.Col([
-                         html.H5(('- A cell is the smallest building unit of the battery. Main constituents are cathode and anode that are immersed in electrolyte and undergo reduction/oxidation. Cations migrate inside the electrolyte while electrons move through the external load to do the work.'), 
-                                 style={'textAlign':'justify', 'margin-left':'20px'}),
-                         html.H5(('- When a cell is discharged, cations and electrons from the negative electrode move towards the positive electrode, where the reduction takes place (while the negative electrode is oxidized). Different from the case of primary batteries, this process can be reversed through charging in secondary rechargeable batteries.'), 
-                                 style={'textAlign':'justify', 'margin-left':'20px'}),
-                         html.H5(('- Cells also include the separator that isolate the positive and negative electrodes to prevent the electron flow and permit only the ion flow and the current collectors - metal foils where the electrodes are attached and that conduct electrical current to the external circuit.'), 
-                                 style={'textAlign':'justify', 'margin-left':'20px'}),
+                         html.Div(('- A cell is the smallest building unit of the battery. Main constituents are cathode and anode that are immersed in electrolyte and undergo reduction/oxidation. Cations migrate inside the electrolyte while electrons move through the external load to do the work.'), 
+                                 style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px'}),
+                         html.Div(('- When a cell is discharged, cations and electrons from the negative electrode move towards the positive electrode, where the reduction takes place (while the negative electrode is oxidized). Different from the case of primary batteries, this process can be reversed through charging in secondary rechargeable batteries.'), 
+                                 style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px'}),
+                         html.Div(('- Cells also include the separator that isolate the positive and negative electrodes to prevent the electron flow and permit only the ion flow and the current collectors - metal foils where the electrodes are attached and that conduct electrical current to the external circuit.'), 
+                                 style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px'}),
                         ], width={"size": 7},
                         xs=7, sm=10, md=10, lg=7, xl=7
                         ),
@@ -135,10 +135,10 @@ layout = html.Div([
                                 dbc.Col([
                                     html.H5(('1. Coin Cell'), 
                                     style={'textAlign':'justify', 'font-weight':'bold', 'margin-left':'30px'}),       
-                                    html.H5(('- Coin cells are most commonly used in academic research and for the small consumer electronics parts such as watches and calculators. The electrodes divided by the separator are sealed inside the can with its top and bottom electrically isolated by the gasket. Coin cells have the dimension designation - 20xx, which means 20mm diameter x.x mm height. For example, CR2016 is 20mm in diameter and 1.6 mm in height.'), 
-                                    style={'textAlign':'justify', 'margin-left':'50px'}),
-                                    html.H5(('- Electrode thickness, spacer thickness, parts alignment are important for controlling both internal and external assembling pressure and acquiring good data with minimum cell-to-cell difference.'), 
-                                    style={'textAlign':'justify', 'margin-left':'50px'}),
+                                    html.Div(('- Coin cells are most commonly used in academic research and for the small consumer electronics parts such as watches and calculators. The electrodes divided by the separator are sealed inside the can with its top and bottom electrically isolated by the gasket. Coin cells have the dimension designation - 20xx, which means 20mm diameter x.x mm height. For example, CR2016 is 20mm in diameter and 1.6 mm in height.'), 
+                                    style={'textAlign':'justify', 'margin-left':'50px', 'font-size':'18px'}),
+                                    html.Div(('- Electrode thickness, spacer thickness, parts alignment are important for controlling both internal and external assembling pressure and acquiring good data with minimum cell-to-cell difference.'), 
+                                    style={'textAlign':'justify', 'margin-left':'50px', 'font-size':'18px'}),
                                 ], width={"size": 8},
                                 xs=12, sm=10, md=10, lg=8, xl=8
                                 ),
@@ -156,10 +156,10 @@ layout = html.Div([
                                 dbc.Col([
                                     html.H5(('2. Cylindrical Cell'), 
                                         style={'textAlign':'justify', 'font-weight':'bold', 'margin-left':'30px'}),       
-                                    html.H5(('- In a cylindrical cell, anode, cathode, and separator sheets are rolled in spiral and packed in a cylindrical can. Typically, this cell has a lower casing designed for a negative terminal and a top protruded cap used for a positive terminal. Also included are +/- tabs, PTC elements, protecting against current surge/shorting, and gasket. These types of cells are well produced to be also actively utilized in electric vehicles.'), 
-                                        style={'textAlign':'justify', 'margin-left':'50px'}),
-                                    html.H5(('- The three widely used dimensions for Li-ion battery cylindrical cells are 18650, 21700, and 4680, with which the first two digits correspond to the cell diameter and the next two digits correspond to its height (i.e. 18650 cell is 18 mm in diameter and 65 mm long.). A 4680 cell has the highest max capacity ~25,000 mAh and is currently used by Tesla in various car models including Model Y and Cybertrucks.'), 
-                                        style={'textAlign':'justify', 'margin-left':'50px'}),
+                                    html.Div(('- In a cylindrical cell, anode, cathode, and separator sheets are rolled in spiral and packed in a cylindrical can. Typically, this cell has a lower casing designed for a negative terminal and a top protruded cap used for a positive terminal. Also included are +/- tabs, CID and PTC elements, to protect against current surge/shorting, and gasket. These types of cells are well produced to be also actively utilized in electric vehicles.'), 
+                                        style={'textAlign':'justify', 'margin-left':'50px', 'font-size':'18px'}),
+                                    html.Div(('- The three widely used dimensions for Li-ion battery cylindrical cells are 18650, 21700, and 4680, with which the first two digits correspond to the cell diameter and the next two digits correspond to its height (i.e. 18650 cell is 18 mm in diameter and 65 mm long.). A 4680 cell has the highest max capacity ~25,000 mAh and is currently used by Tesla in various car models including Model Y and Cybertrucks.'), 
+                                        style={'textAlign':'justify', 'margin-left':'50px', 'font-size':'18px'}),
                                 ], width={"size": 8},
                                 xs=12, sm=10, md=10, lg=8, xl=8
                                 ),
@@ -175,6 +175,7 @@ layout = html.Div([
                                     style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'20px', 'font-weight':'bold'}),
                             dash_table.DataTable(
                                 markdown_options={"html": True},
+                                style_table={'overflowX': 'auto'},
                                 style_cell={'font-family': 'Arial', 'font-size': '18px', 'text-align':'left', 'margin-top':'10px'}, 
                                 style_data={
                                         'whiteSpace': 'break-spaces',
@@ -210,8 +211,8 @@ layout = html.Div([
                                 dbc.Col([
                                     html.H5(('3. Prismatic Cell'), 
                                             style={'textAlign':'justify', 'font-weight':'bold', 'margin-left':'30px'}),       
-                                    html.H5(('- Prismatic cells consist of the anode, cathode, and separator sheets that are rolled/pressed (“jelly-rolled”) or stacked to be placed inside the metal cuboid casing. These cells are used in many small (i.e. cell phone & laptop) to larger device and electric vehicle applications.'), 
-                                            style={'textAlign':'justify', 'margin-left':'50px'}),
+                                    html.Div(('- Prismatic cells consist of the anode, cathode, and separator sheets that are rolled/pressed (“jelly-rolled”) or stacked to be placed inside the metal cuboid casing. These cells are used in many small (i.e. cell phone & laptop) to larger device and electric vehicle applications.'), 
+                                            style={'textAlign':'justify', 'margin-left':'50px', 'font-size':'18px'}),
                                 ], width={"size": 8},
                                 xs=12, sm=10, md=10, lg=8, xl=8
                                 ),
@@ -229,8 +230,8 @@ layout = html.Div([
                                 dbc.Col([
                                     html.H5(('4. Pouch Cell'), 
                                         style={'textAlign':'justify', 'font-weight':'bold', 'margin-left':'30px'}),       
-                                    html.H5(('- A pouch cell uses a flexible aluminum-coated foil for sealed enclosing of cathode, anode and separator layers that are stacked. Tabs are welded outside the cell for the electron transport. Since there is no rigid outside body casing, enough space should be given inside the cell in preparation for swelling during electrochemical cycling. Pouch cells are used in a wide variety of applications including consumer electronics and electric vehicles owing to their good adaptability, energy density, and lightweight.'), 
-                                        style={'textAlign':'justify', 'margin-left':'50px'}),
+                                    html.Div(('- A pouch cell uses a flexible aluminum-coated foil for sealed enclosing of cathode, anode and separator layers that are stacked. Tabs are welded outside the cell for the electron transport. Since there is no rigid outside body casing, enough space should be given inside the cell in preparation for swelling during electrochemical cycling. Pouch cells are used in a wide variety of applications including consumer electronics and electric vehicles owing to their good adaptability, energy density, and lightweight.'), 
+                                        style={'textAlign':'justify', 'margin-left':'50px', 'font-size':'18px'}),
                                 ], width={"size": 8},
                                 xs=12, sm=10, md=10, lg=8, xl=8
                                 ),
@@ -248,6 +249,7 @@ layout = html.Div([
                         dcc.Markdown('* Comparing Cell Formats (for EV Batteries)', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold', 'margin-bottom':'40px'}),
                         dash_table.DataTable(
                                 markdown_options={"html": True},
+                                style_table={'overflowX': 'auto'},
                                 style_cell={'font-family': 'Arial', 'font-size': '18px', 'text-align':'left', 'margin-top':'10px'}, 
                                 style_data={
                                         'whiteSpace': 'break-spaces',
@@ -280,8 +282,10 @@ layout = html.Div([
                         ), 
                     ]),
                     html.Br(),
-                ],style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},),
-             ],),
+                ],),
+             ],
+             style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},
+             ),
              html.Div(id='Options-content'),
     ])
 

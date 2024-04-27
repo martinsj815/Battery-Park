@@ -33,21 +33,24 @@ tab_selected_style = {
 
 
 
-tab1 = dbc.Row([
+tab1 = dbc.Container([
+    dbc.Row([
     dcc.Markdown('* Estimation of Cycle Life', style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
     dcc.Markdown(" This calculation estimates the cycle life when cell cycles at a specific columbic efficiency each cycle (Option1) or estimates the required coulombic efficiency to achieve achieve a target cycle life (Option2)."),
     dcc.Markdown(" This calculation assumes that the coulombic efficiency is maintained throughout the entire cycle. This estimation therefore provides an upper bound on cycle life (Option1) and a lower bound on coulombic efficiency (Option2)."),
     dcc.Dropdown({ 'Opt1': 'Option1: Cycle Life','Opt2':'Option2: Required CE'}, value="Opt1",id='Opts', 
                  clearable=False, style={'width':'50%'}),
     html.Div(id="output-container"),
-    html.Br(),
+    ],
+    style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},
+    ),
     html.Br(),
     dmc.Divider(size="md", color="grey"),
     html.Br(),
-    dcc.Markdown('* Estimation of Li-metal thickness', style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
-    dcc.Markdown(" This calculation estimates the amount of Li deposition or exfoliation during charge/discharge reactions depending on the applied areal current density."),
-    dcc.Markdown(" Note that this is theoretical estimation and calculated by assuming perfectly flat and smooth film of Li. "),
     dbc.Row([
+        dcc.Markdown('* Estimation of Li-metal thickness', style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
+        dcc.Markdown(" This calculation estimates the amount of Li deposition or exfoliation during charge/discharge reactions depending on the applied areal current density."),
+        dcc.Markdown(" Note that this is theoretical estimation and calculated by assuming perfectly flat and smooth film of Li. "),
         dbc.Col([
             dbc.Row([
                 html.Div([html.P('Li Areal Capacity [mAh/cm\u00b2]', style={"height": "auto", "margin-bottom": "auto"}),
@@ -66,14 +69,15 @@ tab1 = dbc.Row([
         ], width={"size":"6"},xs=12, sm=12, md=10, lg=5, xl=6,
         ),
 
-    ],),
-
- ])
-
-tab2=dbc.Row([
-    dcc.Markdown('* Estimation of Cycle Life', style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
-    dcc.Markdown(" This is for estimating cycle life when cells cycle with a specific columbic efficiency each cycles."),
-    dbc.Col([
+    ],
+    style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px','margin-right':'30px'},
+    ),
+]),
+tab2= dbc.Container([
+    dbc.Row([
+        dcc.Markdown('* Estimation of Cycle Life', style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
+        dcc.Markdown(" This is for estimating cycle life when cells cycle with a specific columbic efficiency each cycles."),
+        dbc.Col([
                     dbc.Row([
                         html.Br(),
                         html.Br(),
@@ -97,8 +101,8 @@ tab2=dbc.Row([
                     ),
                 ],width={"size":3},
                 xs=6, sm=6, md=6, lg=3, xl=3,
-                ),
-                dbc.Col([   
+        ),
+        dbc.Col([   
                     dbc.Row([
                         html.H5('Other parameters', style={"margin-bottom":"0.5em", "color":"Purple"}),
                         html.Div([html.P('Total Al foil weight (g)', style={"height": "auto", "margin-bottom": "auto"}),
@@ -120,7 +124,7 @@ tab2=dbc.Row([
                 width={"size":3}, style={'margin-left':'5px'},
                 xs=6, sm=6, md=6, lg=3, xl=3,
                 ),
-                dbc.Col([
+        dbc.Col([
                     dbc.Row([
                         html.H5('Anode Parameters', style={"margin-bottom":"1em", "color":"blue"}),
                         html.Div([dcc.Markdown('Electrode density (g/cm<sup>3</sup>)', dangerously_allow_html=True, style={"height": "1.3em", "margin-bottom": "auto"}),
@@ -141,8 +145,8 @@ tab2=dbc.Row([
                         ],
                 width={"size":3}, style={'margin-left':'5px'},
                 xs=6, sm=6, md=6, lg=3, xl=3,
-                ),
-                dbc.Col([
+            ),
+            dbc.Col([
                     dbc.Row([
                         dbc.Col(html.Span(id='outcome3', style={"font-size": "150%", "color": "grey", "margin-top": "1em",
                                                 "width": "100%",
@@ -176,8 +180,10 @@ tab2=dbc.Row([
                     ),
                 ],
                 ),
-            ]),
-
+            ],
+            style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px','margin-right':'30px'},
+            ),
+]),
 tab3= dbc.Row([
     dbc.Row([
                 dbc.Col([
@@ -297,7 +303,6 @@ tab3= dbc.Row([
 ])
 
 layout = html.Div([
-     dcc.Markdown('This pages for giving simple numeric estimation of cell performance.'),
      dcc.Tabs(id="tabs", value='tab-1', parent_className='custom-tabs', className='custom-tabs-container', children=[
          dcc.Tab(label='A Single Cell',value='tab-1', style=tabs_styles, selected_style=tab_selected_style),
          dcc.Tab(label="Stacked Cell", id='tab-2', style=tabs_styles,selected_style=tab_selected_style),       
