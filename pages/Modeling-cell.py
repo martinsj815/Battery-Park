@@ -54,7 +54,7 @@ tab1 = dbc.Container([
         dbc.Col([
                 html.Div([html.P('Li Areal Capacity [mAh/cm\u00b2]', style={"height": "auto", "margin-bottom": "auto"}),
                 dcc.Input(id="liarealcap", type="number", value='3',step='0.1',style={"margin-bottom":"1em"})]),
-                html.Span(id='thickness_outcome', style={"font-size":"150%", "color":"black"}),
+                html.Span(id='thickness_outcome', style={"font-size":"120%", "color":"black","font-weight":"bold"}),
             ], style={"margin-top":"50px"}, width={"size":"6"},
                 xs=12, sm=12, md=10, lg=5, xl=5,
             ),
@@ -314,6 +314,7 @@ layout = html.Div([
      html.Div(id='tabsclasses')
  ])
 
+
 cyclelife = html.Div([
     dbc.Row([
         dbc.Col([
@@ -356,15 +357,6 @@ requiredCE = html.Div([
     ])
 ])
 
-@callback(
-        Output('output-container','children'),
-        Input('Opts', 'value')
-)
-def modeling_dropdown(op):
-    if op == 'Opt1':
-        return cyclelife
-    elif op == 'Opt2':
-        return requiredCE
 
 @callback(
        Output('tabsclasses','children'),
@@ -378,6 +370,16 @@ def render_content(tab):
         return tab2
     elif tab == 'tab-3':
         return tab3
+    
+@callback(
+        Output('output-container','children'),
+        Input('Opts', 'value')
+)
+def modeling_dropdown(op):
+    if op == 'Opt1':
+        return cyclelife
+    elif op == 'Opt2':
+        return requiredCE
     
 
 def option1(zz,g):
