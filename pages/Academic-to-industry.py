@@ -340,7 +340,7 @@ layout = html.Div([
                 dcc.Markdown(('- Will finding the new cathode material be the solution?'), 
                                  style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'20px', 'font-weight':'bold'}),  
                 html.Br(),
-                dcc.Markdown(('- One metric to improve the cell performance is increasing the cathode areal capacity. Apparently, simply increasing the coathing thickness will not do the job due to an increase in polarization and low material utilization. Hence, finding a new cathode system with high specific capacity can be desirable, but this cannot easily be realized.'), 
+                dcc.Markdown(('- One metric to improve the cell performance is increasing the cathode areal capacity. Apparently, simply increasing the coathing thickness will not do the job due to an increase in polarization and low material utilization. Hence, finding a new cathode system with high specific capacity is desirable, but this cannot easily be realized.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),    
                 dbc.Row([
                     dbc.Col([                      

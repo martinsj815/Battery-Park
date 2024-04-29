@@ -52,25 +52,19 @@ tab1 = dbc.Container([
         dcc.Markdown(" This calculation estimates the amount of Li deposition or exfoliation during charge/discharge reactions depending on the applied areal current density."),
         dcc.Markdown(" Note that this is theoretical estimation and calculated by assuming perfectly flat and smooth film of Li. "),
         dbc.Col([
-            dbc.Row([
                 html.Div([html.P('Li Areal Capacity [mAh/cm\u00b2]', style={"height": "auto", "margin-bottom": "auto"}),
                 dcc.Input(id="liarealcap", type="number", value='3',step='0.1',style={"margin-bottom":"1em"})]),
                 html.Span(id='thickness_outcome', style={"font-size":"150%", "color":"black"}),
-
-            ],style={"margin-top":"50px"},
-            )
-            ],width={"size":"6"},
+            ], style={"margin-top":"50px"}, width={"size":"6"},
                 xs=12, sm=12, md=10, lg=5, xl=5,
             ),
         dbc.Col([
-            dbc.Row([
                 dcc.Graph(id='thicknessplot', style={"width":"100vh", "height":"50vh","margin-top":"0px"})
-            ]),
-        ], width={"size":"6"},xs=12, sm=12, md=10, lg=5, xl=6,
+        ], width={"size":"6"},xs=12, sm=12, md=10, lg=5, xl=5,
         ),
 
     ],
-    style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px','margin-right':'30px'},
+    style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},
     ),
 ]),
 tab2= dbc.Container([
@@ -336,8 +330,8 @@ cyclelife = html.Div([
             ],width={"size":"6"},xs=12,sm=12, md=10, lg=5, xl=5,
         ),
         dbc.Col([
-            dcc.Graph(id='cyclelife',figure={}, style={"width":"80vh", "height":"50vh","margin-top":"0px"}),
-        ], width={"size":"5"}, xs=12, sm=12, md=10, lg=4, xl=5,),
+            dcc.Graph(id='cyclelife',figure={}, style={"width":"100vh", "height":"50vh","margin-top":"0px"}),
+        ], width={"size":"6"}, xs=12, sm=12, md=10, lg=5, xl=5),
     ]),
 ])
 requiredCE = html.Div([
@@ -356,8 +350,8 @@ requiredCE = html.Div([
             ], width={"size":"6"},xs=12,sm=12, md=10, lg=5, xl=5,
         ),
         dbc.Col([
-            dcc.Graph(id='CElife',figure={}, style={"width":"80vh", "height":"50vh","margin-top":"0px"}),
-            ], width={"size":"5"}, xs=12, sm=12, md=10, lg=4, xl=5,
+            dcc.Graph(id='CElife',figure={}, style={"width":"100vh", "height":"50vh","margin-top":"0px"}),
+            ], width={"size":"6"}, xs=12, sm=12, md=10, lg=5, xl=5,
         ),  
     ])
 ])
