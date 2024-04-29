@@ -401,7 +401,7 @@ def option1(zz,g):
         title=" Coulombic Efficiency vs Capacity Retention",
         title_x=0.5,
         xaxis_title="Cycle Number",
-        yaxis_title="Capacity Retention (%)",
+        yaxis_title="Capacity Retention",
         font=dict(
             family="arial, monospace",
             size=16,
