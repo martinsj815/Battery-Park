@@ -476,7 +476,7 @@ def li_thickness(arealcap=3.00):
     fig.update_layout(
         plot_bgcolor='rgb(234, 228, 228)',
         paper_bgcolor='rgb(211, 211, 211)',
-        title="Areal capacity of Li with respect to its thickness",
+        title="Li thickness response to Li Areal Capacity",
         title_x=0.5,
         xaxis_title="Li Areal Capacity [mAh/cm\u00b2]",
         yaxis_title="Li Thickness [\u03bcm]",
