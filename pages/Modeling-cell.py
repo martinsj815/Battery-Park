@@ -314,6 +314,18 @@ layout = html.Div([
      html.Div(id='tabsclasses')
  ])
 
+@callback(
+       Output('tabsclasses','children'),
+       Input('tabs', 'value')
+ )
+
+def render_content(tab):
+    if tab == 'tab-1':
+        return tab1  
+    elif tab == 'tab-2':
+        return tab2
+    elif tab == 'tab-3':
+        return tab3
 
 cyclelife = html.Div([
     dbc.Row([
@@ -358,18 +370,6 @@ requiredCE = html.Div([
 ])
 
 
-@callback(
-       Output('tabsclasses','children'),
-       Input('tabs', 'value')
- )
-
-def render_content(tab):
-    if tab == 'tab-1':
-        return tab1  
-    elif tab == 'tab-2':
-        return tab2
-    elif tab == 'tab-3':
-        return tab3
     
 @callback(
         Output('output-container','children'),
