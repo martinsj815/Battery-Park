@@ -114,7 +114,7 @@ layout = html.Div([
                         xs=7, sm=10, md=10, lg=7, xl=7
                         ),
                         dbc.Col([
-                            html.Div( html.Img(src='https://www.dropbox.com/scl/fi/hc0318st6fcb8hsk7kw11/cell-image.png?rlkey=uutzhyefy4uhb1sie5qdr6wpl&raw=1', style={"width":"100%"}), 
+                            html.Div( html.Img(src='https://www.dropbox.com/scl/fi/hc0318st6fcb8hsk7kw11/cell-image.png?rlkey=uutzhyefy4uhb1sie5qdr6wpl&raw=1', style={"width":"100%", "display": "block", "margin": "auto", "align-items":"center", "justify-content":"center"}), 
                                  ),
                         ], width={"size": 5},
                         xs=8, sm=8, md=6, lg=5, xl=5
