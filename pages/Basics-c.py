@@ -89,7 +89,7 @@ data_election2 = OrderedDict(
          "80",
          "3.7 (estimate)",
          "~26000 (Tesla 4680, estimate)",
-         "272-296 (Tesla 4680, estimate)",
+         "244 (Tesla 4680)",
          ],
                 )
         ],
