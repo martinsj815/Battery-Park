@@ -515,7 +515,11 @@ layout = html.Div([
                             dcc.Markdown(('Bowen Yang, et al., "Lithium difluorophosphate as an additive to improve the low temperature performance of LiNi0.5Co0.2Mn0.3O2/graphite cells", _**Electrochim. Acta**_, 221, 107 (2016)'), 
                                  style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),    
                             dcc.Markdown(('https://www.linkedin.com/pulse/application-lipo2f2-electrolyte-additive-lithium-ion-batteries-li/'), 
-                                 style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),  
+                                 style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}), 
+                            dcc.Markdown(('Qing Zhao, et al, "Designing solid-state electrolytes for safe, energy-dense batteries", _**Nature Reviews**_, 5, 229 (2020)'), 
+                                style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),
+                            dcc.Markdown(('Arumugam Manthiram,"Lithium battery chemistries enabled by solid-state electrolytes", _**Nature Reviews Materials**_, 2, 16103 (2017)'), 
+                                style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),
                         ],width={"size": 16},
                             xs=10, sm=10, md=10, lg=10, xl=16,
                         )                                   
