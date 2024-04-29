@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import dash
-from dash import Dash, dcc, html, Input, Output, State, callback
+from dash import Dash, dcc, html, Input, Output, State, callback, dash_table
 import dash_bootstrap_components as dbc
 import plotly.graph_objs as go
 import plotly.express as px
@@ -75,114 +75,123 @@ tab1 = dbc.Container([
 ]),
 tab2= dbc.Container([
     dbc.Row([
-        dcc.Markdown('* Estimation of Cycle Life', style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
-        dcc.Markdown(" This is for estimating cycle life when cells cycle with a specific columbic efficiency each cycles."),
+        dcc.Markdown('* Estimation of Pouch Cell Capacity and Energy Density', style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
+        dcc.Markdown(" This estimates the total cell capacity and eneryg density of the pouch cells."),
+        dcc.Markdown(" This calculation can support in pouch cell design. For example, with a designed electrode, this modeling can determine the number of stack layers and electrolyte amount to achive target cell apacity and energy density."),
+        dcc.Markdown(" Electrode Parameters:  ", style={'marginTop':'20px','font-size':'20px','textAlign':'left','font-weight':'bold'}),
         dbc.Col([
                     dbc.Row([
                         html.Br(),
                         html.Br(),
                         html.H5('Cathode Parameters', style={"margin-bottom":"0em", "color":"red"}),
-                        html.Div([dcc.Markdown('Electrode density (g/cm<sup>3</sup>)', dangerously_allow_html=True, style={"height": "1.3em", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-m", type="number", value='0.5', step='0.001', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Electrode thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-n", type="number", value='50', step='0.01', style={"margin-bottom":"1em"}) ]),                      
-                        html.Div([html.P('Active material loading ratio', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-o", type="number", value='0.8', step='0.01', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Discharge capacity of active material (mAh/g)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-p", type="number", value='150', step='0.1', style={"margin-bottom":"1em"}) ]),
-                        html.Div([dcc.Markdown('Electrode area (mm<sup>2</sup>)', dangerously_allow_html=True, style={"height": "1.3em", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-q", type="number", value='1500', step='0.01', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Number of layers', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-r", type="number", value='5', step='1', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P(["Electrode density [g/cm",html.Sup("3"),"]",html.Sup("*1")],style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="c_ed", type="number", value='3.0', step='0.1', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Electrode thickness [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="c_et", type="number", value='70', step='0.01', style={"margin-bottom":"1em"}) ]),                      
+                        html.Div([html.P(['Active material loading ratio',html.Sup("*2")], style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="c_amlr", type="number", value='0.96', step='0.01', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P(['Practical capacity of active material',html.Sup("*3"),' [mAh/g]'], style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="c_pcam", type="number", value='185', step='0.1', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P(['Electrode area [cm',html.Sup("2"),']'],style={"height": "1.3em", "margin-bottom": "auto"}),
+                            dcc.Input(id="c_ea", type="number", value='1.2', step='0.01', style={"margin-bottom":"1em"}) ]),
+                        #html.Div([html.P('Number of layers', style={"height": "auto", "margin-bottom": "auto"}),
+                        #    dcc.Input(id="input-r", type="number", value='5', step='1', style={"margin-bottom":"1em"}) ]),
                         html.Br(),
                         html.Br(),
                         ],
-                    style={'textAlign':'center'},
+                    style={'textAlign':'left'},
                     ),
-                ],width={"size":3},
-                xs=6, sm=6, md=6, lg=3, xl=3,
+                ],width={"size":4},
+                xs=6, sm=6, md=6, lg=4, xl=4,
         ),
+        dbc.Col([
+                    dbc.Row([
+                        html.H5('Anode Parameters', style={"margin-bottom":"1em", "color":"blue"}),
+                        html.Div([html.P(["Electrode density [g/cm",html.Sup("3"),"]",html.Sup("*1")],style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="a_ed", type="number", value='0.534', step='0.001', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Electrode thickness [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="a_et", type="number", value='50', step='0.01', style={"margin-bottom":"1em"}) ]),                      
+                        html.Div([html.P('Active material loading ratio', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="a_amlr", type="number", value='1.0', step='0.01', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Practical capacity of active material [mAh/g]', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="a_pcam", type="number", value='500', step='0.1', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P(['Electrode area [cm',html.Sup("2"),']',html.Sup("*4")],style={"height": "1.3em", "margin-bottom": "auto"}),
+                            dcc.Input(id="a_pc", type="number", value='1.2', step='0.01', style={"margin-bottom":"1em"}) ]),        
+                        html.Br(),
+                        html.Br(),
+                        ],
+                        style={'textAlign':'left'},
+                        ),
+                        ],
+                width={"size":4}, #style={'margin-left':'5px'},
+                xs=6, sm=6, md=6, lg=4, xl=4,
+            ),
         dbc.Col([   
                     dbc.Row([
                         html.H5('Other parameters', style={"margin-bottom":"0.5em", "color":"Purple"}),
-                        html.Div([html.P('Total Al foil weight (g)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-x", type="number", value='0.7', step='0.001', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Total Cu foil weight (g)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-y", type="number", value='1.2', step='0.001', style={"margin-bottom":"1em"}) ]),                      
-                        html.Div([html.P('Total separator weight (g)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-z", type="number", value='0.5', step='0.001', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Electrolyte weight (g)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-ab", type="number", value='3', step='0.001', style={"margin-bottom":"1em"}) ]),              
-                        html.Div([html.P('Other weight-Sum (g)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-bc", type="number", value='1.1', step='0.001', style={"margin-bottom":"1em"}) ]),                                
-                        html.Br(),
-                        html.Br(),
+                        html.Div([html.P('Al foil thickness [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="Al_t", type="number", value='12', step='1.0', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Cu foil thickness [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="Cu_t", type="number", value='8.0', step='1.0', style={"margin-bottom":"1em"}) ]),                      
+                        html.Div([html.P('Tab area [mm\u00b2]', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="area_tap", type="number", value='25', step='1.0', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P(['Total seperator weight [g]',html.Sup("*5")], style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="S_w", type="number", value='0.5', step='0.1', style={"margin-bottom":"1em"}) ]),              
+
                         ],
-                    style={'textAlign':'center'},
+                    style={'textAlign':'left'},
                     ),
                     ], 
                 width={"size":3}, style={'margin-left':'5px'},
                 xs=6, sm=6, md=6, lg=3, xl=3,
                 ),
-        dbc.Col([
-                    dbc.Row([
-                        html.H5('Anode Parameters', style={"margin-bottom":"1em", "color":"blue"}),
-                        html.Div([dcc.Markdown('Electrode density (g/cm<sup>3</sup>)', dangerously_allow_html=True, style={"height": "1.3em", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-i", type="number", value='2', step='0.001', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Electrode thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-j", type="number", value='50', step='0.01', style={"margin-bottom":"1em"}) ]),                      
-                        html.Div([html.P('Active material loading ratio', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-k", type="number", value='0.9', step='0.01', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Discharge capacity of active material (mAh/g)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-l", type="number", value='500', step='0.1', style={"margin-bottom":"1em"}) ]),
-                        html.Div([dcc.Markdown('Electrode area (mm<sup>2</sup>)', dangerously_allow_html=True, style={"height": "1.3em", "margin-bottom": "auto"}),
-                            dcc.Input(id="input-w", type="number", value='1000', step='0.01', style={"margin-bottom":"1em"}) ]),        
-                        html.Br(),
-                        html.Br(),
-                        ],
-                        style={'textAlign':'center'},
-                        ),
-                        ],
-                width={"size":3}, style={'margin-left':'5px'},
-                xs=6, sm=6, md=6, lg=3, xl=3,
-            ),
+       dcc.Markdown(" Cell Parameters:  ", style={'marginTop':'10px','font-size':'20px','textAlign':'left','font-weight':'bold'}),
+       dbc.Col([
+            html.H6('Type of outermost electrode:'),
+            dcc.Dropdown({ 'Cathode': 'Cathode','Anode':'Anode'}, value="Cathode",id='outmost_top', 
+                         clearable=False, style={"height": "auto", "margin-bottom": "auto"}),
+            html.Div([html.P(['Sum of other package weight [g]',html.Sup("*6")], style={"height": "auto", "margin-bottom": "auto"}),
+                dcc.Input(id="other_packagingweight", type="number", value='1.1', step='0.1', style={"margin-bottom":"1em"}) ]),
+            
+           ], width={"size":10}, style={'margin-left':'5px'},
+                xs=15, sm=15, md=10, lg=6, xl=6,
+           ),
+       dbc.Col([
+
+                html.Div([html.P('Nominal Cell voltage [V]', style={"height": "auto", "margin-bottom": "auto"}),
+                dcc.Input(id="nom_v", type="number", value='3.7', step='0.1', style={"margin-bottom":"1em"}) ]),
+                html.Div([html.P('Number of stacked layer', style={"height": "auto", "margin-bottom": "auto"}),
+                dcc.Input(id="stacked_layer", type="number", value='7', step='1', style={"margin-bottom":"1em"}) ]),
+            
+           ], width={"size":6}, style={'margin-left':'5px'},
+                xs=12, sm=12, md=10, lg=5, xl=5,
+           ),
+
+        html.H4("Target Energy Density [Wh/Kg]  ", style={'marginTop':'10px','font-size':'20px','textAlign':'left','font-weight':'bold'}),
+        dcc.Input(id="target_ed",type="number", value='300', step='5', style={"margin0bottom":"1em", 'width':"300px",'margin-left':'5px'}),
+
+        dbc.Row([
+            html.Br(),
+            html.Br(),
             dbc.Col([
-                    dbc.Row([
-                        dbc.Col(html.Span(id='outcome3', style={"font-size": "150%", "color": "grey", "margin-top": "1em",
-                                                "width": "100%",
-                                                "justify": "center", "text-align": "left"})),
-                                                ],
-                                                style = {"margin-top":"1em"}
-                                                ),
-                    html.Br(),
-                    dbc.Row([
-                        dbc.Col(html.Span(id='outcome4', style={"font-size": "150%", "color": "grey", "margin-top": "1em",
-                                                "width": "100%", "justify": "center",
-                                                "text-align": "left"})),
-                    ],
-                    ),
-                ],
-                width={"size":3}, style={'margin-left':'5px', "border":"5px black solid", "display":"inline-block", "border-radius":"1em"},
-                xs=1, sm=5, md=6, lg=2, xl=2,
-                ),
-            dbc.Row([
-                dbc.Col([
-                    dcc.Graph(id='plot3', style={"width":"100%", "height":"50vh","margin-top":"20px"})
-                    ],
-                width={"size":"6"},
-                xs=6, sm=12, md=10, lg=6, xl=6,                    
-                ),
-                dbc.Col([    
-                    dcc.Graph(id='plot4', style={"width":"100%", "height":"50vh","margin-top":"20px"})
-                    ],
-                width={"size":"6"},
-                xs=6, sm=12, md=10, lg=6, xl=6,
-                    ),
-                ],
-                ),
-            ],
-            style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px','margin-right':'30px'},
+                html.H5("Summary of Cell", style={'textAlign':'center','font-weight':'bold'}),
+                dash_table.DataTable(id='Summary_table', data=[])
+            ],width={"size":"3"},xs=6, sm=6, md=6, lg=3, xl=3, 
             ),
+
+            dbc.Col([
+                html.H5("The weight distributions", style={'textAlign':'center','font-weight':'bold'}),
+                dcc.Graph(id='plot3', style={"width":"100%", "height":"50vh","margin-top":"30px"})
+                ],
+            width={"size":"4"},xs=6, sm=6, md=6, lg=4, xl=4,                    
+            ),
+            dbc.Col([    
+                html.H5(" Energy Density vs E/C [g/Ah]", style={'textAlign':'center','font-weight':'bold'}),
+                dcc.Graph(id='plot4', style={"width":"100%", "height":"50vh","margin-top":"30px"})
+                ],width={"size":"4"},xs=6, sm=6, md=6, lg=5, xl=5,
+            ),
+        ],style=({'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px','margin-top':'30px'}),),
+    ],),
 ]),
 tab3= dbc.Row([
     dbc.Row([
@@ -323,7 +332,7 @@ cyclelife = html.Div([
             dcc.Input(id="input_g", type="number", value="80", step="0.1", style={"margin-bottom":"1em"})]),
             html.Br(),
             html.Br(),
-            html.Span(id="option1_outcome", style={"font-size":"150%", "font-weight":"bold"}),
+            html.Span(id="option1_outcome", style={"font-size":"120%", "font-weight":"bold"}),
             ],width={"size":"6"},xs=12,sm=12, md=10, lg=5, xl=5,
         ),
         dbc.Col([
@@ -343,7 +352,7 @@ requiredCE = html.Div([
             dcc.Input(id="input_cycle", type="number", value="100", step="1", style={"margin-bottom":"1em"})]),
             html.Br(),
             html.Br(),
-            html.Span(id="option2_outcome", style={"font-size":"150%", "font-weight":"bold"})
+            html.Span(id="option2_outcome", style={"font-size":"120%", "font-weight":"bold"})
             ], width={"size":"6"},xs=12,sm=12, md=10, lg=5, xl=5,
         ),
         dbc.Col([
