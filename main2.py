@@ -26,7 +26,7 @@ app.title = "Cell Design"
 server = app.server
 
 masthead_content = dbc.Col(
-    html.Img(src='https://dl.dropboxusercontent.com/scl/fi/7utukx4f0a1b651d023nw/Masthead_new3.png?rlkey=1gkyhyagdugod601ytmx4i4g3&raw=1', style={"width":"250px"}), 
+    html.Img(src='https://dl.dropboxusercontent.com/scl/fi/7utukx4f0a1b651d023nw/Masthead_new3.png?rlkey=1gkyhyagdugod601ytmx4i4g3&raw=1', style={"margin-top":"10px","width":"250px"}), 
     width={"size": 8}
 )
 
@@ -78,9 +78,9 @@ container_style = {
     "justifyContent": "center", 
     "alignItems": "left", 
     "height":"160px",
-    "background-image": "linear-gradient(to bottom, rgb(234, 228, 228), rgb(78, 81, 244))",
+    #"background-image": "linear-gradient(to bottom, rgb(234, 228, 228), rgb(78, 81, 244))",
     "width":"auto",
-    #"background-color":"rgb(201,76,76)",
+    "background-color":"rgb(70,70,70)",
     
 }  
 

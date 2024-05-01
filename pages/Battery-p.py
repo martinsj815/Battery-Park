@@ -201,7 +201,7 @@ data_election2 = OrderedDict(
             ],
         ),
         (
-            "Modules/Pack",
+            "Modules per Pack",
             [
                 "24",
                 "12",
@@ -326,10 +326,10 @@ layout = html.Div([
                     html.Br(),                    
                     dcc.Markdown('* Tesla EV Model Specs', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
                         dash_table.DataTable(
-                                style_cell={'font-family': 'Arial', 'font-size': '18px', 'text-align':'left', 'margin-top':'10px'}, 
+                                style_cell={'font-family': 'Arial', 'font-size': '18px', 'text-align':'left', 'minwidth':'15em', 'margin-top':'10px'}, 
                                 style_table={'overflowX': 'auto'},
                                 style_data={
-                                        'whiteSpace': 'pre-line',
+                                        'whiteSpace': 'normal',
                                         'color': 'black',
                                         'backgroundColor': 'white',
                                         'height':'auto',
@@ -389,7 +389,7 @@ layout = html.Div([
                                 markdown_options={"html": True},
                                 style_table={'overflowX': 'auto'},
                                 style_data={
-                                        'whiteSpace': 'break-spaces',
+                                        'whiteSpace': 'normal',
                                         'color': 'black',
                                         'width': 'auto',
                                         'overflow':'auto',
@@ -424,6 +424,13 @@ layout = html.Div([
                         dmc.Divider(size="md", color="grey"),
                         html.Br(),
                         dbc.Row([
+                                dcc.Markdown('Battery Packaging Efficiency ', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
+                                html.Div(('- A geometric packing principle tells that the prismatic/pouch cells should yield packing efficiency of 90-95%, way higher than the cylindrical cell. However, it is noteworthy that the volumetric efficiency rate of the prismatic/pouch cells in actual EV batteries are lower and even comparable to those of cylindrical. According to the paper by Löbberding et al., after surveying 25 different BEVs (from 10 OEMs between 2010-2019), the average volume utilization rate is 0.353, which is only slightly higher than that of cylindrical (0.295). This discrepancy can be due to incorporation of auxiliary yet important parts such as interconnects, thermal management (i.e. cooling) system, BMS, and sensors. However, a caveat is that the average cell-to-module efficiency for prismatic/pouch cells is much higher than that of the cylindrical cell while the opposite is true for module-pack system efficiency comparison – making cell-to-system efficiencies all comparable after all. Hence, better space utilization has been sought after by many OEMs including BYD, CATL, and Tesla.'), 
+                                    style={'textAlign':'justify', 'margin-left':'20px','font-size':'18px'}),
+                        ], style={'margin-right':'20px', 'margin-bottom':'20px'}
+                        ), 
+                        html.Br(),
+                        dbc.Row([
                             dbc.Col([
                                 dcc.Markdown('* CMP, CTP, and CMB', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
                                 html.Div(('- In the traditional CMP (cell-module-pack) battery structure for the electric vehicle, module size varies among different electric vehicle manufacturers from Nissan’s 8-cell modules to Tesla’s 1584-cell modules. Increasing the module size has improved chassis space utilization to enhance battery capacity but the structure limits the space for other components, thus meeting the performance demand increasingly difficult.'), 
@@ -448,7 +455,10 @@ layout = html.Div([
                                 ], width={"size": 5},
                             xs=4, sm=4, md=7, lg=7, xl=5,
                             ),
-                        ],)                                                
+                        ],),
+                        dcc.Markdown('- Reference', style={'font-size':'20px', 'textAlign':'left','font-weight':'bold'}),           
+                        dcc.Markdown(('Hendrik Löbberding, et al.,"From Cell to Battery System in BEVs: Analysis of System Packing Efficiency and Cell Types", _**World Electric Vehicle Journal**_, 11, 77 (2020)'), 
+                                style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),                                         
                 ],
                 ),
              ],style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},
