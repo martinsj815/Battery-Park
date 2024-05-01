@@ -132,9 +132,7 @@ tab2= dbc.Container([
                             dcc.Input(id="area_tap", type="number", value='25', step='1.0', style={"margin-bottom":"1em"}) ]),
                         html.Div([html.P(['Total seperator weight [g]'], style={"height": "auto", "margin-bottom": "auto"}),
                             dcc.Input(id="S_w", type="number", value='0.5', step='0.1', style={"margin-bottom":"1em"}) ]),
-                        html.Div(html.Img(src='https://www.dropbox.com/scl/fi/qab6gy9e43yrhvadtrmhj/tab_area.png?rlkey=vios1tjbo9k6oyee9uljgu1ql&st=9bigxpq8&raw=1',style={"width":"80%","display":"block","margin":"auto"}),
-                                 ),              
-
+           
                         ],
                     style={'textAlign':'left'},
                     ),
@@ -147,7 +145,7 @@ tab2= dbc.Container([
         dbc.Col([
             html.H6('Type of stacked layer and its unit:'),
             dcc.Dropdown({ 't1': 'Type1','t2':'Type2','t3':'Type3'}, value="t1",id='stacktype', 
-                         clearable=False, style={"height": "auto","width":"150px", "margin-bottom": "auto"}),
+                         clearable=False, style={"height": "auto","width":"150px", "margin-bottom": "auto","margin-top":"30px"}),
 
             html.Div( html.Img(src='https://www.dropbox.com/scl/fi/t0l93yiboq194etmscnvu/stack_type.png?rlkey=r4fuiabrdlqtl7rxvqnqokd6e&st=za7if4yl&raw=1', style={"width":"100%", "display": "block", "margin": "auto"}), 
                 ),
@@ -159,7 +157,7 @@ tab2= dbc.Container([
 
             html.Div([html.P(['Sum of other package weight [g]',html.Sup("*1")], style={"height": "auto", "margin-bottom": "auto"}),
                 dcc.Input(id="other_packageweight", type="number", value='1.1', step='0.1', style={"margin-bottom":"1em"}) ]),
-            html.Div([html.P('Nominal Cell voltage [V]', style={"height": "auto", "margin-bottom": "auto"}), 
+            html.Div([html.P('Nominal cell voltage [V]', style={"height": "auto", "margin-bottom": "auto"}), 
                 dcc.Input(id="nom_v", type="number", value='3.7', step='0.1', style={"margin-bottom":"1em"}) ]),
             html.Div([html.P('Number of stacked layer', style={"height": "auto", "margin-bottom": "auto"}),
                 dcc.Input(id="stacked_layer", type="number", value='7', step='1', style={"margin-bottom":"1em"}) ]),    
@@ -178,19 +176,19 @@ tab2= dbc.Container([
                 xs=6, sm=6, md=6, lg=3, xl=3,
             ),
     ]),
-        dcc.Markdown("*1 Sum of other package weight include the total weight of tabs and packaging case."),
-        dcc.Markdown("*2 If the total cell capacity is insufficient to include the electrolyte weight in the total cell weight to reach the target energy density, this target energy density is reset according to EC ratio = 1.3 (g/Ah)(refereced Panasonic 18650B EC ratio)."),
+        dcc.Markdown("*1 A sum of other package weights includes the total weight of tabs and the packaging case."),
+        dcc.Markdown("*2 If the total cell capacity is insufficient to include the electrolyte weight in the total cell weight to reach the target energy density, this target energy density is reset according to EC ratio = 1.3 (g/Ah)(referenced Panasonic 18650B EC ratio)."),
         dbc.Row([
 
             dbc.Col([
-                html.H5("The weight distributions", style={'textAlign':'center','font-weight':'bold'}),
+                html.H5("Weight distribution of different cell components", style={'textAlign':'center','font-weight':'bold'}),
                 dcc.Graph(id='pie1', style={"width":"100%", "height":"50vh","margin-top":"30px"})
                 ],
-            width={"size":"6"},xs=12, sm=12, md=12, lg=6, xl=6,                    
+            width={"size":"6"},xs=12, sm=12, md=12, lg=5, xl=5,                    
             ),
             dbc.Col([    
-                html.H5(" Energy Density vs Amoung of Electrolyte", style={'textAlign':'center','font-weight':'bold'}),
-                dcc.Graph(id='ed_plot', style={"width":"100%", "height":"50vh","margin-top":"30px"})
+                html.H5(" Energy Density vs Amount of Electrolyte", style={'textAlign':'center','font-weight':'bold'}),
+                dcc.Graph(id='ed_plot', style={"width":"100%","height":"50vh","margin-top":"30px", "margin-bottom":"30px"})
                 ],width={"size":"6"},xs=12, sm=12, md=12, lg=6, xl=6,
             ),
         ],style=({'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px','margin-top':'30px'}),),
@@ -613,27 +611,30 @@ def cell_energy_densit(c_ed, c_et, c_amlr, c_pcam, c_ea, a_ed, a_et, a_amlr, a_p
     total_weight = [cell_w_cath,cell_w_anode,w_Al,w_Cu,S_w,w_electrolyte,other_packageweight];
     w_idx=['Cathode','Anode','Al-foil','Cu-foil','Separator','Electrolyte','Others'];   
 
-    weight_data = pd.DataFrame({'PM':w_idx, 'weight':total_weight})
+    weight_data = pd.DataFrame({'component':w_idx, 'weight [g]':total_weight})
 
      # make outputs
-    pfig=px.pie(weight_data, values=weight_data['weight'], names=weight_data['PM'])
+    pfig=px.pie(weight_data, values=weight_data['weight [g]'],hole=.3, names=weight_data['component'])
+
     
     pfig.update_layout(
         plot_bgcolor='rgba(0,0,0,0)',
         paper_bgcolor='rgba(0,0,0,0)',
         font=dict(
             family="arial, monospace",
-            size=16,
+            size=14,
             color="black"
         ),
+        margin=dict(t=0,b=0,l=0,r=0)
 
     )
+
 
     fig1.update_layout(
         plot_bgcolor='rgb(234, 228, 228)',
         paper_bgcolor='rgb(211, 211, 211)',
         xaxis_title="Amount of Electrolyte [g]",
-        yaxis_title="Energy Density [Ah/kg]",
+        yaxis_title="Energy Density [Wh/kg]",
         font=dict(
             family="arial, monospace",
             size=16,
@@ -647,7 +648,7 @@ def cell_energy_densit(c_ed, c_et, c_amlr, c_pcam, c_ea, a_ed, a_et, a_amlr, a_p
     NP_ratio = areal_cap_anode/areal_cap_cath
 
         # For summary table
-    s_index = ['Cell Capacity[Ah]','Energy [Wh]', 'NP ratio','EC ratio [g/Ah]','No. Al-foil','No. Cu-foil', 'No. electrode']
+    s_index = ['Cell Capacity[Ah]','Energy [Wh]', 'NP ratio','EC ratio [g/Ah]','No. Al-foil','No. Cu-foil', 'No. single side electrode']
     summary_data=[round(cell_cap,2),round(cell_energy,2),round(NP_ratio,2), EC, N_al, N_cu, N_ed]
     st = pd.DataFrame({"Parameters":s_index,"Results":summary_data})
 
