@@ -150,8 +150,8 @@ tab2= dbc.Container([
             html.Div( html.Img(src='https://www.dropbox.com/scl/fi/t0l93yiboq194etmscnvu/stack_type.png?rlkey=r4fuiabrdlqtl7rxvqnqokd6e&st=za7if4yl&raw=1', style={"width":"100%", "display": "block", "margin": "auto"}), 
                 ),
             
-           ], width={"size":4}, #style={'margin-left':'5px'},
-                xs=6, sm=6, md=6, lg=4, xl=4,
+           ], width={"size":5}, #style={'margin-left':'5px'},
+                xs=6, sm=6, md=6, lg=4, xl=5,
            ),
         dbc.Col([
 
