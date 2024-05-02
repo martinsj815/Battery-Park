@@ -30,7 +30,7 @@ layout = html.Div(
         html.Br(),  
         html.Br(),
         dbc.Row([
-            dbc.Col(html.H5(children="The website is tailored to provide comprehensive information spanning from their fundamental chemistry to their present utilization across industries. We welcome enthusiasts, students, and even industry professional seeking knowledge and insights from this fascinating realm of science and technology."),
+            dbc.Col(html.H5(children="The website is tailored to provide comprehensive information spanning from their fundamental chemistry to their present utilization across industries. We welcome technology enthusiasts, students, and even industry professional seeking knowledge and insights from this fascinating realm of science and technology."),
                     width=11),
         ], style={'justify':'center','text-align':'center','margin-left': '20px'}),
         html.Br(),      
