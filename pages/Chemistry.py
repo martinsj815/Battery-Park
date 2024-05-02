@@ -188,6 +188,60 @@ data_election2 = OrderedDict(
 
 dt2 = pd.DataFrame(data_election2)
 
+data_election3 = OrderedDict(
+    [
+        (
+            "Company",
+            [
+                "OneD",
+                "Sila",
+                "Group14",
+                "StoreDot",
+                "IonBlox",
+                "Amprius",
+                "Evonix",
+            ], 
+        ),
+        (
+            "Key Technology",
+            [
+                "Sinanode -  Silicon NW embedded on graphite powder pore via melting",
+                "Titan Silicon - Micron-sized Carbon Scaffolded particles consist of nanostructured Si",
+                "SCC55 - Carbon scaffolded structure with intraparticle voids for silicon expansion",
+                "XFC (Extreme Fast Charging) Si - Slicon synthesized with \"small-molecule organic compounds\"",
+                "Pre-lithiated silicon oxide",
+                "SiCore - 4 layers: Si Nanostructure/ Stabilization layer/Carbon/Fast ion conductor",
+                "100% Silicon crosswise stacked inside the novel mechanical architecture ",    
+            ],
+        ),
+        (
+            "Performance Noted", 
+            [
+                "- 678 mAh/g (at 10 wt&#37;)", 
+                "- <6&#37; at EOL (900 cycles) \n - 20&#37; increase in driving range \n - 10-80&#37; recharge in 20 minutes",
+                "- Upto 5x capacity than graphite \n - 50&#37; more energy density than graphite",
+                "- 100 miles recharge in 5 minutes \n - Energy Density of 330 Wh/kg and 860Wh/L \n - 2000 cycles with 80&#37; initial capacity maintained",
+                "- 225 miles in 5 min charge \n - 390 miles in 10 min charge",
+                "- Upto 500 Wh/kg or 1300 Wh/L \n - 0-80&#37; recharge in <6 minutes",       
+                "- <2&#37; after 500 cycles \n - 43&#37;/65&#37; capacity increase in laptops/cellphones",   
+            ]
+        ),
+        (
+            "Link",
+            [
+                "https://onedsinanode.com/sinanode/",
+                "https://www.wired.com/story/panasonic-powder-powered-silicone-ev-batteries/ \n https://www.silanano.com/our-solutions/titan-silicon-anode",
+                "https://www.group14.technology/resources/whitepapers/whitepaper-the-transition-to-lithium-silicon-batteries/",
+                "https://www.store-dot.com/technology \n https://www.prnewswire.com/news-releases/storedot-hits-commercialization-milestone-with-2-000-extreme-fast-charging-xfc-cycles-elevating-ev-longevity-durability-and-market-value-302107541.html",
+                "https://www.ionblox.com/land \n https://www.businesswire.com/news/home/20231004555440/en/Ionblox-Debuts-Lithium-Silicon-Batteries-Breaking-Barriers-of-Extreme-Fast-Charging-and-Extended-Range",
+                "https://amprius.com/amprius-broadens-product-portfolio-with-new-commercially-available-silicon-anode-battery-platform-sicoretm/ \n https://amprius.com/technology/",
+                "https://www.techhive.com/article/2189816/enovix-silicon-battery-tech-65-more-from-you-li-ion-batteries.html",
+            ],
+        ),
+    ],
+)
+
+dt3 = pd.DataFrame(data_election3)
 
 layout = html.Div([
              html.Link(rel='stylesheet', href='/assets/table.css'),            
@@ -311,7 +365,6 @@ layout = html.Div([
                         ], style={"margin-bottom":'5em'},
                         ), 
                         html.Br(),
-                        dmc.Divider(size="md", variant="dotted", color="grey"),
                         html.Br(),
                         dcc.Markdown(('2. Alloying-based:'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px', 'font-weight':'bold'}), 
@@ -334,7 +387,6 @@ layout = html.Div([
                         ], style={"margin-bottom":'5em'},
                         ), 
                         html.Br(),
-                        dmc.Divider(size="md", variant="dotted", color="grey"),
                         html.Br(),
                         dcc.Markdown(('3. Conversion-based:'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px', 'font-weight':'bold'}),
@@ -353,8 +405,43 @@ layout = html.Div([
                             xs=4, sm=10, md=8, lg=6, xl=4
                             ),  
                         ], style={"margin-bottom":'5em'},
-                        ),                               
-                        html.Br(),                            
+                        ),  
+                        html.Br(),
+                        dmc.Divider(size="md", variant="dotted", color="grey"),                
+                        html.Br(),
+                        dcc.Markdown(('- Silicon-based anode manufacturers'), 
+                                 style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),                        
+                        dash_table.DataTable(   
+                                style_cell={'font-family': 'Arial', 'font-size': '16px', 'text-align':'auto', 'margin-top':'auto', 'width':'auto','padding':2}, 
+                                markdown_options={"html": True},
+                                #virtualization=True,
+                                style_table={'overflowX': 'auto', 'margin-bottom':'20px'},
+                                style_data={
+                                        'whiteSpace': 'break-spaces',
+                                        'color': 'black',
+                                        'backgroundColor': 'white',
+                                        'height':'auto',
+                                        'lineheight':'10px',
+                                },
+                                style_data_conditional=[
+                                {
+                                    'if': {'column_id': 'Company'},
+                                    'fontWeight': 'bold', 
+                                },
+                                ],
+                                style_header={
+                                    'whiteSpace': 'normal',
+                                    'backgroundColor': 'black',
+                                    'color': 'white',
+                                    'fontWeight': 'bold',
+                                    'font-size': '18px',
+                                    'text-align':'center'
+                                },
+                                data=dt3.to_dict('records'),
+                                columns=[{'id': c, 'name': c,"presentation": "markdown"} for c in dt3.columns],
+                        ),
+                        html.Br(),             
+                        html.Br(),               
                         dmc.Divider(size="md", color="grey"),  
                         html.Br(),
                         html.Br(),
@@ -415,11 +502,9 @@ layout = html.Div([
                             xs=10, sm=10, md=10, lg=10, xl=16,
                             ),   
                         ],),
-                        html.Br(),                            
-                        dmc.Divider(size="md", color="grey"),  
                         html.Br(),
                         dcc.Markdown(('* Solid Electrolyte'), 
-                                 style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'25px', 'font-weight':'bold'}),
+                                 style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'25px', 'font-weight':'bold','margin-top':'20px'}),
                         html.Br(),
                         dbc.Row([
                             dbc.Col([

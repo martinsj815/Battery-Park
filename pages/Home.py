@@ -24,11 +24,15 @@ layout = html.Div(
                     width=11),
         ], style={'justify':'center','text-align':'center','margin-left': '20px'}),
         html.Br(),
-        html.Br(),
         html.Div( className="app-header", style={'background-image':'url("https://dl.dropboxusercontent.com/scl/fi/djio7asr23jaq6emicq0o/image_home.jpg?rlkey=02hyor71gv7cjuzjru144hox0&raw=1")',
                       'background-size': '100vh', 'background-repeat':'no-repeat',
                       'background-position':'center', 'height':'50vh', 'margin-bottom':'0px'}),
         html.Br(),  
+        html.Br(),
+        dbc.Row([
+            dbc.Col(html.H5(children="The website is tailored to provide comprehensive information spanning from their fundamental chemistry to their present utilization across industries. We welcome enthusiasts, students, and even industry professional seeking knowledge and insights from this fascinating realm of science and technology."),
+                    width=11),
+        ], style={'justify':'center','text-align':'center','margin-left': '20px'}),
         html.Br(),      
     ]
 )
