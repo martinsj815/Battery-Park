@@ -60,7 +60,7 @@ data_election2 = OrderedDict(
                 "Diameter (mm)",
                 "Height (mm)",
                 "Nominal Voltage (V)",
-                "Max Capacity (mAh)",
+                "Capacity (mAh)",
                 "Energy Density (Wh/kg)"
             ], 
         ),
@@ -88,7 +88,7 @@ data_election2 = OrderedDict(
          "46",
          "80",
          "3.7 (estimate)",
-         "~26000 (Tesla 4680, estimate)",
+         "~23000 (Tesla 4680, estimate)",
          "244 (Tesla 4680)",
          ],
                 )

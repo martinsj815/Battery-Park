@@ -85,13 +85,13 @@ data_election = OrderedDict(
             "Tesla 4680, 22 Ah (NCM811/Gr)",
             [
                 "4.9",
-                "5.5",
-                "1.12",
+                "5.5*",
+                "1.12*",
                 "",
                 "~65",
                 "~135",
                 "",
-                "Manuel Ank, et al., “Lithium-Ion Cells in Automotive Applications: Tesla 4680 Cylindrical Cell Teardown and Characterization”, J. Electrochem. Soc., 170, 120536 (2023) \n\n  https://insideevs.com/news/598656/tesla-4680-battery-cell-specs/"
+                "Manuel Ank, et al., “Lithium-Ion Cells in Automotive Applications: Tesla 4680 Cylindrical Cell Teardown and Characterization”, J. Electrochem. Soc., 170, 120536 (2023) \n\n  *From https://insideevs.com/news/598656/tesla-4680-battery-cell-specs/ (Note there are some gaps between two sources)"
             ],
         ),
         (
@@ -105,6 +105,19 @@ data_election = OrderedDict(
                 "71",
                 "32",
                 "Sandro Stock, et al., “Cell teardown and characterization of an automotive prismatic LFP battery”, Electrochim. Acta, 471, 143341 (2023)"
+            ],
+        ),
+        (
+            "BYD Blade Prismatic, 138 Ah (LFP/Gr)",
+            [
+                "3.39*",
+                "4.10*",
+                "1.21*",
+                "",
+                "85*",
+                "73*",
+                "",
+                "https://www.linkedin.com/pulse/dry-information-byd-blade-battery-internal-disassembly-photos-cbucc/ \n\n Some parameter adopted from Xiao-Guang Yang, et al., 'Thermally modulated lithium iron phosphate batteries for mass-market electric vehicles', Nature Energy, 6, 176 (2021) \n\n *Currently numbers are based on the estimation"
             ],
         ),
     ],
@@ -196,7 +209,7 @@ layout = html.Div([
                 dbc.Row([
                     dcc.Markdown('- Academic-to-Industry', style={'font-size':'30px', 'font-weight':'bold','margin-bottom':'20px'},),
                     dbc.Col([                      
-                            dcc.Markdown(('- There is a clear technological gap and lack of the bridge between academic research and industry requirements. Academic research uses the testing parameters and conditions that are way off from those that are adopted in commercial cell manufacturing. Adjusting key metrics including cathode/anode active loading, N/P ratio, and electrolyte amounts to the industrial demand is not the primary target in academia as its focus is not on reducing the cost but, instead, much on materials discovery and cell performance enhancement, which can be realized quite frequently through small cell assembly and testing. For EV battery suppliers and automative OEMs who need to meet requirements/demands on safety, cell energy density and power capability, it is also inevitable to think about the cost and energy consumption for manufacturing and hence are keen on making improvement in those metrics.'), 
+                            dcc.Markdown(('- There is a clear technological gap and lack of the bridge between academic research and industry requirements. Academic research uses the testing parameters and conditions that are much deviated from those that are adopted in commercial cell manufacturing. Adjusting key metrics including cathode/anode active loading, N/P ratio, and electrolyte amounts to the industrial demand is not the primary target in academia as its focus is not on reducing the cost but, instead, much on materials discovery and cell performance enhancement, which can be realized quite frequently through small cell assembly and testing. For EV battery suppliers and automative OEMs who need to meet requirements/demands on safety, cell energy density and power capability, it is also inevitable to think about the cost and energy consumption for manufacturing and hence are keen on making improvement in those metrics.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
                         ],
                     width={"size": 7},
@@ -254,6 +267,10 @@ layout = html.Div([
                                 },
                                 {
                                     'if': {'column_id': 'Tesla Prismatic, 161.5 Ah (LFP/Gr)'},
+                                    'backgroundColor': 'rgb(77, 188, 238)', 'padding-left':'10px'
+                                },
+                                {
+                                    'if': {'column_id': 'BYD Blade Prismatic, 138 Ah (LFP/Gr)'},
                                     'backgroundColor': 'rgb(77, 188, 238)', 'padding-left':'10px'
                                 },
                                 ],
@@ -340,7 +357,7 @@ layout = html.Div([
                 dcc.Markdown(('- Will finding the new cathode material be the solution?'), 
                                  style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'20px', 'font-weight':'bold'}),  
                 html.Br(),
-                dcc.Markdown(('- One metric to improve the cell performance is increasing the cathode areal capacity. Apparently, simply increasing the coathing thickness will not do the job due to an increase in polarization and low material utilization. Hence, finding a new cathode system with high specific capacity is desirable, but this cannot easily be realized.'), 
+                dcc.Markdown(('- One metric to improve the cell performance is the cathode areal capacity. Apparently, simply increasing the coathing thickness will not do the job due to an increase in polarization and low material utilization. Hence, finding a new cathode system with high specific capacity is desirable, but this cannot easily be realized.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),    
                 dbc.Row([
                     dbc.Col([                      
@@ -351,7 +368,7 @@ layout = html.Div([
                             xs=9, sm=12, md=12, lg=6, xl=5
                             ),
                     dbc.Col([
-                                 dcc.Markdown(('- The perspective article by Frith et al., shows nicely the graphical comparison of performance between the cells consisting of NCA/Graphite-SiOx and LFP/Graphite from theoretical estimation to the pack assembly level. (see the graph on the left.) At the theory level, the differences between the cells in both gravimetric (699 Wh/kg vs. 373 Wh/kg) and volumetric energy densities (2391 Wh/L vs. 1100 Wh/L) are huge; NCA/Graphite-SiOx outperforms LFP/Graphite by almost double. However, the margin is gradually reduced during various stages of implementation- ultimately the energy densities are almost the same as each other after considering reversibility, lifetime, proportion of inactive components, and cell-to-pack technology.'), 
+                                 dcc.Markdown(('- The perspective article by Frith et al., shows nicely the graphical comparison of performance between the cells consisting of NCA/Graphite-SiOx and LFP/Graphite from theoretical estimation to the pack assembly level. (see the graph on the left.) At the theory level, the differences between the cells in both gravimetric (699 Wh/kg vs. 373 Wh/kg) and volumetric energy densities (2391 Wh/L vs. 1100 Wh/L) are huge; NCA/Graphite-SiOx outperforms LFP/Graphite by almost double. However, the margin gets gradually reduced during various stages of implementation- ultimately the energy densities are almost the same as each other after factoring in reversibility, lifetime, proportion of inactive components, cell-to-pack technology, and so on.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
                                  html.Br(),
                                  dcc.Markdown(('**Reference**: James T Frith, et al., "A non-academic perspective on the future of lithium-based batteries",_**Nature Commun.**_, 14, 420 (2023)'), 

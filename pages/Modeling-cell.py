@@ -197,40 +197,53 @@ tab2= dbc.Container([
 
 tab3= dbc.Container([
     dbc.Row([
-        dcc.Markdown('* Estimation of Jelly-roll capacity and requried electrode dimension', style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
-        dcc.Markdown('This calculator can be used to compute the metrics for the cylindrical cell consisting of a jelly-roll of cathode, anode, and separator sheets.'),
-        dcc.Markdown('This module calculates the electrode length required for customized cell components dimensions to fit the cylindrical cell case dimensions.'),
-        dcc.Markdown('By knowing the outer and inner diameters, which are determined based on the cylindrical cell case, the cylindrical cell electrode length can be calculated using the Archimedean spiral using polar coordinates using the following equation:'),
-        dcc.Markdown(('- For the electrode length:'),
-                     style={'textAlign':'left', 'font-size':'20px', 'font-weight':'bold','margin-left':'40px'}),
-        dcc.Markdown('''$$
-                        L=\\frac{a}{2\pi}(\\frac{\phi_{1}}{2}\\sqrt{\phi_{1}^2+1}+\\frac{1}{2}ln(\phi_{1}+\\sqrt{\phi_{1}^2+1})-\\frac{\phi_{0}}{2}\\sqrt{\phi_{0}^2+1}-\\frac{1}{2}ln(\phi_{0}+\\sqrt{\phi_{0}^2+1}))
-                        $$
-                        ''', mathjax=True, style={'textAlign':'left','font-size':"20px"}),
-        dcc.Markdown(('- Number of spiral layers:'), 
-                    style={'textAlign':'left', 'font-size':'20px', 'font-weight':'bold','margin-left':'40px'}),
-        dcc.Markdown('''$$
-                        Nw=\\frac{\phi_{1}-\phi_{0}}{2\pi}
-                            $$
-                        ''', mathjax=True, style={'textAlign':'left','font-size':"20px"}),
-        dcc.Markdown('where $$\phi$$ = rotation angle and $$a$$ = electrode thickness (double-sided cathode thickness + double-sided anode thickness + 2*separator thickness)', mathjax=True, style={'textAlign':'left', 'font-size':'18px', 'font-weight':'bold', 'margin-left':'50px'}),              
-        dcc.Markdown('Note: cell outer diameter = $$\\frac{a}{\pi}\phi_{1}$$ & cell inner diameter = $$\\frac{a}{\pi}\phi_{0}$$', mathjax=True, style={'textAlign':'left', 'font-size':'18px', 'margin-left':'50px'}),              
-        html.Br(),
-        dcc.Markdown(" Input Parameters:  ", style={'marginTop':'20px','font-size':'20px','textAlign':'left','font-weight':'bold'}),
-        dbc.Col([
-            dbc.Row([
-                html.Br(),
-                html.Br(),
-                html.Div(html.Img(src='https://www.dropbox.com/scl/fi/l4b853tep0e9r52k7oun1/cylindrical-spiral_wcaption.png?rlkey=noe3s94xw0p7rxkhx772b53l9&raw=1', style={"width":"100%", "margin-bottom":"20px"})), 
-                html.Br(),
-                html.Br(),
-                ],
-                style={'textAlign':'center'},
+                dbc.Col([
+                    html.H1(('Cell Calculator (Jelly-roll Design)'), 
+                        style={'textAlign':'left', 'font-weight':'bold','color':'purple'}),
+                    html.Br(),
+                    html.Br(),
+                    dcc.Markdown(('- This calculator can be used to compute the metrics for the cylindrical cell consisting of a jelly-roll of cathode, anode, and separator sheets.'), 
+                        style={'textAlign':'left', 'font-size':'20px'}),
+                    dcc.Markdown(('- To calculate the cylindrical cell electrode length, Archimedean spiral with a polar coordinate can be used:'), 
+                        style={'textAlign':'left', 'font-size':'20px'}),
+                    dcc.Markdown(('- For the spiral length:'), 
+                        style={'textAlign':'left', 'font-size':'20px', 'font-weight':'bold','margin-left':'40px'}),
+                    dcc.Markdown('''$$
+                                     L=\\frac{a}{2\pi}(\\frac{\phi_{1}}{2}\\sqrt{\phi_{1}^2+1}+\\frac{1}{2}ln(\phi_{1}+\\sqrt{\phi_{1}^2+1})-\\frac{\phi_{0}}{2}\\sqrt{\phi_{0}^2+1}-\\frac{1}{2}ln(\phi_{0}+\\sqrt{\phi_{0}^2+1}))
+                                     $$
+                                     ''', mathjax=True, style={'textAlign':'left','font-size':"20px"}),
+                    dcc.Markdown(('- Number of windings:'), 
+                        style={'textAlign':'left', 'font-size':'20px', 'font-weight':'bold','margin-left':'40px'}),
+                    dcc.Markdown('''$$
+                                     Nw=\\frac{\phi_{1}-\phi_{0}}{2\pi}
+                                     $$
+                                     ''', mathjax=True, style={'textAlign':'left','font-size':"20px"}),
+                    dcc.Markdown('where $$\phi$$ = rotation angle and $$a$$ = electrode thickness (double-sided cathode thickness + double-sided anode thickness + 2*separator thickness)', mathjax=True, style={'textAlign':'left', 'font-size':'18px', 'font-weight':'bold', 'margin-left':'50px'}),              
+                    dcc.Markdown('Note: cell outer diameter = $$\\frac{a}{\pi}\phi_{1}$$ & cell inner diameter = $$\\frac{a}{\pi}\phi_{0}$$', mathjax=True, style={'textAlign':'left', 'font-size':'18px', 'margin-left':'50px'}),              
+                    html.Br(),
+                    html.Br(),
+                    html.Br(),
+                    ], width={"size":12},
+                xs=8, sm=10, md=12, lg=10, xl=12,
                 ),
-
-        ],width={"size":4},
-                xs=6, sm=6, md=6, lg=4, xl=4,),
-        dbc.Col([
+                ],
+            style={'justify':'center','text-align':'left'},
+        ),
+        dbc.Row([
+                dbc.Col([
+                    dbc.Row([
+                        html.Br(),
+                        html.Br(),
+                        html.Div(html.Img(src='https://www.dropbox.com/scl/fi/l4b853tep0e9r52k7oun1/cylindrical-spiral_wcaption.png?rlkey=noe3s94xw0p7rxkhx772b53l9&raw=1', style={"width":"120%", "margin-bottom":"20px"})), 
+                        html.Br(),
+                        html.Br(),
+                        ],
+                    style={'textAlign':'center'},
+                    ),
+                ],width={"size":4},
+                xs=6, sm=8, md=6, lg=3, xl=4,
+                ),
+                dbc.Col([
                     dbc.Row([
                         html.Br(),
                         html.Br(),
