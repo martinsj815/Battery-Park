@@ -215,49 +215,89 @@ tab3= dbc.Container([
         dcc.Markdown('Note: cell outer diameter = $$\\frac{a}{\pi}\phi_{1}$$ & cell inner diameter = $$\\frac{a}{\pi}\phi_{0}$$', mathjax=True, style={'textAlign':'left', 'font-size':'18px', 'margin-left':'50px'}),              
         html.Br(),          
     ]),
-    dbc.Row([
+    
         dcc.Markdown(" Input Parameters:  ", style={'marginTop':'20px','font-size':'20px','textAlign':'left','font-weight':'bold'}),
+        dbc.Row([
+
         dbc.Col([
             dbc.Row([
+
+                html.H5('Electrode Parameters', style={"margin-bottom":"0em", "color":"red"}),
+            
+                html.Div([html.P('Cathode thickness (single-side) [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
+                    dcc.Input(id="jc_et", type="number", value='70', step='0.01', style={"margin-bottom":"1em"}) ]),
+                html.Div([html.P('Anode thickness (single-side) [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
+                dcc.Input(id="ja_et", type="number", value='50', step='0.01', style={"margin-bottom":"1em"}) ]),                       
+                html.Div([html.P(['Active cathode material loading ratio'], style={"height": "auto", "margin-bottom": "auto"}),
+                    dcc.Input(id="jc_amlr", type="number", value='0.96', step='0.01', style={"margin-bottom":"1em"}) ]),
+                html.Div([html.P(['Active anode material loading ratio'], style={"height": "auto", "margin-bottom": "auto"}),
+                    dcc.Input(id="ja_amlr", type="number", value='0.96', step='0.01', style={"margin-bottom":"1em"}) ]),
+                html.Div([html.P(['Electrode width [cm]'],style={"height": "1.3em", "margin-bottom": "auto"}),
+                    dcc.Input(id="jc_w", type="number", value='5.0', step='1.0', style={"margin-bottom":"1em"}) ]),
+                html.Br(),
+                html.Br(),
+                    ],style={'textAlign':'left','margin-top':'20px'},
+                ),
+            ],width={"size":4},
+            xs=6, sm=6, md=6, lg=4, xl=4,
+        ),
+
+        dbc.Col([
+            dbc.Row([
+                html.H5('Parameters for Capacity', style={"margin-bottom":"0em", "color":"blue"}),
+                html.Div([html.P(["Cathode density [g/cm",html.Sup("3"),"]"],style={"height": "auto", "margin-bottom": "auto",'margin-top':'10px'}),
+                dcc.Input(id="jc_ed", type="number", value='3.0', step='0.1', style={"margin-bottom":"1em"}) ]),
+                html.Div([html.P(["Anode density [g/cm",html.Sup("3"),"]"],style={"height": "auto", "margin-bottom": "auto"}),
+                    dcc.Input(id="ja_ed", type="number", value='3.0', step='0.1', style={"margin-bottom":"1em"}) ]),
+                html.Div([html.P(['Cathode practical capacity [mAh/g]'], style={"height": "auto", "margin-bottom": "auto",'margin-top':'10px'}),
+                    dcc.Input(id="jc_pcam", type="number", value='185', step='0.1', style={"margin-bottom":"1em"}) ]),
+                html.Div([html.P(['Anode practical capacity [mAh/g]'], style={"height": "auto", "margin-bottom": "auto"}),
+                dcc.Input(id="ja_pcam", type="number", value='185', step='0.1', style={"margin-bottom":"1em"}) ]),
+
+            ],style={'textAlign':'left','margin-top':'20px'},
+            ),
+
+        ],width={"size":4},
+        xs=6, sm=6, md=6, lg=4, xl=4,
+        ),
+    
+        dbc.Col([
+            dbc.Row([
+                html.H5('Case and Other Parameters', style={"margin-bottom":"0em", "color":"purple"}),
+                html.Div([html.P('Outer diameter of the cell (mm)', style={"height": "auto", "margin-bottom": "auto",'margin-top':'10px'}),
+                dcc.Input(id="input-c11", type="number", value='45', step='0.001', style={"margin-bottom":"1em"}) ]),              
+                html.Div([html.P('Cell Can thickness (mm)', style={"height": "auto", "margin-bottom": "auto"}),
+                dcc.Input(id="input-c12", type="number", value='1.5', step='0.001', style={"margin-bottom":"1em"}) ]),              
+                html.Div([html.P('Inner diameter of the cell (mm)', style={"height": "auto", "margin-bottom": "auto"}),
+                dcc.Input(id="input-c13", type="number", value='2', step='0.001', style={"margin-bottom":"1em"}) ]), 
+                
+                html.Div([html.P('Al foil thickness [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
+                dcc.Input(id="jAl_t", type="number", value='12', step='1.0', style={"margin-bottom":"1em"}) ]),
+                html.Div([html.P('Cu foil thickness [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
+                dcc.Input(id="jCu_t", type="number", value='12', step='1.0', style={"margin-bottom":"1em"}) ]),
+                html.Div([html.P('Separator thickness (um)', style={"height": "auto", "margin-bottom": "auto"}) ,
+                dcc.Input(id="input-c10", type="number", value='25', step='0.1', style={"margin-bottom":"1em"}) ]),
+                ],style={'textAlign':'left','margin-top':'20px'},
+                
+            ),
+        ],width={"size":4},
+        xs=6, sm=6, md=6, lg=4, xl=4,),
+        
+    ],style={'textAlign':'justify','margin-left':'30px','margin-right':'30px','margin-buttom':'30px'},
+    ),
+
+        dbc.Col([
+        dbc.Row([
                 html.Br(),
                 html.Br(),
                 html.Div(html.Img(src='https://www.dropbox.com/scl/fi/l4b853tep0e9r52k7oun1/cylindrical-spiral_wcaption.png?rlkey=noe3s94xw0p7rxkhx772b53l9&raw=1', style={"width":"150%", "margin-bottom":"20px",'margin-top':"50px"})), 
                 html.Br(),
-                html.Br(),
+
                 ], style={'textAlign':'center'},
                 ),
-            ],width={"size":5},
-            xs=6, sm=8, md=6, lg=4, xl=4,
+            ],width={"size":6},
+            xs=12, sm=12, md=12, lg=4, xl=4,
         ),
-                dbc.Col([
-                    dbc.Row([
-                        html.Br(),
-                        html.Br(),
-                        html.H5('Electrode Parameters', style={"margin-bottom":"0em", "color":"red"}),
-                        html.Div([html.P(["Cathode density [g/cm",html.Sup("3"),"]"],style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jc_ed", type="number", value='3.0', step='0.1', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Electrode thickness [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jc_et", type="number", value='70', step='0.01', style={"margin-bottom":"1em"}) ]),                      
-                        html.Div([html.P(['Active material loading ratio'], style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jc_amlr", type="number", value='0.96', step='0.01', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P(['Practical capacity of active material [mAh/g]'], style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jc_pcam", type="number", value='185', step='0.1', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P(['Electrode width [cm]'],style={"height": "1.3em", "margin-bottom": "auto"}),
-                            dcc.Input(id="jc_w", type="number", value='5.0', step='1.0', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Al foil thickness [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jAl_t", type="number", value='12', step='1.0', style={"margin-bottom":"1em"}) ]),
-                        html.Br(),
-                        html.Br(),
-                        ],
-                    style={'textAlign':'left'},
-                    ),
-                ],width={"size":4},
-                xs=6, sm=6, md=6, lg=4, xl=4,
-        ),
-        
-        
-    ],style={'textAlign':'justify','margin-left':'30px','margin-right':'30px'},
-    ),
 
 ]),
 # tab3= dbc.Row([
