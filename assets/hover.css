@@ -1,0 +1,5 @@
+.nav-link.navbar-link:hover {
+    color: rgb(133, 160, 15); 
+    transition: color 0.3s;
+    /*background-color: rgb(234, 228, 228);*/
+}

@@ -1,0 +1,11 @@
+.dropdown .dropbtn {
+    font-size: 16px;
+    background-color: inherit;
+    font-family: inherit; 
+  }
+.drop-down:hover {
+    color: rgb(6, 27, 61); 
+    font-weight: bold;
+    background-color: rgb(148, 166, 186);
+    display: block;
+}
