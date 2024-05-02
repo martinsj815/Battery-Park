@@ -26,7 +26,8 @@ app.title = "Cell Design"
 server = app.server
 
 masthead_content = dbc.Col(
-    html.Img(src='https://dl.dropboxusercontent.com/scl/fi/7utukx4f0a1b651d023nw/Masthead_new3.png?rlkey=1gkyhyagdugod601ytmx4i4g3&raw=1', style={"margin-top":"10px","width":"250px"}), 
+    html.Img(src='https://dl.dropboxusercontent.com/scl/fi/7utukx4f0a1b651d023nw/Masthead_new3.png?rlkey=1gkyhyagdugod601ytmx4i4g3&raw=1', style={"margin-top":"10px","width":"250px"}
+             ), 
     width={"size": 8}
 )
 
