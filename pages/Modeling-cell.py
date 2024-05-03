@@ -285,7 +285,7 @@ tab3= dbc.Container([
         
     ],style={'textAlign':'justify','margin-left':'30px','margin-right':'30px','margin-buttom':'30px'},
     ),
-
+    dbc.Row([
         dbc.Col([
         dbc.Row([
                 html.Br(),
@@ -298,6 +298,16 @@ tab3= dbc.Container([
             ],width={"size":6},
             xs=12, sm=12, md=12, lg=4, xl=4,
         ),
+
+        dbc.Col([
+                html.H5("Jelly-roll Summary", style={'textAlign':'right','font-weight':'bold'}),
+                html.Div(id="jsummary_table", style={"margin-top":"30px"})
+            ],width={"size":6}, #style={'margin-left':'5px'},
+                xs=12, sm=12, md=12, lg=4, xl=4,
+            ),
+
+    ]),
+
 
 ]),
 # tab3= dbc.Row([
