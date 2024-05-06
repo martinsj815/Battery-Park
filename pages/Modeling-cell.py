@@ -196,7 +196,7 @@ tab2= dbc.Container([
 ]),
 
 tab3= dbc.Container([
-    dbc.Row([
+        dbc.Row([
         dcc.Markdown("* Estimation of Jelly-roll capacity and required electrode dimension", style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
         dcc.Markdown('This calculator can be used to compute the metrics for the cylindrical cell consisting of a jelly-roll of cathode, anode, and separator sheets.'),
         dcc.Markdown('This module calculates the electrode length required for customized cell components dimensions to fit the cylindrical cell case dimensions.'),
@@ -336,9 +336,8 @@ tab3= dbc.Container([
             ),
 
     ]),
-
-
 ]),
+
 
 
 layout = html.Div([
