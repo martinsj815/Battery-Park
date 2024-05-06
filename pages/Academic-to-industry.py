@@ -216,13 +216,13 @@ layout = html.Div([
                     xs=9, sm=12, md=12, lg=6, xl=7
                     ),
                     dbc.Col([
-                        html.Div( html.Img(src='https://www.dropbox.com/scl/fi/rpitq4tea2jdczua3un9b/industry_academia.png?rlkey=wxshe0dl8i9uhxlypfxuu4j3l&raw=1', style={"width":"100%", "display":"block", "margin-bottom":"20px"}), 
+                        html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/rpitq4tea2jdczua3un9b/industry_academia.png?rlkey=wxshe0dl8i9uhxlypfxuu4j3l&raw=1', style={"width":"100%", "display":"block", "margin-bottom":"20px"}), 
                         ),
-                        ], width={"size": 5},
+                        ], width={"size": 5}, style={"margin-bottom":"20px"},
                         xs=7, sm=10, md=8, lg=6, xl=5
                     ),   
                     dcc.Markdown(('- A table below shows how different are the research lab test metrics from those in the industry setting. The columns highlighted in pink/blue are those from the labs/industry.'), 
-                            style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),      
+                            style={'textAlign':'justify', 'margin-left':'20px', "margin-bottom":"20px", 'font-size':'18px'}),      
                 ]),             
                 html.Br(),
                 html.Br(),
@@ -230,7 +230,7 @@ layout = html.Div([
                                  style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'20px', 'font-weight':'bold'}),      
                 dbc.Row([
                     dash_table.DataTable(
-                                style_cell={'font-family': 'Arial', 'font-size': '16px', 'text-align':'center', 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px', 'margin-top':'10px', 'padding':2}, 
+                                style_cell={'font-family': 'Arial', 'font-size': '15px', 'text-align':'center', 'minWidth': '160px', 'width': '160px', 'maxWidth': '160px', 'margin-top':'10px', 'padding':2}, 
                                 markdown_options={"html": True},
                                 style_table={'overflowX': 'auto'},
                                 style_data={
@@ -280,7 +280,7 @@ layout = html.Div([
                                     'backgroundColor': 'black',
                                     'color': 'white',
                                     'fontWeight': 'bold',
-                                    'font-size': '18px',
+                                    'font-size': '16px',
                                     'text-align':'center',
                                 },
                                 data=dt.to_dict('records'),
@@ -290,7 +290,7 @@ layout = html.Div([
                 ),
                 html.Br(),
                 html.Br(),
-                dcc.Markdown(('- As shown in the table above, in the research lab, a thinner cathode is often preferred over the thicker one (especially when uncalendared) for coin cell tests to display high capacity with good reversibility by preventing possible polarization and minimizing the degree of Li stripping and deposition.  Further, putting an excessive amount of electrolyte during the coin cell assembly translates to good cycle performance without any concern of electrolyte drying that leads to rapid capacity decay. Although these measures make the data more appealing for publication, these are far from being practical in the industrial perspective owing to the loss of cell energy density.'), 
+                dcc.Markdown(('- As shown in the table above, in the research lab, a thinner cathode is often preferred over the thicker one (especially when uncalendared) for coin cell tests to display high capacity with good reversibility by preventing possible polarization and minimizing the degree of Li stripping and deposition. Further, using excessive amounts of electrolyte and employing thick Li metal anode in the coin cell may translate to good cycle performance without any concern of electrolyte drying out and/or Li ion supply running out during cycling. Although these measures make the data more appealing for publication, these are far from being practical in the industrial perspective owing to the loss of cell energy density.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),    
                 dcc.Markdown(('* The table below reveals that increasing the cathode coating, reducing Li thickness, and reducing the electrolyte amount is detrimental to capacity retention of the cell.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}), 
@@ -298,9 +298,9 @@ layout = html.Div([
                 dcc.Markdown(('- Influence of metrics on the coin cell (Li/NCM622) cycle performance'), 
                                  style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'20px', 'font-weight':'bold'}),                                   
                 dash_table.DataTable(
-                                style_cell={'font-family': 'Arial', 'font-size': '16px', 'text-align':'center', 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px', 'margin-top':'10px', 'padding':2}, 
+                                style_cell={'font-family': 'Arial', 'font-size': '15px', 'text-align':'center', 'minWidth': '160px', 'width': '160px', 'maxWidth': '160px', 'margin-top':'10px', 'padding':2}, 
                                 markdown_options={"html": True},
-                                style_table={'overflowX': 'auto'},
+                                style_table={'overflowX': 'auto', 'minWidth':'5%'},
                                 style_data={
                                         'whiteSpace': 'normal',
                                         'color': 'black',
@@ -344,13 +344,13 @@ layout = html.Div([
                                     'backgroundColor': 'black',
                                     'color': 'white',
                                     'fontWeight': 'bold',
-                                    'font-size': '18px',
+                                    'font-size': '16px',
                                     'text-align':'center'
                                 },
                                 data=dt2.to_dict('records'),
                                 columns=[{'id': d, 'name': d,"presentation": "markdown"} for d in dt2.columns],
                             ),
-                dcc.Markdown(('* The data from the following paper: Shuru Chen, et al., "Critical Parameters for Evaluating Coin Cells and Pouch Cells of Rechargeale Li-Metal Batteries", 3, 1094 (2019)'), 
+                dcc.Markdown(('* The data from the following paper: Shuru Chen, et al., "Critical Parameters for Evaluating Coin Cells and Pouch Cells of Rechargeale Li-Metal Batteries", _**Joule**_, 3, 1094 (2019)'), 
                                  style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'12px', 'font-style':'italic'}),    
                 html.Br(),                       
                 html.Br(),
@@ -361,7 +361,7 @@ layout = html.Div([
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),    
                 dbc.Row([
                     dbc.Col([                      
-                               html.Div( html.Img(src='https://www.dropbox.com/scl/fi/op512yfz60irl6hc1te6f/LFPvsNCA.png?rlkey=4hcmb8tdnwq73lyfy74jfy0em&st=x4ql2qx7&raw=1', style={"width":"100%", "display":"block", "margin-bottom":"20px"}), 
+                               html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/op512yfz60irl6hc1te6f/LFPvsNCA.png?rlkey=4hcmb8tdnwq73lyfy74jfy0em&st=x4ql2qx7&raw=1', style={"width":"100%", "display":"block", "margin-bottom":"20px"}), 
                         ),
                         ],
                             width={"size": 5},
@@ -379,7 +379,7 @@ layout = html.Div([
                         ]
                 ),                      
             ],
-            style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},
+            style={'textAlign':'justify', 'margin-left':'10px', 'margin-right':'10px'},
         ),
         html.Div(id='Options-content'),
         ],

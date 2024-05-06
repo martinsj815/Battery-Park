@@ -31,8 +31,9 @@ masthead_content = dbc.Row([
              style={"margin-top":"10px", "width":"250px"})
     ]),
     dbc.Col([
-        html.Div("Understanding battery chemistry and technology", style={"font-size":"20px", "font-style":"italic", "font-variant":"small-caps", "font-weight":"bold", "white-space":"nowrap", "color":"rgb(240,220,200)","position":"sticky","top":"100px","left":"100px"})
-    ]),
+        html.Div("Battery chemistry and technology", style={"font-size":"24px", "font-style":"italic", "font-variant":"small-caps", "font-weight":"bold", "white-space":"normal", "color":"rgb(240,220,200)", "position":"sticky", "top":"100px"})
+    ], style={"text-align":"right"}
+    ),
     ])
 
 navbar_children=[

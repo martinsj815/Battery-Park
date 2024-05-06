@@ -147,7 +147,7 @@ tab2= dbc.Container([
             dcc.Dropdown({ 't1': 'Type1','t2':'Type2','t3':'Type3'}, value="t1",id='stacktype', 
                          clearable=False, style={"height": "auto","width":"150px", "margin-bottom": "auto","margin-top":"30px"}),
 
-            html.Div( html.Img(src='https://www.dropbox.com/scl/fi/t0l93yiboq194etmscnvu/stack_type.png?rlkey=r4fuiabrdlqtl7rxvqnqokd6e&st=za7if4yl&raw=1', style={"width":"100%", "display": "block", "margin": "auto"}), 
+            html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/t0l93yiboq194etmscnvu/stack_type.png?rlkey=r4fuiabrdlqtl7rxvqnqokd6e&st=za7if4yl&raw=1', style={"width":"100%", "display": "block", "margin": "auto"}), 
                 ),
             
            ], width={"size":4}, #style={'margin-left':'5px'},
@@ -234,7 +234,7 @@ tab3= dbc.Container([
                     dbc.Row([
                         html.Br(),
                         html.Br(),
-                        html.Div(html.Img(src='https://www.dropbox.com/scl/fi/l4b853tep0e9r52k7oun1/cylindrical-spiral_wcaption.png?rlkey=noe3s94xw0p7rxkhx772b53l9&raw=1', style={"width":"120%", "margin-bottom":"20px"})), 
+                        html.Div(html.Img(src='https://dl.dropboxusercontent.com/scl/fi/l4b853tep0e9r52k7oun1/cylindrical-spiral_wcaption.png?rlkey=noe3s94xw0p7rxkhx772b53l9&raw=1', style={"width":"120%", "margin-bottom":"20px"})), 
                         html.Br(),
                         html.Br(),
                         ],

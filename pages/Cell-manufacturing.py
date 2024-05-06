@@ -141,7 +141,7 @@ layout = html.Div([
                                         xs=16, sm=16, md=10, lg=8, xl=8
                                         ), 
                                 dbc.Col([
-                                        html.Div( html.Img(src='https://www.dropbox.com/scl/fi/jau28k6txp44l9jpj4zi6/calendaring.png?rlkey=uw5pdwvr2v7enxrjal6zggset&raw=1', 
+                                        html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/jau28k6txp44l9jpj4zi6/calendaring.png?rlkey=uw5pdwvr2v7enxrjal6zggset&raw=1', 
                                                                    style={"width":"80%", "display": "block", "margin": "auto", "align-items":"center", "justify-content":"center"},
                                                                    ), 
                                                 ),
@@ -161,7 +161,7 @@ layout = html.Div([
                                         xs=16, sm=16, md=10, lg=8, xl=8
                                         ), 
                                 dbc.Col([
-                                        html.Div( html.Img(src='https://www.dropbox.com/scl/fi/r5dqebbqf3ta55nbu4wl2/Slitting.png?rlkey=xx2dkjjy1577srmuno34mw569&raw=1', 
+                                        html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/r5dqebbqf3ta55nbu4wl2/Slitting.png?rlkey=xx2dkjjy1577srmuno34mw569&raw=1', 
                                                                    style={"width":"80%", "display": "block", "margin": "auto", "align-items":"center", "justify-content":"center"},
                                                                    ), 
                                                 ),
@@ -180,7 +180,7 @@ layout = html.Div([
                                         xs=16, sm=16, md=10, lg=8, xl=8
                                         ), 
                                 dbc.Col([
-                                        html.Div( html.Img(src='https://www.dropbox.com/scl/fi/7yzf3xn86wnlgacl5ecd3/stacking.png?rlkey=wlahugx7hq56paf1q1hk4ovcr&raw=1', 
+                                        html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/7yzf3xn86wnlgacl5ecd3/stacking.png?rlkey=wlahugx7hq56paf1q1hk4ovcr&raw=1', 
                                                                    style={"width":"80%", "display": "block", "margin": "auto", "align-items":"center", "justify-content":"center"},
                                                                    ), 
                                                 ),
@@ -199,7 +199,7 @@ layout = html.Div([
                                         xs=16, sm=16, md=10, lg=8, xl=8
                                         ), 
                                 dbc.Col([
-                                        html.Div( html.Img(src='https://www.dropbox.com/scl/fi/ivf9r4p2cclsxps0xud49/welding.png?rlkey=tip6417rbdewygdimnglz7nzp&raw=1', 
+                                        html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/ivf9r4p2cclsxps0xud49/welding.png?rlkey=tip6417rbdewygdimnglz7nzp&raw=1', 
                                                                    style={"width":"60%", "display": "block", "margin": "auto", "align-items":"center", "justify-content":"center"},
                                                                    ), 
                                                 ),
@@ -219,7 +219,7 @@ layout = html.Div([
                                         xs=16, sm=16, md=10, lg=8, xl=8
                                         ), 
                                 dbc.Col([
-                                        html.Div( html.Img(src='https://www.dropbox.com/scl/fi/z8m8c2hh13qn07t6pjfwp/enclosing.png?rlkey=ekutn2m26ryu02a54qrwpghtm&raw=1', 
+                                        html.Div( html.Img(src='https://dl.dropboxusercontent.comscl/fi/z8m8c2hh13qn07t6pjfwp/enclosing.png?rlkey=ekutn2m26ryu02a54qrwpghtm&raw=1', 
                                                                    style={"width":"40%", "display": "block", "margin": "auto", "align-items":"center", "justify-content":"center"},
                                                                    ), 
                                                 ),
@@ -239,7 +239,7 @@ layout = html.Div([
                                         xs=16, sm=16, md=10, lg=8, xl=8
                                         ), 
                                 dbc.Col([
-                                        html.Div( html.Img(src='https://www.dropbox.com/scl/fi/qbc8fmi6rcx5lserwwnmw/formation.png?rlkey=6z5k47t7v74kgjgnfkpot6twz&raw=1', 
+                                        html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/qbc8fmi6rcx5lserwwnmw/formation.png?rlkey=6z5k47t7v74kgjgnfkpot6twz&raw=1', 
                                                                    style={"width":"40%", "display": "block", "margin": "auto", "align-items":"center", "justify-content":"center"},
                                                                    ), 
                                                 ),
