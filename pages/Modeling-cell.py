@@ -230,7 +230,6 @@ tab3= dbc.Container([
                 ],width={"size":4},
                 xs=6, sm=8, md=6, lg=3, xl=4,
                 ),
-<<<<<<< HEAD
             ],
         ),
 
@@ -286,34 +285,6 @@ dbc.Row([
                 html.Br(),
 
                 ], style={'textAlign':'center'},
-=======
-                dbc.Col([
-                    dbc.Row([
-                        html.Br(),
-                        html.Br(),
-                        html.H5('Cathode Parameters', style={"margin-bottom":"0em", "color":"red"}),
-                        html.Div([html.P('Coating thickness (Single-side) (um)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jinput-c1", type="number", value='60', step='0.001', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Al foil thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jinput-c2", type="number", value='15', step='0.1', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Discharge capacity of active material (mAh/g)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jinput-c3", type="number", value='200', step='0.1', style={"margin-bottom":"1em"}) ]),                        
-                        html.Div([dcc.Markdown('Density of electrode material (g/cm<sup>3</sup>)', dangerously_allow_html=True, style={"height": "1.3em", "margin-bottom": "auto"}),
-                            dcc.Input(id="jinput-c4", type="number", value='4.87', step='0.01', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Active material loading ratio', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jinput-c5", type="number", value='0.95', step='0.01', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Estimated porosity', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jinput-c6", type="number", value='0.2', step='0.01', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Electrode width (cm)', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jinput-c7", type="number", value='5', step='0.01', style={"margin-bottom":"1em"}) ]),
-                        html.Br(),
-                        html.Br(),
-                        ],
-                    style={'textAlign':'center'},
-                    ),
-                ],width={"size":4},
-                xs=6, sm=8, md=6, lg=5, xl=4,
->>>>>>> 26b88d1c02d903b6360687763608d13154892497
                 ),
                 dbc.Col([   
                     dbc.Row([
