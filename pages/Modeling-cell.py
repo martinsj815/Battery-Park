@@ -231,8 +231,7 @@ tab3= dbc.Container([
                 ],width={"size":4},
                 xs=6, sm=8, md=6, lg=3, xl=4,
                 ),
-            ],width={"size":4},
-            xs=6, sm=6, md=6, lg=4, xl=4,
+            ],
         ),
 
         dbc.Col([
