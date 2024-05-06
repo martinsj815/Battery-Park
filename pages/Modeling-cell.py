@@ -218,7 +218,6 @@ tab3= dbc.Container([
     
         dcc.Markdown(" Input Parameters:  ", style={'marginTop':'20px','font-size':'20px','textAlign':'left','font-weight':'bold'}),
         dbc.Row([
-<<<<<<< HEAD
                 dbc.Col([
                     dbc.Row([
                         html.Br(),
@@ -231,27 +230,6 @@ tab3= dbc.Container([
                     ),
                 ],width={"size":4},
                 xs=6, sm=8, md=6, lg=3, xl=4,
-=======
-
-        dbc.Col([
-            dbc.Row([
-
-                html.H5('Electrode Parameters', style={"margin-bottom":"0em", "color":"red"}),
-            
-                html.Div([html.P('Cathode thickness (single-side) [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
-                    dcc.Input(id="jc_et", type="number", value='70', step='0.01', style={"margin-bottom":"1em"}) ]),
-                html.Div([html.P('Anode thickness (single-side) [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
-                dcc.Input(id="ja_et", type="number", value='50', step='0.01', style={"margin-bottom":"1em"}) ]),                       
-                html.Div([html.P(['Active cathode material loading ratio'], style={"height": "auto", "margin-bottom": "auto"}),
-                    dcc.Input(id="jc_amlr", type="number", value='0.96', step='0.01', style={"margin-bottom":"1em"}) ]),
-                html.Div([html.P(['Active anode material loading ratio'], style={"height": "auto", "margin-bottom": "auto"}),
-                    dcc.Input(id="ja_amlr", type="number", value='0.96', step='0.01', style={"margin-bottom":"1em"}) ]),
-                html.Div([html.P(['Electrode width [cm]'],style={"height": "1.3em", "margin-bottom": "auto"}),
-                    dcc.Input(id="jc_w", type="number", value='5.0', step='1.0', style={"margin-bottom":"1em"}) ]),
-                html.Br(),
-                html.Br(),
-                    ],style={'textAlign':'left','margin-top':'20px'},
->>>>>>> 4bf57407127bcad84115c269a9800d611baa0cf7
                 ),
             ],width={"size":4},
             xs=6, sm=6, md=6, lg=4, xl=4,
@@ -300,9 +278,9 @@ tab3= dbc.Container([
         
     ],style={'textAlign':'justify','margin-left':'30px','margin-right':'30px','margin-buttom':'30px'},
     ),
-    dbc.Row([
+dbc.Row([
         dbc.Col([
-        dbc.Row([
+            dbc.Row([
                 html.Br(),
                 html.Br(),
                 html.Div(html.Img(src='https://www.dropbox.com/scl/fi/l4b853tep0e9r52k7oun1/cylindrical-spiral_wcaption.png?rlkey=noe3s94xw0p7rxkhx772b53l9&raw=1', style={"width":"120%", "margin-bottom":"20px",'margin-top':"50px"})), 
@@ -334,11 +312,7 @@ tab3= dbc.Container([
             ],width={"size":6}, #style={'margin-left':'5px'},
                 xs=12, sm=12, md=12, lg=4, xl=4,
             ),
-
-    ]),
 ]),
-
-
 
 layout = html.Div([
      dcc.Tabs(id="tabs", value='tab-1', parent_className='custom-tabs', className='custom-tabs-container', children=[
@@ -403,7 +377,6 @@ requiredCE = html.Div([
         ),  
     ])
 ])
-
 
     
 @callback(
