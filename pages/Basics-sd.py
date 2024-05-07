@@ -35,17 +35,17 @@ layout = html.Div([
                     html.Br(),                   
                     dbc.Row([
 
-                        dcc.Markdown('* Cell design specifications', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
+                        dcc.Markdown('* Cell connection layout (mS-nP)', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
                         dbc.Col([
                          html.Div('- For high-voltage packs, cells are connected in series to form a series-connected module (SCM).', style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
-                         dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=("$$v_{pack}=n_{series}*v_{cell}$$"), style={'text-align':'center','font-size':'120%'}),
+                         dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=("$$v_{pack}=m_{series}*v_{cell}$$"), style={'text-align':'center','font-size':'120%'}),
                          html.Div('- For high-current packs, cells are connected in parallel to form a parallel-connected module (PCM). Capacity scales with the number of cells in parallel.', style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
                          dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=("$$i_{pack}=n_{parallel}*i_{cell}$$"), style={'text-align':'center','font-size':'120%'}),
                          html.Div('- Total internal resistance of the pack can be estimated from the cell assuming the same open-circuit voltage and internal resistance:', style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
-                         dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=("$$R_{pack}=\\frac{n_{series}}{n_{parallel}}*R_{cell}$$"), style={'text-align':'center','font-size':'120%'}),
+                         dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=("$$R_{pack}=\\frac{m_{series}}{n_{parallel}}*R_{cell}$$"), style={'text-align':'center','font-size':'120%'}),
                          html.Div('- Total pack energy and power can also be calculated:', style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
-                         dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=("$$E_{pack}=n_{series}*n_{parallel}*Q_{cell}*v_{cell}$$"), style={'text-align':'center','font-size':'120%'}),
-                         dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=("$$P_{pack}=n_{series}*n_{parallel}*i_{cell}*v_{cell}$$"), style={'text-align':'center','font-size':'120%'}),
+                         dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=("$$E_{pack}=m_{series}*n_{parallel}*Q_{cell}*v_{cell}$$"), style={'text-align':'center','font-size':'120%'}),
+                         dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=("$$P_{pack}=m_{series}*n_{parallel}*i_{cell}*v_{cell}$$"), style={'text-align':'center','font-size':'120%'}),
                          ], width={"size": 7},
                          xs=12, sm=10, md=10, lg=7, xl=7
                          ), 
@@ -60,7 +60,7 @@ layout = html.Div([
                     dmc.Divider(size="md", color="grey"),
                     html.Br(),
                     dbc.Row([
-                        dcc.Markdown('* Cell scaling', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
+                        dcc.Markdown('* Cell desing to scale up cell capacity', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
                         dbc.Col([
                          html.Div('- The amount of electrochemically active material used in the cell or battery determines the magnitude of its capacity. The volume of the electrode is proportional to the capacity of its material by a following relation:', style={'textAlign':'justify', 'margin-left':'20px','font-size':'18px'}),
                          html.Br(),
