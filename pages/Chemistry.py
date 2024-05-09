@@ -164,7 +164,7 @@ data_election2 = OrderedDict(
             [
                 "0.1-50", 
                 "0.01-1",
-                "0.1-1 (at 90 oC)",
+                "0.1-1 (at 90 <sup>o</sup>C)",
             ]
         ),
         (
@@ -207,10 +207,10 @@ data_election3 = OrderedDict(
             [
                 "Sinanode -  Silicon NW embedded on graphite powder pore via melting",
                 "Titan Silicon - Micron-sized Carbon Scaffolded particles consist of nanostructured Si",
-                "SCC55 - Carbon scaffolded structure with intraparticle voids for silicon expansion",
+                "SCC55 - Carbon scaffolded structure with intraparticle voids for embedded silicon expansion",
                 "XFC (Extreme Fast Charging) Si - Slicon synthesized with \"small molecule organic compounds\"",
                 "Pre-lithiated silicon oxide",
-                "SiCore - 4 layers: Si Nanostructure/ Stabilization layer/Carbon/Fast ion conductor",
+                "SIMAXX: 100% Si Nanowire \n SiCore - 4 layers: Si Nanostructure/ Stabilization layer/Carbon/Fast ion conductor",
                 "100% Silicon crosswise stacked inside the novel mechanical architecture ",    
             ],
         ),
@@ -252,7 +252,7 @@ data_election4 = OrderedDict(
                 "Lithiated Phase",
                 "Reaction Potential vs. Li/Li<sup>+</sup> (V)",
                 "Theoretical gravimetric specific capacity (mAh/g)",
-                "Theoretical volumetric specific capacity (mAh/g)",
+                "Theoretical volumetric specific capacity (mAh/cm<sup>3</sup>)",
                 "Volumetric change",
                 "Lithium diffusion coefficient",
             ], 
@@ -277,7 +277,7 @@ data_election4 = OrderedDict(
                 "0.31",
                 "3590",
                 "8360",
-                "> 280",
+                "&gt;280",
                 "10<sup>-13</sup> - 10<sup>-11</sup>",
             ],
         ),
@@ -500,7 +500,7 @@ layout = html.Div([
                         dbc.Row([
                             dbc.Col([
                                 dash_table.DataTable(
-                                style_cell={'font-family': 'Arial', 'font-size': '14px', 'text-align':'auto', 'margin-top':'auto', 'minWidth':'100px','padding':2}, 
+                                style_cell={'font-family': 'Arial', 'font-size': '14px', 'text-align':'auto', 'margin-top':'auto', 'lineheight':'10px', 'minWidth':'100px','padding':2}, 
                                 markdown_options={"html": True},
                                 #virtualization=True,
                                 style_table={'overflowX': 'auto'},
@@ -509,7 +509,6 @@ layout = html.Div([
                                         'color': 'black',
                                         'backgroundColor': 'white',
                                         'height':'auto',
-                                        'lineheight':'10px',
                                 },
                                 style_data_conditional=[
                                 {
@@ -534,10 +533,34 @@ layout = html.Div([
                         ),
                         ]),     
                         html.Br(),               
-                        dmc.Divider(size="md", variant="dotted", color="grey"),                
+                        dmc.Divider(size="md", variant="dotted", color="grey"),       
+                        html.Br(),         
+                        dcc.Markdown(('- Moving from graphite to silicon for the Li-ion battery anode'), style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),      
+                        html.Br(),
+                        dbc.Row([
+                            dbc.Col([
+                                html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/21upt4l6z7gyneuolu86p/Si-Graphite_NCM811-grav.png?rlkey=dpqk7c8ds5311m35peirj139f&st=5jwiu184&raw=1', 
+                                               style={"width":"100%", "display": "block", "margin": "auto"}),),
+                            ],
+                            width={"size": 6}, style={"margin-bottom":'20px'},
+                            xs=8, sm=10, md=10, lg=6, xl=6,
+                            ),
+                            dbc.Col([
+                                html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/2wtrhlptthrlmde5hb8ea/Si-Graphite_NCM811-volume.png?rlkey=5ap26cqhuc2sgassov4q0fl5a&st=x6l32y3h&raw=1', 
+                                               style={"width":"100%", "display": "block", "margin": "auto"}),),
+                            ],
+                            width={"size": 8}, style={"margin-bottom":'20px'},
+                            xs=8, sm=10, md=10, lg=6, xl=6,
+                            ),
+                        ]), 
+                        html.Br(),
+                        dcc.Markdown(('The graphs above display estimated gravimetric and volumetric energy densities vs cathode areal capacity of the cell consisting of NCM811 and Graphite/Si. The data are excerpted/re-calculated based on the review article by Eshetu, et al., “Production of high-energy Li-ion batteries comprising silicon-containing anodes and insertion-type cathodes”, **_Nature Commun._**, 12 (2021). A slight modification was made to the estimations after taking cell tabs and packaging components into consideration to make them more realistic at the cell level.'), 
+                                 style={'textAlign':'justify', 'font-size':'16px'}),                        
+                        dcc.Markdown(('As shown in the graphs above, transition from graphite and silicon can yield drastic improvement in both metrics. At the areal capacity of 10 mAh/cm<sup>2</sup>, the transition from the graphite/NCM811 chemistry to that of Si/NCM811 can boost gravimetric energy density from 342 Wh/kg to 536 Wh/kg, while the increase is much greater for volumetric density (817 Wh/kg to 1568 Wh/kg). At the industry with the typical areal capacity (>3 mAh/cm<sup>2</sup>), a Si/NCM811 cell is estimated to yield 395 Wh/kg and 1123 Wh/L, which is way above the current energy goal. Again, this is estimation and more like an ideal case since Si is mechanically unstable during electrochemical cycling due to its drastic volumetric changes. With micro-scale (or even nano-scale) structure tuning, this can be mitigated, leading to better capacity retention.'), dangerously_allow_html=True, 
+                                 style={'textAlign':'justify', 'font-size':'16px'}),                       
                         html.Br(),
                         dcc.Markdown(('- Silicon-based anode manufacturers'), 
-                                 style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),                        
+                                 style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold', 'margin-top':'20px'}),                        
                         dbc.Row([
                             dbc.Col([
                             dash_table.DataTable(   
@@ -646,7 +669,7 @@ layout = html.Div([
                                  style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px', 'margin-bottom':'10px'}),  
                             html.Div(('Solid electrolytes are attracting a large interest since it enables all-solid-state batteries with excellent thermal stability, high energy density, and fast charge capability. The solid electrolyte materials can be classified into sulfide solid inorganic electrolytes (S-SIE), oxide solid inorganic electrolyte (O-SIE), and solid polymer electrolytes (SPE).'), 
                                  style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px', 'margin-bottom':'10px'}),  
-                            dcc.Markdown(dangerously_allow_html=True, children=('To be comparable to conventional liquid electrolytes, the ionic conductivity should be in the order of 1 mS/cm at room temperature. S-SIE has generally higher ionic conductivity and forms a good interface with electrodes due to its soft Li-S bonding properties, but has the performance disadvantages of stability due to the narrow electrochemical stability window. O-SEI has good electrochemical stability but is difficult to handle in large-scale production. While SPE has low ionic conductivity and requires high temperature to operate, it is stable with lithium metal, forming a good interface with the electrode, and can be applied in a current roll-to-roll process. '), 
+                            dcc.Markdown(dangerously_allow_html=True, children=('To be comparable to conventional liquid electrolytes, the ionic conductivity should be in the order of 1 mS/cm at room temperature. S-SIE has generally higher ionic conductivity and forms a good interface with electrodes due to its soft Li-S bonding properties, but has low electrochemical stability due to narrow electrochemical stability window. O-SEI has good electrochemical stability but is difficult to handle in large-scale production. While SPE has low ionic conductivity and requires high temperature to operate, it is stable with lithium metal, forming a good interface with the electrode, and can be applied in a current roll-to-roll process. '), 
                                  style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px', 'margin-bottom':'10px'}),    
                               ], width={"size": 7},
                             xs=10, sm=10, md=10, lg=7, xl=7,

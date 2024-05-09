@@ -221,7 +221,7 @@ tab3= dbc.Container([
                     dbc.Row([
                         html.Br(),
                         html.Br(),
-                        html.Div(html.Img(src='https://www.dropbox.com/scl/fi/l4b853tep0e9r52k7oun1/cylindrical-spiral_wcaption.png?rlkey=noe3s94xw0p7rxkhx772b53l9&raw=1', style={"width":"120%", "margin-bottom":"20px"})), 
+                        html.Div(html.Img(src='https://dl.dropboxusercontent.com/scl/fi/l4b853tep0e9r52k7oun1/cylindrical-spiral_wcaption.png?rlkey=noe3s94xw0p7rxkhx772b53l9&raw=1', style={"width":"120%", "margin-bottom":"20px"})), 
                         html.Br(),
                         html.Br(),
                         ],

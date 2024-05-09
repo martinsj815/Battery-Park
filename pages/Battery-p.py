@@ -235,7 +235,7 @@ data_election2 = OrderedDict(
         (
             "Note",
             [
-                "40 kWh",
+                "39 kWh",
                 "100 kWh",
                 "42 kWh",
                 "<sup>a</sup>For 77.4 kWh pack",
