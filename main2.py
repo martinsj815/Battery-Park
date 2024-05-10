@@ -43,7 +43,7 @@ navbar_children=[
                 dbc.DropdownMenuItem("Cells", href="/basics-c", className="drop-down"),
                 dbc.DropdownMenuItem("Chemistry", href="/chemistry", className="drop-down"),
                 dbc.DropdownMenuItem("Parameter & Metrics", href="/basics-pm", className="drop-down"),
-                dbc.DropdownMenuItem("Stack Designs", href="/basics-sd", className="drop-down"),
+                dbc.DropdownMenuItem("Cell Designs", href="/basics-sd", className="drop-down"),
             ],
             nav=True,
             in_navbar=True,
@@ -56,7 +56,7 @@ navbar_children=[
     dbc.DropdownMenu(
             children=[
                 dbc.DropdownMenuItem("Cell", href="/modeling-cells", className="drop-down"),
-                dbc.DropdownMenuItem("Pack", href="/modeling-pack", className="drop-down"),
+                #dbc.DropdownMenuItem("Pack", href="/modeling-pack", className="drop-down"),
             ],
             nav=True,
             in_navbar=True,
