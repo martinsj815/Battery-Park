@@ -61,8 +61,37 @@ layout = html.Div([
                     html.Br(),
                     dmc.Divider(size="md", color="grey"),
                     html.Br(),
+                    html.Br(),
                     dbc.Row([
-                        dcc.Markdown('* Internal Resistance from impulse current', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
+                        dcc.Markdown('* Open Circuit Volotage (OCV) and State of Charge (SoC)', style={'marginTop':'20px', 'font-size':'25px','textAlign':'left','font-weight':'bold'}),
+                        dbc.Col([
+                            html.Div(('- OCV and SOC are important parameters in battery characterization.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
+                            html.Div(('- OCV represents the potential difference between the cathode and anode when no current or potential difference is applied. Theoretically, assuming that all active electrode particles are fully connected by conductive additives and maintain electrical neutrality, the OCV can be calculatedfrom the difference in Gibbs free energy between cathode and anode materials.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
+                            dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=('$$V_{OC}=-\\frac{\u0394G}{nF}$$'), style={'text-align':'center', 'margin-bottom':'20px', 'font-size':'120%'}),
+                            html.Div("where n is the number of electrons involved, and F is the Faraday's constant.", style={'textAlign':'center','margin-top':'10px', 'font-size':'14px'}),
+                            html.Div(('- OCV is used as an important metric to analyze electrode health and identify potential issues such as internal resistance, and capacity fade by measuring deviations from the ideal OCV.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
+                            html.Div(('- SOC represents the remaining capacity available in the battery at any given point in time. It is expressed as a percentage, where 100% indicates the battery is fully charged, and 0% indicates that it is complete discharge.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
+                            html.Div(('- Since the (electro-)chemical potential of the cathode and anode varies with state of charge, OCV depends on SOC.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
+                            html.Div(('- OCV and SOC are used for battery health assessment, quality control, and aging monitoring.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
+                            ], width={"size":8}, xs=12, sm=12, md=12, lg=8, xl=8
+                            ),
+                        dbc.Col([
+                        html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/mld2fwcmjqdx53n1gfqad/OCV_SOC.png?rlkey=lu6096jedwoljqufh8ndw1vhi&st=ggldxlfy&raw=1', style={"width":"150%"}), 
+                                ),
+                        ], width={"size": 3},
+                        xs=8, sm=8, md=6, lg=6, xl=3
+                        ),
+                            
+                        ],
+                            
+                        ),
+                    
+                    html.Br(),
+                    dmc.Divider(size="md", color="grey"),
+                    html.Br(),
+                    html.Br(),
+                    dbc.Row([
+                        dcc.Markdown('* Voltage and Polarization ', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
                         dbc.Col([
                          html.Div(("- Resistance is an important parameter to evaluate battery quality, with its variation during cycling significantly impacting performance. It can be measured according to Ohm's law by observing the voltage drop (\u0394V) when applying a pulse current (I, [A]) to the battery."), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'margin-bottom':'20px', 'font-size':'18px'}), 
