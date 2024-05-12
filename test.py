@@ -23,4 +23,4 @@ def update_output_div(input_value):
 
 # Run the Dash application
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(host='',debug=True)
