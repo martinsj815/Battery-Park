@@ -52,7 +52,7 @@ layout = html.Div([
                         xs=12, sm=12, md=12, lg=8, xl=8
                         ),
                         dbc.Col([
-                        html.Div( html.Img(src='https://www.dropbox.com/scl/fi/y8vsd5rcg0tu026bzxe60/CurrentDensity.png?rlkey=sfghzpokmu30bcr6603lhz8e6&raw=1', style={"width":"150%"}), 
+                        html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/y8vsd5rcg0tu026bzxe60/CurrentDensity.png?rlkey=sfghzpokmu30bcr6603lhz8e6&raw=1', style={"width":"150%"}), 
                                 ),
                         ], width={"size": 3},
                         xs=8, sm=8, md=6, lg=6, xl=3
@@ -61,30 +61,56 @@ layout = html.Div([
                     html.Br(),
                     dmc.Divider(size="md", color="grey"),
                     html.Br(),
+                    html.Br(),
                     dbc.Row([
-                        dcc.Markdown('* Internal Resistance from impulse current', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
+                        dcc.Markdown('* Open Circuit Volotage (OCV) and State of Charge (SoC)', style={'marginTop':'20px', 'font-size':'25px','textAlign':'left','font-weight':'bold'}),
                         dbc.Col([
-                         html.Div(('- Resistance is an important parameter to evaluate battery quality, with its variation during cycling significantly impacting performance.'), 
-                                 style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
-                         html.Div(("- Resistance can be measured according to Ohm's law by observing the voltage drop (\u0394V) when applying a pulse current (I, [A]) to the battery."), 
-                                 style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
- 
-                        dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=('$$R_{total}=\\frac{\u0394V}{I}=R_{0}+R_{CT}+R_{p}$$'), style={'text-align':'center','font-size':'120%'}),
-                         html.Div(("- Cause of resistance can be categorized into three parts based on their timescale (resistance is typically measured over 10 seconds):"), 
-                                 style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
+                            html.Div(('- OCV and SOC are important parameters in battery characterization.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
+                            html.Div(('- OCV represents the potential difference between the cathode and anode when no current or potential difference is applied. Theoretically, assuming that all active electrode particles are fully connected by conductive additives and maintain electrical neutrality, the OCV can be calculatedfrom the difference in Gibbs free energy between cathode and anode materials.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
+                            dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=('$$V_{OC}=-\\frac{\u0394G}{nF}$$'), style={'text-align':'center', 'margin-bottom':'20px', 'font-size':'120%'}),
+                            html.Div("where n is the number of electrons involved, and F is the Faraday's constant.", style={'textAlign':'center','margin-top':'10px', 'font-size':'14px'}),
+                            html.Div(('- OCV is used as an important metric to analyze electrode health and identify potential issues such as internal resistance, and capacity fade by measuring deviations from the ideal OCV.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
+                            html.Div(('- SOC represents the remaining capacity available in the battery at any given point in time. It is expressed as a percentage, where 100% indicates the battery is fully charged, and 0% indicates that it is complete discharge.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
+                            html.Div(('- Since the (electro-)chemical potential of the cathode and anode varies with state of charge, OCV depends on SOC.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
+                            html.Div(('- OCV and SOC are used for battery health assessment, quality control, and aging monitoring.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
+                            ], width={"size":8}, xs=12, sm=12, md=12, lg=8, xl=8
+                            ),
+                        dbc.Col([
+                        html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/mld2fwcmjqdx53n1gfqad/OCV_SOC.png?rlkey=lu6096jedwoljqufh8ndw1vhi&st=ggldxlfy&raw=1', style={"width":"150%"}), 
+                                ),
+                        ], width={"size": 3},
+                        xs=8, sm=8, md=6, lg=6, xl=3
+                        ),
+                            
+                        ],
+                            
+                        ),
+                    
+                    html.Br(),
+                    dmc.Divider(size="md", color="grey"),
+                    html.Br(),
+                    html.Br(),
+                    dbc.Row([
+                        dcc.Markdown('* Voltage and Polarization ', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
+                        dbc.Col([
+                         html.Div(("- Resistance is an important parameter to evaluate battery quality, with its variation during cycling significantly impacting performance. It can be measured according to Ohm's law by observing the voltage drop (\u0394V) when applying a pulse current (I, [A]) to the battery."), 
+                                 style={'textAlign':'justify', 'margin-left':'20px', 'margin-bottom':'20px', 'font-size':'18px'}), 
+                        dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=('$$R_{total}=\\frac{\u0394V}{I}=R_{0}+R_{CT}+R_{p}$$'), style={'text-align':'center', 'margin-bottom':'20px', 'font-size':'120%'}),
+                         html.Div(("- A cause of resistance can be categorized into three parts based on their timescale (It is typically measured over 10 seconds):"), 
+                                 style={'textAlign':'justify', 'margin-left':'20px', 'margin-bottom':'20px', 'font-size':'18px'}),
                          html.Div((["1. The instantaneous voltage drop (R",html.Sub("0"), ") arises from the purely ohmic resistance and the bulk ionic resistance of the battery. Timescale of the dominant contribution is < 10",html.Sup("-3")," seconds."]), 
-                                 style={'textAlign':'justify', 'margin-left':'40px', 'font-size':'18px'}),
+                                 style={'textAlign':'justify', 'margin-left':'40px', 'margin-bottom':'10px', 'font-size':'18px'}),
                          html.Div((["2. Charge transfer resistance (R",html.Sub("CT"), ") is caused by the battery's double-layer capacitance at the electrde/electrolyte interface. Timescale of dominant contribution is < 2~3 seconds."]), 
-                                 style={'textAlign':'justify', 'margin-left':'40px', 'font-size':'18px'}),
+                                 style={'textAlign':'justify', 'margin-left':'40px', 'margin-bottom':'10px', 'font-size':'18px'}),
                          html.Div((["3. The linear voltage drop due to polarization (R",html.Sub("p"), ") results from ion diffusion in the solid phase and is generally considered the rate-determining step in Li-ion batteries."]), 
-                                 style={'textAlign':'justify', 'margin-left':'40px', 'font-size':'18px'}),
+                                 style={'textAlign':'justify', 'margin-left':'40px', 'margin-bottom':'10px', 'font-size':'18px'}),
                         html.Div((" Resistance value is affected by temperature, state of charge, state of health, and applied current."), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
                          ], width={"size": 8},
                          xs=12, sm=12, md=12, lg=8, xl=8
                          ),
                          dbc.Col([
-                         html.Div( html.Img(src='https://www.dropbox.com/scl/fi/l9zmll5xggmb8wkerdug8/Resistance.png?rlkey=uy8dus0jmvbpoghs6r26tz4q7&raw=1', style={"width":"150%"}), 
+                         html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/l9zmll5xggmb8wkerdug8/Resistance.png?rlkey=uy8dus0jmvbpoghs6r26tz4q7&raw=1', style={"width":"100%"}), 
                                   ),
                          ], width={"size": 3},
                          xs=12, sm=8, md=6, lg=6, xl=3
@@ -150,7 +176,7 @@ layout = html.Div([
                            html.Div('- Energy density and power density is energy and power normalized by the cell mass. Hence, the unit is Wh/kg and W/kg, respectively. Energy density can be approximated by multiplying specific capacity with nominal voltage.', style={'textAlign':'justify', 'font-size':'18px'}),
                            html.Br(),
                            html.Div('- Typically, it is difficult for batteries to have both metrics met at the high end. High energy density demands the cell to be discharged at a slow rate for it to reach its maximum capacity and avoid polarization losses. However, since a lower current rate means longer discharge time, power density will be low. For high power density, energy density is likely sacrificed. This trend is illustrated in a Ragone Plot.', style={'textAlign':'justify', 'font-size':'18px'}),
-                           ], width={"size": 8},
+                           ], width={"size": 8}, style={'margin-bottom':'20px'},
                            xs=12, sm=10, md=10, lg=8, xl=8
                            ), 
                           dbc.Col([

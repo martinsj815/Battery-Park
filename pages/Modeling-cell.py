@@ -147,11 +147,11 @@ tab2= dbc.Container([
             dcc.Dropdown({ 't1': 'Type1','t2':'Type2','t3':'Type3'}, value="t1",id='stacktype', 
                          clearable=False, style={"height": "auto","width":"150px", "margin-bottom": "auto","margin-top":"30px"}),
 
-            html.Div( html.Img(src='https://www.dropbox.com/scl/fi/t0l93yiboq194etmscnvu/stack_type.png?rlkey=r4fuiabrdlqtl7rxvqnqokd6e&st=za7if4yl&raw=1', style={"width":"100%", "display": "block", "margin": "auto"}), 
+            html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/t0l93yiboq194etmscnvu/stack_type.png?rlkey=r4fuiabrdlqtl7rxvqnqokd6e&st=za7if4yl&raw=1', style={"width":"100%", "display": "block", "margin": "auto"}), 
                 ),
             
-           ], width={"size":4}, #style={'margin-left':'5px'},
-                xs=6, sm=6, md=6, lg=4, xl=4,
+           ], width={"size":5}, #style={'margin-left':'5px'},
+                xs=6, sm=6, md=6, lg=4, xl=5,
            ),
         dbc.Col([
 
@@ -196,45 +196,32 @@ tab2= dbc.Container([
 ]),
 
 tab3= dbc.Container([
-    dbc.Row([
-                dbc.Col([
-                    html.H1(('Cell Calculator (Jelly-roll Design)'), 
-                        style={'textAlign':'left', 'font-weight':'bold','color':'purple'}),
-                    html.Br(),
-                    html.Br(),
-                    dcc.Markdown(('- This calculator can be used to compute the metrics for the cylindrical cell consisting of a jelly-roll of cathode, anode, and separator sheets.'), 
-                        style={'textAlign':'left', 'font-size':'20px'}),
-                    dcc.Markdown(('- To calculate the cylindrical cell electrode length, Archimedean spiral with a polar coordinate can be used:'), 
-                        style={'textAlign':'left', 'font-size':'20px'}),
-                    dcc.Markdown(('- For the spiral length:'), 
-                        style={'textAlign':'left', 'font-size':'20px', 'font-weight':'bold','margin-left':'40px'}),
-                    dcc.Markdown('''$$
-                                     L=\\frac{a}{2\pi}(\\frac{\phi_{1}}{2}\\sqrt{\phi_{1}^2+1}+\\frac{1}{2}ln(\phi_{1}+\\sqrt{\phi_{1}^2+1})-\\frac{\phi_{0}}{2}\\sqrt{\phi_{0}^2+1}-\\frac{1}{2}ln(\phi_{0}+\\sqrt{\phi_{0}^2+1}))
-                                     $$
-                                     ''', mathjax=True, style={'textAlign':'left','font-size':"20px"}),
-                    dcc.Markdown(('- Number of windings:'), 
-                        style={'textAlign':'left', 'font-size':'20px', 'font-weight':'bold','margin-left':'40px'}),
-                    dcc.Markdown('''$$
-                                     Nw=\\frac{\phi_{1}-\phi_{0}}{2\pi}
-                                     $$
-                                     ''', mathjax=True, style={'textAlign':'left','font-size':"20px"}),
-                    dcc.Markdown('where $$\phi$$ = rotation angle and $$a$$ = electrode thickness (double-sided cathode thickness + double-sided anode thickness + 2*separator thickness)', mathjax=True, style={'textAlign':'left', 'font-size':'18px', 'font-weight':'bold', 'margin-left':'50px'}),              
-                    dcc.Markdown('Note: cell outer diameter = $$\\frac{a}{\pi}\phi_{1}$$ & cell inner diameter = $$\\frac{a}{\pi}\phi_{0}$$', mathjax=True, style={'textAlign':'left', 'font-size':'18px', 'margin-left':'50px'}),              
-                    html.Br(),
-                    html.Br(),
-                    html.Br(),
-                    ], width={"size":12},
-                xs=8, sm=10, md=12, lg=10, xl=12,
-                ),
-                ],
-            style={'justify':'center','text-align':'left'},
-        ),
+        dbc.Row([
+        dcc.Markdown("* Estimation of Jelly-roll capacity and required electrode dimension", style={'marginTop':'40px','font-size':'25px','textAlign':'left','font-weight':'bold'}),
+        dcc.Markdown('This calculator can be used to compute the metrics for the cylindrical cell consisting of a jelly-roll of cathode, anode, and separator sheets.'),
+        dcc.Markdown('This module calculates the electrode length required for customized cell components dimensions to fit the cylindrical cell case dimensions.'),
+        dcc.Markdown('By knowing the outer and inner diameters, which are determined based on the cylindrical cell case, the cylindrical cell electrode length can be calculated using the Archimedean sppral using polar coordinates using the following equation:'),
+        dcc.Markdown('- For the electrode length:', style={'textAlign':'left', 'font-size':'20px','font-weight':'bold','margin-left':'40px'}),
+        dcc.Markdown('''$$
+                        L=\\frac{a}{2\pi}(\\frac{\phi_{1}}{2}\\sqrt{\phi_{1}^2+1}+\\frac{1}{2}ln(\phi_{1}+\\sqrt{\phi_{1}^2+1})-\\frac{\phi_{0}}{2}\\sqrt{\phi_{0}^2+1}-\\frac{1}{2}ln(\phi_{0}+\\sqrt{\phi_{0}^2+1}))
+                        $$
+                        ''', mathjax=True, style={'textAlign':'left','font-size':"20px"}),
+        dcc.Markdown(('- Number of windings:'), style={'textAlign':'left', 'font-size':'20px', 'font-weight':'bold','margin-left':'40px'}),
+        dcc.Markdown('''$$
+                        Nw=\\frac{\phi_{1}-\phi_{0}}{2\pi}
+                        $$
+                        ''', mathjax=True, style={'textAlign':'left','font-size':"20px"}),
+        dcc.Markdown('where $$\phi$$ = rotation angle and $$a$$ = electrode thickness (double-sided cathode thickness + double-sided anode thickness + 2*separator thickness)', mathjax=True, style={'textAlign':'left', 'font-size':'18px', 'font-weight':'bold', 'margin-left':'50px'}),              
+        dcc.Markdown('Note: cell outer diameter = $$\\frac{a}{\pi}\phi_{1}$$ & cell inner diameter = $$\\frac{a}{\pi}\phi_{0}$$', mathjax=True, style={'textAlign':'left', 'font-size':'18px', 'margin-left':'50px'}),              
+        html.Br(),          
+    ]),
+
         dbc.Row([
                 dbc.Col([
                     dbc.Row([
                         html.Br(),
                         html.Br(),
-                        html.Div(html.Img(src='https://www.dropbox.com/scl/fi/l4b853tep0e9r52k7oun1/cylindrical-spiral_wcaption.png?rlkey=noe3s94xw0p7rxkhx772b53l9&raw=1', style={"width":"120%", "margin-bottom":"20px"})), 
+                        html.Div(html.Img(src='https://dl.dropboxusercontent.com/scl/fi/l4b853tep0e9r52k7oun1/cylindrical-spiral_wcaption.png?rlkey=noe3s94xw0p7rxkhx772b53l9&raw=1', style={"width":"120%", "margin-bottom":"20px"})), 
                         html.Br(),
                         html.Br(),
                         ],
@@ -247,150 +234,168 @@ tab3= dbc.Container([
                     dbc.Row([
                         html.Br(),
                         html.Br(),
-                        html.H5('Electrode Parameters', style={"margin-bottom":"0em", "color":"red"}),
-                        html.Div([html.P(["Cathode density [g/cm",html.Sup("3"),"]"],style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jc_ed", type="number", value='3.0', step='0.1', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Electrode thickness [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jc_et", type="number", value='70', step='0.01', style={"margin-bottom":"1em"}) ]),                      
-                        html.Div([html.P(['Active material loading ratio'], style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jc_amlr", type="number", value='0.96', step='0.01', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P(['Practical capacity of active material [mAh/g]'], style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jc_pcam", type="number", value='185', step='0.1', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P(['Electrode width [cm]'],style={"height": "1.3em", "margin-bottom": "auto"}),
-                            dcc.Input(id="jc_w", type="number", value='5.0', step='1.0', style={"margin-bottom":"1em"}) ]),
-                        html.Div([html.P('Al foil thickness [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
-                            dcc.Input(id="jAl_t", type="number", value='12', step='1.0', style={"margin-bottom":"1em"}) ]),
+                        html.H5('Cathode Parameters', style={"margin-bottom":"0em", "color":"red"}),
+                        html.Div([html.P('Coating thickness (Single-side) (um)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="jinput-c1", type="number", value='60', step='0.001', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Al foil thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="jinput-c2", type="number", value='15', step='0.1', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Discharge capacity of active material (mAh/g)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="jinput-c3", type="number", value='200', step='0.1', style={"margin-bottom":"1em"}) ]),                        
+                        html.Div([dcc.Markdown('Density of electrode material (g/cm<sup>3</sup>)', dangerously_allow_html=True, style={"height": "1.3em", "margin-bottom": "auto"}),
+                            dcc.Input(id="jinput-c4", type="number", value='4.87', step='0.01', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Active material loading ratio', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="jinput-c5", type="number", value='0.95', step='0.01', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Estimated porosity', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="jinput-c6", type="number", value='0.2', step='0.01', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Electrode width (cm)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="jinput-c7", type="number", value='5', step='0.01', style={"margin-bottom":"1em"}) ]),
                         html.Br(),
                         html.Br(),
                         ],
-                    style={'textAlign':'left'},
+                    style={'textAlign':'center'},
                     ),
                 ],width={"size":4},
-                xs=6, sm=6, md=6, lg=4, xl=4,
-        ),
-        
-        
-    ],style={'textAlign':'justify','margin-left':'30px','margin-right':'30px'},
-    ),
+                xs=6, sm=8, md=6, lg=5, xl=4,
+                ),
+                dbc.Col([   
+                    dbc.Row([
+                        html.H5('Other cell parameters', style={"margin-bottom":"0.5em", "color":"Purple"}),
+                        html.Div([html.P('Anode coating thickness (Single-side) (um)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="jinput-c8", type="number", value='50', step='0.01', style={"margin-bottom":"1em"}) ]),                      
+                        html.Div([html.P('Cu foil thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="jinput-c9", type="number", value='10', step='0.1', style={"margin-bottom":"1em"}) ]),                      
+                        html.Div([html.P('Separator thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="jinput-c10", type="number", value='25', step='0.1', style={"margin-bottom":"1em"}) ]),
+                        html.Div([html.P('Outer diameter of the cell (mm)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="jinput-c11", type="number", value='45', step='0.001', style={"margin-bottom":"1em"}) ]),              
+                        html.Div([html.P('Cell Can thickness (mm)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="jinput-c12", type="number", value='1.5', step='0.001', style={"margin-bottom":"1em"}) ]),              
+                        html.Div([html.P('Inner diameter of the cell (mm)', style={"height": "auto", "margin-bottom": "auto"}),
+                            dcc.Input(id="jinput-c13", type="number", value='2', step='0.001', style={"margin-bottom":"1em"}) ]),                                
+                        html.Br(),
+                        html.Br(),
+                        ],
+                    style={'textAlign':'center'},
+                    ),
+                    ], 
+                width={"size":4}, style={'margin-left':'0px'},
+                xs=6, sm=8, md=6, lg=5, xl=4,
+                ),
+            ]),
+            dbc.Col([
+                    dbc.Row([
+                        html.Br(),
+                        html.Br(),
+                        html.Span(id='joutcome9', style={"font-size":"150%", "color":"blue","margin-top":"2em"}),
+                        html.Span(id='joutcome10', style={"font-size":"150%", "color":"blue","margin-top":"0em"}),
+                        html.Span(id='joutcome11', style={"font-size":"150%", "color":"red","margin-top":"0em"}),
+                        html.Span(id='joutcome12', style={"font-size":"150%", "color":"red","margin-top":"0em"}),
+                        ],
+                        style={"margin-left":"80px","margin-top":"40px"},
+                    ),
+                    ],
+                    style={'textAlign':'center'}, 
+                width={"size":"12"},
+                xs=8, sm=10, md=10, lg=12, xl=12,
+            ),   
+    
+#          dcc.Markdown(" Input Parameters:  ", style={'marginTop':'20px','font-size':'20px','textAlign':'left','font-weight':'bold'}),
+#          dbc.Row([
+#                  dbc.Col([
+#                      dbc.Row([
+#                          html.Br(),
+#                          html.Br(),
+#                          html.Div(html.Img(src='https://dl.dropboxusercontent.com/scl/fi/l4b853tep0e9r52k7oun1/cylindrical-spiral_wcaption.png?rlkey=noe3s94xw0p7rxkhx772b53l9&raw=1', style={"width":"120%", "margin-bottom":"20px"})), 
+#                          html.Br(),
+#                          html.Br(),
+#                          ],
+#                      style={'textAlign':'center'},
+#                      ),
+#                  ],width={"size":4},
+#                  xs=6, sm=8, md=6, lg=3, xl=4,
+#                  ),
+#              ]
+#          ),
 
+#          dbc.Col([
+#              dbc.Row([
+#                  html.H5('Parameters for Capacity', style={"margin-bottom":"0em", "color":"blue"}),
+#                  html.Div([html.P(["Cathode density [g/cm",html.Sup("3"),"]"],style={"height": "auto", "margin-bottom": "auto",'margin-top':'10px'}),
+#                  dcc.Input(id="jc_ed", type="number", value='3.0', step='0.1', style={"margin-bottom":"1em"}) ]),
+#                  html.Div([html.P(["Anode density [g/cm",html.Sup("3"),"]"],style={"height": "auto", "margin-bottom": "auto"}),
+#                      dcc.Input(id="ja_ed", type="number", value='3.0', step='0.1', style={"margin-bottom":"1em"}) ]),
+#                  html.Div([html.P(['Cathode practical capacity [mAh/g]'], style={"height": "auto", "margin-bottom": "auto",'margin-top':'10px'}),
+#                      dcc.Input(id="jc_pcam", type="number", value='185', step='0.1', style={"margin-bottom":"1em"}) ]),
+#                  html.Div([html.P(['Anode practical capacity [mAh/g]'], style={"height": "auto", "margin-bottom": "auto"}),
+#                  dcc.Input(id="ja_pcam", type="number", value='185', step='0.1', style={"margin-bottom":"1em"}) ]),
+
+#              ],style={'textAlign':'left','margin-top':'20px'},
+#              ),
+
+#          ],width={"size":4},
+#          xs=6, sm=6, md=6, lg=4, xl=4,
+#          ),
+    
+#          dbc.Col([
+#              dbc.Row([
+#                  html.H5('Case and Other Parameters', style={"margin-bottom":"0em", "color":"purple"}),
+#                  html.Div([html.P('Outer diameter of the cell [mm]', style={"height": "auto", "margin-bottom": "auto",'margin-top':'10px'}),
+#                  dcc.Input(id="input-c11", type="number", value='45', step='0.001', style={"margin-bottom":"1em"}) ]),              
+#                  html.Div([html.P('Cell Can thickness [mm]', style={"height": "auto", "margin-bottom": "auto"}),
+#                  dcc.Input(id="input-c12", type="number", value='1.5', step='0.001', style={"margin-bottom":"1em"}) ]),              
+#                  html.Div([html.P('Inner diameter of the cell [mm]', style={"height": "auto", "margin-bottom": "auto"}),
+#                  dcc.Input(id="input-c13", type="number", value='2', step='0.001', style={"margin-bottom":"1em"}) ]), 
+                
+#                  html.Div([html.P('Al foil thickness [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
+#                  dcc.Input(id="jAl_t", type="number", value='12', step='1.0', style={"margin-bottom":"1em"}) ]),
+#                  html.Div([html.P('Cu foil thickness [\u03bcm]', style={"height": "auto", "margin-bottom": "auto"}),
+#                  dcc.Input(id="jCu_t", type="number", value='12', step='1.0', style={"margin-bottom":"1em"}) ]),
+#                  html.Div([html.P('Separator thickness [um]', style={"height": "auto", "margin-bottom": "auto"}) ,
+#                  dcc.Input(id="jse_w", type="number", value='25', step='0.1', style={"margin-bottom":"1em"}) ]),
+#                  ],style={'textAlign':'left','margin-top':'20px'},
+                
+#              ),
+#          ],width={"size":4},
+#          xs=6, sm=6, md=6, lg=4, xl=4,),
+        
+#      ],style={'textAlign':'justify','margin-left':'30px','margin-right':'30px','margin-buttom':'30px'},
+#      ),
+
+# dbc.Row([
+#          dbc.Col([
+#              dbc.Row([
+#                  html.Br(),
+#                  html.Br(),
+#                  html.Div(html.Img(src='https://www.dropbox.com/scl/fi/l4b853tep0e9r52k7oun1/cylindrical-spiral_wcaption.png?rlkey=noe3s94xw0p7rxkhx772b53l9&raw=1', style={"width":"120%", "margin-bottom":"20px",'margin-top':"50px"})), 
+#                  html.Br(),
+
+#                  ], style={'textAlign':'center'},
+#                  ),
+#          # dbc.Row([
+#          #     html.H5("Jelly-roll Summary", style={'textAlign':'center','font-weight':'bold'}),
+#          #     html.Div(id="jsummary_table", style={"margin-top":"30px"})
+#          # ])
+#              ],width={"size":6},
+#              xs=12, sm=12, md=12, lg=4, xl=4,
+#          ),
+
+#          dbc.Col([
+#              dbc.Row([
+#                  html.Br(),
+#                  html.Br(),
+#                  html.Span(id='cathod_length', style={"font-size":"150%", "color":"blue","margin-top":"2em"}),
+#                  html.Span(id='No_winding', style={"font-size":"150%", "color":"blue","margin-top":"0em"}),
+#                  html.Span(id='areal_cap', style={"font-size":"150%", "color":"red","margin-top":"0em"}),
+#                  html.Span(id='cell_cap', style={"font-size":"150%", "color":"red","margin-top":"0em"}),
+#                      ],
+#                      style={"margin-left":"80px","margin-top":"40px"},
+#                  ),
+#                  # html.H5("Electrode Length vs cylindrical cell dimension", style={'textAlign':'center','font-weight':'bold'}),
+#                  # dcc.Graph(id='jellyroll_plot', style={"width":"100%","height":"50vh","margin-top":"30px", "margin-bottom":"30px"})
+#              ],width={"size":6}, #style={'margin-left':'5px'},
+#                  xs=12, sm=12, md=12, lg=4, xl=4,
+#              ),
 ]),
-# tab3= dbc.Row([
-#     dbc.Row([
-#                 dbc.Col([
-#                     html.H1(('Cell Calculator (Jelly-roll Design)'), 
-#                         style={'textAlign':'left', 'font-weight':'bold','color':'purple'}),
-#                     html.Br(),
-#                     html.Br(),
-#                     dcc.Markdown(('- This calculator can be used to compute the metrics for the cylindrical cell consisting of a jelly-roll of cathode, anode, and separator sheets.'), 
-#                         style={'textAlign':'left', 'font-size':'20px'}),
-#                     dcc.Markdown(('- To calculate the cylindrical cell electrode length, Archimedean spiral with a polar coordinate can be used:'), 
-#                         style={'textAlign':'left', 'font-size':'20px'}),
-#                     dcc.Markdown(('- For the spiral length:'), 
-#                         style={'textAlign':'left', 'font-size':'20px', 'font-weight':'bold','margin-left':'40px'}),
-#                     dcc.Markdown('''$$
-#                                      L=\\frac{a}{2\pi}(\\frac{\phi_{1}}{2}\\sqrt{\phi_{1}^2+1}+\\frac{1}{2}ln(\phi_{1}+\\sqrt{\phi_{1}^2+1})-\\frac{\phi_{0}}{2}\\sqrt{\phi_{0}^2+1}-\\frac{1}{2}ln(\phi_{0}+\\sqrt{\phi_{0}^2+1}))
-#                                      $$
-#                                      ''', mathjax=True, style={'textAlign':'left','font-size':"20px"}),
-#                     dcc.Markdown(('- Number of windings:'), 
-#                         style={'textAlign':'left', 'font-size':'20px', 'font-weight':'bold','margin-left':'40px'}),
-#                     dcc.Markdown('''$$
-#                                      Nw=\\frac{\phi_{1}-\phi_{0}}{2\pi}
-#                                      $$
-#                                      ''', mathjax=True, style={'textAlign':'left','font-size':"20px"}),
-#                     dcc.Markdown('where $$\phi$$ = rotation angle and $$a$$ = electrode thickness (double-sided cathode thickness + double-sided anode thickness + 2*separator thickness)', mathjax=True, style={'textAlign':'left', 'font-size':'18px', 'font-weight':'bold', 'margin-left':'50px'}),              
-#                     dcc.Markdown('Note: cell outer diameter = $$\\frac{a}{\pi}\phi_{1}$$ & cell inner diameter = $$\\frac{a}{\pi}\phi_{0}$$', mathjax=True, style={'textAlign':'left', 'font-size':'18px', 'margin-left':'50px'}),              
-#                     html.Br(),
-#                     html.Br(),
-#                     html.Br(),
-#                     ], width={"size":12},
-#                 xs=8, sm=10, md=12, lg=10, xl=12,
-#                 ),
-#                 ],
-#             style={'justify':'center','text-align':'left'},
-#         ),
-#         dbc.Row([
-#                 dbc.Col([
-#                     dbc.Row([
-#                         html.Br(),
-#                         html.Br(),
-#                         html.Div(html.Img(src='https://www.dropbox.com/scl/fi/l4b853tep0e9r52k7oun1/cylindrical-spiral_wcaption.png?rlkey=noe3s94xw0p7rxkhx772b53l9&raw=1', style={"width":"120%", "margin-bottom":"20px"})), 
-#                         html.Br(),
-#                         html.Br(),
-#                         ],
-#                     style={'textAlign':'center'},
-#                     ),
-#                 ],width={"size":4},
-#                 xs=6, sm=8, md=6, lg=3, xl=4,
-#                 ),
-#                 dbc.Col([
-#                     dbc.Row([
-#                         html.Br(),
-#                         html.Br(),
-#                         html.H5('Cathode Parameters', style={"margin-bottom":"0em", "color":"red"}),
-#                         html.Div([html.P('Coating thickness (Single-side) (um)', style={"height": "auto", "margin-bottom": "auto"}),
-#                             dcc.Input(id="input-c1", type="number", value='60', step='0.001', style={"margin-bottom":"1em"}) ]),
-#                         html.Div([html.P('Al foil thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
-#                             dcc.Input(id="input-c2", type="number", value='15', step='0.1', style={"margin-bottom":"1em"}) ]),
-#                         html.Div([html.P('Discharge capacity of active material (mAh/g)', style={"height": "auto", "margin-bottom": "auto"}),
-#                             dcc.Input(id="input-c3", type="number", value='200', step='0.1', style={"margin-bottom":"1em"}) ]),                        
-#                         html.Div([dcc.Markdown('Density of electrode material (g/cm<sup>3</sup>)', dangerously_allow_html=True, style={"height": "1.3em", "margin-bottom": "auto"}),
-#                             dcc.Input(id="input-c4", type="number", value='4.87', step='0.01', style={"margin-bottom":"1em"}) ]),
-#                         html.Div([html.P('Active material loading ratio', style={"height": "auto", "margin-bottom": "auto"}),
-#                             dcc.Input(id="input-c5", type="number", value='0.95', step='0.01', style={"margin-bottom":"1em"}) ]),
-#                         html.Div([html.P('Estimated porosity', style={"height": "auto", "margin-bottom": "auto"}),
-#                             dcc.Input(id="input-c6", type="number", value='0.2', step='0.01', style={"margin-bottom":"1em"}) ]),
-#                         html.Div([html.P('Electrode width (cm)', style={"height": "auto", "margin-bottom": "auto"}),
-#                             dcc.Input(id="input-c7", type="number", value='5', step='0.01', style={"margin-bottom":"1em"}) ]),
-#                         html.Br(),
-#                         html.Br(),
-#                         ],
-#                     style={'textAlign':'center'},
-#                     ),
-#                 ],width={"size":4},
-#                 xs=6, sm=8, md=6, lg=5, xl=4,
-#                 ),
-#                 dbc.Col([   
-#                     dbc.Row([
-#                         html.H5('Other cell parameters', style={"margin-bottom":"0.5em", "color":"Purple"}),
-#                         html.Div([html.P('Anode coating thickness (Single-side) (um)', style={"height": "auto", "margin-bottom": "auto"}),
-#                             dcc.Input(id="input-c8", type="number", value='50', step='0.01', style={"margin-bottom":"1em"}) ]),                      
-#                         html.Div([html.P('Cu foil thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
-#                             dcc.Input(id="input-c9", type="number", value='10', step='0.1', style={"margin-bottom":"1em"}) ]),                      
-#                         html.Div([html.P('Separator thickness (um)', style={"height": "auto", "margin-bottom": "auto"}),
-#                             dcc.Input(id="input-c10", type="number", value='25', step='0.1', style={"margin-bottom":"1em"}) ]),
-#                         html.Div([html.P('Outer diameter of the cell (mm)', style={"height": "auto", "margin-bottom": "auto"}),
-#                             dcc.Input(id="input-c11", type="number", value='45', step='0.001', style={"margin-bottom":"1em"}) ]),              
-#                         html.Div([html.P('Cell Can thickness (mm)', style={"height": "auto", "margin-bottom": "auto"}),
-#                             dcc.Input(id="input-c12", type="number", value='1.5', step='0.001', style={"margin-bottom":"1em"}) ]),              
-#                         html.Div([html.P('Inner diameter of the cell (mm)', style={"height": "auto", "margin-bottom": "auto"}),
-#                             dcc.Input(id="input-c13", type="number", value='2', step='0.001', style={"margin-bottom":"1em"}) ]),                                
-#                         html.Br(),
-#                         html.Br(),
-#                         ],
-#                     style={'textAlign':'center'},
-#                     ),
-#                     ], 
-#                 width={"size":4}, style={'margin-left':'0px'},
-#                 xs=6, sm=8, md=6, lg=5, xl=4,
-#                 ),
-#             ]),
-#             dbc.Col([
-#                     dbc.Row([
-#                         html.Br(),
-#                         html.Br(),
-#                         html.Span(id='outcome9', style={"font-size":"150%", "color":"blue","margin-top":"2em"}),
-#                         html.Span(id='outcome10', style={"font-size":"150%", "color":"blue","margin-top":"0em"}),
-#                         html.Span(id='outcome11', style={"font-size":"150%", "color":"red","margin-top":"0em"}),
-#                         html.Span(id='outcome12', style={"font-size":"150%", "color":"red","margin-top":"0em"}),
-#                         ],
-#                         style={"margin-left":"80px","margin-top":"40px"},
-#                     ),
-#                     ],
-#                     style={'textAlign':'center'}, 
-#                 width={"size":"12"},
-#                 xs=8, sm=10, md=10, lg=12, xl=12,
-#             )
-# ])
 
 layout = html.Div([
      dcc.Tabs(id="tabs", value='tab-1', parent_className='custom-tabs', className='custom-tabs-container', children=[
@@ -455,7 +460,6 @@ requiredCE = html.Div([
         ),  
     ])
 ])
-
 
     
 @callback(
@@ -765,3 +769,90 @@ def cell_energy_densit(c_ed, c_et, c_amlr, c_pcam, c_ea, a_ed, a_et, a_amlr, a_p
                     ),
     
     return Summary_table, pfig, ed_plot
+
+
+@callback([Output('joutcome9', 'children'), Output('joutcome10', 'children'), Output('joutcome11', 'children'), 
+               Output('joutcome12','children')],
+                [Input('jinput-c1', 'value'),
+                Input('jinput-c2', 'value'),
+                Input('jinput-c3', 'value'),
+                Input('jinput-c4', 'value'),
+                Input('jinput-c5', 'value'),
+                Input('jinput-c6', 'value'),
+                Input('jinput-c7', 'value'),
+                Input('jinput-c8', 'value'),
+                Input('jinput-c9', 'value'),
+                Input('jinput-c10', 'value'),
+                Input('jinput-c11', 'value'),
+                Input('jinput-c12', 'value'),
+                Input('jinput-c13', 'value'),  
+                ], 
+            )        
+def update_content(input_c1, input_c2, input_c3, input_c4, input_c5, input_c6, input_c7, input_c8, input_c9, input_c10, input_c11, input_c12, input_c13):
+    if all([input_c1 and input_c2 and input_c3 and input_c4 and input_c5 and input_c6 and input_c7 and input_c8 and input_c9 and input_c10 and input_c11 and input_c12 and input_c13]):
+        d_asc = float(input_c1)*2+float(input_c2)+float(input_c8)*2+float(input_c9)+float(input_c10)*2
+        a=d_asc/(2*np.pi)*(0.000001)
+        d_o=float(input_c11)-2*float(input_c12) # outer diammeter, cell can thickness [mm]
+        r_o=d_o*(0.001)/2
+        d_i=float(input_c13)
+        r_i=d_i*(0.001)/2
+        sigma_1=r_o/a
+        sigma_0=r_i/a
+        L1=(sigma_1/2)*(pow(((sigma_1)*(sigma_1)+1),0.5))+0.5*np.log(sigma_1+pow(((sigma_1)*(sigma_1)+1),0.5))
+        L0=(sigma_0/2)*(pow(((sigma_0)*(sigma_0)+1),0.5))+0.5*np.log(sigma_0+pow(((sigma_1)*(sigma_1)+1),0.5))
+        L_t=(L1-L0)*d_asc/(2*np.pi)*0.000001
+        outcome9 = L_t #Length of the cathode
+        cathode_length=dcc.Markdown("The length of the cathode inside the cell is **{}** m.".format(round(outcome9,2)), dangerously_allow_html=True),
+        outcome10 = (sigma_1-sigma_0)/(2*np.pi) #Number of turns of the cathode in the cell
+        winding_number=dcc.Markdown("The number of winding(turn) inside the cell is **{}**.".format(round(outcome10,1)), dangerously_allow_html=True),
+        outcome11 = float(input_c4)*float(input_c5)*(1-float(input_c6))*(float(input_c1)*(0.0001))*float(input_c3) #Areal cathode capacity
+        areal_capacity=dcc.Markdown("The areal cathode capacity is **{}** mAh/cm<sup>2</sup>.".format(round(outcome11,2)), dangerously_allow_html=True),
+        outcome12 = outcome11*outcome9*100*float(input_c7)/1000 #Areal cathode capacity
+        cell_capacity=dcc.Markdown("The predicted cell capacity is **{}** Ah.".format(round(outcome12,2)), dangerously_allow_html=True),
+        return (
+            cathode_length,
+            winding_number,
+            areal_capacity,
+            cell_capacity,
+        )
+    else:
+        return "", "", "", ""
+
+# @callback(
+#     #[Output('jsummary_table','children'), Output('jellyroll_plot','figure')],
+#     [Output('cathod_length', 'children'), Output('No_winding', 'children'), Output('areal_cap', 'children'), Output('cell_cap','children')],
+#     [Input('jc_et','value'), Input('ja_et','value'), Input('jc_amlr','value'), Input('ja_amlr','value'),Input('jc_w','value')],
+#     [Input('jc_ed','value'), Input('ja_ed','value'), Input('jc_pcam','value'), Input('ja_pcam','value')],
+#     [Input('input-c11','value'), Input('input-c12','value'), Input('input-c13','value'),Input('jAl_t','value'),Input('jCu_t','value'),Input('jse_w','value')],
+#     )
+
+# def jelly_roll(jc_et, ja_et, jc_amlr, ja_amlr, jc_w, jc_ed, ja_ed, jc_pcam, ja_pcam, input_c11, input_c12, input_c13, jAl_t, jCu_t, jse_w):
+    
+#     # Areal capacity 
+#     areal_cap_cath = float(jc_ed)*float(jc_et)*0.0001*float(jc_amlr)*float(jc_pcam)   # [g/cm3][um][cm/10000um][][mAh/g] = [mAh/cm2];
+#     areal_cap_anode= float(ja_ed)*float(ja_et)*0.0001*float(ja_amlr)*float(ja_pcam) # [mAh/cm2]
+
+#     d_asc = (float(jc_et)+float(ja_et)+float(jse_w))*2+float(jAl_t)+float(jCu_t) # [um] total thickness
+#     a=d_asc/(2*np.pi)*(0.000001) # [um]--> [mm]
+#     d_o=float(input_c11)-2*float(input_c12)
+#     r_o=d_o*(0.001)/2
+#     d_i=float(input_c13)
+#     r_i=d_i*(0.001)/2
+#     sigma_1=r_o/a
+#     sigma_0=r_i/a
+#     L1=(sigma_1/2)*(pow(((sigma_1)*(sigma_1)+1),0.5))+0.5*np.log(sigma_1+pow(((sigma_1)*(sigma_1)+1),0.5))
+#     L0=(sigma_0/2)*(pow(((sigma_0)*(sigma_0)+1),0.5))+0.5*np.log(sigma_0+pow(((sigma_1)*(sigma_1)+1),0.5))
+#     L_t=(L1-L0)*d_asc/(2*np.pi)*0.000001
+#     outcome9 = L_t #Length of the cathode
+#     cathode_length=dcc.Markdown("The length of the cathode inside the cell is **{}** m.".format(round(outcome9,2)), dangerously_allow_html=True),
+#     outcome10 = (sigma_1-sigma_0)/(2*np.pi) #Number of turns of the cathode in the cell
+#     winding_number=dcc.Markdown("The number of winding(turn) inside the cell is **{}**.".format(round(outcome10,1)), dangerously_allow_html=True),
+#     outcome11 =areal_cap_cath #Areal cathode capacity
+#     areal_capacity=dcc.Markdown("The areal cathode capacity is **{}** mAh/cm<sup>2</sup>.".format(round(outcome11,2)), dangerously_allow_html=True),
+#     outcome12 = outcome11*outcome9*100*float(jc_w)/1000 #Areal cathode capacity
+#     cell_capacity=dcc.Markdown("The predicted cell capacity is **{}** Ah.".format(round(outcome12,2)), dangerously_allow_html=True),
+
+#     return  (cathode_length,
+#             winding_number,
+#             areal_capacity,
+#             cell_capacity,)

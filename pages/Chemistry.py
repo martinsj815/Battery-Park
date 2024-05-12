@@ -41,7 +41,7 @@ data_election = OrderedDict(
             ],
         ),
         (
-            "Stoichiometry", 
+            "Chemical Formula", 
             [
                 "LiCoO<sub>2</sub>", 
                 "LiMn<sub>2</sub>O<sub>4</sub>",
@@ -95,7 +95,7 @@ data_election = OrderedDict(
                 "",
                 "250-360<sup>d</sup>",
                 "306<sup>d</sup>",
-                "260<sup>d</sup>",
+                "264<sup>d</sup>",
                 "232<sup>d</sup>",
                 "",
             ],
@@ -164,13 +164,13 @@ data_election2 = OrderedDict(
             [
                 "0.1-50", 
                 "0.01-1",
-                "0.1-1 (at 90 oC)",
+                "0.1-1 (at 90 <sup>o</sup>C)",
             ]
         ),
         (
             "Advantages",
             [
-                "- High ionic condutivity \n - Good mechanical strength and flexibilty",
+                "- High ionic conductivity \n - Good mechanical strength and flexibilty",
                 "- High chemical and electrochemical stability (High  electrochemical oxidation voltage) \n - High mechanical strength",
                 "- Stable with lithium metal \n - Flexibility and low shear modulus \n - Easy to produce a large area membrance",
             ],
@@ -188,14 +188,146 @@ data_election2 = OrderedDict(
 
 dt2 = pd.DataFrame(data_election2)
 
+data_election3 = OrderedDict(
+    [
+        (
+            "Company",
+            [
+                "OneD",
+                "Sila",
+                "Group14",
+                "StoreDot",
+                "IonBlox",
+                "Amprius",
+                "Evonix",
+            ], 
+        ),
+        (
+            "Key Technology",
+            [
+                "Sinanode -  Silicon NW embedded on graphite powder pore via melting",
+                "Titan Silicon - Micron-sized Carbon Scaffolded particles consist of nanostructured Si",
+                "SCC55 - Carbon scaffolded structure with intraparticle voids for embedded silicon expansion",
+                "XFC (Extreme Fast Charging) Si - Slicon synthesized with \"small molecule organic compounds\"",
+                "Pre-lithiated silicon oxide",
+                "SIMAXX: 100% Si Nanowire \n SiCore - 4 layers: Si Nanostructure/ Stabilization layer/Carbon/Fast ion conductor",
+                "100% Silicon crosswise stacked inside the novel mechanical architecture ",    
+            ],
+        ),
+        (
+            "Performance Noted", 
+            [
+                "-678 mAh/g (at 10 wt&#37;)", 
+                "-<6&#37; at EOL (900 cycles) \n -20&#37; increase in driving range \n -10-80&#37; recharge in 20 minutes",
+                "-Upto 5x capacity than graphite \n -50&#37; more energy density than graphite",
+                "-100 miles recharge in 5 minutes \n -Energy Density of 330 Wh/kg and 860Wh/L \n -2000 cycles with 80&#37; initial capacity maintained",
+                "-225 miles in 5 min charge \n -390 miles in 10 min charge",
+                "-Upto 500 Wh/kg or 1300 Wh/L \n -0-80&#37; recharge in <6 minutes",       
+                "-<2&#37; after 500 cycles \n -43&#37;/65&#37; capacity increase in laptops/cellphones",   
+            ]
+        ),
+        (
+            "Link",
+            [
+                "https://onedsinanode.com/sinanode/",
+                "https://www.wired.com/story/panasonic-powder-powered-silicone-ev-batteries/ \n https://www.silanano.com/our-solutions/titan-silicon-anode",
+                "https://www.group14.technology/resources/whitepapers/whitepaper-the-transition-to-lithium-silicon-batteries/",
+                "https://www.store-dot.com/technology \n https://www.prnewswire.com/news-releases/storedot-hits-commercialization-milestone-with-2-000-extreme-fast-charging-xfc-cycles-elevating-ev-longevity-durability-and-market-value-302107541.html",
+                "https://www.ionblox.com/land \n https://www.businesswire.com/news/home/20231004555440/en/Ionblox-Debuts-Lithium-Silicon-Batteries-Breaking-Barriers-of-Extreme-Fast-Charging-and-Extended-Range",
+                "https://amprius.com/amprius-broadens-product-portfolio-with-new-commercially-available-silicon-anode-battery-platform-sicoretm/ \n https://amprius.com/technology/",
+                "https://www.techhive.com/article/2189816/enovix-silicon-battery-tech-65-more-from-you-li-ion-batteries.html",
+            ],
+        ),
+    ],
+)
+
+dt3 = pd.DataFrame(data_election3)
+
+data_election4 = OrderedDict(
+    [
+        (
+            "Anode System",
+            [
+                "Density (g/cm<sup>3</sup>)",
+                "Lithiated Phase",
+                "Reaction Potential vs. Li/Li<sup>+</sup> (V)",
+                "Theoretical gravimetric specific capacity (mAh/g)",
+                "Theoretical volumetric specific capacity (mAh/cm<sup>3</sup>)",
+                "Volumetric change",
+                "Lithium diffusion coefficient",
+            ], 
+        ),
+        (
+            "C",
+            [
+                "2.25",
+                "LiC<sub>6</sub>",
+                "0.05",
+                "372",
+                "837",
+                "10-12",
+                "10<sup>-11</sup> - 10<sup>-7</sup>",
+            ],
+        ),
+        (
+            "Si",
+            [
+                "2.3",
+                "Li<sub>3.75</sub>Si",
+                "0.31",
+                "3590",
+                "8360",
+                "&gt;280",
+                "10<sup>-13</sup> - 10<sup>-11</sup>",
+            ],
+        ),
+        (
+            "SiOx",
+            [
+                "2.13",
+                "SiO (x~1)",
+                "",
+                "1710",
+                "3172",
+                "160",
+                "",
+            ],
+        ),
+        (
+            "Li",
+            [
+                "0.53",
+                "Li",
+                "0",
+                "3862",
+                "2061",
+                "100",
+                "",
+            ],
+        ),
+        (
+            "Li4Ti5O12",
+            [
+                "3.5",
+                "Li<sub>7</sub>Ti<sub>5</sub>O<sub>12</sub>",
+                "1.55",
+                "175",
+                "613",
+                "1",
+                "10<sup>-12</sup> - 10<sup>-11</sup>",
+            ],
+        ),
+    ],
+)
+
+dt4 = pd.DataFrame(data_election4)
 
 layout = html.Div([
              html.Link(rel='stylesheet', href='/assets/table.css'),            
              dbc.Row([
                 dbc.Col([
                     html.Div(
-                        dcc.Markdown('Li ion battery', style={'font-size':'30px', 'textAlign':'center','font-weight':'bold'},),
-                        style={'text-align':'center'}),
+                        dcc.Markdown('Li ion battery', style={'font-size':'30px', 'textAlign':'left', 'font-weight':'bold'},),),
                     html.Br(),
                     dbc.Row([
                         dbc.Col([
@@ -203,14 +335,14 @@ layout = html.Div([
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
                         dcc.Markdown(('- Upon discharge, lithium ions migrate from the anode (e.g. lithiated graphite) towards the electrolyte while electrons move through the external circuit. Lithium ions are then carried by the electrolyte and flow into the cathode along with electrons. Upon charge, the process is reversed with the help of electrical energy injected.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
-                        ], width={"size": 7},
-                        xs=7, sm=10, md=10, lg=7, xl=7
+                        ], width={"size": 7}, style={"margin-bottom":"20px"},
+                        xs=12, sm=10, md=10, lg=7, xl=7
                         ),
                         dbc.Col([
                             html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/2v296fyhu4q2l0fg32xsn/Li-ion-battery.png?rlkey=6a134a2mdyuq88c4ksrgt0xuq&raw=1', style={"width":"100%", "display":"block", "margin":"auto"}), 
                                  ),
                         ], width={"size": 5},
-                        xs=4, sm=10, md=8, lg=5, xl=5
+                        xs=10, sm=8, md=6, lg=5, xl=5
                         ),
                     ],
                     ),
@@ -231,7 +363,7 @@ layout = html.Div([
                         xs=6, sm=10, md=10, lg=7, xl=7
                         ),
                         dbc.Col([
-                            html.Div( html.Img(src='https://www.dropbox.com/scl/fi/rh1v74c9n5ssyzd1j69o6/Energy-band-diagram.png?rlkey=3okh20dnktic1w9jflso5wob5&raw=1', style={"width":"80%", "display":"block", "margin":"auto"}), 
+                            html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/rh1v74c9n5ssyzd1j69o6/Energy-band-diagram.png?rlkey=3okh20dnktic1w9jflso5wob5&raw=1', style={"width":"80%", "display":"block", "margin":"auto"}), 
                                  ),
                             dcc.Markdown('<b>Image Courtesy</b>: A. Manthiram, Nature Commun. 11, 1550 (2020)', dangerously_allow_html=True, ),
                         ], width={"size": 5},
@@ -240,8 +372,10 @@ layout = html.Div([
                     ]),    
                     html.Br(), 
                     dcc.Markdown('* Cathode Comparison Table', style={'font-size':'20px', 'textAlign':'left','font-weight':'bold'}),     
-                    dash_table.DataTable(
-                                style_cell={'font-family': 'Arial', 'font-size': '16px', 'text-align':'auto', 'margin-top':'auto', 'minWidth': '140px', 'width': '140px', 'maxWidth': '160px', 'padding':2}, 
+                    dbc.Row([
+                            dbc.Col([
+                                dash_table.DataTable(
+                                style_cell={'font-family': 'Arial', 'font-size': '14px', 'text-align':'auto', 'margin-top':'auto', 'padding':2}, 
                                 markdown_options={"html": True},
                                 #virtualization=True,
                                 style_table={'overflowX': 'auto'},
@@ -263,12 +397,17 @@ layout = html.Div([
                                     'backgroundColor': 'black',
                                     'color': 'white',
                                     'fontWeight': 'bold',
-                                    'font-size': '18px',
+                                    'font-size': '14px',
                                     'text-align':'center'
                                 },
                                 data=dt.to_dict('records'),
                                 columns=[{'id': c, 'name': c,"presentation": "markdown"} for c in dt.columns],
-                    ),
+                                ),
+                                ],
+                            width={"size": 16}, style={"margin-bottom":'20px'},
+                            xs=5, sm=10, md=10, lg=10, xl=16,
+                        ),
+                    ]),
                     html.Br(),
                     dbc.Row([
                         dbc.Col([
@@ -280,7 +419,7 @@ layout = html.Div([
                         xs=6, sm=10, md=10, lg=7, xl=7
                         ),
                         dbc.Col([
-                            html.Div( html.Img(src='https://www.dropbox.com/scl/fi/xqodsx0n9mtcc1kmvib8z/Global-Demand_Cathode-Chemistry.png?rlkey=1tp61jxqb1l2ida039w5qo7u5&raw=1', style={"width":"80%", "display":"block", "margin":"auto"}), 
+                            html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/xqodsx0n9mtcc1kmvib8z/Global-Demand_Cathode-Chemistry.png?rlkey=1tp61jxqb1l2ida039w5qo7u5&raw=1', style={"width":"80%", "display":"block", "margin":"auto"}), 
                                  ),
                             dcc.Markdown('<b>Image Source</b>: F. Degen, et al., Nature Energy, 8 (2023)', dangerously_allow_html=True, ),
                         ], width={"size": 5},
@@ -311,7 +450,6 @@ layout = html.Div([
                         ], style={"margin-bottom":'5em'},
                         ), 
                         html.Br(),
-                        dmc.Divider(size="md", variant="dotted", color="grey"),
                         html.Br(),
                         dcc.Markdown(('2. Alloying-based:'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px', 'font-weight':'bold'}), 
@@ -334,7 +472,6 @@ layout = html.Div([
                         ], style={"margin-bottom":'5em'},
                         ), 
                         html.Br(),
-                        dmc.Divider(size="md", variant="dotted", color="grey"),
                         html.Br(),
                         dcc.Markdown(('3. Conversion-based:'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px', 'font-weight':'bold'}),
@@ -346,15 +483,122 @@ layout = html.Div([
                                 xs=6, sm=10, md=10, lg=8, xl=8
                             ),   
                             dbc.Col([
-                                html.Div( html.Img(src='https://www.dropbox.com/scl/fi/3ty73w1vp5v44d5x9y94j/ConversionII.png?rlkey=7qw6qqtc8kgaeudroe1556keq&st=aph7cdkg&raw=1', 
+                                html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/3ty73w1vp5v44d5x9y94j/ConversionII.png?rlkey=7qw6qqtc8kgaeudroe1556keq&st=aph7cdkg&raw=1', 
                                                style={"width":"100%", "display": "block", "margin": "auto"}), 
                                     ),
                             ], width={"size": 4},
                             xs=4, sm=10, md=8, lg=6, xl=4
                             ),  
                         ], style={"margin-bottom":'5em'},
-                        ),                               
-                        html.Br(),                            
+                        ),  
+                        html.Br(),
+                        dbc.Row([
+                        dcc.Markdown(("Below is the comparison of key anode materials currently in industry for commercialization. The data were taken from the paper - Gebrekidan Gebresilassie Eshetu, et al., \"Production of high-energy Li-ion batteries comprising silicon-containing anodes and insertion-type cathodes\", **_Nature Commun._** 12, 5459 (2021). As noticeable from the table, silicon has exceptionally high theoretical capacity (comparable or even higher than Li metal) but also undergoes extremely large volumetric variation upon cycling causing capacity decay due to mechanical instability. Its electronic conductivity and Li ion diffusivity are also lower than that of the carbon/graphite counterpart. These make the material very challenging for commercialization."), dangerously_allow_html=True,
+                                 style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'18px'}),            
+                        ], style={"margin-bottom":'20px'},
+                        ),  
+                        dbc.Row([
+                            dbc.Col([
+                                dash_table.DataTable(
+                                style_cell={'font-family': 'Arial', 'font-size': '14px', 'text-align':'auto', 'margin-top':'auto', 'lineheight':'10px', 'minWidth':'100px','padding':2}, 
+                                markdown_options={"html": True},
+                                #virtualization=True,
+                                style_table={'overflowX': 'auto'},
+                                style_data={
+                                        'whiteSpace': 'normal',
+                                        'color': 'black',
+                                        'backgroundColor': 'white',
+                                        'height':'auto',
+                                },
+                                style_data_conditional=[
+                                {
+                                    'if': {'column_id': 'Anode System'},
+                                    'fontWeight': 'bold', 
+                                },
+                                ],
+                                style_header={
+                                    'whiteSpace': 'normal',
+                                    'backgroundColor': 'black',
+                                    'color': 'white',
+                                    'fontWeight': 'bold',
+                                    'font-size': '14px',
+                                    'text-align':'center',
+                                },
+                                data=dt4.to_dict('records'),
+                                columns=[{'id': c, 'name': c,"presentation": "markdown"} for c in dt4.columns],
+                                ),
+                                ],
+                            width={"size": 16}, style={"margin-bottom":'20px'},
+                            xs=5, sm=10, md=10, lg=10, xl=16,
+                        ),
+                        ]),     
+                        html.Br(),               
+                        dmc.Divider(size="md", variant="dotted", color="grey"),       
+                        html.Br(),         
+                        dcc.Markdown(('- Moving from graphite to silicon for the Li-ion battery anode'), style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold'}),      
+                        html.Br(),
+                        dbc.Row([
+                            dbc.Col([
+                                html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/21upt4l6z7gyneuolu86p/Si-Graphite_NCM811-grav.png?rlkey=dpqk7c8ds5311m35peirj139f&st=5jwiu184&raw=1', 
+                                               style={"width":"100%", "display": "block", "margin": "auto"}),),
+                            ],
+                            width={"size": 6}, style={"margin-bottom":'20px'},
+                            xs=8, sm=10, md=10, lg=6, xl=6,
+                            ),
+                            dbc.Col([
+                                html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/2wtrhlptthrlmde5hb8ea/Si-Graphite_NCM811-volume.png?rlkey=5ap26cqhuc2sgassov4q0fl5a&st=x6l32y3h&raw=1', 
+                                               style={"width":"100%", "display": "block", "margin": "auto"}),),
+                            ],
+                            width={"size": 8}, style={"margin-bottom":'20px'},
+                            xs=8, sm=10, md=10, lg=6, xl=6,
+                            ),
+                        ]), 
+                        html.Br(),
+                        dcc.Markdown(('The graphs above display estimated gravimetric and volumetric energy densities vs cathode areal capacity of the cell consisting of NCM811 and Graphite/Si. The data are excerpted/re-calculated based on the review article by Eshetu, et al., “Production of high-energy Li-ion batteries comprising silicon-containing anodes and insertion-type cathodes”, **_Nature Commun._**, 12 (2021). A slight modification was made to the estimations after taking cell tabs and packaging components into consideration to make them more realistic at the cell level.'), 
+                                 style={'textAlign':'justify', 'font-size':'16px'}),                        
+                        dcc.Markdown(('As shown in the graphs above, transition from graphite and silicon can yield drastic improvement in both metrics. At the areal capacity of 10 mAh/cm<sup>2</sup>, the transition from the graphite/NCM811 chemistry to that of Si/NCM811 can boost gravimetric energy density from 342 Wh/kg to 536 Wh/kg, while the increase is much greater for volumetric density (817 Wh/kg to 1568 Wh/kg). At the industry with the typical areal capacity (>3 mAh/cm<sup>2</sup>), a Si/NCM811 cell is estimated to yield 395 Wh/kg and 1123 Wh/L, which is way above the current energy goal. Again, this is estimation and more like an ideal case since Si is mechanically unstable during electrochemical cycling due to its drastic volumetric changes. With micro-scale (or even nano-scale) structure tuning, this can be mitigated, leading to better capacity retention.'), dangerously_allow_html=True, 
+                                 style={'textAlign':'justify', 'font-size':'16px'}),                       
+                        html.Br(),
+                        dcc.Markdown(('- Silicon-based anode manufacturers'), 
+                                 style={'textAlign':'justify', 'font-size':'25px', 'font-weight':'bold', 'margin-top':'20px'}),                        
+                        dbc.Row([
+                            dbc.Col([
+                            dash_table.DataTable(   
+                                style_cell={'font-family': 'Arial', 'font-size': '14px', 'text-align':'auto', 'margin-top':'auto', 'width':'auto','padding':2}, 
+                                markdown_options={"html": True},
+                                #virtualization=True,
+                                style_table={'overflowX': 'auto', 'margin-bottom':'20px'},
+                                style_data={
+                                        'whiteSpace': 'break-spaces',
+                                        'color': 'black',
+                                        'backgroundColor': 'white',
+                                        'height':'auto',
+                                        'lineheight':'10px',
+                                },
+                                style_data_conditional=[
+                                {
+                                    'if': {'column_id': 'Company'},
+                                    'fontWeight': 'bold', 
+                                },
+                                ],
+                                style_header={
+                                    'whiteSpace': 'normal',
+                                    'backgroundColor': 'black',
+                                    'color': 'white',
+                                    'fontWeight': 'bold',
+                                    'font-size': '14px',
+                                    'text-align':'center'
+                                },
+                                data=dt3.to_dict('records'),
+                                columns=[{'id': c, 'name': c,"presentation": "markdown"} for c in dt3.columns],
+                                ),
+                            ],
+                            width={"size": 16}, style={"margin-bottom":'20px'},
+                            xs=5, sm=10, md=10, lg=10, xl=16,
+                        ),
+                        ]),
+                        html.Br(),             
+                        html.Br(),               
                         dmc.Divider(size="md", color="grey"),  
                         html.Br(),
                         html.Br(),
@@ -373,11 +617,11 @@ layout = html.Div([
                             xs=10, sm=10, md=10, lg=7, xl=7,
                             ),       
                             dbc.Col([
-                                html.Div( html.Img(src='https://www.dropbox.com/scl/fi/3xq79frdklaexeloiwezd/Electrolyte.png?rlkey=9cdaj3mnchhm40j1dte7tbd1h&raw=1', 
+                                html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/3xq79frdklaexeloiwezd/Electrolyte.png?rlkey=9cdaj3mnchhm40j1dte7tbd1h&raw=1', 
                                                style={"width":"80%", "display": "block", "margin": "auto"}), 
                                  ),
                             ], width={"size": 5},
-                            xs=14, sm=12, md=8, lg=5, xl=5,
+                            xs=8, sm=12, md=8, lg=5, xl=5,
                             ),   
                         ],  style={"margin-bottom":'2em'},
                         ),
@@ -415,11 +659,9 @@ layout = html.Div([
                             xs=10, sm=10, md=10, lg=10, xl=16,
                             ),   
                         ],),
-                        html.Br(),                            
-                        dmc.Divider(size="md", color="grey"),  
                         html.Br(),
                         dcc.Markdown(('* Solid Electrolyte'), 
-                                 style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'25px', 'font-weight':'bold'}),
+                                 style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'25px', 'font-weight':'bold','margin-top':'20px'}),
                         html.Br(),
                         dbc.Row([
                             dbc.Col([
@@ -427,24 +669,24 @@ layout = html.Div([
                                  style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px', 'margin-bottom':'10px'}),  
                             html.Div(('Solid electrolytes are attracting a large interest since it enables all-solid-state batteries with excellent thermal stability, high energy density, and fast charge capability. The solid electrolyte materials can be classified into sulfide solid inorganic electrolytes (S-SIE), oxide solid inorganic electrolyte (O-SIE), and solid polymer electrolytes (SPE).'), 
                                  style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px', 'margin-bottom':'10px'}),  
-                            dcc.Markdown(dangerously_allow_html=True, children=('To be comparable to conventional liquid electrolytes, the ionic conductivity should be in the order of 1 mS/cm at room temperature. S-SIE has generally higher ionic conductivity and forms a good interface with electrodes due to its soft Li-S bonding properties, but has the performance disadvantages of stability due to the narrow electrochemical stability window. O-SEI has good electrochemical stability but is difficult to handle in large-scale production. While SPE has low ionic conductivity and requires high temperature to operate, it is stable with lithium metal, forming a good interface with the electrode, and can be applied in a current roll-to-roll process. '), 
+                            dcc.Markdown(dangerously_allow_html=True, children=('To be comparable to conventional liquid electrolytes, the ionic conductivity should be in the order of 1 mS/cm at room temperature. S-SIE has generally higher ionic conductivity and forms a good interface with electrodes due to its soft Li-S bonding properties, but has low electrochemical stability due to narrow electrochemical stability window. O-SEI has good electrochemical stability but is difficult to handle in large-scale production. While SPE has low ionic conductivity and requires high temperature to operate, it is stable with lithium metal, forming a good interface with the electrode, and can be applied in a current roll-to-roll process. '), 
                                  style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px', 'margin-bottom':'10px'}),    
                               ], width={"size": 7},
                             xs=10, sm=10, md=10, lg=7, xl=7,
                             ),       
                             dbc.Col([
-                                html.Div( html.Img(src='https://www.dropbox.com/scl/fi/dpha6db50capip8eox2y4/LiPS.png?rlkey=tjc5xo629u3w8z3b2wb13v8x0&st=galjz4fk&raw=1', 
+                                html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/dpha6db50capip8eox2y4/LiPS.png?rlkey=tjc5xo629u3w8z3b2wb13v8x0&st=galjz4fk&raw=1', 
                                                style={"width":"90%", "display": "block", "margin": "auto"}), 
                                  ),
                             ], width={"size": 5},
-                            xs=14, sm=12, md=8, lg=5, xl=5,
+                            xs=8, sm=12, md=8, lg=5, xl=5,
                             ),   
                         ],  style={"margin-bottom":'2em'},
                         ),
                         dbc.Row([
                             dbc.Col([
                             dash_table.DataTable(
-                                style_cell={'font-family': 'Arial', 'font-size': '16px', 'text-align':'center', 'margin-top':'10px', 'padding':5}, 
+                                style_cell={'font-family': 'Arial', 'font-size': '14px', 'text-align':'center', 'margin-top':'10px', 'padding':5}, 
                                 markdown_options={"html": True},
                                 style_table={'overflowX': 'auto'},
                                 style_data={
@@ -465,7 +707,7 @@ layout = html.Div([
                                     'backgroundColor': 'black',
                                     'color': 'white',
                                     'fontWeight': 'bold',
-                                    'font-size': '18px',
+                                    'font-size': '14px',
                                     'text-align':'center'
                                 },
                                 data=dt2.to_dict('records'),
@@ -483,52 +725,53 @@ layout = html.Div([
                             dcc.Markdown(('* References'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'30px', 'font-weight':'bold'}),                                               
                             dcc.Markdown(('F. Degen, et al, "Energy consumption of current and future production of lithium-ion and post lithium-ion battery cells", _**Nature Energy**_, 8, 1284 (2023)'), 
-                                style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),
+                                style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),
                             dcc.Markdown(('Naoki Nitta, et al, "Li-ion battery materials: present and future", _**Mater. Today**_, 18, 252 (2015) \n _(a in Cathode Comparison Table)_'), 
-                                style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),
+                                style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),
                             dcc.Markdown(('Florian Schipper, et al, "Review—Recent Advances and Remaining Challenges for Lithium Ion Battery Cathodes", _**J. Electrochem. Soc.**_, 164, A6220 (2017) \n _(b in Cathode Comparison Table)_'), 
-                                style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),
+                                style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),
                             dcc.Markdown(('Hyung-Joo Noh, et al., "Comparison of the structural and electrochemical properties of layered Li\[NixCoyMnz]O2 (x = 1/3, 0.5, 0.6, 0.7, 0.8 and 0.85) cathode material for lithium-ion batteries", _**J. Power Sources**_, 233, 121 (2013) _(c in Cathode Comparison Table)_'), 
-                                style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),
+                                style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),
                             dcc.Markdown(('Yuki Orikasa, et al., "Ionic Conduction in Lithium Ion Battery Composite Electrode Governs Cross-sectional Reaction Distribution", _**Sci. Rep.**_, 6, 26382 (2016) _(d in Cathode Comparison Table)_'), 
-                                style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),  
+                                style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),  
                             dcc.Markdown(('Xiao-Guang Yang, et al., "Thermally modulated lithium iron phosphate batteries for mass-market electric vehicles", _**Nature Energy**_, 6, 176 (2021) _(d in Cathode Comparison Table)_'), 
-                                style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),                          
+                                style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),                          
                             dcc.Markdown(('Arumugam Manthiram, "A reflection on lithium-ion battery cathode chemistry", _**Nature Commun.**_, 11, 1550 (2020)'), 
-                                style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),
+                                style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),
                             dcc.Markdown(('Jun Lu, et al, "High‑Performance Anode Materials for Rechargeable Lithium‑Ion Batteries", _**Electrochemical Energy Reviews**_, 1:35 (2018)'), 
-                                style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),
+                                style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),
                             dcc.Markdown(('Hui Cheng, et al, "Recent progress of advanced anode materials of lithium-ion batteries", _**Journal of Energy Chemistry**_, 57, 451 (2021)'), 
-                                 style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),                         
+                                 style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),                         
                             dcc.Markdown(('Kang Xu, "Electrolytes and Interphases in Li-ion Batteries and Beyond", _**Chemical Review**_, 114, 11503 (2014)'), 
-                                 style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),                         
+                                 style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),                         
                             dcc.Markdown(('E. R. Logan, et al., "A Study of the Physical Properties of Li-Ion Battery Electrolytes Containing Esters", _**J. Electrochem. Soc.**_, 165, A21 (2018)'), 
-                                 style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),
+                                 style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),
                             dcc.Markdown(('Kang Xu, "Nonaqueous Liquid Electrolytes for Lithium-Based Rechargeable Batteries", _**Chem. Rev.**_, 104, 4303 (2004)'), 
-                                 style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),                              
+                                 style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),                              
                             dcc.Markdown(('Jiale Xing, et al., "A Review of Nonaqueous Electrolytes, Binders, and Separators for Lithium‑Ion Batteries", _**Electrochem. Energy Rev.**_, 5:14 (2022)'), 
-                                 style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}), 
+                                 style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}), 
                             dcc.Markdown(('Hong-Bo Han, et al., "Lithium bis(fluorosulfonyl)imide (LiFSI) as conducting salt for nonaqueous liquid electrolytes for lithium-ion batteries: Physicochemical and electrochemical properties", _**J. Power Sources**_, 196, 3623 (2011)'), 
-                                 style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),                                 
+                                 style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),                                 
                             dcc.Markdown(('Weimin Zhao, et al., "Toward a stable solid-electrolyte-interfaces on nickel-rich cathodes: LiPO2F2 salt-type additive and its working mechanism for LiNi0.5Mn0.25Co0.25O2 cathodes", _**J. Power Sources**_, 380, 149 (2018)'), 
-                                 style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}), 
+                                 style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}), 
                             dcc.Markdown(('Bowen Yang, et al., "Lithium difluorophosphate as an additive to improve the low temperature performance of LiNi0.5Co0.2Mn0.3O2/graphite cells", _**Electrochim. Acta**_, 221, 107 (2016)'), 
-                                 style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),    
+                                 style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),    
                             dcc.Markdown(('https://www.linkedin.com/pulse/application-lipo2f2-electrolyte-additive-lithium-ion-batteries-li/'), 
-                                 style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}), 
+                                 style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}), 
                             dcc.Markdown(('Qing Zhao, et al, "Designing solid-state electrolytes for safe, energy-dense batteries", _**Nature Reviews**_, 5, 229 (2020)'), 
-                                style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),
+                                style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),
                             dcc.Markdown(('Arumugam Manthiram,"Lithium battery chemistries enabled by solid-state electrolytes", _**Nature Reviews Materials**_, 2, 16103 (2017)'), 
-                                style={'textAlign':'justify', 'font-size':'18px', 'margin-left':'30px'}),
-                        ],width={"size": 16},
-                            xs=10, sm=10, md=10, lg=10, xl=16,
-                        )                                   
+                                style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),   
+                        ],
+                        width={"size": 16}, style={"margin-bottom":'20px'},
+                            xs=5, sm=10, md=10, lg=10, xl=16,
+                        ),                             
                     ],
                     ),
                 ],
                 ),
              ],
-             style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},
+             style={'textAlign':'justify', 'margin-left':'10px', 'margin-right':'10px'},
              ),
              html.Div(id='Options-content'),
     ])

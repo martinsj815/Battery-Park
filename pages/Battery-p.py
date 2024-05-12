@@ -235,7 +235,7 @@ data_election2 = OrderedDict(
         (
             "Note",
             [
-                "40 kWh",
+                "39 kWh",
                 "100 kWh",
                 "42 kWh",
                 "<sup>a</sup>For 77.4 kWh pack",
@@ -292,7 +292,7 @@ layout = html.Div([
                         dbc.Col(
                             [
                             html.Div(html.Img(src='https://dl.dropboxusercontent.com/scl/fi/2dtyvf3krsc03q71zcvty/Cell_module_pack.png?rlkey=6b3vpgy3yy8zbzbat3jxutmxj&raw=1', style={"width":"70%", "display": "block", "margin": "auto"}), ),
-                            html.Div(html.Img(src='https://www.dropbox.com/scl/fi/tewug7stsy9urx8v8f7d9/e-tron-6-quattro.png?rlkey=f1dprdvgdwhdvz1brc1sbn09n&raw=1', style={"width":"70%", "display": "block", "margin": "auto"}), ),         
+                            html.Div(html.Img(src='https://dl.dropboxusercontent.com/scl/fi/tewug7stsy9urx8v8f7d9/e-tron-6-quattro.png?rlkey=f1dprdvgdwhdvz1brc1sbn09n&raw=1', style={"width":"70%", "display": "block", "margin": "auto"}), ),         
                             dcc.Markdown('Audi Q6 E-tron Battery Module & Pack \n\n Source: https://electrichasgoneaudi.net/models/q6-e-tron/drivetrain/battery/', style={"font-size":"18px", "display": "block", "margin": "auto"}),                        
                             ], width={"size": 7},
                             xs=6, sm=12, md=7, lg=7, xl=7,
@@ -316,7 +316,7 @@ layout = html.Div([
                         ),
                         dbc.Col(
                             [
-                            html.Div(html.Img(src='https://www.dropbox.com/scl/fi/7rt7b2kc90oel23u7yeph/Cell-Interconnect.png?rlkey=7wds8k7mwvo4pscqi0g8585qf&st=ydcwny3b&raw=1', style={"width":"70%", "display": "block", "margin": "auto"}), ),
+                            html.Div(html.Img(src='https://dl.dropboxusercontent.com/scl/fi/7rt7b2kc90oel23u7yeph/Cell-Interconnect.png?rlkey=7wds8k7mwvo4pscqi0g8585qf&st=ydcwny3b&raw=1', style={"width":"70%", "display": "block", "margin": "auto"}), ),
                             ], width={"size": 7},
                             xs=4, sm=7, md=7, lg=7, xl=7,
                         ),
@@ -445,7 +445,7 @@ layout = html.Div([
                             xs=5, sm=8, md=6, lg=7, xl=7,
                             ),
                             dbc.Col([
-                                html.Div( html.Img(src='https://www.dropbox.com/scl/fi/hqzic08b0o2s5knuknxi6/CATLCTP.png?rlkey=pcevbldc123x6hlnlw0gnn6n1&raw=1', style={"width":"100%"}), 
+                                html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/hqzic08b0o2s5knuknxi6/CATLCTP.png?rlkey=pcevbldc123x6hlnlw0gnn6n1&raw=1', style={"width":"100%"}), 
                                  ),
                                 html.Div(('Top- Source: CATL / https://www.catl.com/en/news/958.html'), 
                                     style={'textAlign':'justify', 'font-size':'15px', 'font-style':'italic', 'margin-left':'0px'}),

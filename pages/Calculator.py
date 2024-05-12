@@ -699,7 +699,7 @@ def update_content(input_c1, input_c2, input_c3, input_c4, input_c5, input_c6, i
     if all([input_c1 and input_c2 and input_c3 and input_c4 and input_c5 and input_c6 and input_c7 and input_c8 and input_c9 and input_c10 and input_c11 and input_c12 and input_c13]):
         d_asc = float(input_c1)*2+float(input_c2)+float(input_c8)*2+float(input_c9)+float(input_c10)*2
         a=d_asc/(2*np.pi)*(0.000001)
-        d_o=float(input_c11)-2*float(input_c12)
+        d_o=float(input_c11)-2*float(input_c12) # outer diammeter, cell can thickness [mm]
         r_o=d_o*(0.001)/2
         d_i=float(input_c13)
         r_i=d_i*(0.001)/2
