@@ -67,9 +67,9 @@ layout = html.Div([
                         dbc.Col([
                             html.Div(('- OCV and SOC are important parameters in battery characterization.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
                             html.Div(('- OCV represents the potential difference between the cathode and anode when no current or voltage is applied. Theoretically, assuming that all active electrode particles are fully connected by conductive additives and maintain electrical neutrality, the OCV can be calculated from the difference in Gibbs free energy between cathode and anode materials.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
-                            dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=('$$V_{OC}=-\\frac{\u0394G}{nF}$$'), style={'text-align':'center', 'margin-bottom':'20px', 'font-size':'120%'}),
-                            html.Div("where n is the number of electrons involved, and F is the Faraday's constant.", style={'textAlign':'center','margin-top':'10px', 'font-size':'14px'}),
-                            html.Div(('- OCV is used as an important metric to analyze electrode health and identify potential issues such as internal resistance, and capacity fade by measuring deviations from the OCV.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
+                            dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=('$$V_{OC}=-\\frac{\u0394G}{nF}$$'), style={'text-align':'center', 'margin-top':'20px', 'font-size':'120%'}),
+                            html.Div("where n is the number of electrons involved, and F is the Faraday's constant.", style={'textAlign':'center', 'font-size':'14px'}),
+                            html.Div(('- OCV is used as an important metric to analyze electrode health and identify potential issues such as internal resistance, and capacity fade by measuring deviations from the OCV.'), style={'textAlign':'justify','margin-left':'20px','margin-top':'10px', 'font-size':'18px'}),
                             html.Div(('- SOC represents the remaining capacity available in the battery at any given point in time. It is expressed as a percentage, where 100% indicates the battery is fully charged, and 0% indicates that it is complete discharge.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
                             html.Div(('- Since the (electro-)chemical potential of the cathode and anode varies with state of charge, OCV depends on SOC.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
                             html.Div(('- OCV and SOC are used for battery health assessment, quality control, and aging monitoring.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
@@ -93,28 +93,30 @@ layout = html.Div([
                     dbc.Row([
                         dcc.Markdown('* Voltage and Polarization ', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
                         dbc.Col([
-                         html.Div(("- Resistance is an important parameter to evaluate battery quality, with its variation during cycling significantly impacting performance. It can be measured according to Ohm's law by observing the voltage drop (\u0394V) when applying a pulse current (I, [A]) to the battery."), 
-                                 style={'textAlign':'justify', 'margin-left':'20px', 'margin-bottom':'20px', 'font-size':'18px'}), 
-                        dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=('$$R_{total}=\\frac{\u0394V}{I}=R_{0}+R_{CT}+R_{p}$$'), style={'text-align':'center', 'margin-bottom':'20px', 'font-size':'120%'}),
-                         html.Div(("- A cause of resistance can be categorized into three parts based on their timescale (It is typically measured over 10 seconds):"), 
+                         html.Div(("- Voltage represents the difference in potential between the cathode and anode and the driving force of current flowing. The unit is volt [V]."),style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}), 
+                         html.Div(("- When a circuit is connected or current begins to flow, the voltage drops, which is caused by electrode polarization or overvoltage due to the kinetic limits of the reaction and other electrochemical kinetical reactions to allow current to flow during the charge/discharge reaction. The degree of this polarization can be estimated from the voltage deviation from the open circuit voltage. The polarization (\u03B7) is given by"), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'margin-bottom':'20px', 'font-size':'18px'}),
-                         html.Div((["1. The instantaneous voltage drop (R",html.Sub("0"), ") arises from the purely ohmic resistance and the bulk ionic resistance of the battery. Timescale of the dominant contribution is < 10",html.Sup("-3")," seconds."]), 
-                                 style={'textAlign':'justify', 'margin-left':'40px', 'margin-bottom':'10px', 'font-size':'18px'}),
-                         html.Div((["2. Charge transfer resistance (R",html.Sub("CT"), ") is caused by the battery's double-layer capacitance at the electrde/electrolyte interface. Timescale of dominant contribution is < 2~3 seconds."]), 
+                        dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=('$$\u03B7 = V_{OC}-V_{T}$$'), style={'text-align':'center', 'margin-bottom':'20px', 'font-size':'120%'}),
+                        html.Div(["where V",html.Sub("OC")," is the voltage of the cell at open circuit and V",html.Sub("T")," is the terminal cell voltage with current flowing."], style={'textAlign':'center','margin-top':'10px', 'font-size':'14px'}),
+                        html.Div(("During the reaction, the cell involves a series of physical, chemical, and electrochemical steps, including charge-transfer and charge transport reactions."),style={'textAlign':'justify', 'margin-left':'40px', 'margin-bottom':'10px', 'font-size':'18px'}),
+                        html.Div(["- The overpotential \u03B7 can be categroized into three parts: 1) ohmic polarization (R",html.Sub("O"),"), 2) activation polarization (R",html.Sub("CT"),"), and 3) concentration polarization (R",html.Sub("P"),")."],style={'textAlign':'left', 'margin-left':'20px', 'margin-bottom':'10px', 'font-size':'18px'}), 
+                        dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=('$$\u03B7_{total}=R_{0}+R_{CT}+R_{p}$$'), style={'text-align':'center', 'margin-bottom':'20px', 'font-size':'120%'}),
+                         ], width={"size": 8},
+                         xs=12, sm=12, md=12, lg=8, xl=8
+                         ),
+                         dbc.Col([
+                         html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/sm2fix5hl4hqmg7pwgib8/Polarization.png?rlkey=t42tp9mq6w0p2669yt0js90lg&st=7tw1qwd1&raw=1', style={"width":"150%"}), 
+                                  ),
+                         ], width={"size": 3},
+                         xs=12, sm=8, md=6, lg=6, xl=3
+                         ),
+                        
+                         html.Div((["1) Ohmic Polarization (R",html.Sub("O"), ") is caused by the battery's double-layer capacitance at the electrde/electrolyte interface. Timescale of dominant contribution is < 2~3 seconds."]), 
                                  style={'textAlign':'justify', 'margin-left':'40px', 'margin-bottom':'10px', 'font-size':'18px'}),
                          html.Div((["3. The linear voltage drop due to polarization (R",html.Sub("p"), ") results from ion diffusion in the solid phase and is generally considered the rate-determining step in Li-ion batteries."]), 
                                  style={'textAlign':'justify', 'margin-left':'40px', 'margin-bottom':'10px', 'font-size':'18px'}),
                         html.Div((" Resistance value is affected by temperature, state of charge, state of health, and applied current."), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
-                         ], width={"size": 8},
-                         xs=12, sm=12, md=12, lg=8, xl=8
-                         ),
-                         dbc.Col([
-                         html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/l9zmll5xggmb8wkerdug8/Resistance.png?rlkey=uy8dus0jmvbpoghs6r26tz4q7&raw=1', style={"width":"100%"}), 
-                                  ),
-                         ], width={"size": 3},
-                         xs=12, sm=8, md=6, lg=6, xl=3
-                         ),
                     ],style={'marginTop': '20px'},
                     ),]
                 ),
