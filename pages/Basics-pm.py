@@ -94,13 +94,13 @@ layout = html.Div([
                         dcc.Markdown('* Voltage and Polarization ', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
                         dbc.Col([
                          html.Div(("- Voltage represents the difference in potential between the cathode and anode and the driving force of current flowing. The unit is volt [V]."),style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}), 
-                         html.Div(("- When a circuit is connected or current begins to flow, the voltage drops, which is caused by electrode polarization or overvoltage due to the kinetic limits of the reaction and other electrochemical kinetical reactions to allow current to flow during the charge/discharge reaction. The degree of this polarization can be estimated from the voltage deviation from the open circuit voltage. The polarization (\u03B7) is given by"), 
+                         html.Div(("- When a circuit is connected or current begins to flow, the voltage drops, which is caused by electrode polarization due to the kinetic limits of the reaction and other electrochemical kinetical reactions to allow current to flow during the charge/discharge reaction. The degree of this polarization can be estimated from the voltage deviation (overpotential, \u03B7) from the open circuit voltage. The overpotential is given by"), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'margin-bottom':'20px', 'font-size':'18px'}),
-                        dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=('$$\u03B7 = V_{OC}-V_{T}$$'), style={'text-align':'center', 'margin-bottom':'20px', 'font-size':'120%'}),
+                        dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=('$$\u03B7 = V_{T}-V_{OC}$$'), style={'text-align':'center', 'margin-bottom':'20px', 'font-size':'120%'}),
                         html.Div(["where V",html.Sub("OC")," is the voltage of the cell at open circuit and V",html.Sub("T")," is the terminal cell voltage with current flowing."], style={'textAlign':'center','margin-top':'10px', 'font-size':'14px'}),
                         html.Div(("During the reaction, the cell involves a series of physical, chemical, and electrochemical steps, including charge-transfer and charge transport reactions."),style={'textAlign':'justify', 'margin-left':'40px', 'margin-bottom':'10px', 'font-size':'18px'}),
-                        html.Div(["- The overpotential \u03B7 can be categroized into three parts: 1) ohmic polarization (R",html.Sub("O"),"), 2) activation polarization (R",html.Sub("CT"),"), and 3) concentration polarization (R",html.Sub("P"),")."],style={'textAlign':'left', 'margin-left':'20px', 'margin-bottom':'10px', 'font-size':'18px'}), 
-                        dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=('$$\u03B7_{total}=R_{0}+R_{CT}+R_{p}$$'), style={'text-align':'center', 'margin-bottom':'20px', 'font-size':'120%'}),
+                        html.Div(["- The main sources of polarization can be categroized into three parts: 1) ohmic polarization (R",html.Sub("O"),"), 2) activation polarization (R",html.Sub("CT"),"), and 3) concentration polarization (R",html.Sub("P"),")."],style={'textAlign':'left', 'margin-left':'20px', 'margin-bottom':'10px', 'font-size':'18px'}), 
+                        dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=('$$R_{total}=R_{o}+R_{ct}+R_{p}$$'), style={'text-align':'center', 'margin-bottom':'20px', 'font-size':'120%'}),
                          ], width={"size": 8},
                          xs=12, sm=12, md=12, lg=8, xl=8
                          ),
@@ -111,11 +111,15 @@ layout = html.Div([
                          xs=12, sm=8, md=6, lg=6, xl=3
                          ),
                         
-                         html.Div((["1) Ohmic Polarization (R",html.Sub("O"), ") is caused by the battery's double-layer capacitance at the electrde/electrolyte interface. Timescale of dominant contribution is < 2~3 seconds."]), 
+                         html.Div((["1) Ohmic Polarization (R",html.Sub("o"), ") arises from the resistance of connectivity's of individual cell components and contact between the cell components. Ohmic polarization appears instantaneously (\u2264 10",html.Sup("-6"),"s) when current flows."]), 
                                  style={'textAlign':'justify', 'margin-left':'40px', 'margin-bottom':'10px', 'font-size':'18px'}),
-                         html.Div((["3. The linear voltage drop due to polarization (R",html.Sub("p"), ") results from ion diffusion in the solid phase and is generally considered the rate-determining step in Li-ion batteries."]), 
+                         html.Div((["2) Activation polarization (R",html.Sub("ct"), ") is related to the kinetics hinderances of the charge-transfer reactions at the electrode/electrolyte interfaces of anode and cathode. The buildup of the activation polarization are fast and can be identified by the voltage change on current interruption in a time frame of 10",html.Sup("-2"),"s - 10",html.Sup("-4"),"s."]), 
                                  style={'textAlign':'justify', 'margin-left':'40px', 'margin-bottom':'10px', 'font-size':'18px'}),
-                        html.Div((" Resistance value is affected by temperature, state of charge, state of health, and applied current."), 
+                        html.Div((["3) Concentration polarization (R)",html.Sub("p"), ") arises from limited diffusion of active species to and from the electrode surface to replace the reacted material to sustain the reaction. Diffusion limitations are relatively slow, and the buildup takes \u2265 10",html.Sup("-2"),"s to appear."]), 
+                                 style={'textAlign':'justify', 'margin-left':'40px', 'margin-bottom':'10px', 'font-size':'18px'}),    
+                        html.Div(([" Although R",html.Sub("o"), ", R",html.Sub("ct")," and R",html.Sub("p"),"are not completely distint, they are expected to be the dominat contrituion to total resistance at their respective timescales." ]), 
+                                 style={'textAlign':'justify', 'margin-left':'40px', 'margin-bottom':'10px', 'font-size':'18px'}),  
+                        html.Div((" These resistances are affected by temperature, state of charge, state of health, and applied current."), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
                     ],style={'marginTop': '20px'},
                     ),]
