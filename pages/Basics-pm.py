@@ -63,7 +63,7 @@ layout = html.Div([
                     html.Br(),
                     html.Br(),
                     dbc.Row([
-                        dcc.Markdown('* Open Circuit Volotage (OCV) and State of Charge (SoC)', style={'marginTop':'20px', 'font-size':'25px','textAlign':'left','font-weight':'bold'}),
+                        dcc.Markdown('* Open Circuit Voltage (OCV) and State of Charge (SoC)', style={'marginTop':'20px', 'font-size':'25px','textAlign':'left','font-weight':'bold'}),
                         dbc.Col([
                             html.Div(('- OCV and SOC are important parameters in battery characterization.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
                             html.Div(('- OCV represents the potential difference between the cathode and anode when no current or voltage is applied. Theoretically, assuming that all active electrode particles are fully connected by conductive additives and maintain electrical neutrality, the OCV can be calculated from the difference in Gibbs free energy between cathode and anode materials.'), style={'textAlign':'justify','margin-left':'20px', 'font-size':'18px'}),
