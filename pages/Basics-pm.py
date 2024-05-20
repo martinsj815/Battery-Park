@@ -131,7 +131,7 @@ layout = html.Div([
                  dbc.Col([
                         dcc.Markdown(('* References'), 
                         style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'30px', 'font-weight':'bold'}),
-                        dcc.Markdown(('Martine Winter, et al, "What Are Batteries, Fuel Cells, and Supercapacitors?", _**Chemical Reviews**_, 104, 4245-4269 (2004)'), 
+                        dcc.Markdown(('Martin Winter, et al, "What Are Batteries, Fuel Cells, and Supercapacitors?", _**Chemical Reviews**_, 104, 4245-4269 (2004)'), 
                                 style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),
                         ]),
                 ],
