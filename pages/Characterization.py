@@ -68,11 +68,25 @@ layout = html.Div([
                          dcc.Markdown(('- **Nuclear magnetic resonance (NMR):** The sample placed in a strong magnetic field is perturbed by the weak external radio frequency field. The excited nuclei with certain magnetic moment having energy transfer coinciding with radio frequency emits the energy at same frequency with spins coming back to their origin. The measured signal is then processed to generate a spectrum. There are NMRs both for liquids (e.g. electrolyte) and solids (e.g. electrodes) and full analysis of the sample can yield structural, chemical, thermodynamic, electronic, and magnetic information. Hence, it can be quite powerful for understanding novel chemistry behind Li-ion battery operation.'), dangerously_allow_html=True,
                                  style={'textAlign':'justify', 'margin-left':'30px', 'font-size':'16px'}),       
                          dcc.Markdown(('- ** Gas chromatography Mass Spectrometry (GC-MS): ** The technique involves the process of separating components in a mixture by first injecting a gaseous and liquid sample into a carrier gas and passing through a stationary phase inside a column. Components, then, depending on their retention times or rates of passing, will be detected separately using mass spectrometer, which displays the chromatogram with quantity of each component detected vs retention time. GC-MS is used for post-mortem analysis of electrolytes and gas evolution in extreme charge-discharge conditions.'), dangerously_allow_html=True,
-                                 style={'textAlign':'justify', 'margin-left':'30px', 'font-size':'16px'}),                                                                                                
+                                 style={'textAlign':'justify', 'margin-left':'30px', 'font-size':'16px'}),          
                         ],
                     style={'textAlign':'justify', 'margin-left':'40px', 'margin-right':'60px'},
                     ),
-                    
+                    html.Br(),               
+                    dmc.Divider(size="md", variant="dotted", color="grey"),       
+                    html.Br(), 
+                    dbc.Row([
+                        dcc.Markdown('* References', style={'font-size':'25px', 'margin-bottom':"10px", 'textAlign':'justify','font-weight':'bold'}),
+                        dcc.Markdown(('- Thomas Waldmann, et al., "Review—Post-Mortem Analysis of Aged Lithium-Ion Batteries: Disassembly Methodology and Physico-Chemical Analysis Techniques", _**J. Electrochem. Soc.**_, 163, A2149-A2164 (2016)'), dangerously_allow_html=True,
+                                 style={'textAlign':'justify', 'margin-left':'30px', 'font-size':'16px'}),  
+                        dcc.Markdown(('- Matthew Newville, "Fundamentals of XAFS", _**Reviews in Mineralogy and Geochemistry**_, 78, 33 (2014)'), dangerously_allow_html=True,
+                                 style={'textAlign':'justify', 'margin-left':'30px', 'font-size':'16px'}),            
+                        dcc.Markdown(('- https://www.spectro.com/xrf-principle'), dangerously_allow_html=True,
+                                 style={'textAlign':'justify', 'margin-left':'30px', 'font-size':'16px'}),      
+                        dcc.Markdown(('- https://www.edmundoptics.com/knowledge-center/application-notes/lasers/basic-principles-of-raman-scattering-and-spectroscopy/'), dangerously_allow_html=True,
+                                 style={'textAlign':'justify', 'margin-left':'30px', 'font-size':'16px'}),                               
+                        ], style={'textAlign':'justify', 'margin-left':'40px', 'margin-right':'60px'},
+                        ),                       
              html.Div(id='Options-content'),
             ]
     )

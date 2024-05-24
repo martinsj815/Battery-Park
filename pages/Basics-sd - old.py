@@ -1,13 +1,11 @@
 import os
 import numpy as np
 import dash
-import pandas as pd
-from dash import Dash, dash_table, dcc, html, Input, Output, State, callback
+from dash import Dash, dcc, html, Input, Output, State, callback
 import dash_bootstrap_components as dbc
 import plotly.graph_objs as go
 import plotly.express as px
 import dash_mantine_components as dmc
-from collections import OrderedDict
 from dash.exceptions import PreventUpdate
 
 dash.register_page(
@@ -15,44 +13,6 @@ dash.register_page(
     )
 
 #dash.register_page(__name__, name="basics", top_nav=False)
-
-data_election = OrderedDict(
-    [
-        (
-            "Cell component",
-            [
-                "Electrodes",
-                "Current collectors",
-                "Separator",
-                "Electrolyte",
-                "Tabs",
-            ], 
-        ),
-        (
-            "Energy Cell",
-            [
-                "High coating density & thickness \n High active material loading percentage \n Low porosity", 
-                "Thinner - Improved adhesion", 
-                "Thin",
-                "High ionic conductivity",
-                "Thin/Narrow/A few tabs on each electrode (weight consideration)",         
-            ],
-        ),
-        (
-            "Power Cell", 
-            [
-                "Low coating density & thickness \n Low active material loading percentage \n High porosity", 
-                "Thicker - Lower resistance", 
-                "Thin",
-                "High ionic conductivity",
-                "Thick/Wide/Multiple tabs on each electrode (smoother ion transport)",      
-            ]
-        ),
-    ],
-)
-
-dt = pd.DataFrame(data_election)
-
 
 layout = html.Div([
              dbc.Row([
@@ -100,55 +60,47 @@ layout = html.Div([
                     dmc.Divider(size="md", color="grey"),
                     html.Br(),
                     dbc.Row([
-                        dcc.Markdown('* Designing cell: Energy density vs Power capability?', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
+                        dcc.Markdown('* Cell desing to scale up cell capacity', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
                         dbc.Col([
-                        html.Div('- When designing the cell, the trade-off between energy density and power capability needs to be considered as both cannot go hand in hand. To increase the cell energy density, thicker and denser coating (i.e. higher material loading density) is needed for each electrode layer to store more energy. However, increasing the loading can engender many issues that raise the cell’s internal resistance including concentration polarization and uneven thermal distribution with possible ohmic heating. That is because low porosity, high tortuosity, and high thickness all translate to longer diffusion length of Li ions and possible bottleneck for Li flow in and out the cell. Hence power, which is the measure of how fast the energy can be driven in and out the electrode, is inevitably low for these cells.', style={'textAlign':'justify', 'margin-left':'20px','font-size':'18px'}),
-                        html.Br(),
-                        dash_table.DataTable(
-                                style_cell={'font-family': 'Arial', 'font-size': '15px', 'text-align':'center', 'minWidth': '160px', 'width': '160px', 'maxWidth': '160px', 'margin-top':'10px', 'padding':2}, 
-                                markdown_options={"html": True},
-                                style_table={'overflowX': 'auto'},
-                                style_data={
-                                        'whiteSpace': 'normal',
-                                        'color': 'black',
-                                        'backgroundColor': 'white',
-                                        'height':'auto',
-                                        'lineheight':'5px',
-                                },
-                                style_data_conditional=[
-                                {
-                                    'if': {'column_id': 'Cell component'},
-                                    'fontWeight': 'bold',
-                                },
-                                ],
-                                style_header={
-                                    'whiteSpace': 'normal',
-                                    #'backgroundColor': 'rgb(210, 210, 210)',
-                                    'backgroundColor': 'black',
-                                    'color': 'white',
-                                    'fontWeight': 'bold',
-                                    'font-size': '16px',
-                                    'text-align':'center',
-                                },
-                                data=dt.to_dict('records'),
-                                columns=[{'id': c, 'name': c,"presentation": "markdown"} for c in dt.columns],
-                        ),
-                        ], width={"size": 7}, style={"margin-right":"10px"},
-                       xs=12, sm=10, md=10, lg=8, xl=7
+                         html.Div('- The amount of electrochemically active material used in the cell or battery determines the magnitude of its capacity. The volume of the electrode is proportional to the capacity of its material by a following relation:', style={'textAlign':'justify', 'margin-left':'20px','font-size':'18px'}),
+                         html.Br(),
+                         dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=("$$V_{electrode}=\\frac{3600*Q*M_{w}}{F*\\rho}$$"), style={'text-align':'center','font-size':'150%'}),
+                         html.Div('- Since the separator covers the areas of the cathode and anode, nominal current density can be denoted as:', style={'textAlign':'justify', 'margin-left':'20px','font-size':'18px'}),
+                         html.Br(),
+                         dcc.Markdown(dangerously_allow_html=True, mathjax=True, children=("$$i_{cell}=\\frac{Q}{t_{d}*A_{sep}}$$"), style={'text-align':'center','font-size':'150%'}),
+                         html.Div(children=[html.Span('- Increasing the cell capacity requires increasing the cell volume - increasing the cell thickness or area (or both). When increasing the electrode thickness without changing their areas, current density will be doubled'), html.Strong(' (Case 1)'), html.Span('. This however increases the cell polarization and leads to a lower effective capacity as the cell discharge reaches the cutoff voltage sooner.')], style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
+                         html.Div(children=[html.Span('- What about increasing the area of the cell to increase its capacity while keeping other parameters the same '), html.Strong('(Case 2)'), html.Span('? Average density is constant as the area of the separator scales with the capacity. Increasing capacity now requires a larger volume change as the separator (and other relevant) volumes also change.')], style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'18px'}),
+                         html.Div('- This is still not in a desirable way to increase cell capacity since the resistance (i.e. current collectors) goes up as the area increases. Why so? Increase in the area of the current collector means a larger distance the tab is from the entire current collector area.' , style={'textAlign':'justify', 'margin-left':'20px','font-size':'18px'}),
+                       ], width={"size": 8},
+                       xs=12, sm=10, md=10, lg=8, xl=8
                        ), 
                         dbc.Col([
-                        html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/17gyxolvyjlaws7ksxw1m/power-vs-energy.png?rlkey=bikeko9bn4y6vehbhjv7aox8e&st=92q02hgo&raw=1', style={"width":"100%"}), 
+                        html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/8sk0h6a60izh3g7nfzfie/Cell-optimization.png?rlkey=mrx6n266cj1cvfyrlhcacoini&raw=1', style={"width":"100%"}), 
                                  ),
                         ], width={"size": 4},
-                        xs=8, sm=8, md=8, lg=5, xl=4
+                        xs=8, sm=8, md=8, lg=5, xl=3
                         ),
                     ],),
                     html.Br(),
                     html.Br(),
+                    dbc.Row([
+                        dbc.Col([
+                        html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/0jqhyz2iuwjgdom4qh9am/Multilayer-stack.png?rlkey=uy5rjrz0pqxt3uy7pqazarxd3&raw=1', style={"width":"100%"}), 
+                                 ),
+                        ], width={"size": 4},
+                        xs=8, sm=8, md=8, lg=5, xl=3
+                        ),
+                        dbc.Col([
+                        html.Div(children=[html.Span('- A better way to increase capacity is to stack multiple thinner electrodes such that the same electrode material is positioned on both sides of a current collector'), html.Strong(' (Case 3)'), html.Span('. Such addition of layers connected in parallel increases capacity while mitigating problems associated with the electrode size tuning.')], style={'textAlign':'justify', 'margin-left':'20px','font-size':'18px'}),
+                       ], width={"size": 7},
+                       xs=12, sm=10, md=10, lg=8, xl=8
+                       ), 
+                    ],),
+                    html.Br(),
                     dmc.Divider(size="md", color="grey"),
                     html.Br(),
                     dcc.Markdown(('* Reference'), style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'20px', 'font-weight':'bold'}),
-                   dcc.Markdown(('Michael J. Lain, et al., "Design Strategies for High Power vs. High Energy Lithium Ion Cells", _**batteries**_, 5, 64 (2019)'), style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'18px'}),
+                    dcc.Markdown(('Thomas F. Fuller, John N. Harb, "Electrochemical Engineering", John Wiley & Sons, Inc. (2018)'), style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'18px'}),
                 ],),
              ],
              style={'textAlign':'justify', 'margin-left':'30px', 'margin-right':'30px'},
