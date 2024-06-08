@@ -11,7 +11,7 @@ from collections import OrderedDict
 from dash.exceptions import PreventUpdate
 
 dash.register_page(
-    __name__, name="Chemistry", top_nav=True, path="/chemistry"
+    __name__, name="Li Chemistry", top_nav=True, path="/chemistry"
     )
 
 data_election = OrderedDict(
@@ -22,6 +22,7 @@ data_election = OrderedDict(
                 "Lithium Cobalt Oxide (LCO)",
                 "Lithium Manganese Oxide",
                 "Lithium Iron Phosphate (LFP)",
+                "Lithium Iron Manganese Phosphate (LMFP)",
                 "Lithium Nickel Cobalt Manganese Oxide (NCM111)",
                 "Lithium Nickel Cobalt Manganese Oxide (NCM622)",
                 "Lithium Nickel Cobalt Manganese Oxide (NCM811)",
@@ -33,6 +34,7 @@ data_election = OrderedDict(
             [
                 "Layered", 
                 "Spinel", 
+                "Olivine",
                 "Olivine",
                 "Layered",
                 "Layered",
@@ -46,6 +48,7 @@ data_election = OrderedDict(
                 "LiCoO<sub>2</sub>", 
                 "LiMn<sub>2</sub>O<sub>4</sub>",
                 "LiFePO<sub>4</sub>",
+                "LiFe<sub>x</sub>Mn<sub>1-x</sub>PO<sub>4</sub>",
                 "Li[Ni<sub>0.33</sub>Co<sub>0.33</sub>Mn<sub>0.33</sub>]O<sub>2</sub>",
                 "Li[Ni<sub>0.6</sub>Co<sub>0.2</sub>Mn<sub>0.2</sub>]O<sub>2</sub>",
                 "Li[Ni<sub>0.8</sub>Co<sub>0.1</sub>Mn<sub>0.1</sub>]O<sub>2</sub>",
@@ -58,6 +61,7 @@ data_election = OrderedDict(
                 "274/148<sup>a</sup>",
                 "148/120<sup>a</sup>",
                 "170/165<sup>a</sup>",
+                "170/150",
                 "280/160<sup>a</sup>",
                 "275/170<sup>b</sup>",
                 "275/190<sup>b</sup>",
@@ -70,6 +74,7 @@ data_election = OrderedDict(
                 "3.8<sup>a</sup>",
                 "4.1<sup>a</sup>",
                 "3.4<sup>a</sup>",
+                "3.7-3.8",
                 "3.7<sup>a</sup>",
                 "3.7<sup>b</sup>",
                 "3.7<sup>b</sup>",
@@ -81,10 +86,24 @@ data_election = OrderedDict(
             [
                 "",
                 "",
-                "5x10<sup>-8</sup><sup>d</sup>",
+                "10<sup>-10</sup>-10<sup>-9</sup><sup>e</sup>",
+                "",
                 "5.2x10<sup>-8</sup><sup>c</sup>",
                 "1.6x10<sup>-6</sup><sup>c</sup>",
                 "1.7x10<sup>-5</sup><sup>c</sup>",
+                "",
+            ],
+        ),
+        (
+            "Ionic Diffusivity (cm2/s)",
+            [
+                "",
+                "",
+                "",
+                "2.4x10<sup>-13</sup>",
+                "",
+                "",
+                "",
                 "",
             ],
         ),
@@ -94,6 +113,7 @@ data_election = OrderedDict(
                 "",
                 "",
                 "250-360<sup>d</sup>",
+                "",
                 "306<sup>d</sup>",
                 "264<sup>d</sup>",
                 "232<sup>d</sup>",
@@ -106,6 +126,7 @@ data_election = OrderedDict(
                 "",
                 "",
                 "147<sup>d</sup>",
+                "",
                 "512.5<sup>d</sup>",
                 "721.4<sup>d</sup>",
                 "904.8<sup>d</sup>",
@@ -120,6 +141,7 @@ data_election = OrderedDict(
                 "* Cost affordable \n * Thermal stability",
                 "",
                 "",
+                "",
                 "* High specific capacity \n * High energy density",
                 "* High specific capacity \n * High energy density",
             ],
@@ -130,6 +152,7 @@ data_election = OrderedDict(
                 "* Co expensive \n * Unstable upon charging >50%",
                 "* Mn dissolution in electrolyte",
                 "* Low ionic conductivity \n * Low energy density",
+                "",
                 "",
                 "",
                 "* Cycle instability for high Ni content \n * Co expensive",
@@ -732,7 +755,7 @@ layout = html.Div([
                                 style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),
                             dcc.Markdown(('Hyung-Joo Noh, et al., "Comparison of the structural and electrochemical properties of layered Li\[NixCoyMnz]O2 (x = 1/3, 0.5, 0.6, 0.7, 0.8 and 0.85) cathode material for lithium-ion batteries", _**J. Power Sources**_, 233, 121 (2013) _(c in Cathode Comparison Table)_'), 
                                 style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),
-                            dcc.Markdown(('Yuki Orikasa, et al., "Ionic Conduction in Lithium Ion Battery Composite Electrode Governs Cross-sectional Reaction Distribution", _**Sci. Rep.**_, 6, 26382 (2016) _(d in Cathode Comparison Table)_'), 
+                            dcc.Markdown(('Sung-Yoon Chung, et al., "Electronically conductive phospho-olivines as lithium storage electrodes", _**Nature Mater.**_, 1, 123 (2002) _(e in Cathode Comparison Table)_'), 
                                 style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),  
                             dcc.Markdown(('Xiao-Guang Yang, et al., "Thermally modulated lithium iron phosphate batteries for mass-market electric vehicles", _**Nature Energy**_, 6, 176 (2021) _(d in Cathode Comparison Table)_'), 
                                 style={'textAlign':'justify', 'font-size':'15px', 'margin-left':'0px'}),                          
