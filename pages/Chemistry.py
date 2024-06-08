@@ -248,6 +248,7 @@ data_election4 = OrderedDict(
         (
             "Anode System",
             [
+                "Type of reaction",
                 "Density (g/cm<sup>3</sup>)",
                 "Lithiated Phase",
                 "Reaction Potential vs. Li/Li<sup>+</sup> (V)",
@@ -260,6 +261,7 @@ data_election4 = OrderedDict(
         (
             "C",
             [
+                "Intercalation",
                 "2.25",
                 "LiC<sub>6</sub>",
                 "0.05",
@@ -272,6 +274,7 @@ data_election4 = OrderedDict(
         (
             "Si",
             [
+                "Alloying",
                 "2.3",
                 "Li<sub>3.75</sub>Si",
                 "0.31",
@@ -282,8 +285,22 @@ data_election4 = OrderedDict(
             ],
         ),
         (
+            "Sb",
+            [
+                "Alloying",
+                "3",
+                "Li<sub>3</sub>Sb",
+                "-",
+                "660",
+                "1890",
+                "135",
+                "",
+            ],
+        ),
+        (
             "SiOx",
             [
+                "Conversion",
                 "2.13",
                 "SiO (x~1)",
                 "",
@@ -296,6 +313,7 @@ data_election4 = OrderedDict(
         (
             "Li",
             [
+                "-",
                 "0.53",
                 "Li",
                 "0",
@@ -308,6 +326,7 @@ data_election4 = OrderedDict(
         (
             "Li4Ti5O12",
             [
+                "Intercalation",
                 "3.5",
                 "Li<sub>7</sub>Ti<sub>5</sub>O<sub>12</sub>",
                 "1.55",
@@ -346,6 +365,25 @@ layout = html.Div([
                         ),
                     ],
                     ),
+                    html.Br(),
+                    dmc.Divider(size="md", color="grey", style={"width":"100%", "display":"block", "margin":"auto"}),
+                    html.Br(),
+                    dcc.Markdown('Electrode (dis-)charge Mechanism', style={'font-size':'30px','textAlign':'left','font-weight':'bold'},),
+                    dcc.Markdown('The way Li-ions react with active materials during charge/discharge can be categorized into three types of reactions: intercalation, alloying, and conversion reactions.',style={'textAligh':'justify','margin-left':'20px','font-size':'18px'}),
+                    dcc.Markdown('* Intercalation reaction:', style={'font-size':'20px', 'textAlign':'left','font-weight':'bold'}),   
+                    html.Div('- Upon discharge (or charge) of a battery, Li-ions are released from the anode (or cathode) and move to the cathode (or anode) through an electrolyte. This type of reaction results in a valence shift of a transition metal ion.',style={'textAlign':'justify', 'margin-left':'25px', 'font-size':'18px'}),            
+                    html.Div('- Li-ions are inserted or extracted from interstitital sites of the host structure without causing substantial structural degradation. This makes intercalation compounds ideal for electrochemical energy storage applications. Indeed, most commercialized Li-ions batteries use electrodes with this type of reaction mechanism.',style={'textAlign':'justify', 'margin-left':'25px', 'font-size':'18px'}), 
+                    html.Div('- However, intercalation compounds have a limited capacity due to crystallographic constrains of the host and thermodynamic instabilities arising from large changes in Li concentrations within the host.',style={'textAlign':'justify', 'margin-left':'25px', 'font-size':'18px'}), 
+                    dcc.Markdown('* Alloying reaction:', style={'font-size':'20px', 'textAlign':'left','font-weight':'bold','margin-top':'10px'}), 
+                    html.Div(['- Li reacts directly with another element to form a well-defined intermetallic phase (Li',html.Sub('x'),'M). Good examples are Si and Sn, which can form intermetallic compounds with very high Li concentrations (e.g., Li',html.Sub('3.75'),'Si and Li',html.Sub('4.4'),'Sn). The theoretical capacities of Si and Sn are 3579 mAh/g and 993 mAh/g respectively, about 10 times higher than the capacities of graphite.'],style={'textAlign':'justify', 'margin-left':'25px', 'font-size':'18px'}),
+                    html.Div(['- However, alloying reactions generally lead to multiple phase transformations during (de-)lithiation with large volume changes, resulting in a large hysteresis in the voltage profile and poor reversibility. This hysteresis leads to irreversible energy loss upon cycling, making commercialization difficult. '],style={'textAlign':'justify', 'margin-left':'25px', 'font-size':'18px'}),
+                    html.Div(['- Among alloying electrodes, Sb has relatively lower volume expansion (Si ~ 400%, Sn ~ 250%, and Sb ~ 135%), good chemical properties, and thermal stability similar to Si and Sn. Sb has a theoretical capacity of 660 mAh/g and a high volumetric capacity of 1890 Ah/L, which is 2.5 times higher than the commercially used graphite anodes. '],style={'textAlign':'justify', 'margin-left':'25px', 'font-size':'18px'}),
+                    dcc.Markdown('* Conversion reaction:', style={'font-size':'20px', 'textAlign':'left','font-weight':'bold','margin-top':'10px'}), 
+                    html.Div(['- This types of reaction accommodates as many electrons per transitional metal, M, as needed to reduce its metallic state Mn',html.Sup('+'),'. Therefore, electrode materials undergoing conversion reactions can achieve much higher capacities than curretnly commercialized intercalation compounds. '],style={'textAlign':'justify', 'margin-left':'25px', 'font-size':'18px'}),
+                    html.Div(['- FeF',html.Sub('2'),' is a well-known conversion reaction cathode, heavily researched, with a theoretical capacity of 571 mAh/g.'],style={'textAlign':'justify', 'margin-left':'25px', 'font-size':'18px'}),
+                    html.Div(['- Conversion reactions can be classified into two types: pure conversion and displacement reactions. When the starting compound has a strong structural relationship with its lithiated products, the conversion reaction is usually called a displacement reaction.'],style={'textAlign':'justify', 'margin-left':'25px', 'font-size':'18px'}),
+                    html.Div(['- Since these reactions involve phase transformations to extrude the transition metal, large voltage polarization and hysteresis are common. Hysteresis in the voltage profile emerge if the reaction follows a different path during discharge compared to charge. This path hysteresis arises due to asymmetric in competing kinetic mechanisms and mechanical dissipation, either when coherency strains need to be overcome during two-phase coexistence or in the form of plastic deformation, an important factor in some alloying or conversion reactions undergoing large volume changes. '],style={'textAlign':'justify', 'margin-left':'25px', 'font-size':'18px'}),
+  
                     html.Br(),
                     dmc.Divider(size="md", color="grey", style={"width":"100%", "display":"block", "margin":"auto"}),
                     html.Br(),
@@ -431,67 +469,67 @@ layout = html.Div([
                     dcc.Markdown('* Anode Materials', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
                     html.Br(),
                     dbc.Row([
-                        dcc.Markdown(('1. Intercalation-based:'), 
-                                 style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px', 'font-weight':'bold'}),
-                        dbc.Row([
-                            dbc.Col([
-                                dcc.Markdown(("Carbon-based anode such as graphite has the theoretical capacity of 372 mAh/g and has a good (de-)lithiation potential vs. Li. Many carbon-based materials are engineered at nanoscale to optimize their morphologies for high structural stability and better electrochemical reversibility and capacity retention.  In terms of safety, stability, and power capability, titanium-based anodes such as Li<sub>4</sub>Ti<sub>5</sub>O<sub>12</sub> and TiO<sub>2</sub> have an advantage over graphite, but their electronic conductivity is poor and specific capacities (175-330 mAh/g) and energy densities are low."), dangerously_allow_html=True,
-                                     style={'textAlign':'justify', 'margin-left':'30px', 'font-size':'18px'}),
-                            ], width={"size": 8},
-                            xs=6, sm=10, md=10, lg=8, xl=8
-                            ),
-                            dbc.Col([
-                                html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/amcz0cvqdgvjqr3woa3nf/Intercalation.png?rlkey=12vrz2scdi4f4q8to5oiajt2n&raw=1', 
-                                               style={"width":"80%", "display":"block", "margin":"auto"}), 
-                                    ),
-                            ], width={"size": 4},
-                            xs=4, sm=10, md=8, lg=6, xl=4
-                            ),
-                        ], style={"margin-bottom":'5em'},
-                        ), 
-                        html.Br(),
-                        html.Br(),
-                        dcc.Markdown(('2. Alloying-based:'), 
-                                 style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px', 'font-weight':'bold'}), 
-                        dbc.Row([
-                            dbc.Col([  
-                                dcc.Markdown(("Alloying anodes like Si, Ge, and Sn undergo the reaction: M + xLi<sup>+</sup> + xe<sup>-</sup> &rarr; Li<sub>x</sub>M. The biggest advantage of employing these materials as an anode is specific capacity, which is much higher than that of intercalation anode system. For example, Si has a specific capacity of ~4200 mAh/g. However, their large volumetric expansion upon lithiation poses a great threat to its mechanical stability (e.g. delamination from a current collector or loss of inter-particle cohesion) and contributes to a capacity fade of the cell. Nano-structuring of Si as an anode has attracted interest to overcome such problems. In fact, Si or SiO<sub>x</sub> is considered to be added in small percentage amount (e.g. 2-10 wt%) inside the graphite anode to boost energy density of the anode."), dangerously_allow_html=True,
-                                     style={'textAlign':'justify', 'margin-left':'30px', 'font-size':'18px'}
-                                    ),
-                            ], width={"size": 8},
-                            xs=6, sm=10, md=10, lg=8, xl=8
-                            ),    
-                            dbc.Col([
-                                html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/q99hom4wf01a5zdqc4jko/TiO2-Si.gif?rlkey=nnzxks6pzow17fme2yszhyu0v&raw=1', 
-                                               style={"width": "60%", "display": "block", "margin": "auto"}
-                                               ),
-                                    ),
-                            ], width={"size": 4},
-                            xs=4, sm=10, md=8, lg=6, xl=4
-                            ),                             
-                        ], style={"margin-bottom":'5em'},
-                        ), 
-                        html.Br(),
-                        html.Br(),
-                        dcc.Markdown(('3. Conversion-based:'), 
-                                 style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px', 'font-weight':'bold'}),
-                        dbc.Row([
-                            dbc.Col([
-                                dcc.Markdown(("Conversion-based anodes such as metal oxides undergo the following reaction: M<sub>x</sub>O<sub>y</sub> + 2yLi<sup>+</sup> + 2ye<sup>-</sup> &rarr; yLi<sub>2</sub>O + xM. Despite their high specific capacities, they suffer from multiple issues including structural instability due to pulverization and voltage hysteresis owing to sluggish kinetics during the conversion process to different phases."), dangerously_allow_html=True,
-                                 style={'textAlign':'justify', 'margin-left':'30px', 'font-size':'18px'}),  
-                                ], width={"size": 8},
-                                xs=6, sm=10, md=10, lg=8, xl=8
-                            ),   
-                            dbc.Col([
-                                html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/3ty73w1vp5v44d5x9y94j/ConversionII.png?rlkey=7qw6qqtc8kgaeudroe1556keq&st=aph7cdkg&raw=1', 
-                                               style={"width":"100%", "display": "block", "margin": "auto"}), 
-                                    ),
-                            ], width={"size": 4},
-                            xs=4, sm=10, md=8, lg=6, xl=4
-                            ),  
-                        ], style={"margin-bottom":'5em'},
-                        ),  
-                        html.Br(),
+                        # dcc.Markdown(('1. Intercalation-based:'), 
+                        #          style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px', 'font-weight':'bold'}),
+                        # dbc.Row([
+                        #     dbc.Col([
+                        #         dcc.Markdown(("Carbon-based anode such as graphite has the theoretical capacity of 372 mAh/g and has a good (de-)lithiation potential vs. Li. Many carbon-based materials are engineered at nanoscale to optimize their morphologies for high structural stability and better electrochemical reversibility and capacity retention.  In terms of safety, stability, and power capability, titanium-based anodes such as Li<sub>4</sub>Ti<sub>5</sub>O<sub>12</sub> and TiO<sub>2</sub> have an advantage over graphite, but their electronic conductivity is poor and specific capacities (175-330 mAh/g) and energy densities are low."), dangerously_allow_html=True,
+                        #              style={'textAlign':'justify', 'margin-left':'30px', 'font-size':'18px'}),
+                        #     ], width={"size": 8},
+                        #     xs=6, sm=10, md=10, lg=8, xl=8
+                        #     ),
+                        #     dbc.Col([
+                        #         html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/amcz0cvqdgvjqr3woa3nf/Intercalation.png?rlkey=12vrz2scdi4f4q8to5oiajt2n&raw=1', 
+                        #                        style={"width":"80%", "display":"block", "margin":"auto"}), 
+                        #             ),
+                        #     ], width={"size": 4},
+                        #     xs=4, sm=10, md=8, lg=6, xl=4
+                        #     ),
+                        # ], style={"margin-bottom":'5em'},
+                        # ), 
+                        # html.Br(),
+                        # html.Br(),
+                        # dcc.Markdown(('2. Alloying-based:'), 
+                        #          style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px', 'font-weight':'bold'}), 
+                        # dbc.Row([
+                        #     dbc.Col([  
+                        #         dcc.Markdown(("Alloying anodes like Si, Ge, and Sn undergo the reaction: M + xLi<sup>+</sup> + xe<sup>-</sup> &rarr; Li<sub>x</sub>M. The biggest advantage of employing these materials as an anode is specific capacity, which is much higher than that of intercalation anode system. For example, Si has a specific capacity of ~4200 mAh/g. However, their large volumetric expansion upon lithiation poses a great threat to its mechanical stability (e.g. delamination from a current collector or loss of inter-particle cohesion) and contributes to a capacity fade of the cell. Nano-structuring of Si as an anode has attracted interest to overcome such problems. In fact, Si or SiO<sub>x</sub> is considered to be added in small percentage amount (e.g. 2-10 wt%) inside the graphite anode to boost energy density of the anode."), dangerously_allow_html=True,
+                        #              style={'textAlign':'justify', 'margin-left':'30px', 'font-size':'18px'}
+                        #             ),
+                        #     ], width={"size": 8},
+                        #     xs=6, sm=10, md=10, lg=8, xl=8
+                        #     ),    
+                        #     dbc.Col([
+                        #         html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/q99hom4wf01a5zdqc4jko/TiO2-Si.gif?rlkey=nnzxks6pzow17fme2yszhyu0v&raw=1', 
+                        #                        style={"width": "60%", "display": "block", "margin": "auto"}
+                        #                        ),
+                        #             ),
+                        #     ], width={"size": 4},
+                        #     xs=4, sm=10, md=8, lg=6, xl=4
+                        #     ),                             
+                        # ], style={"margin-bottom":'5em'},
+                        # ), 
+                        # html.Br(),
+                        # html.Br(),
+                        # dcc.Markdown(('3. Conversion-based:'), 
+                        #          style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'20px', 'font-weight':'bold'}),
+                        # dbc.Row([
+                        #     dbc.Col([
+                        #         dcc.Markdown(("Conversion-based anodes such as metal oxides undergo the following reaction: M<sub>x</sub>O<sub>y</sub> + 2yLi<sup>+</sup> + 2ye<sup>-</sup> &rarr; yLi<sub>2</sub>O + xM. Despite their high specific capacities, they suffer from multiple issues including structural instability due to pulverization and voltage hysteresis owing to sluggish kinetics during the conversion process to different phases."), dangerously_allow_html=True,
+                        #          style={'textAlign':'justify', 'margin-left':'30px', 'font-size':'18px'}),  
+                        #         ], width={"size": 8},
+                        #         xs=6, sm=10, md=10, lg=8, xl=8
+                        #     ),   
+                        #     dbc.Col([
+                        #         html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/3ty73w1vp5v44d5x9y94j/ConversionII.png?rlkey=7qw6qqtc8kgaeudroe1556keq&st=aph7cdkg&raw=1', 
+                        #                        style={"width":"100%", "display": "block", "margin": "auto"}), 
+                        #             ),
+                        #     ], width={"size": 4},
+                        #     xs=4, sm=10, md=8, lg=6, xl=4
+                        #     ),  
+                        # ], style={"margin-bottom":'5em'},
+                        # ),  
+                        # html.Br(),
                         dbc.Row([
                         dcc.Markdown(("Below is the comparison of key anode materials currently in industry for commercialization. The data were taken from the paper - Gebrekidan Gebresilassie Eshetu, et al., \"Production of high-energy Li-ion batteries comprising silicon-containing anodes and insertion-type cathodes\", **_Nature Commun._** 12, 5459 (2021). As noticeable from the table, silicon has exceptionally high theoretical capacity (comparable or even higher than Li metal) but also undergoes extremely large volumetric variation upon cycling causing capacity decay due to mechanical instability. Its electronic conductivity and Li ion diffusivity are also lower than that of the carbon/graphite counterpart. These make the material very challenging for commercialization."), dangerously_allow_html=True,
                                  style={'textAlign':'justify', 'margin-left':'0px', 'font-size':'18px'}),            
