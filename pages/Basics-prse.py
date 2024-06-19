@@ -159,6 +159,17 @@ data_election2 = OrderedDict(
              "Stationary energy grid",
         ],
         ),
+        (
+        "Form factor",
+        [
+             "Prismatic", 
+             "Cylindrical", 
+             "Cylindrical",
+             "Cylindrical, Prismatic, Pouch",
+             "Cylindrical, Primsatic, Pouch",
+             "Pouch",
+        ],
+        ),
         ],
 )
 
@@ -171,22 +182,15 @@ layout = html.Div([
                     dbc.Row([
                         dcc.Markdown('* Primary Cell', style={'font-size':'20px', 'textAlign':'left','font-weight':'bold'}),
                         dbc.Col([
-                         html.Div(('- It is a galvanic cell that can only be used once before disposal as the electrochemical reaction is irreversible and the cell is unable to be recharged with electricity.'), 
+                        html.Div(('- It is a galvanic cell that can only be used once before disposal as the electrochemical reaction is irreversible and the cell is unable to be recharged with electricity.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'16px'}),
-                        ], width={"size": 7}, style={"margin-bottom":"20px"},
-                        xs=12, sm=10, md=10, lg=7, xl=7
+                        html.Br(),
+                        html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/we5r1v5ibif9pdcj1ez0t/Primary-battery.png?rlkey=w61wlssuevd3iq0i1zjf91ugb&st=zzirqevg&raw=1', style={"width":"60%", "display": "block", "margin": "auto", "justify-content":"center"}), 
+                                 ),
+                        ], width={"size": 6}, style={"margin-bottom":"20px"},
+                        xs=12, sm=10, md=10, lg=6, xl=6
                         ),
                         dbc.Col([
-                            html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/hc0318st6fcb8hsk7kw11/cell-image.png?rlkey=uutzhyefy4uhb1sie5qdr6wpl&raw=1', style={"width":"100%", "display": "block", "margin": "auto", "justify-content":"center"}), 
-                                 ),
-                        ], width={"size": 5},
-                        xs=10, sm=8, md=6, lg=5, xl=5
-                        ),
-                    ],),
-                    html.Br(),
-                    html.Br(),
-                    dbc.Row([
-                        dbc.Col([                         
                             dash_table.DataTable(
                                 markdown_options={"html": True},
                                 style_table={'overflowX': 'auto', 'minWidth':400},
@@ -217,27 +221,28 @@ layout = html.Div([
                                 data=df.to_dict('records'),
                                 columns=[{'id': c, 'name': c, "presentation": "markdown"} for c in df.columns]
                             ),
-                            html.Br(),
-                            html.Br(),
-                            dmc.Divider(size="md", variant="dotted", color="grey"),
-                            html.Br(),
+                        ], width={"size": 6},
+                        xs=10, sm=8, md=6, lg=6, xl=6
+                        ),
+                    ],),
+                    html.Br(),
+                    html.Br(),
+                    dbc.Row([
                         html.Br(),
                         dmc.Divider(size="md", variant="dotted", color="grey"),
                         html.Br(),
                         dcc.Markdown('* Secondary Cell', style={'font-size':'20px', 'textAlign':'left','font-weight':'bold'}),
-                        dbc.Col([
-                            html.Div(('- It is a rechargeable cell with electrochemical reaction reversible by applying the reverse current. Discharge involves converting chemical energy to electricity while the reverse happens upon charge.'), 
+                        dbc.Row([
+                            dbc.Col([
+                                html.Div(('- It is a rechargeable cell with electrochemical reaction reversible by applying the reverse current. Discharge involves converting chemical energy to electricity while the reverse happens upon charge.'), 
                                  style={'textAlign':'justify', 'margin-left':'20px', 'font-size':'16px'}),
-                        ], width={"size": 7}, style={"margin-bottom":"20px"},
-                        xs=12, sm=10, md=10, lg=7, xl=7
-                        ),
-                        dbc.Col([
-                            html.Div( html.Img(src='https://dl.dropboxusercontent.com/scl/fi/hc0318st6fcb8hsk7kw11/cell-image.png?rlkey=uutzhyefy4uhb1sie5qdr6wpl&raw=1', style={"width":"100%", "display": "block", "margin": "auto", "justify-content":"center"}), 
-                                 ),
-                        ], width={"size": 5},
-                        xs=10, sm=8, md=6, lg=5, xl=5
-                        ),
-                        dash_table.DataTable(
+                                html.Br(),
+                                html.Div(html.Img(src='https://dl.dropboxusercontent.com/scl/fi/a9szr5hl3pr3b9asxfnvj/Secondary-battery.png?rlkey=4ml8tm823ezvmqphn8z5co9qf&st=4f61y4f3&raw=1', style={"width":"80%", "display": "block", "margin": "auto", "justify-content":"center"})), 
+                            ], width={"size": 5},
+                            xs=12, sm=10, md=6, lg=5, xl=5
+                            ),
+                            dbc.Col([
+                                dash_table.DataTable(
                                 markdown_options={"html": True},
                                 style_table={'overflowX': 'scroll'},
                                 style_cell={'font-family': 'Arial', 'font-size': '14px','text-align':'left', 'margin-top':'10px'}, 
@@ -267,13 +272,19 @@ layout = html.Div([
                                 },
                                 data=df2.to_dict('records'),
                                 columns=[{'id': c, 'name': c, "presentation": "markdown"} for c in df2.columns]
+                            ),                                    
+                            ], width={"size": 7},
+                            xs=10, sm=8, md=8, lg=8, xl=7
+                            ),
+                            ]
+                            ),
+                        ],
+                        style={"margin-bottom":"20px"}
                         ),
                         html.Br(),
                         ],style={'textAlign':'justify', 'margin-top':'0px'},
                         ), 
-                    ]),
                     html.Br(),
-                ],),
              ],
              style={'textAlign':'justify', 'margin-left':'10px', 'margin-right':'10px'},
              ),

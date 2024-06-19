@@ -41,7 +41,6 @@ navbar_children=[
     dbc.DropdownMenu(
             children=[
                 dbc.DropdownMenuItem("Cells", href="/basics-c", className="drop-down"),
-                dbc.DropdownMenuItem("Primary vs Secondary", href="/basics-prse", className="drop-down"),
                 dbc.DropdownMenuItem("Li Chemistry", href="/chemistry", className="drop-down"),
                 dbc.DropdownMenuItem("Parameter & Metrics", href="/basics-pm", className="drop-down"),
             ],
