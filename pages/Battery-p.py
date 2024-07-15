@@ -134,6 +134,7 @@ data_election2 = OrderedDict(
                 "Ford",
                 "Rivian",
                 "Tesla",
+                "Lucid Air"
             ], 
         ),
         (
@@ -143,13 +144,14 @@ data_election2 = OrderedDict(
                 "Q6 E-tron Quattro",
                 "i3", 
                 "Ioniq 5",
-                "EV9",
+                "EV9 (Long-range)",
                 "Ultium(Cell)",
                 "Bolt",
                 "MEB (ID.4, ID.5, Buzz)",
                 "Mach-E SR (2023)",
                 "R1T/R1S Standard/Large",      
-                "Model S Plaid"               
+                "Model S Plaid",   
+                "Grand Touring",
             ],
         ),
         (
@@ -166,6 +168,7 @@ data_election2 = OrderedDict(
                 "",
                 "12s72p",
                 "22s72p",
+                "10s30p",
             ]
         ),
         (
@@ -182,6 +185,7 @@ data_election2 = OrderedDict(
                 "302<sup>d</sup>",
                 "360",
                 "",
+                "142.5",
             ],
         ),
         (
@@ -198,6 +202,7 @@ data_election2 = OrderedDict(
                 "3.2<sup>d</sup>",
                 "43.56",
                 "81.4",
+                "36.4",
             ],
         ),
         (
@@ -214,6 +219,7 @@ data_election2 = OrderedDict(
                 "",
                 "9",
                 "5",
+                "22",
             ],
         ),
         (
@@ -230,6 +236,7 @@ data_election2 = OrderedDict(
                 "CATL (LFP Prismatic)",
                 "Samsung SDI (NCA Cylindrical)",
                 "Panasonic (NCA Cylindrical)",
+                "LG ES (NCM Cylindrical 2170)"
             ],
         ),
         (
@@ -246,6 +253,7 @@ data_election2 = OrderedDict(
                 "<sup>d</sup>Cell Level \n 75 kWh",
                 "2170 cell \n 141 kWh",
                 "18650 cell \n 100 kWh",
+                "112 kWh"
             ],
         ),
         (
@@ -262,6 +270,7 @@ data_election2 = OrderedDict(
                 "[https://www.macheforum.com/site/threads/new-mach-e-lfp-battery-specs-revealed.26099/](https://www.macheforum.com/site/threads/new-mach-e-lfp-battery-specs-revealed.26099/)",
                 "[https://www.motortrend.com/reviews/2022-rivian-r1t-electric-pickup-truck-second-drive-review/](https://www.motortrend.com/reviews/2022-rivian-r1t-electric-pickup-truck-second-drive-review/) \n [https://insideevs.com/news/500474/rivian-samsung-sdi-battery-supplier/](https://insideevs.com/news/500474/rivian-samsung-sdi-battery-supplier/)",
                 "[https://insideevs.com/news/540380/tesla-models-plaid-battery-open/](https://insideevs.com/news/540380/tesla-models-plaid-battery-open/) \n [https://insideevs.com/news/513181/samsungsdi-cylindrical-nca-cells-91nickel/](https://insideevs.com/news/513181/samsungsdi-cylindrical-nca-cells-91nickel/) \n [https://ev-database.org/car/1405/Tesla-Model-S-Plaid](https://ev-database.org/car/1405/Tesla-Model-S-Plaid)",
+                "[https://eepower.com/tech-insights/teardown-unpacking-the-lucid-motors-battery-pack/#](https://eepower.com/tech-insights/teardown-unpacking-the-lucid-motors-battery-pack/#) \n [https://insideevs.com/news/544455/lucid-air-118kwh-battery-112kwh/](https://insideevs.com/news/544455/lucid-air-118kwh-battery-112kwh/) \n [https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-02/16180-NSR-231214-003_SAE_Teardown%20Analysis%20of%20Flood-damaged%20Evs-tag.pdf](https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-02/16180-NSR-231214-003_SAE_Teardown%20Analysis%20of%20Flood-damaged%20Evs-tag.pdf)",
             ],
         ),
     ],
@@ -326,7 +335,7 @@ layout = html.Div([
                     html.Br(),                    
                     dcc.Markdown('* Tesla EV Model Specs', style={'font-size':'25px', 'textAlign':'left','font-weight':'bold'}),
                         dash_table.DataTable(
-                                style_cell={'font-family': 'Arial', 'font-size': '18px', 'text-align':'left', 'minwidth':'15em', 'margin-top':'10px'}, 
+                                style_cell={'font-family': 'Arial', 'font-size': '18px', 'text-align':'left', 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px', 'margin-top':'10px'}, 
                                 style_table={'overflowX': 'auto'},
                                 style_data={
                                         'whiteSpace': 'normal',
