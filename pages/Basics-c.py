@@ -145,6 +145,14 @@ data_election = OrderedDict(
         ]
         ),
         (
+            "Energy density (Wh/kg)",
+        [
+            "150<sup> 1</sup>",
+            "55-75<sup> 2</sup>",
+            "130<sup> 3</sup>",
+        ]
+        ),
+        (
             "Applications",
         [
             "Portable electronics, Flash lights, Toys",
@@ -159,6 +167,14 @@ data_election = OrderedDict(
             "Cylindrical",
             "Button",
         ]
+        ),
+        (
+            "Reference",
+            [
+                "[1](https://www.sciencedirect.com/science/article/abs/pii/S0927796X20300516)",
+                "[2](https://www.sciencedirect.com/science/article/abs/pii/B9780444527455000617)",
+                "[3](https://en.wikipedia.org/wiki/Silver_oxide_battery#cite_note-duracell-1)", 
+            ],
         ),
         ],
 )
@@ -229,6 +245,17 @@ data_election2 = OrderedDict(
         ],
         ),
         (
+        "Energy density (Wh/kg)",
+        [
+            "30-50 <sup> 4</sup>",
+            "50-75<sup> 5</sup>",
+            "60-120<sup> 6</sup>",
+            "100-300<sup> 7</sup>",
+            "75-200<sup> 8</sup>",
+            "60-80<sup> 9</sup>",            
+        ],
+        ),
+        (
         "Applications",
         [
              "Solar panels, Cars, Emergency power system", 
@@ -249,6 +276,17 @@ data_election2 = OrderedDict(
              "Cylindrical, Primsatic, Pouch",
              "Pouch",
         ],
+        ),
+        (
+        "Reference",
+            [
+                "[4](https://link.springer.com/article/10.1007/s12209-019-00231-w)",
+                "[5](https://link.springer.com/article/10.1007/s12209-019-00231-w)",
+                "[6](https://en.wikipedia.org/wiki/Nickel%E2%80%93metal_hydride_battery)", 
+                "",
+                "[8](https://en.wikipedia.org/wiki/Sodium-ion_battery)",
+                "", 
+            ],
         ),
         ],
 )
