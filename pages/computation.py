@@ -10,7 +10,7 @@ import dash_mantine_components as dmc
 from collections import OrderedDict
 from dash.exceptions import PreventUpdate
 import math
-import pymatgen.core as pmg
+#import pymatgen.core as pmg
 
 dash.register_page(
     __name__, name="Computation", top_nav=True, path="/computation"
