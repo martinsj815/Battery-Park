@@ -1,0 +1,15 @@
+html {
+    background-image: url("https://dl.dropboxusercontent.com/scl/fi/2gxm80fba0yh4tx7voh66/background-texture.png?rlkey=3x619ijixvx5kkadc464nmniw&raw=1");
+    background-size: 20px;
+    background-repeat: repeat;
+}
+body {
+    height:auto;
+    margin:auto;
+    background-color: rgb(234, 228, 228);
+    /*background-color: rgb(78, 81, 244);*/
+    font-family: "Verdana", serif;
+    width:fit-content;
+    align-items:center;
+    line-height:1.4;
+}
