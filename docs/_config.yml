@@ -21,7 +21,7 @@
 title: Battery Park
 email: donghee1025@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  From Chemistry to Technology  
+  Battery Chemistry to Technology  
 baseurl: "/Battery-Park/" # the subpath of your site, e.g. /blog
 url: "http://donghee1025.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: battery_park
