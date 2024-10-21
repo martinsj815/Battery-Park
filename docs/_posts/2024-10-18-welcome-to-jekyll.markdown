@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Batter Park!"
 date:   2024-10-18 16:37:47 -0400
 categories: jekyll update
 ---
