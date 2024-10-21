@@ -21,7 +21,7 @@
 title: Battery Park
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The webpage is tailored to provide comprehensive information spanning from their fundamental chemistry to their present untilization across industries 
+  The webpage is tailored to provide comprehensive information spanning from their fundamental chemistry to their present untilization across industries. 
 baseurl: "/Battery-Park/" # the subpath of your site, e.g. /blog
 url: "http://donghee1025.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
