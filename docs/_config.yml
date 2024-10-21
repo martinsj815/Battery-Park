@@ -2,6 +2,6 @@ layout: default
 title: Battery Park
 description: >- # this means to ignore newlines until "baseurl:"
   Battery is important.
-baseurl: "/Battery-Park/"
+baseurl: "/Battery-Park"
 url: "https://donghee1025.github.io"
 theme: minima
