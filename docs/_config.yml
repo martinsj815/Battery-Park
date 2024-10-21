@@ -5,3 +5,5 @@ baseurl: "/Battery-Park/"
 url: "https://donghee1025.github.io"
 github_username: donghee1025
 theme: minima
+plugins:
+  - jekyll-feed
