@@ -1,18 +1,22 @@
 ---
 layout: default
 ---
+# Welcome to Battery Park!
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Batteries play a crucial role in our daily lives, powering everything from smartphones to electric vehicles. As the demand for higher performance increases and the availability of battery constituent resources becomes scarcer, there is an urgent need to concentrate on developing batteries with optimized parameters through efficient resource allocation.
+
+### Large image
+
+![Battery](https://dl.dropboxusercontent.com/scl/fi/djio7asr23jaq6emicq0o/image_home.jpg?rlkey=02hyor71gv7cjuzjru144hox0&raw=1)
+
+The website is tailored to provide comprehensive information spanning from their fundamental chemistry to their present utilization across industries. We welcome technology enthusiasts, students, and even industry professional seeking knowledge and insights from this fascinating realm of science and technology.
+
 
 [Link to another page](./another-page.html).
 
 There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
 ## Header 2
 
@@ -96,9 +100,6 @@ end
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
 
 ### Definition lists can be used with HTML syntax.
