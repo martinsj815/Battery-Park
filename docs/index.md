@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
+
 # Welcome to Battery Park!
 
 Batteries play a crucial role in our daily lives, powering everything from smartphones to electric vehicles. As the demand for higher performance increases and the availability of battery constituent resources becomes scarcer, there is an urgent need to concentrate on developing batteries with optimized parameters through efficient resource allocation.
-
-### Large image
 
 ![Battery](https://dl.dropboxusercontent.com/scl/fi/djio7asr23jaq6emicq0o/image_home.jpg?rlkey=02hyor71gv7cjuzjru144hox0&raw=1)
 
@@ -13,10 +12,6 @@ The website is tailored to provide comprehensive information spanning from their
 
 
 [Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
 ## Header 2
 
