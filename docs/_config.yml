@@ -28,7 +28,7 @@ twitter_username: battery_park
 github_username:  battery_park
 
 # Build settings
-theme: cayman
+theme: slate
 plugins:
   - jekyll-feed
 
