@@ -6,6 +6,8 @@ description: This is just another page
 
 ## Welcome to another page
 
+[Link to another page](./another-page.html).
+
 ## Header 2
 
 > This is a blockquote following a header.
