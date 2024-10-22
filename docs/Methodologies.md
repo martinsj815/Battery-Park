@@ -34,3 +34,13 @@ description: Battery Chemistry to Technology
   </div>
 </div>
 
+### Pseudo-OCV:
+
+<div class="columns">
+  <div class="column">
+    <img src='https://dl.dropboxusercontent.com/scl/fi/n32gbcioobl9b7t2cykqh/pseudoOCV.png?rlkey=34v6p8ij6sualjgtl29g9r8m6&st=g6aykazi&raw=1' alt="GITT" style="width:500px; height:auto;">
+  </div>
+  <div class="column">
+    Discharge/charge is performed at very low constant current rate to avoid electrode polarization and ohmic loss despite that there still is hysteresis. “Pseudo-OCV” can be measured by taking an average of the charge and discharge profiles.
+  </div>
+</div>
