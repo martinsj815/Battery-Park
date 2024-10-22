@@ -20,11 +20,13 @@ description: Battery Chemistry to Technology
 
 - Primary Cell
 > It is a galvanic cell that can only be used once before disposal as the electrochemical reaction is irreversible and the cell is unable to be recharged with electricity.
-  
+
+<img src="https://dl.dropboxusercontent.com/scl/fi/we5r1v5ibif9pdcj1ez0t/Primary-battery.png?rlkey=w61wlssuevd3iq0i1zjf91ugb&st=zzirqevg&raw=1" alt="Primary" style="width:200px; height:auto;">
+
 - Secondary Cell
 > It is a rechargeable cell with electrochemical reaction reversible by applying the reverse current. Discharge involves converting chemical energy to electricity while the reverse happens upon charge.
 
-<img src="https://dl.dropboxusercontent.com/scl/fi/we5r1v5ibif9pdcj1ez0t/Primary-battery.png?rlkey=w61wlssuevd3iq0i1zjf91ugb&st=zzirqevg&raw=1" alt="Primary" style="width:300px; height:auto;">
+<img src="https://dl.dropboxusercontent.com/scl/fi/a9szr5hl3pr3b9asxfnvj/Secondary-battery.png?rlkey=4ml8tm823ezvmqphn8z5co9qf&st=4f61y4f3&raw=1" alt="Primary" style="width:200px; height:auto;">
 
 ## Cell Formats
 - Cells can be constructed in many different form factors. These include button/coin-type, cylindrical, prismatic, and pouch-type.
