@@ -95,3 +95,15 @@ description: Battery Chemistry to Technology
 </div>
 
 ----------------------------------------------------------------------------------
+
+## Post-mortem characterization
+
+> The following techniques are utilized for electrochemically tested cell materials after cell disassembly. They are typically treated carefully with appropriate solvents (under inert atmosphere) before conducting any measurement.
+
+----------------------------------------------------
+
+### Optical microscopy (OM): 
+Employed to image an overall landscape of the sample surface through the reflectance of visible light on the surface. However, due to its limited resolution (> 0.2 um), observing finer features such as cracks and defects is challenging.
+
+### Scanning electron microscopy (SEM) 
+SEM takes advantage of the short wavelength of the electrons that are accelerated through the magnetic lens, allowing high resolution visualization of the local region of the sample. Secondary and back-scattered electrons from the sample are collected through separate detectors; the former provides surface information with great details and resolution, while the latter displays more imaging contrast among elements coming from the high sensitivity in atomic number differences. SEM imaging can be supplemented by the analytical method such as XEDS (X-ray energy dispersive technique) for chemical composition study and is primarily employed for ageing/degradation mechanism study of the electrode.
