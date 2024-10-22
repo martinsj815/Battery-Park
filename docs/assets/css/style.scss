@@ -47,27 +47,51 @@
     font-weight: bold
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .nav-menu {
-        display: none;
+        position: fixed;
+        left: -100%;
+        top: 5rem;
         flex-direction: column;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        background-color: #333;
+        /* background-color: #fff; */
+        background-color: #222;
         width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+        color: #fff;
     }
 
     .nav-menu.active {
-        display: flex;
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
     }
 
     .hamburger {
         display: block;
         cursor: pointer;
-        font-size: 24px;
-        color: white;
     }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
 }
 
 .hamburger {
