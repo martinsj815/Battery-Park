@@ -102,7 +102,7 @@ description: Battery Chemistry to Technology
 
 ----------------------------------------------------
 
-### Optical microscopy (OM): 
+### - Optical microscopy (OM): 
 Employed to image an overall landscape of the sample surface through the reflectance of visible light on the surface. However, due to its limited resolution (> 0.2 um), observing finer features such as cracks and defects is challenging.
 
 ### Scanning electron microscopy (SEM) 
@@ -144,5 +144,5 @@ This thermoanalytical technique measures the heat flow of the material by taking
 ### Differential Scanning Calorimetry (DSC) 
 The technique involves the process of separating components in a mixture by first injecting a gaseous and liquid sample into a carrier gas and passing through a stationary phase inside a column. Components, then, depending on their retention times or rates of passing, will be detected separately using mass spectrometer, which displays the chromatogram with quantity of each component detected vs retention time. GC-MS is used for post-mortem analysis of electrolytes and gas evolution in extreme charge-discharge conditions.
 
-### Thermogravimetric Analysis (TGA) 
+### - Thermogravimetric Analysis (TGA) 
 It measures the mass change of the material using a precision balance over time with the temperature increase. The measurement can be done in a wide range of atmospheric environments such ambient air, inert/oxidizing/reducing gases, and pressures. The technique provides insight into thermal stability of the battery system in various electrode/electrolyte settings.
