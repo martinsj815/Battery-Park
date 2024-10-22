@@ -23,6 +23,7 @@ description: Battery Chemistry to Technology
   </div>
 </div>
 
+
 ### Galvanostatic Intermittent Titration Technique (GITT):
 
 <div class="columns">
@@ -34,13 +35,26 @@ description: Battery Chemistry to Technology
   </div>
 </div>
 
+
 ### Pseudo-OCV:
 
 <div class="columns">
   <div class="column">
-    <img src='https://dl.dropboxusercontent.com/scl/fi/n32gbcioobl9b7t2cykqh/pseudoOCV.png?rlkey=34v6p8ij6sualjgtl29g9r8m6&st=g6aykazi&raw=1' alt="GITT" style="width:500px; height:auto;">
+    <img src='https://dl.dropboxusercontent.com/scl/fi/n32gbcioobl9b7t2cykqh/pseudoOCV.png?rlkey=34v6p8ij6sualjgtl29g9r8m6&st=g6aykazi&raw=1' alt="PseudoOCV" style="width:500px; height:auto;">
   </div>
   <div class="column">
     Discharge/charge is performed at very low constant current rate to avoid electrode polarization and ohmic loss despite that there still is hysteresis. “Pseudo-OCV” can be measured by taking an average of the charge and discharge profiles.
+  </div>
+</div>
+
+
+### EVS test (Electrochemistry voltage spectroscopy):
+
+<div class="columns">
+  <div class="column">
+    <img src='https://dl.dropboxusercontent.com/scl/fi/m2zwxsaxocipsdeqmlvkd/EVS.png?rlkey=cmwv6sc33m0x4mbvxu9i44u6d&st=fqn9ftpu&raw=1' alt="EVS" style="width:500px; height:auto;">
+  </div>
+  <div class="column">
+    The technique is used to determine the degradation mechanism of the cell. It can either be done using incremental capacity (IC) method dQ/dV or differential voltage (DV) analysis dV/dQ, whichever reflects the degradation in the cell better for its origins and mechanisms. IC curve reveals the phase transformations as the peaks shown are associated with voltage plateaus while the DV curve better presents the single-phase regions.
   </div>
 </div>
