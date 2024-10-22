@@ -28,6 +28,14 @@ description: Battery Chemistry to Technology
 
 <img src="https://dl.dropboxusercontent.com/scl/fi/a9szr5hl3pr3b9asxfnvj/Secondary-battery.png?rlkey=4ml8tm823ezvmqphn8z5co9qf&st=4f61y4f3&raw=1" alt="Primary" style="width:250px; height:auto;">
 
+| Types        |Negative electrode|Positive electrode|Electrolyte|Positive electrode|Representative reaction|Nominal Voltage (V)|
+|:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|
+| Lead-Acid    |Pb                |PbO<sub>2</sub>   |H<sub>2</sub>SO<sub>4</sub>|                  |                       |                   |
+| Nickel-Cd    |Cd                |NiO(OH)           |KOH        |                  |                       |                   |
+| Nickel-Metal Hydride|Intermetallic compound (M)|NiO(OH)|KOH    ||||
+| Lithium-ion  |Carbon(Graphite), Silicon, Li Metal|Layered Oxides (LCO, LMO, LFP, NCM,...)|Wide variety liquid w/ low to high concentration solute||||
+| Sodium-ion   |                  |                  |           ||||
+| Zinc-ion     |Zn                |Mainly MnO<sub>2</sub>|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute||||
 
 ## Cell Formats
 - Cells can be constructed in many different form factors. These include button/coin-type, cylindrical, prismatic, and pouch-type.
@@ -44,15 +52,6 @@ description: Battery Chemistry to Technology
   * The three widely used dimensions for Li-ion battery cylindrical cells are 18650, 21700, and 4680, with which the first two digits correspond to the cell diameter and the next two digits correspond to its height (i.e. 18650 cell is 18 mm in diameter and 65 mm long.). A 4680 cell has the highest max capacity ~25,000 mAh and is currently used by Tesla in various car models including Model Y and Cybertrucks.
 
 <img src="https://dl.dropboxusercontent.com/scl/fi/w0iv2jor01ppfoz2k92z9/Cylindrical-battery.png?rlkey=hxen2pb54yesl070le3r0wjw0&raw=1" alt="Primary" style="width:250px; height:auto;">
-
-| Types        |Negative electrode|Positive electrode|Electrolyte|Positive electrode|Representative reaction|Nominal Voltage (V)|
-|:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|
-| Lead-Acid    |Pb                |PbO<sub>2</sub>   |H<sub>2</sub>SO<sub>4</sub>|                  |                       |                   |
-| Nickel-Cd    |Cd                |NiO(OH)           |KOH        |                  |                       |                   |
-| Nickel-Metal Hydride|Intermetallic compound (M)|NiO(OH)|KOH    ||||
-| Lithium-ion  |Carbon(Graphite), Silicon, Li Metal|Layered Oxides (LCO, LMO, LFP, NCM,...)|Wide variety liquid w/ low to high concentration solute||||
-| Sodium-ion   |                  |                  |           ||||
-| Zinc-ion     |Zn                |Mainly MnO<sub>2</sub>|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute||||
 
 ### 3. Prismatic Cell
   * Prismatic cells consist of the anode, cathode, and separator sheets that are rolled/pressed (“jelly-rolled”) or stacked to be placed inside the metal cuboid casing. These cells are used in many small (i.e. cell phone & laptop) to larger device and electric vehicle applications.
