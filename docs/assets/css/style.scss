@@ -3,6 +3,10 @@
 
 @import 'jekyll-theme-cayman';
 
+.header {
+    border-bottom: 1px solid #E2E8F0;
+    background-color: #222;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
