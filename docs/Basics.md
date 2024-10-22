@@ -28,14 +28,14 @@ description: Battery Chemistry to Technology
 
 <img src="https://dl.dropboxusercontent.com/scl/fi/a9szr5hl3pr3b9asxfnvj/Secondary-battery.png?rlkey=4ml8tm823ezvmqphn8z5co9qf&st=4f61y4f3&raw=1" alt="Primary" style="width:250px; height:auto;">
 
-| Types        |Negative electrode|Positive electrode|Electrolyte|Positive electrode|Representative reaction|Nominal Voltage (V)|
-|:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|
-| Lead-Acid    |Pb                |PbO<sub>2</sub>   |H<sub>2</sub>SO<sub>4</sub>|                  |                       |                   |
-| Nickel-Cd    |Cd                |NiO(OH)           |KOH        |                  |                       |                   |
-| Nickel-Metal Hydride|Intermetallic compound (M)|NiO(OH)|KOH    ||||
+| Types        |Negative electrode|Positive electrode|Electrolyte|Representative reaction|Nominal Voltage (V)|Energy density (Wh/kg)|Reference|
+|:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|:------------|
+| Lead-Acid    |Pb|PbO<sub>2</sub> |H<sub>2</sub>SO<sub>4</sub>|Pb(s)+PbO<sub>2</sub>(s)+2H<sub>2</sub>SO<sub>4</sub>(aq) &hArr;2PbSO<sub>4</sub>(s)+2H<sub>2</sub>O(l)|2.1|30-50 <sup> 4</sup>|4|
+| Nickel-Cd    |Cd|NiO(OH)         |KOH|2NiO(OH)(s) + Cd(s) + 2H<sub>2</sub>O(l) &hArr; 2Ni(OH)<sub>2</sub>(s) + Cd(OH)<sub>2</sub>(s)|1.2|50-75<sup> 5</sup>|5|
+| Nickel-Metal Hydride|Intermetallic compound (M)|NiO(OH)|KOH|MH + NiO(OH)(s) <--> M + Ni(OH)<sub>2</sub>(s)|1.2|60-120<sup> 6</sup>|6|
 | Lithium-ion  |Carbon(Graphite), Silicon, Li Metal|Layered Oxides (LCO, LMO, LFP, NCM,...)|Wide variety liquid w/ low to high concentration solute||||
 | Sodium-ion   |                  |                  |           ||||
-| Zinc-ion     |Zn                |Mainly MnO<sub>2</sub>|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute||||
+| Zinc-ion     |Zn                |Mainly MnO<sub>2</sub>|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|||
 
 ## Cell Formats
 - Cells can be constructed in many different form factors. These include button/coin-type, cylindrical, prismatic, and pouch-type.
