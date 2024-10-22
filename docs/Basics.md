@@ -47,12 +47,12 @@ description: Battery Chemistry to Technology
 
 | Types        |Negative electrode|Positive electrode|Electrolyte|Positive electrode|Representative reaction|Nominal Voltage (V)|
 |:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|
-| Lead-Acid    |Pb                |PbO<sub>2</sub>   |           |                  |                       |                   |
-| Nickel-Cd    |Cd                |NiO(OH)           |           |                  |                       |                   |
-| Nickel-Metal Hydride|Intermetallic compound (M)|NiO(OH)|||||
-| Lithium-ion  |Carbon(Graphite), Silicon, Li Metal|Layered Oxides (LCO, LMO, LFP, NCM,...)|||||
+| Lead-Acid    |Pb                |PbO<sub>2</sub>   |H<sub>2</sub>SO<sub>4</sub>|                  |                       |                   |
+| Nickel-Cd    |Cd                |NiO(OH)           |KOH        |                  |                       |                   |
+| Nickel-Metal Hydride|Intermetallic compound (M)|NiO(OH)|KOH    ||||
+| Lithium-ion  |Carbon(Graphite), Silicon, Li Metal|Layered Oxides (LCO, LMO, LFP, NCM,...)|Wide variety liquid w/ low to high concentration solute||||
 | Sodium-ion   |                  |                  |           ||||
-| Zinc-ion     |Zn                |                  |           ||||
+| Zinc-ion     |Zn                |Mainly MnO<sub>2</sub>|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute||||
 
 ### 3. Prismatic Cell
   * Prismatic cells consist of the anode, cathode, and separator sheets that are rolled/pressed (“jelly-rolled”) or stacked to be placed inside the metal cuboid casing. These cells are used in many small (i.e. cell phone & laptop) to larger device and electric vehicle applications.
