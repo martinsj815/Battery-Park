@@ -1,5 +1,9 @@
 ---
 layout: default
+title: Battery Park
+description: Battery Chemistry to Technology
+---
+
 ---
 
 # Welcome to Battery Park!
