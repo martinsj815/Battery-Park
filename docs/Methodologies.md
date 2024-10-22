@@ -57,7 +57,7 @@ description: Battery Chemistry to Technology
   <div class="column">
     The technique is used to determine the degradation mechanism of the cell. It can either be done using incremental capacity (IC) method dQ/dV or differential voltage (DV) analysis dV/dQ, whichever reflects the degradation in the cell better for its origins and mechanisms. IC curve reveals the phase transformations as the peaks shown are associated with voltage plateaus while the DV curve better presents the single-phase regions.
   </div>
-
+</div>
 
 ### Pulse power test:
 
