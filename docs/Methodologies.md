@@ -75,7 +75,7 @@ description: Battery Chemistry to Technology
 
 <div class="columns">
   <div class="column">
-    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/EIS.png' alt="EIS?raw=true" style="width:500px; height:auto;">
+    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/EIS.png?raw=true' alt="EIS" style="width:500px; height:auto;">
   </div>
   <div class="column">
     A sinusoidal ac potential (or current) is applied over a wide range of frequencies (e.g. between 10 kHz and 10 MHz) to the cell, inducing perturbation of the system in equilibrium to measure its sinusoidal current (or voltage) response. The output behavior has linear correlation with the input signal (linear Butler-Volmer kinetics) as the input signal being small as contrast to pulse power test that uses large current loads causing non-linear behavior.
