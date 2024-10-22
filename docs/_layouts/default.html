@@ -44,8 +44,12 @@
                 </li>
                 <li class="nav-item">
                     <a href="https://donghee1025.github.io/Battery-Park/Industry" class="nav-link">Industry</a>
-                </li>       
-                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                </li>   
+                {% for page in site.pages %}{% if page.title %}
+                    
+                {% if page.sublinks %}
+                
+                        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         Cell <span class="caret"></span></a>
                                 <ul class="dropdown-menu" style="min-width: 100;">
                                 {% for sublink in page.sublinks %}
@@ -55,6 +59,11 @@
                                 {% endfor %}                              
                                 </ul>
                         </li>
+                {% else %}
+                            
+                            <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li> 
+                {% endif%}                                                               
+                {% endif %}{% endfor %}
               
             </ul>
             <div class="hamburger">
