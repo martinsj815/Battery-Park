@@ -47,12 +47,12 @@ description: Battery Chemistry to Technology
 
 | Types        |Negative electrode|Positive electrode|Electrolyte|Positive electrode|Representative reaction|Nominal Voltage (V)|
 |:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|
-| Lead-Acid    |Pb        ||||||
-| Nickel-Cd    |Cd        | nice  |||||
-| Nickel-Metal Hydride|Intermetallic compound (M)| nice  |||||
-| Lithium-ion  |Carbon(Graphite), Silicon, Li Metal| hmm   |||||
-| Sodium-ion   |          |       |||||
-| Zinc-ion     |          |       |||||
+| Lead-Acid    |Pb                |PbO<sub>2</sub>   |           |                  |                       |                   |
+| Nickel-Cd    |Cd                |NiO(OH)           |           |                  |                       |                   |
+| Nickel-Metal Hydride|Intermetallic compound (M)|NiO(OH)|||||
+| Lithium-ion  |Carbon(Graphite), Silicon, Li Metal|Layered Oxides (LCO, LMO, LFP, NCM,...)|||||
+| Sodium-ion   |                  |                  |           ||||
+| Zinc-ion     |Zn                |                  |           ||||
 
 ### 3. Prismatic Cell
   * Prismatic cells consist of the anode, cathode, and separator sheets that are rolled/pressed (“jelly-rolled”) or stacked to be placed inside the metal cuboid casing. These cells are used in many small (i.e. cell phone & laptop) to larger device and electric vehicle applications.
