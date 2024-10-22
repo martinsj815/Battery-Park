@@ -4,7 +4,7 @@ title: Battery Park
 description: Battery Chemistry to Technology
 ---
 
-## Cells
+# Cells
 
 ## Electrochemical cell
 
@@ -45,13 +45,14 @@ description: Battery Chemistry to Technology
 
 <img src="https://dl.dropboxusercontent.com/scl/fi/w0iv2jor01ppfoz2k92z9/Cylindrical-battery.png?rlkey=hxen2pb54yesl070le3r0wjw0&raw=1" alt="Primary" style="width:250px; height:auto;">
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
+| Types        |Negative electrode|Positive electrode|Electrolyte|Positive electrode|Representative reaction|Nominal Voltage (V)|
+|:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|
+| Lead-Acid    |Pb        ||||||
+| Nickel-Cd    |Cd        | nice  |||||
+| Nickel-Metal Hydride|Intermetallic compound (M)| nice  |||||
+| Lithium-ion  |Carbon(Graphite), Silicon, Li Metal| hmm   |||||
+| Sodium-ion   |          |       |||||
+| Zinc-ion     |          |       |||||
 
   ### c. Prismatic Cell
   * Prismatic cells consist of the anode, cathode, and separator sheets that are rolled/pressed (“jelly-rolled”) or stacked to be placed inside the metal cuboid casing. These cells are used in many small (i.e. cell phone & laptop) to larger device and electric vehicle applications.
