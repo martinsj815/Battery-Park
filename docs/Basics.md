@@ -23,8 +23,8 @@ description: Battery Chemistry to Technology
   
 - Secondary Cell
 > It is a rechargeable cell with electrochemical reaction reversible by applying the reverse current. Discharge involves converting chemical energy to electricity while the reverse happens upon charge.
->
-> 
+
+<img src="https://dl.dropboxusercontent.com/scl/fi/we5r1v5ibif9pdcj1ez0t/Primary-battery.png?rlkey=w61wlssuevd3iq0i1zjf91ugb&st=zzirqevg&raw=1" alt="Primary" style="width:300px; height:auto;">
 
 ## Cell Formats
 - Cells can be constructed in many different form factors. These include button/coin-type, cylindrical, prismatic, and pouch-type.
