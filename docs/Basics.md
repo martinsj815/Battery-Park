@@ -51,6 +51,7 @@ description: Battery Chemistry to Technology
   * A pouch cell uses a flexible aluminum-coated foil for sealed enclosing of cathode, anode and separator layers that are stacked. Tabs are welded outside the cell for the electron transport. Since there is no rigid outside body casing, enough space should be given inside the cell in preparation for swelling during electrochemical cycling. Pouch cells are used in a wide variety of applications including consumer electronics and electric vehicles owing to their good adaptability, energy density, and lightweight.
 
 -------------------------------------------------------------------------------------
+
 ## - Comparing Cell Formats (for EV Batteries)
 
 | head1        | head two          | three |
