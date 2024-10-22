@@ -2,3 +2,19 @@
 ---
 
 @import 'jekyll-theme-cayman';
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.header-text {
+  flex-grow: 1;
+}
+
+.header-image img {
+  max-width: 100px; /* Adjust size as needed */
+  height: auto;
+  margin-left: 20px; /* Adjust spacing between text and image */
+}
