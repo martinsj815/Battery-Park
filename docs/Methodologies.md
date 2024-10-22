@@ -16,7 +16,7 @@ description: Battery Chemistry to Technology
 
 <div class="columns">
   <div class="column">
-    Content for the first column.
+    <img src='https://dl.dropboxusercontent.com/scl/fi/mnfhk96vozvp0veahzl83/CCCV.png?rlkey=j03bhamgmu41fmygfir5bw8ff&st=12w7sd7b&raw=1' alt="ECell" style="width:300px; height:auto;">
   </div>
 
   <div class="column">
