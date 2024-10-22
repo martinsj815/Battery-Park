@@ -146,3 +146,10 @@ The technique involves the process of separating components in a mixture by firs
 
 ### - Thermogravimetric Analysis (TGA) 
 It measures the mass change of the material using a precision balance over time with the temperature increase. The measurement can be done in a wide range of atmospheric environments such ambient air, inert/oxidizing/reducing gases, and pressures. The technique provides insight into thermal stability of the battery system in various electrode/electrolyte settings.
+
+## References:
+
+- Thomas Waldmann, et al., "Review—Post-Mortem Analysis of Aged Lithium-Ion Batteries: Disassembly Methodology and Physico-Chemical Analysis Techniques", J. Electrochem. Soc., 163, A2149-A2164 (2016)
+- Matthew Newville, "Fundamentals of XAFS", Reviews in Mineralogy and Geochemistry, 78, 33 (2014)
+- https://www.spectro.com/xrf-principle
+- https://www.edmundoptics.com/knowledge-center/application-notes/lasers/basic-principles-of-raman-scattering-and-spectroscopy/
