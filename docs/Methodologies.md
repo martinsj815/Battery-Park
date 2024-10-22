@@ -28,7 +28,7 @@ description: Battery Chemistry to Technology
 
 <div class="columns">
   <div class="column">
-    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/gitt_mod.png' alt="GITT" style="width:500px; height:auto;">
+    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/gitt_mod.png?raw=true' alt="GITT" style="width:500px; height:auto;">
   </div>
   <div class="column">
     Discharge/charge is done in steps at designated pulse current and lengths, each followed by prolonged relaxation periods for systematic adjustment for cell’s SoC as electrolyte concentration gradient changes along with solid phase redistribution. Much accurate OCV can be obtained by clearing out the kinetic contribution in a cell’s behavior. The technique is employed to measure Li ion diffusion coefficient and structurally driven (e.g. phase transformation, stress) OCV hysteresis and understand ageing behavior.
@@ -40,7 +40,7 @@ description: Battery Chemistry to Technology
 
 <div class="columns">
   <div class="column">
-    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/pseudoOCV.png' alt="PseudoOCV" style="width:500px; height:auto;">
+    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/pseudoOCV.png?raw=true' alt="PseudoOCV" style="width:500px; height:auto;">
   </div>
   <div class="column">
     Discharge/charge is performed at very low constant current rate to avoid electrode polarization and ohmic loss despite that there still is hysteresis. “Pseudo-OCV” can be measured by taking an average of the charge and discharge profiles.
@@ -52,7 +52,7 @@ description: Battery Chemistry to Technology
 
 <div class="columns">
   <div class="column">
-    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/EVS.png' alt="EVS" style="width:500px; height:auto;">
+    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/EVS.png?raw=true' alt="EVS" style="width:500px; height:auto;">
   </div>
   <div class="column">
     The technique is used to determine the degradation mechanism of the cell. It can either be done using incremental capacity (IC) method dQ/dV or differential voltage (DV) analysis dV/dQ, whichever reflects the degradation in the cell better for its origins and mechanisms. IC curve reveals the phase transformations as the peaks shown are associated with voltage plateaus while the DV curve better presents the single-phase regions.
@@ -63,7 +63,7 @@ description: Battery Chemistry to Technology
 
 <div class="columns">
   <div class="column">
-    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/pulse%20power.png' alt="Pulse power" style="width:500px; height:auto;">
+    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/pulse%20power.png?raw=true' alt="Pulse power" style="width:500px; height:auto;">
   </div>
   <div class="column">
     Hybrid pulse power characterization (HPPC) is a widely adopted technique to measure the voltage drop from a current load applied to a cell. The resistance (ΔV/ ΔI) from the pulse is then characterized into three different categories: Ohmic resistance, Charge transfer resistance, and Polarization resistance, of which their ratio is dependent upon the cell design.
@@ -75,7 +75,7 @@ description: Battery Chemistry to Technology
 
 <div class="columns">
   <div class="column">
-    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/EIS.png' alt="EIS" style="width:500px; height:auto;">
+    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/EIS.png' alt="EIS?raw=true" style="width:500px; height:auto;">
   </div>
   <div class="column">
     A sinusoidal ac potential (or current) is applied over a wide range of frequencies (e.g. between 10 kHz and 10 MHz) to the cell, inducing perturbation of the system in equilibrium to measure its sinusoidal current (or voltage) response. The output behavior has linear correlation with the input signal (linear Butler-Volmer kinetics) as the input signal being small as contrast to pulse power test that uses large current loads causing non-linear behavior.
@@ -87,7 +87,7 @@ description: Battery Chemistry to Technology
 
 <div class="columns">
   <div class="column">
-    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/multisine%20test.png' alt="multisine" style="width:500px; height:auto;">
+    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/multisine%20test.png?raw=true' alt="multisine" style="width:500px; height:auto;">
   </div>
   <div class="column">
     Pulsed multisine test combines a wide-range frequency measurements over the high pulse current tests for which its profile is constructed by superimposing the base pulse profile for discharge/charge with a multisine wave with distinct multi-frequency bandwidth depending on the application. The test usually involves obtaining a cell’s voltage response to a multisine current followed by applying an equivalent circuit model to obtain resistance parameters. The test is better than the EIS as it can be more applicable towards the automotive duty cycles despite its estimation accuracy not as good as that of EIS. Also, when compared to the pulse power test, the obvious advantage is that the resistance parameters (e.g. RO, RCT, and RP) can be better separable.
