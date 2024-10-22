@@ -33,13 +33,13 @@ description: Battery Chemistry to Technology
 - Cells can be constructed in many different form factors. These include button/coin-type, cylindrical, prismatic, and pouch-type.
 
 -------------------------------------------------------------------------------------
-  ### 1. Coin Cell
+  ### a. Coin Cell
   * Coin cells are most commonly used in academic research and for the small consumer electronics parts such as   watches and calculators. The electrodes divided by the separator are sealed inside the can with its top and bottom electrically isolated by the gasket. Coin cells have the dimension designation - 20xx, which means 20mm diameter x.x mm height. For example, CR2016 is 20mm in diameter and 1.6 mm in height.
   * Electrode thickness, spacer thickness, parts alignment are important for controlling both internal and external assembling pressure and acquiring good data with minimum cell-to-cell difference.
 
 <img src="https://dl.dropboxusercontent.com/scl/fi/03zylofuvvr3mtov6et4v/coin-cell2.png?rlkey=17pw4r0pqlqq00kpujh63yg0o&raw=1" alt="Primary" style="width:250px; height:auto;">
 
-  ### 2. Cylindrical Cell
+  ### b. Cylindrical Cell
   * In a cylindrical cell, anode, cathode, and separator sheets are rolled in spiral and packed in a cylindrical can. Typically, this cell has a lower casing designed for a negative terminal and a top protruded cap used for a positive terminal. Also included are +/- tabs, CID and PTC elements, to protect against current surge/shorting, and gasket. These types of cells are well produced to be also actively utilized in electric vehicles.
   * The three widely used dimensions for Li-ion battery cylindrical cells are 18650, 21700, and 4680, with which the first two digits correspond to the cell diameter and the next two digits correspond to its height (i.e. 18650 cell is 18 mm in diameter and 65 mm long.). A 4680 cell has the highest max capacity ~25,000 mAh and is currently used by Tesla in various car models including Model Y and Cybertrucks.
 
@@ -53,12 +53,12 @@ description: Battery Chemistry to Technology
 | ok           | good `zoute` drop | yumm  |
 
 
-  ### 3. Prismatic Cell
+  ### c. Prismatic Cell
   * Prismatic cells consist of the anode, cathode, and separator sheets that are rolled/pressed (“jelly-rolled”) or stacked to be placed inside the metal cuboid casing. These cells are used in many small (i.e. cell phone & laptop) to larger device and electric vehicle applications.
 
 <img src="https://dl.dropboxusercontent.com/scl/fi/fngsptshttxmi7znxdie9/Prismatic-Cell2.png?rlkey=laa7f0j1y1i4mecx3dh1n1qwd&raw=1" alt="Primary" style="width:250px; height:auto;">
 
-  ### 3. Pouch Cell
+  ### d. Pouch Cell
   * A pouch cell uses a flexible aluminum-coated foil for sealed enclosing of cathode, anode and separator layers that are stacked. Tabs are welded outside the cell for the electron transport. Since there is no rigid outside body casing, enough space should be given inside the cell in preparation for swelling during electrochemical cycling. Pouch cells are used in a wide variety of applications including consumer electronics and electric vehicles owing to their good adaptability, energy density, and lightweight.
 
 <img src="https://dl.dropboxusercontent.com/scl/fi/09mxpib7azoh9mfc95dds/Pouch-cell2.png?rlkey=p4km2g4bxqkxylan6cy1whdj5&raw=1" alt="Primary" style="width:250px; height:auto;">
