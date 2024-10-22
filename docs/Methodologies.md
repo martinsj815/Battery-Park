@@ -1,14 +1,12 @@
 ---
 layout: default
-title: Another page
-description: This is just another page
+title: Battery Park
+description: Battery Chemistry to Technology
 ---
 
-## Welcome to another page
+# Cells
 
-[Link to another page](./another-page.html).
-
-## Header 2
+## Electrochemical cell
 
 > This is a blockquote following a header.
 >
