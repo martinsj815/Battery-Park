@@ -123,6 +123,6 @@ description: Battery Chemistry to Technology
 | Diameter (mm)| 18                | 21    |46            |
 | Height (mm)  | 65                | 70    |80            |
 | Nominal Voltage (V)| 3.6-3.7    | 3.6-3.7|3.7 (estimate)|
-| Capacity (mAh)| 3450 (LG INR1860-M36) / 3450 (LG INR1860-M36) |5000(LG INR21700-M50)|~23000 (Tesla 4680, estimate)|
+| Capacity (mAh)| 3450 (LG INR1860-M36) / 3450 (LG INR1860-M36) |5000 (LG INR21700-M50)/5000 (Samsung INR21700-50E)/5000 (Panasonic NCR21700T)"|~23000 (Tesla 4680, estimate)|
 | Energy Density (Wh/kg)|248 (LG INR18650-M36) / 264 (Panasonic NCR18650G)|263 (LG CHEM INR21700-M50L)/261 (Samsung INR21700-50E)/271 (Panasonic NCR2170-M)|~23000 (Tesla 4680, estimate)|
 
