@@ -51,14 +51,16 @@ description: Battery Chemistry to Technology
   </div>
 </div>  
 
+## Cathode Comparison Table
 
-| Types        |Negative electrode|Positive electrode|Electrolyte|Representative reaction|Nominal Voltage (V)|Energy density (Wh/kg)|Reference|
-|:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|:------------|
-| Lead-Acid    |Pb|PbO<sub>2</sub> |H<sub>2</sub>SO<sub>4</sub>|Pb(s)+PbO<sub>2</sub>(s)+2H<sub>2</sub>SO<sub>4</sub>(aq) &hArr;2PbSO<sub>4</sub>(s)+2H<sub>2</sub>O(l)|2.1|30-50 <sup> 4</sup>|4|
-| Nickel-Cd    |Cd|NiO(OH)         |KOH|2NiO(OH)(s) + Cd(s) + 2H<sub>2</sub>O(l) &hArr; 2Ni(OH)<sub>2</sub>(s) + Cd(OH)<sub>2</sub>(s)|1.2|50-75<sup> 5</sup>|5|
-| Nickel-Metal Hydride|Intermetallic compound (M)|NiO(OH)|KOH|MH + NiO(OH)(s) <--> M + Ni(OH)<sub>2</sub>(s)|1.2|60-120<sup> 6</sup>|6|
-| Lithium-ion  |Carbon(Graphite), Silicon, Li Metal|Layered Oxides (LCO, LMO, LFP, NCM,...)|Wide variety liquid w/ low to high concentration solute|LiMO<sub>2</sub>(s) + C(s) <--> Li<sub>x</sub>C(s) + Li<sub>1-x</sub>MO<sub>2</sub>(s)|3.2-4|100-300<sup> 7</sup>|7|
-| Sodium-ion   |                  |                  |        |   |3-3.1|75-200<sup> 8</sup>|8|
-| Zinc-ion     |Zn                |Mainly MnO<sub>2</sub>|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|1.3|60-80<sup> 9</sup>|9|
-
+|Cathode Name|Crystal Structure|Chemical Formula|Specific Capacity (mAh/g) (The/Exp)|Average Voltage (V)|Electrical Conductivity (S/cm)|Li Diffusivity (cm2/s)|Exothermic Rxn T (Deg)|Heat Release (J/g)|Pros|Cons|
+|:-------------|:-----------------|:-----------------|:----------|:--------------|:----------|:-------------|:------------|:------------|:-----------|:------------|
+|Lithium Cobalt Oxide|Pb|PbO<sub>2</sub> |H<sub>2</sub>SO<sub>4</sub>|Pb(s)+PbO<sub>2</sub>(s)+2H<sub>2</sub>SO<sub>4</sub>(aq) &hArr;2PbSO<sub>4</sub>(s)+2H<sub>2</sub>O(l)|2.1|30-50 <sup> 4</sup>|4|
+|Lithium Manganese Oxide|Cd|NiO(OH)         |KOH|2NiO(OH)(s) + Cd(s) + 2H<sub>2</sub>O(l) &hArr; 2Ni(OH)<sub>2</sub>(s) + Cd(OH)<sub>2</sub>(s)|1.2|50-75<sup> 5</sup>|5|
+|Lithium Iron Phosphate|Intermetallic compound (M)|NiO(OH)|KOH|MH + NiO(OH)(s) <--> M + Ni(OH)<sub>2</sub>(s)|1.2|60-120<sup> 6</sup>|6|
+|Lithium Iron Manganese Phosphate|Carbon(Graphite), Silicon, Li Metal|Layered Oxides (LCO, LMO, LFP, NCM,...)|Wide variety liquid w/ low to high concentration solute|LiMO<sub>2</sub>(s) + C(s) <--> Li<sub>x</sub>C(s) + Li<sub>1-x</sub>MO<sub>2</sub>(s)|3.2-4|100-300<sup> 7</sup>|7|
+|Lithium Nickel Cobalt Manganese Oxide (NCM111)|                  |                  |        |   |3-3.1|75-200<sup> 8</sup>|8|
+|Lithium Nickel Cobalt Manganese Oxide (NCM622)|Zn                |Mainly MnO<sub>2</sub>|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|1.3|60-80<sup> 9</sup>|9|
+|Lithium Nickel Cobalt Manganese Oxide (NCM811)|Zn                |Mainly MnO<sub>2</sub>|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|1.3|60-80<sup> 9</sup>|9|
+|Lithium Nickel Cobalt Aluminum Oxide|Zn                |Mainly MnO<sub>2</sub>|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|1.3|60-80<sup> 9</sup>|9|
 
