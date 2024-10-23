@@ -6,7 +6,6 @@ description: Battery Chemistry to Technology
 
 # Li ion battery
 
-<img src="https://dl.dropboxusercontent.com/scl/fi/hc0318st6fcb8hsk7kw11/cell-image.png?rlkey=uutzhyefy4uhb1sie5qdr6wpl&raw=1" alt="ECell" style="width:300px; height:auto;">
 
 <div class="columns">
   <div class="column">
