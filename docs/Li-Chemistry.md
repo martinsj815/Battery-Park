@@ -61,8 +61,7 @@ description: Battery Chemistry to Technology
 |:-------------|:-----------------|:-----------------|:----------|:--------------|:----------|:-------------|:------------|:------------|:-----------|:------------|
 |Lithium Cobalt Oxide|Layered|LiCoO<sub>2</sub>|274/148<sup>a</sup>|3.8<sup>a</sup>||10<sup>-11</sup>-10<sup>-10</sup><sup> f</sup>|||*Good structural stability|*Co expensive / *Unstable upon charging >50%"|
 |Lithium Manganese Oxide|Spinel|LiMn<sub>2</sub>O<sub>4</sub>|148/120<sup>a</sup>|4.1<sup>a</sup>||10<sup>-10</sup>-10<sup>-7</sup><sup> f</sup>|||*Cost efficient|* Mn dissolution in electrolyte|
-|Lithium Iron Phosphate|Olivine|LiFePO<sub>4</sub>|170/165<sup>a</sup>|3.4<sup>a</sup>|10<sup>-10</sup>-10<sup>-9</sup><sup> e</sup>|10<sup>-14</sup>-10<sup>-11</sup><sup> f</sup>|250-360<sup>d</sup>|147<sup>d</sup>|*Cost affordable / *Thermal stability|* Low ionic conductivity 
- * Low energy density|
+|Lithium Iron Phosphate|Olivine|LiFePO<sub>4</sub>|170/165<sup>a</sup>|3.4<sup>a</sup>|10<sup>-10</sup>-10<sup>-9</sup><sup> e</sup>|10<sup>-14</sup>-10<sup>-11</sup><sup> f</sup>|250-360<sup>d</sup>|147<sup>d</sup>|*Cost affordable / *Thermal stability|* Low ionic conductivity / * Low energy density|
 |Lithium Iron Manganese Phosphate|Olivine|LiFe<sub>x</sub>Mn<sub>1-x</sub>PO<sub>4</sub>|170/150|3.7-3.8||2.4x10<sup>-13</sup><sup> g</sup>||
 |Lithium Nickel Cobalt Manganese Oxide (NCM111)|Layered|Li[Ni<sub>0.33</sub>Co<sub>0.33</sub>Mn<sub>0.33</sub>]O<sub>2</sub>|280/160<sup>a</sup>|3.7<sup>a</sup>|5.2x10<sup>-8</sup><sup>c</sup>|10<sup>-10</sup>-10<sup>-9</sup><sup> f</sup>|306<sup>d</sup>|512.5<sup>d</sup>|
 |Lithium Nickel Cobalt Manganese Oxide(NCM622)|Layered|Li[Ni<sub>0.6</sub>Co<sub>0.2</sub>Mn<sub>0.2</sub>]O<sub>2</sub>|275/170<sup>b</sup>|3.7<sup>b</sup>|1.6x10<sup>-6</sup><sup>c</sup>||264<sup>d</sup>|721.4<sup>d</sup>|
