@@ -16,3 +16,10 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+document.querySelectorAll('.nav-item.dropdown').forEach(item => {
+    item.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the link from navigating
+        this.classList.toggle('active');
+    });
+});
