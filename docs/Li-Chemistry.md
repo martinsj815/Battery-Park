@@ -66,7 +66,7 @@ description: Battery Chemistry to Technology
 |Lithium Nickel Cobalt Manganese Oxide (NCM111)|Layered|Li[Ni<sub>0.33</sub>Co<sub>0.33</sub>Mn<sub>0.33</sub>]O<sub>2</sub>|280/160<sup>a</sup>|3.7<sup>a</sup>|5.2x10<sup>-8</sup><sup>c</sup>|10<sup>-10</sup>-10<sup>-9</sup><sup> f</sup>|306<sup>d</sup>|512.5<sup>d</sup>|
 |Lithium Nickel Cobalt Manganese Oxide(NCM622)|Layered|Li[Ni<sub>0.6</sub>Co<sub>0.2</sub>Mn<sub>0.2</sub>]O<sub>2</sub>|275/170<sup>b</sup>|3.7<sup>b</sup>|1.6x10<sup>-6</sup><sup>c</sup>||264<sup>d</sup>|721.4<sup>d</sup>|
 |Lithium Nickel Cobalt Manganese Oxide (NCM811)|Layered|Li[Ni<sub>0.8</sub>Co<sub>0.1</sub>Mn<sub>0.1</sub>]O<sub>2</sub>|275/190<sup>b</sup>|3.7<sup>b</sup>|1.7x10<sup>-5</sup><sup>c</sup>||232<sup>d</sup>|904.8<sup>d</sup>|*High specific capacity / *High energy density|*Cycle instability for high Ni content / *Co expensive|
-|Lithium Nickel Cobalt Aluminum Oxide|Layered|LiNi<sub>0.8</sub>Co<sub>0.15</sub>Al<sub>0.05</sub>O<sub>2</sub>|279/200<sup>a</sup>|3.7<sup>a</sup>|||||* High specific capacity / *High energy density|* Cycle/Thermal instability / *Co expensive|
+|Lithium Nickel Cobalt Aluminum Oxide|Layered|LiNi<sub>0.8</sub>Co<sub>0.15</sub>Al<sub>0.05</sub>O<sub>2</sub>|279/200<sup>a</sup>|3.7<sup>a</sup>|||||* High specific capacity / *High energy density|*Cycle/Thermal instability / *Co expensive|
 
 |
 
