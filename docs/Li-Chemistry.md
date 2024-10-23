@@ -97,4 +97,18 @@ description: Battery Chemistry to Technology
 
 
 
+
 Below is the comparison of key anode materials currently in industry for commercialization. The data were taken from the paper - Gebrekidan Gebresilassie Eshetu, et al., "Production of high-energy Li-ion batteries comprising silicon-containing anodes and insertion-type cathodes", Nature Commun. 12, 5459 (2021). As noticeable from the table, silicon has exceptionally high theoretical capacity (comparable or even higher than Li metal) but also undergoes extremely large volumetric variation upon cycling causing capacity decay due to mechanical instability. Its electronic conductivity and Li ion diffusivity are also lower than that of the carbon/graphite counterpart. These make the material very challenging for commercialization.
+
+
+|Anode System|C|Si|Sb|SiO<sub>x</sub>|Li|Li<sub>4</sub>Ti<sub>5</sub>O<sub>12</sub>|
+|:-------------|:-----------------|:-----------------|:----------|:--------------|:----------|:-------------|
+|Type of reaction|Intercalation|Alloying|Alloying|Conversion||Intercalation|
+|Density (g/cm<sup>3</sup>)|LiC<sub>6</sub>|Li<sub>3.75</sub>Si|Li<sub>3</sub>Sb|SiO (x~1)|Li|Li<sub>7</sub>Ti<sub>5</sub>O<sub>12</sub>|
+|Lithiated Phase|Olivine|LiFe<sub>x</sub>Mn<sub>1-x</sub>PO<sub>4</sub>|170/150|3.7-3.8||2.4x10<sup>-13</sup><sup> g</sup>||
+|Reaction Potential vs. Li/Li<sup>+</sup> (V)|0.05|0.31|||0|1.55|
+|Theoretical gravimetric specific capacity (mAh/g)|372|3590|660|1710|3862|175|
+|Theoretical volumetric specific capacity (mAh/cm<sup>3</sup>)|837|8360|1890|3172|2061|613|
+|Volumetric change|10-12|&gt;280|135|160|100|1|
+|Lithium diffusion coefficient|10<sup>-11</sup> - 10<sup>-7</sup>|10<sup>-13</sup> - 10<sup>-11</sup>||||10<sup>-12</sup> - 10<sup>-11</sup>|
+
