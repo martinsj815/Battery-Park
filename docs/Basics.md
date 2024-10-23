@@ -23,6 +23,7 @@ description: Battery Chemistry to Technology
 
 ## Primary vs Secondary
 
+
 - Primary Cell
 
 <div class="columns">
