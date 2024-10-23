@@ -59,8 +59,8 @@ description: Battery Chemistry to Technology
 
 |Cathode Name|Crystal Structure|Chemical Formula|Specific Capacity (mAh/g) (The/Exp)|Average Voltage (V)|Electrical Conductivity (S/cm)|Li Diffusivity (cm2/s)|Exothermic Rxn T (Deg)|Heat Release (J/g)|Pros|Cons|
 |:-------------|:-----------------|:-----------------|:----------|:--------------|:----------|:-------------|:------------|:------------|:-----------|:------------|
-|Lithium Cobalt Oxide|Layered|LiCoO<sub>2</sub>|H<sub>2</sub>SO<sub>4</sub>|Pb(s)+PbO<sub>2</sub>(s)+2H<sub>2</sub>SO<sub>4</sub>(aq) &hArr;2PbSO<sub>4</sub>(s)+2H<sub>2</sub>O(l)|2.1|30-50 <sup> 4</sup>|4|
-|Lithium Manganese Oxide|Spinel|LiMn<sub>2</sub>O<sub>4</sub>|KOH|2NiO(OH)(s) + Cd(s) + 2H<sub>2</sub>O(l) &hArr; 2Ni(OH)<sub>2</sub>(s) + Cd(OH)<sub>2</sub>(s)|1.2|50-75<sup> 5</sup>|5|
+|Lithium Cobalt Oxide|Layered|LiCoO<sub>2</sub>|H<sub>2</sub>SO<sub>4</sub>|274/148<sup>a</sup>|2.1|30-50 <sup> 4</sup>|4|
+|Lithium Manganese Oxide|Spinel|LiMn<sub>2</sub>O<sub>4</sub>|148/120<sup>a</sup>|2NiO(OH)(s) + Cd(s) + 2H<sub>2</sub>O(l) &hArr; 2Ni(OH)<sub>2</sub>(s) + Cd(OH)<sub>2</sub>(s)|1.2|50-75<sup> 5</sup>|5|
 |Lithium Iron Phosphate|Olivine|LiFePO<sub>4</sub>|KOH|MH + NiO(OH)(s) <--> M + Ni(OH)<sub>2</sub>(s)|1.2|60-120<sup> 6</sup>|6|
 |Lithium Iron Manganese Phosphate|Olivine|LiFe<sub>x</sub>Mn<sub>1-x</sub>PO<sub>4</sub>|Wide variety liquid w/ low to high concentration solute|LiMO<sub>2</sub>(s) + C(s) <--> Li<sub>x</sub>C(s) + Li<sub>1-x</sub>MO<sub>2</sub>(s)|3.2-4|100-300<sup> 7</sup>|7|
 |Lithium Nickel Cobalt Manganese Oxide (NCM111)|Layered|Li[Ni<sub>0.33</sub>Co<sub>0.33</sub>Mn<sub>0.33</sub>]O<sub>2</sub>|        |   |3-3.1|75-200<sup> 8</sup>|8|
