@@ -59,12 +59,12 @@ description: Battery Chemistry to Technology
 
 |Cathode Name|Crystal Structure|Chemical Formula|Specific Capacity (mAh/g) (The/Exp)|Average Voltage (V)|Electrical Conductivity (S/cm)|Li Diffusivity (cm2/s)|Exothermic Rxn T (Deg)|Heat Release (J/g)|Pros|Cons|
 |:-------------|:-----------------|:-----------------|:----------|:--------------|:----------|:-------------|:------------|:------------|:-----------|:------------|
-|Lithium Cobalt Oxide|Layered|LiCoO<sub>2</sub>|H<sub>2</sub>SO<sub>4</sub>|274/148<sup>a</sup>|3.8<sup>a</sup>|30-50 <sup> 4</sup>|4|
-|Lithium Manganese Oxide|Spinel|LiMn<sub>2</sub>O<sub>4</sub>|148/120<sup>a</sup>|4.1<sup>a</sup>|1.2|50-75<sup> 5</sup>|5|
-|Lithium Iron Phosphate|Olivine|LiFePO<sub>4</sub>|170/165<sup>a</sup>|3.4<sup>a</sup>|1.2|60-120<sup> 6</sup>|6|
-|Lithium Iron Manganese Phosphate|Olivine|LiFe<sub>x</sub>Mn<sub>1-x</sub>PO<sub>4</sub>|170/150|3.7-3.8|3.2-4|100-300<sup> 7</sup>|7|
-|Lithium Nickel Cobalt Manganese Oxide (NCM111)|Layered|Li[Ni<sub>0.33</sub>Co<sub>0.33</sub>Mn<sub>0.33</sub>]O<sub>2</sub>|280/160<sup>a</sup>|3.7<sup>a</sup>|3-3.1|75-200<sup> 8</sup>|8|
-|Lithium Nickel Cobalt Manganese Oxide (NCM622)|Layered|Li[Ni<sub>0.6</sub>Co<sub>0.2</sub>Mn<sub>0.2</sub>]O<sub>2</sub>|275/170<sup>b</sup>|3.7<sup>b</sup>|60-80<sup> 9</sup>|9|
-|Lithium Nickel Cobalt Manganese Oxide (NCM811)|Layered|Li[Ni<sub>0.8</sub>Co<sub>0.1</sub>Mn<sub>0.1</sub>]O<sub>2</sub>|275/190<sup>b</sup>|3.7<sup>b</sup>|60-80<sup> 9</sup>|9|
+|Lithium Cobalt Oxide|Layered|LiCoO<sub>2</sub>|274/148<sup>a</sup>|3.8<sup>a</sup>||30-50 <sup> 4</sup>|4|
+|Lithium Manganese Oxide|Spinel|LiMn<sub>2</sub>O<sub>4</sub>|148/120<sup>a</sup>|4.1<sup>a</sup>||50-75<sup> 5</sup>|5|
+|Lithium Iron Phosphate|Olivine|LiFePO<sub>4</sub>|170/165<sup>a</sup>|3.4<sup>a</sup>|10<sup>-10</sup>-10<sup>-9</sup><sup> e</sup>|60-120<sup> 6</sup>|6|
+|Lithium Iron Manganese Phosphate|Olivine|LiFe<sub>x</sub>Mn<sub>1-x</sub>PO<sub>4</sub>|170/150|3.7-3.8||100-300<sup> 7</sup>|7|
+|Lithium Nickel Cobalt Manganese Oxide (NCM111)|Layered|Li[Ni<sub>0.33</sub>Co<sub>0.33</sub>Mn<sub>0.33</sub>]O<sub>2</sub>|280/160<sup>a</sup>|3.7<sup>a</sup>|5.2x10<sup>-8</sup><sup>c</sup>|75-200<sup> 8</sup>|8|
+|Lithium Nickel Cobalt Manganese Oxide (NCM622)|Layered|Li[Ni<sub>0.6</sub>Co<sub>0.2</sub>Mn<sub>0.2</sub>]O<sub>2</sub>|275/170<sup>b</sup>|3.7<sup>b</sup>|1.6x10<sup>-6</sup><sup>c</sup>|9|
+|Lithium Nickel Cobalt Manganese Oxide (NCM811)|Layered|Li[Ni<sub>0.8</sub>Co<sub>0.1</sub>Mn<sub>0.1</sub>]O<sub>2</sub>|275/190<sup>b</sup>|3.7<sup>b</sup>|1.7x10<sup>-5</sup><sup>c</sup>|9|
 |Lithium Nickel Cobalt Aluminum Oxide|Layered|LiNi<sub>0.8</sub>Co<sub>0.15</sub>Al<sub>0.05</sub>O<sub>2</sub>|279/200<sup>a</sup>|3.7<sup>a</sup>|1.3|60-80<sup> 9</sup>|9|
 
