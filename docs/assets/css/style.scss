@@ -33,7 +33,7 @@
 
 .nav-item {
     margin-left: 5rem;
-    positiion: relative;
+    position: relative;
 }
 
 .nav-link {
@@ -54,7 +54,7 @@
 
 .dropdown-menu {
     display: none;
-    position: relative;
+    position: absolute;
     top: 100%;
     left: 0;
     background-color: #222; /* Same as navbar background */
