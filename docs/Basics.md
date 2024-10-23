@@ -14,7 +14,7 @@ description: Battery Chemistry to Technology
  
 <div class="columns">
   <div class="column">
-    > Cells also include the separator that isolate the positive and negative electrodes to prevent the electron flow and permit only the ion flow and the current collectors - metal foils where the electrodes are attached and that conduct electrical current to the external circuit.
+    Cells also include the separator that isolate the positive and negative electrodes to prevent the electron flow and permit only the ion flow and the current collectors - metal foils where the electrodes are attached and that conduct electrical current to the external circuit.
   </div>
   <div class="column">
     <img src="https://dl.dropboxusercontent.com/scl/fi/hc0318st6fcb8hsk7kw11/cell-image.png?rlkey=uutzhyefy4uhb1sie5qdr6wpl&raw=1" alt="ECell" style="width:300px; height:auto;">
@@ -24,9 +24,16 @@ description: Battery Chemistry to Technology
 ## Primary vs Secondary
 
 - Primary Cell
-> It is a galvanic cell that can only be used once before disposal as the electrochemical reaction is irreversible and the cell is unable to be recharged with electricity.
 
-<img src="https://dl.dropboxusercontent.com/scl/fi/we5r1v5ibif9pdcj1ez0t/Primary-battery.png?rlkey=w61wlssuevd3iq0i1zjf91ugb&st=zzirqevg&raw=1" alt="Primary" style="width:200px; height:auto;">
+<div class="columns">
+  <div class="column">
+    It is a galvanic cell that can only be used once before disposal as the electrochemical reaction is irreversible and the cell is unable to be recharged with electricity.
+  </div>
+  <div class="column">
+    <img src="https://dl.dropboxusercontent.com/scl/fi/we5r1v5ibif9pdcj1ez0t/Primary-battery.png?rlkey=w61wlssuevd3iq0i1zjf91ugb&st=zzirqevg&raw=1" alt="Primary" style="width:200px; height:auto;">
+  </div>
+</div>
+
 
 - Secondary Cell
 > It is a rechargeable cell with electrochemical reaction reversible by applying the reverse current. Discharge involves converting chemical energy to electricity while the reverse happens upon charge.
