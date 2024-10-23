@@ -32,7 +32,24 @@ description: Battery Chemistry to Technology
 - The reaction involves full reduction of the metal ions by lithium. It can accommodate as many electrons per transitional metal as needed to reduce its ions to the metallic state M. Therefore, materials undergoing conversion reaction can achieve much higher capacities than the intercalation compounds. When the starting compound has a strong structural relationship with its lithiated products, the conversion reaction is usually called a displacement reaction. Since these reactions involve phase transformations to extrude the transition metal, large voltage polarization and hysteresis are common.
 
 
+--------------------------------------------------------------------------
 
+
+# Cathode materials
+
+
+<div class="columns">
+  <div class="column">
+    - Since the voltage is dictated by the redox energy difference between the cathode and the anode, it is imperative to have the cathode to reach the lower energy band of a metal ion at the higher oxidation state to increase the cell voltage.
+    - The use of transition metal oxide instead of sulfide (e.g. TiS2) enables an increase in cell voltage by accessing the energy bands lying low in the energy band diagram as the O2- 2p band lies at a lower energy below a S2- 3p band.
+    - Typical transition metal oxides used for the cathode have spinel, layered, or olivine structures that undergo Li (de-)intercalation.
+    - There is also a conversion-based cathode material such as FeF2, with a theoretical capacity of 571 mAh/g with average operating voltage of ~2.5V.
+  </div>
+  <div class="column">
+    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Energy%20band%20diagram.png?raw=true' alt="Capacity" style="width:500px; height:auto;">
+    Image Courtesy: A. Manthiram, Nature Commun. 11, 1550 (2020)
+  </div>
+</div>  
 
 
 | Types        |Negative electrode|Positive electrode|Electrolyte|Representative reaction|Nominal Voltage (V)|Energy density (Wh/kg)|Reference|
@@ -44,39 +61,4 @@ description: Battery Chemistry to Technology
 | Sodium-ion   |                  |                  |        |   |3-3.1|75-200<sup> 8</sup>|8|
 | Zinc-ion     |Zn                |Mainly MnO<sub>2</sub>|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|1.3|60-80<sup> 9</sup>|9|
 
-## Cell Formats
-- Cells can be constructed in many different form factors. These include button/coin-type, cylindrical, prismatic, and pouch-type.
 
--------------------------------------------------------------------------------------
-### 1. Coin Cell
-  * Coin cells are most commonly used in academic research and for the small consumer electronics parts such as   watches and calculators. The electrodes divided by the separator are sealed inside the can with its top and bottom electrically isolated by the gasket. Coin cells have the dimension designation - 20xx, which means 20mm diameter x.x mm height. For example, CR2016 is 20mm in diameter and 1.6 mm in height.
-  * Electrode thickness, spacer thickness, parts alignment are important for controlling both internal and external assembling pressure and acquiring good data with minimum cell-to-cell difference.
-
-<img src="https://dl.dropboxusercontent.com/scl/fi/03zylofuvvr3mtov6et4v/coin-cell2.png?rlkey=17pw4r0pqlqq00kpujh63yg0o&raw=1" alt="Primary" style="width:250px; height:auto;">
-
-### 2. Cylindrical Cell
-  * In a cylindrical cell, anode, cathode, and separator sheets are rolled in spiral and packed in a cylindrical can. Typically, this cell has a lower casing designed for a negative terminal and a top protruded cap used for a positive terminal. Also included are +/- tabs, CID and PTC elements, to protect against current surge/shorting, and gasket. These types of cells are well produced to be also actively utilized in electric vehicles.
-  * The three widely used dimensions for Li-ion battery cylindrical cells are 18650, 21700, and 4680, with which the first two digits correspond to the cell diameter and the next two digits correspond to its height (i.e. 18650 cell is 18 mm in diameter and 65 mm long.). A 4680 cell has the highest max capacity ~25,000 mAh and is currently used by Tesla in various car models including Model Y and Cybertrucks.
-
-<img src="https://dl.dropboxusercontent.com/scl/fi/w0iv2jor01ppfoz2k92z9/Cylindrical-battery.png?rlkey=hxen2pb54yesl070le3r0wjw0&raw=1" alt="Primary" style="width:250px; height:auto;">
-
-### 3. Prismatic Cell
-  * Prismatic cells consist of the anode, cathode, and separator sheets that are rolled/pressed (“jelly-rolled”) or stacked to be placed inside the metal cuboid casing. These cells are used in many small (i.e. cell phone & laptop) to larger device and electric vehicle applications.
-
-<img src="https://dl.dropboxusercontent.com/scl/fi/fngsptshttxmi7znxdie9/Prismatic-Cell2.png?rlkey=laa7f0j1y1i4mecx3dh1n1qwd&raw=1" alt="Primary" style="width:250px; height:auto;">
-
-### 4. Pouch Cell
-  * A pouch cell uses a flexible aluminum-coated foil for sealed enclosing of cathode, anode and separator layers that are stacked. Tabs are welded outside the cell for the electron transport. Since there is no rigid outside body casing, enough space should be given inside the cell in preparation for swelling during electrochemical cycling. Pouch cells are used in a wide variety of applications including consumer electronics and electric vehicles owing to their good adaptability, energy density, and lightweight.
-
-<img src="https://dl.dropboxusercontent.com/scl/fi/09mxpib7azoh9mfc95dds/Pouch-cell2.png?rlkey=p4km2g4bxqkxylan6cy1whdj5&raw=1" alt="Primary" style="width:250px; height:auto;">
-
--------------------------------------------------------------------------------------
-
-## - Comparing Cell Formats (for EV Batteries)
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
