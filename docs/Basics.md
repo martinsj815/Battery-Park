@@ -36,9 +36,16 @@ description: Battery Chemistry to Technology
 
 
 - Secondary Cell
-> It is a rechargeable cell with electrochemical reaction reversible by applying the reverse current. Discharge involves converting chemical energy to electricity while the reverse happens upon charge.
 
-<img src="https://dl.dropboxusercontent.com/scl/fi/a9szr5hl3pr3b9asxfnvj/Secondary-battery.png?rlkey=4ml8tm823ezvmqphn8z5co9qf&st=4f61y4f3&raw=1" alt="Primary" style="width:250px; height:auto;">
+<div class="columns">
+  <div class="column">
+    It is a rechargeable cell with electrochemical reaction reversible by applying the reverse current. Discharge involves converting chemical energy to electricity while the reverse happens upon charge.
+  </div>
+  <div class="column">
+    <img src="https://dl.dropboxusercontent.com/scl/fi/a9szr5hl3pr3b9asxfnvj/Secondary-battery.png?rlkey=4ml8tm823ezvmqphn8z5co9qf&st=4f61y4f3&raw=1" alt="Primary" style="width:250px; height:auto;">
+  </div>
+</div>
+
 
 | Types        |Negative electrode|Positive electrode|Electrolyte|Representative reaction|Nominal Voltage (V)|Energy density (Wh/kg)|Reference|
 |:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|:------------|
