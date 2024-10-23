@@ -335,3 +335,7 @@ a:hover { text-decoration: underline; }
 .nav-link { font-size: 1.5rem; font-weight: 400; color: #fff; /* color: #63a87e; */ }
 
 .nav-link:hover { color: #482ff7; font-weight: bold; }
+
+.columns { display: flex; justify-content: space-between; }
+
+.columns .column { flex: 1; padding: 0 5px; }
