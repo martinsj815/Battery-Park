@@ -36,7 +36,7 @@ description: Battery Chemistry to Technology
 --------------------------------------------------------------------------
 
 
-# Cathode materials
+# Cathode Materials
 
 
 <div class="columns">
@@ -82,6 +82,19 @@ description: Battery Chemistry to Technology
 </div>
 
 -------------------------------------------------------------------
+
+# Anode Materials
+
+
+## 1. Intercalation-based:
+> Carbon-based anode such as graphite has the theoretical capacity of 372 mAh/g and has a good (de-)lithiation potential vs. Li. Many carbon-based materials are engineered at nanoscale to optimize their morphologies for high structural stability and better electrochemical reversibility and capacity retention. In terms of safety, stability, and power capability, titanium-based anodes such as Li<sub>4</sub>Ti<sub>5</sub>O<sub>12</sub> and TiO<sub>2</sub> have an advantage over graphite, but their electronic conductivity is poor and specific capacities (175-330 mAh/g) and energy densities are low.
+   
+## 2. Alloying-based:
+Si, Ge, and Sn are the alloying anodes with specific capacity, which is much higher than that of intercalation anode system. For example, Si can reach a specific capacity of upto ~4200 mAh/g (practically, 3590 mAh/g), while, for Sn, it is 993 mAh/g. However, their large volumetric expansion (Si ~ 400%, Sn ~ 250%, and Sb ~ 135%) upon lithiation poses a great threat to its mechanical stability (e.g. delamination from a current collector or loss of inter-particle cohesion) and contributes to a capacity fade of the cell. Nano-structuring of Si as an anode has attracted interest to overcome such problems. In fact, Si or SiOx is considered to be added in small percentage amount (e.g. 2-10 wt%) inside the graphite anode to boost energy density of the anode.
+
+## 3. Conversion-based:
+Conversion-based anodes such as metal oxides undergo the following reaction: M<sub>x</sub>O<sub>y</sub> + 2yLi<sup>+</sup> + 2ye<sup>-</sup> → yLi<sub>2</sub>O + xM. Despite their high specific capacities, they suffer from multiple issues including structural instability due to pulverization and voltage hysteresis owing to sluggish kinetics during the conversion process to different phases.
+
 
 
 - Below is the comparison of key anode materials currently in industry for commercialization. The data were taken from the paper - Gebrekidan Gebresilassie Eshetu, et al., "Production of high-energy Li-ion batteries comprising silicon-containing anodes and insertion-type cathodes", Nature Commun. 12, 5459 (2021). As noticeable from the table, silicon has exceptionally high theoretical capacity (comparable or even higher than Li metal) but also undergoes extremely large volumetric variation upon cycling causing capacity decay due to mechanical instability. Its electronic conductivity and Li ion diffusivity are also lower than that of the carbon/graphite counterpart. These make the material very challenging for commercialization.
