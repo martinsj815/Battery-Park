@@ -4,29 +4,37 @@ title: Battery Park
 description: Battery Chemistry to Technology
 ---
 
-# Cells
-
-## Electrochemical cell
-
-> A cell is the smallest building unit of the battery. Main constituents are cathode and anode that are immersed in electrolyte and undergo reduction/oxidation. Cations migrate inside the electrolyte while electrons move through the external load to do the work.
-> 
-> When a cell is discharged, cations and electrons from the negative electrode move towards the positive electrode, where the reduction takes place (while the negative electrode is oxidized). Different from the case of primary batteries, this process can be reversed through charging in secondary rechargeable batteries.
-> 
-> Cells also include the separator that isolate the positive and negative electrodes to prevent the electron flow and permit only the ion flow and the current collectors - metal foils where the electrodes are attached and that conduct electrical current to the external circuit.
+# Li ion battery
 
 <img src="https://dl.dropboxusercontent.com/scl/fi/hc0318st6fcb8hsk7kw11/cell-image.png?rlkey=uutzhyefy4uhb1sie5qdr6wpl&raw=1" alt="ECell" style="width:300px; height:auto;">
 
-## Primary vs Secondary
+<div class="columns">
+  <div class="column">
+    - Lithium-ion batteries are consisting of a host material with a high redox potential (> 3V vs Li) as a cathode and that of a low electrochemical potential (vs Li) as an anode. Typically, lithium transition metal oxides are cathodes while graphite is an anode, both of which undergo Li (de-)intercalation during charge and discharge.
+    - Upon discharge, lithium ions migrate from the anode (e.g. lithiated graphite) towards the electrolyte while electrons move through the external circuit. Lithium ions are then carried by the electrolyte and flow into the cathode along with electrons. Upon charge, the process is reversed with the help of electrical energy injected.
+  </div>
+  <div class="column">
+    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Li%20ion%20battery.png?raw=true' alt="Capacity" style="width:500px; height:auto;">
+  </div>
+</div>
 
-- Primary Cell
-> It is a galvanic cell that can only be used once before disposal as the electrochemical reaction is irreversible and the cell is unable to be recharged with electricity.
 
-<img src="https://dl.dropboxusercontent.com/scl/fi/we5r1v5ibif9pdcj1ez0t/Primary-battery.png?rlkey=w61wlssuevd3iq0i1zjf91ugb&st=zzirqevg&raw=1" alt="Primary" style="width:200px; height:auto;">
+# Cell reaction mechanism
 
-- Secondary Cell
-> It is a rechargeable cell with electrochemical reaction reversible by applying the reverse current. Discharge involves converting chemical energy to electricity while the reverse happens upon charge.
+> The way Li-ions react with electrode active materials during charge/discharge can be categorized into following:
 
-<img src="https://dl.dropboxusercontent.com/scl/fi/a9szr5hl3pr3b9asxfnvj/Secondary-battery.png?rlkey=4ml8tm823ezvmqphn8z5co9qf&st=4f61y4f3&raw=1" alt="Primary" style="width:250px; height:auto;">
+## Intercalation reaction:
+- Li-ions are inserted or extracted from interstitital sites of the host structure without causing substantial structural changes. This makes intercalation compounds ideal for electrochemical energy storage applications. Indeed, most commercialized Li-ions batteries use electrodes with this type of reaction mechanism. However, intercalation compounds have a limited capacity due to crystallographic constrains of the host and thermodynamic instabilities arising from large changes in Li concentrations within the host.
+
+## Alloying reaction:
+- Li reacts directly with active element/compound (M) to form an intermetallic phase (LixM). Despite providing a high specific capacity for the electrode, alloying reactions generally lead to multiple phase transformations during (de-)lithiation with large volume changes, resulting in a large hysteresis in the voltage profile and poor reversibility. This hysteresis leads to irreversible energy loss upon cycling, making commercialization difficult.
+
+## Conversion reaction:
+- The reaction involves full reduction of the metal ions by lithium. It can accommodate as many electrons per transitional metal as needed to reduce its ions to the metallic state M. Therefore, materials undergoing conversion reaction can achieve much higher capacities than the intercalation compounds. When the starting compound has a strong structural relationship with its lithiated products, the conversion reaction is usually called a displacement reaction. Since these reactions involve phase transformations to extrude the transition metal, large voltage polarization and hysteresis are common.
+
+
+
+
 
 | Types        |Negative electrode|Positive electrode|Electrolyte|Representative reaction|Nominal Voltage (V)|Energy density (Wh/kg)|Reference|
 |:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|:------------|
