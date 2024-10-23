@@ -105,7 +105,7 @@ Below is the comparison of key anode materials currently in industry for commerc
 |:-------------|:-----------------|:-----------------|:----------|:--------------|:----------|:-------------|
 |Type of reaction|Intercalation|Alloying|Alloying|Conversion||Intercalation|
 |Density (g/cm<sup>3</sup>)|LiC<sub>6</sub>|Li<sub>3.75</sub>Si|Li<sub>3</sub>Sb|SiO (x~1)|Li|Li<sub>7</sub>Ti<sub>5</sub>O<sub>12</sub>|
-|Lithiated Phase|Olivine|LiFe<sub>x</sub>Mn<sub>1-x</sub>PO<sub>4</sub>|170/150|3.7-3.8||2.4x10<sup>-13</sup><sup> g</sup>||
+|Lithiated Phase|Olivine|LiFe<sub>x</sub>Mn<sub>1-x</sub>PO<sub>4</sub>|170/150|3.7-3.8||2.4x10<sup>-13</sup><sup> g</sup>|
 |Reaction Potential vs. Li/Li<sup>+</sup> (V)|0.05|0.31|||0|1.55|
 |Theoretical gravimetric specific capacity (mAh/g)|372|3590|660|1710|3862|175|
 |Theoretical volumetric specific capacity (mAh/cm<sup>3</sup>)|837|8360|1890|3172|2061|613|
