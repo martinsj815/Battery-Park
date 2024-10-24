@@ -105,7 +105,7 @@ description: From Chemistry to Technology
       - With this parameter, areal capacity can also be obtained by multiplying it with time.
     </div>
     <div class="column">
-      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CurrentDensity.png?raw=true' alt="Current density" style="width:500px; height:auto;">
+      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/voltage%20curve.png?raw=true' alt="Current density" style="width:500px; height:auto;">
     </div>
   </div>
 
