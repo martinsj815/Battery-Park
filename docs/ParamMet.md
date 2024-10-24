@@ -72,7 +72,7 @@ description: From Chemistry to Technology
     <div class="column">
       <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Polarization.png?raw=true' alt="Polarization" style="width:500px; height:auto;">
     </div>
-
+  </div>
 
 <spacer type="block" width="50" />
 
