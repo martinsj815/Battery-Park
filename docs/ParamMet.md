@@ -6,8 +6,8 @@ description: From Chemistry to Technology
 
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Parameters')">Parameters</button>
-  <button class="tablinks" onclick="openCity(event, 'Metrics')">Metrics</button>
+  <button class="tablinks" onclick="openCity(event, 'Parameters')"><b>Parameters</b></button>
+  <button class="tablinks" onclick="openCity(event, 'Metrics')"><b>Metrics</b></button>
 </div>
 
 <!-- Tab content -->
