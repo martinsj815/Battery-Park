@@ -40,7 +40,7 @@ description: From Chemistry to Technology
       - OCV represents the potential difference between the cathode and anode when no current or voltage is applied. Theoretically, assuming that all active electrode particles are fully connected by conductive additives and maintain electrical neutrality, the OCV can be calculated from the difference in Gibbs free energy between cathode and anode materials.
 
       <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
-      $$ {V_OC = - frac{\lambda G}{nF} $$
+      $$ V_OC = - frac{\lambda G}{nF} $$
       
       <br>
       - OCV is used as an important metric to analyze electrode health and identify potential issues such as internal resistance, and capacity fade by measuring deviations from the OCV.
@@ -66,6 +66,8 @@ description: From Chemistry to Technology
       - Voltage represents the difference in potential between the cathode and anode and the driving force of current flowing. The unit is volt [V].
         <br>
       - When a circuit is connected or current begins to flow, the voltage drops, which is caused by electrode polarization due to the kinetic limits of the reaction and other electrochemical kinetical reactions to allow current to flow during the charge/discharge reaction. The degree of this polarization can be estimated from the voltage deviation (overpotential, η) from the open circuit voltage. The overpotential is given by 
+        <br>
+        $$ \eta = V_T - V_OC $$
         <br>
       - During the reaction, the cell involves a series of physical, chemical, and electrochemical steps, including charge-transfer and charge transport reactions. The main sources of polarization can be categorized into three parts: 1) ohmic polarization (R<sub>O</sub>), 2) activation polarization (R<sub>CT</sub>), and 3) concentration polarization (R<sub>P</sub>).
       <br>
