@@ -166,5 +166,65 @@ As shown in the graphs above, transition from graphite and silicon can yield dra
 
 > LiPO<sub>2</sub>F<sub>2</sub> (only as additive): Forms the stable interface film both at cathode and anode surface upon cycling, preventing decomposition/oxidation of the electrolyte. This allows impedance control of both cathode and anode and is conducive to cathode structural stability, high-rate capability, and prolonged cell cycling.
 
-
 - Many 18650 cells use the mixture of LiPF<sub>6</sub> and LiFSI inside carbonate electrolyte as the electrolyte. For EV batteries with an increasingly rigorous demand for their performances, some of the salts above are investigated as additive to be mixed with LiPF6 electrolyte, for which its concentration varies from 5-10%.
+
+  
+# Solid Electrolyte
+
+
+<div class="columns">
+  <div class="column">
+      A solid electrolyte is a solid ionic conductor that acts as a medium for ion transport between the cell cathode and the anode. These materials should be electrically insulating but ionically conductive, and electrochemically stable with both the cathode and anode. The solid electrolyte can replace the liquid electrolyte and separator of the cell.
+Solid electrolytes are attracting a large interest since it enables all-solid-state batteries with excellent thermal stability, high energy density, and fast charge capability. The solid electrolyte materials can be classified into sulfide solid inorganic electrolytes (S-SIE), oxide solid inorganic electrolyte (O-SIE), and solid polymer electrolytes (SPE).
+      To be comparable to conventional liquid electrolytes, the ionic conductivity should be in the order of 1 mS/cm at room temperature. S-SIE has generally higher ionic conductivity and forms a good interface with electrodes due to its soft Li-S bonding properties, but has low electrochemical stability due to narrow electrochemical stability window. O-SEI has good electrochemical stability but is difficult to handle in large-scale production. While SPE has low ionic conductivity and requires high temperature to operate, it is stable with lithium metal, forming a good interface with the electrode, and can be applied in a current roll-to-roll process.
+  </div>
+  <div class="column">
+    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/LiPS.png?raw=true' alt="Capacity" style="width:300px; height:auto;">
+  </div>
+</div>
+
+
+------------------------------------------------------------------------------
+# References
+
+F. Degen, et al, "Energy consumption of current and future production of lithium-ion and post lithium-ion battery cells", Nature Energy, 8, 1284 (2023)
+
+Naoki Nitta, et al, "Li-ion battery materials: present and future", Mater. Today, 18, 252 (2015) (a in Cathode Comparison Table)
+
+Florian Schipper, et al, "Review—Recent Advances and Remaining Challenges for Lithium Ion Battery Cathodes", J. Electrochem. Soc., 164, A6220 (2017) (b in Cathode Comparison Table)
+
+Hyung-Joo Noh, et al., "Comparison of the structural and electrochemical properties of layered Li[NixCoyMnz]O2 (x = 1/3, 0.5, 0.6, 0.7, 0.8 and 0.85) cathode material for lithium-ion batteries", J. Power Sources, 233, 121 (2013) (c in Cathode Comparison Table)
+
+Sung-Yoon Chung, et al., "Electronically conductive phospho-olivines as lithium storage electrodes", Nature Mater., 1, 123 (2002) (e in Cathode Comparison Table)
+
+Xiao-Guang Yang, et al., "Thermally modulated lithium iron phosphate batteries for mass-market electric vehicles", Nature Energy, 6, 176 (2021) (d in Cathode Comparison Table)
+
+Yonggang Wang, et al., "Nano active materials for lithium-ion batteries", Nanoscale, 2, 1294 (2010) (f in Cathode Comparison Table)
+
+Liangtao Yang, et al., "Concentration-gradient LiMn0.8Fe0.2PO4 cathode material for high performance lithium ion battery", J. Pouwer Sources, 2, 1294 (2015) (g in Cathode Comparison Table)
+
+Arumugam Manthiram, "A reflection on lithium-ion battery cathode chemistry", Nature Commun., 11, 1550 (2020)
+
+Jun Lu, et al, "High‑Performance Anode Materials for Rechargeable Lithium‑Ion Batteries", Electrochemical Energy Reviews, 1:35 (2018)
+
+Hui Cheng, et al, "Recent progress of advanced anode materials of lithium-ion batteries", Journal of Energy Chemistry, 57, 451 (2021)
+
+Kang Xu, "Electrolytes and Interphases in Li-ion Batteries and Beyond", Chem. Rev., 114, 11503 (2014)
+
+E. R. Logan, et al., "A Study of the Physical Properties of Li-Ion Battery Electrolytes Containing Esters", J. Electrochem. Soc., 165, A21 (2018)
+
+Kang Xu, "Nonaqueous Liquid Electrolytes for Lithium-Based Rechargeable Batteries", Chem. Rev., 104, 4303 (2004)
+
+Jiale Xing, et al., "A Review of Nonaqueous Electrolytes, Binders, and Separators for Lithium‑Ion Batteries", Electrochem. Energy Rev., 5:14 (2022)
+
+Hong-Bo Han, et al., "Lithium bis(fluorosulfonyl)imide (LiFSI) as conducting salt for nonaqueous liquid electrolytes for lithium-ion batteries: Physicochemical and electrochemical properties", J. Power Sources, 196, 3623 (2011)
+
+Weimin Zhao, et al., "Toward a stable solid-electrolyte-interfaces on nickel-rich cathodes: LiPO2F2 salt-type additive and its working mechanism for LiNi0.5Mn0.25Co0.25O2 cathodes", J. Power Sources, 380, 149 (2018)
+
+Bowen Yang, et al., "Lithium difluorophosphate as an additive to improve the low temperature performance of LiNi0.5Co0.2Mn0.3O2/graphite cells", Electrochim. Acta, 221, 107 (2016)
+
+https://www.linkedin.com/pulse/application-lipo2f2-electrolyte-additive-lithium-ion-batteries-li/
+
+Qing Zhao, et al, "Designing solid-state electrolytes for safe, energy-dense batteries", Nature Reviews, 5, 229 (2020)
+
+Arumugam Manthiram,"Lithium battery chemistries enabled by solid-state electrolytes", Nature Reviews Materials, 2, 16103 (2017)
