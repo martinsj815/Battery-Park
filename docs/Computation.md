@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Another page
-description: This is just another page
+title: Battery Park
+description: From Chemistry to Technology
 ---
 
 # Computational Modeling
@@ -23,4 +23,12 @@ This computational approach offers key properties of lithium-ion batteries, such
 - Calculated electronic density of states and band structures of Sb, Li2Sb and Li3Sb using HSE functional.
 The electrodes of an electrochemical cell should exhibit some degree of electronic conductivity to ensure that electrons can reach the electrode/electrolyte interface, where the electrochemical reactions occur. The electronic properties of each important intermediate phases can provide a better understanding of the reaction mechanism at the interface during the reaction. This insight can help identify the rate-determining steps and the origins of overpotential.
 
+  - Structural stability, corresponding volume changes, and equilibrium voltage profiles
+
+<img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Calculated_results.png?raw=true' alt="Capacity" style="width:1000px; height:auto;">
+
+
+- The formation energies obtained from first-principles calculations are used to compare structural stability and determine the accessibility of metastable off-stoichiometric phases. The configurations with the lowest formation energies are the most stable structures at their compositions, known as ground state structures. The line connecting the ground state structures, known as the convex hull, can be used to calculate the equilibrium voltage and estimate reaction mechanisms and corresponding voltage profiles.
+- 
+- These results provide a thermodynamic equilibrium reaction path with the corresponding theoretical voltage. By analyzing the deviation of the voltage from the equilibrium voltage, insights can be gained into the amount of overpotential applied to the system and the stable phases at specific states of charge. This fundamental information can reveal degradation mechanisms caused by structural changes. Additionally, the volumes of the different structures can be easily obtained from first-principles calculation results.
 
