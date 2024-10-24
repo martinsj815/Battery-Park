@@ -116,7 +116,7 @@ Below is the comparison of key anode materials currently in industry for commerc
 # Moving from graphite to silicon for the Li-ion battery anode
 
 
-<img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Si%20Graphite_NCM811.png?raw=true' alt="Capacity" style="width:500px; height:auto;">
+<img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Si%20Graphite_NCM811.png?raw=true' alt="Capacity" style="width:1000px; height:auto;">
 
 
 The graphs above display estimated gravimetric and volumetric energy densities vs cathode areal capacity of the cell consisting of NCM811 and Graphite/Si. The data are excerpted/re-calculated based on the review article by Eshetu, et al., “Production of high-energy Li-ion batteries comprising silicon-containing anodes and insertion-type cathodes”, Nature Commun., 12 (2021). A slight modification was made to the estimations after taking cell tabs and packaging components into consideration to make them more realistic at the cell level.
