@@ -72,7 +72,7 @@ description: Battery Chemistry to Technology
 # Global Demand for Cathode Chemistries
 
 
-  <div class="columns">
+<div class="columns">
   <div class="column">
     - According to the review paper by Degen et al., both High-Ni NCM cathode and LFP cathode chemistry continue to rise in their demands while those of NCM532/622 and NCA will be stagnant until 2040. It is also forecasted that the market share will be gradually dominated by the post-Li batteries in future although it is currently unknown which of the batteries (e.g. all-solid-state, lithium-sulfur, lithium-air, sodium-ion, etc) will reach industrial-scale production.
   </div>
@@ -112,3 +112,30 @@ Below is the comparison of key anode materials currently in industry for commerc
 |Volumetric change|10-12|&gt;280|135|160|100|1|
 |Lithium diffusion coefficient|10<sup>-11</sup> - 10<sup>-7</sup>|10<sup>-13</sup> - 10<sup>-11</sup>||||10<sup>-12</sup> - 10<sup>-11</sup>|
 
+
+# Moving from graphite to silicon for the Li-ion battery anode
+
+
+<img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Si%20Graphite_NCM811.png?raw=true' alt="Capacity" style="width:500px; height:auto;">
+
+
+The graphs above display estimated gravimetric and volumetric energy densities vs cathode areal capacity of the cell consisting of NCM811 and Graphite/Si. The data are excerpted/re-calculated based on the review article by Eshetu, et al., “Production of high-energy Li-ion batteries comprising silicon-containing anodes and insertion-type cathodes”, Nature Commun., 12 (2021). A slight modification was made to the estimations after taking cell tabs and packaging components into consideration to make them more realistic at the cell level.
+
+As shown in the graphs above, transition from graphite and silicon can yield drastic improvement in both metrics. At the areal capacity of 10 mAh/cm<sup>2</sup>, the transition from the graphite/NCM811 chemistry to that of Si/NCM811 can boost gravimetric energy density from 342 Wh/kg to 536 Wh/kg, while the increase is much greater for volumetric density (817 Wh/kg to 1568 Wh/kg). At the industry with the typical areal capacity (>3 mAh/cm<sup>2</sup>), a Si/NCM811 cell is estimated to yield 395 Wh/kg and 1123 Wh/L, which is way above the current energy goal. Again, this is estimation and more like an ideal case since Si is mechanically unstable during electrochemical cycling due to its drastic volumetric changes. With micro-scale (or even nano-scale) structure tuning, this can be mitigated, leading to better capacity retention.
+
+------------------------------------------------------------------------
+
+# Electrolyte
+
+<div class="columns">
+  <div class="column">
+    -Electrolyte acts as a medium for ion transport between the cell cathode and anode during (dis-)charging. It can be in liquid, solid or even polymer gel-type. Liquid non-aqueous electrolyte, most commonly used, consists of salt(s) dissolved in solvent(s) along with additive(s).
+    
+    -Ionic transport (i.e. ionic conductivity) is the key aspect of the non-aqueous Li-ion battery electrolyte. It is important for the electrolyte to possess high dielectric constant for salt dissolution, low viscosity for good ion transport, and chemical/thermal stability over a wide operating voltage/temperature range. When inserted in a cell, reductive and oxidative stability against anode and cathode (i.e. wide electrochemical stability window) is also desired for safe/stable operation of the cell.
+    
+    -As no single salt and solvent mixture can provide many of desired characteristics above, electrolyte studied typically consists of multiple salts and/or solvents mixed. A good example is lithium hexafluorophosphate (LiPF6) dissolved in mixture of cyclic carbonate like ethylene carbonate (for high dielectric constant) and aliphatic carbonate such as diethyl, dimethyl, or ethyl methyl carbonate (for low viscosity and melting point).
+  </div>
+  <div class="column">
+    <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Electrolyte.png?raw=true' alt="Capacity" style="width:300px; height:auto;">
+  </div>
+</div>
