@@ -15,15 +15,15 @@ description: From Chemistry to Technology
 This computational approach offers key properties of lithium-ion batteries, such as the calculation of equilibrium voltages and voltage profiles, theoretical capacity, ionic mobilities, structural stability and corresponding volume changes, as well as thermal and electrochemical stabilities. This understanding provides significant insights into the intrinsic properties of batteries and aids in optimizing battery materials.
 
 * Example results from calculations:
-  - Density of State (DOS) and Band structure calculation
+  - <b> Density of State (DOS) and Band structure calculation </b>
 
 <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/ElectronicStructure.png?raw=true' alt="Capacity" style="width:1000px; height:auto;">
 
 
-- Calculated electronic density of states and band structures of Sb, Li2Sb and Li3Sb using HSE functional.
+- Calculated electronic density of states and band structures of Sb, Li<sub>2</sub>Sb and Li<sub>3</sub>Sb using HSE functional.
 The electrodes of an electrochemical cell should exhibit some degree of electronic conductivity to ensure that electrons can reach the electrode/electrolyte interface, where the electrochemical reactions occur. The electronic properties of each important intermediate phases can provide a better understanding of the reaction mechanism at the interface during the reaction. This insight can help identify the rate-determining steps and the origins of overpotential.
 
-  - Structural stability, corresponding volume changes, and equilibrium voltage profiles
+  - <b> Structural stability, corresponding volume changes, and equilibrium voltage profiles </b> 
 
 <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Calculated_results.png?raw=true' alt="Capacity" style="width:1000px; height:auto;">
 
@@ -32,6 +32,9 @@ The electrodes of an electrochemical cell should exhibit some degree of electron
   
 - These results provide a thermodynamic equilibrium reaction path with the corresponding theoretical voltage. By analyzing the deviation of the voltage from the equilibrium voltage, insights can be gained into the amount of overpotential applied to the system and the stable phases at specific states of charge. This fundamental information can reveal degradation mechanisms caused by structural changes. Additionally, the volumes of the different structures can be easily obtained from first-principles calculation results.
 
+
+  - <b> Ionic mobility </b>
+    
 <figure>
   <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/ion_mobility.png?raw=true' alt="Capacity" style="width:1000px; height:auto;">
   <figcaption>Visualization of the three potential diffusion paths and DFT+U energies of Na ion mobility in Na<sub>3</sub>TiP<sub>3</sub>O<sub>9</sub>N</figcaption>
