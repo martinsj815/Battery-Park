@@ -146,8 +146,9 @@ As shown in the graphs above, transition from graphite and silicon can yield dra
 - LiPF<sub>6</sub> has no outstanding property but has the combination of its well-balanced characteristics that meet stringent requirements for commercialization. It also has good anodic stability up to >5V when mixed in carbonates and ionic conductivity. However, its poor thermal stability and moisture sensitivity requires the additive for performance enhancement.
 
 <b>Ion Mobility (Descending order)</b>: LiBF<sub>4</sub> > LiClO<sub>4</sub> > LiPF<sub>6</sub> > LiAsF<sub>6</sub> > LiTFSI
+
 <b>Dissociation Constant (Descending order)</b>: LiTFSI > LiAsF<sub>6</sub> > LiPF<sub>6</sub> > LiClO<sub>4</sub> > LiBF<sub>4</sub>
 
 <b> - Other salts/additives studied/considered are: </b>
 
-    - LiBF<sub>4</sub>: Better thermal and stability against hydrolysis than LiPF6. However, it has mediocre ionic conductivity due to its low dissociation ability than LiPF6.
+    LiBF<sub>4</sub>: Better thermal and stability against hydrolysis than LiPF<sub>6</sub>. However, it has mediocre ionic conductivity due to its low dissociation ability than LiPF<sub>6</sub>.
