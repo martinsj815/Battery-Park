@@ -34,7 +34,7 @@ The electrodes of an electrochemical cell should exhibit some degree of electron
 
 <figure>
   <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/ion_mobility.png?raw=true' alt="Capacity" style="width:1000px; height:auto;">
-  <figcaption>Visualization of the three potential diffusion paths and DFT+U energies of Na ion mobility in Na<sub>3<sub>TiP<sub>3</sub>sub>O<sub>9</sub>sub>N</figcaption>
+  <figcaption>Visualization of the three potential diffusion paths and DFT+U energies of Na ion mobility in Na<sub>3</sub>TiP<sub>3</sub>sub>O<sub>9</sub>sub>N</figcaption>
 </figure>
 
 
