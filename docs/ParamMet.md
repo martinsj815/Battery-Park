@@ -13,6 +13,7 @@ description: From Chemistry to Technology
 <!-- Tab content -->
 <div id="Parameters" class="tabcontent">
   # Current Density
+  
   <div class="columns">
     <div class="column">
       - Current density represents the quantity of current flowing through a unit cross-sectional area [mA/cm²]. Often in the literature, it is expressed in terms of current per unit active material loading [mA/g]. However, it is enssential to also provide the areal active material loading [mg/cm²] concurrently. Without this information, misleading performrance evaluations can occur, especially when the active loading of cells is low, which may not accuratley represent the true performance.
