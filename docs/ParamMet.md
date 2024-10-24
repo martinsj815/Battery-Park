@@ -68,14 +68,20 @@ description: From Chemistry to Technology
       Although R<sub>o</sub>, R<sub>ct</sub> and R<sub>p</sub> are not completely distinct, they are expected to be the dominat contrituion to total resistance at their respective timescales.
      - These resistances are affected by temperature, state of charge, state of health, and applied current.
 
+    </div>
+    <div class="column">
+      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Polarization.png?raw=true' alt="Polarization" style="width:500px; height:auto;">
+    </div>
+
+
 <spacer type="block" width="50" />
 
 <br>
 <br>
 
-<h2> References </h2>
-<br>
-* Martin Winter, et al, "What Are Batteries, Fuel Cells, and Supercapacitors?", Chemical Reviews, 104, 4245-4269 (2004)
+  <h2> References </h2>
+  <br>
+  * Martin Winter, et al, "What Are Batteries, Fuel Cells, and Supercapacitors?", Chemical Reviews, 104, 4245-4269 (2004)
 
 
 </div>
