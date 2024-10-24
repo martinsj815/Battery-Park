@@ -14,7 +14,7 @@ description: From Chemistry to Technology
 <div id="Parameters" class="tabcontent">
 
   
-  # Current Density
+  <h2> Current Density </h2>
   
   <div class="columns">
     <div class="column">
@@ -30,7 +30,8 @@ description: From Chemistry to Technology
   </div>
 
 ------------------------------------------------------------
-  # Open Circuit Voltage (OCV) and State of Charge (SoC)
+  
+  <h2> Open Circuit Voltage (OCV) and State of Charge (SoC) </h2>
 
   <div class="columns">
     <div class="column">
@@ -47,7 +48,9 @@ description: From Chemistry to Technology
   </div>
 
 ----------------------------------------------------------
-# Voltage and Polarization
+
+
+<h2> Voltage and Polarization </h2>
 
   <div class="columns">
     <div class="column">
@@ -64,7 +67,8 @@ description: From Chemistry to Technology
 
 ----------------------------------------------------------
 
-# References
+<h2> References </h2>
+
 - Martin Winter, et al, "What Are Batteries, Fuel Cells, and Supercapacitors?", Chemical Reviews, 104, 4245-4269 (2004)
 
 
