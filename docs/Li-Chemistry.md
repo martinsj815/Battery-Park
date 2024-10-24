@@ -180,6 +180,8 @@ Solid electrolytes are attracting a large interest since it enables all-solid-st
       To be comparable to conventional liquid electrolytes, the ionic conductivity should be in the order of 1 mS/cm at room temperature. S-SIE has generally higher ionic conductivity and forms a good interface with electrodes due to its soft Li-S bonding properties, but has low electrochemical stability due to narrow electrochemical stability window. O-SEI has good electrochemical stability but is difficult to handle in large-scale production. While SPE has low ionic conductivity and requires high temperature to operate, it is stable with lithium metal, forming a good interface with the electrode, and can be applied in a current roll-to-roll process.
   </div>
   <div class="column">
+
+    
     <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/LiPS.png?raw=true' alt="Capacity" style="width:300px; height:auto;">
   </div>
 </div>
