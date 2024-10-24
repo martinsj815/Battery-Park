@@ -29,7 +29,7 @@ description: From Chemistry to Technology
     </div>
   </div>
 
-------------------------------------------------------------
+<spacer type="block" width="50" />
   
   <h2> Open Circuit Voltage (OCV) and State of Charge (SoC) </h2>
 
@@ -47,7 +47,7 @@ description: From Chemistry to Technology
     </div>
   </div>
 
-----------------------------------------------------------
+<spacer type="block" width="50" />
 
 
 <h2> Voltage and Polarization </h2>
@@ -65,7 +65,7 @@ description: From Chemistry to Technology
       Although R<sub>o</sub>, R<sub>ct</sub> and R<sub>p</sub> are not completely distinct, they are expected to be the dominat contrituion to total resistance at their respective timescales.
      - These resistances are affected by temperature, state of charge, state of health, and applied current.
 
-----------------------------------------------------------
+<spacer type="block" width="50" />
 
 <h2> References </h2>
 
