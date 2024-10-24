@@ -14,8 +14,6 @@ description: From Chemistry to Technology
 <div id="Parameters" class="tabcontent">
 
   <br>
-  <br>
-  
   <h2> Current Density </h2>
   <br>
   <div class="columns">
@@ -63,9 +61,9 @@ description: From Chemistry to Technology
       - When a circuit is connected or current begins to flow, the voltage drops, which is caused by electrode polarization due to the kinetic limits of the reaction and other electrochemical kinetical reactions to allow current to flow during the charge/discharge reaction. The degree of this polarization can be estimated from the voltage deviation (overpotential, η) from the open circuit voltage. The overpotential is given by 
       - During the reaction, the cell involves a series of physical, chemical, and electrochemical steps, including charge-transfer and charge transport reactions. The main sources of polarization can be categorized into three parts: 1) ohmic polarization (R<sub>O</sub>), 2) activation polarization (R<sub>CT</sub>), and 3) concentration polarization (R<sub>P</sub>).
       
-       * Ohmic Polarization (R<sub>o</sub>) arises from the resistance of connectivity's of individual cell components and contact between the cell components. Ohmic polarization appears instantaneously (≤ 10-6s) when current flows.
-       * Activation polarization (R<sub>ct</sub>) is related to the kinetics hinderances of the charge-transfer reactions at the electrode/electrolyte interfaces of anode and cathode. The buildup of the activation polarization are fast and can be identified by the voltage change on current interruption in a time frame of 10<sub>-2</sub>s - 10<sub>-4</sub>s.
-       * Concentration polarization (R<sub>p</sub>) arises from limited diffusion of active species to and from the electrode surface to replace the reacted material to sustain the reaction. Diffusion limitations are relatively slow, and the buildup takes ≥ 10<sub>-2</sub>s to appear.
+       * Ohmic Polarization (R<sub>o</sub>) arises from the resistance of connectivity's of individual cell components and contact between the cell components. Ohmic polarization appears instantaneously (≤ 10<sup>-6</sup>s) when current flows.
+       * Activation polarization (R<sub>ct</sub>) is related to the kinetics hinderances of the charge-transfer reactions at the electrode/electrolyte interfaces of anode and cathode. The buildup of the activation polarization are fast and can be identified by the voltage change on current interruption in a time frame of 10<sup>-2</sup>s - 10<sup>-4</sup>s.
+       * Concentration polarization (R<sub>p</sub>) arises from limited diffusion of active species to and from the electrode surface to replace the reacted material to sustain the reaction. Diffusion limitations are relatively slow, and the buildup takes ≥ 10<sup>-2</sup>s to appear.
 
       Although R<sub>o</sub>, R<sub>ct</sub> and R<sub>p</sub> are not completely distinct, they are expected to be the dominat contrituion to total resistance at their respective timescales.
      - These resistances are affected by temperature, state of charge, state of health, and applied current.
@@ -77,14 +75,7 @@ description: From Chemistry to Technology
 
 <h2> References </h2>
 <br>
-- Martin Winter, et al, "What Are Batteries, Fuel Cells, and Supercapacitors?", Chemical Reviews, 104, 4245-4269 (2004)
-
-
-    </div>
-    <div class="column">
-      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/OCV_SOC.png?raw=true' alt="OCV" style="width:500px; height:auto;">
-    </div>
-  </div>
+* Martin Winter, et al, "What Are Batteries, Fuel Cells, and Supercapacitors?", Chemical Reviews, 104, 4245-4269 (2004)
 
 
 </div>
