@@ -29,6 +29,15 @@ The electrodes of an electrochemical cell should exhibit some degree of electron
 
 
 - The formation energies obtained from first-principles calculations are used to compare structural stability and determine the accessibility of metastable off-stoichiometric phases. The configurations with the lowest formation energies are the most stable structures at their compositions, known as ground state structures. The line connecting the ground state structures, known as the convex hull, can be used to calculate the equilibrium voltage and estimate reaction mechanisms and corresponding voltage profiles.
-- 
+  
 - These results provide a thermodynamic equilibrium reaction path with the corresponding theoretical voltage. By analyzing the deviation of the voltage from the equilibrium voltage, insights can be gained into the amount of overpotential applied to the system and the stable phases at specific states of charge. This fundamental information can reveal degradation mechanisms caused by structural changes. Additionally, the volumes of the different structures can be easily obtained from first-principles calculation results.
+
+<figure>
+  <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/ion_mobility.png?raw=true' alt="Capacity" style="width:1000px; height:auto;">
+  <figcaption>Visualization of the three potential diffusion paths and DFT+U energies of Na ion mobility in Na<sub>3<sub>TiP<sub>3</sub>sub>O<sub>9</sub>sub>N</figcaption>
+</figure>
+
+
+
+
 
