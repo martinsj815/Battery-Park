@@ -12,6 +12,8 @@ description: From Chemistry to Technology
 
 <!-- Tab content -->
 <div id="Parameters" class="tabcontent">
+
+  
   # Current Density
   
   <div class="columns">
@@ -26,6 +28,53 @@ description: From Chemistry to Technology
       <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CurrentDensity.png?raw=true' alt="Current density" style="width:500px; height:auto;">
     </div>
   </div>
+
+------------------------------------------------------------
+  # Open Circuit Voltage (OCV) and State of Charge (SoC)
+
+  <div class="columns">
+    <div class="column">
+      - OCV and SOC are important parameters in battery characterization.
+      - OCV represents the potential difference between the cathode and anode when no current or voltage is applied. Theoretically, assuming that all active electrode particles are fully connected by conductive additives and maintain electrical neutrality, the OCV can be calculated from the difference in Gibbs free energy between cathode and anode materials.
+      - OCV is used as an important metric to analyze electrode health and identify potential issues such as internal resistance, and capacity fade by measuring deviations from the OCV.
+      - SOC represents the remaining capacity available in the battery at any given point in time. It is expressed as a percentage, where 100% indicates the battery is fully charged, and 0% indicates that it is complete discharge.
+      - Since the (electro-)chemical potential of the cathode and anode varies with state of charge, OCV depends on SOC.
+      - OCV and SOC are used for battery health assessment, quality control, and aging monitoring.
+    </div>
+    <div class="column">
+      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/OCV_SOC.png?raw=true' alt="OCV" style="width:500px; height:auto;">
+    </div>
+  </div>
+
+----------------------------------------------------------
+# Voltage and Polarization
+
+  <div class="columns">
+    <div class="column">
+      - Voltage represents the difference in potential between the cathode and anode and the driving force of current flowing. The unit is volt [V].
+      - When a circuit is connected or current begins to flow, the voltage drops, which is caused by electrode polarization due to the kinetic limits of the reaction and other electrochemical kinetical reactions to allow current to flow during the charge/discharge reaction. The degree of this polarization can be estimated from the voltage deviation (overpotential, η) from the open circuit voltage. The overpotential is given by 
+      - During the reaction, the cell involves a series of physical, chemical, and electrochemical steps, including charge-transfer and charge transport reactions. The main sources of polarization can be categorized into three parts: 1) ohmic polarization (R<sub>O</sub>), 2) activation polarization (R<sub>CT</sub>), and 3) concentration polarization (R<sub>P</sub>).
+      
+       * Ohmic Polarization (R<sub>o</sub>) arises from the resistance of connectivity's of individual cell components and contact between the cell components. Ohmic polarization appears instantaneously (≤ 10-6s) when current flows.
+       * Activation polarization (R<sub>ct</sub>) is related to the kinetics hinderances of the charge-transfer reactions at the electrode/electrolyte interfaces of anode and cathode. The buildup of the activation polarization are fast and can be identified by the voltage change on current interruption in a time frame of 10<sub>-2</sub>s - 10<sub>-4</sub>s.
+       * Concentration polarization (R<sub>p</sub>) arises from limited diffusion of active species to and from the electrode surface to replace the reacted material to sustain the reaction. Diffusion limitations are relatively slow, and the buildup takes ≥ 10<sub>-2</sub>s to appear.
+
+      Although R<sub>o</sub>, R<sub>ct</sub> and R<sub>p</sub> are not completely distinct, they are expected to be the dominat contrituion to total resistance at their respective timescales.
+     - These resistances are affected by temperature, state of charge, state of health, and applied current.
+
+----------------------------------------------------------
+
+# References
+- Martin Winter, et al, "What Are Batteries, Fuel Cells, and Supercapacitors?", Chemical Reviews, 104, 4245-4269 (2004)
+
+
+    </div>
+    <div class="column">
+      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/OCV_SOC.png?raw=true' alt="OCV" style="width:500px; height:auto;">
+    </div>
+  </div>
+
+
 </div>
 
 <div id="Metrics" class="tabcontent">
