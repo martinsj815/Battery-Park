@@ -20,9 +20,9 @@ description: From Chemistry to Technology
     <div class="column">
       - Current density represents the quantity of current flowing through a unit cross-sectional area [mA/cm²]. Often in the literature, it is expressed in terms of current per unit active material loading [mA/g]. However, it is enssential to also provide the areal active material loading [mg/cm²] concurrently. Without this information, misleading performrance evaluations can occur, especially when the active loading of cells is low, which may not accuratley represent the true performance.
     <br>
+    <br>
       - Additionally, current density depends on the C-rate. When specifying a current density, it should be indicated under which C-rate it applies. Without this specification, a rate 1C is typically assumed. Furthermore, when rate performance is claimed, the highest rate should correspond to 80% capacity retention. For example, if the capacity can maintain 80% at 3C, it can be claim that this cell can discharge/charge at 3C.
     <br>
-      - With this parameter, areal capacity can also be obtained by multiplying it with time.
     </div>
     <div class="column">
       <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CurrentDensity.png?raw=true' alt="Current density" style="width:500px; height:auto;">
@@ -53,8 +53,6 @@ description: From Chemistry to Technology
     </div>
   </div>
 
-<spacer type="block" width="50" />
-
 <br>
 <br>
 
@@ -79,11 +77,9 @@ description: From Chemistry to Technology
 
     </div>
     <div class="column">
-      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Polarization.png?raw=true' alt="Polarization" style="width:500px; height:auto;">
+      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/voltage%20curve.png?raw=true" style="width:500px; height:auto;">
     </div>
   </div>
-
-<spacer type="block" width="50" />
 
 <br>
 <br>
@@ -113,4 +109,24 @@ description: From Chemistry to Technology
       <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CurrentDensity.png?raw=true' alt="Current density" style="width:500px; height:auto;">
     </div>
   </div>
+
+    <br>
+    <br>
+  <h2> Energy & Power </h2>
+    <br>
+  <div class="columns">
+    <div class="column">
+      - Energy stored in the cell is defined as the Capacity multiplied by Voltage and its unit is Wh and can be described as:
+    <br>
+      - Power is the rate at which how fast the energy can be delivered. Its unit is in Watts. Instantaneous power is simply Current times Voltage at the certain time during battery operation. Average power is defined as:
+    <br>    
+      - Energy density and power density is energy and power normalized by the cell mass. Hence, the unit is Wh/kg and W/kg, respectively. Energy density can be approximated by multiplying specific capacity with nominal voltage.
+    <br>
+      - Typically, it is difficult for batteries to have both metrics met at the high end. High energy density demands the cell to be discharged at a slow rate for it to reach its maximum capacity and avoid polarization losses. However, since a lower current rate means longer discharge time, power density will be low. For high power density, energy density is likely sacrificed. This trend is illustrated in a Ragone Plot.
+    </div>
+    <div class="column">
+      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/voltage%20curve_energy.png?raw=true' alt="Current density" style="width:500px; height:auto;">
+    </div>
+  </div>
+  
 </div>
