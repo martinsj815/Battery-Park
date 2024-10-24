@@ -17,7 +17,7 @@ This computational approach offers key properties of lithium-ion batteries, such
 * Example results from calculations:
   - Density of State (DOS) and Band structure calculation
 
-<img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/ElectronicStructure.png?raw=true' alt="Capacity" style="width:500px; height:auto;">
+<img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/ElectronicStructure.png?raw=true' alt="Capacity" style="width:1000px; height:auto;">
 
 
 - Calculated electronic density of states and band structures of Sb, Li2Sb and Li3Sb using HSE functional.
