@@ -149,6 +149,7 @@ As shown in the graphs above, transition from graphite and silicon can yield dra
 
 <b>Dissociation Constant (Descending order)</b>: LiTFSI > LiAsF<sub>6</sub> > LiPF<sub>6</sub> > LiClO<sub>4</sub> > LiBF<sub>4</sub>
 
+
 <b> - Other salts/additives studied/considered are: </b>
 
-    LiBF<sub>4</sub>: Better thermal and stability against hydrolysis than LiPF<sub>6</sub>. However, it has mediocre ionic conductivity due to its low dissociation ability than LiPF<sub>6</sub>.
+    > LiBF<sub>4</sub>: Better thermal and stability against hydrolysis than LiPF<sub>6</sub>. However, it has mediocre ionic conductivity due to its low dissociation ability than LiPF<sub>6</sub>.
