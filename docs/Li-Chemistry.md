@@ -153,3 +153,18 @@ As shown in the graphs above, transition from graphite and silicon can yield dra
 <b> - Other salts/additives studied/considered are: </b>
 
     > LiBF<sub>4</sub>: Better thermal and stability against hydrolysis than LiPF<sub>6</sub>. However, it has mediocre ionic conductivity due to its low dissociation ability than LiPF<sub>6</sub>.
+    
+    > LiAsF<sub>6</sub>: Good ionic conductivity and enhanced thermal and anodic stability due to strong As-F bonding. However, AsF<sub>3</sub> byproduct is toxic, hindering its commercialization.
+
+    > LiTFSI: Good electrochemical stability against oxidation due to delocalized negative charges in TFSI<sup>-</sup> anions. Also has good ionic conductivity and thermal stability. Al corrosion, however, can make it not very applicable.
+
+    > LiFSI: Higher conductivity and better hydrolytic and thermal stability than LiPF<sub>6</sub> in carbonate solvents. Al corrosion not happening at the high potential where the cathode redox happens.
+
+    > LiBOB (lithium bis(oxalate)borate): SEI formation at the graphite anode surface through the BOB anion for reversible Li (de-)insertion. Good thermal stability and resistant to Al corrosion at the high potential. However, less versatile for application due to limited solubility in carbonates and low anodic stability (4.2V).
+
+    > LiDFOB (lithium difluoro(oxalate)borate): Hybridized form of LiBOB with LiBF<sub>4</sub>. Higher solubility than LiBOB in carbonate electrolyte with less viscosity and higher ionic conductivity. Cell impedance comparable to LiPF<sub>6</sub>-based electrolyte.
+
+    > LiPO<sub>2</sub>F<sub>2</sub> (only as additive): Forms the stable interface film both at cathode and anode surface upon cycling, preventing decomposition/oxidation of the electrolyte. This allows impedance control of both cathode and anode and is conducive to cathode structural stability, high-rate capability, and prolonged cell cycling.
+
+
+- Many 18650 cells use the mixture of LiPF<sub>6</sub> and LiFSI inside carbonate electrolyte as the electrolyte. For EV batteries with an increasingly rigorous demand for their performances, some of the salts above are investigated as additive to be mixed with LiPF6 electrolyte, for which its concentration varies from 5-10%.
