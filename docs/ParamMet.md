@@ -13,9 +13,11 @@ description: From Chemistry to Technology
 <!-- Tab content -->
 <div id="Parameters" class="tabcontent">
 
+  <br>
+  <br>
   
   <h2> Current Density </h2>
-  
+  <br>
   <div class="columns">
     <div class="column">
       - Current density represents the quantity of current flowing through a unit cross-sectional area [mA/cm²]. Often in the literature, it is expressed in terms of current per unit active material loading [mA/g]. However, it is enssential to also provide the areal active material loading [mg/cm²] concurrently. Without this information, misleading performrance evaluations can occur, especially when the active loading of cells is low, which may not accuratley represent the true performance.
@@ -29,10 +31,11 @@ description: From Chemistry to Technology
     </div>
   </div>
 
-<spacer type="block" width="50" />
+<br>
+<br>
   
   <h2> Open Circuit Voltage (OCV) and State of Charge (SoC) </h2>
-
+<br>
   <div class="columns">
     <div class="column">
       - OCV and SOC are important parameters in battery characterization.
@@ -49,11 +52,13 @@ description: From Chemistry to Technology
 
 <spacer type="block" width="50" />
 
+<br>
+<br>
 
-<h2> Voltage and Polarization </h2>
-
-  <div class="columns">
-    <div class="column">
+  <h2> Voltage and Polarization </h2>
+  <br>
+    <div class="columns">
+      <div class="column">
       - Voltage represents the difference in potential between the cathode and anode and the driving force of current flowing. The unit is volt [V].
       - When a circuit is connected or current begins to flow, the voltage drops, which is caused by electrode polarization due to the kinetic limits of the reaction and other electrochemical kinetical reactions to allow current to flow during the charge/discharge reaction. The degree of this polarization can be estimated from the voltage deviation (overpotential, η) from the open circuit voltage. The overpotential is given by 
       - During the reaction, the cell involves a series of physical, chemical, and electrochemical steps, including charge-transfer and charge transport reactions. The main sources of polarization can be categorized into three parts: 1) ohmic polarization (R<sub>O</sub>), 2) activation polarization (R<sub>CT</sub>), and 3) concentration polarization (R<sub>P</sub>).
@@ -67,8 +72,11 @@ description: From Chemistry to Technology
 
 <spacer type="block" width="50" />
 
-<h2> References </h2>
+<br>
+<br>
 
+<h2> References </h2>
+<br>
 - Martin Winter, et al, "What Are Batteries, Fuel Cells, and Supercapacitors?", Chemical Reviews, 104, 4245-4269 (2004)
 
 
