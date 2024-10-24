@@ -96,6 +96,21 @@ description: From Chemistry to Technology
 </div>
 
 <div id="Metrics" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p>
+    <br>
+  <h2> Voltage & Capacity </h2>
+    <br>
+  <div class="columns">
+    <div class="column">
+      - Cell voltage is dependent on the chemistry of chemical compounds assembled. Nominal voltage is more like an average (or typical) voltage for the system different from the precise operating cell voltage (under load). For lead-acid, the nominal voltage is 2V. For nickel-based, it is 1.2V. For lithium-ion, it is typically more than 3V.
+    <br>
+      - Cell capacity states the quantity of charge in the cell and is dependent on the amount of active materials used. It is measured in Amphere-hours.
+    <br>    
+      - Specific capacity is the capacity measured per unit mass. This can be calculated theoretically using its molecular weight and Faraday constant:
+    <br>
+      - With this parameter, areal capacity can also be obtained by multiplying it with time.
+    </div>
+    <div class="column">
+      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CurrentDensity.png?raw=true' alt="Current density" style="width:500px; height:auto;">
+    </div>
+  </div>
 </div>
