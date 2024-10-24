@@ -12,13 +12,17 @@ description: From Chemistry to Technology
 
 <!-- Tab content -->
 <div id="Parameters" class="tabcontent">
-  <h3>London</h3>
+  # Current Density
   <div class="columns">
     <div class="column">
-      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CCCV.png?raw=true' alt="Capacity" style="width:500px; height:auto;">
+      - Current density represents the quantity of current flowing through a unit cross-sectional area [mA/cm²]. Often in the literature, it is expressed in terms of current per unit active material loading [mA/g]. However, it is enssential to also provide the areal active material loading [mg/cm²] concurrently. Without this information, misleading performrance evaluations can occur, especially when the active loading of cells is low, which may not accuratley represent the true performance.
+
+      - Additionally, current density depends on the C-rate. When specifying a current density, it should be indicated under which C-rate it applies. Without this specification, a rate 1C is typically assumed. Furthermore, when rate performance is claimed, the highest rate should correspond to 80% capacity retention. For example, if the capacity can maintain 80% at 3C, it can be claim that this cell can discharge/charge at 3C.
+
+      - With this parameter, areal capacity can also be obtained by multiplying it with time.
     </div>
     <div class="column">
-      Capacity basically represents the amount of electric charge stored in a cell and is one of the key parameters in Li-ion batteries. Hence, measuring its decay over the cell life is important. For charge, CC-CV (constant current – constant voltage) profile is used – constant current used until a voltage limit is reached and constant voltage is applied until current becomes negligible. For discharge, constant current (galvanostatic) is most common due to its easy interpretability and repeatability. A range of C-rates at various temperatures needs to be carefully considered for performance evaluation.
+      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CurrentDensity.png?raw=true' alt="Current density" style="width:500px; height:auto;">
     </div>
   </div>
 </div>
