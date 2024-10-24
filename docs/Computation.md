@@ -14,8 +14,8 @@ description: This is just another page
 - First-principles calculations involve atomic-level simulations used to predict the properties of previously unknown materials by solving the many-body time-indepedent Schrödinger equation through various numerical approximations, such as the Hartree-Fock (HF) method, Density Functional Theory (DFT), and hybrid approaches. These calculations provide inherent material properties, including atomic coordinates and electronic structure properties, without requiring any input from experiments, thereby aiding in the interpretation of experimental observations.
 This computational approach offers key properties of lithium-ion batteries, such as the calculation of equilibrium voltages and voltage profiles, theoretical capacity, ionic mobilities, structural stability and corresponding volume changes, as well as thermal and electrochemical stabilities. This understanding provides significant insights into the intrinsic properties of batteries and aids in optimizing battery materials.
 
-> Example results from calculations:
-- Density of State (DOS) and Band structure calculation
+* Example results from calculations:
+  - Density of State (DOS) and Band structure calculation
 
 <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/ElectronicStructure.png?raw=true' alt="Capacity" style="width:500px; height:auto;">
 
