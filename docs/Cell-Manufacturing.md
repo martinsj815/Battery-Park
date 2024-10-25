@@ -165,7 +165,7 @@ description: Battery Chemistry to Technology
    <br> 
   </div>
   <div class="column">
-    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/enclosing.png?raw=true" alt="Coating" style="width:300px; height:auto;">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/enclosing.png?raw=true" alt="Coating" style="width:200px; height:auto;">
   </div>
 </div>
 
@@ -182,7 +182,7 @@ description: Battery Chemistry to Technology
    <br> 
   </div>
   <div class="column">
-    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/formation.png?raw=true" alt="Coating" style="width:300px; height:auto;">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/formation.png?raw=true" alt="Coating" style="width:200px; height:auto;">
   </div>
 </div>
 
