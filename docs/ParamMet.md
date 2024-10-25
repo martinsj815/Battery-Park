@@ -84,7 +84,7 @@ description: From Chemistry to Technology
 
     </div>
     <div class="column">
-      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/voltage%20curve.png?raw=true" style="width:500px; height:auto;">
+      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/voltage%20curve.png?raw=true" alt="VP" style="width:500px; height:auto;">
     </div>
   </div>
 
@@ -126,7 +126,7 @@ description: From Chemistry to Technology
     <div class="column">
       - Energy stored in the cell is defined as the Capacity multiplied by Voltage and its unit is Wh and can be described as:
     <br>
-    $$ E = ∫<sub>0</sub><sup>t_{d}</sup> IV(t) dt $$
+    $$ E = \int{0}{t_{d}} IV(t) dt $$
     <br>  
       - Power is the rate at which how fast the energy can be delivered. Its unit is in Watts. Instantaneous power is simply Current times Voltage at the certain time during battery operation. Average power is defined as:
     <br>    
