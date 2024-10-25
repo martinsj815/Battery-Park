@@ -40,7 +40,7 @@ description: From Chemistry to Technology
       - OCV represents the potential difference between the cathode and anode when no current or voltage is applied. Theoretically, assuming that all active electrode particles are fully connected by conductive additives and maintain electrical neutrality, the OCV can be calculated from the difference in Gibbs free energy between cathode and anode materials.
 
       <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
-      $$ {V_{OC} = - \frac{\lambda G}{nF}} $$
+      $$ {V_{OC} = - \frac{\delta G}{nF}} $$
       
       <br>
       - OCV is used as an important metric to analyze electrode health and identify potential issues such as internal resistance, and capacity fade by measuring deviations from the OCV.
