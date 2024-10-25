@@ -71,7 +71,7 @@ description: From Chemistry to Technology
         <br>
       - During the reaction, the cell involves a series of physical, chemical, and electrochemical steps, including charge-transfer and charge transport reactions. The main sources of polarization can be categorized into three parts: 1) ohmic polarization (R<sub>O</sub>), 2) activation polarization (R<sub>CT</sub>), and 3) concentration polarization (R<sub>P</sub>).
        <br>
-       $$ {R_total = R_0} $$
+       $$ {R_total = R_0 + R_{ct} + R_p} $$
        <br>
        * Ohmic Polarization (R<sub>o</sub>) arises from the resistance of connectivity's of individual cell components and contact between the cell components. Ohmic polarization appears instantaneously (≤ 10<sup>-6</sup>s) when current flows.
         <br>
@@ -110,7 +110,8 @@ description: From Chemistry to Technology
     <br>    
       - Specific capacity is the capacity measured per unit mass. This can be calculated theoretically using its molecular weight and Faraday constant:
     <br>
-      - With this parameter, areal capacity can also be obtained by multiplying it with time.
+      $$ {Q_{gravimetric} = \frac{n*F}{M_W*3600}} $$
+    
     </div>
     <div class="column">
       <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/voltage%20curve.png?raw=true' alt="Current density" style="width:500px; height:auto;">
@@ -125,6 +126,8 @@ description: From Chemistry to Technology
     <div class="column">
       - Energy stored in the cell is defined as the Capacity multiplied by Voltage and its unit is Wh and can be described as:
     <br>
+    $$ E = ∫<sub>0</sub><sup>t_{d}</sup> IV(t) dt $$
+    <br>  
       - Power is the rate at which how fast the energy can be delivered. Its unit is in Watts. Instantaneous power is simply Current times Voltage at the certain time during battery operation. Average power is defined as:
     <br>    
       - Energy density and power density is energy and power normalized by the cell mass. Hence, the unit is Wh/kg and W/kg, respectively. Energy density can be approximated by multiplying specific capacity with nominal voltage.
