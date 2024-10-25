@@ -69,6 +69,71 @@ description: Battery Chemistry to Technology
   </div>
 </div>
 
+<br>
+<br>
+  
+## Drying
+
+<div class="columns">
+  <div class="column">
+    - A wet electrode then dried for solvent evaporation. NMP solvent is recovered by a condenser and distillation.
+   <br> 
+    - The wet slurry drying goes through the following - Slurry (Aggregation), Semi-slurry (Firm consolidation), Solid with solvent residue (Film shrinkage and formation of a condensed layer), and Solid (Pore empyting, segregation and bonding, formation of a compacted solid film coating) before full drying.
+   <br> 
+   - A slurry mixed with water-based binder may take a longer time to dry than that with traditional NMP-based slurry despite being cost and time efficient for not having to go through the solvent recovery step.
+   <br> 
+  </div>
+  <div class="column">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/drying.png?raw=true" alt="Coating" style="width:300px; height:auto;">
+  </div>
+</div>
+
+<br>
+<br>
+
+## Calendaring
+
+<div class="columns">
+  <div class="column">
+    - Process of smoothing and compressing a material during production by passing a single continuous sheet in between a pair of rolls.
+   <br> 
+    - Reduces electrode porosity and alters pore microstructure with increased tortuosity. Increases the bonding strength between the electrode and the current collector. Improved particle contacts lead to energy and power density enhancement.
+   <br> 
+  </div>
+  <div class="column">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/calendaring.png?raw=true" alt="Coating" style="width:300px; height:auto;">
+  </div>
+</div>
+
+<br>
+<br>
+
+## Slitting
+
+<div class="columns">
+  <div class="column">
+    - Conventional process of cutting the large, coated film is by using a blade or chisel.
+   <br> 
+    - Laser cutting with good power and speed control is widely applied for improved shape and edge quality of the electrode.
+   <br> 
+  </div>
+  <div class="column">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Slitting.png?raw=true" alt="Coating" style="width:300px; height:auto;">
+  </div>
+</div>
+
+
+## Stacking/Winding/Rolling
+
+<div class="columns">
+  <div class="column">
+    - All layers including electrodes and separators are wound into a spiral or jelly-rolled to be inserted in a cylindrical cell. In pouch cells, all layers are stacked layer by layer or via Z-stacking.
+   <br> 
+  </div>
+  <div class="column">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Slitting.png?raw=true" alt="Coating" style="width:300px; height:auto;">
+  </div>
+</div>
 
 
 
