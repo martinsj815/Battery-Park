@@ -77,10 +77,13 @@ description: Battery Chemistry to Technology
  [https://openinverter.org/forum/viewtopic.php?t=4181](https://openinverter.org/forum/viewtopic.php?t=4181)"
 | Kia |EV9 (Long-range)|4s3p|180.9|14.5|38|SK On (NCM)|99.8 kWh|356.4|"[https://www.kia.com/content/dam/kwcms/kme/se/sv/assets/contents/utility/specifications/ev9/kia-ev9-keyfacts.pdf ](https://www.kia.com/content/dam/kwcms/kme/se/sv/assets/contents/utility/specifications/ev9/kia-ev9-keyfacts.pdf) 
  [https://www.kiamedia.com/us/en/models/ev9/2024/specifications](https://www.kiamedia.com/us/en/models/ev9/2024/specifications)"|
-| GM |Ultium(Cell)|24<sup>b</sup> cells|110s 72p|7920|100|Panasonic 18650|536|356.4|
-| Chevrolet |Bolt|8 x 10s3p + 2 x 8s3p|4416|78LG M50 2170|481|309.1|
-| Volkswagen |MEB (ID.4, ID.5, Buzz)|8s3p|110s 72p|7920|100|Panasonic 18650|544|356.4|
-| Ford |Mach-E SR (2023)|NCA|110s 72p|7920|100|Panasonic 18650|536|356.4|
-| Rivian |R1T/R1S Standard/Large|12s72p|4416|78LG M50 2170|481|309.1|
-| Tesla |Model S Plaid|22s72p|22s72p|7920|100|Panasonic 18650|544|356.4|
-| Lucid Air |Grand Touring|10s30p|110s 72p|7920|100|Panasonic 18650|536|356.4|
+| GM |Ultium(Cell)|24<sup>b</sup> cells|103<sup>c</sup>|3.7<sup>c</sup>|6-24|Ultium Cells LLC (LG ES Joint) (NCMA Pouch) CATL (China, NCM Cylindrical)|<sup>b</sup>Different configuration possible, <sup>c</sup>Cell Level|[https://en.wikipedia.org/wiki/Ultium](https://en.wikipedia.org/wiki/Ultium)|
+| Chevrolet |Bolt|8 x 10s3p + 2 x 8s3p|~55/60<sup>f</sup>|3.65<sup>f</sup>||LG ES (Pouch Cell)|Cell Level|[https://allev.info/2023/12/chevy-bolt-ev-battery-disassembly/](https://allev.info/2023/12/chevy-bolt-ev-battery-disassembly/)|
+| Volkswagen |MEB (ID.4, ID.5, Buzz)|8s3p|234|29.6|12|LG ES (Europe) (NCM712 Pouch) <br> SK On (North America) <br> CATL, VWAC (China)"|82 kWh|"[https://www.evcreate.com/using-volkswagen-meb-battery-modules/](https://www.evcreate.com/using-volkswagen-meb-battery-modules/)  <br> [https://www.secondlife-evbatteries.com/products/vw-id-8s-battery-module-0z1915599h](https://www.secondlife-evbatteries.com/products/vw-id-8s-battery-module-0z1915599h)|
+| Ford |Mach-E SR (2023)||302<sup>d</sup>|3.2<sup>d</sup>||CATL (LFP Prismatic)|<sup>d</sup>Cell Level 75 kWh|[https://www.macheforum.com/site/threads/new-mach-e-lfp-battery-specs-revealed.26099/](https://www.macheforum.com/site/threads/new-mach-e-lfp-battery-specs-revealed.26099/)|
+| Rivian |R1T/R1S Standard/Large|360|43.56|9|Samsung SDI (NCA Cylindrical)|2170 cell 141 kWh|[https://www.motortrend.com/reviews/2022-rivian-r1t-electric-pickup-truck-second-drive-review/](https://www.motortrend.com/reviews/2022-rivian-r1t-electric-pickup-truck-second-drive-review/)  <br> [https://insideevs.com/news/500474/rivian-samsung-sdi-battery-supplier/](https://insideevs.com/news/500474/rivian-samsung-sdi-battery-supplier/)|
+| Tesla |Model S Plaid|22s72p||81.4|5|Panasonic (NCA Cylindrical)|18650 cell 100 kWh|"[https://insideevs.com/news/540380/tesla-models-plaid-battery-open/](https://insideevs.com/news/540380/tesla-models-plaid-battery-open/) <br> [https://insideevs.com/news/513181/samsungsdi-cylindrical-nca-cells-91nickel/](https://insideevs.com/news/513181/samsungsdi-cylindrical-nca-cells-91nickel/) <br>
+ [https://ev-database.org/car/1405/Tesla-Model-S-Plaid](https://ev-database.org/car/1405/Tesla-Model-S-Plaid)"|
+| Lucid Air |Grand Touring|10s30p|142.5|36.4|22|LG ES (NCM Cylindrical 2170)|112 kWh|[https://eepower.com/tech-insights/teardown-unpacking-the-lucid-motors-battery-pack/#](https://eepower.com/tech-insights/teardown-unpacking-the-lucid-motors-battery-pack/#) <br>
+ [https://insideevs.com/news/544455/lucid-air-118kwh-battery-112kwh/](https://insideevs.com/news/544455/lucid-air-118kwh-battery-112kwh/) <br>
+ [https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-02/16180-NSR-231214-003_SAE_Teardown%20Analysis%20of%20Flood-damaged%20Evs-tag.pdf](https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-02/16180-NSR-231214-003_SAE_Teardown%20Analysis%20of%20Flood-damaged%20Evs-tag.pdf)|
