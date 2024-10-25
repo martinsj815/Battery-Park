@@ -16,89 +16,27 @@ The N/P ratio is a crucial cell design parameter that can influences the utiliza
 |Si|1 < N/P < 2|- If the anode is highly overbalanced, only a small amount of silicon will be lithiated, resulting in a high anode potential at the end of charge. To reach the same full cell voltage, the cathode material may be overcharged, accelerating degradation due to side reactions in the cathode or electrolyte depletion. <br><br> - E.g.: NP ratio is 1.15-1.4 with NCM811 @ F. Reuter et al., Journal of The Electrochemical Society, 166, 14, A3265-A3271 (2019)|
 |Li metal|N/P ~ 1|- A thick Li metal anode (N/P > 2.5) provides a stable initial cycle. However, continued cycling leads to a thick SEI layer build-up, increasing cell polarization. When this becomes dominant, it results in electrolyte depletion and a sudden drop in capacity. Conversely, for N/P ratio close to 1, which effectively balances the lithium consumption rate, electrolyte depletion rate, and SEI accumulation rate under realistic conditions, cell polarization is minimized, extending cell cycle life. <br><br> - E.g.: N/P ratio is 1 with NMC622 @ C. Niu et al., Nature Energy, 6, 723-732 (2021)|
 
-## Header 2
+-------------------------------------------------------------------
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+# Cell connection layout (mS-nP)
 
-### Header 3
+- For high-voltage packs, cells are connected in series to form a series-connected module (SCM).
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+      $$ {v_{pack} = m_{series} * v_{cell}} $$
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+- For high-current packs, cells are connected in parallel to form a parallel-connected module (PCM). Capacity scales with the number of cells in parallel.
 
-#### Header 4
+      $$ {i_{pack} = n_{parallel} * i_{cell}} $$
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+  - Total internal resistance of the pack can be estimated from the cell assuming the same open-circuit voltage and internal resistance:
+ 
+      $$ {R_{pack} = /frac{m_{series}}{n_{parallel}} * R_{cell}} $$
 
-##### Header 5
+  - Total pack energy and power can also be calculated:
+ 
+      $$ {E_{pack} = m_{series} * n_{parallel} * Q_{cell} * v_{cell}} $$
+      $$ {P_{pack} = m_{series} * n_{parallel} * i_{cell} * v_{cell}} $$
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-
-_yay_
-
-[back](./)
+--------------------------------------------------------------------
+    
