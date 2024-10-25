@@ -126,7 +126,7 @@ description: From Chemistry to Technology
     <div class="column">
       - Energy stored in the cell is defined as the Capacity multiplied by Voltage and its unit is Wh and can be described as:
     <br>
-    $$ E = \int{0}{t_{d}} IV(t) dt $$
+    $$ E = \int_0^t_{d} IV(t) dt $$
     <br>  
       - Power is the rate at which how fast the energy can be delivered. Its unit is in Watts. Instantaneous power is simply Current times Voltage at the certain time during battery operation. Average power is defined as:
     <br>    
