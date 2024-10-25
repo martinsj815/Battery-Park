@@ -84,7 +84,7 @@ description: From Chemistry to Technology
 
     </div>
     <div class="column">
-      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/voltage%20curve.png?raw=true" alt="VP" style="width:500px; height:auto;">
+      <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Polarization.png?raw=true" alt="VP" style="width:500px; height:auto;">
     </div>
   </div>
 
