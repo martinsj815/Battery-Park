@@ -19,7 +19,9 @@ description: This is just another page
 </div>
 
 
+
 ## Table of comparison between cells tested in the lab scale vs manufactured in the industry
+
 
 
 ||Coin Cell 2032 (Lab, <10mAh) (Li metal)|Pouch Cell (Lab, 1Ah) (NCM622/Li)|Li-ion pouch cell (VW ID.3, 78Ah) (NCM622-811/Gr)|Panasonic NCR18650B, 3.3 Ah (NCA/Gr)|Tesla 4680, 22 Ah (NCM811/Gr)|Tesla Prismatic, 161.5 Ah (LFP/Gr)|BYD Blade Prismatic, 138 Ah (LFP/Gr)|
@@ -32,3 +34,32 @@ description: This is just another page
 |Average anode thickness (um)|&gt;250|50|115.3|95|~135|71|73*|
 |Electrode porosity (%)|&gt;40|34|22|||32||
 |Reference|Jun Liu, et al., “Pathways for practical high-energy long-cycling lithium metal batteries”, Nature Energy, 4, 180 (2019)|Shuru Chen, et al., “Critical Parameters for Evaluating Coin Cells and Pouch Cells of Rechargeable Li-metal Batteries”, Joule, 3, 1094-1105 (2019)|F. J. Günter, et al., “State of the Art of Lithium-Ion Pouch Cells in Automotive Applications: Cell Teardown and Characterization”, J. Electrochem. Soc., 169, 030515 (2022)|Markus Hagen, et al., “Lithium-Sulfur Cells: The Gap between the State-of-the-Art and the Requirements for High Energy Battery Cells”, Adv. Energy Mater., 5, 1401986 (2015)|"Manuel Ank, et al., “Lithium-Ion Cells in Automotive Applications: Tesla 4680 Cylindrical Cell Teardown and Characterization”, J. Electrochem. Soc., 170, 120536 (2023) <br> *From https://insideevs.com/news/598656/tesla-4680-battery-cell-specs/ (Note there are some gaps between two sources)"|Sandro Stock, et al., “Cell teardown and characterization of an automotive prismatic LFP battery”, Electrochim. Acta, 471, 143341 (2023)|"https://www.linkedin.com/pulse/dry-information-byd-blade-battery-internal-disassembly-photos-cbucc/ <br> Some parameter adopted from Xiao-Guang Yang, et al., 'Thermally modulated lithium iron phosphate batteries for mass-market electric vehicles', Nature Energy, 6, 176 (2021) <br>*Currently numbers are based on the estimation"|
+
+
+- As shown in the table above, in the research lab, a thinner cathode is often preferred over the thicker one (especially when uncalendared) for coin cell tests to display high capacity with good reversibility by preventing possible polarization and minimizing the degree of Li stripping and deposition. Further, using excessive amounts of electrolyte and employing thick Li metal anode in the coin cell may translate to good cycle performance without any concern of electrolyte drying out and/or Li ion supply running out during cycling. Although these measures make the data more appealing for publication, these are far from being practical in the industrial perspective owing to the loss of cell energy density.
+
+- The table below reveals that increasing the cathode coating, reducing Li thickness, and reducing the electrolyte amount is detrimental to capacity retention of the cell.
+
+
+# Influence of metrics on the coin cell (Li/NCM622) cycle performance
+
+
+|Areal capacity (mAh/cm<sup>2</sup>)|Li thickness (um)|N/P Ratio|Electrolyte weight/Cell Capacity (g/Ah)|Cycle life|Current Rate (mAh/cm<sup>2</sup>)|
+|:---|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
+|0.45|250|111|210|&gt;300|0.9|
+|2.5|50|4|35|73|0.5|
+|3.8|250|13|25|62|0.76|
+|1.4|50|7.1|60|37|0.28|
+|3.7|50|2.7|25|15|0.74|
+|3.8|250|13|3|12|0.76|
+|3.5|50|2.9|3|12|0.7|
+
+- The data from the following paper: Shuru Chen, et al., "Critical Parameters for Evaluating Coin Cells and Pouch Cells of Rechargeale Li-Metal Batteries", Joule, 3, 1094 (2019)
+
+
+# Will finding the new cathode material be the solution?
+
+- One metric to improve the cell performance is the cathode areal capacity. Apparently, simply increasing the coathing thickness will not do the job due to an increase in polarization and low material utilization. Hence, finding a new cathode system with high specific capacity is desirable, but this cannot easily be realized.
+
+
+
