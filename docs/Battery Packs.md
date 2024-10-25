@@ -109,7 +109,7 @@ description: Battery Chemistry to Technology
 Bottom- Source: medium.com / https://medium.com/batterybits/the-next-generation-battery-pack-design-from-the-byd-blade-cell-to-module-free-battery-pack-2b507d4746d1</figcaption>
     </figure>
   </div>
-</div
+</div>
 <br>
 
 # Reference
