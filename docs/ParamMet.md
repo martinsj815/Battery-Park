@@ -73,11 +73,12 @@ description: From Chemistry to Technology
        <br>
        $$ {R_{total} = R_0 + R_{ct} + R_p} $$
        <br>
-       * Ohmic Polarization (R<sub>o</sub>) arises from the resistance of connectivity's of individual cell components and contact between the cell components. Ohmic polarization appears instantaneously (≤ 10<sup>-6</sup>s) when current flows.
-        <br>
-       * Activation polarization (R<sub>ct</sub>) is related to the kinetics hinderances of the charge-transfer reactions at the electrode/electrolyte interfaces of anode and cathode. The buildup of the activation polarization are fast and can be identified by the voltage change on current interruption in a time frame of 10<sup>-2</sup>s - 10<sup>-4</sup>s.
        <br>
-        * Concentration polarization (R<sub>p</sub>) arises from limited diffusion of active species to and from the electrode surface to replace the reacted material to sustain the reaction. Diffusion limitations are relatively slow, and the buildup takes ≥ 10<sup>-2</sup>s to appear.
+       <ul> Ohmic polarization (R<sub>o</sub>) arises from the resistance of connectivity's of individual cell components and contact between the cell components. Ohmic polarization appears instantaneously (≤ 10<sup>-6</sup>s) when current flows. </ul>
+        <br>
+       <ul> Activation polarization (R<sub>ct</sub>) is related to the kinetics hinderances of the charge-transfer reactions at the electrode/electrolyte interfaces of anode and cathode. The buildup of the activation polarization are fast and can be identified by the voltage change on current interruption in a time frame of 10<sup>-2</sup>s - 10<sup>-4</sup>s.</ul>
+       <br>
+        </ul> Concentration polarization (R<sub>p</sub>) arises from limited diffusion of active species to and from the electrode surface to replace the reacted material to sustain the reaction. Diffusion limitations are relatively slow, and the buildup takes ≥ 10<sup>-2</sup>s to appear. </ul>
       <br>
       Although R<sub>o</sub>, R<sub>ct</sub> and R<sub>p</sub> are not completely distinct, they are expected to be the dominat contrituion to total resistance at their respective timescales.
      - These resistances are affected by temperature, state of charge, state of health, and applied current.
