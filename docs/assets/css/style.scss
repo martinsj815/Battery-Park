@@ -3,10 +3,11 @@
 
 @import 'jekyll-theme-cayman';
 
-.wrapper, .page-body, .container, body {
-    max-width: 1200px; /* Or any preferred width */
-    margin: 0 auto;
-    padding: 0 20px;
+.page-body, .container, .wrapper {
+    max-width: 2000px;  /* or whatever width you want */
+    width: 100%;  /* Ensures it takes up the full width of the container */
+    margin: 0 auto;  /* Center-aligns the container */
+    padding: 0 20px;  /* Adjust padding as needed */
 }
 
 
