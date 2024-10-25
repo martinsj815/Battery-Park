@@ -57,3 +57,5 @@ When designing the cell, the trade-off between energy density and power capabili
 |Separator|Thin|Thin|
 |Electrolyte|High ionic conductivity|High ionic conductivity|
 |Tabs|Thin/Narrow/A few tabs on each electrode (weight consideration)|Thick/Wide/Multiple tabs on each electrode (smoother ion transport)|
+
+<img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/power_vs_energy.png?raw=true' alt="Capacity" style="width:1000px; height:auto;">
