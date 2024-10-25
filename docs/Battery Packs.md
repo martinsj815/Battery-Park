@@ -17,8 +17,10 @@ description: Battery Chemistry to Technology
   <div class="column">
     <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Cell_module_pack.png?raw=true" alt="ECell" style="width:300px; height:auto;">
    <br>
-    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/e-tron%206%20quattro.png?raw=true" alt="ECell" style="width:300px; height:auto;">
-   Source: https://electrichasgoneaudi.net/models/q6-e-tron/drivetrain/battery/
+    <figure>
+  <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/e-tron%206%20quattro.png?raw=true' alt="Capacity" style="width:1000px; height:auto;">
+  <figcaption>Source: https://electrichasgoneaudi.net/models/q6-e-tron/drivetrain/battery/</figcaption>
+    </figure>
   </div>
 </div>
 
