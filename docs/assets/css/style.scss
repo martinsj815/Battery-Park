@@ -3,11 +3,12 @@
 
 @import 'jekyll-theme-cayman';
 
-.wrapper {
-    max-width: 1200px; /* or any width you prefer */
-    margin: 0 auto;    /* This will center the content */
-    padding: 0 20px;   /* Optional padding adjustment */
+.wrapper, .page-body, .container, body {
+    max-width: 1200px; /* Or any preferred width */
+    margin: 0 auto;
+    padding: 0 20px;
 }
+
 
 .header {
     border-bottom: 0.7px solid #E2E8F0;
