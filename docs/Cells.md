@@ -26,7 +26,7 @@ description: Battery Chemistry to Technology
 ## Primary vs Secondary
 <br>
 <br>
-- Primary Cell
+- <b>Primary Cell</b>
 
 <div class="columns">
   <div class="column">
@@ -38,7 +38,7 @@ description: Battery Chemistry to Technology
 </div>
 
 <br>
-- Secondary Cell
+- <b>Secondary Cell</b>
 
 <div class="columns">
   <div class="column">
