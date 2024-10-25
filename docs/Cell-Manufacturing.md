@@ -22,9 +22,43 @@ description: Battery Chemistry to Technology
    Rheology of the slurry (e.g. viscosity, flow yield stress, wettability) is to be considered for slurry optimization, especially for later coating different thickness. Slurry viscosity can be determined by factors such as total solid loading, active material size and relative amount, binder molecular weight, etc.
   </div>
   <div class="column">
-    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/mixing.png?raw=true" alt="Primary" style="width:300px; height:auto;">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/mixing.png?raw=true" alt="Mixing" style="width:300px; height:auto;">
   </div>
 </div>
+
+<br>
+<br>
+
+## Coating
+
+<div class="columns">
+  <div class="column">
+    - Cathode materials are coated onto an aluminum current collector while the anode materials are coated onto a copper electrode.
+   <br> 
+    - It is desirable that the surface tension of the mixed slurry matches with the surface energy of the current collector for proper wetting and coating.
+   <br> 
+   - Solvent-based coating techqniues are the following:
+   <br> 
+     * <b>Doctor blade coating</b>: Moving the doctor blade along the surface to even out the thickness and ensure that the active material is evenly distributed. It is most commonly used at the lab-scale for research.
+  <br>
+     * <b>Slot die coating</b>: Dispersing the slurry pushed through a narrow and adjustable slot-die onto the current collector. It is most widely used at the industrial level. Changing flow rate requires a change in pumping with good pressure drop control, which can be done by adjusting the slot gap using a thicker shim. Features are:
+  <br>
+  <b>a.</b> Advanced approach for enhanced thickness control, reproducibility, and flexibility
+  <b>b.</b> Capable of coating multiple layers of different materials simultaneously and deposition of gradient or patterned coatings
+  <b>c.</b> Key parameters: Slurry flow rate, pressure, temperature, shear, substrate speed, and distance from slot
+  <br>
+  - Solvent-free coating is under active investigation:
+  <br>
+      * <b>Maxwell-type</b> (developed by Maxwell Technologies): Include fibrillating that involves hot rolling and calendaring. (Narrow binder choice)
+      * <b>Electrostatic spraying</b>: Spraying dry mixture on a electrically grounded foil using an electrostatically charged gun. Followed by hot rolling for rigid adhesion with a current collector. (Wider binder choice)
+      * <b>Hot pressing & melting</b>: Applicable to solid-state polymer electrolytes.
+    
+  </div>
+  <div class="column">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Coating.png?raw=true" alt="Coating" style="width:300px; height:auto;">
+  </div>
+</div>
+
 
 
 
