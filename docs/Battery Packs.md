@@ -87,7 +87,7 @@ description: Battery Chemistry to Technology
 
 <br>
 
-# Battery Packing Efficiency
+# CMP, CTP, and CMB
 
 <div class="columns">
   <div class="column">
