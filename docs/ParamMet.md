@@ -129,7 +129,9 @@ description: From Chemistry to Technology
     $$ E = \int_0^{t_{d}} IV(t) \, dt $$
     <br>  
       - Power is the rate at which how fast the energy can be delivered. Its unit is in Watts. Instantaneous power is simply Current times Voltage at the certain time during battery operation. Average power is defined as:
-    <br>    
+    <br>
+    $$ P_{avg} = \frac{1}{t_d}*\int_0^{t_{d}} IV(t) \, dt $$
+    <br>  
       - Energy density and power density is energy and power normalized by the cell mass. Hence, the unit is Wh/kg and W/kg, respectively. Energy density can be approximated by multiplying specific capacity with nominal voltage.
     <br>
       - Typically, it is difficult for batteries to have both metrics met at the high end. High energy density demands the cell to be discharged at a slow rate for it to reach its maximum capacity and avoid polarization losses. However, since a lower current rate means longer discharge time, power density will be low. For high power density, energy density is likely sacrificed. This trend is illustrated in a Ragone Plot.
