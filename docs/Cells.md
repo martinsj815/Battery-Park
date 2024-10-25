@@ -5,9 +5,9 @@ description: Battery Chemistry to Technology
 ---
 
 # Cells
-
+<br>
 ## Electrochemical cell
-
+<br>
 > A cell is the smallest building unit of the battery. Main constituents are cathode and anode that are immersed in electrolyte and undergo reduction/oxidation. Cations migrate inside the electrolyte while electrons move through the external load to do the work.
 > 
 > When a cell is discharged, cations and electrons from the negative electrode move towards the positive electrode, where the reduction takes place (while the negative electrode is oxidized). Different from the case of primary batteries, this process can be reversed through charging in secondary rechargeable batteries.
@@ -21,9 +21,11 @@ description: Battery Chemistry to Technology
   </div>
 </div>
 
+<br>
+<br>
 ## Primary vs Secondary
-
-
+<br>
+<br>
 - Primary Cell
 
 <div class="columns">
@@ -35,7 +37,7 @@ description: Battery Chemistry to Technology
   </div>
 </div>
 
-
+<br>
 - Secondary Cell
 
 <div class="columns">
@@ -47,6 +49,8 @@ description: Battery Chemistry to Technology
   </div>
 </div>
 
+<br>
+<br>
 
 | Types        |Negative electrode|Positive electrode|Electrolyte|Representative reaction|Nominal Voltage (V)|Energy density (Wh/kg)|Reference|
 |:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|:------------|
@@ -57,10 +61,15 @@ description: Battery Chemistry to Technology
 | Sodium-ion   |                  |                  |        |   |3-3.1|75-200<sup> 8</sup>|8|
 | Zinc-ion     |Zn                |Mainly MnO<sub>2</sub>|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|1.3|60-80<sup> 9</sup>|9|
 
+<br>
+<br>
+
 ## Cell Formats
 - Cells can be constructed in many different form factors. These include button/coin-type, cylindrical, prismatic, and pouch-type.
 
 -------------------------------------------------------------------------------------
+<br>
+
 ### 1. Coin Cell
 
 <div class="columns">
@@ -74,6 +83,7 @@ description: Battery Chemistry to Technology
   </div>
 </div>
 
+<br>
 
 ### 2. Cylindrical Cell
 
@@ -88,6 +98,7 @@ description: Battery Chemistry to Technology
   </div>
 </div>
 
+<br>
 
 ## - Cylindrical Cell Comparison
 
@@ -99,6 +110,7 @@ description: Battery Chemistry to Technology
 | Capacity (mAh)| 3450 (LG INR1860-M36) / 3450 (LG INR1860-M36) |5000 (LG INR21700-M50)/5000 (Samsung INR21700-50E)/5000 (Panasonic NCR21700T)"|~23000 (Tesla 4680, estimate)|
 | Energy Density (Wh/kg)|248 (LG INR18650-M36) / 264 (Panasonic NCR18650G)|263 (LG CHEM INR21700-M50L)/261 (Samsung INR21700-50E)/271 (Panasonic NCR2170-M)|~23000 (Tesla 4680, estimate)|
 
+<br>
 
 ### 3. Prismatic Cell
 
@@ -111,6 +123,7 @@ description: Battery Chemistry to Technology
   </div>
 </div>
 
+<br>
 
 ### 4. Pouch Cell
 
@@ -123,7 +136,8 @@ description: Battery Chemistry to Technology
   </div>
 </div>
 
-
+<br>
+<br>
 
 -------------------------------------------------------------------------------------
 
