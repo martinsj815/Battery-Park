@@ -31,7 +31,7 @@ The N/P ratio is a crucial cell design parameter that can influences the utiliza
 
 - Total internal resistance of the pack can be estimated from the cell assuming the same open-circuit voltage and internal resistance:
  
-  $$ {R_{pack} = /frac{m_{series}}{n_{parallel}} * R_{cell}} $$
+  $$ {R_{pack} = \frac{m_{series}}{n_{parallel}} * R_{cell}} $$
 
 - Total pack energy and power can also be calculated:
  
