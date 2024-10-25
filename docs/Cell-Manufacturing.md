@@ -6,7 +6,7 @@ description: Battery Chemistry to Technology
 
 # Cell manufacturing process
 <br>
-<img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Cell%20manuf2.png?raw=true" alt="Primary" style="width:500px; height:auto;">
+<img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Cell%20manuf2.png?raw=true" alt="Primary" style="width:1000px; height:auto;">
 <br>
 
 ## Slurry Mixing
@@ -22,7 +22,7 @@ description: Battery Chemistry to Technology
    Rheology of the slurry (e.g. viscosity, flow yield stress, wettability) is to be considered for slurry optimization, especially for later coating different thickness. Slurry viscosity can be determined by factors such as total solid loading, active material size and relative amount, binder molecular weight, etc.
   </div>
   <div class="column">
-    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/mixing.png?raw=true" alt="Mixing" style="width:300px; height:auto;">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/mixing.png?raw=true" alt="Mixing" style="width:150px; height:auto;">
   </div>
 </div>
 
@@ -55,7 +55,7 @@ description: Battery Chemistry to Technology
     
   </div>
   <div class="column">
-    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Coating.png?raw=true" alt="Coating" style="width:300px; height:auto;">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Coating.png?raw=true" alt="Coating" style="width:150px; height:auto;">
   </div>
 </div>
 
