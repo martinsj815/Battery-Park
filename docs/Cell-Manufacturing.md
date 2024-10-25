@@ -188,4 +188,11 @@ description: Battery Chemistry to Technology
 
 <br>
 <br>
+----------------------------------------------------
+
+# References
+<br>
+- Jianlin Li, et al., "From Materials to Cell: State-of-the-Art and Prospective Technologies for Lithium-Ion Battery Electrode Processing", Chem. Review, 122, 903 (2022)
+- Yangtao Liu, et al., "Current and future lithium-ion battery manufacturing", iScience, 24, 102332 (2021)
+- W. Blake Hawley, et al., "Electrode Manufacturing for Lithium-Ion Batteries - Analysis of Current and Next Generation Processing", J. Energy Storage, 25, 100862 (2019)
 
