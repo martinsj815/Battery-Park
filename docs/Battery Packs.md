@@ -110,3 +110,8 @@ Bottom- Source: medium.com / https://medium.com/batterybits/the-next-generation-
     </figure>
   </div>
 </div
+<br>
+
+# Reference
+
+- Hendrik Löbberding, et al.,"From Cell to Battery System in BEVs: Analysis of System Packing Efficiency and Cell Types", World Electric Vehicle Journal, 11, 77 (2020)
