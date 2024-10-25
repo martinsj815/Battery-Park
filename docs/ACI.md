@@ -62,17 +62,16 @@ description: This is just another page
 # Will finding the new cathode material be the solution?
 
 - One metric to improve the cell performance is the cathode areal capacity. Apparently, simply increasing the coathing thickness will not do the job due to an increase in polarization and low material utilization. Hence, finding a new cathode system with high specific capacity is desirable, but this cannot easily be realized.
-
-
-
-
+<br>
+<br>
 <div class="columns">
   <div class="column">
     <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/LFPvsNCA.png?raw=true' alt="LFPNCA" style="width:500px; height:auto;">
   </div>
   <div class="column">
     The perspective article by Frith et al., shows nicely the graphical comparison of performance between the cells consisting of NCA/Graphite-SiOx and LFP/Graphite from theoretical estimation to the pack assembly level. (see the graph on the left.) At the theory level, the differences between the cells in both gravimetric (699 Wh/kg vs. 373 Wh/kg) and volumetric energy densities (2391 Wh/L vs. 1100 Wh/L) are huge; NCA/Graphite-SiOx outperforms LFP/Graphite by almost double. However, the margin gets gradually reduced during various stages of implementation- ultimately the energy densities are almost the same as each other after factoring in reversibility, lifetime, proportion of inactive components, cell-to-pack technology, and so on.
-
+    <br>
+    <br>
     <b>Reference:</b> James T Frith, et al., "A non-academic perspective on the future of lithium-based batteries",Nature Commun., 14, 420 (2023)
   </div>
 </div>
