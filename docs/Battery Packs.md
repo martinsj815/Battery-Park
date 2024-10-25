@@ -9,9 +9,11 @@ description: Battery Chemistry to Technology
 <div class="columns">
   <div class="column">
    - A battery Module is a collection of cells connected in series or in parallel to achieve desired voltage and energy density.
-   <br>
+  <br>
+  <br>
    - A battery Pack is consisting of one or more modules (or cells) that are connected (likely in series if modules), assembled with the electrical interconnects and packaged into a single unit. Packs are usually located at the lower part compartment of the EV chassis for better design flexibility and uniform weight distribution.
-   <br>
+  <br>
+  <br>
    - The pack usually requires monitoring, sensing (i.e. voltage and temperature), and control through effective battery management system for protection, stability, and safety of the battery.
   </div>
   <div class="column">
@@ -24,7 +26,22 @@ description: Battery Chemistry to Technology
   </div>
 </div>
 
-## Primary vs Secondary
+## Cell Interconnect
+
+<div class="columns">
+  <div class="column">
+   - Cells are connected electrically using the busbars (typically aluminum) via various joining technologies such as laser welding and ultrasonic wire bonding. Interconnect design can vary depending on the cell form factor. The schematics on the right show the single-sided interconnect of the cells.
+  <br>
+  <br>
+   - Older Tesla Models 3/S/X use wire bonding while newer Model S Plaid and Model Y use laser welding possibly for robustness of the connection, away from the breaking of the fragile wires.
+  <br>
+  <br>
+   - The pack usually requires monitoring, sensing (i.e. voltage and temperature), and control through effective battery management system for protection, stability, and safety of the battery.
+  </div>
+  <div class="column">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Cell%20Interconnect.png?raw=true" alt="ECell" style="width:300px; height:auto;">
+  </div>
+</div>
 
 
 - Primary Cell
