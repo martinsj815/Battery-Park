@@ -122,6 +122,8 @@ description: Battery Chemistry to Technology
   </div>
 </div>
 
+<br>
+<br>
 
 ## Stacking/Winding/Rolling
 
@@ -131,19 +133,59 @@ description: Battery Chemistry to Technology
    <br> 
   </div>
   <div class="column">
-    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Slitting.png?raw=true" alt="Coating" style="width:300px; height:auto;">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/stacking.png?raw=true" alt="Coating" style="width:300px; height:auto;">
   </div>
 </div>
 
+<br>
+<br>
 
+## Welding
 
-## - Comparing Cell Formats (for EV Batteries)
+<div class="columns">
+  <div class="column">
+    - Contact resistance determines the quality of welding between tabs and current collectors. Ultrasonic welding uses high frequency to induce heat under applied pressure for welding. Resistance spot welding uses materials’ resistance for heat generation to join materials. Laser welding happens through the adsorption of laser beams on the materials at the certain point to heat, melt, and create joints.
+   <br> 
+  </div>
+  <div class="column">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/welding.png?raw=true" alt="Coating" style="width:300px; height:auto;">
+  </div>
+</div>
 
-|              | 18650             | 21700 |4680          |
-|:-------------|:------------------|:------|:-------------|
-| Diameter (mm)| 18                | 21    |46            |
-| Height (mm)  | 65                | 70    |80            |
-| Nominal Voltage (V)| 3.6-3.7    | 3.6-3.7|3.7 (estimate)|
-| Capacity (mAh)| 3450 (LG INR1860-M36) / 3450 (LG INR1860-M36) |5000 (LG INR21700-M50)/5000 (Samsung INR21700-50E)/5000 (Panasonic NCR21700T)"|~23000 (Tesla 4680, estimate)|
-| Energy Density (Wh/kg)|248 (LG INR18650-M36) / 264 (Panasonic NCR18650G)|263 (LG CHEM INR21700-M50L)/261 (Samsung INR21700-50E)/271 (Panasonic NCR2170-M)|~23000 (Tesla 4680, estimate)|
+<br>
+<br>
+
+## Enclosing
+
+<div class="columns">
+  <div class="column">
+    -Enclosing includes packaging and electrolyte filling. The filling process is done in vacuum through the desired pressure level using a high-precision injection device and is followed by wetting.
+    <br>
+  -Electrolyte wetting is influenced by electrode surface energy and morphology (e.g. pore structures), electrolyte viscosity and surface tension, etc.
+   <br> 
+  </div>
+  <div class="column">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/enclosing.png?raw=true" alt="Coating" style="width:300px; height:auto;">
+  </div>
+</div>
+
+<br>
+<br>
+
+## Formation/Aging
+
+<div class="columns">
+  <div class="column">
+    -Formation of the dense and robust SEI layer is needed for good battery performance without over-consumption of the electrolyte, especially for the graphite anode with intercalation potential lower than the reduction potential of electrolyte. The formation and aging process can be delicate and time-consuming as the amount of electrolyte relative to the materials that it covers; temperature, and pressure need to be controlled.
+    <br>
+  -Gases generated from formation cycles are released before final sealing or re-sealing.
+   <br> 
+  </div>
+  <div class="column">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/formation.png?raw=true" alt="Coating" style="width:300px; height:auto;">
+  </div>
+</div>
+
+<br>
+<br>
 
