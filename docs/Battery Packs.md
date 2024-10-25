@@ -78,3 +78,35 @@ description: Battery Chemistry to Technology
 | Rivian |R1T/R1S Standard/Large|12s72p|360|43.56|9|Samsung SDI (NCA Cylindrical)|2170 cell 141 kWh|[https://www.motortrend.com/reviews/2022-rivian-r1t-electric-pickup-truck-second-drive-review/](https://www.motortrend.com/reviews/2022-rivian-r1t-electric-pickup-truck-second-drive-review/) <br> [https://insideevs.com/news/500474/rivian-samsung-sdi-battery-supplier/](https://insideevs.com/news/500474/rivian-samsung-sdi-battery-supplier/)|
 | Tesla |Model S Plaid|22s72p||81.4|5|Panasonic (NCA Cylindrical)|18650 cell 100 kWh|[https://insideevs.com/news/540380/tesla-models-plaid-battery-open/](https://insideevs.com/news/540380/tesla-models-plaid-battery-open/) <br> [https://insideevs.com/news/513181/samsungsdi-cylindrical-nca-cells-91nickel/](https://insideevs.com/news/513181/samsungsdi-cylindrical-nca-cells-91nickel/) <br> [https://ev-database.org/car/1405/Tesla-Model-S-Plaid](https://ev-database.org/car/1405/Tesla-Model-S-Plaid)|
 | Lucid Air |Grand Touring|10s30p|142.5|36.4|22|LG ES (NCM Cylindrical 2170)|112 kWh|[https://eepower.com/tech-insights/teardown-unpacking-the-lucid-motors-battery-pack/#](https://eepower.com/tech-insights/teardown-unpacking-the-lucid-motors-battery-pack/#) <br> [https://insideevs.com/news/544455/lucid-air-118kwh-battery-112kwh/](https://insideevs.com/news/544455/lucid-air-118kwh-battery-112kwh/) <br> [https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-02/16180-NSR-231214-003_SAE_Teardown%20Analysis%20of%20Flood-damaged%20Evs-tag.pdf](https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-02/16180-NSR-231214-003_SAE_Teardown%20Analysis%20of%20Flood-damaged%20Evs-tag.pdf)|
+
+----------------------------------------------------------------------------------------------------------
+
+# Battery Packing Efficiency
+
+- A geometric packing principle tells that the prismatic/pouch cells should yield packing efficiency of 90-95%, way higher than the cylindrical cell. However, it is noteworthy that the volumetric efficiency rate of the prismatic/pouch cells in actual EV batteries are lower and even comparable to those of cylindrical. According to the paper by Löbberding et al., after surveying 25 different BEVs (from 10 OEMs between 2010-2019), the average volume utilization rate is 0.353, which is only slightly higher than that of cylindrical (0.295). This discrepancy can be due to incorporation of auxiliary yet important parts such as interconnects, thermal management (i.e. cooling) system, BMS, and sensors. However, a caveat is that the average cell-to-module efficiency for prismatic/pouch cells is much higher than that of the cylindrical cell while the opposite is true for module-pack system efficiency comparison – making cell-to-system efficiencies all comparable after all. Hence, better space utilization has been sought after by many OEMs including BYD, CATL, and Tesla.
+
+<br>
+
+# Battery Packing Efficiency
+
+<div class="columns">
+  <div class="column">
+   - A In the traditional CMP (cell-module-pack) battery structure for the electric vehicle, module size varies among different electric vehicle manufacturers from Nissan’s 8-cell modules to Tesla’s 1584-cell modules. Increasing the module size has improved chassis space utilization to enhance battery capacity but the structure limits the space for other components, thus meeting the performance demand increasingly difficult.
+  <br>
+  <br>
+   - A battery Pack is consisting of one or more modules (or cells) that are connected (likely in series if modules), assembled with the electrical interconnects and packaged into a single unit. Packs are usually located at the lower part compartment of the EV chassis for better design flexibility and uniform weight distribution.
+  <br>
+  <br>
+   - CTP (cell-to-pack) technology improves the space utilization and energy density by skipping the modular arrangements of the cells. This direct integration proposed by CATL, according to their first-generation CTP, can increase space utilization by 15-20%, reduce the part numbers for a pack by 40%, and enhance energy density by 25-30% to 200 Wh/kg, when compared with CMP. Their third generation CTP has boosted volumetric utilization efficiency to 72% (from 55% in the first generation) and allowed energy density to reach 255 Wh/kg using Qilin NMC batteries.
+  <br>
+  <br>
+  - Cell integration to the body (CTB) is the new technology proposed by BYD by launching LFP blade battery and increases volumetric energy density by up to 50% and space utilization by over 50% when compared to the CMP predecessor.  
+  </div>
+  <div class="column">
+    <figure>
+  <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CATLCTP.png?raw=true' alt="CATLBYD" style="width:1000px; height:auto;">
+  <figcaption>Top- Source: CATL / https://www.catl.com/en/news/958.html
+Bottom- Source: medium.com / https://medium.com/batterybits/the-next-generation-battery-pack-design-from-the-byd-blade-cell-to-module-free-battery-pack-2b507d4746d1</figcaption>
+    </figure>
+  </div>
+</div
