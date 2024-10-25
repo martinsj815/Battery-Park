@@ -40,10 +40,10 @@ description: This is just another page
 
 - The table below reveals that increasing the cathode coating, reducing Li thickness, and reducing the electrolyte amount is detrimental to capacity retention of the cell.
 
-
+<br>
 # Influence of metrics on the coin cell (Li/NCM622) cycle performance
 
-
+<br>
 |Areal capacity (mAh/cm<sup>2</sup>)|Li thickness (um)|N/P Ratio|Electrolyte weight/Cell Capacity (g/Ah)|Cycle life|Current Rate (mAh/cm<sup>2</sup>)|
 |:---|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
 |0.45|250|111|210|&gt;300|0.9|
@@ -57,7 +57,7 @@ description: This is just another page
 - The data from the following paper: Shuru Chen, et al., "Critical Parameters for Evaluating Coin Cells and Pouch Cells of Rechargeale Li-Metal Batteries", Joule, 3, 1094 (2019)
 
 
-
+<br>
 
 # Will finding the new cathode material be the solution?
 
