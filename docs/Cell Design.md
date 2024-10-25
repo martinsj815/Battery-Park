@@ -22,21 +22,22 @@ The N/P ratio is a crucial cell design parameter that can influences the utiliza
 
 - For high-voltage packs, cells are connected in series to form a series-connected module (SCM).
 
-     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
-      $$ {v_{pack} = m_{series} * v_{cell}} $$
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+  $$ {v_{pack} = m_{series} * v_{cell}} $$
 
 - For high-current packs, cells are connected in parallel to form a parallel-connected module (PCM). Capacity scales with the number of cells in parallel.
 
-      $$ {i_{pack} = n_{parallel} * i_{cell}} $$
+  $$ {i_{pack} = n_{parallel} * i_{cell}} $$
 
   - Total internal resistance of the pack can be estimated from the cell assuming the same open-circuit voltage and internal resistance:
  
-      $$ {R_{pack} = /frac{m_{series}}{n_{parallel}} * R_{cell}} $$
+    $$ {R_{pack} = /frac{m_{series}}{n_{parallel}} * R_{cell}} $$
 
   - Total pack energy and power can also be calculated:
  
-      $$ {E_{pack} = m_{series} * n_{parallel} * Q_{cell} * v_{cell}} $$
-      $$ {P_{pack} = m_{series} * n_{parallel} * i_{cell} * v_{cell}} $$
+    $$ {E_{pack} = m_{series} * n_{parallel} * Q_{cell} * v_{cell}} $$
+    
+    $$ {P_{pack} = m_{series} * n_{parallel} * i_{cell} * v_{cell}} $$
 
 --------------------------------------------------------------------
     
