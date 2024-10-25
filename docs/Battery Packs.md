@@ -4,20 +4,21 @@ title: Battery Park
 description: Battery Chemistry to Technology
 ---
 
-# Cells
+# Battery Module/Pack 
 
-## Electrochemical cell
-
-> A cell is the smallest building unit of the battery. Main constituents are cathode and anode that are immersed in electrolyte and undergo reduction/oxidation. Cations migrate inside the electrolyte while electrons move through the external load to do the work.
-> 
-> When a cell is discharged, cations and electrons from the negative electrode move towards the positive electrode, where the reduction takes place (while the negative electrode is oxidized). Different from the case of primary batteries, this process can be reversed through charging in secondary rechargeable batteries.
- 
 <div class="columns">
   <div class="column">
-    Cells also include the separator that isolate the positive and negative electrodes to prevent the electron flow and permit only the ion flow and the current collectors - metal foils where the electrodes are attached and that conduct electrical current to the external circuit.
+   - A battery Module is a collection of cells connected in series or in parallel to achieve desired voltage and energy density.
+   <br>
+   - A battery Pack is consisting of one or more modules (or cells) that are connected (likely in series if modules), assembled with the electrical interconnects and packaged into a single unit. Packs are usually located at the lower part compartment of the EV chassis for better design flexibility and uniform weight distribution.
+   <br>
+   - The pack usually requires monitoring, sensing (i.e. voltage and temperature), and control through effective battery management system for protection, stability, and safety of the battery.
   </div>
   <div class="column">
-    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/cell%20image.png?raw=true" alt="ECell" style="width:300px; height:auto;">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Cell_module_pack.png?raw=true" alt="ECell" style="width:300px; height:auto;">
+   <br>
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/e-tron%206%20quattro.png?raw=true" alt="ECell" style="width:300px; height:auto;">
+   Source: https://electrichasgoneaudi.net/models/q6-e-tron/drivetrain/battery/
   </div>
 </div>
 
