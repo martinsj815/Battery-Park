@@ -40,7 +40,7 @@ description: From Chemistry to Technology
       - OCV represents the potential difference between the cathode and anode when no current or voltage is applied. Theoretically, assuming that all active electrode particles are fully connected by conductive additives and maintain electrical neutrality, the OCV can be calculated from the difference in Gibbs free energy between cathode and anode materials.
 
       <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
-      $$ V_OC = - frac{\lambda G}{nF} $$
+      $$ {V_{OC} = - \frac{\lambda G}{nF}} $$
       
       <br>
       - OCV is used as an important metric to analyze electrode health and identify potential issues such as internal resistance, and capacity fade by measuring deviations from the OCV.
@@ -67,10 +67,12 @@ description: From Chemistry to Technology
         <br>
       - When a circuit is connected or current begins to flow, the voltage drops, which is caused by electrode polarization due to the kinetic limits of the reaction and other electrochemical kinetical reactions to allow current to flow during the charge/discharge reaction. The degree of this polarization can be estimated from the voltage deviation (overpotential, η) from the open circuit voltage. The overpotential is given by 
         <br>
-        $$ \eta = V_T - V_OC $$
+        $$ {\eta = V_T - V_{OC}} $$
         <br>
       - During the reaction, the cell involves a series of physical, chemical, and electrochemical steps, including charge-transfer and charge transport reactions. The main sources of polarization can be categorized into three parts: 1) ohmic polarization (R<sub>O</sub>), 2) activation polarization (R<sub>CT</sub>), and 3) concentration polarization (R<sub>P</sub>).
-      <br>
+       <br>
+       $$ {R_total = R_0} $$
+       <br>
        * Ohmic Polarization (R<sub>o</sub>) arises from the resistance of connectivity's of individual cell components and contact between the cell components. Ohmic polarization appears instantaneously (≤ 10<sup>-6</sup>s) when current flows.
         <br>
        * Activation polarization (R<sub>ct</sub>) is related to the kinetics hinderances of the charge-transfer reactions at the electrode/electrolyte interfaces of anode and cathode. The buildup of the activation polarization are fast and can be identified by the voltage change on current interruption in a time frame of 10<sup>-2</sup>s - 10<sup>-4</sup>s.
