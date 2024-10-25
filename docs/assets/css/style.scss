@@ -10,6 +10,17 @@
   }
 }
 
+  @include medium {
+    padding: 0rem 0rem;
+    font-size: 1.1rem;
+  }
+
+  @include small {
+    padding: 0rem 0rem;
+    font-size: 1rem;
+  }
+  
+
 
 .header {
     border-bottom: 0.7px solid #E2E8F0;
