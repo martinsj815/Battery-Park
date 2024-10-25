@@ -39,5 +39,9 @@ The N/P ratio is a crucial cell design parameter that can influences the utiliza
     
   $$ {P_{pack} = m_{series} * n_{parallel} * i_{cell} * v_{cell}} $$
 
+
+<img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Cell%20in%20Series%20and%20Parallel.png?raw=true' alt="Capacity" style="width:1000px; height:auto;">
+
+
 --------------------------------------------------------------------
     
