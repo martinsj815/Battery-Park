@@ -58,4 +58,10 @@ When designing the cell, the trade-off between energy density and power capabili
 |Electrolyte|High ionic conductivity|High ionic conductivity|
 |Tabs|Thin/Narrow/A few tabs on each electrode (weight consideration)|Thick/Wide/Multiple tabs on each electrode (smoother ion transport)|
 
-<img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/power_vs_energy.png?raw=true' alt="Capacity" style="width:1000px; height:auto;">
+<img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/power_vs_energy.png?raw=true' alt="Capacity" style="width:800px; height:auto;">
+
+--------------------------------------------------------------------
+
+# Reference
+
+- Michael J. Lain, et al., "Design Strategies for High Power vs. High Energy Lithium Ion Cells", batteries, 5, 64 (2019)
