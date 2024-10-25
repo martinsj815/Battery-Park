@@ -44,6 +44,7 @@ description: This is just another page
 # Influence of metrics on the coin cell (Li/NCM622) cycle performance
 
 <br>
+
 |Areal capacity (mAh/cm<sup>2</sup>)|Li thickness (um)|N/P Ratio|Electrolyte weight/Cell Capacity (g/Ah)|Cycle life|Current Rate (mAh/cm<sup>2</sup>)|
 |:---|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
 |0.45|250|111|210|&gt;300|0.9|
