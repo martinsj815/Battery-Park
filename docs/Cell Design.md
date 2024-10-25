@@ -45,3 +45,15 @@ The N/P ratio is a crucial cell design parameter that can influences the utiliza
 
 --------------------------------------------------------------------
     
+# Designing cell: Energy density vs Power capability?
+
+- When designing the cell, the trade-off between energy density and power capability needs to be considered as both cannot go hand in hand. To increase the cell energy density, thicker and denser coating (i.e. higher material loading density) is needed for each electrode layer to store more energy. However, increasing the loading can engender many issues that raise the cell’s internal resistance including concentration polarization and uneven thermal distribution with possible ohmic heating. That is because low porosity, high tortuosity, and high thickness all translate to longer diffusion length of Li ions and possible bottleneck for Li flow in and out the cell. Hence power, which is the measure of how fast the energy can be driven in and out the electrode, is inevitably low for these cells.
+
+
+|Cell Component|Energy Cell|Power Cell|
+|:-------------|:-----------------|:-----------------|
+|Electrodes|High coating density & thickness <br> High active material loading percentage <br> Low porosity|Low coating density & thickness <br> Low active material loading percentage <br> High porosity|
+|Current collectors|Thinner - Improved adhesion|Thicker - Lower resistance|
+|Separator|Thin|Thin|
+|Electrolyte|High ionic conductivity|High ionic conductivity|
+|Tabs|Thin/Narrow/A few tabs on each electrode (weight consideration)|Thick/Wide/Multiple tabs on each electrode (smoother ion transport)|
