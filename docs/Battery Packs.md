@@ -39,7 +39,7 @@ description: Battery Chemistry to Technology
    - The pack usually requires monitoring, sensing (i.e. voltage and temperature), and control through effective battery management system for protection, stability, and safety of the battery.
   </div>
   <div class="column">
-    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Cell%20Interconnect.png?raw=true" alt="ECell" style="width:300px; height:auto;">
+    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Cell%20Interconnect.png?raw=true" alt="ECell" style="width:500px; height:auto;">
   </div>
 </div>
 
