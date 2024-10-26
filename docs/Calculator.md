@@ -59,11 +59,11 @@ description: Battery Chemistry to Technology
   <br>
   <br>
   Targeted capacity retention(%) <br>
-    <input type="number" id="numberInput3" placeholder="Enter a number" oninput="calculateCycleLife()">
+    <input type="number" id="numberInput3" placeholder="Enter a number" oninput="calculateRequiredCE()">
   <br>
   <br>
   Targeted cycle life <br>
-    <input type="number" id="numberInput4" placeholder="Enter a number" oninput="calculateCycleLife()">
+    <input type="number" id="numberInput4" placeholder="Enter a number" oninput="calculateRequiredCE()">
 </div>
 
 <!-- Output Section -->
