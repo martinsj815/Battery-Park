@@ -32,7 +32,7 @@ description: Battery Chemistry to Technology
 <body>
 
 <select id="operationSelect" onchange="showInputFields()">
-    <option value="cycle-life">Option 1: Cycle Life</option>
+    <option value="cycle-life" selected>Option 1: Cycle Life</option>
     <option value="ce">Option 2: Required CE</option>
 </select>
 
