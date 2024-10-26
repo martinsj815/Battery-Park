@@ -19,11 +19,8 @@ description: Battery Chemistry to Technology
       - This calculation estimates the cycle life when cell cycles at a specific columbic efficiency each cycle (Option1) or estimates the required coulombic efficiency to achieve achieve a target cycle life (Option2).
     <br>
     <br>
-      - This calculation assumes that the coulombic efficiency is maintained throughout the entire cycle. This estimation therefore provides an upper bound on cycle life (Option1) and a lower bound on coulombic efficiency (Option2).
-  <br>
-  <br>
-  <br>
-<b>Option 1: Estimate Cycle Number</b>
+      - This calculation assumes that the coulombic efficiency is maintained throughout the entire cycle. This estimation therefore provides an upper bound on cycle life (Option1) and a lower bound on coulombic efficiency (Option2). 
+
 <br>
 <br>
 <html lang="en">
@@ -39,7 +36,10 @@ description: Battery Chemistry to Technology
     <option value="ce">Option 2: Required CE</option>
 </select>
 
-if (operation === "cycle life") {
+<div id="cycleLifeInputs" style="display: none;">
+  <br>
+  <b>Option 1: Estimate Cycle Number</b>
+  <br>
   Coulombic Efficiency (%) <br>
     <!-- Number Input Box -->
     <input type="number" id="numberInput" placeholder="Enter a number" oninput="handleNumberOperations()">
@@ -49,28 +49,48 @@ if (operation === "cycle life") {
     <!-- Number Input Box -->
     <input type="number" id="numberInput2" placeholder="Enter a number" oninput="handleNumberOperations()">
 
-    <!-- Output Section -->
-    <p id="output"></p>
+</div>
 
-} else if (operation === "ce"){
+<div id="requiredCEInputs" style="display: none;">
+  <br>
+  <b>Option 2: Estimate Required Coulombic Efficiency (%) to achieve N cycle life</b>
+  <br>
   Targeted capacity retention(%) (%) <br>
     <input type="number" id="numberInput3" placeholder="Enter a number" oninput="handleNumberOperations()">
   <br>
   <br>
   Targeted cycle life <br>
     <input type="number" id="numberInput4" placeholder="Enter a number" oninput="handleNumberOperations()">
+</div>
 
-    <!-- Output Section -->
-    <p id="output"></p>
-}
-
-  <!-- JavaScript -->
-  <script>
+<!-- Output Section -->
+<p id="output"></p>
+    
+<!-- JavaScript -->
+<script>
     // Callback function to handle addition and multiplication on the input
-    function handleNumberOperations() {
+    function calculateCycleLife() {
       // Get the value of the input box and convert it to a number
       const input = parseFloat(document.getElementById('numberInput').value);
       const input2 = parseFloat(document.getElementById('numberInput2').value);
+
+      // Check if input is a valid number
+      if (!isNaN(input)) {
+        // Perform cycle number calculation
+        const cycnumValue = Math.round(Math.log10(input2/100)/Math.log10(input/100));   // Cycle Number
+
+        // Display the results
+        document.getElementById('output').textContent = 
+          `The cell is expected to undergo ${cycnumValue} cycles`;
+      } else {
+        document.getElementById('output').textContent = "Please enter a valid number.";
+      }
+    }
+  
+      function calculateCycleLife() {
+      // Get the value of the input box and convert it to a number
+      const input3 = parseFloat(document.getElementById('numberInput3').value);
+      const input4 = parseFloat(document.getElementById('numberInput4').value);
 
       // Check if input is a valid number
       if (!isNaN(input)) {
