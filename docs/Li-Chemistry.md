@@ -184,10 +184,10 @@ Solid electrolytes are attracting a large interest since it enables all-solid-st
   </div>
 </div>
 
+<br>
 |Type|Example System|Conductivity (mS/cm)|Advantages|Disadvantages|
 |:-------------|:-----------------|:-----------------|:----------|:----|
-|Sulfide (S-SIE)|- Li<sub>9.54</sub>Si<sub>1.74</sub>P<sub>1.44</sub>S<sub>11.7</sub>Cl<sub>0.3</sub> <br> - Li<sub>3.833</sub>Sn<sub>0.833</sub>As<sub>0.166</sub>S<sub>4</sub> <br> - Li<sub>6</sub>PS<sub>5</sub>Br - Li<sub>7</sub>P<sub>3</sub>S<sub>11</sub> <br> - Li<sub>10</sub>GeP<sub>2</sub>S<sub>12</sub>|0.1-50
-|- High ionic conductivity <br> - Good mechanical strength and flexibilty|- Sensitive to moisture and produces H<sub>2</sub>S from decomposition <br> - Poor compatibiltiy with cathode materials due to low oxidation stability|
+|Sulfide (S-SIE)|- Li<sub>9.54</sub>Si<sub>1.74</sub>P<sub>1.44</sub>S<sub>11.7</sub>Cl<sub>0.3</sub> <br> - Li<sub>3.833</sub>Sn<sub>0.833</sub>As<sub>0.166</sub>S<sub>4</sub> <br> - Li<sub>6</sub>PS<sub>5</sub>Br - Li<sub>7</sub>P<sub>3</sub>S<sub>11</sub> <br> - Li<sub>10</sub>GeP<sub>2</sub>S<sub>12</sub>|0.1-50|- High ionic conductivity <br> - Good mechanical strength and flexibilty|- Sensitive to moisture and produces H<sub>2</sub>S from decomposition <br> - Poor compatibiltiy with cathode materials due to low oxidation stability|
 |Oxide (O-SIE)|- Li<sub>7</sub>La<sub>3</sub>Zr<sub>2</sub>O<sub>12</sub> (Garnet) <br> - Li<sub>0.5</sub>La<sub>0.5</sub>TiO<sub>3</sub> (Perovskite) <br> - Li<sub>3</sub>OCl (Antiperovskite) <br> - LISICON, NASICON
 |0.01-1|- High chemical and electrochemical stability (High  electrochemical oxidation voltage) <br> - High mechanical strength|- Non-flexible and brittle <br> - Expensive large-scale production (require sintering process)|
 |Polymer|- LiTFSI-PEO(Mw=5000000) <br> - LiClO<sub>4</sub>-PEO(Mw=600000) <br> - LiClO<sub>4</sub>-PEO with 5wt&#37; elliptical TiO<sub>2</sub> rods <br> - LiClO4-PEO with 5wt&#37; elliptical TiO<sub>2</sub> rods|0.1-1 (at 90 <sup>o</sup>C)|170/150|- Stable with lithium metal <br> - Flexibility and low shear modulus <br> - Easy to produce a large area membrance|- Limited thermal stability <br> - Low ionic conductivity <br> - Low oxidation voltage (< 4V)|
