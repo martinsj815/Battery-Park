@@ -24,8 +24,8 @@ description: Battery Chemistry to Technology
   <br>
   
 Option 1: Estimate Cycle Number
-
-Coulombic Efficiency
+<br>
+<br>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -34,8 +34,14 @@ Coulombic Efficiency
 </head>
 <body>
 
+Coulombic Efficiency <br>
   <!-- Number Input Box -->
   <input type="number" id="numberInput" placeholder="Enter a number" oninput="handleNumberOperations()">
+<br>
+Capacity Retention (%) <br>
+  <!-- Number Input Box -->
+  <input type="number" id="numberInput" placeholder="Enter a number" oninput="handleNumberOperations()">
+  <input type="number" id="numberInput2" placeholder="Enter a number" oninput="handleNumberOperations()">
 
   <!-- Output Section -->
   <p id="output"></p>
@@ -46,16 +52,17 @@ Coulombic Efficiency
     function handleNumberOperations() {
       // Get the value of the input box and convert it to a number
       const input = parseFloat(document.getElementById('numberInput').value);
+      const input2 = parseFloat(document.getElementById('numberInput2').value);
 
       // Check if input is a valid number
       if (!isNaN(input)) {
         // Perform addition and multiplication
-        const addedValue = input + 10;       // Add 10 to the input
-        const multipliedValue = input * 5;   // Multiply the input by 5
+        const addedValue = input + input2;       // Add 10 to the input
+        const multipliedValue = input * input2;   // Multiply the input by 5
 
         // Display the results
         document.getElementById('output').textContent = 
-          `Added 10: ${addedValue}, Multiplied by 5: ${multipliedValue}`;
+          `Adding two numbers: ${addedValue}, Multiplying two numbers: ${multipliedValue}`;
       } else {
         document.getElementById('output').textContent = "Please enter a valid number.";
       }
