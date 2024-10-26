@@ -167,7 +167,7 @@ LiPF<sub>6</sub> has no outstanding property but has the combination of its well
 
 > LiPO<sub>2</sub>F<sub>2</sub> (only as additive): Forms the stable interface film both at cathode and anode surface upon cycling, preventing decomposition/oxidation of the electrolyte. This allows impedance control of both cathode and anode and is conducive to cathode structural stability, high-rate capability, and prolonged cell cycling.
 
-- Many 18650 cells use the mixture of LiPF<sub>6</sub> and LiFSI inside carbonate electrolyte as the electrolyte. For EV batteries with an increasingly rigorous demand for their performances, some of the salts above are investigated as additive to be mixed with LiPF6 electrolyte, for which its concentration varies from 5-10%.
+Many 18650 cells use the mixture of LiPF<sub>6</sub> and LiFSI inside carbonate electrolyte as the electrolyte. For EV batteries with an increasingly rigorous demand for their performances, some of the salts above are investigated as additive to be mixed with LiPF6 electrolyte, for which its concentration varies from 5-10%.
 
   
 # Solid Electrolyte
@@ -180,11 +180,17 @@ Solid electrolytes are attracting a large interest since it enables all-solid-st
       To be comparable to conventional liquid electrolytes, the ionic conductivity should be in the order of 1 mS/cm at room temperature. S-SIE has generally higher ionic conductivity and forms a good interface with electrodes due to its soft Li-S bonding properties, but has low electrochemical stability due to narrow electrochemical stability window. O-SEI has good electrochemical stability but is difficult to handle in large-scale production. While SPE has low ionic conductivity and requires high temperature to operate, it is stable with lithium metal, forming a good interface with the electrode, and can be applied in a current roll-to-roll process.
   </div>
   <div class="column">
-
-    
     <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/LiPS.png?raw=true' alt="Capacity" style="width:300px; height:auto;">
   </div>
 </div>
+
+|Type|Example System|Conductivity (mS/cm)|Advantages|Disadvantages|
+|:-------------|:-----------------|:-----------------|:----------|:----|
+|Sulfide (S-SIE)|- Li<sub>9.54</sub>Si<sub>1.74</sub>P<sub>1.44</sub>S<sub>11.7</sub>Cl<sub>0.3</sub> <br> - Li<sub>3.833</sub>Sn<sub>0.833</sub>As<sub>0.166</sub>S<sub>4</sub> <br> - Li<sub>6</sub>PS<sub>5</sub>Br - Li<sub>7</sub>P<sub>3</sub>S<sub>11</sub> <br> - Li<sub>10</sub>GeP<sub>2</sub>S<sub>12</sub>|0.1-50
+|- High ionic conductivity <br> - Good mechanical strength and flexibilty|- Sensitive to moisture and produces H<sub>2</sub>S from decomposition <br> - Poor compatibiltiy with cathode materials due to low oxidation stability|
+|Oxide (O-SIE)|- Li<sub>7</sub>La<sub>3</sub>Zr<sub>2</sub>O<sub>12</sub> (Garnet) <br> - Li<sub>0.5</sub>La<sub>0.5</sub>TiO<sub>3</sub> (Perovskite) <br> - Li<sub>3</sub>OCl (Antiperovskite) <br> - LISICON, NASICON
+|0.01-1|- High chemical and electrochemical stability (High  electrochemical oxidation voltage) <br> - High mechanical strength|- Non-flexible and brittle <br> - Expensive large-scale production (require sintering process)|
+|Polymer|- LiTFSI-PEO(Mw=5000000) <br> - LiClO<sub>4</sub>-PEO(Mw=600000) <br> - LiClO<sub>4</sub>-PEO with 5wt&#37; elliptical TiO<sub>2</sub> rods <br> - LiClO4-PEO with 5wt&#37; elliptical TiO<sub>2</sub> rods|0.1-1 (at 90 <sup>o</sup>C)|170/150|- Stable with lithium metal <br> - Flexibility and low shear modulus <br> - Easy to produce a large area membrance|- Limited thermal stability <br> - Low ionic conductivity <br> - Low oxidation voltage (< 4V)|
 
 
 ------------------------------------------------------------------------------
