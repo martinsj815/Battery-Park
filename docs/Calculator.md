@@ -38,6 +38,7 @@ Coulombic Efficiency <br>
   <!-- Number Input Box -->
   <input type="number" id="numberInput" placeholder="Enter a number" oninput="handleNumberOperations()">
 <br>
+<br>
 Capacity Retention (%) <br>
   <!-- Number Input Box -->
   <input type="number" id="numberInput2" placeholder="Enter a number" oninput="handleNumberOperations()">
@@ -61,7 +62,7 @@ Capacity Retention (%) <br>
 
         // Display the results
         document.getElementById('output').textContent = 
-          `Adding two numbers: ${addedValue}, Multiplying two numbers: ${multipliedValue}`;
+          `The cell is expected to undergo ${multipliedValue} cycles`;
       } else {
         document.getElementById('output').textContent = "Please enter a valid number.";
       }
