@@ -18,6 +18,7 @@ description: Battery Chemistry to Technology
   <br>
       - This calculation estimates the cycle life when cell cycles at a specific columbic efficiency each cycle (Option1) or estimates the required coulombic efficiency to achieve achieve a target cycle life (Option2).
     <br>
+    <br>
       - This calculation assumes that the coulombic efficiency is maintained throughout the entire cycle. This estimation therefore provides an upper bound on cycle life (Option1) and a lower bound on coulombic efficiency (Option2).
   <br>
   <br>
@@ -27,7 +28,9 @@ description: Battery Chemistry to Technology
     <br>
   <h2> Estimation of Pouch Cell Capacity and Energy Density </h2>
     <br>
+    <br>
   - This estimates the total cell capacity and eneryg density of the pouch cells.
+    <br>
     <br>
   - This calculation can support in pouch cell design. For example, with a designed electrode, this modeling can determine the number of stack layers and electrolyte amount to achive target cell apacity and energy density.
 </div>
@@ -37,11 +40,14 @@ description: Battery Chemistry to Technology
     <br>
   <h2> Estimation of Jelly-roll capacity and required electrode dimension </h2>
     <br>
+    <br>
   <div class="columns">
     <div class="column">
       - This calculator can be used to compute the metrics for the cylindrical cell consisting of a jelly-roll of cathode, anode, and separator sheets.
     <br>
+    <br>
       - This module calculates the electrode length required for customized cell components dimensions to fit the cylindrical cell case dimensions.
+    <br>
     <br>
      - By knowing the outer and inner diameters, which are determined based on the cylindrical cell case, the cylindrical cell electrode length can be calculated using the Archimedean sppral using polar coordinates using the following equation:
 
