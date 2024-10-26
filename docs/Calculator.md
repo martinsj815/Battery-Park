@@ -22,6 +22,38 @@ description: Battery Chemistry to Technology
       - This calculation assumes that the coulombic efficiency is maintained throughout the entire cycle. This estimation therefore provides an upper bound on cycle life (Option1) and a lower bound on coulombic efficiency (Option2).
   <br>
   <br>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Box with Callback</title>
+</head>
+<body>
+
+  <!-- Input Box -->
+  <input type="text" id="userInput" placeholder="Type something...">
+  
+  <!-- Button to trigger callback -->
+  <button onclick="displayInput()">Submit</button>
+
+  <!-- Output Section -->
+  <p id="output"></p>
+
+  <!-- JavaScript -->
+  <script>
+    // Callback function that triggers on button click
+    function displayInput() {
+      // Get the value of the input box
+      const input = document.getElementById('userInput').value;
+
+      // Display the value in the output paragraph
+      document.getElementById('output').textContent = `You typed: ${input}`;
+    }
+  </script>
+
+</body>
+</html>
 </div>
 
 <div id="Stacked Cell" class="tabcontent">
