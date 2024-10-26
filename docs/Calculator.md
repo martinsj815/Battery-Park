@@ -40,7 +40,6 @@ Coulombic Efficiency <br>
 <br>
 Capacity Retention (%) <br>
   <!-- Number Input Box -->
-  <input type="number" id="numberInput" placeholder="Enter a number" oninput="handleNumberOperations()">
   <input type="number" id="numberInput2" placeholder="Enter a number" oninput="handleNumberOperations()">
 
   <!-- Output Section -->
