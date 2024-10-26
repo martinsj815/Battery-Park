@@ -98,15 +98,14 @@ description: Battery Chemistry to Technology
 
 <br>
 
-## - Cylindrical Cell Comparison
+### - Cylindrical Cell Comparison
 
-|              | 18650             | 21700 |4680          |
+|              | Cylindrical Cell  | Prismatic Cell |Pouch Cell  |
 |:-------------|:------------------|:------|:-------------|
-| Diameter (mm)| 18                | 21    |46            |
-| Height (mm)  | 65                | 70    |80            |
-| Nominal Voltage (V)| 3.6-3.7    | 3.6-3.7|3.7 (estimate)|
-| Capacity (mAh)| 3450 (LG INR1860-M36) / 3450 (LG INR1860-M36) |5000 (LG INR21700-M50)/5000 (Samsung INR21700-50E)/5000 (Panasonic NCR21700T)"|~23000 (Tesla 4680, estimate)|
-| Energy Density (Wh/kg)|248 (LG INR18650-M36) / 264 (Panasonic NCR18650G)|263 (LG CHEM INR21700-M50L)/261 (Samsung INR21700-50E)/271 (Panasonic NCR2170-M)|~23000 (Tesla 4680, estimate)|
+| Pros| *Good thermal control / Mechanical stability <br> *Automated Manufacturing Possible|*Good battery space utilization/packing density <br> *Size flexibility |*Light-weight: High energy density <br> *Design flexible|
+| Cons|*Low packaging density <br> *Ancillary parts adding weights|*Lack of standardized design <br> *Manufacturing can be expensive|*Prone to damages due to lack of casing protection <br> *Design limitation - Customization needed <br> *Stack pressure needed"|
+| Capacity (Ah)|3-25|100-300|20-100|
+| Manufacturer|LG ES, Samsung SDI, SK On, Panasonic, Verkor|LG ES, Samsung SDI, CATL, Northvolt, BYD|LG ES, SK On, Verkor, Northvolt, BYD|
 
 <br>
 
