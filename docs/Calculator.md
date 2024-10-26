@@ -68,6 +68,14 @@ description: Battery Chemistry to Technology
     
 <!-- JavaScript -->
 <script>
+    // Show relevant input fields based on selected option
+  function showInputFields() {
+    const operation = document.getElementById("operationSelect").value;
+    document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
+    document.getElementById("requiredCEInputs").style.display = operation === "ce" ? "block" : "none";
+    document.getElementById("output").textContent = "";
+  }
+  
     // Callback function to handle addition and multiplication on the input
     function calculateCycleLife() {
       // Get the value of the input box and convert it to a number
@@ -87,7 +95,7 @@ description: Battery Chemistry to Technology
       }
     }
   
-      function calculateCycleLife() {
+      function calculateRequiredCE() {
       // Get the value of the input box and convert it to a number
       const input3 = parseFloat(document.getElementById('numberInput3').value);
       const input4 = parseFloat(document.getElementById('numberInput4').value);
