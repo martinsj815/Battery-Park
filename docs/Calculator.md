@@ -29,7 +29,8 @@ description: Battery Chemistry to Technology
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Number Input Operations</title>
 </head>
-<body>
+
+<body onload="showInputFields()">
 
 <select id="operationSelect" onchange="showInputFields()">
     <option value="cycle-life" selected>Option 1: Cycle Life</option>
@@ -95,7 +96,7 @@ description: Battery Chemistry to Technology
       }
     }
   
-      function calculateRequiredCE() {
+    function calculateRequiredCE() {
       // Get the value of the input box and convert it to a number
       const input3 = parseFloat(document.getElementById('numberInput3').value);
       const input4 = parseFloat(document.getElementById('numberInput4').value);
