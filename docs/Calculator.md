@@ -50,5 +50,11 @@ description: Battery Chemistry to Technology
     <br>
     <br>
      - By knowing the outer and inner diameters, which are determined based on the cylindrical cell case, the cylindrical cell electrode length can be calculated using the Archimedean sppral using polar coordinates using the following equation:
-
+    <br>
+    <br>
+    <ul> For the electrode length: </ul>
+    <br>
+    <br>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+      $$ L = \frac{a}{2pi}(\frac{phi_{1}}{2}) $$
   </div>
