@@ -10,7 +10,8 @@ description: Battery Chemistry to Technology
 <div class="columns">
   <div class="column">
     - There is a clear technological gap and lack of the bridge between academic research and industry requirements. Academic research uses the testing parameters and conditions that are much deviated from those that are adopted in commercial cell manufacturing. Adjusting key metrics including cathode/anode active loading, N/P ratio, and electrolyte amounts to the industrial demand is not the primary target in academia as its focus is not on reducing the cost but, instead, much on materials discovery and cell performance enhancement, which can be realized quite frequently through small cell assembly and testing. For EV battery suppliers and automative OEMs who need to meet requirements/demands on safety, cell energy density and power capability, it is also inevitable to think about the cost and energy consumption for manufacturing and hence are keen on making improvement in those metrics.
-
+<br>
+<br>
 - A table below shows how different are the research lab test metrics from those in the industry setting. The columns highlighted in pink/blue are those from the labs/industry.
   </div>
   <div class="column">
