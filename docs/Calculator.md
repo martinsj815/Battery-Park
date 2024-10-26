@@ -31,7 +31,7 @@ description: Battery Chemistry to Technology
 </head>
 <body>
 
-<select id="operationSelect" onchange="performOperation()">
+<select id="operationSelect" onchange="showInputFields()">
     <option value="cyclie life">Option 1: Cycle Life</option>
     <option value="ce">Option 2: Required CE</option>
 </select>
@@ -77,7 +77,7 @@ description: Battery Chemistry to Technology
   }
   
     // Callback function to handle addition and multiplication on the input
-    function calculateCycleLife() {
+  function calculateCycleLife() {
       // Get the value of the input box and convert it to a number
       const input = parseFloat(document.getElementById('numberInput').value);
       const input2 = parseFloat(document.getElementById('numberInput2').value);
