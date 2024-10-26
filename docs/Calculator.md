@@ -22,8 +22,8 @@ description: Battery Chemistry to Technology
       - This calculation assumes that the coulombic efficiency is maintained throughout the entire cycle. This estimation therefore provides an upper bound on cycle life (Option1) and a lower bound on coulombic efficiency (Option2).
   <br>
   <br>
-  
-Option 1: Estimate Cycle Number
+  <br>
+<b>Option 1: Estimate Cycle Number</b>
 <br>
 <br>
 <html lang="en">
