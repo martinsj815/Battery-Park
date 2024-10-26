@@ -37,8 +37,9 @@ description: Battery Chemistry to Technology
 
 <br>
 <br>
+
 | Types        |Negative electrode|Positive electrode|Electrolyte|Representative reaction|Nominal Voltage (V)|Energy density (Wh/kg)|Reference|
-|:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|:------------|
+|:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------|:------------|
 | Alkaline|Zn|MnO<sub>2</sub>|KOH|Zn(s)+2MnO<sub>2</sub>(s) &rArr; ZnO(s)+Mn<sub>2</sub>O<sub>3</sub>(s)|1.5|150<sup> 1</sup>|[1](https://www.sciencedirect.com/science/article/abs/pii/S0927796X20300516)|
 | Dry Cell   |Zn|Carbon|NH<sub>4</sub>Cl (or ZnCl<sub>2</sub>) (Paste)|Zn + 2 MnO<sub>2</sub> + 2 NH<sub>4</sub>Cl + H<sub>2</sub>O &rArr; ZnCl<sub>2</sub>+ Mn<sub>2</sub>O<sub>3</sub>+ 2 NH<sub>4</sub>OH (Zn + 2MnO<sub>2</sub> + H<sub>2</sub>O &rArr; Mn<sub>2</sub>O<sub>3</sub> + Zn(OH)<sub>2</sub>)|1.5|50-75<sup> 5</sup>|[2](https://www.sciencedirect.com/science/article/abs/pii/B9780444527455000617)|
 |Silver Oxide|Zn|Ag<sub>2</sub>O|NaOH (or KOH)|Zn(s) + H<sub>2</sub>O(l) + Ag<sub>2</sub>O(s) &rArr; Zn(OH)<sub>2</sub>(s) + 2Ag(s)|1.55|130<sup> 3</sup>|[3](https://en.wikipedia.org/wiki/Silver_oxide_battery#cite_note-duracell-1)|
@@ -109,13 +110,13 @@ description: Battery Chemistry to Technology
 
 ### - Cylindrical Cell Comparison
 
-|              | Cylindrical Cell  | Prismatic Cell |Pouch Cell  |
+|              | 18650             | 21700 |4680          |
 |:-------------|:------------------|:------|:-------------|
-| Pros| *Good thermal control / Mechanical stability <br> *Automated Manufacturing Possible|*Good battery space utilization/packing density <br> *Size flexibility |*Light-weight: High energy density <br> *Design flexible|
-| Cons|*Low packaging density <br> *Ancillary parts adding weights|*Lack of standardized design <br> *Manufacturing can be expensive|*Prone to damages due to lack of casing protection <br> *Design limitation - Customization needed <br> *Stack pressure needed|
-| Capacity (Ah)|3-25|100-300|20-100|
-| Manufacturer|LG ES, Samsung SDI, SK On, Panasonic, Verkor|LG ES, Samsung SDI, CATL, Northvolt, BYD|LG ES, SK On, Verkor, Northvolt, BYD|
-
+| Diameter (mm)| 18                | 21    |46            |
+| Height (mm)  | 65                | 70    |80            |
+| Nominal Voltage (V)| 3.6-3.7    | 3.6-3.7|3.7 (estimate)|
+| Capacity (mAh)| 3450 (LG INR1860-M36) / 3450 (LG INR1860-M36) |5000 (LG INR21700-M50)/5000 (Samsung INR21700-50E)/5000 (Panasonic NCR21700T)"|~23000 (Tesla 4680, estimate)|
+| Energy Density (Wh/kg)|248 (LG INR18650-M36) / 264 (Panasonic NCR18650G)|263 (LG CHEM INR21700-M50L)/261 (Samsung INR21700-50E)/271 (Panasonic NCR2170-M)|~23000 (Tesla 4680, estimate)|
 <br>
 
 ### 3. Prismatic Cell
@@ -149,11 +150,10 @@ description: Battery Chemistry to Technology
 
 ## - Comparing Cell Formats (for EV Batteries)
 
-|              | 18650             | 21700 |4680          |
+|              | Cylindrical Cell  | Prismatic Cell |Pouch Cell  |
 |:-------------|:------------------|:------|:-------------|
-| Diameter (mm)| 18                | 21    |46            |
-| Height (mm)  | 65                | 70    |80            |
-| Nominal Voltage (V)| 3.6-3.7    | 3.6-3.7|3.7 (estimate)|
-| Capacity (mAh)| 3450 (LG INR1860-M36) / 3450 (LG INR1860-M36) |5000 (LG INR21700-M50)/5000 (Samsung INR21700-50E)/5000 (Panasonic NCR21700T)"|~23000 (Tesla 4680, estimate)|
-| Energy Density (Wh/kg)|248 (LG INR18650-M36) / 264 (Panasonic NCR18650G)|263 (LG CHEM INR21700-M50L)/261 (Samsung INR21700-50E)/271 (Panasonic NCR2170-M)|~23000 (Tesla 4680, estimate)|
+| Pros| *Good thermal control / Mechanical stability <br> *Automated Manufacturing Possible|*Good battery space utilization/packing density <br> *Size flexibility |*Light-weight: High energy density <br> *Design flexible|
+| Cons|*Low packaging density <br> *Ancillary parts adding weights|*Lack of standardized design <br> *Manufacturing can be expensive|*Prone to damages due to lack of casing protection <br> *Design limitation - Customization needed <br> *Stack pressure needed|
+| Capacity (Ah)|3-25|100-300|20-100|
+| Manufacturer|LG ES, Samsung SDI, SK On, Panasonic, Verkor|LG ES, Samsung SDI, CATL, Northvolt, BYD|LG ES, SK On, Verkor, Northvolt, BYD|
 
