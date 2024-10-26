@@ -185,6 +185,7 @@ Solid electrolytes are attracting a large interest since it enables all-solid-st
 </div>
 
 <br>
+
 |Type|Example System|Conductivity (mS/cm)|Advantages|Disadvantages|
 |:-------------|:-----------------|:-----------------|:----------|:----|
 |Sulfide (S-SIE)|- Li<sub>9.54</sub>Si<sub>1.74</sub>P<sub>1.44</sub>S<sub>11.7</sub>Cl<sub>0.3</sub> <br> - Li<sub>3.833</sub>Sn<sub>0.833</sub>As<sub>0.166</sub>S<sub>4</sub> <br> - Li<sub>6</sub>PS<sub>5</sub>Br - Li<sub>7</sub>P<sub>3</sub>S<sub>11</sub> <br> - Li<sub>10</sub>GeP<sub>2</sub>S<sub>12</sub>|0.1-50|- High ionic conductivity <br> - Good mechanical strength and flexibilty|- Sensitive to moisture and produces H<sub>2</sub>S from decomposition <br> - Poor compatibiltiy with cathode materials due to low oxidation stability|
