@@ -34,7 +34,13 @@ description: Battery Chemistry to Technology
 </head>
 <body>
 
-Coulombic Efficiency <br>
+<select id="operationSelect" onchange="performOperation()">
+    <option value="cyclie life">Option 1: Cycle Life</option>
+    <option value="ce">Option 2: Required CE</option>
+</select>
+
+if (operation === "cycle life") {
+Coulombic Efficiency (%) <br>
   <!-- Number Input Box -->
   <input type="number" id="numberInput" placeholder="Enter a number" oninput="handleNumberOperations()">
 <br>
@@ -45,6 +51,18 @@ Capacity Retention (%) <br>
 
   <!-- Output Section -->
   <p id="output"></p>
+
+} else if (operation === "ce"){
+Targeted capacity retention(%) (%) <br>
+  <input type="number" id="numberInput3" placeholder="Enter a number" oninput="handleNumberOperations()">
+<br>
+<br>
+Targeted cycle life <br>
+  <input type="number" id="numberInput4" placeholder="Enter a number" oninput="handleNumberOperations()">
+
+  <!-- Output Section -->
+  <p id="output"></p>
+}
 
   <!-- JavaScript -->
   <script>
