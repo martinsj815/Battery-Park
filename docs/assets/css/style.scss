@@ -194,6 +194,12 @@
   transition: 0.3s;
 }
 
+.tab2 {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #000000;
+}
+
 .tab2 button {
   background-color: inherit;
   color: white;
