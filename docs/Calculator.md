@@ -44,12 +44,12 @@ description: Battery Chemistry to Technology
   <br>
   Coulombic Efficiency (%) <br>
     <!-- Number Input Box -->
-    <input type="number" id="numberInput" placeholder="Enter a number" oninput="handleNumberOperations()">
+    <input type="number" id="numberInput" placeholder="Enter a number" oninput="calculateCycleLife()">
   <br>
   <br>
   Capacity Retention (%) <br>
     <!-- Number Input Box -->
-    <input type="number" id="numberInput2" placeholder="Enter a number" oninput="handleNumberOperations()">
+    <input type="number" id="numberInput2" placeholder="Enter a number" oninput="calculateCycleLife()">
 
 </div>
 
@@ -59,11 +59,11 @@ description: Battery Chemistry to Technology
   <br>
   <br>
   Targeted capacity retention(%) <br>
-    <input type="number" id="numberInput3" placeholder="Enter a number" oninput="handleNumberOperations()">
+    <input type="number" id="numberInput3" placeholder="Enter a number" oninput="calculateCycleLife()">
   <br>
   <br>
   Targeted cycle life <br>
-    <input type="number" id="numberInput4" placeholder="Enter a number" oninput="handleNumberOperations()">
+    <input type="number" id="numberInput4" placeholder="Enter a number" oninput="calculateCycleLife()">
 </div>
 
 <!-- Output Section -->
@@ -102,11 +102,9 @@ description: Battery Chemistry to Technology
       const input4 = parseFloat(document.getElementById('numberInput4').value);
 
       // Check if input is a valid number
-      if (!isNaN(input)) {
+      if (!isNaN(input3) && !isNaN(input4)) {
         // Perform cycle number calculation
         const cycnumValue = Math.round(Math.log10(input4/100)/Math.log10(input3/100));   // Cycle Number
-
-        // Display the results
         document.getElementById('output').textContent = 
           `The cell is expected to undergo ${cycnumValue} cycles`;
       } else {
