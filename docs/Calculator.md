@@ -22,39 +22,49 @@ description: Battery Chemistry to Technology
       - This calculation assumes that the coulombic efficiency is maintained throughout the entire cycle. This estimation therefore provides an upper bound on cycle life (Option1) and a lower bound on coulombic efficiency (Option2).
   <br>
   <br>
-  <!DOCTYPE html>
+  
+Option 1: Estimate Cycle Number
+
+Coulombic Efficiency
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Input Box with Callback</title>
+  <title>Number Input Operations</title>
 </head>
 <body>
 
-  <!-- Input Box -->
-  <input type="text" id="userInput" placeholder="Type something...">
-  
-  <!-- Button to trigger callback -->
-  <button onclick="displayInput()">Submit</button>
+  <!-- Number Input Box -->
+  <input type="number" id="numberInput" placeholder="Enter a number" oninput="handleNumberOperations()">
 
   <!-- Output Section -->
   <p id="output"></p>
 
   <!-- JavaScript -->
   <script>
-    // Callback function that triggers on button click
-    function displayInput() {
-      // Get the value of the input box
-      const input = document.getElementById('userInput').value;
+    // Callback function to handle addition and multiplication on the input
+    function handleNumberOperations() {
+      // Get the value of the input box and convert it to a number
+      const input = parseFloat(document.getElementById('numberInput').value);
 
-      // Display the value in the output paragraph
-      document.getElementById('output').textContent = `You typed: ${input}`;
+      // Check if input is a valid number
+      if (!isNaN(input)) {
+        // Perform addition and multiplication
+        const addedValue = input + 10;       // Add 10 to the input
+        const multipliedValue = input * 5;   // Multiply the input by 5
+
+        // Display the results
+        document.getElementById('output').textContent = 
+          `Added 10: ${addedValue}, Multiplied by 5: ${multipliedValue}`;
+      } else {
+        document.getElementById('output').textContent = "Please enter a valid number.";
+      }
     }
   </script>
 
 </body>
 </html>
-</div>
+
 
 <div id="Stacked Cell" class="tabcontent">
     <br>
