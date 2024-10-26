@@ -110,7 +110,6 @@ Bottom- Source: medium.com / https://medium.com/batterybits/the-next-generation-
     </figure>
   </div>
 </div>
-</div>
 
 <br>
 
