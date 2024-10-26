@@ -40,28 +40,28 @@ description: Battery Chemistry to Technology
 </select>
 
 if (operation === "cycle life") {
-Coulombic Efficiency (%) <br>
-  <!-- Number Input Box -->
-  <input type="number" id="numberInput" placeholder="Enter a number" oninput="handleNumberOperations()">
-<br>
-<br>
-Capacity Retention (%) <br>
-  <!-- Number Input Box -->
-  <input type="number" id="numberInput2" placeholder="Enter a number" oninput="handleNumberOperations()">
+  Coulombic Efficiency (%) <br>
+    <!-- Number Input Box -->
+    <input type="number" id="numberInput" placeholder="Enter a number" oninput="handleNumberOperations()">
+  <br>
+  <br>
+  Capacity Retention (%) <br>
+    <!-- Number Input Box -->
+    <input type="number" id="numberInput2" placeholder="Enter a number" oninput="handleNumberOperations()">
 
-  <!-- Output Section -->
-  <p id="output"></p>
+    <!-- Output Section -->
+    <p id="output"></p>
 
 } else if (operation === "ce"){
-Targeted capacity retention(%) (%) <br>
-  <input type="number" id="numberInput3" placeholder="Enter a number" oninput="handleNumberOperations()">
-<br>
-<br>
-Targeted cycle life <br>
-  <input type="number" id="numberInput4" placeholder="Enter a number" oninput="handleNumberOperations()">
+  Targeted capacity retention(%) (%) <br>
+    <input type="number" id="numberInput3" placeholder="Enter a number" oninput="handleNumberOperations()">
+  <br>
+  <br>
+  Targeted cycle life <br>
+    <input type="number" id="numberInput4" placeholder="Enter a number" oninput="handleNumberOperations()">
 
-  <!-- Output Section -->
-  <p id="output"></p>
+    <!-- Output Section -->
+    <p id="output"></p>
 }
 
   <!-- JavaScript -->
