@@ -53,12 +53,10 @@ description: Battery Chemistry to Technology
     <br>
     <br>
     <ul> For the electrode length: </ul>
-    <br>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
       $$ L = \frac{a}{2\pi}(\frac{\phi_{1}}{2}\sqrt{\phi_1^2+1}+\frac{1}{2}ln(\phi_1+\sqrt{\phi_1^2+1}-\frac{\phi_{0}}{2}\sqrt{\phi_0^2+1}-\frac{1}{2}ln(\phi_0+\sqrt{\phi_0^2+1}) $$
     <br>
     <ul> Number of windings: </ul>
-    <br>
        $$ N_W = \frac{\phi_{1} - \phi_{0}}{2\pi} $$
     <br>
       where $$\phi$$ = rotation angle and $$a$$ = electrode thickness (double-sided cathode thickness + double-sided anode thickness + 2*separator thickness)
