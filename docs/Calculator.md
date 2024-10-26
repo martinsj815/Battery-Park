@@ -44,12 +44,12 @@ description: Battery Chemistry to Technology
   <br>
   Coulombic Efficiency (%) <br>
     <!-- Number Input Box -->
-    <input type="number" id="numberInput" placeholder="Enter a number" oninput="calculateCycleLife()">
+    <input type="number" id="numberInput" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
   <br>
   <br>
   Capacity Retention (%) <br>
     <!-- Number Input Box -->
-    <input type="number" id="numberInput2" placeholder="Enter a number" oninput="calculateCycleLife()">
+    <input type="number" id="numberInput2" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
 
 </div>
 
@@ -59,11 +59,11 @@ description: Battery Chemistry to Technology
   <br>
   <br>
   Targeted capacity retention(%) <br>
-    <input type="number" id="numberInput3" placeholder="Enter a number" oninput="calculateRequiredCE()">
+    <input type="number" id="numberInput3" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
   <br>
   <br>
   Targeted cycle life <br>
-    <input type="number" id="numberInput4" placeholder="Enter a number" oninput="calculateRequiredCE()">
+    <input type="number" id="numberInput4" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
 </div>
 
 <!-- Output Section -->
