@@ -194,6 +194,18 @@
   transition: 0.3s;
 }
 
+.tab2 button {
+  background-color: inherit;
+  color: white;
+  font-size: 1.3rem;
+  float: left;
+  width: 33.3%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 0;
+  transition: 0.3s;
+}
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
