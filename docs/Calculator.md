@@ -60,4 +60,8 @@ description: Battery Chemistry to Technology
     <ul> Number of windings: </ul>
     <br>
        $$ N_W = \frac{\phi_{1} - \phi_{0}}{2\pi} $$
+    <br>
+      where $$\phi$$ = rotation angle and $$a$$ = electrode thickness (double-sided cathode thickness + double-sided anode thickness + 2*separator thickness)
+    <br>
+      Note: cell outer diameter = $$\frac{a}{\pi}\phi_1$$ & cell inner diameter = $$\frac{a}{\pi}\phi_0$$ 
   </div>
