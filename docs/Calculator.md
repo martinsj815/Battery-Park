@@ -54,7 +54,6 @@ description: Battery Chemistry to Technology
     <br>
     <ul> For the electrode length: </ul>
     <br>
-    <br>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
-      $$ L = \frac{a}{2pi}(\frac{phi_{1}}{2}) $$
+      $$ L = \frac{a}{2\pi}(\frac{\phi_{1}}{2}) $$
   </div>
