@@ -4,7 +4,7 @@ title: Battery Park
 description: Battery Chemistry to Technology
 ---
 
-<div class="tab">
+<div class="tab2">
   <button class="tablinks" onclick="openCity(event, 'Single Cell')"><b>Single Cell</b></button>
   <button class="tablinks" onclick="openCity(event, 'Stacked Cell')"><b>Stacked Cell</b></button>
   <button class="tablinks" onclick="openCity(event, 'Jelly-Roll Cell')"><b>Jelly-Roll Cell</b></button>
