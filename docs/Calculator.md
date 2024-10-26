@@ -56,13 +56,12 @@ Capacity Retention (%) <br>
 
       // Check if input is a valid number
       if (!isNaN(input)) {
-        // Perform addition and multiplication
-        const addedValue = input + input2;       // Add 10 to the input
-        const multipliedValue = input * input2;   // Multiply the input by 5
+        // Perform cycle number calculation
+        const cycnumValue = log10(input2/100)/log10(input/100);   // Cycle Number
 
         // Display the results
         document.getElementById('output').textContent = 
-          `The cell is expected to undergo ${multipliedValue} cycles`;
+          `The cell is expected to undergo ${cycnumValue} cycles`;
       } else {
         document.getElementById('output').textContent = "Please enter a valid number.";
       }
