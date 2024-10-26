@@ -57,7 +57,7 @@ Capacity Retention (%) <br>
       // Check if input is a valid number
       if (!isNaN(input)) {
         // Perform cycle number calculation
-        const cycnumValue = Math.log10(input2/100)/Math.log10(input/100);   // Cycle Number
+        const cycnumValue = Math.Round(Math.log10(input2/100)/Math.log10(input/100));   // Cycle Number
 
         // Display the results
         document.getElementById('output').textContent = 
