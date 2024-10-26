@@ -36,6 +36,15 @@ description: Battery Chemistry to Technology
 </div>
 
 <br>
+<br>
+| Types        |Negative electrode|Positive electrode|Electrolyte|Representative reaction|Nominal Voltage (V)|Energy density (Wh/kg)|Reference|
+|:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|:------------|
+| Alkaline|Zn|MnO<sub>2</sub>|KOH|Zn(s)+2MnO<sub>2</sub>(s) &rArr; ZnO(s)+Mn<sub>2</sub>O<sub>3</sub>(s)|1.5|150<sup> 1</sup>|[1](https://www.sciencedirect.com/science/article/abs/pii/S0927796X20300516)|
+| Dry Cell   |Zn|Carbon|NH<sub>4</sub>Cl (or ZnCl<sub>2</sub>) (Paste)|Zn + 2 MnO<sub>2</sub> + 2 NH<sub>4</sub>Cl + H<sub>2</sub>O &rArr; ZnCl<sub>2</sub>+ Mn<sub>2</sub>O<sub>3</sub>+ 2 NH<sub>4</sub>OH (Zn + 2MnO<sub>2</sub> + H<sub>2</sub>O &rArr; Mn<sub>2</sub>O<sub>3</sub> + Zn(OH)<sub>2</sub>)|1.5|50-75<sup> 5</sup>|[2](https://www.sciencedirect.com/science/article/abs/pii/B9780444527455000617)|
+|Silver Oxide|Zn|Ag<sub>2</sub>O|NaOH (or KOH)|Zn(s) + H<sub>2</sub>O(l) + Ag<sub>2</sub>O(s) &rArr; Zn(OH)<sub>2</sub>(s) + 2Ag(s)|1.55|130<sup> 3</sup>|[3](https://en.wikipedia.org/wiki/Silver_oxide_battery#cite_note-duracell-1)|
+
+<br>
+<br>
 - <b>Secondary Cell</b>
 
 <div class="columns">
@@ -52,11 +61,11 @@ description: Battery Chemistry to Technology
 
 | Types        |Negative electrode|Positive electrode|Electrolyte|Representative reaction|Nominal Voltage (V)|Energy density (Wh/kg)|Reference|
 |:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|:------------|
-| Lead-Acid    |Pb|PbO<sub>2</sub> |H<sub>2</sub>SO<sub>4</sub>|Pb(s)+PbO<sub>2</sub>(s)+2H<sub>2</sub>SO<sub>4</sub>(aq) &hArr;2PbSO<sub>4</sub>(s)+2H<sub>2</sub>O(l)|2.1|30-50 <sup> 4</sup>|4|
-| Nickel-Cd    |Cd|NiO(OH)         |KOH|2NiO(OH)(s) + Cd(s) + 2H<sub>2</sub>O(l) &hArr; 2Ni(OH)<sub>2</sub>(s) + Cd(OH)<sub>2</sub>(s)|1.2|50-75<sup> 5</sup>|5|
-| Nickel-Metal Hydride|Intermetallic compound (M)|NiO(OH)|KOH|MH + NiO(OH)(s) <--> M + Ni(OH)<sub>2</sub>(s)|1.2|60-120<sup> 6</sup>|6|
+| Lead-Acid    |Pb|PbO<sub>2</sub> |H<sub>2</sub>SO<sub>4</sub>|Pb(s)+PbO<sub>2</sub>(s)+2H<sub>2</sub>SO<sub>4</sub>(aq) &hArr;2PbSO<sub>4</sub>(s)+2H<sub>2</sub>O(l)|2.1|30-50 <sup> 4</sup>|[4](https://link.springer.com/article/10.1007/s12209-019-00231-w)|
+| Nickel-Cd    |Cd|NiO(OH)         |KOH|2NiO(OH)(s) + Cd(s) + 2H<sub>2</sub>O(l) &hArr; 2Ni(OH)<sub>2</sub>(s) + Cd(OH)<sub>2</sub>(s)|1.2|50-75<sup> 5</sup>|[5](https://link.springer.com/article/10.1007/s12209-019-00231-w)|
+| Nickel-Metal Hydride|Intermetallic compound (M)|NiO(OH)|KOH|MH + NiO(OH)(s) <--> M + Ni(OH)<sub>2</sub>(s)|1.2|60-120<sup> 6</sup>|[6](https://en.wikipedia.org/wiki/Nickel%E2%80%93metal_hydride_battery)|
 | Lithium-ion  |Carbon(Graphite), Silicon, Li Metal|Layered Oxides (LCO, LMO, LFP, NCM,...)|Wide variety liquid w/ low to high concentration solute|LiMO<sub>2</sub>(s) + C(s) <--> Li<sub>x</sub>C(s) + Li<sub>1-x</sub>MO<sub>2</sub>(s)|3.2-4|100-300<sup> 7</sup>|7|
-| Sodium-ion   |                  |                  |        |   |3-3.1|75-200<sup> 8</sup>|8|
+| Sodium-ion   |                  |                  |        |   |3-3.1|75-200<sup> 8</sup>|[8](https://en.wikipedia.org/wiki/Sodium-ion_battery)|
 | Zinc-ion     |Zn                |Mainly MnO<sub>2</sub>|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|Liquid (Aqueous/Non-aqueous) w/ sulfate, TFSI, triflate solute|1.3|60-80<sup> 9</sup>|9|
 
 <br>
@@ -103,7 +112,7 @@ description: Battery Chemistry to Technology
 |              | Cylindrical Cell  | Prismatic Cell |Pouch Cell  |
 |:-------------|:------------------|:------|:-------------|
 | Pros| *Good thermal control / Mechanical stability <br> *Automated Manufacturing Possible|*Good battery space utilization/packing density <br> *Size flexibility |*Light-weight: High energy density <br> *Design flexible|
-| Cons|*Low packaging density <br> *Ancillary parts adding weights|*Lack of standardized design <br> *Manufacturing can be expensive|*Prone to damages due to lack of casing protection <br> *Design limitation - Customization needed <br> *Stack pressure needed"|
+| Cons|*Low packaging density <br> *Ancillary parts adding weights|*Lack of standardized design <br> *Manufacturing can be expensive|*Prone to damages due to lack of casing protection <br> *Design limitation - Customization needed <br> *Stack pressure needed|
 | Capacity (Ah)|3-25|100-300|20-100|
 | Manufacturer|LG ES, Samsung SDI, SK On, Panasonic, Verkor|LG ES, Samsung SDI, CATL, Northvolt, BYD|LG ES, SK On, Verkor, Northvolt, BYD|
 
