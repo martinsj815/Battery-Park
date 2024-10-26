@@ -59,5 +59,5 @@ description: Battery Chemistry to Technology
     <br>
     <ul> Number of windings: </ul>
     <br>
-       $$ N_W = \frac{\phi_{1} - \phi_{0}}{2\pi} 
+       $$ N_W = \frac{\phi_{1} - \phi_{0}}{2\pi} $$
   </div>
