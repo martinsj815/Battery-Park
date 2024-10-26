@@ -32,13 +32,14 @@ description: Battery Chemistry to Technology
 <body>
 
 <select id="operationSelect" onchange="showInputFields()">
-    <option value="cyclie life">Option 1: Cycle Life</option>
+    <option value="cyclie-life">Option 1: Cycle Life</option>
     <option value="ce">Option 2: Required CE</option>
 </select>
 
 <div id="cycleLifeInputs" style="display: none;">
   <br>
   <b>Option 1: Estimate Cycle Number</b>
+  <br>
   <br>
   Coulombic Efficiency (%) <br>
     <!-- Number Input Box -->
@@ -55,7 +56,8 @@ description: Battery Chemistry to Technology
   <br>
   <b>Option 2: Estimate Required Coulombic Efficiency (%) to achieve N cycle life</b>
   <br>
-  Targeted capacity retention(%) (%) <br>
+  <br>
+  Targeted capacity retention(%) <br>
     <input type="number" id="numberInput3" placeholder="Enter a number" oninput="handleNumberOperations()">
   <br>
   <br>
