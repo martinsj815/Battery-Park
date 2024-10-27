@@ -100,30 +100,28 @@ description: Battery Chemistry to Technology
     Note: cell outer diameter = \(\frac{a}{\pi}\phi_1\) & cell inner diameter = \(\frac{a}{\pi}\phi_0\) 
     <br>
     <br>
+    <br>
+    <br>
     <div class="columns">
         <div class="column">    
             <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/cylindrical%20spiral_wcaption.png?raw=true' alt="AcademicIndustry" style="width:500px; height:auto;">
         </div>
-        <div class="column">    
-            <select id="operationSelect" onchange="showInputFields()">
-                <input type="number" id="numberInput" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+        <div class="column">   
+                <h3> Cathode Parameters </h3>
                 <br>
+                <br>
+                Coating thickness (single-side) <br>
+                <input type="number" id="cthi" placeholder="Enter a number" step="0.1" oninput="calculateDimension()">
                 <br>
                 Capacity Retention (%) <br>
-                <input type="number" id="numberInput2" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
-    </div>
-    <div id="requiredCEInputs" style="display: none;">
-        <br>
-        <b>Option 2: Estimate Required Coulombic Efficiency (%) to achieve N cycle life</b>
-        <br>
-        <br>
-        Targeted capacity retention(%) <br>
-        <input type="number" id="numberInput3" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
-        <br>
-        <br>
-        Targeted cycle life <br>
-        <input type="number" id="numberInput4" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
-    </div>
+                <input type="number" id="capret" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                <br>
+                Discharge capacity of active material (mAh/g)
+                <input type="number" id="discapa" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                <br>
+                Density of electrode material (g/cm<sup>3</sup>)
+                <input type="number" id="densa" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+        </div>
   <!-- Output Section -->
       <p id="output"></p>
         </div>        
