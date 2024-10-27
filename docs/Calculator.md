@@ -64,7 +64,7 @@ description: Battery Chemistry to Technology
 
 <div id="Stacked Cell" class="tabcontent">
     <br>
-  <h2> Estimation of Pouch Cell Capacity and Energy Density </h2>
+    <h2> Estimation of Pouch Cell Capacity and Energy Density </h2>
     <br>
     <br>
   - This estimates the total cell capacity and eneryg density of the pouch cells.
@@ -76,31 +76,31 @@ description: Battery Chemistry to Technology
 
 <div id="Jelly-Roll Cell" class="tabcontent">
     <br>
-  <h2> Estimation of Jelly-roll capacity and required electrode dimension </h2>
+    <h2> Estimation of Jelly-roll capacity and required electrode dimension </h2>
     <br>
     <br>
-  <div class="columns">
-    <div class="column">
+    <div class="columns">
+        <div class="column">
       - This calculator can be used to compute the metrics for the cylindrical cell consisting of a jelly-roll of cathode, anode, and separator sheets.
-    <br>
-    <br>
+        <br>
+        <br>
       - This module calculates the electrode length required for customized cell components dimensions to fit the cylindrical cell case dimensions.
-    <br>
-    <br>
+        <br>
+        <br>
      - By knowing the outer and inner diameters, which are determined based on the cylindrical cell case, the cylindrical cell electrode length can be calculated using the Archimedean sppral using polar coordinates using the following equation:
-    <br>
-    <br>
-    <ul> For the electrode length: </ul>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
-      $$ L = \frac{a}{2\pi}(\frac{\phi_{1}}{2}\sqrt{\phi_1^2+1}+\frac{1}{2}ln(\phi_1+\sqrt{\phi_1^2+1}-\frac{\phi_{0}}{2}\sqrt{\phi_0^2+1}-\frac{1}{2}ln(\phi_0+\sqrt{\phi_0^2+1}) $$
-    <br>
-    <ul> Number of windings: </ul>
-       $$ N_W = \frac{\phi_{1} - \phi_{0}}{2\pi} $$
-    <br>
-      where &Phi; = rotation angle and a = electrode thickness (double-sided cathode thickness + double-sided anode thickness + 2*separator thickness)
-    <br>
-      Note: cell outer diameter = $\frac{a}{\pi}\phi_1$ & cell inner diameter = $\frac{a}{\pi}\phi_0$ 
-      </div>
+        <br>
+        <br>
+        <ul> For the electrode length: </ul>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+          $$ L = \frac{a}{2\pi}(\frac{\phi_{1}}{2}\sqrt{\phi_1^2+1}+\frac{1}{2}ln(\phi_1+\sqrt{\phi_1^2+1}-\frac{\phi_{0}}{2}\sqrt{\phi_0^2+1}-\frac{1}{2}ln(\phi_0+\sqrt{\phi_0^2+1}) $$
+        <br>
+        <ul> Number of windings: </ul>
+           $$ N_W = \frac{\phi_{1} - \phi_{0}}{2\pi} $$
+        <br>
+          where &Phi; = rotation angle and a = electrode thickness (double-sided cathode thickness + double-sided anode thickness + 2*separator thickness)
+        <br>
+          Note: cell outer diameter = $\frac{a}{\pi}\phi_1$ & cell inner diameter = $\frac{a}{\pi}\phi_0$ 
+        </div>
   </div>
 </div>
 
