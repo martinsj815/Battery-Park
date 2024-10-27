@@ -88,7 +88,7 @@ description: Battery Chemistry to Technology
       // Check if input is a valid number
       if (!isNaN(input) && !isNaN(input2)) {
         // Perform cycle number calculation
-        const cycnumValue = Math.round(Math.log10(input2/100)/Math.log10(input/100));   // Cycle Number
+        const cycnumValue = Math.round(Math.log(input2/100)/Math.log(input/100));   // Cycle Number
         document.getElementById('output').textContent = 
           `The cell is expected to undergo ${cycnumValue} cycles`;
       } else {
