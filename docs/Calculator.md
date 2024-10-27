@@ -96,15 +96,44 @@ description: Battery Chemistry to Technology
 </div>
 
 <!-- JavaScript -->
-  <script>
+<script>
     let xValues = [];
     let yValues = [];
+    let xTrace = [];
+    let yTrace = [];
+
+    function generatePlot() {
+        for (let ce = 99; ce <= 100; ce += 0.01) {
+            const capacityRetention = 80;
+            const cycleNumber = Math.round(Math.log(capacityRetention/100) / Math.log(ce/100));
+            fullXValues.push(ce);
+            fullYValues.push(cycleNumber);
+        }
+
+        Plotly.newPlot('myPlot', [
+            {
+                x: xValues,
+                y: yValues,
+                mode: 'lines',
+                type: 'scatter',
+                name: 'Full Cycle Life Data'
+            },
+            {
+                x: xTrace,
+                y: yTrace,
+                mode: 'markers',
+                type: 'scatter',
+                name: 'User Calculated Point',
+                marker: { color: 'red', size: 8 }
+            }
+        ]);
+    }
       
     function showInputFields() {
-      const operation = document.getElementById("operationSelect").value;
-      document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
-      document.getElementById("requiredCEInputs").style.display = operation === "ce" ? "block" : "none";
-      document.getElementById("output").textContent = "";
+        const operation = document.getElementById("operationSelect").value;
+        document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
+        document.getElementById("requiredCEInputs").style.display = operation === "ce" ? "block" : "none";
+        document.getElementById("output").textContent = "";
     }
   
     function calculateCycleLife() {
@@ -120,9 +149,9 @@ description: Battery Chemistry to Technology
             xValues.push(input2);
             yValues.push(cycnumValue);
             Plotly.react('myPlot', [{ x: xValues, y: yValues, mode: 'lines+markers', type: 'scatter', name: 'Cycle Life Data' }], {
-                title: 'Coulombic Efficiency vs Capacity Retention',
-                xaxis: { title: 'Capacity Retention' },
-                yaxis: { title: 'Cycle Number' }
+                title: 'Capacity Retention vs Cycle Number',
+                xaxis: { title: 'Cycle Number' },
+                yaxis: { title: 'Capacity Retention' }
             });
             
         } else {
