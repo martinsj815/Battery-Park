@@ -106,11 +106,10 @@ description: Battery Chemistry to Technology
         xValues = [];
         yValues = [];
         
-        for (let ce = 99; ce <= 100; ce += 0.01) {
-            const capacityRetention = 80;
+        for (let ce > 99; ce <= 100; ce += 0.01) {
             const cycleNumber = Math.round(Math.log(capacityRetention/100) / Math.log(ce/100));
-            fullXValues.push(ce);
-            fullYValues.push(cycleNumber);
+            xValues.push(cycleNumber);
+            yValues.push(capacityRetention);
         }
 
         Plotly.newPlot('myPlot', [
@@ -150,8 +149,8 @@ description: Battery Chemistry to Technology
             const cycnumValue = Math.round(Math.log(input2/100)/Math.log(input/100));   
             document.getElementById('output').textContent = `The cell is expected to undergo ${cycnumValue} cycles`;
             
-            xTrace.push(input2);
-            yTrace.push(cycnumValue);
+            xTrace.push(cycnumValue);
+            yTrace.push(input2);
             
             Plotly.react('myPlot', [
                 { x: xValues, y: yValues, mode: 'lines', type: 'scatter', name: 'Full Cycle Life Data' },
