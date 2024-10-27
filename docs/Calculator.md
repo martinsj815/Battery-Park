@@ -11,7 +11,8 @@ description: Battery Chemistry to Technology
     <title>Number Input Operations</title>
 </head>
 
-<body onload="openCity(event, 'Single Cell'); onload="showInputFields()">
+<body> 
+<!--<body onload="openCity(event, 'Single Cell'); onload="showInputFields()">*/-->
 
 <div class="tab2">
   <button class="tablinks" onclick="openCity(event, 'Single Cell')"><b>Single Cell</b></button>
