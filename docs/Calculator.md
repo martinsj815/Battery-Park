@@ -44,7 +44,7 @@ description: Battery Chemistry to Technology
         <br>
         <br>
         Capacity Retention (%) <br>
-        <input type="number" id="numberInput2" placeholder="Enter a number" step="1" oninput="calculateCycleLife()">
+        <input type="number" id="numberInput2" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
     </div>
     <div id="requiredCEInputs" style="display: none;">
         <br>
@@ -56,7 +56,7 @@ description: Battery Chemistry to Technology
         <br>
         <br>
         Targeted cycle life <br>
-        <input type="number" id="numberInput4" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
+        <input type="number" id="numberInput4" placeholder="Enter a number" step="1" oninput="calculateRequiredCE()">
     </div>
         <!-- Output Section -->
     <h3 id="output"></h3>
