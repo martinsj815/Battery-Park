@@ -60,8 +60,9 @@ description: Battery Chemistry to Technology
     </div>
         <!-- Output Section -->
     <p id="output"></p>
+    <br><br>
 -----------------------------------------------------------
-    <br>
+    <br><br>
     <div>
         <h2> Estimation of Li-metal thickness </h2>
         <br>
@@ -78,8 +79,7 @@ description: Battery Chemistry to Technology
     <br>
     <!-- Output Section -->
     <p id="output2"></p>
-    
-<br><br>
+    <br><br>
 </div>
 
 <div id="Stacked Cell" class="tabcontent">
@@ -236,11 +236,11 @@ description: Battery Chemistry to Technology
       
       function calculateLithickness() {
         // Get the value of the input box and convert it to a number
-        const LiAC2 = parseFloat(document.getElementById('LiAC').value);
+        const LiAC = parseFloat(document.getElementById('LiAC').value);
 
         // Check if input is a valid number
         if !isNaN(LiAC2) {
-          const T_Li = 10000*LiAC2*6.941/(26801.4814*0.534); 
+          const T_Li = 10000*LiAC*6.941/(26801.4814*0.534); 
           document.getElementById('output2').textContent = 
             `With areal capacity of Li, ${T_Li}%um Li is stripped or deposited`;
         } else {
