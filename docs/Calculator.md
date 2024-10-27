@@ -97,7 +97,24 @@ description: Battery Chemistry to Technology
 
 <!-- JavaScript -->
   <script>
-      // Show relevant input fields based on selected option
+    let xValues = [];
+    let yValues = [];
+
+    // Plotly chart setup
+    var data = [{
+        x: xValues,
+        y: yValues,
+        mode: 'lines+markers',
+        type: 'scatter',
+        name: 'Cycle Life Data'
+    }];
+    var layout = {
+        title: 'Estimation Plot',
+        xaxis: { title: 'Input (%)' },
+        yaxis: { title: 'Cycle Life' }
+    };
+    Plotly.newPlot('myPlot', data, layout);
+      
     function showInputFields() {
       const operation = document.getElementById("operationSelect").value;
       document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
@@ -105,7 +122,6 @@ description: Battery Chemistry to Technology
       document.getElementById("output").textContent = "";
     }
   
-    // Callback function to handle addition and multiplication on the input
     function calculateCycleLife() {
         // Get the value of the input box and convert it to a number
         const input = parseFloat(document.getElementById('numberInput').value);
@@ -146,22 +162,6 @@ description: Battery Chemistry to Technology
         }
       }
 
-        // Define data traces
-      var trace1 = { x: [input2], y: [cycnumValue], mode: 'lines+markers', type: 'scatter', name: 'Data Line 1' };
-
-      var data = [trace1];  // Initial data to show
-
-      var layout = { title: 'Interactive Plot', xaxis: { title: 'X Axis Label' }, yaxis: { title: 'Y Axis Label' } };
-
-      // Initial plot render
-      Plotly.newPlot('myPlot', data, layout);
-
-      // Function to update plot based on dropdown selection
-      function updatePlot() {
-          var selectedData = document.getElementById('dataSelector').value;
-          var dataToPlot = (selectedData === 'trace1') ? [trace1];
-          Plotly.react('myPlot', dataToPlot, layout);
-      }
           window.onload = showInputFields;
       
     </script>
