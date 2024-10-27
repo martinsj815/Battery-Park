@@ -58,8 +58,11 @@ description: Battery Chemistry to Technology
         Targeted cycle life <br>
         <input type="number" id="numberInput4" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
     </div>
+    
   <!-- Output Section -->
       <p id="output"></p>
+
+</div>
 
 <div id="Stacked Cell" class="tabcontent">
     <br>
