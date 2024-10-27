@@ -104,9 +104,9 @@ description: Battery Chemistry to Technology
       // Check if input is a valid number
       if (!isNaN(input3) && !isNaN(input4)) {
         // Perform cycle number calculation
-        const cycnumValue = Math.round(Math.log10(input4/100)/Math.log10(input3/100));   // Cycle Number
+        const ReqceValue = Math.round(100*(Math.exp(Math.log10(input3/100)/input4))); 
         document.getElementById('output').textContent = 
-          `The cell is expected to undergo ${cycnumValue} cycles`;
+          `The cell is required ${ReqceValue}% CE to achieve 100 cycle life`;
       } else {
         document.getElementById('output').textContent = "Please enter a valid number.";
       }
