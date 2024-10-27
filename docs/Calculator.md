@@ -114,7 +114,7 @@ description: Battery Chemistry to Technology
   </script>
 
 </body>
-</html>
+</div>
 
 
 <div id="Stacked Cell" class="tabcontent">
