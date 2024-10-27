@@ -62,16 +62,18 @@ description: Battery Chemistry to Technology
     <p id="output"></p>
 -----------------------------------------------------------
     <br>
-    <h2> Estimation of Li-metal thickness </h2>
-    <br>
-      - This calculation estimates the amount of Li deposition or exfoliation during charge/discharge reactions depending on the applied areal current density.
-    <br>
-    <br>
-      - Note that this is theoretical estimation and calculated by assuming perfectly flat and smooth film of Li.
-    <br>
-    <br>
-    Li Areal Capacity [mAh/cm<sup>2</sup>] <br>
-    <input type="number" id="LiAC" placeholder="Enter a number" step="0.01" oninput="calculateLithickness()">
+    <div>
+        <h2> Estimation of Li-metal thickness </h2>
+        <br>
+          - This calculation estimates the amount of Li deposition or exfoliation during charge/discharge reactions depending on the applied areal current density.
+        <br>
+        <br>
+          - Note that this is theoretical estimation and calculated by assuming perfectly flat and smooth film of Li.
+        <br>
+        <br>
+        Li Areal Capacity [mAh/cm<sup>2</sup>] <br>
+        <input type="number" id="LiAC" placeholder="Enter a number" step="0.01" oninput="calculateLithickness()">
+    </div>
     <br>
     <br>
     <!-- Output Section -->
