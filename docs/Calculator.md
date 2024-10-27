@@ -58,9 +58,8 @@ description: Battery Chemistry to Technology
         Targeted cycle life <br>
         <input type="number" id="numberInput4" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
     </div>
-    
-<br><br>
-
+        <!-- Output Section -->
+    <p id="output"></p>
 -----------------------------------------------------------
     <br>
     <h2> Estimation of Li-metal thickness </h2>
@@ -76,7 +75,7 @@ description: Battery Chemistry to Technology
     <br>
     <br>
     <!-- Output Section -->
-    <p id="output"></p>
+    <p id="output2"></p>
     
 <br><br>
 </div>
@@ -240,10 +239,10 @@ description: Battery Chemistry to Technology
         // Check if input is a valid number
         if !isNaN(LiAC2) {
           const T_Li = 10000*LiAC2*6.941/(26801.4814*0.534); 
-          document.getElementById('output').textContent = 
+          document.getElementById('output2').textContent = 
             `With areal capacity of Li, ${T_Li}%um Li is stripped or deposited`;
         } else {
-          document.getElementById('output').textContent = "Please enter a valid number.";
+          document.getElementById('output2').textContent = "Please enter a valid number.";
         }
       }
       
