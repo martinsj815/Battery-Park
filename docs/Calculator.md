@@ -103,6 +103,9 @@ description: Battery Chemistry to Technology
     let yTrace = [];
 
     function generatePlot() {
+        xValues = [];
+        yValues = [];
+        
         for (let ce = 99; ce <= 100; ce += 0.01) {
             const capacityRetention = 80;
             const cycleNumber = Math.round(Math.log(capacityRetention/100) / Math.log(ce/100));
@@ -154,14 +157,11 @@ description: Battery Chemistry to Technology
                 { x: xValues, y: yValues, mode: 'lines', type: 'scatter', name: 'Full Cycle Life Data' },
                 { x: xTrace, y: yTrace, mode: 'markers', type: 'scatter', name: 'User Calculated Point', marker: { color: 'red', size: 8 } }
             ]);
-            
         } else {
           document.getElementById('output').textContent = "Please enter a valid number.";
         }
-      }
-
-    
-      function calculateRequiredCE() {
+    }
+    function calculateRequiredCE() {
         const input3 = parseFloat(document.getElementById('numberInput3').value);
         const input4 = parseFloat(document.getElementById('numberInput4').value);
 
@@ -173,9 +173,8 @@ description: Battery Chemistry to Technology
         } else {
           document.getElementById('output').textContent = "Please enter a valid number.";
         }
-      }
-      
-      function calculateLithickness() {
+    }
+    function calculateLithickness() {
         const LiAC = parseFloat(document.getElementById('LiAC').value);
 
         if (!isNaN(LiAC)) {
