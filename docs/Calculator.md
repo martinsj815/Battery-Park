@@ -97,8 +97,15 @@ description: Battery Chemistry to Technology
 
 <!-- JavaScript -->
   <script>
-    let xValues = [];
-    let yValues = [];
+    let cycnum = "Math.round(Math.log(input2/100)/Math.log(input/100))";
+    
+    const inputValues = [];
+    const input2Values = [];  
+    const yValues = [];
+    for (let input2 > 0; input2 <= 150) {
+        xValues.push(input2);
+        yValues.push(eval(cycnum));
+    }
 
     // Plotly chart setup
     var data = [{
@@ -109,9 +116,9 @@ description: Battery Chemistry to Technology
         name: 'Cycle Life Data'
     }];
     var layout = {
-        title: 'Estimation Plot',
-        xaxis: { title: 'Input (%)' },
-        yaxis: { title: 'Cycle Life' }
+        title: 'Coulombic Efficiency vs Capacity Retention',
+        xaxis: { title: 'Cycle Number' },
+        yaxis: { title: 'Capacity Retention' }
     };
     Plotly.newPlot('myPlot', data, layout);
       
