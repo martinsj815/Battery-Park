@@ -4,6 +4,15 @@ title: Battery Park
 description: Battery Chemistry to Technology
 ---
 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Input Operations</title>
+</head>
+
+<body onload="openTab(event, 'Single Cell')">
+
 <div class="tab2">
   <button class="tablinks" onclick="openCity(event, 'Single Cell')"><b>Single Cell</b></button>
   <button class="tablinks" onclick="openCity(event, 'Stacked Cell')"><b>Stacked Cell</b></button>
@@ -23,14 +32,6 @@ description: Battery Chemistry to Technology
 
 <br>
 <br>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Input Operations</title>
-  </head>
-
-  <body onload="showInputFields()">
 
   <select id="operationSelect" onchange="showInputFields()">
       <option value="cycle-life" selected>Option 1: Cycle Life</option>
@@ -113,10 +114,6 @@ description: Battery Chemistry to Technology
       }
     </script>
 
-  </body>
-</div>
-
-
 <div id="Stacked Cell" class="tabcontent">
     <br>
   <h2> Estimation of Pouch Cell Capacity and Energy Density </h2>
@@ -156,3 +153,4 @@ description: Battery Chemistry to Technology
     <br>
       Note: cell outer diameter = $\frac{a}{\pi}\phi_1$ & cell inner diameter = $\frac{a}{\pi}\phi_0$ 
   </div>
+</body>
