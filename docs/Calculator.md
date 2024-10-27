@@ -104,7 +104,7 @@ description: Battery Chemistry to Technology
       // Check if input is a valid number
       if (!isNaN(input3) && !isNaN(input4)) {
         // Perform cycle number calculation
-        const ReqceValue = 100*(exp(Math.log10(input3/100)/input4)); 
+        const ReqceValue = 100*(Math.exp(Math.log10(input3/100)/input4)); 
         document.getElementById('output').textContent = 
           `The cell is required ${ReqceValue}% CE to achieve ${input4}% cycle life`;
       } else {
