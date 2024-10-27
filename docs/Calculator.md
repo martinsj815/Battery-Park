@@ -9,6 +9,7 @@ description: Battery Chemistry to Technology
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Input Operations</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body> 
@@ -82,7 +83,7 @@ description: Battery Chemistry to Technology
     <br><br>
 </div>
 
- <!-- JavaScript -->
+<!-- JavaScript -->
   <script>
       // Show relevant input fields based on selected option
     function showInputFields() {
@@ -101,7 +102,7 @@ description: Battery Chemistry to Technology
       // Check if input is a valid number
         if (!isNaN(input) && !isNaN(input2)) {
         // Perform cycle number calculation
-          const cycnumValue = Math.round(Math.log(input2/100)/Math.log(input/100));   // Cycle Number
+          const cycnumValue = Math.round(Math.log(input2/100)/Math.log(input/100));   
           document.getElementById('output').textContent = 
             `The cell is expected to undergo ${cycnumValue} cycles`;
         } else {
@@ -132,7 +133,23 @@ description: Battery Chemistry to Technology
           document.getElementById('output2').textContent = "Please enter a valid number.";
         }
       }
-      
+
+        // Define data traces
+  var trace1 = { x: input2, y: cycnumValue, mode: 'lines+markers', type: 'scatter', name: 'Data Line 1' };
+
+  var data = [trace1];  // Initial data to show
+
+  var layout = { title: 'Interactive Plot', xaxis: { title: 'X Axis Label' }, yaxis: { title: 'Y Axis Label' } };
+
+  // Initial plot render
+  Plotly.newPlot('myPlot', data, layout);
+
+  // Function to update plot based on dropdown selection
+  function updatePlot() {
+      var selectedData = document.getElementById('dataSelector').value;
+      var dataToPlot = (selectedData === 'trace1') ? [trace1];
+      Plotly.react('myPlot', dataToPlot, layout);
+  }
       window.onload = showInputFields;
       
     </script>
