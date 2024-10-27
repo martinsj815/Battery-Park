@@ -97,11 +97,36 @@ description: Battery Chemistry to Technology
     <br>
     where &Phi; = rotation angle and a = electrode thickness (double-sided cathode thickness + double-sided anode thickness + 2*separator thickness)
     <br>
-    Note: cell outer diameter = $$\frac{a}{\pi}\phi_1$$ & cell inner diameter = $$\frac{a}{\pi}\phi_0$$ 
+    Note: cell outer diameter = \(\frac{a}{\pi}\phi_1\) & cell inner diameter = \(\frac{a}{\pi}\phi_0\) 
+    <br>
+    <br>
     <div class="columns">
         <div class="column">    
             <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/cylindrical%20spiral_wcaption.png?raw=true' alt="AcademicIndustry" style="width:500px; height:auto;">
         </div>
+        <div class="column">    
+            <select id="operationSelect" onchange="showInputFields()">
+                <input type="number" id="numberInput" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                <br>
+                <br>
+                Capacity Retention (%) <br>
+                <input type="number" id="numberInput2" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+    </div>
+    <div id="requiredCEInputs" style="display: none;">
+        <br>
+        <b>Option 2: Estimate Required Coulombic Efficiency (%) to achieve N cycle life</b>
+        <br>
+        <br>
+        Targeted capacity retention(%) <br>
+        <input type="number" id="numberInput3" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
+        <br>
+        <br>
+        Targeted cycle life <br>
+        <input type="number" id="numberInput4" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
+    </div>
+  <!-- Output Section -->
+      <p id="output"></p>
+        </div>        
   </div>
 </div>
 
