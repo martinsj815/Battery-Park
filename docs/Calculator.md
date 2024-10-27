@@ -59,8 +59,6 @@ description: Battery Chemistry to Technology
         <input type="number" id="numberInput4" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
     </div>
     
-  <!-- Output Section -->
-      <p id="output"></p>
 <br><br>
 
 -----------------------------------------------------------
@@ -74,7 +72,7 @@ description: Battery Chemistry to Technology
     <br>
     <br>
     Li Areal Capacity [mAh/cm<sup>2</sup>] <br>
-    <input type="number" id="LiAC" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+    <input type="number" id="LiAC" placeholder="Enter a number" step="0.01" oninput="calculateCycleLife()">
     <br>
     <br>
     <!-- Output Section -->
