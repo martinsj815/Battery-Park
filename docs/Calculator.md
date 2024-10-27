@@ -60,7 +60,6 @@ description: Battery Chemistry to Technology
     </div>
   <!-- Output Section -->
       <p id="output"></p>
-</div>
 
 <div id="Stacked Cell" class="tabcontent">
     <br>
