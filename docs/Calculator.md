@@ -146,25 +146,15 @@ description: Battery Chemistry to Technology
         // Perform cycle number calculation
             const cycnumValue = Math.round(Math.log(input2/100)/Math.log(input/100));   
             document.getElementById('output').textContent = `The cell is expected to undergo ${cycnumValue} cycles`;
-            xValues.push(input2);
-            yValues.push(cycnumValue);
+            
+            xTrace.push(input2);
+            yTrace.push(cycnumValue);
+            
             Plotly.react('myPlot', [
-                {
-                    x: xValues,
-                    y: yValues,
-                    mode: 'lines',
-                    type: 'scatter',
-                    name: 'Full Cycle Life Data'
-                },
-                {
-                    x: xTrace,
-                    y: yTrace,
-                    mode: 'markers',
-                    type: 'scatter',
-                    name: 'User Calculated Point',
-                    marker: { color: 'red', size: 8 }
-                }
+                { x: xValues, y: yValues, mode: 'lines', type: 'scatter', name: 'Full Cycle Life Data' },
+                { x: xTrace, y: yTrace, mode: 'markers', type: 'scatter', name: 'User Calculated Point', marker: { color: 'red', size: 8 } }
             ]);
+            
         } else {
           document.getElementById('output').textContent = "Please enter a valid number.";
         }
