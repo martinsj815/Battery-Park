@@ -11,7 +11,7 @@ description: Battery Chemistry to Technology
     <title>Number Input Operations</title>
 </head>
 
-<body onload="openTab(event, 'Single Cell')">
+<body onload="openTab(event, 'Single Cell')" onload="showInputFields()">
 
 <div class="tab2">
   <button class="tablinks" onclick="openCity(event, 'Single Cell')"><b>Single Cell</b></button>
@@ -30,7 +30,7 @@ description: Battery Chemistry to Technology
       - This calculation assumes that the coulombic efficiency is maintained throughout the entire cycle. This estimation therefore provides an upper bound on cycle life (Option1) and a lower bound on coulombic efficiency (Option2). 
     <br>
     <br>
-    <select id="operationSelect" onchange="showInputFields()" onload="showInputFields()">
+    <select id="operationSelect" onchange="showInputFields()">
       <option value="cycle-life" selected>Option 1: Cycle Life</option>
       <option value="ce">Option 2: Required CE</option>
     </select>
