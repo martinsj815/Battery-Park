@@ -34,7 +34,7 @@ description: Battery Chemistry to Technology
       <option value="cycle-life" selected>Option 1: Cycle Life</option>
       <option value="ce">Option 2: Required CE</option>
     </select>
-    <div id="cycleLifeInputs" style="display: none;">
+    <div id="cycleLifeInputs" style="display: block;">
         <br>
         <b>Option 1: Estimate Cycle Number</b>
         <br>
@@ -217,11 +217,9 @@ description: Battery Chemistry to Technology
         }
       }
       function calculateRequiredCE() {
-        // Get the value of the input box and convert it to a number
         const input3 = parseFloat(document.getElementById('numberInput3').value);
         const input4 = parseFloat(document.getElementById('numberInput4').value);
 
-        // Check if input is a valid number
         if (!isNaN(input3) && !isNaN(input4)) {
           // Perform cycle number calculation
           const ReqceValue = 100*(Math.exp(Math.log(input3/100)/input4)); 
@@ -232,14 +230,12 @@ description: Battery Chemistry to Technology
         }
       }
       function calculateLithickness() {
-        // Get the value of the input box and convert it to a number
         const LiAC = parseFloat(document.getElementById('LiAC').value);
 
-        // Check if input is a valid number
         if !isNaN(LiAC) {
           const T_Li = 10000*LiAC*6.941/(26801.4814*0.534); 
           document.getElementById('output2').textContent = 
-            `With areal capacity of Li, ${T_Li}%um Li is stripped or deposited`;
+            `With areal capacity of Li, ${T_Li.toFixed(2)}%um Li is stripped or deposited`;
         } else {
           document.getElementById('output2').textContent = "Please enter a valid number.";
         }
