@@ -82,6 +82,61 @@ description: Battery Chemistry to Technology
     <br><br>
 </div>
 
+ <!-- JavaScript -->
+  <script>
+      // Show relevant input fields based on selected option
+    function showInputFields() {
+      const operation = document.getElementById("operationSelect").value;
+      document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
+      document.getElementById("requiredCEInputs").style.display = operation === "ce" ? "block" : "none";
+      document.getElementById("output").textContent = "";
+    }
+  
+    // Callback function to handle addition and multiplication on the input
+    function calculateCycleLife() {
+        // Get the value of the input box and convert it to a number
+        const input = parseFloat(document.getElementById('numberInput').value);
+        const input2 = parseFloat(document.getElementById('numberInput2').value);
+
+      // Check if input is a valid number
+        if (!isNaN(input) && !isNaN(input2)) {
+        // Perform cycle number calculation
+          const cycnumValue = Math.round(Math.log(input2/100)/Math.log(input/100));   // Cycle Number
+          document.getElementById('output').textContent = 
+            `The cell is expected to undergo ${cycnumValue} cycles`;
+        } else {
+          document.getElementById('output').textContent = "Please enter a valid number.";
+        }
+      }
+      function calculateRequiredCE() {
+        const input3 = parseFloat(document.getElementById('numberInput3').value);
+        const input4 = parseFloat(document.getElementById('numberInput4').value);
+
+        if (!isNaN(input3) && !isNaN(input4)) {
+          // Perform cycle number calculation
+          const ReqceValue = 100*(Math.exp(Math.log(input3/100)/input4)); 
+          document.getElementById('output').textContent = 
+            `The cell is required ${ReqceValue}% CE to achieve ${input4}% cycle life`;
+        } else {
+          document.getElementById('output').textContent = "Please enter a valid number.";
+        }
+      }
+      function calculateLithickness() {
+        const LiAC = parseFloat(document.getElementById('LiAC').value);
+
+        if !isNaN(LiAC) {
+          const T_Li = 10000*LiAC*6.941/(26801.4814*0.534); 
+          document.getElementById('output2').textContent = 
+            `With areal capacity of Li, ${T_Li.toFixed(2)}%um Li is stripped or deposited`;
+        } else {
+          document.getElementById('output2').textContent = "Please enter a valid number.";
+        }
+      }
+      
+      window.onload = showInputFields;
+      
+    </script>
+    
 <div id="Stacked Cell" class="tabcontent">
     <br>
     <h2> Estimation of Pouch Cell Capacity and Energy Density </h2>
@@ -190,58 +245,4 @@ description: Battery Chemistry to Technology
   </div>
 </div>
 
- <!-- JavaScript -->
-  <script>
-      // Show relevant input fields based on selected option
-    function showInputFields() {
-      const operation = document.getElementById("operationSelect").value;
-      document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
-      document.getElementById("requiredCEInputs").style.display = operation === "ce" ? "block" : "none";
-      document.getElementById("output").textContent = "";
-    }
-  
-    // Callback function to handle addition and multiplication on the input
-    function calculateCycleLife() {
-        // Get the value of the input box and convert it to a number
-        const input = parseFloat(document.getElementById('numberInput').value);
-        const input2 = parseFloat(document.getElementById('numberInput2').value);
-
-      // Check if input is a valid number
-        if (!isNaN(input) && !isNaN(input2)) {
-        // Perform cycle number calculation
-          const cycnumValue = Math.round(Math.log(input2/100)/Math.log(input/100));   // Cycle Number
-          document.getElementById('output').textContent = 
-            `The cell is expected to undergo ${cycnumValue} cycles`;
-        } else {
-          document.getElementById('output').textContent = "Please enter a valid number.";
-        }
-      }
-      function calculateRequiredCE() {
-        const input3 = parseFloat(document.getElementById('numberInput3').value);
-        const input4 = parseFloat(document.getElementById('numberInput4').value);
-
-        if (!isNaN(input3) && !isNaN(input4)) {
-          // Perform cycle number calculation
-          const ReqceValue = 100*(Math.exp(Math.log(input3/100)/input4)); 
-          document.getElementById('output').textContent = 
-            `The cell is required ${ReqceValue}% CE to achieve ${input4}% cycle life`;
-        } else {
-          document.getElementById('output').textContent = "Please enter a valid number.";
-        }
-      }
-      function calculateLithickness() {
-        const LiAC = parseFloat(document.getElementById('LiAC').value);
-
-        if !isNaN(LiAC) {
-          const T_Li = 10000*LiAC*6.941/(26801.4814*0.534); 
-          document.getElementById('output2').textContent = 
-            `With areal capacity of Li, ${T_Li.toFixed(2)}%um Li is stripped or deposited`;
-        } else {
-          document.getElementById('output2').textContent = "Please enter a valid number.";
-        }
-      }
-      
-      window.onload = showInputFields;
-      
-    </script>
 </body>
