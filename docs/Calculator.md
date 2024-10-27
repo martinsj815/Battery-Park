@@ -97,30 +97,8 @@ description: Battery Chemistry to Technology
 
 <!-- JavaScript -->
   <script>
-    let cycnum = "Math.round(Math.log(input2/100)/Math.log(input/100))";
-    
-    const inputValues = [];
-    const input2Values = [];  
-    const yValues = [];
-    for (let input2 > 0; input2 <= 150) {
-        xValues.push(input2);
-        yValues.push(eval(cycnum));
-    }
-
-    // Plotly chart setup
-    var data = [{
-        x: xValues,
-        y: yValues,
-        mode: 'lines+markers',
-        type: 'scatter',
-        name: 'Cycle Life Data'
-    }];
-    var layout = {
-        title: 'Coulombic Efficiency vs Capacity Retention',
-        xaxis: { title: 'Cycle Number' },
-        yaxis: { title: 'Capacity Retention' }
-    };
-    Plotly.newPlot('myPlot', data, layout);
+    let xValues = [];
+    let yValues = [];
       
     function showInputFields() {
       const operation = document.getElementById("operationSelect").value;
@@ -137,9 +115,16 @@ description: Battery Chemistry to Technology
       // Check if input is a valid number
         if (!isNaN(input) && !isNaN(input2)) {
         // Perform cycle number calculation
-          const cycnumValue = Math.round(Math.log(input2/100)/Math.log(input/100));   
-          document.getElementById('output').textContent = 
-            `The cell is expected to undergo ${cycnumValue} cycles`;
+            const cycnumValue = Math.round(Math.log(input2/100)/Math.log(input/100));   
+            document.getElementById('output').textContent = `The cell is expected to undergo ${cycnumValue} cycles`;
+            xValues.push(input2);
+            yValues.push(cycnumValue);
+            Plotly.react('myPlot', [{ x: xValues, y: yValues, mode: 'lines+markers', type: 'scatter', name: 'Cycle Life Data' }], {
+                title: 'Coulombic Efficiency vs Capacity Retention',
+                xaxis: { title: 'Capacity Retention' },
+                yaxis: { title: 'Cycle Number' }
+            });
+            
         } else {
           document.getElementById('output').textContent = "Please enter a valid number.";
         }
@@ -157,6 +142,18 @@ description: Battery Chemistry to Technology
           document.getElementById('output').textContent = "Please enter a valid number.";
         }
       }
+      Plotly.newPlot('myPlot', [{
+          x: xValues,
+          y: yValues,
+          mode: 'lines+markers',
+          type: 'scatter',
+          name: 'Cycle Life Data'
+      }], {
+          title: '',
+          xaxis: {},
+          yaxis: {}
+      });
+      
       function calculateLithickness() {
         const LiAC = parseFloat(document.getElementById('LiAC').value);
 
