@@ -71,7 +71,7 @@ description: Battery Chemistry to Technology
     <br>
     <br>
     Li Areal Capacity [mAh/cm<sup>2</sup>] <br>
-    <input type="number" id="LiAC" placeholder="Enter a number" step="0.01" oninput="calculateCycleLife()">
+    <input type="number" id="LiAC" placeholder="Enter a number" step="0.01" oninput="calculateLithickness()">
     <br>
     <br>
     <!-- Output Section -->
