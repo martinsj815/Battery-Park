@@ -37,29 +37,41 @@ description: Battery Chemistry to Technology
       <option value="ce">Option 2: Required CE</option>
     </select>
     <div id="cycleLifeInputs" style="display: block;">
-        <br>
-        <b>Option 1: Estimate Cycle Number</b>
-        <br>
-        <br>
-        Coulombic Efficiency (%) <br>
-        <input type="number" id="numberInput" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
-        <br>
-        <br>
-        Capacity Retention (%) <br>
-        <input type="number" id="numberInput2" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+        <div class="columns">
+            <div class="column">    
+                <br>
+                <b>Option 1: Estimate Cycle Number</b>
+                <br><br>
+                Coulombic Efficiency (%) <br>
+                <input type="number" id="numberInput" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                <br><br>
+                Capacity Retention (%) <br>
+                <input type="number" id="numberInput2" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+            </div>
+            <div class="column">    
+                <br>
+                <div id="myPlot" style="width:600px;height:400px;"></div>
+            </div> 
+        </div>
     </div>
     <div id="requiredCEInputs" style="display: none;">
-        <br>
-        <b>Option 2: Estimate Required Coulombic Efficiency (%) to achieve N cycle life</b>
-        <br>
-        <br>
-        Targeted capacity retention(%) <br>
-        <input type="number" id="numberInput3" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
-        <br>
-        <br>
-        Targeted cycle life <br>
-        <input type="number" id="numberInput4" placeholder="Enter a number" step="1" oninput="calculateRequiredCE()">
-    </div>
+        <div class="columns">
+            <div class="column">       
+                <br>
+                <b>Option 2: Estimate Required Coulombic Efficiency (%) to achieve N cycle life</b>
+                <br><br>
+                Targeted capacity retention(%) <br>
+                <input type="number" id="numberInput3" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
+                <br><br>
+                Targeted cycle life <br>
+                <input type="number" id="numberInput4" placeholder="Enter a number" step="1" oninput="calculateRequiredCE()">
+            </div>
+            <div class="column">    
+                <br>
+                <div id="myPlot" style="width:600px;height:400px;"></div>
+            </div> 
+        </div>
+    </div> 
         <!-- Output Section -->
     <h3 id="output"></h3>
     <br><br>
@@ -135,22 +147,22 @@ description: Battery Chemistry to Technology
       }
 
         // Define data traces
-  var trace1 = { x: input2, y: cycnumValue, mode: 'lines+markers', type: 'scatter', name: 'Data Line 1' };
+      var trace1 = { x: [input2], y: [cycnumValue], mode: 'lines+markers', type: 'scatter', name: 'Data Line 1' };
 
-  var data = [trace1];  // Initial data to show
+      var data = [trace1];  // Initial data to show
 
-  var layout = { title: 'Interactive Plot', xaxis: { title: 'X Axis Label' }, yaxis: { title: 'Y Axis Label' } };
+      var layout = { title: 'Interactive Plot', xaxis: { title: 'X Axis Label' }, yaxis: { title: 'Y Axis Label' } };
 
-  // Initial plot render
-  Plotly.newPlot('myPlot', data, layout);
+      // Initial plot render
+      Plotly.newPlot('myPlot', data, layout);
 
-  // Function to update plot based on dropdown selection
-  function updatePlot() {
-      var selectedData = document.getElementById('dataSelector').value;
-      var dataToPlot = (selectedData === 'trace1') ? [trace1];
-      Plotly.react('myPlot', dataToPlot, layout);
-  }
-      window.onload = showInputFields;
+      // Function to update plot based on dropdown selection
+      function updatePlot() {
+          var selectedData = document.getElementById('dataSelector').value;
+          var dataToPlot = (selectedData === 'trace1') ? [trace1];
+          Plotly.react('myPlot', dataToPlot, layout);
+      }
+          window.onload = showInputFields;
       
     </script>
     
