@@ -77,6 +77,10 @@ description: Battery Chemistry to Technology
     <input type="number" id="LiAC" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
     <br>
     <br>
+    <!-- Output Section -->
+    <p id="output"></p>
+    
+<br><br>
 </div>
 
 <div id="Stacked Cell" class="tabcontent">
@@ -229,5 +233,21 @@ description: Battery Chemistry to Technology
           document.getElementById('output').textContent = "Please enter a valid number.";
         }
       }
+
+      
+      function calculateLithickness() {
+        // Get the value of the input box and convert it to a number
+        const LiAC2 = parseFloat(document.getElementById('LiAC').value);
+
+        // Check if input is a valid number
+        if !isNaN(LiAC2) {
+          const T_Li = 10000*LiAC2*6.941/(26801.4814*0.534); 
+          document.getElementById('output').textContent = 
+            `With areal capacity of Li, ${T_Li}%um Li is stripped or deposited`;
+        } else {
+          document.getElementById('output').textContent = "Please enter a valid number.";
+        }
+      }
+      
     </script>
 </body>
