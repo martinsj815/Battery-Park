@@ -125,16 +125,43 @@ description: Battery Chemistry to Technology
                 <input type="number" id="densa" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
                 <br>
                 <br>
-                Active material loading ratio
+                Active material loading ratio <br>
                 <input type="number" id="amlr" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
                 <br>
                 <br>         
-                Estimated porosity
+                Estimated porosity <br>
                 <input type="number" id="por" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
                 <br>
                 <br>  
-                Electrode width (cm)
+                Electrode width (cm) <br>
                 <input type="number" id="ewid" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                <br>
+        </div>
+                <div class="column">   
+                <h3> Other Cell Parameters </h3>
+                <br>
+                Anode coating thickness (Single-side) (um) <br>
+                <input type="number" id="cthi" placeholder="Enter a number" step="0.1" oninput="calculateDimension()">
+                <br>
+                <br>
+                Cu foil thickness (um) <br>
+                <input type="number" id="capret" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                <br>
+                <br>
+                Separator thickness (um) <br>
+                <input type="number" id="discapa" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                <br>
+                <br>
+                Outer diameter of the cell (mm) <br>
+                <input type="number" id="densa" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                <br>
+                <br>
+                Cell Can thickness (mm) <br>
+                <input type="number" id="amlr" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                <br>
+                <br>         
+                Inner diameter of the cell (mm) <br>
+                <input type="number" id="por" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
                 <br>
         </div>
   <!-- Output Section -->
