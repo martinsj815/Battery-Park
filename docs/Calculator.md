@@ -124,7 +124,7 @@ description: Battery Chemistry to Technology
       function calculateLithickness() {
         const LiAC = parseFloat(document.getElementById('LiAC').value);
 
-        if !isNaN(LiAC) {
+        if (!isNaN(LiAC)) {
           const T_Li = 10000*LiAC*6.941/(26801.4814*0.534); 
           document.getElementById('output2').textContent = 
             `With areal capacity of Li, ${T_Li.toFixed(2)}%um Li is stripped or deposited`;
