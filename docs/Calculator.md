@@ -216,7 +216,6 @@ description: Battery Chemistry to Technology
           document.getElementById('output').textContent = "Please enter a valid number.";
         }
       }
-  
       function calculateRequiredCE() {
         // Get the value of the input box and convert it to a number
         const input3 = parseFloat(document.getElementById('numberInput3').value);
@@ -232,8 +231,6 @@ description: Battery Chemistry to Technology
           document.getElementById('output').textContent = "Please enter a valid number.";
         }
       }
-
-      
       function calculateLithickness() {
         // Get the value of the input box and convert it to a number
         const LiAC = parseFloat(document.getElementById('LiAC').value);
@@ -247,6 +244,8 @@ description: Battery Chemistry to Technology
           document.getElementById('output2').textContent = "Please enter a valid number.";
         }
       }
+      
+      window.onload = showInputFields;
       
     </script>
 </body>
