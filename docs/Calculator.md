@@ -236,7 +236,7 @@ description: Battery Chemistry to Technology
         const LiAC = parseFloat(document.getElementById('LiAC').value);
 
         // Check if input is a valid number
-        if !isNaN(LiAC2) {
+        if !isNaN(LiAC) {
           const T_Li = 10000*LiAC*6.941/(26801.4814*0.534); 
           document.getElementById('output2').textContent = 
             `With areal capacity of Li, ${T_Li}%um Li is stripped or deposited`;
