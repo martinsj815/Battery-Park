@@ -23,97 +23,97 @@ description: Battery Chemistry to Technology
 
 <br>
 <br>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Number Input Operations</title>
-</head>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Input Operations</title>
+  </head>
 
-<body onload="showInputFields()">
+  <body onload="showInputFields()">
 
-<select id="operationSelect" onchange="showInputFields()">
-    <option value="cycle-life" selected>Option 1: Cycle Life</option>
-    <option value="ce">Option 2: Required CE</option>
-</select>
+  <select id="operationSelect" onchange="showInputFields()">
+      <option value="cycle-life" selected>Option 1: Cycle Life</option>
+      <option value="ce">Option 2: Required CE</option>
+  </select>
 
-<div id="cycleLifeInputs" style="display: none;">
-  <br>
-  <b>Option 1: Estimate Cycle Number</b>
-  <br>
-  <br>
-  Coulombic Efficiency (%) <br>
-    <!-- Number Input Box -->
-    <input type="number" id="numberInput" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
-  <br>
-  <br>
-  Capacity Retention (%) <br>
-    <!-- Number Input Box -->
-    <input type="number" id="numberInput2" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+  <div id="cycleLifeInputs" style="display: none;">
+    <br>
+    <b>Option 1: Estimate Cycle Number</b>
+    <br>
+    <br>
+    Coulombic Efficiency (%) <br>
+      <!-- Number Input Box -->
+      <input type="number" id="numberInput" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+    <br>
+    <br>
+    Capacity Retention (%) <br>
+      <!-- Number Input Box -->
+      <input type="number" id="numberInput2" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
 
-</div>
+  </div>
 
-<div id="requiredCEInputs" style="display: none;">
-  <br>
-  <b>Option 2: Estimate Required Coulombic Efficiency (%) to achieve N cycle life</b>
-  <br>
-  <br>
-  Targeted capacity retention(%) <br>
-    <input type="number" id="numberInput3" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
-  <br>
-  <br>
-  Targeted cycle life <br>
-    <input type="number" id="numberInput4" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
-</div>
+  <div id="requiredCEInputs" style="display: none;">
+    <br>
+    <b>Option 2: Estimate Required Coulombic Efficiency (%) to achieve N cycle life</b>
+    <br>
+    <br>
+    Targeted capacity retention(%) <br>
+      <input type="number" id="numberInput3" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
+    <br>
+    <br>
+    Targeted cycle life <br>
+      <input type="number" id="numberInput4" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
+  </div>
 
-<!-- Output Section -->
-<p id="output"></p>
+  <!-- Output Section -->
+  <p id="output"></p>
     
-<!-- JavaScript -->
-<script>
-    // Show relevant input fields based on selected option
-  function showInputFields() {
-    const operation = document.getElementById("operationSelect").value;
-    document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
-    document.getElementById("requiredCEInputs").style.display = operation === "ce" ? "block" : "none";
-    document.getElementById("output").textContent = "";
-  }
+  <!-- JavaScript -->
+  <script>
+      // Show relevant input fields based on selected option
+    function showInputFields() {
+      const operation = document.getElementById("operationSelect").value;
+      document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
+      document.getElementById("requiredCEInputs").style.display = operation === "ce" ? "block" : "none";
+      document.getElementById("output").textContent = "";
+    }
   
     // Callback function to handle addition and multiplication on the input
-  function calculateCycleLife() {
-      // Get the value of the input box and convert it to a number
-      const input = parseFloat(document.getElementById('numberInput').value);
-      const input2 = parseFloat(document.getElementById('numberInput2').value);
+    function calculateCycleLife() {
+        // Get the value of the input box and convert it to a number
+        const input = parseFloat(document.getElementById('numberInput').value);
+        const input2 = parseFloat(document.getElementById('numberInput2').value);
 
       // Check if input is a valid number
-      if (!isNaN(input) && !isNaN(input2)) {
+        if (!isNaN(input) && !isNaN(input2)) {
         // Perform cycle number calculation
-        const cycnumValue = Math.round(Math.log(input2/100)/Math.log(input/100));   // Cycle Number
-        document.getElementById('output').textContent = 
-          `The cell is expected to undergo ${cycnumValue} cycles`;
-      } else {
-        document.getElementById('output').textContent = "Please enter a valid number.";
+          const cycnumValue = Math.round(Math.log(input2/100)/Math.log(input/100));   // Cycle Number
+          document.getElementById('output').textContent = 
+            `The cell is expected to undergo ${cycnumValue} cycles`;
+        } else {
+          document.getElementById('output').textContent = "Please enter a valid number.";
+        }
       }
-    }
   
-    function calculateRequiredCE() {
-      // Get the value of the input box and convert it to a number
-      const input3 = parseFloat(document.getElementById('numberInput3').value);
-      const input4 = parseFloat(document.getElementById('numberInput4').value);
+      function calculateRequiredCE() {
+        // Get the value of the input box and convert it to a number
+        const input3 = parseFloat(document.getElementById('numberInput3').value);
+        const input4 = parseFloat(document.getElementById('numberInput4').value);
 
-      // Check if input is a valid number
-      if (!isNaN(input3) && !isNaN(input4)) {
-        // Perform cycle number calculation
-        const ReqceValue = 100*(Math.exp(Math.log(input3/100)/input4)); 
-        document.getElementById('output').textContent = 
-          `The cell is required ${ReqceValue}% CE to achieve ${input4}% cycle life`;
-      } else {
-        document.getElementById('output').textContent = "Please enter a valid number.";
+        // Check if input is a valid number
+        if (!isNaN(input3) && !isNaN(input4)) {
+          // Perform cycle number calculation
+          const ReqceValue = 100*(Math.exp(Math.log(input3/100)/input4)); 
+          document.getElementById('output').textContent = 
+            `The cell is required ${ReqceValue}% CE to achieve ${input4}% cycle life`;
+        } else {
+          document.getElementById('output').textContent = "Please enter a valid number.";
+        }
       }
-    }
-  </script>
+    </script>
 
-</body>
+  </body>
 </div>
 
 
