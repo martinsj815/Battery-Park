@@ -99,8 +99,8 @@ description: Battery Chemistry to Technology
     <br>
     Note: cell outer diameter = $$\frac{a}{\pi}\phi_1$$ & cell inner diameter = $$\frac{a}{\pi}\phi_0$$ 
     <div class="columns">
-        <div class="column">
-    
+        <div class="column">    
+            <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/cylindrical%20spiral_wcaption.png?raw=true' alt="AcademicIndustry" style="width:500px; height:auto;">
         </div>
   </div>
 </div>
