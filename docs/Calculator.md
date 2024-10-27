@@ -59,7 +59,7 @@ description: Battery Chemistry to Technology
         <input type="number" id="numberInput4" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
     </div>
         <!-- Output Section -->
-    <p id="output"></p>
+    <h4 id="output"></h4>
     <br><br>
 -----------------------------------------------------------
     <br><br>
@@ -76,9 +76,8 @@ description: Battery Chemistry to Technology
         <input type="number" id="LiAC" placeholder="Enter a number" step="0.01" oninput="calculateLithickness()">
     </div>
     <br>
-    <br>
     <!-- Output Section -->
-    <p id="output2"></p>
+    <h4 id="output2"></h4>
     <br><br>
 </div>
 
@@ -116,7 +115,7 @@ description: Battery Chemistry to Technology
           // Perform cycle number calculation
           const ReqceValue = 100*(Math.exp(Math.log(input3/100)/input4)); 
           document.getElementById('output').textContent = 
-            `The cell is required ${ReqceValue}% CE to achieve ${input4}% cycle life`;
+            `The cell is required ${ReqceValue.toFixed(2)}% CE to achieve ${input4}% cycle life`;
         } else {
           document.getElementById('output').textContent = "Please enter a valid number.";
         }
@@ -127,7 +126,7 @@ description: Battery Chemistry to Technology
         if (!isNaN(LiAC)) {
           const T_Li = 10000*LiAC*6.941/(26801.4814*0.534); 
           document.getElementById('output2').textContent = 
-            `With areal capacity of Li, ${T_Li.toFixed(2)}%um Li is stripped or deposited`;
+            `With areal capacity of Li, ${T_Li.toFixed(2)}$um Li is stripped or deposited.`;
         } else {
           document.getElementById('output2').textContent = "Please enter a valid number.";
         }
