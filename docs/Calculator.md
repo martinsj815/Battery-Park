@@ -148,16 +148,29 @@ description: Battery Chemistry to Technology
             document.getElementById('output').textContent = `The cell is expected to undergo ${cycnumValue} cycles`;
             xValues.push(input2);
             yValues.push(cycnumValue);
-            Plotly.react('myPlot', [{ x: xValues, y: yValues, mode: 'lines+markers', type: 'scatter', name: 'Cycle Life Data' }], {
-                title: 'Capacity Retention vs Cycle Number',
-                xaxis: { title: 'Cycle Number' },
-                yaxis: { title: 'Capacity Retention' }
-            });
-            
+            Plotly.react('myPlot', [
+                {
+                    x: xValues,
+                    y: yValues,
+                    mode: 'lines',
+                    type: 'scatter',
+                    name: 'Full Cycle Life Data'
+                },
+                {
+                    x: xTrace,
+                    y: yTrace,
+                    mode: 'markers',
+                    type: 'scatter',
+                    name: 'User Calculated Point',
+                    marker: { color: 'red', size: 8 }
+                }
+            ]);
         } else {
           document.getElementById('output').textContent = "Please enter a valid number.";
         }
       }
+
+    
       function calculateRequiredCE() {
         const input3 = parseFloat(document.getElementById('numberInput3').value);
         const input4 = parseFloat(document.getElementById('numberInput4').value);
@@ -171,17 +184,6 @@ description: Battery Chemistry to Technology
           document.getElementById('output').textContent = "Please enter a valid number.";
         }
       }
-      Plotly.newPlot('myPlot', [{
-          x: xValues,
-          y: yValues,
-          mode: 'lines+markers',
-          type: 'scatter',
-          name: 'Cycle Life Data'
-      }], {
-          title: '',
-          xaxis: {},
-          yaxis: {}
-      });
       
       function calculateLithickness() {
         const LiAC = parseFloat(document.getElementById('LiAC').value);
@@ -194,10 +196,12 @@ description: Battery Chemistry to Technology
           document.getElementById('output2').textContent = "Please enter a valid number.";
         }
       }
-
-          window.onload = showInputFields;
-      
-    </script>
+    
+    window.onload = function() {
+        showInputFields;
+        generatePlot();
+    };
+</script>
     
 <div id="Stacked Cell" class="tabcontent">
     <br>
