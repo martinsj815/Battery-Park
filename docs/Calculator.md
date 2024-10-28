@@ -465,10 +465,10 @@ description: Battery Chemistry to Technology
             const L_t = (L_1 - L_0) * d_asc / (2 * Math.PI) * 0.000001;
             const w_t = (sigma_1-sigma_0)/(2*Math.PI)
             const acc = densa * amlr * (1 - por) * (cthi * 0.0001) * discapa
-            const pccap = acc*L_t*100*ewid
+            const pccap = acc*L_t*100*ewid/1000
             
             document.getElementById('output3').innerHTML = 
-            `The length of the cathode inside the cell is <b>${L_t.toFixed(2)}m</b>. <br><br> The number of winding(turn) inside the cell is <b>${w_t.toFixed(0)}</b>. <br><br> The areal cathode capacity is <b>${acc.toFixed(2)}mAh/cm<sup>2</sup></b>. <br><br> The predicted cell capacity is <b>${pccap.toFixed(2)}Ah</b>.`;
+            `The length of the cathode inside the cell is <b>${L_t.toFixed(2)}m</b>. <br><br> The number of winding(turn) inside the cell is <b>${w_t.toFixed(1)}</b>. <br><br> The areal cathode capacity is <b>${acc.toFixed(2)}mAh/cm<sup>2</sup></b>. <br><br> The predicted cell capacity is <b>${pccap.toFixed(2)}Ah</b>.`;
             } else {
             document.getElementById('output3').textContent = "Please enter valid numbers.";
         }
