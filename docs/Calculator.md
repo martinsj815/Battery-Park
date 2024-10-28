@@ -263,7 +263,6 @@ description: Battery Chemistry to Technology
         const operation = document.getElementById("operationSelect").value;
         document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
         document.getElementById("requiredCEInputs").style.display = operation === "ce" ? "block" : "none";
-        
         document.getElementById("output").textContent = "";
 
         if (operation === "cycle-life") {
@@ -313,7 +312,7 @@ description: Battery Chemistry to Technology
     function calculateLithickness() {
         const LiAC = parseFloat(document.getElementById('LiAC').value);
 
-        if (!isNaN(LiAC)) {
+        if (!isNaN(LiAC) && LiAC > 0) {
           const T_Li = 10000*LiAC*6.941/(26801.4814*0.534); 
           document.getElementById('output2').innerHTML = 
             `With areal capacity of Li, <b>${T_Li.toFixed(2)}um</b> Li is stripped or deposited.`;
