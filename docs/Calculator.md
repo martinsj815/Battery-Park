@@ -319,8 +319,8 @@ description: Battery Chemistry to Technology
           document.getElementById('output2').innerHTML = 
             `With areal capacity of Li, <b>${T_Li.toFixed(2)}um</b> Li is stripped or deposited.`;
 
-            xTrace = [LiAC];
-            yTrace = [T_Li];
+            x2Trace = [LiAC];
+            y2Trace = [T_Li];
             
             generateLithickPlot(); // Re-generate plot with new data
         } else {
