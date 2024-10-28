@@ -144,7 +144,7 @@ description: Battery Chemistry to Technology
             console.error("Invalid CE input. Please enter a valid number.");
         }
     }  
-    function generatePlot2() {
+    function generateSecPlot() {
         xValues = [];
         yValues = [];
 
