@@ -156,7 +156,7 @@ description: Battery Chemistry to Technology
                 xValues.push(cycleNumber);
                 yValues.push(ReqceValue);
             }
-            Plotly.newPlot('myPlotRequredCE', [
+            Plotly.newPlot('myPlotRequiredCE', [
                 {
                     x: xValues,
                     y: yValues,
