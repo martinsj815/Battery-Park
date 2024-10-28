@@ -220,6 +220,7 @@ description: Battery Chemistry to Technology
                 xValues.push(i);
                 yValues.push(T_Li);
             }
+            
             Plotly.newPlot('myPlotLithickness', [
                 {
                     x: xValues,
@@ -234,7 +235,7 @@ description: Battery Chemistry to Technology
                     mode: 'markers',
                     type: 'scatter',
                     marker: { color: 'red', size: 8 },
-                    text: [`Cycle: ${xTrace[0]}, CE: ${yTrace[0]}%`], // label text for the marker
+                    text: [`LiAC: ${xTrace[0]} mAh/cm²`], // label text for the marker
                     textposition: 'top right', // position of the text relative to the marker
                     showlegend: false 
                 }
@@ -242,13 +243,13 @@ description: Battery Chemistry to Technology
                 title: {
                     text: 'Li Thickness Response to Li Areal Capacity',
                     font: {
-                        family: 'Arial, sans-serif', // Choose a font family
-                        size: 18, // Adjust the font size
-                        color: 'black', // Title color
-                        weight: 'bold' // Make title bold
+                        family: 'Arial, sans-serif', 
+                        size: 18, 
+                        color: 'black',
+                        weight: 'bold' 
                             }
                 },
-                xaxis: { title: 'Li Areal Capacity [mAh/cm<sup>2</sup>]' },
+                xaxis: { title: 'Li Areal Capacity [mAh/cm²]' },
                 yaxis: { title: 'Li Thickness (um)'}
             }
             );
