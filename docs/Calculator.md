@@ -186,27 +186,27 @@ description: Battery Chemistry to Technology
                 <h3> Other Cell Parameters </h3>
                     <br>
                     Anode coating thickness (Single-side) (um) <br>
-                    <input type="number" id="cthi" placeholder="Enter a number" step="0.1" oninput="calculateDimension()">
+                    <input type="number" id="ancthi" placeholder="Enter a number" step="0.1" oninput="calculateDimension()">
                     <br>
                     <br>
                     Cu foil thickness (um) <br>
-                    <input type="number" id="capret" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="cuthi" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
                     <br>
                     <br>
                     Separator thickness (um) <br>
-                    <input type="number" id="discapa" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="sediscapa" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
                     <br>
                     <br>
                     Outer diameter of the cell (mm) <br>
-                    <input type="number" id="densa" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="outdia" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
                     <br>
                     <br>
                     Cell Can thickness (mm) <br>
-                    <input type="number" id="amlr" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="canthi" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
                     <br>
                     <br>         
                     Inner diameter of the cell (mm) <br>
-                    <input type="number" id="por" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="inndia" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
                     <br>
             </div>
             <!-- Output Section -->
@@ -434,8 +434,33 @@ description: Battery Chemistry to Technology
         } else {
           document.getElementById('output2').textContent = "Please enter a valid number.";
         }
+    }
+    function calculateCathodeLength() {
+        const cthi = parseFloat(document.getElementById('cthi').value);
+        const capret = parseFloat(document.getElementById('capret').value);
+        const discapa = parseFloat(document.getElementById('discapa').value);
+        const densa = parseFloat(document.getElementById('densa').value);
+        const discapa = parseFloat(document.getElementById('discapa').value);
+        const amlr = parseFloat(document.getElementById('amlr').value);
+        const por = parseFloat(document.getElementById('por').value);
+        const ewid = parseFloat(document.getElementById('ewid').value);
+
+        const discapa = parseFloat(document.getElementById('discapa').value);
+
+        
+        if (!isNaN(LiAC) && LiAC > 0) {
+          const T_Li = 10000*LiAC*6.941/(26801.4814*0.534); 
+          document.getElementById('output2').innerHTML = 
+            `With areal capacity of Li, <b>${T_Li.toFixed(2)}um</b> Li is stripped or deposited.`;
+
+            x2Trace = [LiAC];
+            y2Trace = [T_Li];
+            
+            generateLithickPlot(); // Re-generate plot with new data
+        } else {
+          document.getElementById('output2').textContent = "Please enter a valid number.";
+        }
       }
-    
     window.onload = function() {
         showInputFields();
     };
