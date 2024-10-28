@@ -193,7 +193,7 @@ description: Battery Chemistry to Technology
 
         if (operation === "cycle-life") {
             generatePlot();
-        } else {
+        } else (operation === "ce") {
             generatePlot2();
         }
     }
