@@ -143,7 +143,49 @@ description: Battery Chemistry to Technology
         } else {
             console.error("Invalid CE input. Please enter a valid number.");
         }
-    }    
+    }  
+    function generatePlot2() {
+        xValues = [];
+        yValues = [];
+
+        const ReqceValue = 100*(Math.exp(Math.log(input3/100)/input4)); 
+        
+        const cr = parseFloat(document.getElementById('numberInput3').value);
+
+        if (!isNaN(cr) && cr > 0 && cr < 100) {
+            for (let cycleNumber = 0; cycleNumber <= 200; cycleNumber += 1) {
+                const ReqceValue = 100*(Math.exp(Math.log(cr/100)/cycleNumber));
+                xValues.push(cycleNumber);
+                yValues.push(ReqceValue);
+            }
+            Plotly.newPlot('myPlot', [
+                {
+                    x: xValues,
+                    y: yValues,
+                    mode: 'lines',
+                    type: 'scatter',
+                    showlegend: false 
+                },
+                {
+                    x: xTrace,
+                    y: yTrace,
+                    mode: 'markers',
+                    type: 'scatter',
+                    marker: { color: 'red', size: 8 },
+                    text: [`Cycle: ${xTrace[0]}, Coulombic Efficiency: ${yTrace[0]}%`], // label text for the marker
+                    textposition: 'top right', // position of the text relative to the marker
+                    showlegend: false 
+                }
+            ], {
+            title: 'Cycle Number vs Coulombic Efficiency',
+            xaxis: { title: 'Cycle Number' },
+            yaxis: { title: 'Coulombic Efficiency'}
+            }
+            );
+        } else {
+            console.error("Invalid CE input. Please enter a valid number.");
+        }
+    } 
     function showInputFields() {
         const operation = document.getElementById("operationSelect").value;
         document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
@@ -156,10 +198,11 @@ description: Battery Chemistry to Technology
         const input = parseFloat(document.getElementById('numberInput').value);
         const input2 = parseFloat(document.getElementById('numberInput2').value);
 
+        
       // Check if input is a valid number
         if (!isNaN(input) && !isNaN(input2)) {
             const cycnumValue = Math.round(Math.log(input2/100)/Math.log(input/100));   
-            document.getElementById('output').innerHTML = `The cell is expected to undergo <b>${cycnumValue}</b> cycles`;
+            document.getElementById('output').innerHTML = `The cell is expected to undergo <b>${cycnumValue}</b> cycles.`;
             
             xTrace = [cycnumValue];
             yTrace = [input2];
@@ -178,6 +221,11 @@ description: Battery Chemistry to Technology
           const ReqceValue = 100*(Math.exp(Math.log(input3/100)/input4)); 
           document.getElementById('output').textContent = 
             `The cell is required ${ReqceValue.toFixed(2)}% CE to achieve ${input4} cycle life`;
+            
+            xTrace = [input4];
+            yTrace = [ReqceValue];
+            
+            generatePlot2(); // Re-generate plot with new data
         } else {
           document.getElementById('output').textContent = "Please enter a valid number.";
         }
