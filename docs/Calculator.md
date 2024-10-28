@@ -52,7 +52,7 @@ description: Battery Chemistry to Technology
             </div>
             <div class="column">    
                 <br>
-                <div id="myPlot" style="width:600px;height:400px;"></div>
+                <div id="myPlotCycleLife" style="width:600px;height:400px;"></div>
             </div> 
         </div>
     </div>
@@ -70,7 +70,7 @@ description: Battery Chemistry to Technology
             </div>
             <div class="column">    
                 <br>
-                <div id="myPlot" style="width:600px;height:400px;"></div>
+                <div id="myPlotRequiredCE" style="width:600px;height:400px;"></div>
             </div> 
         </div>
     </div> 
