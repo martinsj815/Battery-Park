@@ -215,7 +215,7 @@ description: Battery Chemistry to Technology
         const LiAC = parseFloat(document.getElementById('LiAC').value);
 
         if (!isNaN(LiAC) && LiAC > 0 ) {
-            for (let LiAC > 200; LiAC += 1) {
+            for (let LiAC > 0; LiAC += 1) {
                 const T_Li = 10000*LiAC*6.941/(26801.4814*0.534);
                 xValues.push(LiAC);
                 yValues.push(T_Li);
@@ -253,7 +253,7 @@ description: Battery Chemistry to Technology
             }
             );
         } else {
-            console.error("Invalid cycle retention input. Please enter a valid number.");
+            console.error("Invalid areal capacity input. Please enter a valid number.");
         }
     }    
     function showInputFields() {
