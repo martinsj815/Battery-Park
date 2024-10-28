@@ -107,7 +107,7 @@ description: Battery Chemistry to Technology
         yValues = [];
         
         for (let capacityRetention = 0; capacityRetention <= 100; capacityRetention += 1) {
-            const ce = 99.5; // Assumed constant CE value for the plot
+            const ce = numberInput;
             const cycleNumber = Math.round(Math.log(capacityRetention/100) / Math.log(ce/100));
             xValues.push(cycleNumber);
             yValues.push(capacityRetention);
