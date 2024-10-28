@@ -9,6 +9,15 @@ description: Battery Chemistry to Technology
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Input Operations</title>
+    <style>
+        /* Style the horizontal rule */
+        .colored-line {
+            border: 0; /* Remove default border */
+            height: 2px; /* Height of the line */
+            background-color: #4CAF50; /* Color of the line */
+            margin: 20px 0; /* Space above and below the line */
+        }
+    </style>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
@@ -77,7 +86,7 @@ description: Battery Chemistry to Technology
         <!-- Output Section -->
     <h3 id="output"></h3>
     <br><br>
------------------------------------------------------------
+<hr class="colored-line">
     <br><br>
     <div>
         <h2> Estimation of Li-metal thickness </h2>
