@@ -211,11 +211,13 @@ description: Battery Chemistry to Technology
     function generateLithickPlot() {
         xValues = [];
         yValues = [];
+        x2Trace = [];
+        y2Trace = [];
 
         const LiAC = parseFloat(document.getElementById('LiAC').value);
 
         if (!isNaN(LiAC) && LiAC > 0 ) {
-            for (let i > 0; i += 0.1) {
+            for (let i > 0; i <= LiAC*1.5; i += 0.1) {
                 const T_Li = 10000*i*6.941/(26801.4814*0.534);
                 xValues.push(i);
                 yValues.push(T_Li);
@@ -230,12 +232,12 @@ description: Battery Chemistry to Technology
                     showlegend: false 
                 },
                 {
-                    x: xTrace,
-                    y: yTrace,
+                    x: x2Trace,
+                    y: y2Trace,
                     mode: 'markers',
                     type: 'scatter',
                     marker: { color: 'red', size: 8 },
-                    text: [`LiAC: ${xTrace[0]} mAh/cm²`], // label text for the marker
+                    text: [`LiAC: ${x2Trace[0]} mAh/cm²`], // label text for the marker
                     textposition: 'top right', // position of the text relative to the marker
                     showlegend: false 
                 }
