@@ -451,8 +451,8 @@ description: Battery Chemistry to Technology
         const canthi = parseFloat(document.getElementById('canthi').value);
         const inndia = parseFloat(document.getElementById('inndia').value);
         
-        if (!isNaN(cathi) && cathi > 0 && !isNaN(althi) && althi > 0 && !isNaN(discapa) && discapa > 0 && !isNaN(densa) && densa > 0 && !isNaN(amlr) && amlr > 0 && !isNaN(por) && por > 0 && !isNaN(ewid) && ewid > 0 && !isNaN(ancthi) && ancthi > 0 && !isNaN(cuthi) && cuthi > 0 && !isNaN(septhi) && septhi > 0 && !isNaN(outdia) && outdia > 0 && !isNaN(canthi) && canthi > 0 && !isNaN(inndia) && inndia > 0) {
-            const d_asc = cathi*2 + althi + ancthi*2 + cuthi + septhi*2;
+        if (!isNaN(cthi) && cthi > 0 && !isNaN(althi) && althi > 0 && !isNaN(discapa) && discapa > 0 && !isNaN(densa) && densa > 0 && !isNaN(amlr) && amlr > 0 && !isNaN(por) && por > 0 && !isNaN(ewid) && ewid > 0 && !isNaN(ancthi) && ancthi > 0 && !isNaN(cuthi) && cuthi > 0 && !isNaN(septhi) && septhi > 0 && !isNaN(outdia) && outdia > 0 && !isNaN(canthi) && canthi > 0 && !isNaN(inndia) && inndia > 0) {
+            const d_asc = cthi*2 + althi + ancthi*2 + cuthi + septhi*2;
             const a = d_asc/(2*Math.PI)*(0.000001)
             const d_o = outdia - 2*canthi
             const r_o = d_o*(0.001)/2
@@ -460,8 +460,8 @@ description: Battery Chemistry to Technology
             const r_i = d_i*(0.001)/2
             const sigma_1=r_o/a
             const sigma_0=r_i/a
-            const L_1 = (sigma_1/2)*(Math.pow(((sigma_1)*(sigma_1)+1),0.5)) + 0.5*np.log(sigma_1 + Math.pow(((sigma_1)*(sigma_1)+1),0.5))
-            const L_0 = (sigma_0/2)*(Math.pow(((sigma_0)*(sigma_0)+1),0.5)) + 0.5*np.log(sigma_0 + Math.pow(((sigma_1)*(sigma_1)+1),0.5))
+            const L_1 = (sigma_1/2)*(Math.pow(((sigma_1)*(sigma_1)+1),0.5)) + 0.5*Math.log(sigma_1 + Math.pow(((sigma_1)*(sigma_1)+1),0.5))
+            const L_0 = (sigma_0/2)*(Math.pow(((sigma_0)*(sigma_0)+1),0.5)) + 0.5*Math.log(sigma_0 + Math.pow(((sigma_1)*(sigma_1)+1),0.5))
             const L_t = (L_1 - L_0) * d_asc / (2*Math.PI) * 0.000001
             
             document.getElementById('output3').innerHTML = 
