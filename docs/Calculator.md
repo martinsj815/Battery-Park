@@ -148,8 +148,6 @@ description: Battery Chemistry to Technology
         xValues = [];
         yValues = [];
 
-        const ReqceValue = 100*(Math.exp(Math.log(input3/100)/input4)); 
-        
         const cr = parseFloat(document.getElementById('numberInput3').value);
 
         if (!isNaN(cr) && cr > 0 && cr < 100) {
@@ -219,8 +217,8 @@ description: Battery Chemistry to Technology
         if (!isNaN(input3) && !isNaN(input4)) {
           // Perform cycle number calculation
           const ReqceValue = 100*(Math.exp(Math.log(input3/100)/input4)); 
-          document.getElementById('output').textContent = 
-            `The cell is required ${ReqceValue.toFixed(2)}% CE to achieve ${input4} cycle life`;
+          document.getElementById('output').innerHTML = 
+            `The cell is required <b>${ReqceValue.toFixed(2)}%</b> CE to achieve ${input4} cycle life`;
             
             xTrace = [input4];
             yTrace = [ReqceValue];
