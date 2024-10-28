@@ -21,8 +21,8 @@ description: Battery Chemistry to Technology
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
-<body> 
-<!--<body onload="openCity(event, 'Single Cell'); onload="showInputFields()">*/-->
+<!--body*/-->
+<body onload="openCity(event, 'Single Cell'); onload="showInputFields()">
 
 <div class="tab2">
   <button class="tablinks" onclick="openCity(event, 'Single Cell')"><b>Single Cell</b></button>
