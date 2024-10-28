@@ -155,58 +155,58 @@ description: Battery Chemistry to Technology
                 <h3> Cathode Parameters </h3>
                     <br>
                     Coating thickness (single-side) (um) <br>
-                    <input type="number" id="cthi" placeholder="Enter a number" step="0.1" oninput="calculateDimension()">
+                    <input type="number" id="cthi" placeholder="Enter a number" step="0.1" oninput="calculateCathodeLength()">
                     <br>
                     <br>
                     Al foil thickness (um) <br>
-                    <input type="number" id="althi" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="althi" placeholder="Enter a number" step="0.1" oninput="calculateCathodeLength()">
                     <br>
                     <br>
                     Discharge capacity of active material (mAh/g) <br>
-                    <input type="number" id="discapa" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="discapa" placeholder="Enter a number" step="0.1" oninput="calculateCathodeLength()">
                     <br>
                     <br>
                     Density of electrode material (g/cm<sup>3</sup>) <br>
-                    <input type="number" id="densa" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="densa" placeholder="Enter a number" step="0.1" oninput="calculateCathodeLength()">
                     <br>
                     <br>
                     Active material loading ratio <br>
-                    <input type="number" id="amlr" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="amlr" placeholder="Enter a number" step="0.1" oninput="calculateCathodeLength()">
                     <br>
                     <br>         
                     Estimated porosity <br>
-                    <input type="number" id="por" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="por" placeholder="Enter a number" step="0.1" oninput="calculateCathodeLength()">
                     <br>
                     <br>  
                     Electrode width (cm) <br>
-                    <input type="number" id="ewid" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="ewid" placeholder="Enter a number" step="0.1" oninput="calculateCathodeLength()">
                     <br>
             </div>
             <div class="column">   
                 <h3> Other Cell Parameters </h3>
                     <br>
                     Anode coating thickness (Single-side) (um) <br>
-                    <input type="number" id="ancthi" placeholder="Enter a number" step="0.1" oninput="calculateDimension()">
+                    <input type="number" id="ancthi" placeholder="Enter a number" step="0.1" oninput="calculateCathodeLength()">
                     <br>
                     <br>
                     Cu foil thickness (um) <br>
-                    <input type="number" id="cuthi" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="cuthi" placeholder="Enter a number" step="0.1" oninput="calculateCathodeLength()">
                     <br>
                     <br>
                     Separator thickness (um) <br>
-                    <input type="number" id="septhi" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="septhi" placeholder="Enter a number" step="0.1" oninput="calculateCathodeLength()">
                     <br>
                     <br>
                     Outer diameter of the cell (mm) <br>
-                    <input type="number" id="outdia" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="outdia" placeholder="Enter a number" step="0.1" oninput="calculateCathodeLength()">
                     <br>
                     <br>
                     Cell Can thickness (mm) <br>
-                    <input type="number" id="canthi" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="canthi" placeholder="Enter a number" step="0.1" oninput="calculateCathodeLength()">
                     <br>
                     <br>         
                     Inner diameter of the cell (mm) <br>
-                    <input type="number" id="inndia" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="inndia" placeholder="Enter a number" step="0.1" oninput="calculateCathodeLength()">
                     <br>
             </div>
             <!-- Output Section -->
