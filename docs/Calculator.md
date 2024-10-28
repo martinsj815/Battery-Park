@@ -170,25 +170,32 @@ description: Battery Chemistry to Technology
                     mode: 'markers',
                     type: 'scatter',
                     marker: { color: 'red', size: 8 },
-                    text: [`Cycle: ${xTrace[0]}, Coulombic Efficiency: ${yTrace[0]}%`], // label text for the marker
+                    text: [`Cycle: ${xTrace[0]}, CE: ${yTrace[0]}%`], // label text for the marker
                     textposition: 'top right', // position of the text relative to the marker
                     showlegend: false 
                 }
             ], {
             title: 'Cycle Number vs Coulombic Efficiency',
             xaxis: { title: 'Cycle Number' },
-            yaxis: { title: 'Coulombic Efficiency'}
+            yaxis: { title: 'Coulombic Efficiency (%)'}
             }
             );
         } else {
             console.error("Invalid cycle retention input. Please enter a valid number.");
         }
     } 
+    
     function showInputFields() {
         const operation = document.getElementById("operationSelect").value;
         document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
         document.getElementById("requiredCEInputs").style.display = operation === "ce" ? "block" : "none";
         document.getElementById("output").textContent = "";
+
+        if (operation === "cycle-life") {
+            generatePlot();
+        } else {
+            generatePlot2();
+        }
     }
   
     function calculateCycleLife() {
@@ -242,8 +249,6 @@ description: Battery Chemistry to Technology
     
     window.onload = function() {
         showInputFields;
-        generatePlot();
-        generatePlot2();
     };
 </script>
     
