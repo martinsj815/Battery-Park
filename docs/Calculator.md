@@ -159,7 +159,7 @@ description: Battery Chemistry to Technology
       // Check if input is a valid number
         if (!isNaN(input) && !isNaN(input2)) {
             const cycnumValue = Math.round(Math.log(input2/100)/Math.log(input/100));   
-            document.getElementById('output').textContent = `The cell is expected to undergo ${cycnumValue} cycles`;
+            document.getElementById('output').textContent = `The cell is expected to undergo <b>${cycnumValue}</b> cycles`;
             
             xTrace = [cycnumValue];
             yTrace = [input2];
