@@ -195,7 +195,7 @@ description: Battery Chemistry to Technology
         if (operation === "cycle-life") {
             generatePlot();
         } else {
-            generatePlot2();
+            generateSecPlot();
         }
     }
   
@@ -231,7 +231,7 @@ description: Battery Chemistry to Technology
             xTrace = [input4];
             yTrace = [ReqceValue];
             
-            generatePlot2(); // Re-generate plot with new data
+            generateSecPlot(); // Re-generate plot with new data
         } else {
           document.getElementById('output').textContent = "Please enter a valid number.";
         }
