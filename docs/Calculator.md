@@ -107,7 +107,7 @@ description: Battery Chemistry to Technology
         yValues = [];
         
         for (let capacityRetention = 0; capacityRetention <= 100; capacityRetention += 1) {
-            const ce = numberInput;
+            let ce = numberInput;
             const cycleNumber = Math.round(Math.log(capacityRetention/100) / Math.log(ce/100));
             xValues.push(cycleNumber);
             yValues.push(capacityRetention);
