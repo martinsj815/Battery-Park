@@ -149,17 +149,13 @@ description: Battery Chemistry to Technology
 
       // Check if input is a valid number
         if (!isNaN(input) && !isNaN(input2)) {
-        // Perform cycle number calculation
             const cycnumValue = Math.round(Math.log(input2/100)/Math.log(input/100));   
             document.getElementById('output').textContent = `The cell is expected to undergo ${cycnumValue} cycles`;
             
-            xTrace = [input];
-            yTrace = [cycnumValue];
+            xTrace = [cycnumValue];
+            yTrace = [input2];
             
-            Plotly.react('myPlot', [
-                { x: xValues, y: yValues, mode: 'lines', type: 'scatter', name: 'Full Cycle Life Data' },
-                { x: xTrace, y: yTrace, mode: 'markers', type: 'scatter', name: 'User Calculated Point', marker: { color: 'red', size: 8 } }
-            ]);
+            generatePlot();
         } else {
           document.getElementById('output').textContent = "Please enter a valid number.";
         }
