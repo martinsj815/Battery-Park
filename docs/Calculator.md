@@ -209,9 +209,9 @@ description: Battery Chemistry to Technology
                     <input type="number" id="inndia" placeholder="Enter a number" step="0.1" oninput="calculateCathodeLength()">
                     <br>
             </div>
-            <!-- Output Section -->
-            <p id="output3"></p>
-        </div>       
+        </div>  
+        <!-- Output Section -->
+        <p id="output3"></p>
     </div>
 </body>
 
@@ -465,7 +465,7 @@ description: Battery Chemistry to Technology
             const L_t = (L_1 - L_0) * d_asc / (2 * Math.PI) * 0.000001;
             
             document.getElementById('output3').innerHTML = 
-            `The length of the cathode inside the cell is <b>${L_t.toFixed(2)}um</b>.`;
+            `The length of the cathode inside the cell is <b>${L_t.toFixed(2)}m</b>.`;
         } else {
             document.getElementById('output3').textContent = "Please enter valid numbers.";
         }
