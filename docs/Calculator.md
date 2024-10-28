@@ -135,7 +135,15 @@ description: Battery Chemistry to Technology
                     showlegend: false 
                 }
             ], {
-            title: <b>'Cycle Number vs Capacity Retention'</b>,
+            title:  {
+                text: 'Cycle Number vs Capacity Retention',
+                font: {
+                    family: 'Arial, sans-serif', // Choose a font family
+                    size: 18, // Adjust the font size
+                    color: 'black', // Title color
+                    weight: 'bold' // Make title bold
+                    }
+            },        
             xaxis: { title: 'Cycle Number' },
             yaxis: { title: 'Capacity Retention'}
             }
@@ -175,7 +183,15 @@ description: Battery Chemistry to Technology
                     showlegend: false 
                 }
             ], {
-                title: <b>'Cycle Number vs Coulombic Efficiency'</b>,
+                title: {
+                    text: 'Cycle Number vs Coulombic Efficiency',
+                    font: {
+                        family: 'Arial, sans-serif', // Choose a font family
+                        size: 18, // Adjust the font size
+                        color: 'black', // Title color
+                        weight: 'bold' // Make title bold
+                            }
+                },
                 xaxis: { title: 'Cycle Number' },
                 yaxis: { title: 'Coulombic Efficiency (%)'}
             }
