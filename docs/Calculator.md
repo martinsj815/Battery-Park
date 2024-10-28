@@ -215,9 +215,9 @@ description: Battery Chemistry to Technology
         const LiAC = parseFloat(document.getElementById('LiAC').value);
 
         if (!isNaN(LiAC) && LiAC > 0 ) {
-            for (let LiAC > 0; LiAC += 1) {
-                const T_Li = 10000*LiAC*6.941/(26801.4814*0.534);
-                xValues.push(LiAC);
+            for (let i > 0; i += 0.1) {
+                const T_Li = 10000*i*6.941/(26801.4814*0.534);
+                xValues.push(i);
                 yValues.push(T_Li);
             }
             Plotly.newPlot('myPlotLithickness', [
