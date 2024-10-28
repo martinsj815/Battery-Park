@@ -111,6 +111,8 @@ description: Battery Chemistry to Technology
     let yValues = [];
     let xTrace = [];
     let yTrace = [];
+    let x2Trace = [];
+    let y2Trace = [];
 
     function generatePlot() {
         xValues = [];
