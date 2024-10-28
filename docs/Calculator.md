@@ -109,7 +109,6 @@ description: Battery Chemistry to Technology
 
         if (!isNaN(ce)) {
             for (let capacityRetention = 0; capacityRetention <= 100; capacityRetention += 1) {
-                let ce = numberInput;
                 const cycleNumber = Math.round(Math.log(capacityRetention/100) / Math.log(ce/100));
                 xValues.push(cycleNumber);
                 yValues.push(capacityRetention);
@@ -131,6 +130,8 @@ description: Battery Chemistry to Technology
                     marker: { color: 'red', size: 8 }
                 }
             ]);
+        } else {
+        console.error("Invalid CE input. Please enter a valid number.");
         }
     }    
     function showInputFields() {
