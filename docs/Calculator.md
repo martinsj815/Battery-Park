@@ -97,12 +97,12 @@ description: Battery Chemistry to Technology
             <div class="column">    
                 <br>
                 <div id="myPlotLithickness" style="width:600px;height:400px;"></div>
-            </div> 
-
-            
-    <!-- Output Section -->
-    <h3 id="output2"></h3>
-    <br><br>
+            </div>
+        </div>
+        <!-- Output Section -->
+        <h3 id="output2"></h3>
+        <br><br>
+    </div>
 </div>
 
 <!-- JavaScript -->
