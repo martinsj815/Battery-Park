@@ -463,6 +463,7 @@ description: Battery Chemistry to Technology
             const L_1 = (sigma_1/2)*(Math.pow(((sigma_1)*(sigma_1)+1),0.5)) + 0.5*Math.log(sigma_1 + Math.pow(((sigma_1)*(sigma_1)+1),0.5));
             const L_0 = (sigma_0/2)*(Math.pow(((sigma_0)*(sigma_0)+1),0.5)) + 0.5*Math.log(sigma_0 + Math.pow(((sigma_1)*(sigma_1)+1),0.5));
             const L_t = (L_1 - L_0) * d_asc / (2 * Math.PI) * 0.000001;
+            const w_t = (sigma_1-sigma_0)/(2*Math.PI)
             const acc = densa * amlr * (1 - por) * (cthi * 0.0001) * discapa
             const pccap = acc*L_t*100*ewid
             
