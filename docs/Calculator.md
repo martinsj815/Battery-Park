@@ -194,7 +194,7 @@ description: Battery Chemistry to Technology
                     <br>
                     <br>
                     Separator thickness (um) <br>
-                    <input type="number" id="sediscapa" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="septhi" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
                     <br>
                     <br>
                     Outer diameter of the cell (mm) <br>
@@ -445,8 +445,12 @@ description: Battery Chemistry to Technology
         const por = parseFloat(document.getElementById('por').value);
         const ewid = parseFloat(document.getElementById('ewid').value);
 
-        const discapa = parseFloat(document.getElementById('discapa').value);
-
+        const ancthi = parseFloat(document.getElementById('ancthi').value);
+        const cuthi = parseFloat(document.getElementById('cuthi').value);
+        const septhi = parseFloat(document.getElementById('septhi').value);
+        const outdia = parseFloat(document.getElementById('outdia').value);
+        const canthi = parseFloat(document.getElementById('canthi').value);
+        const inndia = parseFloat(document.getElementById('inndia').value);
         
         if (!isNaN(LiAC) && LiAC > 0) {
           const T_Li = 10000*LiAC*6.941/(26801.4814*0.534); 
