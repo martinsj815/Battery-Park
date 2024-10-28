@@ -181,7 +181,7 @@ description: Battery Chemistry to Technology
             }
             );
         } else {
-            console.error("Invalid CE input. Please enter a valid number.");
+            console.error("Invalid cycle retention input. Please enter a valid number.");
         }
     } 
     function showInputFields() {
@@ -243,6 +243,7 @@ description: Battery Chemistry to Technology
     window.onload = function() {
         showInputFields;
         generatePlot();
+        generatePlot2();
     };
 </script>
     
