@@ -154,12 +154,12 @@ description: Battery Chemistry to Technology
             <div class="column">    
                 <h3> Cathode Parameters </h3>
                     <br>
-                    Coating thickness (single-side) <br>
+                    Coating thickness (single-side) (um) <br>
                     <input type="number" id="cthi" placeholder="Enter a number" step="0.1" oninput="calculateDimension()">
                     <br>
                     <br>
-                    Capacity Retention (%) <br>
-                    <input type="number" id="capret" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    Al foil thickness (um) <br>
+                    <input type="number" id="althi" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
                     <br>
                     <br>
                     Discharge capacity of active material (mAh/g) <br>
@@ -437,10 +437,9 @@ description: Battery Chemistry to Technology
     }
     function calculateCathodeLength() {
         const cthi = parseFloat(document.getElementById('cthi').value);
-        const capret = parseFloat(document.getElementById('capret').value);
+        const althi = parseFloat(document.getElementById('althi').value);
         const discapa = parseFloat(document.getElementById('discapa').value);
         const densa = parseFloat(document.getElementById('densa').value);
-        const discapa = parseFloat(document.getElementById('discapa').value);
         const amlr = parseFloat(document.getElementById('amlr').value);
         const por = parseFloat(document.getElementById('por').value);
         const ewid = parseFloat(document.getElementById('ewid').value);
@@ -452,15 +451,11 @@ description: Battery Chemistry to Technology
         const canthi = parseFloat(document.getElementById('canthi').value);
         const inndia = parseFloat(document.getElementById('inndia').value);
         
-        if (!isNaN(LiAC) && LiAC > 0) {
-          const T_Li = 10000*LiAC*6.941/(26801.4814*0.534); 
+        if (!isNaN(cathi) && cathi > 0 && !isNaN(althi) && althi > 0 && !isNaN(discapa) && discapa > 0 && !isNaN(densa) && densa > 0 && !isNaN(amlr) && amlr > 0 && !isNaN(por) && por > 0 && !isNaN(ewid) && ewid > 0 && !isNaN(ancthi) && ancthi > 0 && !isNaN(cuthi) && cuthi > 0 && !isNaN(septhi) && septhi > 0 && !isNaN(outdia) && outdia > 0 && !isNaN(canthi) && canthi > 0 && !isNaN(inndia) && inndia > 0) {
+          const d_asc = cathi*2 + capret + ancthi; 
           document.getElementById('output2').innerHTML = 
             `With areal capacity of Li, <b>${T_Li.toFixed(2)}um</b> Li is stripped or deposited.`;
 
-            x2Trace = [LiAC];
-            y2Trace = [T_Li];
-            
-            generateLithickPlot(); // Re-generate plot with new data
         } else {
           document.getElementById('output2').textContent = "Please enter a valid number.";
         }
