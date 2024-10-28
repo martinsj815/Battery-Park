@@ -116,7 +116,7 @@ description: Battery Chemistry to Technology
                 xValues.push(cycleNumber);
                 yValues.push(capacityRetention);
             }
-            Plotly.newPlot('myPlot', [
+            Plotly.newPlot('myPlotCycleLife', [
                 {
                     x: xValues,
                     y: yValues,
@@ -156,7 +156,7 @@ description: Battery Chemistry to Technology
                 xValues.push(cycleNumber);
                 yValues.push(ReqceValue);
             }
-            Plotly.newPlot('myPlot', [
+            Plotly.newPlot('myPlotRequredCE', [
                 {
                     x: xValues,
                     y: yValues,
@@ -189,11 +189,14 @@ description: Battery Chemistry to Technology
         const operation = document.getElementById("operationSelect").value;
         document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
         document.getElementById("requiredCEInputs").style.display = operation === "ce" ? "block" : "none";
+        document.getElementById("myPlotCycleLife").style.display = operation === "cycle-life" ? "block" : "none";
+        document.getElementById("myPlotRequiredCE").style.display = operation === "ce" ? "block" : "none";
+        
         document.getElementById("output").textContent = "";
 
         if (operation === "cycle-life") {
             generatePlot();
-        } else (operation === "ce") {
+        } else {
             generatePlot2();
         }
     }
