@@ -467,9 +467,9 @@ description: Battery Chemistry to Technology
             const pccap = acc*L_t*100*ewid
             
             document.getElementById('output3').innerHTML = 
-            `The length of the cathode inside the cell is <b>${L_t.toFixed(2)}m</b>.`<br>
-            The number of winding(turn) inside the cell is <b>${w_t.toFixed(1)}</b>.`<br>
-            The areal cathode capacity is <b>${acc.toFixed(2)}mAh/cm<sup>2</sup></b>.`<br>
+            `The length of the cathode inside the cell is <b>${L_t.toFixed(2)}m</b>.`<br><br>
+            The number of winding(turn) inside the cell is <b>${w_t.toFixed(1)}</b>.`<br><br>
+            The areal cathode capacity is <b>${acc.toFixed(2)}mAh/cm<sup>2</sup></b>.`<br><br>
             The predicted cell capacity is <b>${acc.toFixed(2)}Ah</b>.`;
             
         } else {
