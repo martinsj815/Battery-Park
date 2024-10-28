@@ -458,14 +458,20 @@ description: Battery Chemistry to Technology
             const r_o = d_o*(0.001)/2;
             const d_i = inndia;
             const r_i = d_i*(0.001)/2;
-            const sigma_1=r_o / a;
-            const sigma_0=r_i / a;
+            const sigma_1 = r_o / a;
+            const sigma_0 = r_i / a;
             const L_1 = (sigma_1/2)*(Math.pow(((sigma_1)*(sigma_1)+1),0.5)) + 0.5*Math.log(sigma_1 + Math.pow(((sigma_1)*(sigma_1)+1),0.5));
             const L_0 = (sigma_0/2)*(Math.pow(((sigma_0)*(sigma_0)+1),0.5)) + 0.5*Math.log(sigma_0 + Math.pow(((sigma_1)*(sigma_1)+1),0.5));
             const L_t = (L_1 - L_0) * d_asc / (2 * Math.PI) * 0.000001;
+            const acc = densa * amlr * (1 - por) * (cthi * 0.0001) * discapa
+            const pccap = acc*L_t*100*ewid
             
             document.getElementById('output3').innerHTML = 
             `The length of the cathode inside the cell is <b>${L_t.toFixed(2)}m</b>.`;
+            `The number of winding(turn) inside the cell is <b>${w_t.toFixed(1)}</b>.`;
+            `The areal cathode capacity is <b>${acc.toFixed(2)}mAh/cm<sup>2</sup></b>.`;
+            `The predicted cell capacity is <b>${acc.toFixed(2)}Ah</b>.`;
+            
         } else {
             document.getElementById('output3').textContent = "Please enter valid numbers.";
         }
