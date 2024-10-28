@@ -213,8 +213,6 @@ description: Battery Chemistry to Technology
     function generateLithickPlot() {
         xValues = [];
         yValues = [];
-        x2Trace = [];
-        y2Trace = [];
 
         const LiAC = parseFloat(document.getElementById('LiAC').value);
 
