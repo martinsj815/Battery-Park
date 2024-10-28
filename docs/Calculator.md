@@ -465,12 +465,11 @@ description: Battery Chemistry to Technology
             const L_t = (L_1 - L_0) * d_asc / (2*Math.PI) * 0.000001
             
             document.getElementById('output3').innerHTML = 
-            `With areal capacity of Li, <b>${L_t.toFixed(2)}um</b> Li is stripped or deposited.`;
-
+            `The length of the cathode inside the cell is <b>${L_t.toFixed(2)}um</b>.`;
         } else {
-          document.getElementById('output3').textContent = "Please enter a valid number.";
+            document.getElementById('output3').textContent = "Please enter valid numbers.";
         }
-      }
+    }
     window.onload = function() {
         showInputFields();
     };
