@@ -106,11 +106,11 @@ description: Battery Chemistry to Technology
         xValues = [];
         yValues = [];
         
-        for (let capacityRetention = 80; capacityRetention <= 100; capacityRetention += 1) {
+        for (let capacityRetention = 0; capacityRetention <= 100; capacityRetention += 1) {
             const ce = 99.5; // Assumed constant CE value for the plot
             const cycleNumber = Math.round(Math.log(capacityRetention/100) / Math.log(ce/100));
-            xValues.push(capacityRetention);
-            yValues.push(cycleNumber);
+            xValues.push(cycleNumber);
+            yValues.push(capacityRetention);
         }
 
         Plotly.newPlot('myPlot', [
