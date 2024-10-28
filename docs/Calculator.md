@@ -105,33 +105,34 @@ description: Battery Chemistry to Technology
     function generatePlot() {
         xValues = [];
         yValues = [];
-        
-        for (let capacityRetention = 0; capacityRetention <= 100; capacityRetention += 1) {
-            let ce = numberInput;
-            const cycleNumber = Math.round(Math.log(capacityRetention/100) / Math.log(ce/100));
-            xValues.push(cycleNumber);
-            yValues.push(capacityRetention);
-        }
+        const ce = parseFloat(document.getElementById('numberInput').value);
 
-        Plotly.newPlot('myPlot', [
-            {
-                x: xValues,
-                y: yValues,
-                mode: 'lines',
-                type: 'scatter',
-                name: 'Full Cycle Life Data'
-            },
-            {
-                x: xTrace,
-                y: yTrace,
-                mode: 'markers',
-                type: 'scatter',
-                name: 'User Calculated Point',
-                marker: { color: 'red', size: 8 }
+        if (!isNaN(ce)) {
+            for (let capacityRetention = 0; capacityRetention <= 100; capacityRetention += 1) {
+                let ce = numberInput;
+                const cycleNumber = Math.round(Math.log(capacityRetention/100) / Math.log(ce/100));
+                xValues.push(cycleNumber);
+                yValues.push(capacityRetention);
             }
-        ]);
-    }
-      
+            Plotly.newPlot('myPlot', [
+                {
+                    x: xValues,
+                    y: yValues,
+                    mode: 'lines',
+                    type: 'scatter',
+                    name: 'Full Cycle Life Data'
+                },
+                {
+                    x: xTrace,
+                    y: yTrace,
+                    mode: 'markers',
+                    type: 'scatter',
+                    name: 'User Calculated Point',
+                    marker: { color: 'red', size: 8 }
+                }
+            ]);
+        }
+    }    
     function showInputFields() {
         const operation = document.getElementById("operationSelect").value;
         document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
