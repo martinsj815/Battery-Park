@@ -211,7 +211,7 @@ description: Battery Chemistry to Technology
             </div>
         </div>  
         <!-- Output Section -->
-        <p id="output3"></p>
+        <h3 id="output3"></h3>
     </div>
 </body>
 
