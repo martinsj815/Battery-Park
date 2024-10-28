@@ -150,9 +150,9 @@ description: Battery Chemistry to Technology
 
         const cr = parseFloat(document.getElementById('numberInput3').value);
 
-        if (!isNaN(cr) && cr > 0 && cr < 100) {
-            for (let cycleNumber = 0; cycleNumber <= 200; cycleNumber += 1) {
-                const ReqceValue = 100*(Math.exp(Math.log(cr/100)/cycleNumber));
+        if (!isNaN(cr) && cr > 0 && cr < 100 ) {
+            for (let cycleNumber = 1; cycleNumber <= 200; cycleNumber += 1) {
+                const ReqceValue = 100 * (Math.exp(Math.log(cr/100) / cycleNumber));
                 xValues.push(cycleNumber);
                 yValues.push(ReqceValue);
             }
@@ -175,9 +175,9 @@ description: Battery Chemistry to Technology
                     showlegend: false 
                 }
             ], {
-            title: 'Cycle Number vs Coulombic Efficiency',
-            xaxis: { title: 'Cycle Number' },
-            yaxis: { title: 'Coulombic Efficiency (%)'}
+                title: 'Cycle Number vs Coulombic Efficiency',
+                xaxis: { title: 'Cycle Number' },
+                yaxis: { title: 'Coulombic Efficiency (%)'}
             }
             );
         } else {
