@@ -120,15 +120,15 @@ description: Battery Chemistry to Technology
                     y: yValues,
                     mode: 'lines',
                     type: 'scatter',
-                    name: 'Full Cycle Life Data'
                 },
                 {
                     x: xTrace,
                     y: yTrace,
                     mode: 'markers',
                     type: 'scatter',
-                    name: 'User Calculated Point',
-                    marker: { color: 'red', size: 8 }
+                    marker: { color: 'red', size: 8 },
+                    text: [`Cycle: ${xTrace[0]}, Capacity: ${yTrace[0]}%`],
+                    textposition: 'top right'
                 }
             ]);
         } else {
@@ -155,7 +155,7 @@ description: Battery Chemistry to Technology
             xTrace = [cycnumValue];
             yTrace = [input2];
             
-            generatePlot();
+            generatePlot(); // Re-generate plot with new data
         } else {
           document.getElementById('output').textContent = "Please enter a valid number.";
         }
