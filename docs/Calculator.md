@@ -189,8 +189,6 @@ description: Battery Chemistry to Technology
         const operation = document.getElementById("operationSelect").value;
         document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
         document.getElementById("requiredCEInputs").style.display = operation === "ce" ? "block" : "none";
-        document.getElementById("myPlotCycleLife").style.display = operation === "cycle-life" ? "block" : "none";
-        document.getElementById("myPlotRequiredCE").style.display = operation === "ce" ? "block" : "none";
         
         document.getElementById("output").textContent = "";
 
@@ -251,7 +249,7 @@ description: Battery Chemistry to Technology
       }
     
     window.onload = function() {
-        showInputFields;
+        showInputFields();
     };
 </script>
     
