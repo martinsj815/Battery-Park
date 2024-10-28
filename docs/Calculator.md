@@ -134,10 +134,7 @@ description: Battery Chemistry to Technology
         } else {
             console.error("Invalid CE input. Please enter a valid number.");
         }
-    } else {
-        console.error("Invalid CE input. Please enter a valid CE value between 0 and 100.");
-    }
-}    
+    }    
     function showInputFields() {
         const operation = document.getElementById("operationSelect").value;
         document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
