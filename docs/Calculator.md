@@ -36,6 +36,8 @@ description: Battery Chemistry to Technology
       <option value="cycle-life" selected>Option 1: Cycle Life</option>
       <option value="ce">Option 2: Required CE</option>
     </select>
+    <br>
+    <br>
     <div id="cycleLifeInputs" style="display: block;">
         <div class="columns">
             <div class="column">    
@@ -127,10 +129,15 @@ description: Battery Chemistry to Technology
                     mode: 'markers',
                     type: 'scatter',
                     marker: { color: 'red', size: 8 },
-                    text: [`Cycle: ${xTrace[0]}, Capacity: ${yTrace[0]}%`],
-                    textposition: 'top right'
+                    // text: [`Cycle: ${xTrace[0]}, Capacity: ${yTrace[0]}%`],
+                    // textposition: 'top right'
                 }
-            ]);
+            ], {
+            title: 'Cycle Number vs Capacity Retention',
+            xaxis: { title: 'Cycle Number' },
+            yaxis: { title: 'Capacity Retention'}
+            }
+            );
         } else {
             console.error("Invalid CE input. Please enter a valid number.");
         }
