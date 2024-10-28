@@ -122,6 +122,7 @@ description: Battery Chemistry to Technology
                     y: yValues,
                     mode: 'lines',
                     type: 'scatter',
+                    showlegend: false 
                 },
                 {
                     x: xTrace,
@@ -129,6 +130,9 @@ description: Battery Chemistry to Technology
                     mode: 'markers',
                     type: 'scatter',
                     marker: { color: 'red', size: 8 },
+                    text: [`Cycle: ${xTrace[0]}, Capacity: ${yTrace[0]}%`], // label text for the marker
+                    textposition: 'top right', // position of the text relative to the marker
+                    showlegend: false 
                 }
             ], {
             title: 'Cycle Number vs Capacity Retention',
