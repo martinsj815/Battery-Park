@@ -88,10 +88,18 @@ description: Battery Chemistry to Technology
           - Note that this is theoretical estimation and calculated by assuming perfectly flat and smooth film of Li.
         <br>
         <br>
-        Li Areal Capacity [mAh/cm<sup>2</sup>] <br>
-        <input type="number" id="LiAC" placeholder="Enter a number" step="0.01" oninput="calculateLithickness()">
-    </div>
-    <br>
+        <div class="columns">
+            <div class="column">    
+                Li Areal Capacity [mAh/cm<sup>2</sup>] <br>
+                <input type="number" id="LiAC" placeholder="Enter a number" step="0.01" oninput="calculateLithickness()">
+            </div>
+            <br>
+            <div class="column">    
+                <br>
+                <div id="myPlotLithickness" style="width:600px;height:400px;"></div>
+            </div> 
+
+            
     <!-- Output Section -->
     <h3 id="output2"></h3>
     <br><br>
@@ -200,7 +208,54 @@ description: Battery Chemistry to Technology
             console.error("Invalid cycle retention input. Please enter a valid number.");
         }
     } 
-    
+    function generateLithickPlot() {
+        xValues = [];
+        yValues = [];
+
+        const LiAC = parseFloat(document.getElementById('LiAC').value);
+
+        if (!isNaN(LiAC) && LiAC > 0 ) {
+            for (let LiAC > 200; LiAC += 1) {
+                const T_Li = 10000*LiAC*6.941/(26801.4814*0.534);
+                xValues.push(LiAC);
+                yValues.push(T_Li);
+            }
+            Plotly.newPlot('myPlotLithickness', [
+                {
+                    x: xValues,
+                    y: yValues,
+                    mode: 'lines',
+                    type: 'scatter',
+                    showlegend: false 
+                },
+                {
+                    x: xTrace,
+                    y: yTrace,
+                    mode: 'markers',
+                    type: 'scatter',
+                    marker: { color: 'red', size: 8 },
+                    text: [`Cycle: ${xTrace[0]}, CE: ${yTrace[0]}%`], // label text for the marker
+                    textposition: 'top right', // position of the text relative to the marker
+                    showlegend: false 
+                }
+            ], {
+                title: {
+                    text: 'Li Thickness Response to Li Areal Capacity',
+                    font: {
+                        family: 'Arial, sans-serif', // Choose a font family
+                        size: 18, // Adjust the font size
+                        color: 'black', // Title color
+                        weight: 'bold' // Make title bold
+                            }
+                },
+                xaxis: { title: 'Li Areal Capacity [mAh/cm<sup>2</sup>]' },
+                yaxis: { title: 'Li Thickness (um)'}
+            }
+            );
+        } else {
+            console.error("Invalid cycle retention input. Please enter a valid number.");
+        }
+    }    
     function showInputFields() {
         const operation = document.getElementById("operationSelect").value;
         document.getElementById("cycleLifeInputs").style.display = operation === "cycle-life" ? "block" : "none";
@@ -257,8 +312,13 @@ description: Battery Chemistry to Technology
 
         if (!isNaN(LiAC)) {
           const T_Li = 10000*LiAC*6.941/(26801.4814*0.534); 
-          document.getElementById('output2').textContent = 
-            `With areal capacity of Li, ${T_Li.toFixed(2)}um Li is stripped or deposited.`;
+          document.getElementById('output2').innerHTML = 
+            `With areal capacity of Li, <b>${T_Li.toFixed(2)}um</b> Li is stripped or deposited.`;
+
+            xTrace = [LiAC];
+            yTrace = [T_Li];
+            
+            generateLithickPlot(); // Re-generate plot with new data
         } else {
           document.getElementById('output2').textContent = "Please enter a valid number.";
         }
