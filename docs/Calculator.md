@@ -220,7 +220,7 @@ description: Battery Chemistry to Technology
                 <br>
                 <br>
                 Number of stacked layer <br>
-                <input type="number" id="stacked_layer" placeholder="Enter a number" value="7" step="1" oninput="calculateStackCellEnergyDensity()">
+                <input type="number" id="stacked_layer" placeholder="Enter a number" step="1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>
                 <h3> Target Energy Density [Wh/Kg]<sup>*2</sup> </h3>
@@ -681,7 +681,7 @@ description: Battery Chemistry to Technology
             let NP_ratio = areal_cap_anode/areal_cap_cath;
 
             if (w_electrolyte < 0) {
-                w_electrolyte = 1.3*cell_cap;
+                w_electrolyte = 1.3 * cell_cap;
                 EC = 1.3;
             } else {
                 EC = w_electrolyte/cell_cap;
