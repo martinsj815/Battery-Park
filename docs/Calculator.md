@@ -117,11 +117,12 @@ description: Battery Chemistry to Technology
         <br><br>
       - This calculation can support in pouch cell design. For example, with a designed electrode, this modeling can determine the number of stack layers and electrolyte amount to achive target cell apacity and energy density.
         <br><br>
-        <h3> Electrode Parameters </h2>
+        <h2> Electrode Parameters </h2>
         <br>
         <div class="columns">
             <div class="column">    
                 <h3> Cathode Parameters </h3>
+                
                     <br>
                     Electrode density (g/cm<sup>3</sup>) <br>
                     <input type="number" id="catden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
@@ -146,6 +147,7 @@ description: Battery Chemistry to Technology
             </div>
             <div class="column">   
                 <h3> Anode Parameters </h3>
+                
                     <br>
                     Electrode density [g/cm<sup>3</sup>sup>] <br>
                     <input type="number" id="anden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
@@ -170,6 +172,7 @@ description: Battery Chemistry to Technology
             </div>
             <div class="column">   
                 <h3> Other Parameters </h3>
+                
                     <br>
                     Al foil thickness [μm] <br>
                     <input type="number" id="althi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
