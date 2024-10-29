@@ -204,8 +204,17 @@ description: Battery Chemistry to Technology
                 <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/stack_type.png?raw=true' alt="AcademicIndustry" style="width:500px; height:auto;">
                 <br>
                 <!-- Output Section -->
-                <tbody id="resultsBody">
-                </tbody>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameters</th>
+                            <th>Results</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody">
+                        <!-- JavaScript will insert rows here -->
+                    </tbody>
+                </table>
                 <br><br>
                 <br>
             </div>
