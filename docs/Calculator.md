@@ -122,74 +122,71 @@ description: Battery Chemistry to Technology
         <div class="columns">
             <div class="column">    
                 <h3> Cathode Parameters </h3>
-                
-                    <br>
-                    Electrode density (g/cm<sup>3</sup>) <br>
-                    <input type="number" id="catden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>
-                    Electrode thickness [μm] <br>
-                    <input type="number" id="catthick" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>
-                    Active material loading ratio <br>
-                    <input type="number" id="catamlr" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>
-                    Practical capacity of active material [mAh/g] <br>
-                    <input type="number" id="catcap" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>         
-                    Electrode area [cm<sup>2</sup>] <br>
-                    <input type="number" id="catarea" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>  
+                <br>
+                Electrode density (g/cm<sup>3</sup>) <br>
+                <input type="number" id="catden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>
+                Electrode thickness [μm] <br>
+                <input type="number" id="catthick" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>
+                Active material loading ratio <br>
+                <input type="number" id="catamlr" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>
+                Practical capacity of active material [mAh/g] <br>
+                <input type="number" id="catcap" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>         
+                Electrode area [cm<sup>2</sup>] <br>
+                <input type="number" id="catarea" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>  
             </div>
             <div class="column">   
                 <h3> Anode Parameters </h3>
-                
-                    <br>
-                    Electrode density [g/cm<sup>3</sup>sup>] <br>
-                    <input type="number" id="anden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>
-                    Electrode thickness [μm] <br>
-                    <input type="number" id="cuthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>
-                    Active material loading ratio <br>
-                    <input type="number" id="anamlr" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>
-                    Practical capacity of active material [mAh/g] <br>
-                    <input type="number" id="ancap" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>        
-                    Electrode area [cm<sup>2</sup>] <br>
-                    <input type="number" id="anarea" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>  
+                <br>
+                Electrode density [g/cm<sup>3</sup>sup>] <br>
+                <input type="number" id="anden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>
+                Electrode thickness [μm] <br>
+                <input type="number" id="cuthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>
+                Active material loading ratio <br>
+                <input type="number" id="anamlr" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>
+                Practical capacity of active material [mAh/g] <br>
+                <input type="number" id="ancap" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>        
+                Electrode area [cm<sup>2</sup>] <br>
+                <input type="number" id="anarea" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>  
             </div>
             <div class="column">   
                 <h3> Other Parameters </h3>
-                
-                    <br>
-                    Al foil thickness [μm] <br>
-                    <input type="number" id="althi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>
-                    Cu foil thickness [μm] <br>
-                    <input type="number" id="cuthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>
-                    Tab area [mm²] <br>
-                    <input type="number" id="tabar" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>
-                    Total seperator weight [g] <br>
-                    <input type="number" id="sepwei" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>        
+                <br>
+                Al foil thickness [μm] <br>
+                <input type="number" id="althi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>
+                Cu foil thickness [μm] <br>
+                <input type="number" id="cuthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>
+                Tab area [mm²] <br>
+                <input type="number" id="tabar" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>
+                Total seperator weight [g] <br>
+                <input type="number" id="sepwei" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>        
             </div>
         </div>  
     </div>
