@@ -147,7 +147,7 @@ description: Battery Chemistry to Technology
             <div class="column">   
                 <h3> Anode Parameters </h3>
                 <br>
-                Electrode density [g/cm<sup>3</sup>sup>] <br>
+                Electrode density [g/cm<sup>3</sup>] <br>
                 <input type="number" id="anden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
@@ -189,6 +189,34 @@ description: Battery Chemistry to Technology
                 <br>        
             </div>
         </div>  
+        <br><br>
+        <h2> Cell Parameters </h2>
+        <br>
+        <div class="columns">
+            <div class="column">    
+                <b>Type of stacked layer and its unit:</b>
+                <br><br>
+                <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/stack_type.png?raw=true' alt="AcademicIndustry" style="width:500px; height:auto;">
+            </div>
+            <div class="column">   
+                Sum of other package weight [g]<sup>*1</sup>
+                <input type="number" id="sopw" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>
+                Nominal cell voltage [V]
+                <input type="number" id="nomvol" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>
+                Number of stacked layer
+                <input type="number" id="numsl" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>
+                <h3> Target Energy Density [Wh/Kg]<sup>*2</sup> </h3> <br>
+                <input type="number" id="energyden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <br>
+                <br>        
+            </div>
+        </div>       
     </div>
     <div id="Jelly-Roll Cell" class="tabcontent">
         <br>
@@ -280,7 +308,8 @@ description: Battery Chemistry to Technology
                     <input type="number" id="inndia" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
             </div>
-        </div>  
+        </div>
+        
         <!-- Output Section -->
         <h3 id="output3"></h3>
     </div>
