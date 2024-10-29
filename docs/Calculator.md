@@ -199,19 +199,19 @@ description: Battery Chemistry to Technology
                 <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/stack_type.png?raw=true' alt="AcademicIndustry" style="width:500px; height:auto;">
             </div>
             <div class="column">   
-                Sum of other package weight [g]<sup>*1</sup>
+                Sum of other package weight [g]<sup>*1</sup> <br>
                 <input type="number" id="sopw" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
-                Nominal cell voltage [V]
+                Nominal cell voltage [V] <br>
                 <input type="number" id="nomvol" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
-                Number of stacked layer
+                Number of stacked layer <br>
                 <input type="number" id="numsl" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
-                <h3> Target Energy Density [Wh/Kg]<sup>*2</sup> </h3> <br>
+                <h3> Target Energy Density [Wh/Kg]<sup>*2</sup> </h3>
                 <input type="number" id="energyden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>        
