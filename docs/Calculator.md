@@ -705,28 +705,21 @@ description: Battery Chemistry to Technology
             const N_cu;  
             const N_ed;           
             
-            const isValidInput = true;
 
-            if (isValidInput) {
-                const results = [
-                    { parameter: "Cell Capacity [Ah]", value: cell_cap.toFixed(2) },
-                    { parameter: "Energy [Wh]", value: cell_energy.toFixed(2) },
-                    { parameter: "NP Ratio", value: NP_ratio.toFixed(2) },
-                    { parameter: "EC Ratio", value: EC.toFixed(2) },
-                    { parameter: "No. Al-foil", value: N_al },
-                    { parameter: "No. Cu-foil", value: N_cu },
-                    { parameter: "No. Single Side Electrode", value: N_ed }               
-                ];
-                
-                const tableRows = results.map(result =>
-                    `<tr><td>${result.parameter}</td><td><b>${result.value}</b></td></tr>`
-                ).join('');
-                
-                document.getElementById('resultsBody').innerHTML = tableRows;
-            } else {
-                // Show error message if invalid input
-                document.getElementById('resultsBody').innerHTML = `<tr><td colspan="2">Please enter valid numbers.</td></tr>`;
-            }
+            const results = [
+                { parameter: "Cell Capacity [Ah]", value: cell_cap.toFixed(2) },
+                { parameter: "Energy [Wh]", value: cell_energy.toFixed(2) },
+                { parameter: "NP Ratio", value: NP_ratio.toFixed(2) },
+                { parameter: "EC Ratio", value: EC.toFixed(2) },
+                { parameter: "No. Al-foil", value: N_al },
+                { parameter: "No. Cu-foil", value: N_cu },
+                { parameter: "No. Single Side Electrode", value: N_ed }
+            ];
+
+            document.getElementById('resultsBody').innerHTML = results.map(result =>
+                `<tr><td>${result.parameter}</td><td><b>${result.value}</b></td></tr>`
+            ).join('');
+            
         } else {
             document.getElementById('output4').textContent = "Please enter valid numbers.";
         }
