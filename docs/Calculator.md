@@ -206,8 +206,6 @@ description: Battery Chemistry to Technology
                 <!-- Output Section -->
                 <h3 id="output4"></h3>
                 <br><br>
-                *1 A sum of other package weights includes the total weight of tabs and the packaging case. <br>
-                *2 If the total cell capacity is insufficient to include the electrolyte weight in the total cell weight to reach the target energy density, this target energy density is reset according to EC ratio = 1.3 (g/Ah)(referenced Panasonic 18650B EC ratio).
                 <br>
             </div>
             <div class="column">   
@@ -228,6 +226,9 @@ description: Battery Chemistry to Technology
                 <br>
                 <br>        
             </div>
+            <br>
+            *1 A sum of other package weights includes the total weight of tabs and the packaging case. <br>
+            *2 If the total cell capacity is insufficient to include the electrolyte weight in the total cell weight to reach the target energy density, this target energy density is reset according to EC ratio = 1.3 (g/Ah)(referenced Panasonic 18650B EC ratio).
         </div>       
     </div>
     <div id="Jelly-Roll Cell" class="tabcontent">
@@ -632,7 +633,7 @@ description: Battery Chemistry to Technology
             if (type === 't1') {
                 N_cu = stacked_layer;
                 N_al = stacked_layer;
-                N_ed = stacked_layer*2;
+                N_ed = stacked_layer * 2;
                 cell_cap = rep_cap * stacked_layer * 2 * 0.001;
                 
                 // weight for electrode:
@@ -660,16 +661,17 @@ description: Battery Chemistry to Technology
                 
             } else {
                 cell_cap = rep_cap * stacked_layer * 0.001;
+                N_ed = stacked_layer;
+                cell_w_cath = w_cath * stacked_layer;
+                cell_w_anode = w_anode * stacked_layer;
+                w_Al = N_al * Al_density * Al_area * Al_t * 0.0001;
+                w_Cu = N_cu * Cu_density * Cu_area * Cu_t * 0.0001;
                 if (stacked_layer === 1) {
                     N_al = 1;
                     N_cu = 1;
                 } else {
                     N_cu = Math.ceil(stacked_layer / 2);
                     N_al = Math.floor(stacked_layer / 2) + 1;                
-                    cell_w_cath = w_cath * stacked_layer;
-                    cell_w_anode = w_anode * stacked_layer;
-                    w_Al = N_al * Al_density * Al_area * Al_t * 0.0001;
-                    w_Cu = N_cu * Cu_density * Cu_area * Cu_t * 0.0001;
                 }
             }
             
