@@ -601,14 +601,13 @@ description: Battery Chemistry to Technology
 
         const Al_t = parseFloat(document.getElementById('Al_t').value);
         const area_tap = parseFloat(document.getElementById('area_tap').value);
-        const c_ea = parseFloat(document.getElementById('c_ea').value);
         const S_w = parseFloat(document.getElementById('S_w').value);
         const stacked_layer = parseInt(document.getElementById('stacked_layer').value);
 
         // Retrieve selected type from dropdown
         const type = document.getElementById('operationSelect2').value;
         
-        if (!isNaN(a_ed) && a_ed > 0 && !isNaN(a_et) && a_et > 0 && !isNaN(a_amlr) && a_amlr > 0 && !isNaN(a_pcam) && a_pcam > 0 && !isNaN(a_ea) && a_ea > 0 && !isNaN(c_ed) && c_ed > 0 && !isNaN(c_et) && c_et > 0 && !isNaN(c_amlr) && c_amlr > 0 && !isNaN(c_pcam) && c_pcam > 0 && !isNaN(c_ea) && c_ea > 0 && !isNaN(Al_t) && Al_t > 0 && !isNaN(area_tap) && area_tap > 0 && !isNaN(c_ea) && c_ea > 0 && !isNaN(S_w) && S_w > 0) {
+        if (!isNaN(a_ed) && a_ed > 0 && !isNaN(a_et) && a_et > 0 && !isNaN(a_amlr) && a_amlr > 0 && !isNaN(a_pcam) && a_pcam > 0 && !isNaN(a_ea) && a_ea > 0 && !isNaN(c_ed) && c_ed > 0 && !isNaN(c_et) && c_et > 0 && !isNaN(c_amlr) && c_amlr > 0 && !isNaN(c_pcam) && c_pcam > 0 && !isNaN(c_ea) && c_ea > 0 && !isNaN(Al_t) && Al_t > 0 && !isNaN(area_tap) && area_tap > 0 && !isNaN(S_w) && S_w && !isNaN(stacked_layer) && stacked_layer > 0) {
 
             const Al_density = 2.7;
             const Cu_density = 8.93;
