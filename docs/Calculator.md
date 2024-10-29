@@ -788,13 +788,13 @@ description: Battery Chemistry to Technology
 
             // Render the Pie Chart
             const ctx = document.getElementById('CellWeightChart').getContext('2d');
-            if (weightChart) {
+            if (CellWeightChart) {
                 // Update existing chart
                 weightChart.data = data;  // Update chart data
                 weightChart.update();     // Apply data updates
             } else {
                 // Create new chart
-                weightChart = new Chart(ctx, {
+                CellWeightChart = new Chart(ctx, {
                     type: 'pie',
                     data: data,
                     options: {
@@ -818,7 +818,9 @@ description: Battery Chemistry to Technology
                         }
                     }
                 });
-            } else {
+            } 
+        }
+        else {
             document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
         }
     }
