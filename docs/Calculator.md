@@ -195,8 +195,8 @@ description: Battery Chemistry to Technology
         <div class="columns">
             <div class="column">    
                 <b>Type of stacked layer and its unit:</b>
-                <select id="operationSelect2" onchange="showInputFields2()">
-                    <option value="t1" selected>Type 1</option>
+                <select id="operationSelect2" onchange="calculateStackCellEnergyDensity()">
+                    <option value="t1">Type 1</option>
                     <option value="t2">Type 2</option>
                     <option value="t3">Type 3</option>
                 </select>
@@ -220,7 +220,7 @@ description: Battery Chemistry to Technology
                 <br>
                 <br>
                 Number of stacked layer <br>
-                <input type="number" id="stacked_layer" placeholder="Enter a number" step="1" oninput="calculateStackCellEnergyDensity()">
+                <input type="number" id="stacked_layer" placeholder="Enter a number" value="7" step="1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>
                 <h3> Target Energy Density [Wh/Kg]<sup>*2</sup> </h3>
