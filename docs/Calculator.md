@@ -612,6 +612,8 @@ description: Battery Chemistry to Technology
 
         // Retrieve selected type from dropdown
         const type = document.getElementById('operationSelect2').value;
+
+        let cell_cap, cell_energy, NP_ratio, EC, N_al, N_cu, N_ed, cell_w_cath, cell_w_anode, w_Al, w_Cu;
         
         if (!isNaN(a_ed) && a_ed > 0 && !isNaN(a_et) && a_et > 0 && !isNaN(a_amlr) && a_amlr > 0 && !isNaN(a_pcam) && a_pcam > 0 && !isNaN(a_ea) && a_ea > 0 && !isNaN(c_ed) && c_ed > 0 && !isNaN(c_et) && c_et > 0 && !isNaN(c_amlr) && c_amlr > 0 && !isNaN(c_pcam) && c_pcam > 0 && !isNaN(c_ea) && c_ea > 0 && !isNaN(Al_t) && Al_t > 0 && !isNaN(area_tap) && area_tap > 0 && !isNaN(S_w) && S_w && !isNaN(stacked_layer) && stacked_layer > 0 && Number.isInteger(stacked_layer)) {
 
@@ -627,8 +629,7 @@ description: Battery Chemistry to Technology
             
             const Al_area = c_ea + area_tap * 0.01; 
             const Cu_area = a_ea + area_tap * 0.01;
-
-            let cell_cap;
+            
             // Calculate results
             if (type === 't1') {
                 N_cu = stacked_layer;
@@ -676,11 +677,11 @@ description: Battery Chemistry to Technology
             }
             
             // Calculate amount of electrode to reach target eneryg density
-            let cell_energy = cell_cap * nom_v;
-            let total_target_weight = (cell_energy / target_ed) * 1000;
-            let weight_beside_electrolyte = other_packageweight + w_Al+ w_Cu + S_w + cell_w_cath + cell_w_anode;
+            cell_energy = cell_cap * nom_v;
+            const total_target_weight = (cell_energy / target_ed) * 1000;
+            const weight_beside_electrolyte = other_packageweight + w_Al+ w_Cu + S_w + cell_w_cath + cell_w_anode;
             let w_electrolyte = total_target_weight - weight_beside_electrolyte;
-            let NP_ratio = areal_cap_anode/areal_cap_cath;
+            NP_ratio = areal_cap_anode/areal_cap_cath;
 
             if (w_electrolyte < 0) {
                 w_electrolyte = 1.3 * cell_cap;
@@ -707,13 +708,13 @@ description: Battery Chemistry to Technology
                 { parameter: "No. Cu-foil", value: N_cu },
                 { parameter: "No. Single Side Electrode", value: N_ed }
             ];
-
+            
             document.getElementById('resultsBody').innerHTML = results.map(result =>
                 `<tr><td>${result.parameter}</td><td><b>${result.value}</b></td></tr>`
             ).join('');
             
         } else {
-            document.getElementById('output4').textContent = "Please enter valid numbers.";
+            document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
         }
     }
     window.onload = function() {
