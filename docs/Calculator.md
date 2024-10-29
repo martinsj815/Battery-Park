@@ -124,23 +124,23 @@ description: Battery Chemistry to Technology
                 <h3> Cathode Parameters </h3>
                 <br>
                 Electrode density (g/cm<sup>3</sup>) <br>
-                <input type="number" id="c_ed" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="c_ed" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>
                 Electrode thickness [μm] <br>
-                <input type="number" id="c_et" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="c_et" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>
                 Active material loading ratio <br>
-                <input type="number" id="c_amlr" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="c_amlr" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>
                 Practical capacity of active material [mAh/g] <br>
-                <input type="number" id="c_pcam" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="c_pcam" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>         
                 Electrode area [cm<sup>2</sup>] <br>
-                <input type="number" id="c_ea" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="c_ea" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>  
             </div>
@@ -148,23 +148,23 @@ description: Battery Chemistry to Technology
                 <h3> Anode Parameters </h3>
                 <br>
                 Electrode density [g/cm<sup>3</sup>] <br>
-                <input type="number" id="a_ed" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="a_ed" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>
                 Electrode thickness [μm] <br>
-                <input type="number" id="a_et" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="a_et" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>
                 Active material loading ratio <br>
-                <input type="number" id="a_amlr" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="a_amlr" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>
                 Practical capacity of active material [mAh/g] <br>
-                <input type="number" id="a_pcam" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="a_pcam" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>        
                 Electrode area [cm<sup>2</sup>] <br>
-                <input type="number" id="a_ea" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="a_ea" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>  
             </div>
@@ -172,19 +172,19 @@ description: Battery Chemistry to Technology
                 <h3> Other Parameters </h3>
                 <br>
                 Al foil thickness [μm] <br>
-                <input type="number" id="Al_t" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="Al_t" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>
                 Cu foil thickness [μm] <br>
-                <input type="number" id="Cu_t" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="Cu_t" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>
                 Tab area [mm²] <br>
-                <input type="number" id="area_tap" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="area_tap" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>
                 Total seperator weight [g] <br>
-                <input type="number" id="S_w" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="S_w" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>        
             </div>
@@ -195,24 +195,36 @@ description: Battery Chemistry to Technology
         <div class="columns">
             <div class="column">    
                 <b>Type of stacked layer and its unit:</b>
+                <select id="operationSelect2" onchange="showInputFields2()">
+                    <option value="t1" selected>Type 1</option>
+                    <option value="t2">Type 2</option>
+                    <option value="t3">Type 3</option>
+                </select>
                 <br><br>
                 <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/stack_type.png?raw=true' alt="AcademicIndustry" style="width:500px; height:auto;">
+                <br>
+                <!-- Output Section -->
+                <h3 id="output4"></h3>
+                <br><br>
+                *1 A sum of other package weights includes the total weight of tabs and the packaging case.
+                *2 If the total cell capacity is insufficient to include the electrolyte weight in the total cell weight to reach the target energy density, this target energy density is reset according to EC ratio = 1.3 (g/Ah)(referenced Panasonic 18650B EC ratio).
+                <br>
             </div>
             <div class="column">   
                 Sum of other package weight [g]<sup>*1</sup> <br>
-                <input type="number" id="other_packageweight" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="other_packageweight" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>
                 Nominal cell voltage [V] <br>
-                <input type="number" id="nom_v" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="nom_v" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>
                 Number of stacked layer <br>
-                <input type="number" id="stacked_layer" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="stacked_layer" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>
                 <h3> Target Energy Density [Wh/Kg]<sup>*2</sup> </h3>
-                <input type="number" id="target_ed" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="target_ed" placeholder="Enter a number" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>        
             </div>
@@ -573,8 +585,61 @@ description: Battery Chemistry to Technology
             document.getElementById('output3').textContent = "Please enter valid numbers.";
         }
     }
+
+    function calculateStackCellEnergyDensity() {
+        const a_ed = parseFloat(document.getElementById('a_ed').value);
+        const a_et = parseFloat(document.getElementById('a_et').value);
+        const a_amlr = parseFloat(document.getElementById('a_amlr').value);
+        const a_pcam = parseFloat(document.getElementById('a_pcam').value);
+        const a_ea = parseFloat(document.getElementById('a_ea').value);
+        
+        const c_ed = parseFloat(document.getElementById('c_ed').value);
+        const c_et = parseFloat(document.getElementById('c_et').value);
+        const c_amlr = parseFloat(document.getElementById('c_amlr').value);
+        const c_pcam = parseFloat(document.getElementById('c_pcam').value);
+        const c_ea = parseFloat(document.getElementById('c_ea').value);
+
+        const Al_t = parseFloat(document.getElementById('Al_t').value);
+        const area_tap = parseFloat(document.getElementById('area_tap').value);
+        const c_ea = parseFloat(document.getElementById('c_ea').value);
+        const S_w = parseFloat(document.getElementById('S_w').value);
+        
+        if (!isNaN(a_ed) && a_ed > 0 && !isNaN(a_et) && a_et > 0 && !isNaN(a_amlr) && a_amlr > 0 && !isNaN(a_pcam) && a_pcam > 0 && !isNaN(a_ea) && a_ea > 0 && !isNaN(c_ed) && c_ed > 0 && !isNaN(c_et) && c_et > 0 && !isNaN(c_amlr) && c_amlr > 0 && !isNaN(c_pcam) && c_pcam > 0 && !isNaN(c_ea) && c_ea > 0 && !isNaN(Al_t) && Al_t > 0 && !isNaN(area_tap) && area_tap > 0 && !isNaN(c_ea) && c_ea > 0 && !isNaN(S_w) && S_w > 0) {
+
+            const Al_density = 2.7;
+            const Cu_density = 8.93;
+            const areal_cap_cath = c_ed * c_et * 0.0001 * c_amlr * c_pcam;
+            const areal_cap_anode = a_ed * a_et * 0.0001 * a_amlr * a_pcam;
+            const cap_cath = areal_cap_cath * c_ea;
+            const cap_anode = areal_cap_anode * a_ea;
+            const w_cath = c_ed * c_et * 0.0001 * c_ea;
+            const w_anode = a_ed * a_et * 0.0001 * a_ea;
+            const rep_cap = Math.min(cap_cath, cap_anode);
+            const Al_area = c_ea + area_tap * 0.01; 
+            const Cu_area = a_ea + area_tap * 0.01;
+            
+            if (option value == 't1') {
+                cell_cap = rep_cap * Math.int(stacked_layer) * 2 * 0.001;
+            } else if (option value == 't2') {
+            cell_cap = rep_cap * Math.int(stacked_layer) * 0.001
+            } else {
+            cell_cap = rep_cap * Math.int(stacked_layer) * 0.001
+        }
+                
+            document.getElementById('output4').innerHTML = 
+            `Cell Capacity[Ah]: <b>${cell_cap.toFixed(2)}m</b> <br>
+            Energy [Wh]: <b>${cell_cap.toFixed(1)}</b> <br>
+            NP ratio: <b>${cell_cap.toFixed(2)}mAh/cm<sup>2</sup></b> <br>
+            No. Al-foil: <b>${cell_cap.toFixed(2)}Ah</b> <br>
+            No. Cu-foil: <b>${cell_cap.toFixed(2)}Ah</b> <br>
+            No. single side electrode: <b>${cell_cap.toFixed(2)}Ah</b> <br>`;
+            } else {
+            document.getElementById('output4').textContent = "Please enter valid numbers.";
+        }
+    }
     window.onload = function() {
         showInputFields();
+        showInputFields2();
     };
     
 </script>
