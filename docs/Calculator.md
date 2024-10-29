@@ -697,6 +697,14 @@ description: Battery Chemistry to Technology
           //      No. Al-foil: <b>${N_al}</b> <br>
           //     No. Cu-foil: <b>${N_cu}</b> <br>
           //     No. single side electrode: <b>${N_ed}</b> <br>`;
+
+           // const cell_cap;  // Example value
+           // const cell_energy;  // Example value
+           // const NP_ratio;  // Example value
+           // const EC;  // Example value
+           // const N_al;  // Example value
+           // const N_cu;  // Example value
+           // const N_ed;  // Example value            
             
             const isValidInput = true;
 
@@ -705,7 +713,7 @@ description: Battery Chemistry to Technology
                     { parameter: "Cell Capacity [Ah]", value: cell_cap.toFixed(2) },
                     { parameter: "Energy [Wh]", value: cell_energy.toFixed(2) },
                     { parameter: "NP Ratio", value: NP_ratio.toFixed(2) },
-                    { parameter: "EC Ratio", value: EC_ratio.toFixed(2) },
+                    { parameter: "EC Ratio", value: EC.toFixed(2) },
                     { parameter: "No. Al-foil", value: N_al },
                     { parameter: "No. Cu-foil", value: N_cu },
                     { parameter: "No. Single Side Electrode", value: N_ed }               
