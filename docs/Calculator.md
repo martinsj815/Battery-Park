@@ -698,13 +698,13 @@ description: Battery Chemistry to Technology
           //     No. Cu-foil: <b>${N_cu}</b> <br>
           //     No. single side electrode: <b>${N_ed}</b> <br>`;
 
-           // const cell_cap;  // Example value
-           // const cell_energy;  // Example value
-           // const NP_ratio;  // Example value
-           // const EC;  // Example value
-           // const N_al;  // Example value
-           // const N_cu;  // Example value
-           // const N_ed;  // Example value            
+           const cell_cap;  // Example value
+           const cell_energy;  // Example value
+           const NP_ratio;  // Example value
+           const EC;  // Example value
+           const N_al;  // Example value
+           const N_cu;  // Example value
+           const N_ed;  // Example value            
             
             const isValidInput = true;
 
