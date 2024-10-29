@@ -112,12 +112,76 @@ description: Battery Chemistry to Technology
     <div id="Stacked Cell" class="tabcontent">
         <br>
         <h2> Estimation of Pouch Cell Capacity and Energy Density </h2>
-        <br>
-        <br>
+        <br><br>
       - This estimates the total cell capacity and eneryg density of the pouch cells.
-        <br>
-        <br>
+        <br><br>
       - This calculation can support in pouch cell design. For example, with a designed electrode, this modeling can determine the number of stack layers and electrolyte amount to achive target cell apacity and energy density.
+        <br><br>
+        <h3> Electrode Parameters </h2>
+        <br>
+        <div class="columns">
+            <div class="column">    
+                <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/cylindrical%20spiral_wcaption.png?raw=true' alt="AcademicIndustry" style="width:500px; height:auto;">
+            </div>
+            <div class="column">    
+                <h3> Cathode Parameters </h3>
+                    <br>
+                    Electrode density (g/cm<sup>3</sup>) <br>
+                    <input type="number" id="eden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>
+                    Electrode thickness [μm] <br>
+                    <input type="number" id="althi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>
+                    Discharge capacity of active material (mAh/g) <br>
+                    <input type="number" id="discapa" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>
+                    Density of electrode material (g/cm<sup>3</sup>) <br>
+                    <input type="number" id="densa" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>
+                    Active material loading ratio <br>
+                    <input type="number" id="amlr" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>         
+                    Estimated porosity <br>
+                    <input type="number" id="por" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>  
+                    Electrode width (cm) <br>
+                    <input type="number" id="ewid" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+            </div>
+            <div class="column">   
+                <h3> Other Cell Parameters </h3>
+                    <br>
+                    Anode coating thickness (Single-side) (μm) <br>
+                    <input type="number" id="ancthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>
+                    Cu foil thickness (μm) <br>
+                    <input type="number" id="cuthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>
+                    Separator thickness (μm) <br>
+                    <input type="number" id="septhi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>
+                    Outer diameter of the cell (mm) <br>
+                    <input type="number" id="outdia" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>
+                    Cell Can thickness (mm) <br>
+                    <input type="number" id="canthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>         
+                    Inner diameter of the cell (mm) <br>
+                    <input type="number" id="inndia" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+            </div>
+        </div>  
     </div>
     <div id="Jelly-Roll Cell" class="tabcontent">
         <br>
@@ -154,11 +218,11 @@ description: Battery Chemistry to Technology
             <div class="column">    
                 <h3> Cathode Parameters </h3>
                     <br>
-                    Coating thickness (single-side) (um) <br>
+                    Coating thickness (single-side) (μm) <br>
                     <input type="number" id="cthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>
-                    Al foil thickness (um) <br>
+                    Al foil thickness (μm) <br>
                     <input type="number" id="althi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>
@@ -185,15 +249,15 @@ description: Battery Chemistry to Technology
             <div class="column">   
                 <h3> Other Cell Parameters </h3>
                     <br>
-                    Anode coating thickness (Single-side) (um) <br>
+                    Anode coating thickness (Single-side) (μm) <br>
                     <input type="number" id="ancthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>
-                    Cu foil thickness (um) <br>
+                    Cu foil thickness (μm) <br>
                     <input type="number" id="cuthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>
-                    Separator thickness (um) <br>
+                    Separator thickness (μm) <br>
                     <input type="number" id="septhi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>
@@ -425,7 +489,7 @@ description: Battery Chemistry to Technology
         if (!isNaN(LiAC) && LiAC > 0) {
           const T_Li = 10000*LiAC*6.941/(26801.4814*0.534); 
           document.getElementById('output2').innerHTML = 
-            `With areal capacity of Li, <b>${T_Li.toFixed(2)}um</b> Li is stripped or deposited.`;
+            `With areal capacity of Li, <b>${T_Li.toFixed(2)}μm</b> Li is stripped or deposited.`;
 
             x2Trace = [LiAC];
             y2Trace = [T_Li];
