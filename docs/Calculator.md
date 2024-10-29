@@ -203,6 +203,10 @@ description: Battery Chemistry to Technology
                 <br><br>
                 <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/stack_type.png?raw=true' alt="AcademicIndustry" style="width:500px; height:auto;">
                 <br>
+                <br>
+                <h3> Cell Summary Table</h3>
+                <br>
+                <br>
                 <!-- Output Section -->
                 <table>
                     <thead>
@@ -699,15 +703,6 @@ description: Battery Chemistry to Technology
             } else {
                 EC = w_electrolyte/cell_cap;
             }
-            
-          //  document.getElementById('output4').innerHTML = 
-          //      `Cell Capacity[Ah]: <b>${cell_cap.toFixed(2)}</b> <br>
-          //      Energy [Wh]: <b>${cell_energy.toFixed(2)}</b> <br>
-          //      NP ratio: <b>${NP_ratio.toFixed(2)}</b> <br>
-          //      EC ratio: <b>${EC.toFixed(2)}</b> <br>
-          //      No. Al-foil: <b>${N_al}</b> <br>
-          //     No. Cu-foil: <b>${N_cu}</b> <br>
-          //     No. single side electrode: <b>${N_ed}</b> <br>`;
 
             const results = [
                 { parameter: "Cell Capacity [Ah]", value: cell_cap.toFixed(2) },
