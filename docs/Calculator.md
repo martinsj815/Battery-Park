@@ -139,7 +139,7 @@ description: Battery Chemistry to Technology
                     <input type="number" id="catcap" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>         
-                    Electrode area [cm<sup>2</sup>sup>] <br>
+                    Electrode area [cm<sup>2</sup>] <br>
                     <input type="number" id="catarea" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>  
@@ -163,7 +163,7 @@ description: Battery Chemistry to Technology
                     <input type="number" id="ancap" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>        
-                    Electrode area [cm<sup>2</sup>sup>] <br>
+                    Electrode area [cm<sup>2</sup>] <br>
                     <input type="number" id="anarea" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>  
