@@ -623,19 +623,19 @@ description: Battery Chemistry to Technology
             if (type === 't1') {
                 cell_cap = rep_cap * Math.int(stacked_layer) * 2 * 0.001;
             } else if (type === 't2') {
-            cell_cap = rep_cap * Math.int(stacked_layer) * 0.001;
+                cell_cap = rep_cap * Math.int(stacked_layer) * 0.001;
             } else {
-            cell_cap = rep_cap * Math.int(stacked_layer) * 0.001;
+                cell_cap = rep_cap * Math.int(stacked_layer) * 0.001;
             }
                 
             document.getElementById('output4').innerHTML = 
-            `Cell Capacity[Ah]: <b>${cell_cap.toFixed(2)}m</b> <br>
-            Energy [Wh]: <b>${cell_cap.toFixed(1)}</b> <br>
-            NP ratio: <b>${cell_cap.toFixed(2)}mAh/cm<sup>2</sup></b> <br>
-            No. Al-foil: <b>${Al_t.toFixed(2)}Ah</b> <br>
-            No. Cu-foil: <b>${cell_cap.toFixed(2)}Ah</b> <br>
-            No. single side electrode: <b>${cell_cap.toFixed(2)}Ah</b> <br>`;
-            } else {
+                `Cell Capacity[Ah]: <b>${cell_cap.toFixed(2)}m</b> <br>
+                Energy [Wh]: <b>${cell_cap.toFixed(1)}</b> <br>
+                NP ratio: <b>${cell_cap.toFixed(2)}mAh/cm<sup>2</sup></b> <br>
+                No. Al-foil: <b>${Al_t.toFixed(2)}Ah</b> <br>
+                No. Cu-foil: <b>${cell_cap.toFixed(2)}Ah</b> <br>
+                No. single side electrode: <b>${cell_cap.toFixed(2)}Ah</b> <br>`;
+        } else {
             document.getElementById('output4').textContent = "Please enter valid numbers.";
         }
     }
