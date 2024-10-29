@@ -700,27 +700,13 @@ description: Battery Chemistry to Technology
             const weight_beside_electrolyte = other_packageweight + w_Al+ w_Cu + S_w + cell_w_cath + cell_w_anode;
             let w_electrolyte = total_target_weight - weight_beside_electrolyte;
             NP_ratio = areal_cap_anode/areal_cap_cath;
-
+            
             if (w_electrolyte < 0) {
                 w_electrolyte = 1.3 * cell_cap;
                 EC = 1.3;
             } else {
                 EC = w_electrolyte/cell_cap;
             }
-
-            const results = [
-                { parameter: "Cell Capacity [Ah]", value: cell_cap.toFixed(2) },
-                { parameter: "Energy [Wh]", value: cell_energy.toFixed(2) },
-                { parameter: "NP Ratio", value: NP_ratio.toFixed(2) },
-                { parameter: "EC Ratio", value: EC.toFixed(2) },
-                { parameter: "No. Al-foil", value: N_al },
-                { parameter: "No. Cu-foil", value: N_cu },
-                { parameter: "No. Single Side Electrode", value: N_ed }
-            ];
-            
-            document.getElementById('resultsBody').innerHTML = results.map(result =>
-                `<tr><td>${result.parameter}</td><td><b>${result.value}</b></td></tr>`
-            ).join('');
 
             const data = {
                 labels: [
@@ -761,37 +747,12 @@ description: Battery Chemistry to Technology
                 }]
             };
 
-            const config = {
-                type: 'pie',
-                data: data,
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: {
-                            position: 'top',
-                        },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    let label = context.label || '';
-                                    if (label) {
-                                        label += ': ';
-                                    }
-                                    label += context.raw.toFixed(2) + ' g';
-                                    return label;
-                                }
-                            }
-                        }
-                    }
-                }
-            };
 
             // Render the Pie Chart
             const ctx = document.getElementById('CellWeightChart').getContext('2d');
             if (CellWeightChart) {
-                // Update existing chart
-                weightChart.data = data;  // Update chart data
-                weightChart.update();     // Apply data updates
+                CellWeightChart.data = data;  // Update chart data
+                CellWeightChart.update();     // Apply data updates
             } else {
                 // Create new chart
                 CellWeightChart = new Chart(ctx, {
@@ -819,8 +780,20 @@ description: Battery Chemistry to Technology
                     }
                 });
             } 
-        }
-        else {
+            const results = [
+                { parameter: "Cell Capacity [Ah]", value: cell_cap.toFixed(2) },
+                { parameter: "Energy [Wh]", value: cell_energy.toFixed(2) },
+                { parameter: "NP Ratio", value: NP_ratio.toFixed(2) },
+                { parameter: "EC Ratio", value: EC.toFixed(2) },
+                { parameter: "No. Al-foil", value: N_al },
+                { parameter: "No. Cu-foil", value: N_cu },
+                { parameter: "No. Single Side Electrode", value: N_ed }
+            ];
+            
+            document.getElementById('resultsBody').innerHTML = results.map(result =>
+                `<tr><td>${result.parameter}</td><td><b>${result.value}</b></td></tr>`
+            ).join('');
+        } else {
             document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
         }
     }
