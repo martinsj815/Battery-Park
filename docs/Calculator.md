@@ -124,23 +124,23 @@ description: Battery Chemistry to Technology
                 <h3> Cathode Parameters </h3>
                 <br>
                 Electrode density (g/cm<sup>3</sup>) <br>
-                <input type="number" id="catden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="c_ed" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
                 Electrode thickness [μm] <br>
-                <input type="number" id="catthick" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="c_et" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
                 Active material loading ratio <br>
-                <input type="number" id="catamlr" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="c_amlr" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
                 Practical capacity of active material [mAh/g] <br>
-                <input type="number" id="catcap" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="c_pcam" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>         
                 Electrode area [cm<sup>2</sup>] <br>
-                <input type="number" id="catarea" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="c_ea" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>  
             </div>
@@ -148,23 +148,23 @@ description: Battery Chemistry to Technology
                 <h3> Anode Parameters </h3>
                 <br>
                 Electrode density [g/cm<sup>3</sup>] <br>
-                <input type="number" id="anden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="a_ed" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
                 Electrode thickness [μm] <br>
-                <input type="number" id="cuthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="a_et" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
                 Active material loading ratio <br>
-                <input type="number" id="anamlr" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="a_amlr" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
                 Practical capacity of active material [mAh/g] <br>
-                <input type="number" id="ancap" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="a_pcam" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>        
                 Electrode area [cm<sup>2</sup>] <br>
-                <input type="number" id="anarea" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="a_ea" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>  
             </div>
@@ -172,19 +172,19 @@ description: Battery Chemistry to Technology
                 <h3> Other Parameters </h3>
                 <br>
                 Al foil thickness [μm] <br>
-                <input type="number" id="althi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="Al_t" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
                 Cu foil thickness [μm] <br>
-                <input type="number" id="cuthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="Cu_t" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
                 Tab area [mm²] <br>
-                <input type="number" id="tabar" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="area_tap" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
                 Total seperator weight [g] <br>
-                <input type="number" id="sepwei" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="S_w" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>        
             </div>
@@ -200,19 +200,19 @@ description: Battery Chemistry to Technology
             </div>
             <div class="column">   
                 Sum of other package weight [g]<sup>*1</sup> <br>
-                <input type="number" id="sopw" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="other_packageweight" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
                 Nominal cell voltage [V] <br>
-                <input type="number" id="nomvol" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="nom_v" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
                 Number of stacked layer <br>
-                <input type="number" id="numsl" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="stacked_layer" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>
                 <h3> Target Energy Density [Wh/Kg]<sup>*2</sup> </h3>
-                <input type="number" id="energyden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                <input type="number" id="target_ed" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                 <br>
                 <br>        
             </div>
