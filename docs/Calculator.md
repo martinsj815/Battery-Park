@@ -206,7 +206,6 @@ description: Battery Chemistry to Technology
                 <br>
                 <h3> Cell Summary Table</h3>
                 <br>
-                <br>
                 <!-- Output Section -->
                 <table>
                     <thead>
@@ -676,11 +675,6 @@ description: Battery Chemistry to Technology
                 
             } else {
                 cell_cap = rep_cap * stacked_layer * 0.001;
-                N_ed = stacked_layer;
-                cell_w_cath = w_cath * stacked_layer;
-                cell_w_anode = w_anode * stacked_layer;
-                w_Al = N_al * Al_density * Al_area * Al_t * 0.0001;
-                w_Cu = N_cu * Cu_density * Cu_area * Cu_t * 0.0001;
                 if (stacked_layer === 1) {
                     N_al = 1;
                     N_cu = 1;
@@ -688,6 +682,11 @@ description: Battery Chemistry to Technology
                     N_cu = Math.ceil(stacked_layer / 2);
                     N_al = Math.floor(stacked_layer / 2) + 1;                
                 }
+                N_ed = stacked_layer;
+                cell_w_cath = w_cath * stacked_layer;
+                cell_w_anode = w_anode * stacked_layer;
+                w_Al = N_al * Al_density * Al_area * Al_t * 0.0001;
+                w_Cu = N_cu * Cu_density * Cu_area * Cu_t * 0.0001;
             }
             
             // Calculate amount of electrode to reach target eneryg density
