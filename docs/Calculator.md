@@ -206,7 +206,7 @@ description: Battery Chemistry to Technology
                 <!-- Output Section -->
                 <h3 id="output4"></h3>
                 <br><br>
-                *1 A sum of other package weights includes the total weight of tabs and the packaging case.
+                *1 A sum of other package weights includes the total weight of tabs and the packaging case. <br>
                 *2 If the total cell capacity is insufficient to include the electrolyte weight in the total cell weight to reach the target energy density, this target energy density is reset according to EC ratio = 1.3 (g/Ah)(referenced Panasonic 18650B EC ratio).
                 <br>
             </div>
