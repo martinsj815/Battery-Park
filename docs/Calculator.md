@@ -603,6 +603,10 @@ description: Battery Chemistry to Technology
         const area_tap = parseFloat(document.getElementById('area_tap').value);
         const c_ea = parseFloat(document.getElementById('c_ea').value);
         const S_w = parseFloat(document.getElementById('S_w').value);
+        const stacked_layer = parseInt(document.getElementById('stacked_layer').value);
+
+        // Retrieve selected type from dropdown
+        const type = document.getElementById('operationSelect2').value;
         
         if (!isNaN(a_ed) && a_ed > 0 && !isNaN(a_et) && a_et > 0 && !isNaN(a_amlr) && a_amlr > 0 && !isNaN(a_pcam) && a_pcam > 0 && !isNaN(a_ea) && a_ea > 0 && !isNaN(c_ed) && c_ed > 0 && !isNaN(c_et) && c_et > 0 && !isNaN(c_amlr) && c_amlr > 0 && !isNaN(c_pcam) && c_pcam > 0 && !isNaN(c_ea) && c_ea > 0 && !isNaN(Al_t) && Al_t > 0 && !isNaN(area_tap) && area_tap > 0 && !isNaN(c_ea) && c_ea > 0 && !isNaN(S_w) && S_w > 0) {
 
@@ -615,17 +619,18 @@ description: Battery Chemistry to Technology
             const w_cath = c_ed * c_et * 0.0001 * c_ea;
             const w_anode = a_ed * a_et * 0.0001 * a_ea;
             const rep_cap = Math.min(cap_cath, cap_anode);
+            
             const Al_area = c_ea + area_tap * 0.01; 
             const Cu_area = a_ea + area_tap * 0.01;
 
             let cell_cap;
             
             if (type === 't1') {
-                cell_cap = rep_cap * Math.int(stacked_layer) * 2 * 0.001;
+                cell_cap = rep_cap * stacked_layer * 2 * 0.001;
             } else if (type === 't2') {
-                cell_cap = rep_cap * Math.int(stacked_layer) * 0.001;
+                cell_cap = rep_cap * stacked_layer * 0.001;
             } else {
-                cell_cap = rep_cap * Math.int(stacked_layer) * 0.001;
+                cell_cap = rep_cap * stacked_layer * 0.001;
             }
                 
             document.getElementById('output4').innerHTML = 
