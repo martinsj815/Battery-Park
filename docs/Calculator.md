@@ -689,14 +689,37 @@ description: Battery Chemistry to Technology
                 EC = w_electrolyte/cell_cap;
             }
             
-            document.getElementById('output4').innerHTML = 
-                `Cell Capacity[Ah]: <b>${cell_cap.toFixed(2)}</b> <br>
-                Energy [Wh]: <b>${cell_energy.toFixed(2)}</b> <br>
-                NP ratio: <b>${NP_ratio.toFixed(2)}</b> <br>
-                EC ratio: <b>${EC.toFixed(2)}</b> <br>
-                No. Al-foil: <b>${N_al}</b> <br>
-                No. Cu-foil: <b>${N_cu}</b> <br>
-                No. single side electrode: <b>${N_ed}</b> <br>`;
+          //  document.getElementById('output4').innerHTML = 
+          //      `Cell Capacity[Ah]: <b>${cell_cap.toFixed(2)}</b> <br>
+          //      Energy [Wh]: <b>${cell_energy.toFixed(2)}</b> <br>
+          //      NP ratio: <b>${NP_ratio.toFixed(2)}</b> <br>
+          //      EC ratio: <b>${EC.toFixed(2)}</b> <br>
+          //      No. Al-foil: <b>${N_al}</b> <br>
+          //     No. Cu-foil: <b>${N_cu}</b> <br>
+          //     No. single side electrode: <b>${N_ed}</b> <br>`;
+            
+            const isValidInput = true;
+
+            if (isValidInput) {
+                const results = [
+                    { parameter: "Cell Capacity [Ah]", value: cell_cap.toFixed(2) },
+                    { parameter: "Energy [Wh]", value: cell_energy.toFixed(2) },
+                    { parameter: "NP Ratio", value: NP_ratio.toFixed(2) },
+                    { parameter: "EC Ratio", value: EC_ratio.toFixed(2) },
+                    { parameter: "No. Al-foil", value: N_al },
+                    { parameter: "No. Cu-foil", value: N_cu },
+                    { parameter: "No. Single Side Electrode", value: N_ed }               
+                ];
+                
+                const tableRows = results.map(result =>
+                    `<tr><td>${result.parameter}</td><td><b>${result.value}</b></td></tr>`
+                ).join('');
+                
+                document.getElementById('resultsBody').innerHTML = tableRows;
+            } else {
+                // Show error message if invalid input
+                document.getElementById('resultsBody').innerHTML = `<tr><td colspan="2">Please enter valid numbers.</td></tr>`;
+            }
         } else {
             document.getElementById('output4').textContent = "Please enter valid numbers.";
         }
