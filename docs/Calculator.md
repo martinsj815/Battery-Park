@@ -19,6 +19,8 @@ description: Battery Chemistry to Technology
         }
     </style>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body onload="openCity('Single Cell'); showInputFields()">
@@ -206,6 +208,8 @@ description: Battery Chemistry to Technology
                 <br>
                 <h3> Cell Summary Table</h3>
                 <br>
+                <br>
+                <canvas id="CellWeightChart" width="400" height="400"></canvas>
                 <!-- Output Section -->
                 <table>
                     <thead>
@@ -716,8 +720,75 @@ description: Battery Chemistry to Technology
             document.getElementById('resultsBody').innerHTML = results.map(result =>
                 `<tr><td>${result.parameter}</td><td><b>${result.value}</b></td></tr>`
             ).join('');
-            
-        } else {
+
+            const data = {
+                labels: [
+                    'Al-foil',
+                    'Cu-foil',
+                    'Cathode',
+                    'Anode',
+                    'Electrolyte',
+                    'Others'
+                ],
+                datasets: [{
+                    label: 'Component Weights',
+                    data: [
+                        w_Al,
+                        w_Cu,
+                        cell_w_cath,
+                        cell_w_anode,
+                        w_electrolyte,
+                        other_packageweight
+                    ],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            };
+
+            const config = {
+                type: 'pie',
+                data: data,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    label += context.raw.toFixed(2) + ' g';
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            // Render the Pie Chart
+            const ctx = document.getElementById('weightChart').getContext('2d');
+            new Chart(ctx, config);
+            } else {
             document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
         }
     }
