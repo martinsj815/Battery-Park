@@ -208,8 +208,6 @@ description: Battery Chemistry to Technology
                 <br>
                 <h3> Cell Summary Table</h3>
                 <br>
-                <br>
-                <canvas id="CellWeightChart" width="400" height="400"></canvas>
                 <!-- Output Section -->
                 <table>
                     <thead>
@@ -223,6 +221,9 @@ description: Battery Chemistry to Technology
                     </tbody>
                 </table>
                 <br><br>
+                <br>
+                <br>
+                <canvas id="CellWeightChart" width="400" height="400"></canvas>
                 <br>
             </div>
             <div class="column">   
@@ -787,7 +788,36 @@ description: Battery Chemistry to Technology
 
             // Render the Pie Chart
             const ctx = document.getElementById('CellWeightChart').getContext('2d');
-            new Chart(ctx, config);
+            if (weightChart) {
+                // Update existing chart
+                weightChart.data = data;  // Update chart data
+                weightChart.update();     // Apply data updates
+            } else {
+                // Create new chart
+                weightChart = new Chart(ctx, {
+                    type: 'pie',
+                    data: data,
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        let label = context.label || '';
+                                        if (label) {
+                                            label += ': ';
+                                        }
+                                        label += context.raw.toFixed(2) + ' g';
+                                        return label;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
             } else {
             document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
         }
