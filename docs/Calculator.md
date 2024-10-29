@@ -121,65 +121,72 @@ description: Battery Chemistry to Technology
         <br>
         <div class="columns">
             <div class="column">    
-                <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/cylindrical%20spiral_wcaption.png?raw=true' alt="AcademicIndustry" style="width:500px; height:auto;">
-            </div>
-            <div class="column">    
                 <h3> Cathode Parameters </h3>
                     <br>
                     Electrode density (g/cm<sup>3</sup>) <br>
-                    <input type="number" id="eden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="catden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>
                     Electrode thickness [μm] <br>
-                    <input type="number" id="althi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>
-                    Discharge capacity of active material (mAh/g) <br>
-                    <input type="number" id="discapa" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
-                    <br>
-                    Density of electrode material (g/cm<sup>3</sup>) <br>
-                    <input type="number" id="densa" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="catthick" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>
                     Active material loading ratio <br>
-                    <input type="number" id="amlr" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="catamlr" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>
+                    Practical capacity of active material [mAh/g] <br>
+                    <input type="number" id="catcap" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>         
-                    Estimated porosity <br>
-                    <input type="number" id="por" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    Electrode area [cm<sup>2</sup>sup>] <br>
+                    <input type="number" id="catarea" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>  
-                    Electrode width (cm) <br>
-                    <input type="number" id="ewid" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
-                    <br>
             </div>
             <div class="column">   
-                <h3> Other Cell Parameters </h3>
+                <h3> Anode Parameters </h3>
                     <br>
-                    Anode coating thickness (Single-side) (μm) <br>
-                    <input type="number" id="ancthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    Electrode density [g/cm<sup>3</sup>sup>] <br>
+                    <input type="number" id="anden" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>
-                    Cu foil thickness (μm) <br>
+                    Electrode thickness [μm] <br>
                     <input type="number" id="cuthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>
-                    Separator thickness (μm) <br>
-                    <input type="number" id="septhi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    Active material loading ratio <br>
+                    <input type="number" id="anamlr" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>
-                    Outer diameter of the cell (mm) <br>
-                    <input type="number" id="outdia" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    Practical capacity of active material [mAh/g] <br>
+                    <input type="number" id="ancap" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>        
+                    Electrode area [cm<sup>2</sup>sup>] <br>
+                    <input type="number" id="anarea" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>  
+            </div>
+            <div class="column">   
+                <h3> Other Parameters </h3>
+                    <br>
+                    Al foil thickness [μm] <br>
+                    <input type="number" id="althi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
                     <br>
-                    Cell Can thickness (mm) <br>
-                    <input type="number" id="canthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    Cu foil thickness [μm] <br>
+                    <input type="number" id="cuthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
-                    <br>         
-                    Inner diameter of the cell (mm) <br>
-                    <input type="number" id="inndia" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
                     <br>
+                    Tab area [mm²] <br>
+                    <input type="number" id="tabar" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>
+                    Total seperator weight [g] <br>
+                    <input type="number" id="sepwei" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <br>
+                    <br>        
             </div>
         </div>  
     </div>
