@@ -786,7 +786,7 @@ description: Battery Chemistry to Technology
             };
 
             // Render the Pie Chart
-            const ctx = document.getElementById('weightChart').getContext('2d');
+            const ctx = document.getElementById('CellWeightChart').getContext('2d');
             new Chart(ctx, config);
             } else {
             document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
