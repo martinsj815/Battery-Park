@@ -604,6 +604,11 @@ description: Battery Chemistry to Technology
         const S_w = parseFloat(document.getElementById('S_w').value);
         const stacked_layer = parseInt(document.getElementById('stacked_layer').value);
 
+        const Cu_t = parseFloat(document.getElementById('Cu_t').value);
+        const nom_v = parseFloat(document.getElementById('nom_v').value);
+        const target_ed = parseFloat(document.getElementById('target_ed').value);
+        const other_packageweight = parseInt(document.getElementById('other_packageweight').value);
+
         // Retrieve selected type from dropdown
         const type = document.getElementById('operationSelect2').value;
         
@@ -668,29 +673,28 @@ description: Battery Chemistry to Technology
                 }
             }
             
-            let cell_energy;
             // Calculate amount of electrode to reach target eneryg density
-            cell_energy = cell_cap * nom_v;
-            total_target_weight = (cell_energy / target_ed) * 1000;
-            weight_beside_electrolyte = other_packageweight + w_Al+ w_Cu + S_w + cell_w_cath + cell_w_anode;
-            w_electrolyte = total_target_weight - weight_beside_electrolyte;
-            NP_ratio = areal_cap_anode/areal_cap_cath;
+            let cell_energy = cell_cap * nom_v;
+            let total_target_weight = (cell_energy / target_ed) * 1000;
+            let weight_beside_electrolyte = other_packageweight + w_Al+ w_Cu + S_w + cell_w_cath + cell_w_anode;
+            let w_electrolyte = total_target_weight - weight_beside_electrolyte;
+            let NP_ratio = areal_cap_anode/areal_cap_cath;
 
             if (w_electrolyte < 0) {
                 w_electrolyte = 1.3*cell_cap;
-                EC_ratio = 1.3;
-                EC = EC_ratio;
+                EC = 1.3;
             } else {
                 EC = w_electrolyte/cell_cap;
+            }
             
             document.getElementById('output4').innerHTML = 
                 `Cell Capacity[Ah]: <b>${cell_cap.toFixed(2)}</b> <br>
                 Energy [Wh]: <b>${cell_energy.toFixed(1)}</b> <br>
                 NP ratio: <b>${NP_ratio.toFixed(2)}</b> <br>
                 EC ratio: <b>${EC.toFixed(2)}</b> <br>
-                No. Al-foil: <b>${N_al.toFixed(2)}</b> <br>
-                No. Cu-foil: <b>${N_cu.toFixed(2)}</b> <br>
-                No. single side electrode: <b>${N_ed.toFixed(2)}</b> <br>`;
+                No. Al-foil: <b>${N_al}</b> <br>
+                No. Cu-foil: <b>${N_cu}</b> <br>
+                No. single side electrode: <b>${N_ed}</b> <br>`;
         } else {
             document.getElementById('output4').textContent = "Please enter valid numbers.";
         }
