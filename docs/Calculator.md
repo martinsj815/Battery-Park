@@ -223,7 +223,7 @@ description: Battery Chemistry to Technology
                 <br><br>
                 <br>
                 <br>
-                <div id="container" style="width: 100%; height: 600px;"></div>
+                <div id="container" style="width: 100%; height: 500px;"></div>
                 <br>
             </div>
             <div class="column">   
@@ -745,13 +745,13 @@ description: Battery Chemistry to Technology
                         enabled: true,
                         format: '<b>{point.percentage:.1f} %</b>',
                         style: {
-                            fontSize: '14px',
+                            fontSize: '20px',
                             fontWeight: 'bold', 
                         }
                     }
                 }],
                tooltip: {
-                   pointFormat: '{point.name}: <b>{point.y:.01f} kg</b> ({point.percentage:.1f}%)'
+                   pointFormat: '{point.name}: <b>{point.y:.2f} g</b>'
                }
             });  
         } else {
