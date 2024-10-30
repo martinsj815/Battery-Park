@@ -749,37 +749,34 @@ description: Battery Chemistry to Technology
 
 
             // Render the Pie Chart
+
+            let CellWeightChart;
+
             const ctx = document.getElementById('CellWeightChart').getContext('2d');
             if (CellWeightChart) {
-                CellWeightChart.data = data;  // Update chart data
-                CellWeightChart.update();     // Apply data updates
-            } else {
-                // Create new chart
-                CellWeightChart = new Chart(ctx, {
-                    type: 'pie',
-                    data: data,
-                    options: {
-                        responsive: true,
-                        plugins: {
-                            legend: {
-                                position: 'top',
-                            },
-                            tooltip: {
-                                callbacks: {
-                                    label: function(context) {
-                                        let label = context.label || '';
-                                        if (label) {
-                                            label += ': ';
-                                        }
-                                        label += context.raw.toFixed(2) + ' g';
-                                        return label;
-                                    }
+                CellWeightChart.destroy(); // Clear the previous chart instance
+            }
+            CellWeightChart = new Chart(ctx, {
+                type: 'pie',
+                data: data,
+                options: {
+                    responsive: true,
+                    plugins: {
+                    legend: { position: 'top' },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.label || '';
+                                    if (label) label += ': ';
+                                    label += context.raw.toFixed(2) + ' g';
+                                    return label;
                                 }
                             }
                         }
                     }
-                });
-            } 
+                }
+            });
+            
             const results = [
                 { parameter: "Cell Capacity [Ah]", value: cell_cap.toFixed(2) },
                 { parameter: "Energy [Wh]", value: cell_energy.toFixed(2) },
