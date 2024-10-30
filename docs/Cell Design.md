@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Battery Park
-description: Battery Chemsitry to Technology 
+description: Battery Chemistry to Technology 
 ---
 
 # N/P Ratio
