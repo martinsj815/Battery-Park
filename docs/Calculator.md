@@ -53,10 +53,10 @@ description: Battery Chemistry to Technology
                     <b>Option 1: Estimate Cycle Number</b>
                     <br><br>
                     Coulombic Efficiency (%) <br>
-                    <input type="number" id="numberInput" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="numberInput" placeholder="Enter a number" value="99" step="0.1" oninput="calculateCycleLife()">
                     <br><br>
                     Capacity Retention (%) <br>
-                    <input type="number" id="numberInput2" placeholder="Enter a number" step="0.1" oninput="calculateCycleLife()">
+                    <input type="number" id="numberInput2" placeholder="Enter a number" value="80" step="0.1" oninput="calculateCycleLife()">
                 </div>
                 <div class="column">    
                     <br>
@@ -71,10 +71,10 @@ description: Battery Chemistry to Technology
                     <b>Option 2: Estimate Required Coulombic Efficiency (%) to achieve N cycle life</b>
                     <br><br>
                     Targeted capacity retention(%) <br>
-                    <input type="number" id="numberInput3" placeholder="Enter a number" step="0.1" oninput="calculateRequiredCE()">
+                    <input type="number" id="numberInput3" placeholder="Enter a number" value="70" step="0.1" oninput="calculateRequiredCE()">
                     <br><br>
                     Targeted cycle life <br>
-                    <input type="number" id="numberInput4" placeholder="Enter a number" step="1" oninput="calculateRequiredCE()">
+                    <input type="number" id="numberInput4" placeholder="Enter a number" value="100" step="1" oninput="calculateRequiredCE()">
                 </div>
                 <div class="column">    
                     <br>
