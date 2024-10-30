@@ -765,7 +765,7 @@ description: Battery Chemistry to Technology
         
             if (!isNaN(w_electrolyte) && w_electrolyte > 0 ) {
                 for (let i > w_electrolyte*0.2; i <= w_electrolyte*1.4; i += 0.1) {
-                    const e_d = cell_energy/((weight_beside_electrolyte + i) * 0.001)
+                    const e_d = cell_energy/((weight_beside_electrolyte + i) * 0.001);
                     x2Values.push(i);
                     y2Values.push(e_d);
                 }
@@ -800,8 +800,7 @@ description: Battery Chemistry to Technology
                     },
                     xaxis: { title: 'Amount of Electrolyte [g]' },
                     yaxis: { title: 'Energy Density [Wh/kg]'}
-                },
-                );
+                });
             } else {
                 console.error("Invalid weight input. Please enter a valid number.");
             }           
