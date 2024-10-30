@@ -90,10 +90,10 @@ description: Battery Chemistry to Technology
         <div>
             <h2> Estimation of Li-metal thickness </h2>
             <br>
-              - This calculation estimates the amount of Li deposition or exfoliation during charge/discharge reactions depending on the applied areal current density.
+              - This calculation estimates the amount of Li deposition or stripping during charge/discharge reactions depending on the applied areal current density.
             <br>
             <br>
-              - Note that this is theoretical estimation and calculated by assuming perfectly flat and smooth film of Li.
+              - Note that this is theoretical estimation and calculated, assuming Li being perfectly flat and smooth.
             <br>
             <br>
             <div class="columns">
@@ -259,10 +259,10 @@ description: Battery Chemistry to Technology
         - This calculator can be used to compute the metrics for the cylindrical cell consisting of a jelly-roll of cathode, anode, and separator sheets.
         <br>
         <br>
-        - This module calculates the electrode length required for customized cell components dimensions to fit the cylindrical cell case dimensions.
+        - This module calculates the electrode length required based on the customized parameters of cell components that fit the cylindrical cell case dimensions.
         <br>
         <br>
-        - By knowing the outer and inner diameters, which are determined based on the cylindrical cell case, the cylindrical cell electrode length can be calculated using the Archimedean sppral using polar coordinates using the following equation:
+        - By knowing the outer and inner diameters of the cell, the cylindrical cell electrode length and number of windings can be calculated using the Archimedean spiral using polar coordinates using the following equation:
         <br>
         <br>
         <ul> For the electrode length: </ul>
