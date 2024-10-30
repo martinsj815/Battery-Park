@@ -752,6 +752,7 @@ description: Battery Chemistry to Technology
                 }],
                tooltip: {
                    pointFormat: '{point.name}: <b>{point.y:.01f} kg</b> ({point.percentage:.1f}%)'
+               }
             });  
         } else {
             document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
