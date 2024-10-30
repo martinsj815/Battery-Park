@@ -768,10 +768,13 @@ description: Battery Chemistry to Technology
                     const e_d = cell_energy/((weight_beside_electrolyte + i) * 0.001);
                     x2Values.push(i);
                     y2Values.push(e_d);
-
-                    x3Trace.push(i); 
-                    y3Trace.push(e_d); 
                 }
+
+                const specificElectrolyteAmount = (w_electrolyte * 0.2 + w_electrolyte * 1.4) / 2; 
+                const specificEnergyDensity = cell_energy / ((weight_beside_electrolyte + specificElectrolyteAmount) * 0.001);
+                
+                x3Trace.push(specificElectrolyteAmount); 
+                y3Trace.push(specificEnergyDensity);
             
                 Plotly.newPlot('plotEnergyDensity', [
                     {
