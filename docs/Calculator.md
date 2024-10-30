@@ -30,7 +30,7 @@ description: Battery Chemistry to Technology
         <button class="tablinks" onclick="openCity(event, 'Jelly-Roll Cell')"><b>Jelly-Roll Cell</b></button>
     </div>
     <!-- Tab content -->
-    <div id="Single Cell" class="tabcontent">
+    <div id="Single Cell" class="tabcontent" style="display: block;">
         <br>
         <h2> Estimation of Cycle Life </h2>
         <br>
