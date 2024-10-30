@@ -769,8 +769,8 @@ description: Battery Chemistry to Technology
                     x2Values.push(i);
                     y2Values.push(e_d);
 
-                    x3Trace = [x2Values.push(i)];
-                    y3Trace = [y2Values.push(e_d)];
+                    x3Trace.push(i); 
+                    y3Trace.push(e_d); 
                 }
             
                 Plotly.newPlot('plotEnergyDensity', [
