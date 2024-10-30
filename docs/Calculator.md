@@ -116,9 +116,9 @@ description: Battery Chemistry to Technology
         <br>
         <h2> Estimation of Pouch Cell Capacity and Energy Density </h2>
         <br><br>
-      - This estimates the total cell capacity and energy density of the pouch cells.
+      - This page helps estimate the total cell capacity and energy density of the pouch cell based upon a different stacking type by inputting the cell parameters needed. 
         <br><br>
-      - This calculation can support in pouch cell design. For example, with a designed electrode, this modeling can determine the number of stack layers and electrolyte amount to achive target cell apacity and energy density.
+      - For a certain pouch cell design, this calculation can help determine the number of stack layers and electrolyte amount to achieve target cell capacity and energy density.
         <br><br>
         <h2> Electrode Parameters </h2>
         <br>
