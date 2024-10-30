@@ -767,6 +767,7 @@ description: Battery Chemistry to Technology
             let CellWeightChart;
 
             const ctx = document.getElementById('CellWeightChart').getContext('2d');
+            
             if (CellWeightChart) {
                 CellWeightChart.destroy(); // Clear the previous chart instance
             }
