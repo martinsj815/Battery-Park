@@ -23,8 +23,9 @@ description: Battery Chemistry to Technology
 
 </head>
 
-<body onload="openCity('Single Cell'); showInputFields()">
-    <div class="tab2"><button class="tablinks" onclick="openCity(event, 'Single Cell')"><b>Single Cell</b></button>
+<body>
+    <div class="tab2">
+        <button class="tablinks active" onclick="openCity(event, 'Single Cell')"><b>Single Cell</b></button>
         <button class="tablinks" onclick="openCity(event, 'Stacked Cell')"><b>Stacked Cell</b></button>
         <button class="tablinks" onclick="openCity(event, 'Jelly-Roll Cell')"><b>Jelly-Roll Cell</b></button>
     </div>
@@ -339,7 +340,6 @@ description: Battery Chemistry to Technology
                     <br>
             </div>
         </div>
-        
         <!-- Output Section -->
         <h3 id="output3"></h3>
     </div>
