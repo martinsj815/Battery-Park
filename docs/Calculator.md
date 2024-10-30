@@ -242,7 +242,9 @@ description: Battery Chemistry to Technology
                 <h3> Target Energy Density [Wh/Kg]<sup>*2</sup> </h3>
                 <input type="number" id="target_ed" placeholder="Enter a number" value="300" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
-                <br>        
+                <br> 
+                <div id="plotEnergyDensity" style="width:600px;height:400px;"></div>
+                <br>
             </div>
             <br>
         </div>      
@@ -754,6 +756,49 @@ description: Battery Chemistry to Technology
                    pointFormat: '{point.name}: <b>{point.y:.2f} g</b>'
                }
             });  
+
+            if (!isNaN(w_electrolyte) && w_electrolyte > 0 ) {
+                for (let i > w_electrolyte*0.2; i <= w_electrolyte*1.4; i += 0.1) {
+                    const e_d = cell_energy/((weight_beside_electrolyte + i) * 0.001)
+                    xValues.push(i);
+                    yValues.push(e_d);
+                }
+            
+                Plotly.newPlot('plotEnergyDensity', [
+                    {
+                        x: xValues,
+                        y: yValues,
+                        mode: 'lines',
+                        type: 'scatter',
+                        showlegend: false 
+                    },
+                    {
+                        x: x2Trace,
+                        y: y2Trace,
+                        mode: 'markers',
+                        type: 'scatter',
+                        marker: { color: 'red', size: 8 },
+                        text: [`e_d: ${y2Trace[0]} Wh/kg`], // label text for the marker
+                        textposition: 'top right', // position of the text relative to the marker
+                        showlegend: false 
+                    }
+                ], {
+                    title: {
+                        text: 'Energy Density vs Amount of Electrolyte',
+                        font: {
+                            family: 'Arial, sans-serif', 
+                            size: 18, 
+                            color: 'black',
+                            weight: 'bold' 
+                                }
+                    },
+                    xaxis: { title: 'Amount of Electrolyte [g]' },
+                    yaxis: { title: 'Energy Density [Wh/kg]'}
+                }
+                );
+            } else {
+                console.error("Invalid weight input. Please enter a valid number.");
+            }           
         } else {
             document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
         }
