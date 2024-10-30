@@ -34,10 +34,10 @@ description: Battery Chemistry to Technology
         <br>
         <h2> Estimation of Cycle Life </h2>
         <br>
-        - This calculation estimates the cycle life when cell cycles at a specific columbic efficiency each cycle (Option1) or estimates the required coulombic efficiency to achieve achieve a target cycle life (Option2).
+        - This calculation estimates the cycle life for a cell cycling with a specific columbic efficiency (Option1) for a desired capacity retention and computes the required coulombic efficiency to achieve achieve a target cycle life (Option2).
         <br>
         <br>
-        - This calculation assumes that the coulombic efficiency is maintained throughout the entire cycle. This estimation therefore provides an upper bound on cycle life (Option1) and a lower bound on coulombic efficiency (Option2). 
+        - Note that the calculation assumes that the coulombic efficiency is maintained throughout the entire cycle. This estimation therefore provides an upper bound on cycle life (Option1) and a lower bound on coulombic efficiency (Option2). 
         <br>
         <br>
         <select id="operationSelect" onchange="showInputFields()">
