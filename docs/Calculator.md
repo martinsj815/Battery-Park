@@ -769,7 +769,7 @@ description: Battery Chemistry to Technology
             const ctx = document.getElementById('CellWeightChart').getContext('2d');
             
             if (CellWeightChart) {
-            CellWeightChart.destroy(); // Destroy previous instance if it exists
+                CellWeightChart.destroy(); // Destroy previous instance if it exists
             }
 
             // Create the new chart instance
@@ -792,7 +792,8 @@ description: Battery Chemistry to Technology
                         }
                     }
                 }
-            } else {
+            } 
+        } else {
             document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
         }
     }
