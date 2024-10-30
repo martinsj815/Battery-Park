@@ -744,10 +744,13 @@ description: Battery Chemistry to Technology
                     dataLabels: {
                         enabled: true,
                         format: '<b>{point.percentage:.1f} %</b>',
-                        fontsize: '15px'
+                        style: {
+                            fontSize: '14px',
+                            fontWeight: 'bold', 
                     }
                 }],
-                pointFormat: '{point.name}: <b>{point.y:.1f} g</b>'
+               tooltip: {
+                   pointFormat: '{point.name}: <b>{point.y:.01f} kg</b> ({point.percentage:.1f}%)'
             });  
         } else {
             document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
