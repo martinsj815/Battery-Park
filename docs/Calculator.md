@@ -223,7 +223,7 @@ description: Battery Chemistry to Technology
                 <br><br>
                 <br>
                 <br>
-                <div id="container" style="width: 100%; height: 400px;"></div>
+                <div id="container" style="width: 100%; height: 800px;"></div>
                 <br>
             </div>
             <div class="column">   
@@ -743,10 +743,10 @@ description: Battery Chemistry to Technology
                     showInLegend: true,
                     dataLabels: {
                         enabled: true,
-                        format: '{point.name}: <b>{point.percentage:.1f} %</b>'
+                        format: '<b>{point.percentage:.1f} %</b>'
                     }
                 }],
-                pointFormat: '{point.name}: <b>{point.y:.01f} g</b>'
+                pointFormat: '{point.name}: <b>{point.y:.2f} g</b>'
             });  
         } else {
             document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
