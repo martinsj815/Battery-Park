@@ -287,58 +287,58 @@ description: Battery Chemistry to Technology
                 <h3> Cathode Parameters </h3>
                     <br>
                     Coating thickness (single-side) (μm) <br>
-                    <input type="number" id="cthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="cthi" placeholder="Enter a number" step="0.1" value="50 oninput="calculatejellyroll()">
                     <br>
                     <br>
                     Al foil thickness (μm) <br>
-                    <input type="number" id="althi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="althi" placeholder="Enter a number" step="0.1" value="20" oninput="calculatejellyroll()">
                     <br>
                     <br>
                     Discharge capacity of active material (mAh/g) <br>
-                    <input type="number" id="discapa" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="discapa" placeholder="Enter a number" step="0.1" value="200" oninput="calculatejellyroll()">
                     <br>
                     <br>
                     Density of electrode material (g/cm<sup>3</sup>) <br>
-                    <input type="number" id="densa" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="densa" placeholder="Enter a number" step="0.1" value="4.8" oninput="calculatejellyroll()">
                     <br>
                     <br>
                     Active material loading ratio <br>
-                    <input type="number" id="amlr" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="amlr" placeholder="Enter a number" step="0.1" value="0.9" oninput="calculatejellyroll()">
                     <br>
                     <br>         
                     Estimated porosity <br>
-                    <input type="number" id="por" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="por" placeholder="Enter a number" step="0.1" value="0.2" oninput="calculatejellyroll()">
                     <br>
                     <br>  
                     Electrode width (cm) <br>
-                    <input type="number" id="ewid" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="ewid" placeholder="Enter a number" step="0.1" value="5" oninput="calculatejellyroll()">
                     <br>
             </div>
             <div class="column">   
                 <h3> Other Cell Parameters </h3>
                     <br>
                     Anode coating thickness (Single-side) (μm) <br>
-                    <input type="number" id="ancthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="ancthi" placeholder="Enter a number" step="0.1" value="50" oninput="calculatejellyroll()">
                     <br>
                     <br>
                     Cu foil thickness (μm) <br>
-                    <input type="number" id="cuthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="cuthi" placeholder="Enter a number" step="0.1" value="10" oninput="calculatejellyroll()">
                     <br>
                     <br>
                     Separator thickness (μm) <br>
-                    <input type="number" id="septhi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="septhi" placeholder="Enter a number" step="0.1" value="20" oninput="calculatejellyroll()">
                     <br>
                     <br>
                     Outer diameter of the cell (mm) <br>
-                    <input type="number" id="outdia" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="outdia" placeholder="Enter a number" step="0.1" value="40" oninput="calculatejellyroll()">
                     <br>
                     <br>
                     Cell Can thickness (mm) <br>
-                    <input type="number" id="canthi" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="canthi" placeholder="Enter a number" step="0.1" value="1.5" oninput="calculatejellyroll()">
                     <br>
                     <br>         
                     Inner diameter of the cell (mm) <br>
-                    <input type="number" id="inndia" placeholder="Enter a number" step="0.1" oninput="calculatejellyroll()">
+                    <input type="number" id="inndia" placeholder="Enter a number" step="0.1" value="2" oninput="calculatejellyroll()">
                     <br>
             </div>
         </div>
