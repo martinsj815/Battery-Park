@@ -626,7 +626,7 @@ description: Battery Chemistry to Technology
         const Cu_t = parseFloat(document.getElementById('Cu_t').value);
         const nom_v = parseFloat(document.getElementById('nom_v').value);
         const target_ed = parseFloat(document.getElementById('target_ed').value);
-        const other_packageweight = parseInt(document.getElementById('other_packageweight').value);
+        const other_packageweight = parseFloat(document.getElementById('other_packageweight').value);
 
         // Retrieve selected type from dropdown
         const type = document.getElementById('operationSelect2').value;
