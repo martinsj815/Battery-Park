@@ -728,7 +728,7 @@ description: Battery Chemistry to Technology
                     type: 'pie'
                 },
                 title: {
-                    text: 'Cell Components Contribution'
+                    text: 'Weight distribution of different cell components'
                 },
                 series: [{
                     name: 'Weight',
@@ -743,9 +743,10 @@ description: Battery Chemistry to Technology
                     showInLegend: true,
                     dataLabels: {
                         enabled: true,
-                        format: '{point.name}: <b>{point.y:.1f} kg</b>'
+                        format: '{point.name}: <b>{point.percentage:.1f} %</b>'
                     }
-                }]
+                }],
+                pointFormat: '{point.name}: <b>{point.y:.1f} g</b>'
             });  
         } else {
             document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
