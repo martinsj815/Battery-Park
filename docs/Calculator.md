@@ -766,18 +766,43 @@ description: Battery Chemistry to Technology
 
             let CellWeightChart;
 
-            const ctx = document.getElementById('CellWeightChart').getContext('2d');
-            
-            if (CellWeightChart) {
-                CellWeightChart.destroy(); // Clear the previous chart instance
-            }
-            CellWeightChart = new Chart(ctx, {
+            window.onload = function() {
+                const ctx = document.getElementById('CellWeightChart').getContext('2d');
+                
+                // Define a simple data object
+                const data = {
+                    labels: ['Al-foil', 'Cu-foil', 'Cathode', 'Anode', 'Electrolyte', 'Others'],
+                    datasets: [{
+                    label: 'Component Weights',
+                    data: [10, 20, 30, 25, 15, 5],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            };
+            // Initialize the chart
+                
+            new Chart(ctx, {
                 type: 'pie',
                 data: data,
                 options: {
                     responsive: true,
                     plugins: {
-                    legend: { position: 'top' },
+                        legend: { position: 'top' },
                         tooltip: {
                             callbacks: {
                                 label: function(context) {
@@ -790,8 +815,7 @@ description: Battery Chemistry to Technology
                         }
                     }
                 }
-            });
-            
+            })
         } else {
             document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
         }
