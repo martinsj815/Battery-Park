@@ -19,7 +19,7 @@ description: Battery Chemistry to Technology
         }
     </style>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
 
 </head>
 
@@ -223,7 +223,7 @@ description: Battery Chemistry to Technology
                 <br><br>
                 <br>
                 <br>
-                <canvas id="CellWeightChart" width="400" height="400"></canvas>
+                <div id="container" style="width: 100%; height: 400px;"></div>
                 <br>
             </div>
             <div class="column">   
@@ -659,7 +659,7 @@ description: Battery Chemistry to Technology
                 cell_w_cath = w_cath * stacked_layer * 2; 
                 cell_w_anode = w_anode * stacked_layer * 2;
 
-                // weight for other componets: otherpackageweight(tabsand packaing), Al_foil, Cu_foil, Separator, anode, cathode, electrolyte:
+                // weight for other componets: otherpackageweight(tabsand packaging), Al_foil, Cu_foil, Separator, anode, cathode, electrolyte:
                 w_Al = stacked_layer * Al_density * Al_area * Al_t * 0.0001;
                 w_Cu = stacked_layer * Cu_density * Cu_area * Cu_t * 0.0001;
                 
@@ -694,14 +694,12 @@ description: Battery Chemistry to Technology
                 w_Cu = N_cu * Cu_density * Cu_area * Cu_t * 0.0001;
             }
             
-            // Calculate amount of electrode to reach target eneryg density
+            // Calculate amount of electrode to reach target energy density
             cell_energy = cell_cap * nom_v;
             const total_target_weight = (cell_energy / target_ed) * 1000;
             const weight_beside_electrolyte = other_packageweight + w_Al+ w_Cu + S_w + cell_w_cath + cell_w_anode;
             let w_electrolyte = total_target_weight - weight_beside_electrolyte;
             NP_ratio = areal_cap_anode/areal_cap_cath;
-    
-            let CellWeightChart;
     
             if (w_electrolyte < 0) {
                 w_electrolyte = 1.3 * cell_cap;
@@ -723,7 +721,32 @@ description: Battery Chemistry to Technology
             document.getElementById('resultsBody').innerHTML = results.map(result =>
                 `<tr><td>${result.parameter}</td><td><b>${result.value}</b></td></tr>`
             ).join('');
-     
+
+                // Create Pie Chart
+            Highcharts.chart('container', {
+                chart: {
+                    type: 'pie'
+                },
+                title: {
+                    text: 'Cell Components Contribution'
+                },
+                series: [{
+                    name: 'Weight',
+                    data: [
+                        { name: 'Electrolyte Weight', y: w_electrolyte },
+                        { name: 'Aluminum Weight', y: w_Al },
+                        { name: 'Copper Weight', y: w_Cu },
+                        { name: 'Other Components Weight', y: other_packageweight },
+                        { name: 'Cathode Weight', y: cell_w_cath },
+                        { name: 'Anode Weight', y: cell_w_anode }
+                    ],
+                    showInLegend: true,
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}: <b>{point.y:.1f} kg</b>'
+                    }
+                }]
+            });  
         } else {
             document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
         }
