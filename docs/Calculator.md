@@ -287,7 +287,7 @@ description: Battery Chemistry to Technology
                 <h3> Cathode Parameters </h3>
                     <br>
                     Coating thickness (single-side) (μm) <br>
-                    <input type="number" id="cthi" placeholder="Enter a number" step="0.1" value="50 oninput="calculatejellyroll()">
+                    <input type="number" id="cthi" placeholder="Enter a number" step="0.1" value="50" oninput="calculatejellyroll()">
                     <br>
                     <br>
                     Al foil thickness (μm) <br>
