@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Battery Park
-description: Battery Chemistry to Technology
+description: From Chemistry to Technology
 ---
 
 # Cells
