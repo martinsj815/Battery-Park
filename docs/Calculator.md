@@ -115,7 +115,7 @@ description: Battery Chemistry to Technology
         <br>
         <h2> Estimation of Pouch Cell Capacity and Energy Density </h2>
         <br><br>
-      - This estimates the total cell capacity and eneryg density of the pouch cells.
+      - This estimates the total cell capacity and energy density of the pouch cells.
         <br><br>
       - This calculation can support in pouch cell design. For example, with a designed electrode, this modeling can determine the number of stack layers and electrolyte amount to achive target cell apacity and energy density.
         <br><br>
@@ -217,7 +217,6 @@ description: Battery Chemistry to Technology
                         </tr>
                     </thead>
                     <tbody id="resultsBody">
-                        <!-- JavaScript will insert rows here -->
                     </tbody>
                 </table>
                 <br><br>
@@ -605,8 +604,7 @@ description: Battery Chemistry to Technology
         }
     }
 
-    let CellWeightChart;
-    
+
     function calculateStackCellEnergyDensity() {
         const a_ed = parseFloat(document.getElementById('a_ed').value);
         const a_et = parseFloat(document.getElementById('a_et').value);
@@ -702,7 +700,9 @@ description: Battery Chemistry to Technology
             const weight_beside_electrolyte = other_packageweight + w_Al+ w_Cu + S_w + cell_w_cath + cell_w_anode;
             let w_electrolyte = total_target_weight - weight_beside_electrolyte;
             NP_ratio = areal_cap_anode/areal_cap_cath;
-            
+    
+            let CellWeightChart;
+    
             if (w_electrolyte < 0) {
                 w_electrolyte = 1.3 * cell_cap;
                 EC = 1.3;
@@ -762,9 +762,6 @@ description: Battery Chemistry to Technology
                     borderWidth: 1
                 }]
             };
-
-
-            // Render the Pie Chart
             
             const ctx = document.getElementById('CellWeightChart').getContext('2d');
             
