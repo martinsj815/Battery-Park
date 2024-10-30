@@ -746,7 +746,7 @@ description: Battery Chemistry to Technology
                         format: '{point.name}: <b>{point.percentage:.1f} %</b>'
                     }
                 }],
-                pointFormat: '{point.name}: <b>{point.y:.1f} g</b>'
+                pointFormat: '{point.name}: <b>{point.y:.01f} g</b>'
             });  
         } else {
             document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
