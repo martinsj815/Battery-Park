@@ -766,7 +766,7 @@ description: Battery Chemistry to Technology
 
             let CellWeightChart;
 
-            window.onload = function() {
+            window.addEventListener('load', function() {
                 const ctx = document.getElementById('CellWeightChart').getContext('2d');
                 
                 // Define a simple data object
