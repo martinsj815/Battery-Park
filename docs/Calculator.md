@@ -708,6 +708,20 @@ description: Battery Chemistry to Technology
                 EC = w_electrolyte/cell_cap;
             }
 
+            const results = [
+                { parameter: "Cell Capacity [Ah]", value: cell_cap.toFixed(2) },
+                { parameter: "Energy [Wh]", value: cell_energy.toFixed(2) },
+                { parameter: "NP Ratio", value: NP_ratio.toFixed(2) },
+                { parameter: "EC Ratio", value: EC.toFixed(2) },
+                { parameter: "No. Al-foil", value: N_al },
+                { parameter: "No. Cu-foil", value: N_cu },
+                { parameter: "No. Single Side Electrode", value: N_ed }
+            ];
+            
+            document.getElementById('resultsBody').innerHTML = results.map(result =>
+                `<tr><td>${result.parameter}</td><td><b>${result.value}</b></td></tr>`
+            ).join('');
+            
             const data = {
                 labels: [
                     'Al-foil',
@@ -777,19 +791,6 @@ description: Battery Chemistry to Technology
                 }
             });
             
-            const results = [
-                { parameter: "Cell Capacity [Ah]", value: cell_cap.toFixed(2) },
-                { parameter: "Energy [Wh]", value: cell_energy.toFixed(2) },
-                { parameter: "NP Ratio", value: NP_ratio.toFixed(2) },
-                { parameter: "EC Ratio", value: EC.toFixed(2) },
-                { parameter: "No. Al-foil", value: N_al },
-                { parameter: "No. Cu-foil", value: N_cu },
-                { parameter: "No. Single Side Electrode", value: N_ed }
-            ];
-            
-            document.getElementById('resultsBody').innerHTML = results.map(result =>
-                `<tr><td>${result.parameter}</td><td><b>${result.value}</b></td></tr>`
-            ).join('');
         } else {
             document.getElementById('resultsBody').textContent = "Please enter valid numbers.";
         }
