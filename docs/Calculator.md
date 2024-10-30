@@ -747,6 +747,7 @@ description: Battery Chemistry to Technology
                         style: {
                             fontSize: '14px',
                             fontWeight: 'bold', 
+                        }
                     }
                 }],
                tooltip: {
