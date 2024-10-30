@@ -99,7 +99,7 @@ description: Battery Chemistry to Technology
             <div class="columns">
                 <div class="column">    
                     Li Areal Capacity [mAh/cm<sup>2</sup>] <br>
-                    <input type="number" id="LiAC" placeholder="Enter a number" step="0.01" oninput="calculateLithickness()">
+                    <input type="number" id="LiAC" placeholder="Enter a number" step="0.01" value="3.5" oninput="calculateLithickness()">
                 </div>
                 <br>
                 <div class="column">    
