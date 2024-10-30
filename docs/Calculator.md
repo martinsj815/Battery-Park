@@ -757,28 +757,34 @@ description: Battery Chemistry to Technology
                }
             });  
 
+            let x2Values = [];
+            let y2Values = [];
+            let x3Trace = [];
+            let y3Trace = [];
+
+        
             if (!isNaN(w_electrolyte) && w_electrolyte > 0 ) {
                 for (let i > w_electrolyte*0.2; i <= w_electrolyte*1.4; i += 0.1) {
                     const e_d = cell_energy/((weight_beside_electrolyte + i) * 0.001)
-                    xValues.push(i);
-                    yValues.push(e_d);
+                    x2Values.push(i);
+                    y2Values.push(e_d);
                 }
             
                 Plotly.newPlot('plotEnergyDensity', [
                     {
-                        x: xValues,
-                        y: yValues,
+                        x: x2Values,
+                        y: y2Values,
                         mode: 'lines',
                         type: 'scatter',
                         showlegend: false 
                     },
                     {
-                        x: x2Trace,
-                        y: y2Trace,
+                        x: x3Trace,
+                        y: y3Trace,
                         mode: 'markers',
                         type: 'scatter',
                         marker: { color: 'red', size: 8 },
-                        text: [`e_d: ${y2Trace[0]} Wh/kg`], // label text for the marker
+                        text: [`e_d: ${y3Trace[0]} Wh/kg`], // label text for the marker
                         textposition: 'top right', // position of the text relative to the marker
                         showlegend: false 
                     }
@@ -790,11 +796,11 @@ description: Battery Chemistry to Technology
                             size: 18, 
                             color: 'black',
                             weight: 'bold' 
-                                }
+                        }
                     },
                     xaxis: { title: 'Amount of Electrolyte [g]' },
                     yaxis: { title: 'Energy Density [Wh/kg]'}
-                }
+                },
                 );
             } else {
                 console.error("Invalid weight input. Please enter a valid number.");
