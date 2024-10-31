@@ -14,4 +14,5 @@ Batteries play a crucial role in our daily lives, powering everything from smart
 
 The website is tailored to provide comprehensive information spanning from their fundamental chemistry to their present utilization across industries. We welcome technology enthusiasts, students, and even industry professional seeking knowledge and insights from this fascinating realm of science and technology.
 
+![Visitor Count](https://komarev.com/ghpvc/?username=donghee1025&color=green)
 
