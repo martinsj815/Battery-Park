@@ -7,18 +7,20 @@
   @include large {
     max-width: 80rem;  // Adjusted width
     padding: 2rem 3rem; // Adjusted side padding
-    background-color: #f2f2f2;
+    background-color: #f3f3f3;
   }
 }
 
   @include medium {
     padding: 0rem 0rem;
     font-size: 1.1rem;
+    background-color: #f3f3f3;
   }
 
   @include small {
     padding: 0rem 0rem;
     font-size: 1rem;
+    background-color: #f3f3f3;
   }
   
 
