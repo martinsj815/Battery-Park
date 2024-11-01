@@ -4,7 +4,7 @@ title: Battery Park
 description: From Chemistry to Technology
 ---
 
-# Methodologies <i class="arrow right"></i>
+# Characterization <i class="arrow right"></i>
 
 <hr style="background: linear-gradient(#a4f58e, #d8f5d0); height: 5px; border: none;">
 <br>
