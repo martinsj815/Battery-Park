@@ -278,3 +278,11 @@
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
+li::marker {
+  color: green;
+}
+
+li {
+  list-style-type: square;
+}
