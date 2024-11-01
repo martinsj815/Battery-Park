@@ -6,7 +6,7 @@ description: From Chemistry to Technology
 
 # Cells
 
-<hr style="color: green;"> 
+<hr style="border-color: green;"> 
 
 <br>
 ## Electrochemical cell
