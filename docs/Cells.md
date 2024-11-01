@@ -6,7 +6,7 @@ description: From Chemistry to Technology
 
 # Cells
 
-<hr style="background: linear-gradient(#a4f58e, #d8f5d0); height: 5px; border: none;">
+<hr style="background: linear-gradient(#a4f58e, #d8f5d0); height: 5px; border: none;"> <i class="arrow right"></i>
 <br>
 ## Electrochemical cell
 <br>
