@@ -4,8 +4,11 @@ title: Battery Park
 description: From Chemistry to Technology
 ---
 
-# Cell manufacturing process
+# Cell manufacturing process <i class="arrow right"></i>
+
+<hr style="background: linear-gradient(#a4f58e, #d8f5d0); height: 5px; border: none;">
 <br>
+
 <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Cell%20manuf2.png?raw=true" alt="Primary" style="width:1000px; height:auto;">
 <br>
 
