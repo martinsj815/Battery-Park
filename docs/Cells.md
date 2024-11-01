@@ -8,7 +8,7 @@ description: From Chemistry to Technology
 
 <hr style="background: linear-gradient(#a4f58e, #d8f5d0); height: 5px; border: none;">
 <br>
-<li>## Electrochemical cell</li>
+## <li> Electrochemical cell</li>
 <br>
 > A cell is the smallest building unit of the battery. Main constituents are cathode and anode that are immersed in electrolyte and undergo reduction/oxidation. Cations migrate inside the electrolyte while electrons move through the external load to do the work.
 > 
