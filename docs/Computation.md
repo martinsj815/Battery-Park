@@ -4,7 +4,10 @@ title: Battery Park
 description: From Chemistry to Technology
 ---
 
-# Computational Modeling
+# Computational Modeling <i class="arrow right"></i>
+
+<hr style="background: linear-gradient(#a4f58e, #d8f5d0); height: 5px; border: none;">
+<br>
 
 > Computational modeling plays a crucial role in materials research and design. Various computational modeling methods have been employed to uncover battery reaction mechanisms and derive intrinsic material parameters, which are then used to predict battery performance at the system level based on complex electrochemical transport equations.
 > Depending on the modeling approaches and scale, multiscale simulations, such as first-principles calculations, molecular dynamics simulations, phase field modeling, continuum simulations, and (electro-)thermal modeling, have been actively adopted to design batteries from the cell to the pack level.
