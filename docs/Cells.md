@@ -5,7 +5,7 @@ description: From Chemistry to Technology
 ---
 
 # Cells
-<ul></ul>
+<hr>
 <br>
 ## Electrochemical cell
 <br>
