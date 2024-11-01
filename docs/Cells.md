@@ -5,7 +5,13 @@ description: From Chemistry to Technology
 ---
 
 # Cells
-<hr>
+<style>
+ hr {
+  border-color: #cafcde;
+ }
+</style> 
+<hr> 
+</style>
 <br>
 ## Electrochemical cell
 <br>
