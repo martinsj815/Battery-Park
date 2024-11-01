@@ -24,7 +24,7 @@ description: From Chemistry to Technology
 </div>
 
 <br>
-## Primary vs Secondary
+<h2><li> Primary vs Secondary </li></h2>
 <br>
 - <b>Primary Cell</b>
 
@@ -74,7 +74,7 @@ description: From Chemistry to Technology
 <br>
 <br>
 
-## Cell Formats
+<h2><li> Cell Formats </li></h2>
 - Cells can be constructed in many different form factors. These include button/coin-type, cylindrical, prismatic, and pouch-type.
 
 -------------------------------------------------------------------------------------
@@ -151,7 +151,7 @@ description: From Chemistry to Technology
 
 -------------------------------------------------------------------------------------
 
-## - Comparing Cell Formats (for EV Batteries)
+<h2><li> Comparing Cell Formats (for EV Batteries) </li></h2>
 
 |              | Cylindrical Cell  | Prismatic Cell |Pouch Cell  |
 |:-------------|:------------------|:------|:-------------|
