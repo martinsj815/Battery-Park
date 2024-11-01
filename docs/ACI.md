@@ -4,8 +4,10 @@ title: Battery Park
 description: From Chemistry to Technology
 ---
 
-# Academic-to-Industry
+# Academic-to-Industry <i class="arrow right"></i>
 
+<hr style="background: linear-gradient(#a4f58e, #d8f5d0); height: 5px; border: none;">
+<br>
 
 <div class="columns">
   <div class="column">
