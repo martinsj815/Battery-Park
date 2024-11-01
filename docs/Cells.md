@@ -11,7 +11,6 @@ description: From Chemistry to Technology
  }
 </style> 
 <hr> 
-</style>
 <br>
 ## Electrochemical cell
 <br>
