@@ -11,7 +11,7 @@ description: From Chemistry to Technology
 </div>
 
 <!-- Tab content -->
-<div id="Parameters" class="tabcontent">
+<div id="Parameters" class="tabcontent" style="display: block;">
 
   <br>
   <h2> Current Density </h2>
@@ -99,7 +99,7 @@ description: From Chemistry to Technology
 
 </div>
 
-<div id="Metrics" class="tabcontent">
+<div id="Metrics" class="tabcontent" style="display: none;">
     <br>
   <h2> Voltage & Capacity </h2>
     <br>
