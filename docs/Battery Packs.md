@@ -6,7 +6,7 @@ description: From Chemistry to Technology
 
 # Battery Module/Pack <i class="arrow right"></i>
 
-<hr style="background: linear-gradient(#a4f58e, #d8f5d0); height: 5px; border: none;">
+<hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
 <br>
 
 <div class="columns">
@@ -29,7 +29,7 @@ description: From Chemistry to Technology
   </div>
 </div>
 
-## Cell Interconnect
+<h2><li> Cell Interconnect </li></h2>
 
 <div class="columns">
   <div class="column">
@@ -49,7 +49,7 @@ description: From Chemistry to Technology
 <br>
 <br>
 
-## Tesla EV Model Specs
+<h2><li> Tesla EV Model Specs </li></h2>
 
 | Model        |Cell Format|Material|Pack Configuration|Total Cell #|Energy (Nominal)|Battery Used|Pack Weight (kg)|Cell Weight (kg)|
 |:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|:------------|:------------|
@@ -65,7 +65,7 @@ description: From Chemistry to Technology
 <br>
 <br>
 
-## EV Battery Module Comparison
+<h2><li> EV Battery Module Comparison </li></h2>
 
 |EV Manufacturer |Model|Battery Module|Capacity (Ah)|Nominal Voltage (V)|Modules per Pack|Battery Supplier|Note|Source|
 |:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|:------------|:------------|
@@ -84,13 +84,13 @@ description: From Chemistry to Technology
 
 ----------------------------------------------------------------------------------------------------------
 
-# Battery Packing Efficiency
+<h2><li> Battery Packing Efficiency </li></h2>
 
 - A geometric packing principle tells that the prismatic/pouch cells should yield packing efficiency of 90-95%, way higher than the cylindrical cell. However, it is noteworthy that the volumetric efficiency rate of the prismatic/pouch cells in actual EV batteries are lower and even comparable to those of cylindrical. According to the paper by Löbberding et al., after surveying 25 different BEVs (from 10 OEMs between 2010-2019), the average volume utilization rate is 0.353, which is only slightly higher than that of cylindrical (0.295). This discrepancy can be due to incorporation of auxiliary yet important parts such as interconnects, thermal management (i.e. cooling) system, BMS, and sensors. However, a caveat is that the average cell-to-module efficiency for prismatic/pouch cells is much higher than that of the cylindrical cell while the opposite is true for module-pack system efficiency comparison – making cell-to-system efficiencies all comparable after all. Hence, better space utilization has been sought after by many OEMs including BYD, CATL, and Tesla.
 
 <br>
 
-# CMP, CTP, and CMB
+<h2><li> CMP, CTP, and CMB </li></h2>
 
 <div class="columns">
   <div class="column">
@@ -116,6 +116,6 @@ Bottom- Source: medium.com / https://medium.com/batterybits/the-next-generation-
 
 <br>
 
-# Reference
+<h2><li> Reference </li></h2>
 
 - Hendrik Löbberding, et al.,"From Cell to Battery System in BEVs: Analysis of System Packing Efficiency and Cell Types", World Electric Vehicle Journal, 11, 77 (2020)
