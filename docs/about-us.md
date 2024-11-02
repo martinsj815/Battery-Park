@@ -17,9 +17,13 @@ description: From Chemistry to Technology
   </div>
   <div class="column">
     <a href="https://donghee1025.github.io/Battery-Park/masthead/CV-SJK_092024.pdf" target="_blank">CV</a>
+  </div>  
   <div class="column">
     <a href="https://scholar.google.com/citations?user=a_DrrJ0AAAAJ">Google Scholar</a>
   </div>
+  <div class="column"></div>
+  <div class="column"></div>
+  <div class="column"></div>
   <div class="column"></div>
   <div class="column"></div>
   <div class="column"></div>
@@ -38,6 +42,9 @@ description: From Chemistry to Technology
   <div class="column"> 
     <a href="https://scholar.google.com/citations?hl=en&user=FygpjYEAAAAJ">Google Scholar</a>
   </div> 
+  <div class="column"></div>
+  <div class="column"></div>
+  <div class="column"></div>
   <div class="column"></div>
   <div class="column"></div>
   <div class="column"></div>
