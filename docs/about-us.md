@@ -29,6 +29,13 @@ description: From Chemistry to Technology
         <a href="https://donghee1025.github.io/Battery-Park/masthead/CV-SJK_092024.pdf" target="_blank">CV</a>
       </div>  
       <div class="column">
+        <p> Linkedin
+          <a href="https://donghee1025.github.io/Battery-Park/masthead/CV-SJK_092024.pdf">
+            <i class="material-icons" style="font-size:36px">local_library</i>  
+          </a>
+        </p>
+      </div>
+      <div class="column">
         <p> Google Scholar
           <a href="https://scholar.google.com/citations?user=a_DrrJ0AAAAJ">
             <i class="material-icons" style="font-size:36px">poll</i>  
@@ -49,8 +56,12 @@ description: From Chemistry to Technology
           </a>
         </p>
       </div>
-      <div class="column"> 
-        <a href="https://donghee1025.github.io/Battery-Park/masthead/CV_DongheeChang.pdf" target="_blank">CV</a>
+      <div class="column">
+        <p> Linkedin
+          <a href="https://donghee1025.github.io/Battery-Park/masthead/CV_DongheeChang.pdf">
+            <i class="material-icons" style="font-size:36px">local_library</i>  
+          </a>
+        </p>
       </div>
       <div class="column">
         <p> Google Scholar
