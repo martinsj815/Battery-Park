@@ -86,13 +86,13 @@ description: From Chemistry to Technology
 
 <h2><li> Anode Materials </li></h2>
 
-## 1. Intercalation-based:
+### 1. Intercalation-based:
 > Carbon-based anode such as graphite has the theoretical capacity of 372 mAh/g and has a good (de-)lithiation potential vs. Li. Many carbon-based materials are engineered at nanoscale to optimize their morphologies for high structural stability and better electrochemical reversibility and capacity retention. In terms of safety, stability, and power capability, titanium-based anodes such as Li<sub>4</sub>Ti<sub>5</sub>O<sub>12</sub> and TiO<sub>2</sub> have an advantage over graphite, but their electronic conductivity is poor and specific capacities (175-330 mAh/g) and energy densities are low.
    
-## 2. Alloying-based:
+### 2. Alloying-based:
 > Si, Ge, and Sn are the alloying anodes with specific capacity, which is much higher than that of intercalation anode system. For example, Si can reach a specific capacity of upto ~4200 mAh/g (practically, 3590 mAh/g), while, for Sn, it is 993 mAh/g. However, their large volumetric expansion (Si ~ 400%, Sn ~ 250%, and Sb ~ 135%) upon lithiation poses a great threat to its mechanical stability (e.g. delamination from a current collector or loss of inter-particle cohesion) and contributes to a capacity fade of the cell. Nano-structuring of Si as an anode has attracted interest to overcome such problems. In fact, Si or SiOx is considered to be added in small percentage amount (e.g. 2-10 wt%) inside the graphite anode to boost energy density of the anode.
 
-## 3. Conversion-based:
+### 3. Conversion-based:
 > Conversion-based anodes such as metal oxides undergo the following reaction: M<sub>x</sub>O<sub>y</sub> + 2yLi<sup>+</sup> + 2ye<sup>-</sup> → yLi<sub>2</sub>O + xM. Despite their high specific capacities, they suffer from multiple issues including structural instability due to pulverization and voltage hysteresis owing to sluggish kinetics during the conversion process to different phases.
 
 
@@ -113,7 +113,7 @@ Below is the comparison of key anode materials currently in industry for commerc
 |Lithium diffusion coefficient|10<sup>-11</sup> - 10<sup>-7</sup>|10<sup>-13</sup> - 10<sup>-11</sup>||||10<sup>-12</sup> - 10<sup>-11</sup>|
 
 
-# Moving from graphite to silicon for the Li-ion battery anode
+<h2><li> Moving from graphite to silicon for the Li-ion battery anode </li></h2>
 
 
 <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Si%20Graphite_NCM811.png?raw=true' alt="Capacity" style="width:1000px; height:auto;">
@@ -125,7 +125,7 @@ As shown in the graphs above, transition from graphite and silicon can yield dra
 
 ------------------------------------------------------------------------
 
-# Electrolyte
+<h2><li> Electrolyte </li></h2>
 
 <div class="columns">
   <div class="column">
