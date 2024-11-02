@@ -6,7 +6,7 @@ description: From Chemistry to Technology
 
 # Li ion battery <i class="arrow right"></i>
 
-<hr style="background: linear-gradient(#a4f58e, #d8f5d0); height: 5px; border: none;">
+<hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
 <br><br>
 
 <div class="columns">
@@ -21,7 +21,7 @@ description: From Chemistry to Technology
 </div>
 
 
-# Cell reaction mechanism
+<h3><li>Cell reaction mechanism</li></h3>
 
 > The way Li-ions react with electrode active materials during charge/discharge can be categorized into following:
 
