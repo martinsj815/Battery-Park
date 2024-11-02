@@ -141,7 +141,7 @@ As shown in the graphs above, transition from graphite and silicon can yield dra
 </div>
 
 
-# Salt
+<h2><li> Salt </li></h2>
 
 
 LiPF<sub>6</sub> has no outstanding property but has the combination of its well-balanced characteristics that meet stringent requirements for commercialization. It also has good anodic stability up to >5V when mixed in carbonates and ionic conductivity. However, its poor thermal stability and moisture sensitivity requires the additive for performance enhancement.
@@ -170,8 +170,7 @@ LiPF<sub>6</sub> has no outstanding property but has the combination of its well
 Many 18650 cells use the mixture of LiPF<sub>6</sub> and LiFSI inside carbonate electrolyte as the electrolyte. For EV batteries with an increasingly rigorous demand for their performances, some of the salts above are investigated as additive to be mixed with LiPF6 electrolyte, for which its concentration varies from 5-10%.
 
   
-# Solid Electrolyte
-
+<h2><li> Solid Electrolyte </li></h2>
 
 <div class="columns">
   <div class="column">
@@ -194,7 +193,7 @@ Solid electrolytes are attracting a large interest since it enables all-solid-st
 
 
 ------------------------------------------------------------------------------
-# References
+<h2><li> References </li></h2>
 
 F. Degen, et al, "Energy consumption of current and future production of lithium-ion and post lithium-ion battery cells", Nature Energy, 8, 1284 (2023)
 
