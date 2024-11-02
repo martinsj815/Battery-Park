@@ -24,10 +24,7 @@ description: From Chemistry to Technology
             <i class="material-icons" style="font-size:36px">group</i>  
           </a>
         </p>
-      </div>
-      <div class="column">
-        <a href="https://donghee1025.github.io/Battery-Park/masthead/CV-SJK_092024.pdf" target="_blank">CV</a>
-      </div>  
+      </div> 
       <div class="column">
         <p> CV
           <a href="https://donghee1025.github.io/Battery-Park/masthead/CV-SJK_092024.pdf">
