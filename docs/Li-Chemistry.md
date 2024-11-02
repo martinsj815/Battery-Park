@@ -73,8 +73,6 @@ description: From Chemistry to Technology
 
 <h2><li> Global Demand for Cathode Chemistries </li></h2>
 
-
-
 <div class="columns">
   <div class="column">
     - According to the review paper by Degen et al., both High-Ni NCM cathode and LFP cathode chemistry continue to rise in their demands while those of NCM532/622 and NCA will be stagnant until 2040. It is also forecasted that the market share will be gradually dominated by the post-Li batteries in future although it is currently unknown which of the batteries (e.g. all-solid-state, lithium-sulfur, lithium-air, sodium-ion, etc) will reach industrial-scale production.
@@ -86,8 +84,7 @@ description: From Chemistry to Technology
 
 -------------------------------------------------------------------
 
-# Anode Materials
-
+<h2><li> Anode Materials </li></h2>
 
 ## 1. Intercalation-based:
 > Carbon-based anode such as graphite has the theoretical capacity of 372 mAh/g and has a good (de-)lithiation potential vs. Li. Many carbon-based materials are engineered at nanoscale to optimize their morphologies for high structural stability and better electrochemical reversibility and capacity retention. In terms of safety, stability, and power capability, titanium-based anodes such as Li<sub>4</sub>Ti<sub>5</sub>O<sub>12</sub> and TiO<sub>2</sub> have an advantage over graphite, but their electronic conductivity is poor and specific capacities (175-330 mAh/g) and energy densities are low.
