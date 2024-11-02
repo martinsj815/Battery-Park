@@ -5,6 +5,8 @@ description: From Chemistry to Technology
 ---
 
 # About us <i class="arrow right"></i>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
 <br>
@@ -19,7 +21,10 @@ description: From Chemistry to Technology
     <a href="https://donghee1025.github.io/Battery-Park/masthead/CV-SJK_092024.pdf" target="_blank">CV</a>
   </div>  
   <div class="column">
-    <a href="https://scholar.google.com/citations?user=a_DrrJ0AAAAJ">Google Scholar</a>
+    <p>Google Scholar
+      <a href="https://scholar.google.com/citations?user=a_DrrJ0AAAAJ">
+        <span class="glyphicon glyphicon-stats"></span>      
+    </p>
   </div>
   <div class="column"></div>
   <div class="column"></div>
