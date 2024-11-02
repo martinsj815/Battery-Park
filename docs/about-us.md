@@ -29,7 +29,7 @@ description: From Chemistry to Technology
         <a href="https://donghee1025.github.io/Battery-Park/masthead/CV-SJK_092024.pdf" target="_blank">CV</a>
       </div>  
       <div class="column">
-        <p> Linkedin
+        <p> CV
           <a href="https://donghee1025.github.io/Battery-Park/masthead/CV-SJK_092024.pdf">
             <i class="material-icons" style="font-size:36px">local_library</i>  
           </a>
@@ -57,7 +57,7 @@ description: From Chemistry to Technology
         </p>
       </div>
       <div class="column">
-        <p> Linkedin
+        <p> CV
           <a href="https://donghee1025.github.io/Battery-Park/masthead/CV_DongheeChang.pdf">
             <i class="material-icons" style="font-size:36px">local_library</i>  
           </a>
