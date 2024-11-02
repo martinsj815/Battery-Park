@@ -13,7 +13,7 @@ description: From Chemistry to Technology
 <br>
 <div class="columns">
   <div class="column">
-    [Linkedin]("https://www.linkedin.com/in/sungjookim/")
+    <a href="https://www.linkedin.com/in/sungjookim/">Linkedin</a>
   </div>
   <div class="column">
     <a href="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CV-SJK_092024.pdf">CV</a>
@@ -24,7 +24,7 @@ description: From Chemistry to Technology
 <br>
 <div class="columns">
   <div class="column">
-    [Linkedin]("https://www.linkedin.com/in/dongheechang/")
+    <a href="https://www.linkedin.com/in/dongheechang/">Linkedin</a>
   </div>
   <div class="column">
     <a href="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CV_DongheeChang.pdf">CV</a>
