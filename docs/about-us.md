@@ -12,10 +12,10 @@ description: From Chemistry to Technology
 <h1><Li style="color: #4a8049;"><b>Sung Joo Kim</b></Li></h1>
 <br>
 <div class="columns">
-  <div class="column" style="width:100px !important">
+  <div class="column" style="width:100px !important;">
     <a href="https://www.linkedin.com/in/sungjookim/">Linkedin</a>
   </div>
-  <div class="column" style="width:100px !important"> 
+  <div class="column" style="width:100px !important;"> 
     <iframe src="https://donghee1025.github.io/Battery-Park/masthead/CV-SJK_092024.pdf" width="1000" height="1000" style="border: none;"></iframe>
   </div>
 </div>
