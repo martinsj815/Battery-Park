@@ -16,7 +16,7 @@ description: From Chemistry to Technology
     <a href="https://www.linkedin.com/in/sungjookim/">Linkedin</a>
   </div>
   <div class="column">
-    <a href="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CV-SJK_092024.pdf">CV</a>
+    <object data="CV-SJK_092024.pdf" width="1000" height="1000" type="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CV-SJK_092024.pdf"/>
   </div>
 </div>
 <br><br>
@@ -27,7 +27,7 @@ description: From Chemistry to Technology
     <a href="https://www.linkedin.com/in/dongheechang/">Linkedin</a>
   </div>
   <div class="column">
-    <a href="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CV_DongheeChang.pdf">CV</a>
+    <object data="CV_DongheeChang.pdf" width="1000" height="1000" type="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CV_DongheeChang.pdf"/>
   </div>
 </div>
 
