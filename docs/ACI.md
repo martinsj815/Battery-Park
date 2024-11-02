@@ -6,7 +6,8 @@ description: From Chemistry to Technology
 
 # Academic-to-Industry <i class="arrow right"></i>
 
-<hr style="background: linear-gradient(#a4f58e, #d8f5d0); height: 5px; border: none;">
+<hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
+
 <br>
 
 <div class="columns">
@@ -23,7 +24,7 @@ description: From Chemistry to Technology
 
 
 
-## Table of comparison between cells tested in the lab scale vs manufactured in the industry
+<h2><li> Table of comparison between cells tested in the lab scale vs manufactured in the industry </li></h2> 
 
 
 
@@ -44,7 +45,7 @@ description: From Chemistry to Technology
 - The table below reveals that increasing the cathode coating, reducing Li thickness, and reducing the electrolyte amount is detrimental to capacity retention of the cell.
 
 <br>
-# Influence of metrics on the coin cell (Li/NCM622) cycle performance
+<h2><li> Influence of metrics on the coin cell (Li/NCM622) cycle performance </li></h2>
 
 <br>
 
@@ -63,7 +64,7 @@ description: From Chemistry to Technology
 
 <br>
 
-# Will finding the new cathode material be the solution?
+<h2><li> Will finding the new cathode material be the solution? </li></h2>
 
 - One metric to improve the cell performance is the cathode areal capacity. Apparently, simply increasing the coathing thickness will not do the job due to an increase in polarization and low material utilization. Hence, finding a new cathode system with high specific capacity is desirable, but this cannot easily be realized.
 <br>
