@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Another page
-description: This is just another page
+title: Battery Park
+description: From Chemistry to Technology
 ---
 
 ## Welcome to another page
