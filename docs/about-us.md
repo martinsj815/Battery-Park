@@ -18,8 +18,12 @@ description: From Chemistry to Technology
     <h1><Li style="color: #4a8049;"><b>Sung Joo Kim</b></Li></h1>
     <br>
     <div class="columns">
-      <div class="column" style="width: 100px !important;">
-        <a href="https://www.linkedin.com/in/sungjookim/">Linkedin</a>
+      <div class="column">
+        <p> Linkedin
+          <a href="https://www.linkedin.com/in/sungjookim/">
+            <i class="material-icons" style="font-size:36px">group</i>  
+          </a>
+        </p>
       </div>
       <div class="column">
         <a href="https://donghee1025.github.io/Battery-Park/masthead/CV-SJK_092024.pdf" target="_blank">CV</a>
@@ -41,7 +45,11 @@ description: From Chemistry to Technology
     <br>
     <div class="columns">
       <div class="column">
-        <a href="https://www.linkedin.com/in/dongheechang/">Linkedin</a>
+        <p> Linkedin
+          <a href="https://www.linkedin.com/in/dongheechang/">
+            <i class="material-icons" style="font-size:36px">group</i>  
+          </a>
+        </p>
       </div>
       <div class="column"> 
         <a href="https://donghee1025.github.io/Battery-Park/masthead/CV_DongheeChang.pdf" target="_blank">CV</a>
