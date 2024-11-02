@@ -140,7 +140,7 @@ As shown in the graphs above, transition from graphite and silicon can yield dra
   </div>
 </div>
 
-
+<br>
 <h2><li> Salt </li></h2>
 
 
@@ -150,7 +150,7 @@ LiPF<sub>6</sub> has no outstanding property but has the combination of its well
 
 <b>Dissociation Constant (Descending order)</b>: LiTFSI > LiAsF<sub>6</sub> > LiPF<sub>6</sub> > LiClO<sub>4</sub> > LiBF<sub>4</sub>
 
-
+<br>
 <b> - Other salts/additives studied/considered are: </b>
 
 > LiBF<sub>4</sub>: Better thermal and stability against hydrolysis than LiPF<sub>6</sub>. However, it has mediocre ionic conductivity due to its low dissociation ability than LiPF<sub>6</sub>.
@@ -169,7 +169,7 @@ LiPF<sub>6</sub> has no outstanding property but has the combination of its well
 
 Many 18650 cells use the mixture of LiPF<sub>6</sub> and LiFSI inside carbonate electrolyte as the electrolyte. For EV batteries with an increasingly rigorous demand for their performances, some of the salts above are investigated as additive to be mixed with LiPF6 electrolyte, for which its concentration varies from 5-10%.
 
-  
+<br>
 <h2><li> Solid Electrolyte </li></h2>
 
 <div class="columns">
