@@ -21,24 +21,24 @@ description: From Chemistry to Technology
 </div>
 
 
-<h3><li>Cell reaction mechanism</li></h3>
+<h2><li>Cell reaction mechanism</li></h2>
 
 > The way Li-ions react with electrode active materials during charge/discharge can be categorized into following:
 
-## Intercalation reaction:
+### Intercalation reaction:
 - Li-ions are inserted or extracted from interstitital sites of the host structure without causing substantial structural changes. This makes intercalation compounds ideal for electrochemical energy storage applications. Indeed, most commercialized Li-ions batteries use electrodes with this type of reaction mechanism. However, intercalation compounds have a limited capacity due to crystallographic constrains of the host and thermodynamic instabilities arising from large changes in Li concentrations within the host.
 
-## Alloying reaction:
+### Alloying reaction:
 - Li reacts directly with active element/compound (M) to form an intermetallic phase (LixM). Despite providing a high specific capacity for the electrode, alloying reactions generally lead to multiple phase transformations during (de-)lithiation with large volume changes, resulting in a large hysteresis in the voltage profile and poor reversibility. This hysteresis leads to irreversible energy loss upon cycling, making commercialization difficult.
 
-## Conversion reaction:
+### Conversion reaction:
 - The reaction involves full reduction of the metal ions by lithium. It can accommodate as many electrons per transitional metal as needed to reduce its ions to the metallic state M. Therefore, materials undergoing conversion reaction can achieve much higher capacities than the intercalation compounds. When the starting compound has a strong structural relationship with its lithiated products, the conversion reaction is usually called a displacement reaction. Since these reactions involve phase transformations to extrude the transition metal, large voltage polarization and hysteresis are common.
 
 
 --------------------------------------------------------------------------
 
 
-# Cathode Materials
+<h2><li> Cathode Materials </li></h2>
 
 
 <div class="columns">
@@ -71,7 +71,8 @@ description: From Chemistry to Technology
 |Lithium Nickel Cobalt Aluminum Oxide|Layered|LiNi<sub>0.8</sub>Co<sub>0.15</sub>Al<sub>0.05</sub>O<sub>2</sub>|279/200<sup>a</sup>|3.7<sup>a</sup>|||||* High specific capacity / *High energy density|*Cycle/Thermal instability / *Co expensive|
 
 
-# Global Demand for Cathode Chemistries
+<h2><li> Global Demand for Cathode Chemistries </li></h2>
+
 
 
 <div class="columns">
