@@ -6,13 +6,13 @@ description: From Chemistry to Technology
 
 # Cell manufacturing process <i class="arrow right"></i>
 
-<hr style="background: linear-gradient(#a4f58e, #d8f5d0); height: 5px; border: none;">
+<hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
 <br>
 
 <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Cell%20manuf2.png?raw=true" alt="Primary" style="width:1000px; height:auto;">
 <br>
 
-## Slurry Mixing
+<h2><li> Slurry Mixing </li></h2>
 
 <div class="columns">
   <div class="column">
@@ -35,7 +35,7 @@ description: From Chemistry to Technology
 <br>
 <br>
 
-## Coating
+<h2><li> Coating </li></h2>
 
 <div class="columns">
   <div class="column">
@@ -75,7 +75,7 @@ description: From Chemistry to Technology
 <br>
 <br>
   
-## Drying
+<h2><li> Drying </li></h2>
 
 <div class="columns">
   <div class="column">
@@ -94,7 +94,7 @@ description: From Chemistry to Technology
 <br>
 <br>
 
-## Calendaring
+<h2><li> Calendaring </li></h2>
 
 <div class="columns">
   <div class="column">
@@ -111,7 +111,7 @@ description: From Chemistry to Technology
 <br>
 <br>
 
-## Slitting
+<h2><li> Slitting </li></h2>
 
 <div class="columns">
   <div class="column">
@@ -128,7 +128,7 @@ description: From Chemistry to Technology
 <br>
 <br>
 
-## Stacking/Winding/Rolling
+<h2><li> Stacking/Winding/Rolling </li></h2>
 
 <div class="columns">
   <div class="column">
@@ -143,7 +143,7 @@ description: From Chemistry to Technology
 <br>
 <br>
 
-## Welding
+<h2><li> Welding </li></h2> 
 
 <div class="columns">
   <div class="column">
@@ -158,7 +158,7 @@ description: From Chemistry to Technology
 <br>
 <br>
 
-## Enclosing
+<h2><li> Enclosing </li></h2>
 
 <div class="columns">
   <div class="column">
@@ -175,7 +175,7 @@ description: From Chemistry to Technology
 <br>
 <br>
 
-## Formation/Aging
+<h2><li> Formation/Aging </li></h2>
 
 <div class="columns">
   <div class="column">
@@ -194,7 +194,8 @@ description: From Chemistry to Technology
 
 --------------------------------------------------------------------
 
-# References
+<h2><li> References </li></h2>
+
 - Jianlin Li, et al., "From Materials to Cell: State-of-the-Art and Prospective Technologies for Lithium-Ion Battery Electrode Processing", Chem. Review, 122, 903 (2022)
 - Yangtao Liu, et al., "Current and future lithium-ion battery manufacturing", iScience, 24, 102332 (2021)
 - W. Blake Hawley, et al., "Electrode Manufacturing for Lithium-Ion Batteries - Analysis of Current and Next Generation Processing", J. Energy Storage, 25, 100862 (2019)
