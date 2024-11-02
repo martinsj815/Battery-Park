@@ -61,7 +61,7 @@ The electrodes of an electrochemical cell should exhibit some degree of electron
 - Continuum mechanics considers the different components of a battery as continuous media. By coupling multiple versions of a continuum model, it can describe the joint behavior of multiple cells or pack-level simulations. This approach can handle larger length and time scales. Depending on the numerical approach, continuum battery models generally fall into two categories: empirical and physics-based. Physics-based continuum models, also known as electrochemical battery models, describe the physical phenomena underpinning battery behavior. These models provide insights into the behavior of lithium-ion distribution in the electrolyte, the multiple internal variables depicted, the potential and current distributions in both the porous electrodes and the electrolyte, the lithium-ion concentration within the electrolyte, and the distribution of intercalated lithium within the electrode particles.
 Due to their fast and accurate predictions of real batteries, these approaches have been used as design tools to facilitate the development of new electrode, cell, and pack architectures and to estimate their potential performance. Based on this modeling, these approaches are used for optimizing operating conditions and battery management systems for thermal management, state of charge (SOC), and state of health (SOH) estimation.
 
-
+<br>
 -----------------------------------------------------------------------------------------------
 
 ## References
