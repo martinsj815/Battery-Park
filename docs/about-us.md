@@ -11,11 +11,25 @@ description: From Chemistry to Technology
 <br>
 <h1><Li style="color: #4a8049;"><b>Sung Joo Kim</b></Li></h1>
 <br>
-> [Linkedin](https://www.linkedin.com/in/sungjookim/)
+<div class="columns">
+  <div class="column">
+    [Linkedin]("https://www.linkedin.com/in/sungjookim/")
+  </div>
+  <div class="column">
+    <a href="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CV-SJK_092024.pdf">CV</a>
+  </div>
+</div>
 <br><br>
 <h1><Li style="color: #4a8049;"><b>Donghee Chang</b></Li></h1>
 <br>
-> [Linkedin](https://www.linkedin.com/in/dongheechang/)
+<div class="columns">
+  <div class="column">
+    [Linkedin]("https://www.linkedin.com/in/dongheechang/")
+  </div>
+  <div class="column">
+    <a href="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/CV_DongheeChang.pdf">CV</a>
+  </div>
+</div>
 
 
 
