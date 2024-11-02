@@ -21,8 +21,10 @@ description: From Chemistry to Technology
   <div class="column">
     <a href="https://scholar.google.com/citations?user=a_DrrJ0AAAAJ">Google Scholar</a>
   </div>
-  <div class="column">
-  </div>
+  <div class="column"></div>
+  <div class="column"></div>
+  <div class="column"></div>
+  <div class="column"></div>
 </div>
 <br><br>
 <h1><Li style="color: #4a8049;"><b>Donghee Chang</b></Li></h1>
@@ -37,8 +39,10 @@ description: From Chemistry to Technology
   <div class="column"> 
     <a href="https://scholar.google.com/citations?hl=en&user=FygpjYEAAAAJ">Google Scholar</a>
   </div> 
-  <div class="column">
-  </div>
+  <div class="column"></div>
+  <div class="column"></div>
+  <div class="column"></div>
+  <div class="column"></div>
 </div>
 
 
