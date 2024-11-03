@@ -16,7 +16,7 @@ description: From Chemistry to Technology
     <br>
     <br>
     <div class="columns">
-      <div class="column" style="display:flex; justify-content:center; align-items:center; text-align:center;">
+      <div class="column" style="text-align:center;">
         <h1 style="color: #4a8049;"><b>Sung Joo Kim</b></h1>
         <br>
         <p style="font-size:24px"> Linkedin
