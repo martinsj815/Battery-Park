@@ -35,7 +35,7 @@ description: From Chemistry to Technology
           </a>
         </p>
       </div> 
-      <div class="column" style="display:flex; justify-content:center; align-items:center; text-align:center;">
+      <div class="column" style="display:flex; align-items:center; text-align:center;">
         <h1 style="color: #4a8049;"><b>Donghee Chang</b></h1>
         <br>
         <p style="font-size:24px"> Linkedin
