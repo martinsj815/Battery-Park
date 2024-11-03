@@ -19,23 +19,23 @@ description: From Chemistry to Technology
     <br>
     <div class="columns">
       <div class="column">
-        <p style="font-size:36px"> Linkedin
+        <p style="font-size:24px"> Linkedin
           <a href="https://www.linkedin.com/in/sungjookim/">
-            <i class="material-icons" style="font-size:36px">group</i>  
+            <i class="material-icons" style="font-size:24px">group</i>  
           </a>
         </p>
       </div> 
       <div class="column">
-        <p style="font-size:36px"> CV
+        <p style="font-size:24px"> CV
           <a href="https://donghee1025.github.io/Battery-Park/masthead/CV-SJK_092024.pdf">
-            <i class="material-icons" style="font-size:36px">local_library</i>  
+            <i class="material-icons" style="font-size:24px">local_library</i>  
           </a>
         </p>
       </div>
       <div class="column">
-        <p style="font-size:36px"> Google Scholar
+        <p style="font-size:24px"> Google Scholar
           <a href="https://scholar.google.com/citations?user=a_DrrJ0AAAAJ">
-            <i class="material-icons" style="font-size:36px">poll</i>  
+            <i class="material-icons" style="font-size:24px">poll</i>  
           </a>
         </p>
       </div>
@@ -45,23 +45,23 @@ description: From Chemistry to Technology
     <br>
     <div class="columns">
       <div class="column">
-        <p> Linkedin
+        <p style="font-size:24px"> Linkedin
           <a href="https://www.linkedin.com/in/dongheechang/">
-            <i class="material-icons" style="font-size:36px">group</i>  
+            <i class="material-icons" style="font-size:24px">group</i>  
           </a>
         </p>
       </div>
       <div class="column">
-        <p> CV
+        <p style="font-size:24px"> CV
           <a href="https://donghee1025.github.io/Battery-Park/masthead/CV_DongheeChang.pdf">
-            <i class="material-icons" style="font-size:36px">local_library</i>  
+            <i class="material-icons" style="font-size:24px">local_library</i>  
           </a>
         </p>
       </div>
       <div class="column">
-        <p> Google Scholar
+        <p style="font-size:24px"> Google Scholar
           <a href="https://scholar.google.com/citations?hl=en&user=FygpjYEAAAAJ">
-            <i class="material-icons" style="font-size:36px">poll</i>  
+            <i class="material-icons" style="font-size:24px">poll</i>  
           </a>
         </p>
       </div>
