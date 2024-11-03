@@ -47,7 +47,7 @@ description: From Chemistry to Technology
           </a>
         </p> 
         <p style="font-size:24px"> CV
-          <a href="https://drive.google.com/file/d/1j-8qKJYyb7VNnF0PW_K9RSLCHyk8GkxD/preview">
+          <a href="https://drive.google.com/file/d/1zsogiv2FFY0L2Xrpi4f5B6Nbpc5V-RSu/preview">
             <i class="material-icons" style="font-size:24px">local_library</i>  
           </a>
         </p>   
