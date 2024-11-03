@@ -31,6 +31,16 @@
 
 .page-header {
     font-family: 'ParkAvenue', sans-serif;
+  
+  @include medium {
+    padding: 0rem 0rem;
+    font-size: 1.1rem;
+  }
+
+  @include small {
+    padding: 0rem 0rem;
+    font-size: 0.8rem;
+  }
 }
 
 .navbar {
