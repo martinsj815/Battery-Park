@@ -17,7 +17,7 @@ description: From Chemistry to Technology
     <br>
     <div class="columns">
       <div class="column" style="align:center">
-        <h1><Li style="color: #4a8049;"><b>Sung Joo Kim</b></Li></h1>
+        <h1 style="color: #4a8049;"><b>Sung Joo Kim</b></h1>
         <br>
         <p style="font-size:24px"> Linkedin
           <a href="https://www.linkedin.com/in/sungjookim/">
@@ -36,7 +36,7 @@ description: From Chemistry to Technology
         </p>
       </div> 
       <div class="column">
-        <h1><Li style="color: #4a8049;"><b>Donghee Chang</b></Li></h1>
+        <h1 style="color: #4a8049;"><b>Donghee Chang</b></h1>
         <br>
         <p style="font-size:24px"> Linkedin
           <a href="https://www.linkedin.com/in/dongheechang/">
