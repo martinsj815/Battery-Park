@@ -54,6 +54,9 @@ description: From Chemistry to Technology
           </a>
         </p>
       </div>
+      <div class="column">
+        <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Jihoon%20drawing.jpg?raw=true' alt="Capacity" style="width:1000px; height:auto;">
+      </div>
     </div>
   </body>
 </html>
