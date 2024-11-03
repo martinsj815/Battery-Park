@@ -295,7 +295,14 @@ a:hover {
   font-weight: bold;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
 .vl {
   border-left: 6px solid green;
   height: 50px;
+  
 }
