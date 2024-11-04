@@ -16,5 +16,3 @@ The website is tailored to provide comprehensive information spanning from their
 
 <br><br><br>
 
-![Visitor Count](https://komarev.com/ghpvc/?username=donghee1025&color=green)
-
