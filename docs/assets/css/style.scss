@@ -75,10 +75,10 @@
     text-decoration: none;
 }
 
-.nav .search-container {
+.navbar .search-container {
   float: right;
   color: #ffffff;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .nav .search-container button {
@@ -165,9 +165,9 @@
         margin: 1rem 0;
     }
 
-    .nav .search-container {
+    .navbar .search-container {
       float: none;
-      margin-left: 3rem;
+      margin-left: 1rem;
     }
 
     .nav a, .topnav input[type=text], .topnav .search-container button {
