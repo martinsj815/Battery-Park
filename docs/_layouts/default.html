@@ -71,8 +71,18 @@
             <div class="search-container">
               <form>
                 <input type="text" placeholder="Search.." name="search">
-                <button type="submit">Submit</button>
+                <button type="button" onclick="performSearch()">Submit</button>
               </form>
+              <script>
+                function performSearch() {
+                  const query = document.getElementById("search-input").value;
+                  if (query) {
+                    window.location.href = `https://www.google.com/search?q=site:donghee1025.github.io/Battery-Park+${encodeURIComponent(query)}`;
+                  } else {
+                    alert("Please enter a search term.");
+                  }
+                }
+              </script>
             </div>
             <div class="hamburger">
                 <span class="bar"></span>
