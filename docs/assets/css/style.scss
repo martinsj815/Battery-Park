@@ -78,6 +78,7 @@
 .nav .search-container {
   float: right;
   color: #ffffff;
+  margin-left: 2rem;
 }
 
 .nav .search-container button {
@@ -165,7 +166,8 @@
     }
 
     .nav .search-container {
-    float: none;
+      float: none;
+      margin-left: 1rem;
     }
 
     .nav a, .topnav input[type=text], .topnav .search-container button {
