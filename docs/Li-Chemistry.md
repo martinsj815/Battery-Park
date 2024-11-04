@@ -59,7 +59,7 @@ description: From Chemistry to Technology
 
 ## Cathode Comparison Table
 
-|Cathode Name|Crystal Structure|Chemical Formula|Specific Capacity (mAh/g) (The/Exp)|Average Voltage (V)|Electrical Conductivity (S/cm)|Li Diffusivity (cm2/s)|Exothermic Rxn T (Deg)|Heat Release (J/g)|Pros|Cons|
+|Cathode Name|Crystal Structure|Chemical Formula|Specific Capacity (mAh/g) (The/Exp)|Average Voltage (V)|Electrical Conductivity (S/cm)|Li Diffusivity (cm<sup>2</sup>/s)|Exothermic Rxn T (Deg)|Heat Release (J/g)|Pros|Cons|
 |:-------------|:-----------------|:-----------------|:----------|:--------------|:----------|:-------------|:------------|:------------|:-----------|:------------|
 |Lithium Cobalt Oxide|Layered|LiCoO<sub>2</sub>|274/148<sup>a</sup>|3.8<sup>a</sup>||10<sup>-11</sup>-10<sup>-10</sup><sup> f</sup>|||*Good structural stability|*Co expensive / *Unstable upon charging >50%"|
 |Lithium Manganese Oxide|Spinel|LiMn<sub>2</sub>O<sub>4</sub>|148/120<sup>a</sup>|4.1<sup>a</sup>||10<sup>-10</sup>-10<sup>-7</sup><sup> f</sup>|||*Cost efficient|* Mn dissolution in electrolyte|
