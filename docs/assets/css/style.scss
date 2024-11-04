@@ -141,7 +141,7 @@
         position: fixed;
         left: -100%;
         top: 1rem;
-        flex-direction: column;
+        //flex-direction: column;
         background-color: #222;
         width: 100%;
         border-radius: 10px;
@@ -155,6 +155,7 @@
         color: #fff;
         font-size: 1rem;
         flex-direction: none;
+        flex-wrap: nowrap;
     }
 
     .nav-menu.active {
