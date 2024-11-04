@@ -38,7 +38,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.7rem 0.7rem;
-    height: 10px;
+    height: 30px;
 }
 
 .bar {
@@ -222,8 +222,9 @@
 
     .vl {
       width: 200px;
-      color: green;
+      background-color: green;
       height: 6px;
+      margin: 20px auto;
     }
 
 }
@@ -364,8 +365,8 @@ a:hover {
 }
 
 .vl {
-  width: 6px; 
-  color: green;
+  width: 60px;
+  background-color: green;
   height: 200px;
-  
+  margin: 20px auto;
 }
