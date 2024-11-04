@@ -221,7 +221,8 @@
     }
 
     .vl {
-      border-left: 200px solid green;
+      width: 200px;
+      color: green;
       height: 6px;
     }
 
@@ -363,7 +364,8 @@ a:hover {
 }
 
 .vl {
-  border-left: 6px solid green;
+  width: 6px; 
+  color: green;
   height: 200px;
   
 }
