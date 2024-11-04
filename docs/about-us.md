@@ -35,9 +35,7 @@ description: From Chemistry to Technology
           </a>
         </p>
       </div> 
-      <div class="container">
-        <div class="vl"></div>
-      </div>
+      <div class="vl"></div>
       <div class="column" style="text-align:center;">
         <h1 style="color: #4a8049;"><b>Donghee Chang</b></h1>
         <br>
