@@ -17,7 +17,7 @@ description: From Chemistry to Technology
       <ul> The website is tailored to provide comprehensive information spanning from their fundamental chemistry to their present utilization across industries. We welcome technology enthusiasts, students, and even industry professional seeking knowledge and insights from this fascinating realm of science and technology. </ul>
     </div>
     <div class="column">
-      <img src="https://github.com/donghee1025/Battery-Park/blob/main2/docs/image_home.jpg?raw=true" alt="ECell" style="width:500px; height:auto;">
+      <img src="https://github.com/donghee1025/Battery-Park/blob/main2/docs/image_home.jpg?raw=true" alt="ECell" style="width:300px; height:auto;">
     </div>
   </div>
 
