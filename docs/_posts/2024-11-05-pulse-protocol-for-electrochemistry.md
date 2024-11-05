@@ -22,6 +22,6 @@ This paper presents a novel, non-invasive pulsing protocol for analyzing lithium
 <br><br>
 This technique is reported to have a robust fundamental basis with minimal assumptions, providing accurate, quantifiable metrics for any cell form factor.
 
-<br><br>
+<br>
 
 <div><a href="https://iopscience.iop.org/article/10.1149/1945-7111/ad6481">Here is a link to the paper.</a></div>
