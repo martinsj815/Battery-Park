@@ -8,7 +8,7 @@ layout: default
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url | relative_url }}">{{ post.post-heading }}</a>
+      <a href="{{ post.url | relative_url }}">{{ post.post_heading }}</a>
       <p>{{ post.excerpt }}</p>
     </li>
   {% endfor %}
