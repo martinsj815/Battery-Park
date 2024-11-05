@@ -26,6 +26,7 @@ baseurl: "/Battery-Park/" # the subpath of your site, e.g. /blog
 url: "http://donghee1025.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: battery_park
 github_username:  battery_park
+excerpt_separator: "<!--more-->"
 
 # Build settings
 theme: jekyll-theme-cayman
