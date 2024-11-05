@@ -24,7 +24,7 @@ description: From Chemistry to Technology
   <!-- Sidebar Area -->
   <aside class="sidebar">
     <h2>Posts</h2>
-    {% for post in site.posts limit:1 %}
+    {% for post in site.posts limit:2 %}
       <div class="sneak-peek">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <p>{{ post.excerpt | truncatewords: 20 }}</p>
