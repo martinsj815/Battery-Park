@@ -4,7 +4,6 @@ title: Battery Park
 description: From Chemistry to Technology
 ---
 
----
 
 # Welcome to Battery Park!
 <br><br>
