@@ -379,3 +379,9 @@ a:hover {
   height: 200px;
   margin: 20px auto;
 }
+
+.post {
+    margin-bottom: 30px; /* Space below each post */
+    padding: 20px; /* Optional: padding inside each post */
+    border-bottom: 1px solid #ccc; /* Optional: add a light border */
+}
