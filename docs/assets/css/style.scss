@@ -409,6 +409,8 @@ a:hover {
 .sidebar {
     padding: 15px;
     border: 2px solid #ddd; 
+    border-radius: 10px; /* Adjust this value for roundness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
 }
 
 .sneak-peek {
