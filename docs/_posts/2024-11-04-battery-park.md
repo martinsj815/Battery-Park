@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Battery Park
+title:  Welcome to Battery Park!
 date:   2024-11-04 17:37:47 -0400
 categories: news
 ---
 
-We have created a new website called Battery Park. Stay tuned for any updates!
+We're excited to share the launch of Battery Park. Stay tuned for more updates!
