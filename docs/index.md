@@ -27,7 +27,7 @@ description: From Chemistry to Technology
     {% for post in site.posts limit:3 %}
       <div class="sneak-peek">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p>{{ post.excerpt | truncatewords: 20 }}</p> <!-- Shows the first 20 words -->
+        <p>{{ post.excerpt | truncatewords: 20 }}</p>
       </div>
     {% endfor %}
   </aside>
