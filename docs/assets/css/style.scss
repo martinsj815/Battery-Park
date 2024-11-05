@@ -5,6 +5,7 @@
 
 .main-content {
   @include large {
+    flex: 3; 
     max-width: 80rem;  // Adjusted width
     padding: 2rem 3rem; // Adjusted side padding
     background-color: #f3f3f3;
@@ -393,9 +394,9 @@ a:hover {
 }
 
 .sidebar {
-    flex: 1; /* Takes up less space */
+    flex: 1; 
     padding: 15px;
-    border-left: 1px solid #ddd; /* Optional: add a divider */
+    border-left: 1px solid #ddd; 
     background-color: #f9f9f9;
 }
 
