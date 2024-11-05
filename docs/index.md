@@ -30,7 +30,9 @@ description: From Chemistry to Technology
         <p>{{ post.excerpt | truncatewords: 20 }}</p>
       </div>
     {% endfor %}
+    <br>
     <hr>
+    <br>
     <h2>Check out the Calculator</h2>
     {% for post in site.posts limit:3 %}
       <div class="sneak-peek">
