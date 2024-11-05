@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Battery Park
-subtitle: Simple Pulsing Experiment for Thermodynamic, Kinetic, and Transport Analysis of the Battery Cell
+sub-title: "Simple Pulsing Experiment for Thermodynamic, Kinetic, and Transport Analysis of the Battery Cell"
 date:   2024-11-05 08:12:30 -0400
 permalink: /posts/2014-11-05-pulse-protocol/
 ---
