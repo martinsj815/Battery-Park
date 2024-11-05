@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Battery Park
-display-title: Welcome to Battery Park!
+description: Welcome to Battery Park!
 date: 2024-11-04 17:37:47 -0400
 permalink: /posts/2014-11-04-welcome-to-battery-park/
 ---
