@@ -2,6 +2,7 @@
 layout: default
 title: Battery Park
 description: From Chemistry to Technology
+permalink: /posts/welcome-to-battery-park/
 ---
 
 ---
