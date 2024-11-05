@@ -5,9 +5,6 @@ permalink: /posts/2014-11-05-pulse-protocol/
 ---
 
 <html>
-  <head>
-    <h1>Simple Pulsing Experiment for Thermodynamic, Kinetic, and Transport Analysis of the Battery Cell</h1>
-  </head>
   <body>
     <b>Title</b>: Extracting Thermodynamic, Kinetic, and Transport Properties from Batteries Using a Simple Analytical Pulsing Protocol 
     <br>
