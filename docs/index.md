@@ -30,5 +30,13 @@ description: From Chemistry to Technology
         <p>{{ post.excerpt | truncatewords: 20 }}</p>
       </div>
     {% endfor %}
+    <hr>
+    <h2>Check out the Calculator Page</h2>
+    {% for post in site.posts limit:3 %}
+      <div class="sneak-peek">
+        <h3><a href="https://martinsj815.github.io/Battery-Park/Calculator">Here is the link</a></h3>
+        <p>{{ post.excerpt | truncatewords: 20 }}</p>
+      </div>
+    {% endfor %}
   </aside>
 </div>
