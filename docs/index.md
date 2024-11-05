@@ -27,11 +27,10 @@ description: From Chemistry to Technology
     {% for post in site.posts limit:2 %}
       <div class="sneak-peek">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p>{{ post.excerpt | truncatewords: 20 }}</p>
+        <p>{{ post.excerpt | truncatewords: 10 }}</p>
       </div>
     {% endfor %}
   </aside>
-  <br>
   <hr>
   <br>
   <aside class="sidebar">
