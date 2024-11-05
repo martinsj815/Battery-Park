@@ -23,7 +23,6 @@ description: From Chemistry to Technology
     <h2>Latest Posts</h2>
     {% for post in site.posts limit:2 %}
       <div class="sneak-peek">
-        <!-- Using post_heading for unique titles or falling back to post.title if not present -->
         <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
         <p>{{ post.excerpt | truncatewords: 20 }}</p>
       </div>
