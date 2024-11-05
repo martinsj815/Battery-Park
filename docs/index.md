@@ -32,7 +32,6 @@ permalink: /posts/welcome-to-battery-park/
       </div>
     {% endfor %}
     <hr>
-    
     <h2>Check out the Calculator</h2>
     <div class="sneak-peek">
       <h3><a href="https://martinsj815.github.io/Battery-Park/Calculator">Go to the link</a></h3>
