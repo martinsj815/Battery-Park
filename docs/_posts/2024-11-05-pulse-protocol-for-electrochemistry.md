@@ -6,8 +6,11 @@ categories: news
 ---
 
 <b>Title</b>: Extracting Thermodynamic, Kinetic, and Transport Properties from Batteries Using a Simple Analytical Pulsing Protocol 
+<br>
 <b>Authors</b>: Wood et al., 
+<br>
 <b>Journal</b>: JES
+<br><br>
 
 This paper presents a novel, non-invasive pulsing protocol for analyzing lithium-ion battery (LIB) cells. This technique enables the extraction of key parameters for thermodynamic, kinetic, and transport properties through pulse profiles performed at specific C-rates. These parameters include the Gibbs free energy, exchange current density, and lithium-ion diffusion coefficient.
 •	Thermodynamics: The thermodynamic properties are calculated using dQ/dV curves from open-circuit voltage (OCV) values across nine defined pulse cycles, effectively isolating thermodynamic contributions by neglecting overpotentials from kinetic and transport effects. The Gibbs free energy of reaction is then determined using the maximum dQ/dV value, revealing the purely thermodynamic energy associated with the reaction.
