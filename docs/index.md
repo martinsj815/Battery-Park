@@ -19,7 +19,7 @@ description: From Chemistry to Technology
     </div>
   </div>
   
-  <aside class="sidebar" style="flex: 30%; padding: 15px; border-left: 1px solid #ddd;">
+  <div class="sidebar" style="flex: 30%; padding: 15px; border-left: 1px solid #ddd;">
     <h2>Latest Posts</h2>
     {% for post in site.posts limit:2 %}
       <div class="sneak-peek">
@@ -33,5 +33,5 @@ description: From Chemistry to Technology
     <div class="sneak-peek">
       <h3><a href="https://martinsj815.github.io/Battery-Park/Calculator">Go to the link</a></h3>
     </div>
-  </aside>
+  </div>
 </div>
