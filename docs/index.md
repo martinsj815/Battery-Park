@@ -22,15 +22,15 @@ description: From Chemistry to Technology
   <aside class="sidebar" style="flex: 30%; padding: 15px; border-left: 1px solid #ddd;">
     <h2>Latest Posts</h2>
     {% for post in site.posts limit:2 %}
-      <div class="sneak-peek">
+      <ul class="sneak-peek">
         <h3><a href="{{ post.url | relative_url }}">{{ post.post-heading }}</a></h3>
         <p>{{ post.excerpt | truncatewords: 20 }}</p>
-      </div>
+      </ul>
     {% endfor %}
     <hr>
     <h2>Check out the Calculator</h2>
-    <div class="sneak-peek">
+    <ul class="sneak-peek">
       <h3><a href="https://martinsj815.github.io/Battery-Park/Calculator">Go to the link</a></h3>
-    </div>
+    </ul>
   </aside>
 </div>
