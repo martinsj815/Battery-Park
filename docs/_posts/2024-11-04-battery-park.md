@@ -1,7 +1,7 @@
 ---
 layout: default
-title:  Battery Park
-date:   2024-11-04 17:37:47 -0400
+title: Battery Park
+date: 2024-11-04 17:37:47 -0400
 description: From Chemistry to Technology
 permalink: /posts/welcome-to-battery-park/
 ---
