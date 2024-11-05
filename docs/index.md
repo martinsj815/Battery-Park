@@ -25,6 +25,7 @@ description: From Chemistry to Technology
       <div class="sneak-peek">
         <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
         <p>{{ post.excerpt | truncatewords: 20 }}</p>
+        <br><br>
       </div>
     {% endfor %}
     <hr>
