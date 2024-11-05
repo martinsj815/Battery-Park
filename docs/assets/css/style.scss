@@ -5,9 +5,9 @@
 
 .main-content {
   @include large {
-    flex: 2.5; 
-    max-width: 80rem;  // Adjusted width
-    padding: 2rem 3rem; // Adjusted side padding
+    flex: 2; 
+    max-width: 80rem;  
+    padding: 2rem 3rem; 
     background-color: #f3f3f3;
   }
 }
