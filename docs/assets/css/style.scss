@@ -391,3 +391,24 @@ a:hover {
     color: #555; /* Gray color for the date */
     margin-bottom: 10px; /* Space below the date */
 }
+
+.sidebar {
+    flex: 1; /* Takes up less space */
+    padding: 15px;
+    border-left: 1px solid #ddd; /* Optional: add a divider */
+    background-color: #f9f9f9;
+}
+
+.sneak-peek {
+    margin-bottom: 20px;
+}
+
+.sneak-peek h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.sneak-peek p {
+    font-size: 0.9em;
+    color: #555;
+}
