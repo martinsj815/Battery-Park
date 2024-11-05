@@ -23,7 +23,7 @@ description: From Chemistry to Technology
 
   <!-- Sidebar Area -->
   <aside class="sidebar">
-    <h2>Sneak Peek</h2>
+    <h2>Posts</h2>
     {% for post in site.posts limit:3 %}
       <div class="sneak-peek">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
