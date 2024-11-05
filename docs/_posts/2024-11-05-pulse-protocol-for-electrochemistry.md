@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Simple Pulsing Experiment for Thermodynamic, Kinetic, and Transport Analysis of the Battery Cell
-date:   2024-11-04 17:37:47 -0400
+date:   2024-11-05 08:12:30 -0400
 permalink: /posts/2014-11-05-pulse-protocol/
 ---
 
