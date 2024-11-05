@@ -393,6 +393,13 @@ a:hover {
     margin-bottom: 10px; /* Space below the date */
 }
 
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .sidebar {
     flex: 1; 
     padding: 15px;
