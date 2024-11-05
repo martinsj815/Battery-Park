@@ -2,7 +2,7 @@
 layout: post
 title:  Simple Pulsing Experiment for Thermodynamic, Kinetic, and Transport Analysis of the Battery Cell
 date:   2024-11-04 17:37:47 -0400
-categories: news
+permalink: /posts/2014-11-05-pulse-protocol/
 ---
 
 <b>Title</b>: Extracting Thermodynamic, Kinetic, and Transport Properties from Batteries Using a Simple Analytical Pulsing Protocol 
