@@ -19,21 +19,21 @@ description: From Chemistry to Technology
       <div class="column" style="text-align:center;">
         <h1 style="color: #4a8049;"><b>Sung Joo Kim</b></h1>
         <br>
-        <p style="font-size:24px"> Linkedin
+        <div style="font-size:24px"> Linkedin
           <a href="https://www.linkedin.com/in/sungjookim/">
             <i class="material-icons" style="font-size:24px">group</i>  
           </a>
-        </p>
-        <p style="font-size:24px"> CV
+        </div>
+        <div style="font-size:24px"> CV
           <a href="https://drive.google.com/file/d/1S28-gOSSczeEh3iH7mnnHCyd7GD9VnLg/preview">
             <i class="material-icons" style="font-size:24px">local_library</i>  
           </a>
-        </p>
-        <p style="font-size:24px"> Google Scholar
+        </div>
+        <div style="font-size:24px"> Google Scholar
           <a href="https://scholar.google.com/citations?user=a_DrrJ0AAAAJ">
             <i class="material-icons" style="font-size:24px">poll</i>  
           </a>
-        </p>
+        </div>
       </div> 
       <div container>
         <div class="vl"></div>
