@@ -6,7 +6,7 @@ description: From Chemistry to Technology
 
 
 # Welcome to Battery Park!
-<br><br>
+<br>
 
 <div class="content-container">
     <div class="columns">
