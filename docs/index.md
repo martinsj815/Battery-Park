@@ -19,16 +19,20 @@ description: From Chemistry to Technology
         </div>
     </div>
     <div class="sidebar" style="flex: 30%; padding: 15px; border-left: 1px solid #ddd;">
-        <h2>Latest Posts</h2>
-        {% for post in site.posts limit:3 %}
-          <div class="sneak-peek" style="border-bottom: 1px solid #ddd;">
-            <h3>&#9656; <a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          </div>
-        {% endfor %}
-        <hr>
-        <h2>Check out the Calculator</h2>
-        <div class="sneak-peek">
-          <h3><a href="https://martinsj815.github.io/Battery-Park/Calculator">Go to the link</a></h3>
-        </div>
+        <section class="latest-posts" style="margin-bottom: 20px;">
+            <h2>Latest Posts</h2>
+            {% for post in site.posts limit:3 %}
+            <div class="sneak-peek" style="border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 10px;">
+                <h3>&#9656; <a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            </div>
+            {% endfor %}
+        </section>
+        <!-- Calculator Section -->
+        <section class="calculator" style="padding-top: 15px; border-top: 1px solid #ddd;">
+            <h2>Check out the Calculator</h2>
+            <div class="sneak-peek">
+                <h3><a href="https://martinsj815.github.io/Battery-Park/Calculator">Go to the link</a></h3>
+            </div>
+        </section>
     </div>
 </div>
