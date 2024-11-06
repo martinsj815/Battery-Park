@@ -19,10 +19,10 @@ description: From Chemistry to Technology
         </div>
     </div>
     <div class="sidebar" style="flex: 30%; padding: 15px; border-left: 1px solid #ddd;">
-        <section class="latest-posts" style="margin-bottom: 20px;">
+        <section class="latest-posts" style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; margin-bottom: 15px;">
             <h2>Latest Posts</h2>
             {% for post in site.posts limit:3 %}
-            <div class="sneak-peek" style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; margin-bottom: 15px;">
+            <div class="sneak-peek">
                 <h3>&#9656; <a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
             </div>
             {% endfor %}
