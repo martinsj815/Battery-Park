@@ -18,7 +18,10 @@ description: From Chemistry to Technology
     <div class="columns">
       <div class="column" style="text-align:center;">
         <h1 style="color: #4a8049;"><b>Sung Joo Kim</b></h1>
-        <br>
+        <li><i>Materials Science</i></li>
+        <li><i>Transmission Electron Microscopy</i></li>
+        <li><i>Electrochemistry</i>i></li>
+        <br><br>
         <div style="font-size:24px"> Linkedin
           <a href="https://www.linkedin.com/in/sungjookim/">
             <i class="material-icons" style="font-size:24px">group</i>  
