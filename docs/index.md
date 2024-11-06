@@ -28,7 +28,7 @@ description: From Chemistry to Technology
             {% endfor %}
         </section>
         <div style="border-top: 3px solid #007ACC; margin: 20px 0;"></div>
-        <section class="calculator" style="padding-top: 15px; border-top: 1px solid #ddd;">
+        <section class="calculator" style="padding-top: 15px;">
             <h2>Check out the Calculator</h2>
             <div class="sneak-peek">
                 <h3><a href="https://martinsj815.github.io/Battery-Park/Calculator">Go to the link</a></h3>
