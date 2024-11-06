@@ -23,7 +23,7 @@ description: From Chemistry to Technology
         {% for post in site.posts limit:2 %}
           <div class="sneak-peek">
             <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            <br><br>
+            <hr>
           </div>
         {% endfor %}
         <hr>
