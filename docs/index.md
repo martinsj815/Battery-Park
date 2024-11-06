@@ -19,7 +19,7 @@ description: From Chemistry to Technology
         </div>
     </div>
     <div class="sidebar" style="flex: 30%;">
-        <section class="latest-posts" style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; margin-bottom: 15px;">
+        <section class="latest-posts" style="border: 2px solid #ddd; border-radius: 8px; padding: 15px; margin-bottom: 15px;">
             <h2>Latest Posts</h2>
             {% for post in site.posts limit:3 %}
             <div class="sneak-peek">
@@ -28,7 +28,7 @@ description: From Chemistry to Technology
             {% endfor %}
         </section>
         <div style="border-top: 3px solid #007ACC; margin: 20px 0;"></div>
-        <section class="calculator" style="border: 2px solid #ddd; border-radius: 8px; padding: 10px;">
+        <section class="calculator" style="border: 2px solid #ddd; border-radius: 8px; padding: 15px;">
             <h2>Check out the Calculator</h2>
             <div class="sneak-peek">
                 <h3><a href="https://martinsj815.github.io/Battery-Park/Calculator">Go to the link</a></h3>
