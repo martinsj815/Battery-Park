@@ -4,7 +4,9 @@ title:  Simple Pulsing Experiment for Thermodynamic, Kinetic, and Transport Anal
 permalink: /posts/2014-11-05-pulse-protocol/
 ---
 
-<h1>Simple Pulsing Experiment for Thermodynamic, Kinetic, and Transport Analysis of the Battery Cell</h1>
+<html>
+  <body>
+    <h1>Simple Pulsing Experiment for Thermodynamic, Kinetic, and Transport Analysis of the Battery Cell</h1>
 <br><br>
 <b>Title</b>: Extracting Thermodynamic, Kinetic, and Transport Properties from Batteries Using a Simple Analytical Pulsing Protocol 
 <br>
@@ -21,4 +23,7 @@ This paper presents a novel, non-invasive pulsing protocol for analyzing lithium
 <li> Transport: Transport properties are derived from the potential at the beginning (i.e. end of the pulse phase) and end of the rest phase (i.e., equilibrium) following a pulse. This difference, combined with the current density, is applied in Fick’s law to determine the diffusion coefficient, with set boundary conditions. </li>
 <br><br>
 This technique is reported to have a robust fundamental basis with minimal assumptions, providing accurate, quantifiable metrics for any cell form factor.<br>
+  </body>
+</html>
+
 
