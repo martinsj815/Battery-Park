@@ -43,6 +43,9 @@ description: From Chemistry to Technology
       </div> 
       <div class="column" style="text-align:center;">
         <h1 style="color: #4a8049;"><b>Donghee Chang</b></h1>
+        <li><i>Materials Science</i></li>
+        <li><i>Theoretical Calculation/Modeling</i></li>
+        <li><i>Electrochemistry</i></li>
         <br>
         <div style="font-size:24px"> Linkedin
           <a href="https://www.linkedin.com/in/dongheechang/">
