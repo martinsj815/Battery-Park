@@ -27,6 +27,7 @@ description: From Chemistry to Technology
             </div>
             {% endfor %}
         </section>
+        <div style="border-top: 3px solid #007ACC; margin: 20px 0;"></div>
         <section class="calculator" style="padding-top: 15px; border-top: 1px solid #ddd;">
             <h2>Check out the Calculator</h2>
             <div class="sneak-peek">
