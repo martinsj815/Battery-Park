@@ -21,9 +21,8 @@ description: From Chemistry to Technology
     <div class="sidebar" style="flex: 30%; padding: 15px; border-left: 1px solid #ddd;">
         <h2>Latest Posts</h2>
         {% for post in site.posts limit:2 %}
-          <div class="sneak-peek">
+          <div class="sneak-peek" style="border-bottom: 1px solid #ddd;">
             <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            <hr>
           </div>
         {% endfor %}
         <hr>
