@@ -22,13 +22,13 @@ description: From Chemistry to Technology
         <section class="latest-posts" style="margin-bottom: 20px;">
             <h2>Latest Posts</h2>
             {% for post in site.posts limit:3 %}
-            <div class="sneak-peek" style="border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 10px;">
+            <div class="sneak-peek" style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; margin-bottom: 15px;">
                 <h3>&#9656; <a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
             </div>
             {% endfor %}
         </section>
         <div style="border-top: 3px solid #007ACC; margin: 20px 0;"></div>
-        <section class="calculator" style="padding-top: 15px;">
+        <section class="calculator" style="border: 2px solid #ddd; border-radius: 8px; padding: 10px;">
             <h2>Check out the Calculator</h2>
             <div class="sneak-peek">
                 <h3><a href="https://martinsj815.github.io/Battery-Park/Calculator">Go to the link</a></h3>
