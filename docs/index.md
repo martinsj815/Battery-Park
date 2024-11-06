@@ -23,6 +23,7 @@ description: From Chemistry to Technology
             <h2>Latest Posts</h2>
             {% for post in site.posts limit:3 %}
             <div class="sneak-peek">
+                <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
                 <h3>&#9656; <a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
             </div>
             {% endfor %}
