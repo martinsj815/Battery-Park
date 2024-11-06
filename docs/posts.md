@@ -12,7 +12,7 @@ description: From Chemistry to Technology
 {% for post in site.posts %}
   <article class="post">
     <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
-    <p>{{ post.excerpt | truncatewords: 150 }}</p>
+    <p>{{ post.excerpt | strip_html | truncatewords: 150 }}</p>
     <a href="{{ post.url | relative_url }}">read more...</a>
     <br>
   </article>
