@@ -13,7 +13,7 @@ description: From Chemistry to Technology
   <article class="post">
     <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
     <p>{{ post.excerpt }}</p>
-    <a href="{{ post.url | relative_url }}">read more...</a>
+    <a href="{{ post.url | relative_url }}">link</a>
     <br>
   </article>
 {% endfor %}
