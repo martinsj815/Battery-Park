@@ -18,7 +18,7 @@ description: From Chemistry to Technology
             <img src="https://github.com/donghee1025/Battery-Park/blob/main2/docs/image_home.jpg?raw=true" alt="ECell" style="width:500px; height:auto;">
         </div>
     </div>
-    <div class="sidebar" style="flex: 30%; padding: 15px;">
+    <div class="sidebar" style="flex: 30%;">
         <section class="latest-posts" style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; margin-bottom: 15px;">
             <h2>Latest Posts</h2>
             {% for post in site.posts limit:3 %}
