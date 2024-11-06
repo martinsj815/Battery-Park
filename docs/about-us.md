@@ -46,7 +46,7 @@ description: From Chemistry to Technology
         <li><i>Materials Science</i></li>
         <li><i>Theoretical Calculation/Modeling</i></li>
         <li><i>Electrochemistry</i></li>
-        <br>
+        <br><br>
         <div style="font-size:24px"> Linkedin
           <a href="https://www.linkedin.com/in/dongheechang/">
             <i class="material-icons" style="font-size:24px">group</i>  
