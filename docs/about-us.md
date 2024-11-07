@@ -18,7 +18,7 @@ description: From Chemistry to Technology
     <div class="flex-container" style="display: flex;">
       <div class="column" style="flex-basis: 80%; padding: 10px;">
         <p> We are materials scientists with PhD in the same institution and more than 10 years of expertise in the energy storage field. </p>
-        <div class="column" style="text-align:center;">
+        <div class="profile" style="text-align: center; padding: 10px;">
           <h1 style="color: #4a8049;"><b>Sung Joo Kim</b></h1>
           <li><i>Materials Characterization</i></li>
           <li><i>Transmission Electron Microscopy</i></li>
@@ -43,7 +43,7 @@ description: From Chemistry to Technology
         <div container>
           <div class="vl"></div>
         </div> 
-        <div class="column" style="text-align:center;">
+        <div class="profile" style="text-align: center; padding: 10px;">
           <h1 style="color: #4a8049;"><b>Donghee Chang</b></h1>
           <li><i>Materials Modeling</i></li>
           <li><i>Theoretical Calculation</i></li>
