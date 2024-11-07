@@ -68,8 +68,9 @@ description: From Chemistry to Technology
       </div>
     </div>
     <div>
-      <ul>Our co-works in the following publications:</ul>
-      <li> </li>
+      <h3>Our co-works in the following publications:</h3>
+      <li><b>S. J. Kim*</b>b>, <b>D. Chang*</b>b>, K. Zhang, G. Graham, A. Van der Ven, X. Pan, ”Accordion Strain Accommodation Mechanism within the Epitaxially Constrained Electrode”, <i>ACS Energy Lett.</i>, 3, 1848-1853 (2018)</li>
+      <li>Z. L. Xu*, <b>S. J. Kim*</b>, <b>D. Chang*</b>, K. -Y Park, K. S. Dae, K. P. Dao, J. M. Yuk, K. Kang, ”Visualization of regulated nucleation and growth of lithium sulfides for high energy lithium sulfur batteries”, <i>Energy Environ. Sci.</i>, 12, 3144-3155 (2019)</li>
     </div>
   </body>
 </html>
