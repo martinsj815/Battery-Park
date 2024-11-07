@@ -16,7 +16,7 @@ description: From Chemistry to Technology
     <br>
     <br>
     <div class="columns" style="display: flex;">
-      <div class="column" style="flex-basis: 80%; padding: 10px;">
+      <div class="column" style="flex-basis: 70%; padding: 10px;">
         <p> We are materials scientists with PhD in the same institution and more than 10 years of expertise in the energy storage field. </p>
         <div class="profiles" style="display: flex; gap: 20px;">
           <div class="profile" style="text-align: center; padding: 0px;">
@@ -68,7 +68,7 @@ description: From Chemistry to Technology
           </div>
         </div>
       </div>
-      <div class="column" style="flex-basis: 20%; padding: 0px;">
+      <div class="column" style="flex-basis: 30%; padding: 0px;">
         <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Jihoon%20drawing.jpg?raw=true' alt="Capacity" style="width:500px; height:auto;">
       </div>
     </div>
