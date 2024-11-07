@@ -15,7 +15,7 @@ description: From Chemistry to Technology
     <hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
     <br>
     <br>
-    <div class="flex-container" style="display: flex;">
+    <div class="columns" style="display: flex;">
       <div class="column" style="flex-basis: 80%; padding: 10px;">
         <p> We are materials scientists with PhD in the same institution and more than 10 years of expertise in the energy storage field. </p>
         <div class="profile" style="text-align: center; padding: 0px;">
