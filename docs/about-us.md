@@ -15,8 +15,8 @@ description: From Chemistry to Technology
     <hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
     <br>
     <br>
-    <div class="columns">
-      <div class="column" style="text-align:center;">
+    <div class="flex-container" style="display: flex;">
+      <div class="column" style="flex-basis: 70%; border: 1px solid #ddd; padding: 20px;">
         <p> We are materials scientists with PhD in the same institution and more than 10 years of expertise in the energy storage field. </p>
         <div class="column" style="text-align:center;">
           <h1 style="color: #4a8049;"><b>Sung Joo Kim</b></h1>
@@ -66,7 +66,7 @@ description: From Chemistry to Technology
           </div>
         </div>
       </div>
-      <div class="column">
+      <div class="column" style="flex-basis: 30%; border: 1px solid #ddd; padding: 20px;">
         <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Jihoon%20drawing.jpg?raw=true' alt="Capacity" style="width:500px; height:auto;">
       </div>
     </div>
