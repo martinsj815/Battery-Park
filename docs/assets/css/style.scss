@@ -57,6 +57,7 @@
     align-items: center;
     position: relative;
     left: -30px;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 .nav-item {
