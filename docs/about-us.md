@@ -17,50 +17,53 @@ description: From Chemistry to Technology
     <br>
     <div class="columns">
       <div class="column" style="text-align:center;">
-        <h1 style="color: #4a8049;"><b>Sung Joo Kim</b></h1>
-        <li><i>Materials Characterization</i></li>
-        <li><i>Transmission Electron Microscopy</i></li>
-        <li><i>Electrochemistry</i></li>
-        <br><br>
-        <div style="font-size:24px"> Linkedin
-          <a href="https://www.linkedin.com/in/sungjookim/">
-            <i class="material-icons" style="font-size:24px">group</i>  
-          </a>
-        </div>
-        <div style="font-size:24px"> CV
-          <a href="https://drive.google.com/file/d/1S28-gOSSczeEh3iH7mnnHCyd7GD9VnLg/preview">
-            <i class="material-icons" style="font-size:24px">local_library</i>  
-          </a>
-        </div>
-        <div style="font-size:24px"> Google Scholar
-          <a href="https://scholar.google.com/citations?user=a_DrrJ0AAAAJ">
-            <i class="material-icons" style="font-size:24px">poll</i>  
-          </a>
-        </div>
-      </div> 
-      <div container>
-        <div class="vl"></div>
-      </div> 
-      <div class="column" style="text-align:center;">
-        <h1 style="color: #4a8049;"><b>Donghee Chang</b></h1>
-        <li><i>Materials Modeling</i></li>
-        <li><i>Theoretical Calculation</i></li>
-        <li><i>Electrochemistry</i></li>
-        <br><br>
-        <div style="font-size:24px"> Linkedin
-          <a href="https://www.linkedin.com/in/dongheechang/">
-            <i class="material-icons" style="font-size:24px">group</i>  
-          </a>
+        <p> We are materials scientists with PhD in the same institution and more than 10 years of expertise in the energy storage field. </p>
+        <div class="column" style="text-align:center;">
+          <h1 style="color: #4a8049;"><b>Sung Joo Kim</b></h1>
+          <li><i>Materials Characterization</i></li>
+          <li><i>Transmission Electron Microscopy</i></li>
+          <li><i>Electrochemistry</i></li>
+          <br><br>
+          <div style="font-size:24px"> Linkedin
+            <a href="https://www.linkedin.com/in/sungjookim/">
+              <i class="material-icons" style="font-size:24px">group</i>  
+            </a>
+          </div>
+          <div style="font-size:24px"> CV
+            <a href="https://drive.google.com/file/d/1S28-gOSSczeEh3iH7mnnHCyd7GD9VnLg/preview">
+              <i class="material-icons" style="font-size:24px">local_library</i>  
+            </a>
+          </div>
+          <div style="font-size:24px"> Google Scholar
+            <a href="https://scholar.google.com/citations?user=a_DrrJ0AAAAJ">
+              <i class="material-icons" style="font-size:24px">poll</i>  
+            </a>
+          </div>
         </div> 
-        <div style="font-size:24px"> CV
-          <a href="https://drive.google.com/file/d/1zsogiv2FFY0L2Xrpi4f5B6Nbpc5V-RSu/preview">
-            <i class="material-icons" style="font-size:24px">local_library</i>  
-          </a>
-        </div>   
-        <div style="font-size:24px"> Google Scholar
-          <a href="https://scholar.google.com/citations?hl=en&user=FygpjYEAAAAJ">
-            <i class="material-icons" style="font-size:24px">poll</i>  
-          </a>
+        <div container>
+          <div class="vl"></div>
+        </div> 
+        <div class="column" style="text-align:center;">
+          <h1 style="color: #4a8049;"><b>Donghee Chang</b></h1>
+          <li><i>Materials Modeling</i></li>
+          <li><i>Theoretical Calculation</i></li>
+          <li><i>Electrochemistry</i></li>
+          <br><br>
+          <div style="font-size:24px"> Linkedin
+            <a href="https://www.linkedin.com/in/dongheechang/">
+              <i class="material-icons" style="font-size:24px">group</i>  
+            </a>
+          </div> 
+          <div style="font-size:24px"> CV
+            <a href="https://drive.google.com/file/d/1zsogiv2FFY0L2Xrpi4f5B6Nbpc5V-RSu/preview">
+              <i class="material-icons" style="font-size:24px">local_library</i>  
+            </a>
+          </div>   
+          <div style="font-size:24px"> Google Scholar
+            <a href="https://scholar.google.com/citations?hl=en&user=FygpjYEAAAAJ">
+              <i class="material-icons" style="font-size:24px">poll</i>  
+            </a>
+          </div>
         </div>
       </div>
       <div class="column">
