@@ -76,7 +76,7 @@ description: From Chemistry to Technology
         </p>
       </div>
       <div class="column" style="align:center;">
-        <img src='https://github.com/martinsj815/Battery-Park/blob/main2/masthead/ACS_EL.png?raw=true' alt="Capacity" style="width:500px; height:auto;">
+        <img src='https://github.com/martinsj815/Battery-Park/blob/main2/masthead/ACS_EL.png?raw=true' alt="Capacity" style="width:300px; height:auto;">
       </div>
     </div>
     <div class="columns">
