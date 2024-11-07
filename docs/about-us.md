@@ -67,7 +67,7 @@ description: From Chemistry to Technology
         <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Jihoon%20drawing.jpg?raw=true' alt="Capacity" style="width:500px; height:auto;">
       </div>
     </div>
-    <br>
+    <br><br>
     <h3>Our co-works in the following publications:</h3>
     <div class="columns">
       <div class="column">
