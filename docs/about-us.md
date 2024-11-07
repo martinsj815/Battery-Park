@@ -18,8 +18,8 @@ description: From Chemistry to Technology
     <div class="columns">
       <div class="column" style="text-align:center;">
         <h1 style="color: #4a8049;"><b>Sung Joo Kim</b></h1>
-        <li><i>Materials Science</i></li>
-        <li><i>Transmission Electron Microscopy/Characterization</i></li>
+        <li><i>Materials Characterization</i></li>
+        <li><i>Transmission Electron Microscopy</i></li>
         <li><i>Electrochemistry</i></li>
         <br><br>
         <div style="font-size:24px"> Linkedin
@@ -43,8 +43,8 @@ description: From Chemistry to Technology
       </div> 
       <div class="column" style="text-align:center;">
         <h1 style="color: #4a8049;"><b>Donghee Chang</b></h1>
-        <li><i>Materials Science</i></li>
-        <li><i>Theoretical Calculation/Modeling</i></li>
+        <li><i>Materials Modeling</i></li>
+        <li><i>Theoretical Calculation</i></li>
         <li><i>Electrochemistry</i></li>
         <br><br>
         <div style="font-size:24px"> Linkedin
@@ -66,6 +66,10 @@ description: From Chemistry to Technology
       <div class="column">
         <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Jihoon%20drawing.jpg?raw=true' alt="Capacity" style="width:500px; height:auto;">
       </div>
+    </div>
+    <div>
+      <ul>Our co-works in the following publications:</ul>
+      <li> </li>
     </div>
   </body>
 </html>
