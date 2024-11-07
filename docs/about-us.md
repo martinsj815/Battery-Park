@@ -19,7 +19,7 @@ description: From Chemistry to Technology
       <div class="column" style="text-align:center;">
         <h1 style="color: #4a8049;"><b>Sung Joo Kim</b></h1>
         <li><i>Materials Science</i></li>
-        <li><i>Transmission Electron Microscopy</i></li>
+        <li><i>Transmission Electron Microscopy/Characterization</i></li>
         <li><i>Electrochemistry</i></li>
         <br><br>
         <div style="font-size:24px"> Linkedin
@@ -64,7 +64,7 @@ description: From Chemistry to Technology
         </div>
       </div>
       <div class="column">
-        <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Jihoon%20drawing.jpg?raw=true' alt="Capacity" style="width:1000px; height:auto;">
+        <img src='https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Jihoon%20drawing.jpg?raw=true' alt="Capacity" style="width:500px; height:auto;">
       </div>
     </div>
   </body>
