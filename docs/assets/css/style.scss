@@ -22,7 +22,10 @@
     font-size: 0.8rem;
     background-color: #f3f3f3;
   }
-  
+
+html {
+    scroll-behavior: smooth;
+}
 
 .header {
     border-bottom: 0.7px solid #E2E8F0;
