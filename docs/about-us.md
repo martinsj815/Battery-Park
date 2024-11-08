@@ -18,6 +18,7 @@ description: From Chemistry to Technology
     <div class="columns" style="display: flex;">
       <div class="column" style="flex-basis: 70%; padding: 10px;">
         <p> We are materials scientists with PhD in the same institution and more than 10 years of expertise in the energy storage field. </p>
+        <br><br>
         <div class="profiles" style="display: flex; gap: 20px;">
           <div class="profile" style="text-align: center; padding: 0px;">
             <h1 style="color: #4a8049;"><b>Sung Joo Kim</b></h1>
