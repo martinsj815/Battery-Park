@@ -12,7 +12,7 @@ permalink: /posts/2014-11-05-pulse-protocol/
     <br>
     <b>Authors</b>: Wood et al., 
     <br>
-    <b>Journal</b>: JES <a href="https://iopscience.iop.org/article/10.1149/1945-7111/ad6481">Link</a>
+    <b>Journal</b>: Journal of the Electrochemical Society <a href="https://iopscience.iop.org/article/10.1149/1945-7111/ad6481">Link</a>
     <br><br>
     This paper presents a novel, non-invasive pulsing protocol for analyzing lithium-ion battery (LIB) cells. This technique enables the extraction of key parameters for thermodynamic, kinetic, and transport properties through pulse profiles performed at specific C-rates. These parameters include the Gibbs free energy, exchange current density, and lithium-ion diffusion coefficient.
     <br><br>
