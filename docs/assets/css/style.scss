@@ -3,11 +3,16 @@
 
 @import 'jekyll-theme-cayman';
 
+body {
+    background-color: #f3f3f3; /* Light gray for outside background */
+    margin: 0;
+}
+
 .main-content {
   @include large {
     max-width: 80rem;  
     padding: 2rem 3rem; 
-    background-color: #f3f3f3;
+    background-color: #ffffff;
   }
 }
 
