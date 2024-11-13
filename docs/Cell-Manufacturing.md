@@ -229,7 +229,7 @@ description: From Chemistry to Technology
         type: 'pie'
       },
       title: {
-        text: 'NCM 622 & 100% C'
+        text: 'NCM 811 & 95% C, 5% SiO'
     },
       series: [{
         name: 'Weight',
