@@ -202,8 +202,8 @@ description: From Chemistry to Technology
       chart: {
         type: 'pie',
         backgroundColor: null,
-        width: 500,
-        height: 400
+        width: 600,
+        height: 500
       },
       title: {
         text: 'NCM 622 & 100% C'
@@ -240,8 +240,8 @@ description: From Chemistry to Technology
       chart: {
         type: 'pie',
         backgroundColor: null,
-        width: 500,
-        height: 400
+        width: 600,
+        height: 500
       },
       title: {
         text: 'NCM 811 & 95% C, 5% SiO'
@@ -278,8 +278,8 @@ description: From Chemistry to Technology
       chart: {
         type: 'pie',
         backgroundColor: null,
-        width: 500,
-        height: 400
+        width: 600,
+        height: 500
       },
       title: {
         text: 'NCM 900 & 90% C, 10% Si'
@@ -316,8 +316,8 @@ description: From Chemistry to Technology
       chart: {
         type: 'pie',
         backgroundColor: null,
-        width: 500,
-        height: 400
+        width: 600,
+        height: 500
       },
       title: {
         text: 'LFP & 100% C'
@@ -342,6 +342,7 @@ description: From Chemistry to Technology
           format: '<b>{point.percentage:.1f} %</b>',
           style: {
             fontSize: '14px',
+            color: 'black',
           }
         }
       }],
