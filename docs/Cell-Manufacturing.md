@@ -10,32 +10,30 @@ description: From Chemistry to Technology
   <br>
   <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
-
-<img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Cell%20manuf2.png?raw=true" alt="Primary" style="width:1000px; height:auto;">
-<br>
-
-<h2><li> Slurry Mixing </li></h2>
-
-<div class="columns">
-  <div class="column">
-    A typical slurry consists of the cathode (or anode) active material, conductive additive, and binder. A commonly used conductive additive is carbon black. An organic binder is usually a dielectric polymer like polyvinylidene fluoride (PVDF) with a wide good electrochemical stability window. As a binder solvent, N-methyl-2-pyrrolidone (NMP) is used to dissolve PVDF. Water-based binders such as carboxymethylcellulose (CMC) and styrene butadiene rubber (SBR) are considered as alternatives for cost-efficient and non-toxic processing.
-   <br> 
-   <br>
-   There are hydrodynamic shear mixing, ball-milling, and ultrasonic homogenization. Shear mixers (e.g. planetary mixers) are the most common for the industrial use. For mixing, sequence and additive properties (e.g. adhesion) are important.
-   <br> 
-   <br>
-    Since organic solvent drying is time-consuming and costly and commonly used NMP is toxic, water-based binders such as cellulose are proposed despite water not being compatible with many cathodes. Hence, increasing slurry concentration and even dry mixing are considered for improved cost, time, and energy efficiency later for coating/drying.
-   <br>
-   <br>
-   Rheology of the slurry (e.g. viscosity, flow yield stress, wettability) is to be considered for slurry optimization, especially for later coating different thickness. Slurry viscosity can be determined by factors such as total solid loading, active material size and relative amount, binder molecular weight, etc.
+<body>
+  <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Cell%20manuf2.png?raw=true" alt="Primary" style="width:1000px; height:auto;">
+  <br>
+  <h2><li> Slurry Mixing </li></h2>
+  <div class="columns">
+    <div class="column">
+      A typical slurry consists of the cathode (or anode) active material, conductive additive, and binder. A commonly used conductive additive is carbon black. An organic binder is usually a dielectric polymer like polyvinylidene fluoride (PVDF) with a wide good electrochemical stability window. As a binder solvent, N-methyl-2-pyrrolidone (NMP) is used to dissolve PVDF. Water-based binders such as carboxymethylcellulose (CMC) and styrene butadiene rubber (SBR) are considered as alternatives for cost-efficient and non-toxic processing.
+      <br> 
+      <br>
+      There are hydrodynamic shear mixing, ball-milling, and ultrasonic homogenization. Shear mixers (e.g. planetary mixers) are the most common for the industrial use. For mixing, sequence and additive properties (e.g. adhesion) are important.
+      <br> 
+      <br>
+      Since organic solvent drying is time-consuming and costly and commonly used NMP is toxic, water-based binders such as cellulose are proposed despite water not being compatible with many cathodes. Hence, increasing slurry concentration and even dry mixing are considered for improved cost, time, and energy efficiency later for coating/drying.
+      <br>
+      <br>
+      Rheology of the slurry (e.g. viscosity, flow yield stress, wettability) is to be considered for slurry optimization, especially for later coating different thickness. Slurry viscosity can be determined by factors such as total solid loading, active material size and relative amount, binder molecular weight, etc.
+    </div>
+    <div class="column">
+      <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/mixing.png?raw=true" alt="Mixing" style="width:300px; height:auto; text-align:center">
+    </div>
   </div>
-  <div class="column">
-    <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/mixing.png?raw=true" alt="Mixing" style="width:300px; height:auto;">
-  </div>
-</div>
 
-<br>
-<br>
+  <br>
+  <br>
 
 <h2><li> Coating </li></h2>
 
@@ -193,9 +191,6 @@ description: From Chemistry to Technology
 
 <br>
 <br>
-
-
-
 --------------------------------------------------------------------
 
 <h2><li> References </li></h2>
@@ -203,4 +198,7 @@ description: From Chemistry to Technology
 - Jianlin Li, et al., "From Materials to Cell: State-of-the-Art and Prospective Technologies for Lithium-Ion Battery Electrode Processing", Chem. Review, 122, 903 (2022)
 - Yangtao Liu, et al., "Current and future lithium-ion battery manufacturing", iScience, 24, 102332 (2021)
 - W. Blake Hawley, et al., "Electrode Manufacturing for Lithium-Ion Batteries - Analysis of Current and Next Generation Processing", J. Energy Storage, 25, 100862 (2019)
+</body>
+
+
 
