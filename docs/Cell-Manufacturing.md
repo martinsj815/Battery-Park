@@ -214,7 +214,7 @@ description: From Chemistry to Technology
           enabled: true,
           format: '<b>{point.percentage:.1f} %</b>',
           style: {
-            fontSize: '20px',
+            fontSize: '14px',
             fontWeight: 'bold', 
           }
         }
@@ -250,7 +250,7 @@ description: From Chemistry to Technology
           enabled: true,
           format: '<b>{point.percentage:.1f} %</b>',
           style: {
-            fontSize: '20px',
+            fontSize: '14px',
             fontWeight: 'bold', 
           }
         }
