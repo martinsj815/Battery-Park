@@ -102,12 +102,9 @@ description: From Chemistry to Technology
       <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/calendaring.png?raw=true" alt="Coating" style="width:300px; height:auto;">
     </div>
   </div>
-
   <br>
   <br>
-
   <h2><li> Slitting </li></h2>
-
   <div class="columns">
     <div class="column">
       - Conventional process of cutting the large, coated film is by using a blade or chisel.
@@ -119,12 +116,9 @@ description: From Chemistry to Technology
       <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Slitting.png?raw=true" alt="Coating" style="width:300px; height:auto;">
     </div>
   </div>
-
   <br>
   <br>
-
   <h2><li> Stacking/Winding/Rolling </li></h2>
-
   <div class="columns">
     <div class="column">
       - All layers including electrodes and separators are wound into a spiral or jelly-rolled to be inserted in a cylindrical cell. In pouch cells, all layers are stacked layer by layer or via Z-stacking.
@@ -134,12 +128,9 @@ description: From Chemistry to Technology
       <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/stacking.png?raw=true" alt="Coating" style="width:300px; height:auto;">
     </div>
   </div>
-
   <br>
   <br>
-
   <h2><li> Welding </li></h2> 
-
   <div class="columns">
     <div class="column">
       - Contact resistance determines the quality of welding between tabs and current collectors. Ultrasonic welding uses high frequency to induce heat under applied pressure for welding. Resistance spot welding uses materials’ resistance for heat generation to join materials. Laser welding happens through the adsorption of laser beams on the materials at the certain point to heat, melt, and create joints.
@@ -149,12 +140,9 @@ description: From Chemistry to Technology
       <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/welding.png?raw=true" alt="Coating" style="width:300px; height:auto;">
     </div>
   </div>
-
   <br>
   <br>
-
   <h2><li> Enclosing </li></h2>
-
   <div class="columns">
     <div class="column">
       -Enclosing includes packaging and electrolyte filling. The filling process is done in vacuum through the desired pressure level using a high-precision injection device and is followed by wetting.
@@ -166,12 +154,9 @@ description: From Chemistry to Technology
       <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/enclosing.png?raw=true" alt="Coating" style="width:200px; height:auto;">
     </div>
   </div>
-
   <br>
   <br>
-
   <h2><li> Formation/Aging </li></h2>
-
   <div class="columns">
     <div class="column">
       -Formation of the dense and robust SEI layer is needed for good battery performance without over-consumption of the electrolyte, especially for the graphite anode with intercalation potential lower than the reduction potential of electrolyte. The formation and aging process can be delicate and time-consuming as the amount of electrolyte relative to the materials that it covers; temperature, and pressure need to be controlled.
@@ -183,11 +168,9 @@ description: From Chemistry to Technology
       <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/formation.png?raw=true" alt="Coating" style="width:200px; height:auto;">
     </div>
   </div>
-
   <br>
   <br>
   <hr>
-  
   <h2><li> References </li></h2>
   <li>Jianlin Li, et al., "From Materials to Cell: State-of-the-Art and Prospective Technologies for Lithium-Ion Battery Electrode Processing", Chem. Review, 122, 903 (2022)</li>
   <li>- Yangtao Liu, et al., "Current and future lithium-ion battery manufacturing", iScience, 24, 102332 (2021)</li>
