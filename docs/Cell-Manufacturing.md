@@ -312,6 +312,44 @@ description: From Chemistry to Technology
       }
     });
     
+    Highcharts.chart('container4', {
+      chart: {
+        type: 'pie',
+        backgroundColor: null,
+        width: 500,
+        height: 400
+      },
+      title: {
+        text: 'LFP & 100% C'
+    },
+      series: [{
+        name: 'Weight',
+        data: [
+          { name: 'Batch mixing', y: 0.27},
+          { name: 'Coating & Drying', y: 10.38},
+          { name: 'Calendaring', y: 0.61},
+          { name: 'Slittering/Cutting', y: 0.36},
+          { name: 'Vacuum Drying', y: 1.59},
+          { name: 'Stacking', y: 0.22},
+          { name: 'Welding/Packing/Filling/Closing', y: 1.39},
+          { name: 'Washing', y: 1.73},
+          { name: 'Formatting/Aging', y: 9.87},
+          { name: 'Others(Materials handling/Dry rooms)', y: 11.06},
+        ],
+        showInLegend: true,
+        dataLabels: {
+          enabled: true,
+          format: '<b>{point.percentage:.1f} %</b>',
+          style: {
+            fontSize: '14px',
+          }
+        }
+      }],
+      tooltip: {
+        pointFormat: '{point.name}: <b>{point.y:.2f} g</b>'
+      }
+    });
+    
   </script>
 </body>
 
