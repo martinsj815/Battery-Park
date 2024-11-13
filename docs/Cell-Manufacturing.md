@@ -4,10 +4,12 @@ title: Battery Park
 description: From Chemistry to Technology
 ---
 
-# Cell manufacturing process <i class="arrow right"></i>
-
-<hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
-<br>
+<head>
+  <h1> Cell manufacturing process <i class="arrow right"></i></h1>
+  <hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
+  <br>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
 
 <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Cell%20manuf2.png?raw=true" alt="Primary" style="width:1000px; height:auto;">
 <br>
@@ -191,6 +193,8 @@ description: From Chemistry to Technology
 
 <br>
 <br>
+
+
 
 --------------------------------------------------------------------
 
