@@ -27,7 +27,7 @@ description: From Chemistry to Technology
       <br>
       Rheology of the slurry (e.g. viscosity, flow yield stress, wettability) is to be considered for slurry optimization, especially for later coating different thickness. Slurry viscosity can be determined by factors such as total solid loading, active material size and relative amount, binder molecular weight, etc.
     </div>
-    <div class="column">
+    <div class="column" style="text-align: center;">
       <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/mixing.png?raw=true" alt="Mixing" style="width:300px; height:auto;">
     </div>
   </div>
@@ -65,7 +65,7 @@ description: From Chemistry to Technology
       <br>
       * <b>Hot pressing & melting</b>: Applicable to solid-state polymer electrolytes.
     </div>
-    <div class="column">
+    <div class="column" style="text-align: center;">
       <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Coating.png?raw=true" alt="Coating" style="width:300px; height:auto;">
     </div>
   </div>
@@ -81,7 +81,7 @@ description: From Chemistry to Technology
       - A slurry mixed with water-based binder may take a longer time to dry than that with traditional NMP-based slurry despite being cost and time efficient for not having to go through the solvent recovery step.
       <br> 
     </div>
-    <div class="column">
+    <div class="column" style="text-align: center;">
       <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/drying.png?raw=true" alt="Coating" style="width:300px; height:auto;">
     </div>
   </div>
@@ -98,7 +98,7 @@ description: From Chemistry to Technology
       - Reduces electrode porosity and alters pore microstructure with increased tortuosity. Increases the bonding strength between the electrode and the current collector. Improved particle contacts lead to energy and power density enhancement.
       <br> 
     </div>
-    <div class="column">
+    <div class="column" style="text-align: center;">
       <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/calendaring.png?raw=true" alt="Coating" style="width:300px; height:auto;">
     </div>
   </div>
@@ -112,7 +112,7 @@ description: From Chemistry to Technology
       - Laser cutting with good power and speed control is widely applied for improved shape and edge quality of the electrode.
      <br> 
     </div>
-    <div class="column">
+    <div class="column" style="text-align: center;">
       <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Slitting.png?raw=true" alt="Coating" style="width:300px; height:auto;">
     </div>
   </div>
@@ -124,7 +124,7 @@ description: From Chemistry to Technology
       - All layers including electrodes and separators are wound into a spiral or jelly-rolled to be inserted in a cylindrical cell. In pouch cells, all layers are stacked layer by layer or via Z-stacking.
      <br> 
     </div>
-    <div class="column">
+    <div class="column" style="text-align: center;">
       <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/stacking.png?raw=true" alt="Coating" style="width:300px; height:auto;">
     </div>
   </div>
@@ -136,7 +136,7 @@ description: From Chemistry to Technology
       - Contact resistance determines the quality of welding between tabs and current collectors. Ultrasonic welding uses high frequency to induce heat under applied pressure for welding. Resistance spot welding uses materials’ resistance for heat generation to join materials. Laser welding happens through the adsorption of laser beams on the materials at the certain point to heat, melt, and create joints.
      <br> 
     </div>
-    <div class="column">
+    <div class="column" style="text-align: center;">
       <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/welding.png?raw=true" alt="Coating" style="width:300px; height:auto;">
     </div>
   </div>
@@ -150,7 +150,7 @@ description: From Chemistry to Technology
     -Electrolyte wetting is influenced by electrode surface energy and morphology (e.g. pore structures), electrolyte viscosity and surface tension, etc.
      <br> 
     </div>
-    <div class="column">
+    <div class="column" style="text-align: center;">
       <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/enclosing.png?raw=true" alt="Coating" style="width:200px; height:auto;">
     </div>
   </div>
@@ -164,7 +164,7 @@ description: From Chemistry to Technology
     -Gases generated from formation cycles are released before final sealing or re-sealing.
      <br> 
     </div>
-    <div class="column">
+    <div class="column" style="text-align: center;">
       <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/formation.png?raw=true" alt="Coating" style="width:200px; height:auto;">
     </div>
   </div>
