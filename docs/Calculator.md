@@ -724,7 +724,6 @@ description: From Chemistry to Technology
                 `<tr><td>${result.parameter}</td><td><b>${result.value}</b></td></tr>`
             ).join('');
 
-                // Create Pie Chart
             Highcharts.chart('container', {
                 chart: {
                     type: 'pie'
