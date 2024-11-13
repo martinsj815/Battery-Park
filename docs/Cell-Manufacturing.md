@@ -186,11 +186,23 @@ description: From Chemistry to Technology
       <div id="container2" style="width:100%; height:400px;"></div>
     </div>
   </div>
+  <br>
+  <div class="columns">
+    <div class="column">
+      <div id="container3" style="width:100%; height:400px;"></div>
+    </div>
+    <div class="column">
+      <div id="container4" style="width:100%; height:400px;"></div>
+    </div>
+  </div>
 
+  
   <script>
     Highcharts.chart('container1', {
       chart: {
-        type: 'pie'
+        type: 'pie',
+        width: 700,
+        height: 600
       },
       title: {
         text: 'NCM 622 & 100% C'
@@ -225,10 +237,49 @@ description: From Chemistry to Technology
 
     Highcharts.chart('container2', {
       chart: {
-        type: 'pie'
+        type: 'pie',
+        width: 700,
+        height: 600
       },
       title: {
         text: 'NCM 811 & 95% C, 5% SiO'
+    },
+      series: [{
+        name: 'Weight',
+        data: [
+          { name: 'Batch mixing', y: 0.14},
+          { name: 'Coating & Drying', y: 5.64},
+          { name: 'Calendaring', y: 0.33},
+          { name: 'Slittering/Cutting', y: 0.20},
+          { name: 'Vacuum Drying', y: 0.87},
+          { name: 'Stacking', y: 0.12},
+          { name: 'Welding/Packing/Filling/Closing', y: 0.75},
+          { name: 'Washing', y: 0.94},
+          { name: 'Formatting/Aging', y: 5.36},
+          { name: 'Others(Materials handling/Dry rooms)', y: 6.00},
+        ],
+        showInLegend: true,
+        dataLabels: {
+          enabled: true,
+          format: '<b>{point.percentage:.1f} %</b>',
+          style: {
+            fontSize: '14px',
+          }
+        }
+      }],
+      tooltip: {
+        pointFormat: '{point.name}: <b>{point.y:.2f} g</b>'
+      }
+    });
+
+    Highcharts.chart('container3', {
+      chart: {
+        type: 'pie',
+        width: 700,
+        height: 600
+      },
+      title: {
+        text: 'NCM 900 & 90% C, 10% Si'
     },
       series: [{
         name: 'Weight',
@@ -257,6 +308,7 @@ description: From Chemistry to Technology
         pointFormat: '{point.name}: <b>{point.y:.2f} g</b>'
       }
     });
+    
   </script>
 </body>
 
