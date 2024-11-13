@@ -180,19 +180,19 @@ description: From Chemistry to Technology
   <br>
   <div class="columns">
     <div class="column">
-      <div id="container1" style="width:100%; height:400px;"></div>
+      <div id="container1" style="width:100%; height:500px;"></div>
     </div>
     <div class="column">
-      <div id="container2" style="width:100%; height:400px;"></div>
+      <div id="container2" style="width:100%; height:500px;"></div>
     </div>
   </div>
   <br>
   <div class="columns">
     <div class="column">
-      <div id="container3" style="width:100%; height:400px;"></div>
+      <div id="container3" style="width:100%; height:500px;"></div>
     </div>
     <div class="column">
-      <div id="container4" style="width:100%; height:400px;"></div>
+      <div id="container4" style="width:100%; height:500px;"></div>
     </div>
   </div>
 
@@ -228,6 +228,7 @@ description: From Chemistry to Technology
           format: '<b>{point.percentage:.1f} %</b>',
           style: {
             fontSize: '14px',
+            color: 'black',
           }
         }
       }],
@@ -266,6 +267,7 @@ description: From Chemistry to Technology
           format: '<b>{point.percentage:.1f} %</b>',
           style: {
             fontSize: '14px',
+            color: 'black',
           }
         }
       }],
@@ -304,6 +306,7 @@ description: From Chemistry to Technology
           format: '<b>{point.percentage:.1f} %</b>',
           style: {
             fontSize: '14px',
+            color: 'black',
           }
         }
       }],
