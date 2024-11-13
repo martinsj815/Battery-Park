@@ -28,7 +28,7 @@ description: From Chemistry to Technology
       Rheology of the slurry (e.g. viscosity, flow yield stress, wettability) is to be considered for slurry optimization, especially for later coating different thickness. Slurry viscosity can be determined by factors such as total solid loading, active material size and relative amount, binder molecular weight, etc.
     </div>
     <div class="column">
-      <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/mixing.png?raw=true" alt="Mixing" style="width:300px; height:auto; text-align:center;">
+      <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/mixing.png?raw=true" alt="Mixing" style="width:300px; height:auto;">
     </div>
   </div>
 
