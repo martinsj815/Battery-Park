@@ -177,5 +177,40 @@ description: From Chemistry to Technology
   <li>- W. Blake Hawley, et al., "Electrode Manufacturing for Lithium-Ion Batteries - Analysis of Current and Next Generation Processing", J. Energy Storage, 25, 100862 (2019)</li>
 </body>
 
+Highcharts.chart('container', {
+                chart: {
+                    type: 'pie'
+                },
+                title: {
+                    text: 'Weight distribution of different cell components'
+                },
+                series: [{
+                    name: 'Weight',
+                    data: [
+                        { name: 'Batch mixing', y: 0.21},
+                        { name: 'Coating & Drying', y: 7.43},
+                        { name: 'Calendaring', y: 0.26},
+                        { name: 'Vacuum Drying', y: 1.14},
+                        { name: 'Stacking', y: 0.15},
+                        { name: 'Welding/Packing/Filling/Closing, y: 0.99}
+                        { name: 'Washing, y: 1.24}
+                        { name: 'Formatting/Aging, y: 7.06}
+                        { name: 'Others(Materials handling/Dry rooms), y: 7.91}
+                        
+                    ],
+                    showInLegend: true,
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.percentage:.1f} %</b>',
+                        style: {
+                            fontSize: '20px',
+                            fontWeight: 'bold', 
+                        }
+                    }
+                }],
+               tooltip: {
+                   pointFormat: '{point.name}: <b>{point.y:.2f} g</b>'
+               }
+            });
 
 
