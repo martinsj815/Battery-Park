@@ -178,10 +178,17 @@ description: From Chemistry to Technology
   <hr style="color:black;">
   <h2>Total energy consumption for cell production (kWh<sub>cons</sub> / kWh<sub>cell</sub>)</h2>
   <br>
-  
-  <div id="container" style="width:100%; height:400px;"></div>
+  <div class="columns">
+    <div class="column">
+      <div id="container1" style="width:100%; height:400px;"></div>
+    </div>
+    <div class="column">
+      <div id="container2" style="width:100%; height:400px;"></div>
+    </div>
+  </div>
+
   <script>
-    Highcharts.chart('container', {
+    Highcharts.chart('container1', {
       chart: {
         type: 'pie'
       },
@@ -201,6 +208,42 @@ description: From Chemistry to Technology
           { name: 'Washing', y: 1.24},
           { name: 'Formatting/Aging', y: 7.06},
           { name: 'Others(Materials handling/Dry rooms)', y: 7.91},
+        ],
+        showInLegend: true,
+        dataLabels: {
+          enabled: true,
+          format: '<b>{point.percentage:.1f} %</b>',
+          style: {
+            fontSize: '20px',
+            fontWeight: 'bold', 
+          }
+        }
+      }],
+      tooltip: {
+        pointFormat: '{point.name}: <b>{point.y:.2f} g</b>'
+      }
+    });
+
+    Highcharts.chart('container2', {
+      chart: {
+        type: 'pie'
+      },
+      title: {
+        text: 'NCM 622 & 100% C'
+    },
+      series: [{
+        name: 'Weight',
+        data: [
+          { name: 'Batch mixing', y: 0.17},
+          { name: 'Coating & Drying', y: 6.22},
+          { name: 'Calendaring', y: 0.36},
+          { name: 'Slittering/Cutting', y: 0.22},
+          { name: 'Vacuum Drying', y: 0.96},
+          { name: 'Stacking', y: 0.13},
+          { name: 'Welding/Packing/Filling/Closing', y: 0.83},
+          { name: 'Washing', y: 1.04},
+          { name: 'Formatting/Aging', y: 5.91},
+          { name: 'Others(Materials handling/Dry rooms)', y: 6.62},
         ],
         showInLegend: true,
         dataLabels: {
