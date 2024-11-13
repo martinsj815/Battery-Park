@@ -201,8 +201,9 @@ description: From Chemistry to Technology
     Highcharts.chart('container1', {
       chart: {
         type: 'pie',
-        width: 700,
-        height: 600
+        backgroundColor: null,
+        width: 500,
+        height: 400
       },
       title: {
         text: 'NCM 622 & 100% C'
@@ -238,8 +239,9 @@ description: From Chemistry to Technology
     Highcharts.chart('container2', {
       chart: {
         type: 'pie',
-        width: 700,
-        height: 600
+        backgroundColor: null,
+        width: 500,
+        height: 400
       },
       title: {
         text: 'NCM 811 & 95% C, 5% SiO'
@@ -275,8 +277,9 @@ description: From Chemistry to Technology
     Highcharts.chart('container3', {
       chart: {
         type: 'pie',
-        width: 700,
-        height: 600
+        backgroundColor: null,
+        width: 500,
+        height: 400
       },
       title: {
         text: 'NCM 900 & 90% C, 10% Si'
