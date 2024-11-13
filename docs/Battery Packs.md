@@ -55,8 +55,8 @@ description: From Chemistry to Technology
 |:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|:------------|:------------|
 | Model 3 |Prismatic|LFP|106s 1p|106|60|CATL LFP60|440|328.6|
 | Model Y |Prismatic|LFP|106s 1p|106|60|CATL LFP60|440|328.6|
-| Model 3 LR Dual Motor|NCM|96s 46p|4416|78|LG M50 / Panasonic 2170|481|309.1|
-| Model Y LR Dual Motor |NCM|96s 46p|4416|78LG M50 2170|481|309.1|
+| Model 3 LR Dual Motor||NCM|96s 46p|4416|78|LG M50 / Panasonic 2170|481|309.1|
+| Model Y LR Dual Motor||NCM|96s 46p|4416|78|LG M50 2170|481|309.1|
 | Model S |Cylindrical|NCA|110s 72p|7920|100|Panasonic 18650|544|356.4|
 | Model X |Cylindrical|NCA|110s 72p|7920|100|Panasonic 18650|536|356.4|
 
