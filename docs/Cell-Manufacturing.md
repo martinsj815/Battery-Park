@@ -215,7 +215,6 @@ description: From Chemistry to Technology
           format: '<b>{point.percentage:.1f} %</b>',
           style: {
             fontSize: '14px',
-            fontWeight: 'bold', 
           }
         }
       }],
@@ -251,7 +250,6 @@ description: From Chemistry to Technology
           format: '<b>{point.percentage:.1f} %</b>',
           style: {
             fontSize: '14px',
-            fontWeight: 'bold', 
           }
         }
       }],
