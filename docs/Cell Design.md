@@ -4,7 +4,7 @@ title: Battery Park
 description: From Chemistry to Technology 
 ---
 
-##&#9672; N/P Ratio
+<h2>&#9672; N/P Ratio</h2>
 
 The N/P ratio is a crucial cell design parameter that can influences the utilization level of the electrodes, thereby affecting overall performance and cell-level energy density. The N/P ratio represents the capacity ratio between the anode and cathode. The optimal N/P ratio depends on the electrode's electrochemical reaction mechanism, reaction efficiency, and the decay rate of the cathode and anode during cycling. This parameter must be optimized based on the operating environment.
 
@@ -18,7 +18,7 @@ The N/P ratio is a crucial cell design parameter that can influences the utiliza
 
 -------------------------------------------------------------------
 
-##&#9672; Cell connection layout (mS-nP)
+<h2>&#9672; Cell connection layout (mS-nP)</h2>
 
 - For high-voltage packs, cells are connected in series to form a series-connected module (SCM).
 
@@ -62,6 +62,6 @@ When designing the cell, the trade-off between energy density and power capabili
 
 --------------------------------------------------------------------
 
-##&#9672; Reference
+<h2>&#9672; Reference</h2>
 
 - Michael J. Lain, et al., "Design Strategies for High Power vs. High Energy Lithium Ion Cells", batteries, 5, 64 (2019)
