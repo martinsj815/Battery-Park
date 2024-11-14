@@ -195,8 +195,9 @@ description: From Chemistry to Technology
       <div id="container4" style="width:100%; height:500px;"></div>
     </div>
   </div>
-  <br>
+  <br><br>
   <h3>The pie charts above are plotted based on the source data provided by the following reference:</h3>
+  <br>
   <li>F. Degen, et al, "Energy consumption of current and future production of lithium-ion and post lithium-ion battery cells", Nature Energy, 8, 1284 (2023)</li>
 
   
