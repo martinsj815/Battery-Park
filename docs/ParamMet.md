@@ -14,7 +14,7 @@ description: From Chemistry to Technology
 <div id="Parameters" class="tabcontent" style="display: block;">
 
   <br>
-  <h2> Current Density </h2>
+  <h2>&#9672; Current Density </h2>
   <br>
   <div class="columns">
     <div class="column">
@@ -31,7 +31,7 @@ description: From Chemistry to Technology
 <br>
 <br>
   
-  <h2> Open Circuit Voltage (OCV) and State of Charge (SoC) </h2>
+  <h2>&#9672; Open Circuit Voltage (OCV) and State of Charge (SoC) </h2>
 <br>
   <div class="columns">
     <div class="column">
@@ -59,7 +59,7 @@ description: From Chemistry to Technology
 <br>
 <br>
 
-  <h2> Voltage and Polarization </h2>
+  <h2>&#9672; Voltage and Polarization </h2>
   <br>
     <div class="columns">
       <div class="column">
@@ -78,7 +78,7 @@ description: From Chemistry to Technology
         <br>
        <ul> Activation polarization (R<sub>ct</sub>) is related to the kinetics hinderances of the charge-transfer reactions at the electrode/electrolyte interfaces of anode and cathode. The buildup of the activation polarization are fast and can be identified by the voltage change on current interruption in a time frame of 10<sup>-2</sup>s - 10<sup>-4</sup>s.</ul>
        <br>
-        </ul> Concentration polarization (R<sub>p</sub>) arises from limited diffusion of active species to and from the electrode surface to replace the reacted material to sustain the reaction. Diffusion limitations are relatively slow, and the buildup takes ≥ 10<sup>-2</sup>s to appear. </ul>
+        <ul> Concentration polarization (R<sub>p</sub>) arises from limited diffusion of active species to and from the electrode surface to replace the reacted material to sustain the reaction. Diffusion limitations are relatively slow, and the buildup takes ≥ 10<sup>-2</sup>s to appear. </ul>
       <br>
       Although R<sub>o</sub>, R<sub>ct</sub> and R<sub>p</sub> are not completely distinct, they are expected to be the dominat contrituion to total resistance at their respective timescales.
      - These resistances are affected by temperature, state of charge, state of health, and applied current.
@@ -92,7 +92,7 @@ description: From Chemistry to Technology
 <br>
 <br>
 
-  <h2> References </h2>
+  <h2>&#9672; References </h2>
   <br>
   * Martin Winter, et al, "What Are Batteries, Fuel Cells, and Supercapacitors?", Chemical Reviews, 104, 4245-4269 (2004)
 
@@ -101,7 +101,7 @@ description: From Chemistry to Technology
 
 <div id="Metrics" class="tabcontent" style="display: none;">
     <br>
-  <h2> Voltage & Capacity </h2>
+  <h2>&#9672; Voltage & Capacity </h2>
     <br>
   <div class="columns">
     <div class="column">
@@ -121,7 +121,7 @@ description: From Chemistry to Technology
 
     <br>
     <br>
-  <h2> Energy & Power </h2>
+  <h2>&#9672; Energy & Power </h2>
     <br>
   <div class="columns">
     <div class="column">
