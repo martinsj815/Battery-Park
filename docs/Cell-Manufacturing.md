@@ -13,7 +13,7 @@ description: From Chemistry to Technology
 <body>
   <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Cell%20manuf2.png?raw=true" alt="Primary" style="width:1000px; height:auto;">
   <br>
-  <h2><li> Slurry Mixing </li></h2>
+  <h2><ul> Slurry Mixing </ul></h2>
   <div class="columns">
     <div class="column">
       A typical slurry consists of the cathode (or anode) active material, conductive additive, and binder. A commonly used conductive additive is carbon black. An organic binder is usually a dielectric polymer like polyvinylidene fluoride (PVDF) with a wide good electrochemical stability window. As a binder solvent, N-methyl-2-pyrrolidone (NMP) is used to dissolve PVDF. Water-based binders such as carboxymethylcellulose (CMC) and styrene butadiene rubber (SBR) are considered as alternatives for cost-efficient and non-toxic processing.
