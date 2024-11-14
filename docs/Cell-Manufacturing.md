@@ -13,7 +13,7 @@ description: From Chemistry to Technology
 <body>
   <img src="https://github.com/donghee1025/Battery-Park/blob/main2/masthead/Cell%20manuf2.png?raw=true" alt="Primary" style="width:1000px; height:auto;">
   <br>
-  <ul><h2>Slurry Mixing</h2></ul>
+  <h2>&#9672; Slurry Mixing</h2>
   <div class="columns">
     <div class="column">
       A typical slurry consists of the cathode (or anode) active material, conductive additive, and binder. A commonly used conductive additive is carbon black. An organic binder is usually a dielectric polymer like polyvinylidene fluoride (PVDF) with a wide good electrochemical stability window. As a binder solvent, N-methyl-2-pyrrolidone (NMP) is used to dissolve PVDF. Water-based binders such as carboxymethylcellulose (CMC) and styrene butadiene rubber (SBR) are considered as alternatives for cost-efficient and non-toxic processing.
@@ -34,7 +34,7 @@ description: From Chemistry to Technology
 
   <br>
   <br>
-  <h2><li> Coating </li></h2>
+  <h2>&#9672; Coating</h2>
   
   <div class="columns">
     <div class="column">
@@ -71,7 +71,7 @@ description: From Chemistry to Technology
   </div>
   <br>
   <br>
-  <h2><li> Drying </li></h2>
+  <h2>&#9672; Drying </h2>
   <div class="columns">
     <div class="column">
       - A wet electrode then dried for solvent evaporation. NMP solvent is recovered by a condenser and distillation.
@@ -89,7 +89,7 @@ description: From Chemistry to Technology
   <br>
   <br>
   
-  <h2><li> Calendaring </li></h2>
+  <h2>&#9672; Calendaring </h2>
   
   <div class="columns">
     <div class="column">
@@ -104,7 +104,7 @@ description: From Chemistry to Technology
   </div>
   <br>
   <br>
-  <h2><li> Slitting </li></h2>
+  <h2>&#9672;Slitting </h2>
   <div class="columns">
     <div class="column">
       - Conventional process of cutting the large, coated film is by using a blade or chisel.
@@ -118,7 +118,7 @@ description: From Chemistry to Technology
   </div>
   <br>
   <br>
-  <h2><li> Stacking/Winding/Rolling </li></h2>
+  <h2>&#9672; Stacking/Winding/Rolling </h2>
   <div class="columns">
     <div class="column">
       - All layers including electrodes and separators are wound into a spiral or jelly-rolled to be inserted in a cylindrical cell. In pouch cells, all layers are stacked layer by layer or via Z-stacking.
@@ -130,7 +130,7 @@ description: From Chemistry to Technology
   </div>
   <br>
   <br>
-  <h2><li> Welding </li></h2> 
+  <h2>&#9672; Welding </h2> 
   <div class="columns">
     <div class="column">
       - Contact resistance determines the quality of welding between tabs and current collectors. Ultrasonic welding uses high frequency to induce heat under applied pressure for welding. Resistance spot welding uses materials’ resistance for heat generation to join materials. Laser welding happens through the adsorption of laser beams on the materials at the certain point to heat, melt, and create joints.
@@ -142,7 +142,7 @@ description: From Chemistry to Technology
   </div>
   <br>
   <br>
-  <h2><li> Enclosing </li></h2>
+  <h2>&#9672; Enclosing </h2>
   <div class="columns">
     <div class="column">
       -Enclosing includes packaging and electrolyte filling. The filling process is done in vacuum through the desired pressure level using a high-precision injection device and is followed by wetting.
@@ -156,7 +156,7 @@ description: From Chemistry to Technology
   </div>
   <br>
   <br>
-  <h2><li> Formation/Aging </li></h2>
+  <h2>&#9672; Formation/Aging </h2>
   <div class="columns">
     <div class="column">
       -Formation of the dense and robust SEI layer is needed for good battery performance without over-consumption of the electrolyte, especially for the graphite anode with intercalation potential lower than the reduction potential of electrolyte. The formation and aging process can be delicate and time-consuming as the amount of electrolyte relative to the materials that it covers; temperature, and pressure need to be controlled.
@@ -171,7 +171,7 @@ description: From Chemistry to Technology
   <br>
   <br>
   <hr>
-  <h2><li> References </li></h2>
+  <h2>&#9672; References </h2>
   <li>Jianlin Li, et al., "From Materials to Cell: State-of-the-Art and Prospective Technologies for Lithium-Ion Battery Electrode Processing", Chem. Review, 122, 903 (2022)</li>
   <li>- Yangtao Liu, et al., "Current and future lithium-ion battery manufacturing", iScience, 24, 102332 (2021)</li>
   <li>- W. Blake Hawley, et al., "Electrode Manufacturing for Lithium-Ion Batteries - Analysis of Current and Next Generation Processing", J. Energy Storage, 25, 100862 (2019)</li>
