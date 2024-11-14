@@ -375,20 +375,25 @@ table {
   -webkit-transform: rotate(45deg);
 }
 
+ul {
+  list-style-type: square;
+}
+
+ul li::marker {
+  color: green;
+}
+
+li.specific-item {
+  list-style-type: disc; 
+  color: #9ec9f7;
+}
+
 li::marker {
   color: #9ec9f7;
 }
 
 li {
   list-style-type: disc;
-}
-
-ul::marker {
-  color: Green;
-}
-
-ul {
-  list-style-type: square;
 }
 
 a:hover {
