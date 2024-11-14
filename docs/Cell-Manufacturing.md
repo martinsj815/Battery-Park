@@ -233,7 +233,7 @@ description: From Chemistry to Technology
         }
       }],
       tooltip: {
-        pointFormat: '{point.name}: <b>{point.y:.2f} g</b>'
+        pointFormat: '{point.name}: <b>{point.y:.2f}</b>'
       }
     });
 
@@ -272,7 +272,7 @@ description: From Chemistry to Technology
         }
       }],
       tooltip: {
-        pointFormat: '{point.name}: <b>{point.y:.2f} g</b>'
+        pointFormat: '{point.name}: <b>{point.y:.2f}</b>'
       }
     });
 
@@ -350,7 +350,7 @@ description: From Chemistry to Technology
         }
       }],
       tooltip: {
-        pointFormat: '{point.name}: <b>{point.y:.2f} g</b>'
+        pointFormat: '{point.name}: <b>{point.y:.2f}</b>'
       }
     });
     
