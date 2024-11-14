@@ -383,6 +383,14 @@ li {
   list-style-type: disc;
 }
 
+ul::marker {
+  color: Green;
+}
+
+ul {
+  list-style-type: square;
+}
+
 a:hover {
   font-weight: bold;
 }
