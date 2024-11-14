@@ -9,7 +9,7 @@ description: From Chemistry to Technology
 <hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
 <br>
 
-<h2><li> Non-invasive tests </li></h2>
+<h2>&#9672; Non-invasive tests </h2>
 
 > The following “in-cell” non-invasive tests are designed to track the cell performance changes over cell lifetime by measuring its dynamic and thermodynamic properties. They are done prior to actual disassembly of cells.
 
@@ -99,7 +99,7 @@ description: From Chemistry to Technology
 
 ----------------------------------------------------------------------------------
 
-<h2><li> Post-mortem characterization </li></h2>
+<h2>&#9672; Post-mortem characterization</h2>
 
 > The following techniques are utilized for electrochemically tested cell materials after cell disassembly. They are typically treated carefully with appropriate solvents (under inert atmosphere) before conducting any measurement.
 
