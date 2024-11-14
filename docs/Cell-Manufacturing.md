@@ -217,7 +217,7 @@ description: From Chemistry to Technology
         data: [
           { name: 'Batch mixing', y: 0.21},
           { name: 'Coating & Drying', y: 7.43},
-          { name: 'Calendaring', y: 0.43},
+          { name: 'Calendering', y: 0.43},
           { name: 'Slittering/Cutting', y: 0.26},
           { name: 'Vacuum Drying', y: 1.14},
           { name: 'Stacking', y: 0.15},
