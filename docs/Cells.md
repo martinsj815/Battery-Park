@@ -8,7 +8,7 @@ description: From Chemistry to Technology
 
 <hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
 <br>
-<h2><li> Electrochemical cell</li></h2>
+<h2>>&#9672; Electrochemical cell</h2>
 <br>
  
 <div class="columns">
@@ -23,7 +23,7 @@ description: From Chemistry to Technology
 </div>
 
 <br>
-<h2><li> Primary vs Secondary </li></h2>
+<h2>>&#9672; Primary vs Secondary</h2>
 <br>
 - <b>Primary Cell</b>
 
@@ -73,7 +73,7 @@ description: From Chemistry to Technology
 <br>
 <br>
 
-<h2><li> Cell Formats </li></h2>
+<h2>>&#9672; Cell Formats</h2>
 - Cells can be constructed in many different form factors. These include button/coin-type, cylindrical, prismatic, and pouch-type.
 
 -------------------------------------------------------------------------------------
