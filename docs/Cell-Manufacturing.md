@@ -104,7 +104,7 @@ description: From Chemistry to Technology
   </div>
   <br>
   <br>
-  <h2>&#9672;Slitting </h2>
+  <h2>&#9672; Slitting </h2>
   <div class="columns">
     <div class="column">
       - Conventional process of cutting the large, coated film is by using a blade or chisel.
