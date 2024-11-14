@@ -89,7 +89,7 @@ description: From Chemistry to Technology
   <br>
   <br>
   
-  <h2>&#9672; Calendaring </h2>
+  <h2>&#9672; Calendering </h2>
   
   <div class="columns">
     <div class="column">
@@ -256,7 +256,7 @@ description: From Chemistry to Technology
         data: [
           { name: 'Batch mixing', y: 0.17},
           { name: 'Coating & Drying', y: 6.22},
-          { name: 'Calendaring', y: 0.36},
+          { name: 'Calendering', y: 0.36},
           { name: 'Slittering/Cutting', y: 0.22},
           { name: 'Vacuum Drying', y: 0.96},
           { name: 'Stacking', y: 0.13},
@@ -295,7 +295,7 @@ description: From Chemistry to Technology
         data: [
           { name: 'Batch mixing', y: 0.14},
           { name: 'Coating & Drying', y: 5.64},
-          { name: 'Calendaring', y: 0.33},
+          { name: 'Calendering', y: 0.33},
           { name: 'Slittering/Cutting', y: 0.20},
           { name: 'Vacuum Drying', y: 0.87},
           { name: 'Stacking', y: 0.12},
@@ -334,7 +334,7 @@ description: From Chemistry to Technology
         data: [
           { name: 'Batch mixing', y: 0.27},
           { name: 'Coating & Drying', y: 10.38},
-          { name: 'Calendaring', y: 0.61},
+          { name: 'Calendering', y: 0.61},
           { name: 'Slittering/Cutting', y: 0.36},
           { name: 'Vacuum Drying', y: 1.59},
           { name: 'Stacking', y: 0.22},
