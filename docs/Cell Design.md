@@ -4,7 +4,7 @@ title: Battery Park
 description: From Chemistry to Technology 
 ---
 
-# N/P Ratio
+##&#9672; N/P Ratio
 
 The N/P ratio is a crucial cell design parameter that can influences the utilization level of the electrodes, thereby affecting overall performance and cell-level energy density. The N/P ratio represents the capacity ratio between the anode and cathode. The optimal N/P ratio depends on the electrode's electrochemical reaction mechanism, reaction efficiency, and the decay rate of the cathode and anode during cycling. This parameter must be optimized based on the operating environment.
 
@@ -18,7 +18,7 @@ The N/P ratio is a crucial cell design parameter that can influences the utiliza
 
 -------------------------------------------------------------------
 
-# Cell connection layout (mS-nP)
+##&#9672; Cell connection layout (mS-nP)
 
 - For high-voltage packs, cells are connected in series to form a series-connected module (SCM).
 
@@ -45,7 +45,7 @@ The N/P ratio is a crucial cell design parameter that can influences the utiliza
 
 --------------------------------------------------------------------
     
-# Designing cell: Energy density vs Power capability?
+## Designing cell: Energy density vs Power capability?
 
 When designing the cell, the trade-off between energy density and power capability needs to be considered as both cannot go hand in hand. To increase the cell energy density, thicker and denser coating (i.e. higher material loading density) is needed for each electrode layer to store more energy. However, increasing the loading can engender many issues that raise the cell’s internal resistance including concentration polarization and uneven thermal distribution with possible ohmic heating. That is because low porosity, high tortuosity, and high thickness all translate to longer diffusion length of Li ions and possible bottleneck for Li flow in and out the cell. Hence power, which is the measure of how fast the energy can be driven in and out the electrode, is inevitably low for these cells.
 
@@ -62,6 +62,6 @@ When designing the cell, the trade-off between energy density and power capabili
 
 --------------------------------------------------------------------
 
-# Reference
+##&#9672; Reference
 
 - Michael J. Lain, et al., "Design Strategies for High Power vs. High Energy Lithium Ion Cells", batteries, 5, 64 (2019)
