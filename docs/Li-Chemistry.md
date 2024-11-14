@@ -21,7 +21,7 @@ description: From Chemistry to Technology
 </div>
 
 
-<h2><li>Cell reaction mechanism</li></h2>
+<h2>&#9672; Cell reaction mechanism</h2>
 
 > The way Li-ions react with electrode active materials during charge/discharge can be categorized into following:
 
@@ -38,7 +38,7 @@ description: From Chemistry to Technology
 --------------------------------------------------------------------------
 
 
-<h2><li> Cathode Materials </li></h2>
+<h2>&#9672; Cathode Materials</h2>
 
 
 <div class="columns">
@@ -84,7 +84,7 @@ description: From Chemistry to Technology
 
 -------------------------------------------------------------------
 
-<h2><li> Anode Materials </li></h2>
+<h2>&#9672; Anode Materials</h2>
 
 ### 1. Intercalation-based:
 > Carbon-based anode such as graphite has the theoretical capacity of 372 mAh/g and has a good (de-)lithiation potential vs. Li. Many carbon-based materials are engineered at nanoscale to optimize their morphologies for high structural stability and better electrochemical reversibility and capacity retention. In terms of safety, stability, and power capability, titanium-based anodes such as Li<sub>4</sub>Ti<sub>5</sub>O<sub>12</sub> and TiO<sub>2</sub> have an advantage over graphite, but their electronic conductivity is poor and specific capacities (175-330 mAh/g) and energy densities are low.
@@ -125,7 +125,7 @@ As shown in the graphs above, transition from graphite and silicon can yield dra
 
 ------------------------------------------------------------------------
 
-<h2><li> Electrolyte </li></h2>
+<h2>&#9672; Electrolyte</h2>
 
 <div class="columns">
   <div class="column">
