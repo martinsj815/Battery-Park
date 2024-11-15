@@ -201,20 +201,22 @@ description: From Chemistry to Technology
     Despite apparent advantages, however, achieving even dispersion and uniform distribution of active materials, conductive agents, and binders through dry mixing can be challenging as it depends strongly on active particle size and rheology and binder type and properties. When using PTFE as binder, more problems such as low adhesion between a dry mix and a current collector and poor wettability of electrolyte need to be addressed. 
   </ul>
   <br><br>
-  <h3>Examples of the methods are:</h3>
-  <br>
-  <li>
-    <b>Hot-pressing:</b> Hot-pressing on the as-mixed electrode material is performed for thermal activation of the binder followed by roll-pressing. High dependence on the polymeric binder and the cost can be an obstacle to realize a thick electrode with high active material fraction. 
-  </li>
-  <li>
-    <b>Extrusion:</b> Flow injection of polymeric binder into the dry-mixed powder under mechanical pressure to induce blending of different materials. A mixed batch is then followed by calendering and laminating with the current collector. The limited polymer use and low production rate can be an issue. 
-  </li>
-  <li>
-    <b>Electrostatic spraying:</b> Direct spray coating of electrode material on a current collector followed by hot rolling to enhance adhesion between. The method can be applied to thick film fabrication despite that the uniform coating is not guaranteed. 
-  </li>
-  <li>
-    <b>Roll milling:</b> Fully utilizing the characteristics of different roll configuration with different rotation speeds, gaps for pressing and calendaring to control the shear force during milling for fabricating the smooth film. The technique may include fibrilization of PTFE. Despite its potential to be the mainstream technology, parameter control depending on the particle morphology and binder choice besides PTFE needs to be optimized. 
-  </li>
+  <ul>
+    <h3>Examples of the methods are:</h3>
+    <br>
+    <li>
+      <b>Hot-pressing:</b> Hot-pressing on the as-mixed electrode material is performed for thermal activation of the binder followed by roll-pressing. High dependence on the polymeric binder and the cost can be an obstacle to realize a thick electrode with high active material fraction. 
+    </li>
+    <li>
+      <b>Extrusion:</b> Flow injection of polymeric binder into the dry-mixed powder under mechanical pressure to induce blending of different materials. A mixed batch is then followed by calendering and laminating with the current collector. The limited polymer use and low production rate can be an issue. 
+    </li>
+    <li>
+      <b>Electrostatic spraying:</b> Direct spray coating of electrode material on a current collector followed by hot rolling to enhance adhesion between. The method can be applied to thick film fabrication despite that the uniform coating is not guaranteed. 
+    </li>
+    <li>
+      <b>Roll milling:</b> Fully utilizing the characteristics of different roll configuration with different rotation speeds, gaps for pressing and calendaring to control the shear force during milling for fabricating the smooth film. The technique may include fibrilization of PTFE. Despite its potential to be the mainstream technology, parameter control depending on the particle morphology and binder choice besides PTFE needs to be optimized. 
+    </li>
+  </ul>
   <script>
     Highcharts.chart('container1', {
       chart: {
