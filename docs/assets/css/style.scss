@@ -129,11 +129,11 @@ table {
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 150%;
+    top: 140%;
     left: 0;
     background-color: #222; 
     padding: 0.1rem;
-    border-radius: 4px;
+    border-radius: 2px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     z-index: 1000;
     transition: opacity 2s ease, transform 2s ease;
