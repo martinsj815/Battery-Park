@@ -152,6 +152,13 @@ table {
     text-decoration: none;
 }
 
+.dropdown:hover .dropdown-menu,
+.dropdown:focus .dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(10px); /* Optional: adds a smooth drop effect */
+}
+
 .nav-item:hover .dropdown-menu {
     display: block;
 }
