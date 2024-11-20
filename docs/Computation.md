@@ -4,7 +4,7 @@ title: Battery Park
 description: From Chemistry to Technology
 ---
 
-<h2>&#9672; Computational Modeling </h2>
+# Computational Modeling <i class="arrow right"></i>
 
 <hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
 <br>
@@ -12,7 +12,7 @@ description: From Chemistry to Technology
 > Computational modeling plays a crucial role in materials research and design. Various computational modeling methods have been employed to uncover battery reaction mechanisms and derive intrinsic material parameters, which are then used to predict battery performance at the system level based on complex electrochemical transport equations.
 > Depending on the modeling approaches and scale, multiscale simulations, such as first-principles calculations, molecular dynamics simulations, phase field modeling, continuum simulations, and (electro-)thermal modeling, have been actively adopted to design batteries from the cell to the pack level.
 
-<h2><li> First-Principles Calculations: </li></h2>
+<h2>&#9672; First-Principles Calculations</h2>
 
 - First-principles calculations involve atomic-level simulations used to predict the properties of previously unknown materials by solving the many-body time-indepedent Schrödinger equation through various numerical approximations, such as the Hartree-Fock (HF) method, Density Functional Theory (DFT), and hybrid approaches. These calculations provide inherent material properties, including atomic coordinates and electronic structure properties, without requiring any input from experiments, thereby aiding in the interpretation of experimental observations.
 This computational approach offers key properties of lithium-ion batteries, such as the calculation of equilibrium voltages and voltage profiles, theoretical capacity, ionic mobilities, structural stability and corresponding volume changes, as well as thermal and electrochemical stabilities. This understanding provides significant insights into the intrinsic properties of batteries and aids in optimizing battery materials.
@@ -46,17 +46,17 @@ The electrodes of an electrochemical cell should exhibit some degree of electron
 - To understand the diffusion process, first-principles calculations can be used to quantify hopping energies through nudged elastic band (NEB) calculations. This method allows the verification of kinetically accessible hopping pathways and the estimation of ionic conductivity.
 
 
-<h2><li> Molecular dynamics simulations: </li></h2>
+<h2>&#9672; Molecular dynamics simulations</h2>
 
 - Molecular dynamics (MD) simulations are computational techniques used to study the physical movements of atoms and molecules by solving Newton's equations of motion for a system of interacting particles. Depending on how the system's state is described, MD simulations can be classified into several types: 1) Classical Molecular Dynamics (CMD): Utilizes Newtonian mechanics to model the interactions and movements of particles in the system. 2) Reactive Molecular Dynamics (ReaxFF MD): Employs reactive force fields to simulate chemical reactions by allowing bonds to form and break dynamically. 3) ab-initio Molecular Dynamics (AIMD): Combines quantum mechanics, specifically solving the Schrödinger equation, with classical MD to capture electronic structure effects. 4) Coarse-Grained Molecular Dynamics (CGMD): Simplifies the system by grouping atoms into larger particles, reducing the degrees of freedom and computational cost. This computational approach plays an increasingly important role in exploring electrolyte structures, physicochemical properties such as ionic conductivity, and interfacial reaction mechanisms.
 
 
-<h2><li> Phase field modeling: </li></h2>
+<h2>&#9672; Phase field modeling</h2>
 
 - Phase-field modeling is a technique used to predict microstructure eveolution based on fundamental thermodynamic and kinetic principles, utilizing the structures and properties of individual features within a microstructure as input. By solving a set of Nernst-Planck equations or mass (or ion) transport equations and applying appropriate boundary conditions to simplify the equations but effectively describe phenomena, this modeling captures key features, such as the effects of microstructural features and defects on lithiation degradation and the kinetics of morphological and microstructural evolution during localized attacks at the mesoscale. This method is particularly useful for understanding and predicting the morphology, phase changes, and transformations of materials, especially in the context of complex degradation processes in metallic materials used in engineering applications.
 
 
-<h2><li> Continuum simulations: </li></h2>
+<h2>&#9672; Continuum simulations</h2>
 
 - Continuum mechanics considers the different components of a battery as continuous media. By coupling multiple versions of a continuum model, it can describe the joint behavior of multiple cells or pack-level simulations. This approach can handle larger length and time scales. Depending on the numerical approach, continuum battery models generally fall into two categories: empirical and physics-based. Physics-based continuum models, also known as electrochemical battery models, describe the physical phenomena underpinning battery behavior. These models provide insights into the behavior of lithium-ion distribution in the electrolyte, the multiple internal variables depicted, the potential and current distributions in both the porous electrodes and the electrolyte, the lithium-ion concentration within the electrolyte, and the distribution of intercalated lithium within the electrode particles.
 Due to their fast and accurate predictions of real batteries, these approaches have been used as design tools to facilitate the development of new electrode, cell, and pack architectures and to estimate their potential performance. Based on this modeling, these approaches are used for optimizing operating conditions and battery management systems for thermal management, state of charge (SOC), and state of health (SOH) estimation.
