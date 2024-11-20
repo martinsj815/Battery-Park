@@ -64,7 +64,7 @@ Due to their fast and accurate predictions of real batteries, these approaches h
 <br>
 -----------------------------------------------------------------------------------------------
 
-## References
+<h2>&#9672; References</h2>
 
 - Sholl, David S., and Janice A. Steckel., "Density Functional Theory, A practical Introduction", Wiley,(2009)
 
