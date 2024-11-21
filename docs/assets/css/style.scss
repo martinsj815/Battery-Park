@@ -131,7 +131,7 @@ table {
     position: relative; 
 }
 
-.dropdown-menu {
+.nav-item .dropdown-menu {
     display: none;
     position: absolute;
     top: calc(100% + 5px);
@@ -145,6 +145,10 @@ table {
     transform: translateY(10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
     pointer-events: none;
+}
+
+.nav-item.active .dropdown-menu {
+  display: block;
 }
 
 .dropdown-menu .dropdown-link {
