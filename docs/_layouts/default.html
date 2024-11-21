@@ -113,18 +113,35 @@
 </html>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const dropdown = document.querySelector(".dropdown");
-    const nav-link = dropdown.querySelector(".nav-link");
-    
-    button.addEventListener("click", function (event) {
-        // Prevent the click from propagating and closing the menu
-        event.stopPropagation();
-        dropdown.classList.toggle("active");
+    const navItems = document.querySelectorAll(".nav-item");
+
+    navItems.forEach((item) => {
+      const navLink = item.querySelector(".nav-link");
+      const dropdownMenu = item.querySelector(".dropdown-menu");
+
+      if (navLink && dropdownMenu) {
+        navLink.addEventListener("click", function (event) {
+          // Prevent the click from propagating
+          event.stopPropagation();
+
+          // Close other dropdowns
+          document.querySelectorAll(".nav-item").forEach((otherItem) => {
+            if (otherItem !== item) {
+              otherItem.classList.remove("active");
+            }
+          });
+
+          // Toggle the current dropdown
+          item.classList.toggle("active");
+        });
+      }
     });
 
-    // Close the dropdown menu when clicking outside of it
+    // Close all dropdowns when clicking outside
     document.addEventListener("click", function () {
-        dropdown.classList.remove("active");
+      navItems.forEach((item) => {
+        item.classList.remove("active");
+      });
     });
   });
 </script>
