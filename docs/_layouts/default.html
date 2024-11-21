@@ -116,20 +116,29 @@
         const dropdown = item.querySelector('.dropdown-menu');
         
         item.addEventListener('mouseenter', function() {
-        // Show the dropdown instantly on hover
-        dropdown.style.display = 'block';
-        setTimeout(() => {
-          dropdown.style.opacity = '1';
-          dropdown.style.visibility = 'visible';
-        }, 10);  // Delay for smooth transition
+          // Show the dropdown instantly on hover
+          dropdown.style.display = 'block';
+          setTimeout(() => {
+            dropdown.style.opacity = '1';
+            dropdown.style.visibility = 'visible';
+          }, 10);  // Delay for smooth transition
         });
 
         item.addEventListener('mouseleave', function() {
-          // Hide dropdown after a delay
+          // Hide dropdown only if no link inside it has been clicked
+          let clickedLink = false;
+          dropdown.querySelectorAll('.dropdown-link').forEach(link => {
+            link.addEventListener('click', () => {
+              clickedLink = true;
+            });
+          });
+
           setTimeout(() => {
-            dropdown.style.opacity = '0';
-            dropdown.style.visibility = 'hidden';
-          }, 2000); 
+            if (!clickedLink) {
+              dropdown.style.opacity = '0';
+              dropdown.style.visibility = 'hidden';
+            }
+          }, 2000);  // Delay before hiding
         });
       });
     });
