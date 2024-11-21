@@ -111,3 +111,21 @@
     
   </body>
 </html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdown = document.querySelector(".dropdown");
+    const nav-link = dropdown.querySelector(".nav-link");
+    
+    button.addEventListener("click", function (event) {
+        // Prevent the click from propagating and closing the menu
+        event.stopPropagation();
+        dropdown.classList.toggle("active");
+    });
+
+    // Close the dropdown menu when clicking outside of it
+    document.addEventListener("click", function () {
+        dropdown.classList.remove("active");
+    });
+  });
+</script>
