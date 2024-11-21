@@ -108,4 +108,30 @@
     </main>
     <script src="script.js"></script>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navItems = document.querySelectorAll('.nav-item');
+      
+      navItems.forEach(item => {
+        const dropdown = item.querySelector('.dropdown-menu');
+        
+        item.addEventListener('mouseenter', function() {
+        // Show the dropdown instantly on hover
+        dropdown.style.display = 'block';
+        setTimeout(() => {
+          dropdown.style.opacity = '1';
+          dropdown.style.visibility = 'visible';
+        }, 10);  // Delay for smooth transition
+        });
+
+        item.addEventListener('mouseleave', function() {
+          // Hide dropdown after a delay
+          setTimeout(() => {
+            dropdown.style.opacity = '0';
+            dropdown.style.visibility = 'hidden';
+          }, 300);  // Wait for 0.3s before hiding the dropdown
+        });
+      });
+    });
+  </script>
 </html>
