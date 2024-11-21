@@ -132,7 +132,7 @@ table {
 }
 
 .nav-item .dropdown-menu {
-    display: block;
+    display: none;
     position: absolute;
     top: calc(100% + 5px);
     left: 0;
@@ -147,7 +147,7 @@ table {
     pointer-events: none;
 }
 
-.nav-item.active .dropdown-menu {
+.nav-item .dropdown-menu.active {
   display: block;
 }
 
