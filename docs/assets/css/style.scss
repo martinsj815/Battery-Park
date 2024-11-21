@@ -144,7 +144,6 @@ table {
     z-index: 1000;
     transform: translateY(10px);
     transition: opacity 0.3s ease, visibility 0s 0.3s;
-    pointer-events: none;
 }
 
 .nav-item:hover .dropdown-menu {
