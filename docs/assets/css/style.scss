@@ -131,7 +131,7 @@ table {
     position: relative; 
 }
 
-.nav-item .dropdown-menu {
+.dropdown-menu {
     display: none;
     position: absolute;
     top: calc(100% + 5px);
@@ -174,10 +174,6 @@ table {
     opacity: 1; /* Make it visible */
     transform: translateY(0); /* Slide down into place */
     pointer-events: none; 
-}
-
-.nav-item:hover .dropdown-menu {
-    display: block;
 }
 
 @media only screen and (max-width: 768px) {
