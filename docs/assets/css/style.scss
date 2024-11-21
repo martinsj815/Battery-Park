@@ -147,7 +147,7 @@ table {
     pointer-events: none;
 }
 
-.nav-item .dropdown-menu.active {
+.nav-item .dropdown-menu:hover {
   display: block;
 }
 
