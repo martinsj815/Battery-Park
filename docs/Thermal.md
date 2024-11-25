@@ -16,11 +16,16 @@ description: From Chemistry to Technology
   <hr>
   <ul>According to the Fourier’s Law of heat conduction with steady-state heat flow (∂T/∂t=0), it reads:
     <br>
-    $$ {q = - \kappa\nabla{T}} $$ ,where q is heat flux vector and &#x3BA; is thermal conductivity, and T is temperature.
+    $$ {q = - \kappa\nabla{T}} $$ , where q is heat flux vector and &#x3BA; is thermal conductivity, and T is temperature.
     <br><br>
     For the 1-d heat conduction, it is simply q = &#x3BA; dx/dT or more generally it can be written as:
     <br>
-     $$ {Q = - \kappa{A}\frac{dT}{dx}} $$ ,where Q is heat and A is the cross-sectional area, and d is the legth of the heat conduction in the cartesian coordinate.
+     $$ {Q = - \kappa{A}\frac{dT}{dx}} $$ , where Q is heat and A is the cross-sectional area, and d is the legth of the heat conduction in the cartesian coordinate.
+    <br>
+    For the cylindrical case (relevant to the cylindrical cell), the equation becomes:
+    <br>
+    $$ {Q = - \kappa 2\pi RL\frac{dT}{dR}} $$ ,where R is radius of the cylinder
+    <br>
   </ul>
   
   
