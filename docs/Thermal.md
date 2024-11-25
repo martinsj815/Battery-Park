@@ -33,6 +33,12 @@ description: From Chemistry to Technology
     <br>
     $$ {Q = \frac{2\pi\kappa_{eff}L(T_{1}-T_{2})}{ln(\frac{R_{2}}{R_{1}})}} $$  , where T<sub>1</sub>, R<sub>1</sub> and T<sub>2</sub>, R<sub>2</sub> are temperature and radius of the inner part and outer part of the cell, respectively. 
   </ul>
+  <br>
+  <h2>&#9672; Transient Method </h2>
+  <ul>Thermal conductivity of the cell is dependent on the internal components and their configuration. Hence, the equations for in-plane and cross-plane conductivities are dependent on the effective thermal conductivity of each component layer and its respective thickness as follows: 
+    <br>
+    Radial thermal conductivity = $${\frac{\Sigma_{j} L_{j}}{\Sigma_{j} \frac{L_{j}}{k_{eff, j}}}} $$  
+  </ul>
   
   
   <h2> References: </h2>
