@@ -24,7 +24,7 @@ description: From Chemistry to Technology
     <br>
     For the cylindrical case (relevant to the cylindrical cell), the equation becomes:
     <br>
-    $$ {Q = - \kappa 2\pi RL\frac{dT}{dR}} $$ ,where R is radius of the cylinder
+    $$ {Q = - \kappa (2\pi RL)\frac{dT}{dR}} $$ ,where R is radius of the cylinder
     <br>
   </ul>
   
