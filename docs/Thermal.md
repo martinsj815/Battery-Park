@@ -20,7 +20,7 @@ description: From Chemistry to Technology
     <br><br>
     For the 1-d heat conduction, it is simply q = &#x3BA; dx/dT or more generally it can be written as:
     <br>
-     $$ {Q = - \kappa{A}dT/dx} $$ ,where Q is heat and A is the cross-sectional area, and d is the legth of the heat conduction in the cartesian coordinate.
+     $$ {Q = - \kappa{A}\frac{dT}{dx}} $$ ,where Q is heat and A is the cross-sectional area, and d is the legth of the heat conduction in the cartesian coordinate.
   </ul>
   
   
