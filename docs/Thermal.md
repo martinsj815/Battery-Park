@@ -51,7 +51,7 @@ description: From Chemistry to Technology
     <br>
     The thermal conductivity <i>k</i> can then be computed: 
     <br>
-    $${\lambda = a * \rho * c_{p}} $$
+    $${\kappa = a * \rho * c_{p}} $$
   </ul>
   
   
