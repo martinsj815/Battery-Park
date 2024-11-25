@@ -42,11 +42,16 @@ description: From Chemistry to Technology
     $${\text{Axial thermal conductivity} = \frac{\Sigma_{j} L_{j}{k_{eff, j}}}{\Sigma_{j}{L_{j}}}} $$  
     <br>
     <br>
-    To measure the thermal conductivity of each material, a combination of methods is considered – such as laser flash method (LF) and differential scanning calorimetry (DSC) – to measure the transient response of the temperature vs time. Thermal diffusivity can be derived based on the sample thickness and half time measured. The heat capacity is then extracted by applying the DSC method based on the following equation:
+    To measure the thermal conductivity of each material, a combination of methods is considered – such as laser flash method (LF) and differential scanning calorimetry (DSC) – to measure the transient response of the temperature vs time. Thermal diffusivity can be derived based on the sample thickness and half time measured by using following relation:
+    $${a = 0.1388 * \frac{L^2}{t_{1/2}}} $$
+    <br><br>
+    The heat capacity is then extracted by applying the DSC method based on the following equation:
     <br>
     $${c_{p} = dQ / dT} $$
     <br>
-    The thermal conductivity <i>k</i> is then equal to 
+    The thermal conductivity <i>k</i> can then be computed: 
+    <br>
+    $${\lambda = a * \rho * c_{p}} $$
   </ul>
   
   
