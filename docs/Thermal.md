@@ -23,9 +23,15 @@ description: From Chemistry to Technology
      $$ {Q = - \kappa{A}\frac{dT}{dx}} $$ , where Q is heat and A is the cross-sectional area, and d is the legth of the heat conduction in the cartesian coordinate.
     <br>
     For the cylindrical case (relevant to the cylindrical cell), the equation becomes:
+    <br><br>
+    $$ {Q = - \kappa (2\pi RL)\frac{dT}{dR}} $$ , where R is radius of the cylinder.
     <br>
-    $$ {Q = - \kappa (2\pi RL)\frac{dT}{dR}} $$ ,where R is radius of the cylinder
+  </ul>
+  <hr>
+  <h2>&#9672; Pipe Method: </h2>
+  <ul>The whole cell radial thermal conductivity can be estimated for the cylindrical cell by using the thermocouples placed at the inside (spindle) and outside the cell to measure the temperature difference and the metal alloy wire to heat the cell’s center using a DC power supply for applying different currents. The effective radial thermal conductivity is derived based on following equation: 
     <br>
+    $$ {Q = \frac{2\pi\kappa_{eff}L(T_{1}-T_{2}}}{ln \frac{R_{2}}{R_{1}}}} $$
   </ul>
   
   
