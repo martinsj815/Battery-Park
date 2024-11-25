@@ -37,9 +37,9 @@ description: From Chemistry to Technology
   <h2>&#9672; Transient Method </h2>
   <ul>Thermal conductivity of the cell is dependent on the internal components and their configuration. Hence, the equations for in-plane and cross-plane conductivities are dependent on the effective thermal conductivity of each component layer and its respective thickness as follows: 
     <br><br>
-    $${Radial thermal conductivity = \frac{\Sigma_{j} L_{j}}{\Sigma_{j} \frac{L_{j}}{k_{eff, j}}}} $$  
+    $${\text{Radial thermal conductivity} = \frac{\Sigma_{j} L_{j}}{\Sigma_{j} \frac{L_{j}}{k_{eff, j}}}} $$  
     <br>
-    $${Axial thermal conductivity = \frac{\Sigma_{j} L_{j}{k_{eff, j}}}{\Sigma_{j}{L_{j}}}} $$  
+    $${\text{Axial thermal conductivity} = \frac{\Sigma_{j} L_{j}{k_{eff, j}}}{\Sigma_{j}{L_{j}}}} $$  
     <br>
     <br>
     To measure the thermal conductivity of each material, a combination of methods is considered – such as laser flash method (LF) and differential scanning calorimetry (DSC) – to measure the transient response of the temperature vs time. Thermal diffusivity can be derived based on the sample thickness and half time measured. The heat capacity is then extracted by applying the DSC method based on the following equation:
