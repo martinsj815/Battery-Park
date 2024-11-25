@@ -16,7 +16,7 @@ description: From Chemistry to Technology
   <hr>
   According to the Fourier’s Law of heat conduction with steady-state heat flow (∂T/∂t=0), it reads:
   <br>
-  $$ {q = - \kappa\nablaT} $$
+  $$ {q = - \kappa\nabla{T}} $$
   
   <h2> References: </h2>
   <li> Thomas Waldmann, et al., "Review—Post-Mortem Analysis of Aged Lithium-Ion Batteries: Disassembly Methodology and Physico-Chemical Analysis Techniques", J. Electrochem. Soc., 163, A2149-A2164 (2016) </li>
