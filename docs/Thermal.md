@@ -31,7 +31,7 @@ description: From Chemistry to Technology
   <h2>&#9672; Pipe Method: </h2>
   <ul>The whole cell radial thermal conductivity can be estimated for the cylindrical cell by using the thermocouples placed at the inside (spindle) and outside the cell to measure the temperature difference and the metal alloy wire to heat the cell’s center using a DC power supply for applying different currents. The effective radial thermal conductivity is derived based on following equation: 
     <br>
-    $$ {Q = \frac{2\pi\kappa_{eff}L(T_{1}-T_{2})}{ln(\frac{R_{2}}{R_{1}})}} $$
+    $$ {Q = \frac{2\pi\kappa_{eff}L(T_{1}-T_{2})}{ln(\frac{R_{2}}{R_{1}})}} $$  , where T<sub>1</sub>, R<sub>1</sub> and T<sub>2</sub>, R<sub>2</sub> are temperature and radius of the inner part and outer part of the cell, respectively. 
   </ul>
   
   
