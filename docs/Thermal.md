@@ -58,7 +58,8 @@ description: From Chemistry to Technology
   
   
   <h2> References: </h2>
-  <li> Thomas Waldmann, et al., "Review—Post-Mortem Analysis of Aged Lithium-Ion Batteries: Disassembly Methodology and Physico-Chemical Analysis Techniques", J. Electrochem. Soc., 163, A2149-A2164 (2016) </li>
+  <li> Lichuan Wei, et al., "A comprehensive study on thermal conductivity of the lithium-ion battery", Int. J. Energy Res., 44, 9466-9478 (2019) </li>
+  <li> Markus Koller, et al., "Radial Thermal Conductivity Measurements of Cylindrical Lithium-Ion Batteries—An Uncertainty Study of the Pipe Method", Batteries, 8, 1-20 (2022) </li> 
 </body>
 
 
