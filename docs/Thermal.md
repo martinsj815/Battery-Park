@@ -55,8 +55,7 @@ description: From Chemistry to Technology
     <br><br>
     The discrepancies between the two methods can be attributed to the test setup including the position of the heating wire, temperature sensors, and the presence of thermal paste. 
   </ul>
-  
-  
+  <hr>
   <h2> References: </h2>
   <li> Lichuan Wei, et al., "A comprehensive study on thermal conductivity of the lithium-ion battery", Int. J. Energy Res., 44, 9466-9478 (2019) </li>
   <li> Markus Koller, et al., "Radial Thermal Conductivity Measurements of Cylindrical Lithium-Ion Batteries—An Uncertainty Study of the Pipe Method", Batteries, 8, 1-20 (2022) </li> 
