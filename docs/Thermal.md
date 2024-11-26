@@ -72,6 +72,7 @@ description: From Chemistry to Technology
   <h2> References: </h2>
   <li> Lichuan Wei, et al., "A comprehensive study on thermal conductivity of the lithium-ion battery", Int. J. Energy Res., 44, 9466-9478 (2019) </li>
   <li> Markus Koller, et al., "Radial Thermal Conductivity Measurements of Cylindrical Lithium-Ion Batteries—An Uncertainty Study of the Pipe Method", Batteries, 8, 1-20 (2022) </li> 
+  <li> Foo Shen Hwang, et al., "Review of battery thermal management systems in electric vehicles", Renew. Sust. Energy Rev., 192, 114171 (2024) </li>
 </body>
 
 
