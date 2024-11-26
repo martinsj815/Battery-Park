@@ -64,7 +64,7 @@ description: From Chemistry to Technology
     $$ {Q = I(V_{OC} - V) - I(T_{cell} \frac{dV_{OC}}{dT}) = Q_{joule} + Q_{entropy}}$$ ,where Q is the heat generated, I is the nominal current, VOC is the open circuit voltage, V is the nominal voltage, T is the cell temperature.
     <br>
     Q<sub>joule</sub> defines electrical energy loss through irreversible joule heating and is is I(V<sub>OC</sub> – V) = I<sup>2</sup>R<sub>int</sub> where R<sub>int</sub> is internal resistance of the cell. The second term is reversible and represents the heat generated through entropy changes with electrochemical reactions. Heat generated becomes high with the discharge rate. <br>
-    $$ {Q_{entropy} = -I(T_{cell} \frac{dV_{OC}}{dT}) = -IT_{cell} \frac{\delta{S}}{nF}}$$ , where change in S = entropy change of the battery, n = number of electrons transferred during discharge, F = Faraday constant. 
+    $$ {Q_{entropy} = -I(T_{cell} \frac{dV_{OC}}{dT}) = -IT_{cell} \frac{\Delta{S}}{nF}}$$ , where change in S = entropy change of the battery, n = number of electrons transferred during discharge, F = Faraday constant. 
     <br>
   </ul> 
   <br>
