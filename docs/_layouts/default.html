@@ -123,14 +123,11 @@
 
       navItems.forEach(item => {
         const dropdown = item.querySelector('.dropdown-menu');
-
         let hideTimeout; // Store timeout for hiding the dropdown
 
+        // Show the dropdown on mouseenter
         item.addEventListener('mouseenter', function () {
-          // Clear any existing timeout to prevent accidental hiding
-          clearTimeout(hideTimeout);
-  
-          // Show the dropdown with a smooth transition
+          clearTimeout(hideTimeout); // Clear any existing timeout
           dropdown.style.display = 'block';
           setTimeout(() => {
             dropdown.style.opacity = '1';
@@ -138,41 +135,48 @@
           }, 10); // Short delay for smooth transition
         });
 
+        // Hide the dropdown only when mouse leaves both nav-item and dropdown-menu
         item.addEventListener('mouseleave', function () {
-          // Delay hiding the dropdown to give time for potential clicks
           hideTimeout = setTimeout(() => {
             dropdown.style.opacity = '0';
             dropdown.style.visibility = 'hidden';
-
-            // Wait for the transition to complete before hiding the dropdown
             setTimeout(() => {
               dropdown.style.display = 'none';
-            }, 300); // Match this duration to your CSS transition time
-          }, 500); // Adjust this delay to suit your desired behavior
+            }, 300); // Match CSS transition duration
+          }, 300); // Small delay to account for user moving cursor between nav-item and dropdown
         });
 
-        // Prevent dropdown from hiding when clicking links
-        dropdown.querySelectorAll('.dropdown-link').forEach(link => {
-          link.addEventListener('click', function (e) {
-            e.stopPropagation();
-            clearTimeout(hideTimeout); // Cancel hide timeout on click
-          });
+        // Prevent dropdown from closing when hovering over it
+        dropdown.addEventListener('mouseenter', function () {
+          clearTimeout(hideTimeout); // Cancel hide timeout
+        });
+
+        dropdown.addEventListener('mouseleave', function () {
+          hideTimeout = setTimeout(() => {
+            dropdown.style.opacity = '0';
+            dropdown.style.visibility = 'hidden';
+            setTimeout(() => {
+              dropdown.style.display = 'none';
+            }, 300);
+          }, 300);
         });
       });
 
       // Close all dropdowns when clicking outside
-      document.addEventListener('click', function () {
+      document.addEventListener('click', function (event) {
         navItems.forEach(item => {
           const dropdown = item.querySelector('.dropdown-menu');
-          dropdown.style.opacity = '0';
-          dropdown.style.visibility = 'hidden';
-
-          setTimeout(() => {
-            dropdown.style.display = 'none';
-          }, 300); // Match CSS transition duration
+          if (!item.contains(event.target)) {
+            dropdown.style.opacity = '0';
+            dropdown.style.visibility = 'hidden';
+            setTimeout(() => {
+              dropdown.style.display = 'none';
+            }, 300); // Match CSS transition duration
+          }
         });
       });
     });
   </script>
+
 
 </html>
