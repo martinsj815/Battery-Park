@@ -33,7 +33,7 @@ description: From Chemistry to Technology
             <h2>Latest update</h2>
             <div class="sneak-peek">
                 <h3>&#9656; Check out the Calculator page <br> 
-                    <a href="https://martinsj815.github.io/Battery-Park/Calculator">Go to the link</a>
+                    <a href="https://energytown.github.io/Battery-Park/Calculator">Go to the link</a>
                 </h3>
             </div>
         </section>
