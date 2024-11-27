@@ -120,36 +120,59 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const navItems = document.querySelectorAll('.nav-item');
-      
+
       navItems.forEach(item => {
         const dropdown = item.querySelector('.dropdown-menu');
-        
-        item.addEventListener('mouseenter', function() {
-          // Show the dropdown instantly on hover
+
+        let hideTimeout; // Store timeout for hiding the dropdown
+
+        item.addEventListener('mouseenter', function () {
+          // Clear any existing timeout to prevent accidental hiding
+          clearTimeout(hideTimeout);
+  
+          // Show the dropdown with a smooth transition
           dropdown.style.display = 'block';
           setTimeout(() => {
             dropdown.style.opacity = '1';
             dropdown.style.visibility = 'visible';
-          }, 10);  // Delay for smooth transition
+          }, 10); // Short delay for smooth transition
         });
 
-        item.addEventListener('mouseleave', function() {
-          // Hide dropdown only if no link inside it has been clicked
-          let clickedLink = false;
-          dropdown.querySelectorAll('.dropdown-link').forEach(link => {
-            link.addEventListener('click', () => {
-              clickedLink = true;
-            });
+        item.addEventListener('mouseleave', function () {
+          // Delay hiding the dropdown to give time for potential clicks
+          hideTimeout = setTimeout(() => {
+            dropdown.style.opacity = '0';
+            dropdown.style.visibility = 'hidden';
+
+            // Wait for the transition to complete before hiding the dropdown
+            setTimeout(() => {
+              dropdown.style.display = 'none';
+            }, 300); // Match this duration to your CSS transition time
+          }, 500); // Adjust this delay to suit your desired behavior
+        });
+
+        // Prevent dropdown from hiding when clicking links
+        dropdown.querySelectorAll('.dropdown-link').forEach(link => {
+          link.addEventListener('click', function (e) {
+            e.stopPropagation();
+            clearTimeout(hideTimeout); // Cancel hide timeout on click
           });
+        });
+      });
+
+      // Close all dropdowns when clicking outside
+      document.addEventListener('click', function () {
+        navItems.forEach(item => {
+          const dropdown = item.querySelector('.dropdown-menu');
+          dropdown.style.opacity = '0';
+          dropdown.style.visibility = 'hidden';
 
           setTimeout(() => {
-            if (!clickedLink) {
-              dropdown.style.opacity = '0';
-              dropdown.style.visibility = 'hidden';
-            }
-          }, 1000);  // Delay before hiding
+            dropdown.style.display = 'none';
+          }, 300); // Match CSS transition duration
         });
       });
     });
   </script>
+
 </html>
