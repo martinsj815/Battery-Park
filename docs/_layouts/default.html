@@ -125,41 +125,38 @@
         const dropdown = item.querySelector('.dropdown-menu');
         let hideTimeout; // Store timeout for hiding the dropdown
 
-        // Show the dropdown on mouseenter
-        item.addEventListener('mouseenter', function () {
-          clearTimeout(hideTimeout); // Clear any existing timeout
+        // Function to show dropdown
+        function showDropdown() {
+          clearTimeout(hideTimeout);
           dropdown.style.display = 'block';
           setTimeout(() => {
             dropdown.style.opacity = '1';
             dropdown.style.visibility = 'visible';
-          }, 50); // Short delay for smooth transition
-        });
+          }, 10); // Small delay for transition effect
+        }
 
-        // Hide the dropdown only when mouse leaves both nav-item and dropdown-menu
-        item.addEventListener('mouseleave', function () {
+        // Function to hide dropdown
+        function hideDropdown() {
           hideTimeout = setTimeout(() => {
             dropdown.style.opacity = '0';
             dropdown.style.visibility = 'hidden';
             setTimeout(() => {
               dropdown.style.display = 'none';
-            }, 300); // Match CSS transition duration
-          }, 700); // Small delay to account for user moving cursor between nav-item and dropdown
-        });
+            }, 300); // Match this with CSS transition duration
+          }, 300); // Delay before hiding to allow smooth interaction
+        }
 
-        // Prevent dropdown from closing when hovering over it
-        dropdown.addEventListener('mouseenter', function () {
-          clearTimeout(hideTimeout); // Cancel hide timeout
-        });
+        // Show dropdown on mouseenter for nav-item
+        item.addEventListener('mouseenter', showDropdown);
 
-        dropdown.addEventListener('mouseleave', function () {
-          hideTimeout = setTimeout(() => {
-            dropdown.style.opacity = '0';
-            dropdown.style.visibility = 'hidden';
-            setTimeout(() => {
-              dropdown.style.display = 'none';
-            }, 300);
-          }, 300);
-        });
+        // Start hiding dropdown on mouseleave for nav-item
+        item.addEventListener('mouseleave', hideDropdown);
+
+        // Cancel hiding if mouse enters dropdown
+        dropdown.addEventListener('mouseenter', showDropdown);
+
+        // Start hiding dropdown on mouseleave from dropdown
+        dropdown.addEventListener('mouseleave', hideDropdown);
       });
 
       // Close all dropdowns when clicking outside
@@ -177,6 +174,5 @@
       });
     });
   </script>
-
 
 </html>
