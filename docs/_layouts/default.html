@@ -123,43 +123,45 @@
 
       navItems.forEach(item => {
         const dropdown = item.querySelector('.dropdown-menu');
-        let hideTimeout; // Store timeout for hiding the dropdown
+        let hideTimeout;
 
-        // Function to show dropdown
+        // Function to show the dropdown
         function showDropdown() {
           clearTimeout(hideTimeout);
           dropdown.style.display = 'block';
           setTimeout(() => {
             dropdown.style.opacity = '1';
             dropdown.style.visibility = 'visible';
-          }, 10); // Small delay for transition effect
+          }, 10); // Ensure smooth transition
         }
 
-        // Function to hide dropdown
+        // Function to hide the dropdown
         function hideDropdown() {
           hideTimeout = setTimeout(() => {
             dropdown.style.opacity = '0';
             dropdown.style.visibility = 'hidden';
             setTimeout(() => {
               dropdown.style.display = 'none';
-            }, 300); // Match this with CSS transition duration
-          }, 300); // Delay before hiding to allow smooth interaction
+            }, 300); // Match CSS transition duration
+          }, 300); // Add delay before hiding
         }
 
-        // Show dropdown on mouseenter for nav-item
-        item.addEventListener('mouseenter', showDropdown);
+        // Event Listener: Show dropdown when hovering over nav-item or dropdown-menu
+        item.addEventListener('mouseover', function (event) {
+          if (item.contains(event.target)) {
+            showDropdown();
+          }
+        });
 
-        // Start hiding dropdown on mouseleave for nav-item
-        item.addEventListener('mouseleave', hideDropdown);
-
-        // Cancel hiding if mouse enters dropdown
-        dropdown.addEventListener('mouseenter', showDropdown);
-
-        // Start hiding dropdown on mouseleave from dropdown
-        dropdown.addEventListener('mouseleave', hideDropdown);
+        // Event Listener: Hide dropdown when mouse leaves nav-item and dropdown-menu
+        item.addEventListener('mouseout', function (event) {
+          if (!item.contains(event.relatedTarget)) {
+            hideDropdown();
+          }
+        });
       });
 
-      // Close all dropdowns when clicking outside
+      // Close dropdown when clicking outside
       document.addEventListener('click', function (event) {
         navItems.forEach(item => {
           const dropdown = item.querySelector('.dropdown-menu');
@@ -174,5 +176,4 @@
       });
     });
   </script>
-
 </html>
