@@ -118,4 +118,63 @@
     <script src="script.js"></script>
     
   </body>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+     const navItems = document.querySelectorAll('.nav-item');
+
+    navItems.forEach(item => {
+      const dropdown = item.querySelector('.dropdown-menu');
+       let hideTimeout;
+
+      // Function to show the dropdown
+      function showDropdown() {
+        clearTimeout(hideTimeout);
+         dropdown.style.display = 'block';
+         setTimeout(() => {
+           dropdown.style.opacity = '1';
+           dropdown.style.visibility = 'visible';
+         }, 10); // Ensure smooth transition
+       }
+
+      // Function to hide the dropdown
+       function hideDropdown() {
+         hideTimeout = setTimeout(() => {
+           dropdown.style.opacity = '0';
+           dropdown.style.visibility = 'hidden';
+           setTimeout(() => {
+             dropdown.style.display = 'none';
+           }, 300); // Match CSS transition duration
+         }, 300); // Add delay before hiding
+       }
+
+       // Event Listener: Show dropdown when hovering over nav-item or dropdown-menu
+       item.addEventListener('mouseover', function (event) {
+         if (item.contains(event.target)) {
+           showDropdown();
+         }
+       });
+
+       // Event Listener: Hide dropdown when mouse leaves nav-item and dropdown-menu
+       item.addEventListener('mouseout', function (event) {
+         if (!item.contains(event.relatedTarget)) {
+           hideDropdown();
+         }
+       });
+     });
+
+     // Close dropdown when clicking outside
+     document.addEventListener('click', function (event) {
+       navItems.forEach(item => {
+         const dropdown = item.querySelector('.dropdown-menu');
+         if (!item.contains(event.target)) {
+           dropdown.style.opacity = '0';
+           dropdown.style.visibility = 'hidden';
+           setTimeout(() => {
+             dropdown.style.display = 'none';
+           }, 300); // Match CSS transition duration
+         }
+       });
+     });
+   });
+ </script>
 </html>
