@@ -48,15 +48,21 @@ table {
 }
 
 .header-container {
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between; 
-  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .header-banner {
   max-width: 150px; /* Set maximum width for the banner */
   height: auto; /* Maintain aspect ratio */
+}
+
+.header-left {
+  display: flex; /* Group project name and banner */
+  align-items: center; /* Vertically align name and banner */
+  gap: 10px; /* Small gap between project name and banner */
 }
 
 .project-tagline {
