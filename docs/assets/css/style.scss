@@ -220,7 +220,13 @@ table {
     margin-bottom: 10px; /* Add spacing in vertical layout */
   }
 
+     .project-title {
+    font-size: 1.5 rem;
+    text-align: left; /* Align tagline to the left in stacked layout */
+  }
+    
     .project-tagline {
+    font-size: 1 rem;
     text-align: left; /* Align tagline to the left in stacked layout */
   }
     
