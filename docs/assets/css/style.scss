@@ -204,6 +204,19 @@ table {
     .page-header {
     padding: 8px 10px;
   }
+
+    .header-container {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+    .header-left {
+    margin-bottom: 10px; /* Add spacing in vertical layout */
+  }
+
+    .project-tagline {
+    text-align: left; /* Align tagline to the left in stacked layout */
+  }
     
     .nav-menu {
         position: fixed;
