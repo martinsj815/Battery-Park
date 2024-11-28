@@ -47,6 +47,13 @@ table {
     padding: 10px 20px;
 }
 
+.header-container {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  gap: 20px;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
