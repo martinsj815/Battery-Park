@@ -54,6 +54,17 @@ table {
   gap: 5px;
 }
 
+.header-banner {
+  max-width: 150px; /* Set maximum width for the banner */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.project-tagline {
+  font-size: 1.5rem; /* Adjust as needed */
+  margin: 0; /* Remove default margin */
+  font-family: 'ParkAvenue', cursive; /* Apply custom font */
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
