@@ -67,7 +67,8 @@ table {
 
 
 .project-name {
-  font-size: 2rem; /* Adjust as needed */
+    font-size: 2rem; /* Adjust as needed */
+    white-space: nowrap;
 }
 
 .project-tagline {
