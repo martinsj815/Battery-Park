@@ -338,9 +338,10 @@ table {
 }
 
 @media (max-width: 480px) {
-  .project-name {
-    font-size: clamp(1rem, 4vw, 1.2rem);
-  }
+    .project-name {
+        font-size: 1rem; /* Smallest size for mobile phones */
+        text-align: center; /* Center-align for better layout */
+    }
 }
 
 .columns {
