@@ -336,6 +336,12 @@ table {
     }
 }
 
+@media (max-width: 480px) {
+  .project-name {
+    font-size: 1.0rem; /* Smaller font size for small screens */
+  }
+}
+
 .columns {
   display: flex;
   flex: 70%;
