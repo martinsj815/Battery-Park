@@ -37,9 +37,9 @@ description: From Chemistry to Technology
   <h3><li>Transient Method</li></h3>
   <ul>Thermal conductivity of the cell is dependent on the internal components and their configuration. Hence, the equations for in-plane and cross-plane conductivities are dependent on the effective thermal conductivity of each component layer and its respective thickness as follows: 
     <br><br>
-    $${\text{Radial thermal conductivity} = \frac{\Sigma_{j} L_{j}}{\Sigma_{j} \frac{L_{j}}{k_{eff, j}}}} $$  
+    $${\text{Radial thermal conductivity} = \frac{\Sigma_{j} L_{j}}{\Sigma_{j} \frac{L_{j}}{\kappa_{eff, j}}}} $$  
     <br>
-    $${\text{Axial thermal conductivity} = \frac{\Sigma_{j} L_{j}{k_{eff, j}}}{\Sigma_{j}{L_{j}}}} $$  
+    $${\text{Axial thermal conductivity} = \frac{\Sigma_{j} L_{j}{\kappa_{eff, j}}}{\Sigma_{j}{L_{j}}}} $$  
     <br>
     <br>
     To measure the thermal conductivity of each material, a combination of methods is considered – such as laser flash method (LF) and differential scanning calorimetry (DSC) – to measure the transient response of the temperature vs time. Thermal diffusivity can be derived based on the sample thickness and half time measured by using following relation:
@@ -51,7 +51,7 @@ description: From Chemistry to Technology
     <br>
     The thermal conductivity <i>k</i> can then be computed: 
     <br>
-    $${k = a * \rho * c_{p}} $$
+    $${\kappa = a * \rho * c_{p}} $$
     <br><br>
     The discrepancies between the two methods can be attributed to the test setup including the position of the heating wire, temperature sensors, and the presence of thermal paste. 
   </ul>
