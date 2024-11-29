@@ -51,7 +51,7 @@ description: From Chemistry to Technology
     <br>
     The thermal conductivity <i>k</i> can then be computed: 
     <br>
-    $${\kappa = a * \rho * c_{p}} $$
+    $${k = a * \rho * c_{p}} $$
     <br><br>
     The discrepancies between the two methods can be attributed to the test setup including the position of the heating wire, temperature sensors, and the presence of thermal paste. 
   </ul>
