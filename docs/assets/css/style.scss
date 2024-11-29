@@ -208,15 +208,20 @@ table {
 }
 
 @media only screen and (max-width: 768px) {
-
+    
     .page-header {
-    padding: 8px 10px;
-  }
+        padding: 8px 10px;
+    }
 
     .header-container {
-    flex-direction: column; /* Stack items vertically on small screens */
-    align-items: flex-start; /* Align items to the left */
-  }
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .header-banner {
+        max-width: 50px; /* Set maximum width for the banner */
+        height: auto; /* Maintain aspect ratio */
+    }
 
     .header-left {
         flex-direction: column;
