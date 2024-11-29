@@ -60,7 +60,7 @@ table {
 }
 
 .header-left {
-    white-space: nowrap; /* Group project name and banner */
+    display: flex; /* Group project name and banner */
     align-items: center; /* Vertically align name and banner */
     gap: 20px; /* Small gap between project name and banner */
     font-size: 2rem; 
