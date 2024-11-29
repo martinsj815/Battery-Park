@@ -346,7 +346,7 @@ table {
 
 @media (max-width: 480px) {
     .project-name {
-        font-size: 3rem; 
+        font-size: 4rem; 
         text-align: center; 
     }
 
@@ -357,9 +357,9 @@ table {
 }
 
 .columns {
-  display: flex;
-  flex: 70%;
-  justify-content: space-between;
+    display: flex;
+    flex: 70%;
+    justify-content: space-between;
 }
 
 .columns .column {
