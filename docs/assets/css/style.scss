@@ -72,9 +72,10 @@ table {
 }
 
 .project-tagline {
-  font-size: 1.5rem; /* Adjust as needed */
-  margin: 0; /* Remove default margin */
-  font-family: 'ParkAvenue', cursive; /* Apply custom font */
+    font-size: 1.5rem; /* Adjust as needed */
+    margin: 0; /* Remove default margin */
+    font-family: 'ParkAvenue', cursive; /* Apply custom font */
+    white-space: nowrap;
 }
 
 .navbar {
