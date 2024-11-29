@@ -125,9 +125,9 @@ table {
 }
 
 .navbar .search-container {
-  float: right;
-  color: #ffffff;
-  margin-left: 2rem;
+    float: right;
+    color: #ffffff;
+    margin-left: 2rem;
 }
 
 .nav .search-container button {
@@ -235,9 +235,8 @@ table {
     }
     
     .project-tagline {
-    font-size: 1rem;
-    text-align: left; /* Align tagline to the left in stacked layout */
-  }
+        display: none;
+    }
     
     .nav-menu {
         position: fixed;
@@ -350,6 +349,10 @@ table {
         text-align: center; 
     }
 
+    .project-tagline {
+        display: none;
+    }
+    
     .header-left {
         flex-direction: column;
         font-size: 1rem; 
