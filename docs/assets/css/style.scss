@@ -339,7 +339,7 @@ table {
 
 @media (max-width: 480px) {
   .project-name {
-    font-size: 1.0rem; /* Smaller font size for small screens */
+    font-size: clamp(1rem, 4vw, 1.2rem);
   }
 }
 
