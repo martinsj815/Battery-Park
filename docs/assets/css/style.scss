@@ -68,7 +68,7 @@ table {
 
 
 .project-name {
-    font-size: 8rem; /* Adjust as needed */
+    font-size: 6rem; /* Adjust as needed */
     white-space: nowrap;
 }
 
@@ -225,9 +225,9 @@ table {
     }
 
      .project-name {
-    font-size: 4rem;
-    text-align: center; /* Align tagline to the left in stacked layout */
-  }
+         font-size: 3rem;
+         text-align: center; /* Align tagline to the left in stacked layout */
+    }
     
     .project-tagline {
     font-size: 1rem;
@@ -341,7 +341,7 @@ table {
 
 @media (max-width: 480px) {
     .project-name {
-        font-size: 3rem; 
+        font-size: 2rem; 
         text-align: center; 
     }
 
