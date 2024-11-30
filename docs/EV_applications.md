@@ -31,10 +31,10 @@ description: From Chemistry to Technology
 <br>
 <div class="columns">
   <div class="column">
-   - A battery Module is a collection of cells connected in series or in parallel to achieve desired voltage and energy density.
+   - A battery module is a collection of cells connected in series or in parallel to achieve desired voltage and energy density.
   <br>
   <br>
-   - A battery Pack is consisting of one or more modules (or cells) that are connected (likely in series if modules), assembled with the electrical interconnects and packaged into a single unit. Packs are usually located at the lower part compartment of the EV chassis for better design flexibility and uniform weight distribution.
+   - A battery pack is consisting of one or more modules (or cells) that are connected (likely in series if modules), assembled with the electrical interconnects and packaged into a single unit. Packs are usually located at the lower part compartment of the EV chassis for better design flexibility and uniform weight distribution.
   <br>
   <br>
    - The pack usually requires monitoring, sensing (i.e. voltage and temperature), and control through effective battery management system for protection, stability, and safety of the battery.
