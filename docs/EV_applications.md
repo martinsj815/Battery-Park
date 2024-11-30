@@ -19,7 +19,7 @@ description: From Chemistry to Technology
     <br>
   </div>
 </div>
-<li>However, the energy stored in Li-ion batteries falls significantly short of the energy content in fossil fuels. Currently, the specific energy of high-performing Li-ion batteries is approximately 200–250 Wh/kg, which equals to 0.72–0.9 MJ/kg. In contrast, gasoline has a specific energy of around 46 MJ/kg <sup>1</sup>—several orders of magnitude higher. This stark difference can be partially offset by the efficiency of electric motors, which convert stored energy into usable power with an efficiency of 70% or higher. This is better than the 20%–40% efficiency typical of internal combustion engines (ICEs).</li>
+<li>However, the energy stored in Li-ion batteries falls significantly short of the energy content in fossil fuels. Currently, the specific energy of high-performing Li-ion batteries is approximately 200–250 Wh/kg, which equals to 0.72–0.9 MJ/kg. In contrast, gasoline has a specific energy of around 46 MJ/kg <sup>2</sup>—several orders of magnitude higher. This stark difference can be partially offset by the efficiency of electric motors, which convert stored energy into usable power with an efficiency of 70% or higher. This is better than the 20%–40% efficiency typical of internal combustion engines (ICEs).</li>
 <li>How do companies enable EVs to perform equivalently to gasoline-powered cars despite this disparity? The solution lies in equipping EVs with large quantities of batteries. Depending on the make and model, an EV's battery pack can weigh between 1,000 to 2,000 pounds. In comparison, a gasoline-powered car carries only 10–15 gallons of fuel, which weighs approximately 60–90 pounds—a huge contrast.</li>
 <h3><li> References </li></h3>
 1 https://www.un.org/en/climatechange/science/causes-effects-climate-change <br>
@@ -134,6 +134,6 @@ Bottom- Source: medium.com / https://medium.com/batterybits/the-next-generation-
   </div>
 </div>
 <br>
-<h2><li> Reference </li></h2>
+<h3> Reference </h3>
 
 - Hendrik Löbberding, et al.,"From Cell to Battery System in BEVs: Analysis of System Packing Efficiency and Cell Types", World Electric Vehicle Journal, 11, 77 (2020)
