@@ -11,7 +11,7 @@ description: From Chemistry to Technology
 <div class="columns">
   <div class="column">
     <figure>
-  <img src='https://github.com/energytown/Battery-Park/blob/main2/masthead/bat-gas-comp.png?raw=true' alt="Capacity" style="width:700px; height:auto;">
+  <img src='https://github.com/energytown/Battery-Park/blob/main2/masthead/bat-gas-comp.png?raw=true' alt="Capacity" style="width:1000px; height:auto;">
     </figure>
   </div>
   <div class="column">
