@@ -8,7 +8,7 @@ description: From Chemistry to Technology
 
 <hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
 <br>
-<h2>&#9672; Batteries vs Gasoline </h2>
+<h2>&#9672; Batteries vs. Fuel </h2>
 <div class="columns">
   <div class="column">
     <figure>
