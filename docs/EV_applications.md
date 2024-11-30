@@ -15,12 +15,12 @@ description: From Chemistry to Technology
     </figure>
   </div>
   <div class="column">
-    <li>Fossil fuels are expected to be depleted between 2050 and 2060. Greenhouse gas emissions from burning these fuels, which account for approximately 75% of total GHG emissions<sup>1</sup>, are a primary culprit responsible for global warming and climate change. This necessitates a new energy system that eliminates combustion and the release of harmful gases. This is why people study batteries—particularly lithium-ion (Li-ion) batteries, as they represent one of the most promising energy storage solutions.</li>
+    <li>Fossil fuels are expected to be depleted between 2050 and 2060. Greenhouse gas emissions from burning these fuels, which account for approximately 75% of total GHG emissions<sup>1</sup>, are a primary culprit responsible for global warming and climate change. This necessitates a new energy system that eliminates combustion and the release of harmful gases. This is why people study batteries—particularly lithium-ion (Li-ion) batteries for electric vehicles (EVs), as they represent one of the most promising energy storage solutions.</li>
     <br>
   </div>
 </div>
 <li>However, the energy stored in Li-ion batteries falls significantly short of the energy content in fossil fuels. Currently, the specific energy of high-performing Li-ion batteries is approximately 200–250 Wh/kg, which equals to 0.72–0.9 MJ/kg. In contrast, gasoline has a specific energy of around 46 MJ/kg <sup>1</sup>—several orders of magnitude higher. This stark difference can be partially offset by the efficiency of electric motors, which convert stored energy into usable power with an efficiency of 70% or higher. This is better than the 20%–40% efficiency typical of internal combustion engines (ICEs).</li>
-<li>How do companies enable electric vehicles (EVs) to perform equivalently to gasoline-powered cars despite this disparity? The solution lies in equipping EVs with large quantities of batteries. Depending on the make and model, an EV's battery pack can weigh between 1,000 to 2,000 pounds. In comparison, a gasoline-powered car carries only 10–15 gallons of fuel, which weighs approximately 60–90 pounds—a huge contrast.</li>
+<li>How do companies enable EVs to perform equivalently to gasoline-powered cars despite this disparity? The solution lies in equipping EVs with large quantities of batteries. Depending on the make and model, an EV's battery pack can weigh between 1,000 to 2,000 pounds. In comparison, a gasoline-powered car carries only 10–15 gallons of fuel, which weighs approximately 60–90 pounds—a huge contrast.</li>
 <h3><li> References </li></h3>
 1 https://www.un.org/en/climatechange/science/causes-effects-climate-change <br>
 2 https://world-nuclear.org/information-library/facts-and-figures/heat-values-of-various-fuels
