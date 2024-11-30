@@ -114,11 +114,11 @@ description: From Chemistry to Technology
     </div>
     <div id="Stacked Cell" class="tabcontent">
         <br>
-        <h2> Estimation of Pouch Cell Capacity and Energy Density </h2>
+        <h2> Estimation of Pouch Cell Capacity and Specific Energy </h2>
         <br><br>
-      - This page helps estimate the total cell capacity and energy density of the pouch cell based upon a different stacking type by inputting the cell parameters needed. 
+      - This page helps estimate the total cell capacity and specific energy of the pouch cell based upon a different stacking type by inputting the cell parameters needed. 
         <br><br>
-      - For a certain pouch cell design, this calculation can help determine the number of stack layers and electrolyte amount to achieve target cell capacity and energy density.
+      - For a certain pouch cell design, this calculation can help determine the number of stack layers and electrolyte amount to achieve target cell capacity and specific energy.
         <br><br>
         <h2> Electrode Parameters </h2>
         <br>
@@ -239,7 +239,7 @@ description: From Chemistry to Technology
                 <input type="number" id="stacked_layer" placeholder="Enter a number" value="7" step="1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br>
-                <h3> Target Energy Density [Wh/Kg]<sup>*2</sup> </h3>
+                <h3> Target Specific Energy [Wh/Kg]<sup>*2</sup> </h3>
                 <input type="number" id="target_ed" placeholder="Enter a number" value="300" step="0.1" oninput="calculateStackCellEnergyDensity()">
                 <br>
                 <br> 
@@ -249,7 +249,7 @@ description: From Chemistry to Technology
             <br>
         </div>      
         *1 A sum of other package weights includes the total weight of tabs and the packaging case. <br>
-        *2 If the total cell capacity is insufficient to include the electrolyte weight in the total cell weight to reach the target energy density, this target energy density is reset according to EC ratio = 1.3 (g/Ah)(referenced Panasonic 18650B EC ratio).
+        *2 If the total cell capacity is insufficient to include the electrolyte weight in the total cell weight to reach the target specific energy, this target specific energy is reset according to EC ratio = 1.3 (g/Ah)(referenced Panasonic 18650B EC ratio).
     </div>
     <div id="Jelly-Roll Cell" class="tabcontent">
         <br>
@@ -696,7 +696,7 @@ description: From Chemistry to Technology
                 w_Cu = N_cu * Cu_density * Cu_area * Cu_t * 0.0001;
             }
             
-            // Calculate amount of electrode to reach target energy density
+            // Calculate amount of electrode to reach target specific energy
             cell_energy = cell_cap * nom_v;
             const total_target_weight = (cell_energy / target_ed) * 1000;
             const weight_beside_electrolyte = other_packageweight + w_Al+ w_Cu + S_w + cell_w_cath + cell_w_anode;
@@ -795,7 +795,7 @@ description: From Chemistry to Technology
                     }
                 ], {
                     title: {
-                        text: 'Energy Density vs Amount of Electrolyte',
+                        text: 'Specific Energy vs Amount of Electrolyte',
                         font: {
                             family: 'Arial, sans-serif', 
                             size: 18, 
@@ -804,7 +804,7 @@ description: From Chemistry to Technology
                         }
                     },
                     xaxis: { title: 'Amount of Electrolyte [g]' },
-                    yaxis: { title: 'Energy Density [Wh/kg]'}
+                    yaxis: { title: 'Specific Energy [Wh/kg]'}
                 });
             } else {
                 console.error("Invalid weight input. Please enter a valid number.");
