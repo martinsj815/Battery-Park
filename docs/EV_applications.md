@@ -9,7 +9,7 @@ description: From Chemistry to Technology
 <hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
 <br>
 
-<h2><li> Battery Module/Pack </li></h2>
+<h2>&#9672; Battery Module/Pack </h2>
 <br>
 <div class="columns">
   <div class="column">
@@ -31,7 +31,7 @@ description: From Chemistry to Technology
   </div>
 </div>
 
-<h2><li> Cell Interconnect </li></h2>
+<h2>&#9672; Cell Interconnect</h2>
 
 <div class="columns">
   <div class="column">
@@ -67,7 +67,7 @@ description: From Chemistry to Technology
 <br>
 <br>
 
-<h2><li> EV Battery Module Comparison </li></h2>
+<h2>&#9672; EV Battery Module Comparison</h2>
 
 |EV Manufacturer |Model|Battery Module|Capacity (Ah)|Nominal Voltage (V)|Modules per Pack|Battery Supplier|Note|Source|
 |:-------------|:-----------------|:-----------------|:----------|:-----------------|:----------------------|:------------------|:------------|:------------|
@@ -86,13 +86,13 @@ description: From Chemistry to Technology
 
 ----------------------------------------------------------------------------------------------------------
 
-<h2><li> Battery Packing Efficiency </li></h2>
+<h2>&#9672; Battery Packing Efficiency</h2>
 
 - A geometric packing principle tells that the prismatic/pouch cells should yield packing efficiency of 90-95%, way higher than the cylindrical cell. However, it is noteworthy that the volumetric efficiency rate of the prismatic/pouch cells in actual EV batteries are lower and even comparable to those of cylindrical. According to the paper by Löbberding et al., after surveying 25 different BEVs (from 10 OEMs between 2010-2019), the average volume utilization rate is 0.353, which is only slightly higher than that of cylindrical (0.295). This discrepancy can be due to incorporation of auxiliary yet important parts such as interconnects, thermal management (i.e. cooling) system, BMS, and sensors. However, a caveat is that the average cell-to-module efficiency for prismatic/pouch cells is much higher than that of the cylindrical cell while the opposite is true for module-pack system efficiency comparison – making cell-to-system efficiencies all comparable after all. Hence, better space utilization has been sought after by many OEMs including BYD, CATL, and Tesla.
 
 <br>
 
-<h2><li> CMP, CTP, and CMB </li></h2>
+<h2>&#9672; CMP, CTP, and CMB</h2>
 
 <div class="columns">
   <div class="column">
