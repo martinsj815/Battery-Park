@@ -24,9 +24,8 @@ description: From Chemistry to Technology
 <li>How do companies enable electric vehicles (EVs) to perform equivalently to gasoline-powered cars despite this disparity? The solution lies in equipping EVs with large quantities of batteries. Depending on the make and model, an EV's battery pack can weigh between 1,000 to 2,000 pounds. In comparison, a gasoline-powered car carries only 10–15 gallons of fuel, which weighs approximately 60–90 pounds—a huge contrast.</li>
 <br>
 <h2><li> Reference </li></h2>
-<br>
-1. https://www.un.org/en/climatechange/science/causes-effects-climate-change
-2. https://world-nuclear.org/information-library/facts-and-figures/heat-values-of-various-fuels
+1 https://www.un.org/en/climatechange/science/causes-effects-climate-change
+2 https://world-nuclear.org/information-library/facts-and-figures/heat-values-of-various-fuels
 <br>
 <hr>
 <br>
