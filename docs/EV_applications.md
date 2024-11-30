@@ -4,11 +4,13 @@ title: Battery Park
 description: From Chemistry to Technology
 ---
 
-# Battery Module/Pack <i class="arrow right"></i>
+# EV Applications <i class="arrow right"></i>
 
 <hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
 <br>
 
+<h2><li> Battery Module/Pack </li></h2>
+<br>
 <div class="columns">
   <div class="column">
    - A battery Module is a collection of cells connected in series or in parallel to achieve desired voltage and energy density.
