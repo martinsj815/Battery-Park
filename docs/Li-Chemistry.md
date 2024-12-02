@@ -143,6 +143,9 @@ As shown in the graphs above, transition from graphite and silicon can yield dra
 <br>
 <h2><li> Liquid Electrolyte </li></h2>
 
+<h3><li> Solvent </li></h3>
+The key criteria for the solvent are following: It should have 1) high dielectric constant to be able to dissolve enough salts for desired concentration 2) low viscosity for facile transport of ions, 3) wide electrochemical potential range, and 4) good chemical stability against the anode and the cathode. Others include the wide temperature range of operation and safety (e.g. flash point).  Most nonaqueous electrolytes commonly used until recent fall into either esters and ethers. 
+
 <h3><li> Salt </li></h3>
 
 LiPF<sub>6</sub> has no outstanding property but has the combination of its well-balanced characteristics that meet stringent requirements for commercialization. It also has good anodic stability up to >5V when mixed in carbonates and ionic conductivity. However, its poor thermal stability and moisture sensitivity requires the additive for performance enhancement.
