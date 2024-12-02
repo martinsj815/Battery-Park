@@ -141,8 +141,9 @@ As shown in the graphs above, transition from graphite and silicon can yield dra
 </div>
 
 <br>
-<h2><li> Salt </li></h2>
+<h2><li> Liquid Electrolyte </li></h2>
 
+<h3><li> Salt </li></h3>
 
 LiPF<sub>6</sub> has no outstanding property but has the combination of its well-balanced characteristics that meet stringent requirements for commercialization. It also has good anodic stability up to >5V when mixed in carbonates and ionic conductivity. However, its poor thermal stability and moisture sensitivity requires the additive for performance enhancement.
 
