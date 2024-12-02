@@ -144,7 +144,7 @@ As shown in the graphs above, transition from graphite and silicon can yield dra
 <h2><li> Liquid Electrolyte </li></h2>
 
 <h3><li> Solvent </li></h3>
-The key criteria for the solvent are following: It should have 1) high dielectric constant to be able to dissolve enough salts for desired concentration 2) low viscosity for facile transport of ions, 3) wide electrochemical potential range, and 4) good chemical stability against the anode and the cathode. Others include the wide temperature range of operation and safety (e.g. flash point).  Most nonaqueous electrolytes commonly used until recent fall into either esters and ethers. 
+The key criteria for the solvent are following: It should have 1) high dielectric constant to be able to dissolve enough salts to reach desired concentration, 2) low viscosity for facile transport of ions, 3) wide electrochemical potential range, and 4) good chemical stability against the anode and the cathode. Others include the wide temperature range of operation and safety (e.g. flash point). Most nonaqueous electrolytes commonly used until recent are either esters and ethers. 
 
 <h3><li> Salt </li></h3>
 
