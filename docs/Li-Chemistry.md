@@ -150,10 +150,10 @@ Here is the table of properties for some of commonly studied solvents:
 <br><br>
 |Type|Solvent Name|Viscosity &eta; (cP)|Dielectric constant &epsilon;|E<sub>0, red</sub> (V vs. Li/Li<sup>+</sup>)|E<sub>0, ox</sub> (V vs. Li/Li<sup>+</sup>)|HOMO/LUMO|T<sub>F</sub> (<sup>o</sup>C)|
 |:-------------|:-----------------|:-----------------|:----------|:--------------|:----------|:-------------|:-----------|
-|<b>Linear Carbonate</b>b>|Diethyl Carbonate|0.75|2.81|0.07|6.95|-7.63/1.25|25|
+|<b>Linear Carbonate</b>|Diethyl Carbonate|0.75|2.81|0.07|6.95|-7.63/1.25|25|
 ||Dimethyl Carbonate|0.59|3.11|0.1|7.06|-7.72/1.19|16|
 ||Ethyl Methyl Carbonate|0.65|2.96|0.1|6.97|-7.68/1.22|23|
-|<b>Cyclic Carbonate</b>b>|Ethylene Carbonate|1.9|89.8|0.27|7.19|-7.92/1.09|143|
+|<b>Cyclic Carbonate</b>|Ethylene Carbonate|1.9|89.8|0.27|7.19|-7.92/1.09|143|
 ||Propylene Carbonate|2.53|64.9|0.22|7.13|-7.87/1.11|116|
 ||Vinylene Carbonate|1.54|126|0.46|5.79|-6.69/0.46|73|
 ||Fluoroethylene Carbonate|4.1|107|0.51|7.48|-8.32/0.70|>102|
