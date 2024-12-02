@@ -145,23 +145,22 @@ As shown in the graphs above, transition from graphite and silicon can yield dra
 
 <h3><li> Solvent </li></h3>
 The key criteria for the solvent are following: It should have 1) high dielectric constant to be able to dissolve enough salts to reach desired concentration, 2) low viscosity for facile transport of ions, 3) wide electrochemical potential range, and 4) good chemical stability against the anode and the cathode. Others include the wide temperature range of operation and safety (e.g. flash point). Most nonaqueous electrolytes commonly used until recent are either esters and ethers. 
-<br>
-Here is the table of properties for some of commonly studied solvents
-<br>
-
+<br><br>
+Here is the table of properties for some of commonly studied solvents:
+<br><br>
 |Type|Solvent Name|Viscosity &eta; (cP)|Dielectric constant &epsilon;|E<sub>0, red</sub> (V vs. Li/Li<sup>+</sup>)|E<sub>0, ox</sub> (V vs. Li/Li<sup>+</sup>)|HOMO/LUMO|T<sub>F</sub> (<sup>o</sup>C)|
 |:-------------|:-----------------|:-----------------|:----------|:--------------|:----------|:-------------|:-----------|
-|Linear Carbonate|Diethyl Carbonate|0.75|2.81|0.07|6.95|-7.63/1.25|25|
+|<b>Linear Carbonate</b>b>|Diethyl Carbonate|0.75|2.81|0.07|6.95|-7.63/1.25|25|
 ||Dimethyl Carbonate|0.59|3.11|0.1|7.06|-7.72/1.19|16|
 ||Ethyl Methyl Carbonate|0.65|2.96|0.1|6.97|-7.68/1.22|23|
-|Cyclic Carbonate|Ethylene Carbonate|1.9|89.8|0.27|7.19|-7.92/1.09|143|
+|<b>Cyclic Carbonate</b>b>|Ethylene Carbonate|1.9|89.8|0.27|7.19|-7.92/1.09|143|
 ||Propylene Carbonate|2.53|64.9|0.22|7.13|-7.87/1.11|116|
 ||Vinylene Carbonate|1.54|126|0.46|5.79|-6.69/0.46|73|
 ||Fluoroethylene Carbonate|4.1|107|0.51|7.48|-8.32/0.70|>102|
-|Ethers|1,2-Dimethoxyethane (DME)|0.46|7.2|-1.68||-6.70/2.53|5|
+|<b>Ethers</b>|1,2-Dimethoxyethane (DME)|0.46|7.2|-1.68||-6.70/2.53|5|
 ||1,3-Dioxolane (DOL)|0.59|7.1|-1.48||-6.63/3.05|-3|
 |||||||||
-|References|K. Xu et al., Chem. Rev. 104, 4303-4417 (2004) <br> D.S. Hall et al., J. Electrochem. Soc. 165, A2365 (2018)|D.S. Hall et al., J. Electrochem. Soc. 165, A2365 (2018) <br> M. S. Park, et al., Sci. Rep. 4, 3815 (2014)||M. Zhou, Adv. Mater. 33, 2003741 (2021)|Data from Sigma Aldirch product pages| 
+|<b>References</b>|K. Xu et al., Chem. Rev. 104, 4303-4417 (2004) <br> D.S. Hall et al., J. Electrochem. Soc. 165, A2365 (2018)|D.S. Hall et al., J. Electrochem. Soc. 165, A2365 (2018) <br> M. S. Park, et al., Sci. Rep. 4, 3815 (2014)||M. Zhou, Adv. Mater. 33, 2003741 (2021)|Data from Sigma Aldirch product pages| 
 
 <br>
 <h3><li> Salt </li></h3>
