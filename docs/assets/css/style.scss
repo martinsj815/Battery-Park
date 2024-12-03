@@ -12,7 +12,7 @@ body {
   @include large {
     max-width: 80rem;  
     padding: 2rem 3rem; 
-    background-color: #ffffff;
+    background-color: linear-gradient(to right, rgba(232,240,248,0), rgba(243,247,251,0.5), rgba(246,249,252,1));
   }
 }
 
