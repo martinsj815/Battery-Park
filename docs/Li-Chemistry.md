@@ -161,7 +161,7 @@ Here is the table of properties for some of commonly studied solvents:
 |<b>Ethers</b>|1,2-Dimethoxyethane (DME)|0.46|7.2|-1.68||-6.70/2.53|5|
 ||1,3-Dioxolane (DOL)|0.59|7.1|-1.48||-6.63/3.05|-3|
 |||||||||
-|<b>References</b>||K. Xu et al., Chem. Rev. 104, 4303-4417 (2004) <br> D.S. Hall et al., J. Electrochem. Soc. 165, A2365 (2018)||D.S. Hall et al., J. Electrochem. Soc. 165, A2365 (2018) <br> M. S. Park, et al., Sci. Rep. 4, 3815 (2014)||M. Zhou, Adv. Mater. 33, 2003741 (2021)|Data from Sigma Aldirch product pages| 
+|<b>References</b>||K. Xu et al., Chem. Rev. 104, 4303-4417 (2004) <br> D.S. Hall et al., J. Electrochem. Soc. 165, A2365 (2018) ||D.S. Hall et al., J. Electrochem. Soc. 165, A2365 (2018) <br> M. S. Park, et al., Sci. Rep. 4, 3815 (2014)||M. Zhou, Adv. Mater. 33, 2003741 (2021)|Data from Sigma Aldirch product pages| 
 
 <br>
 <h3><li> Salt </li></h3>
