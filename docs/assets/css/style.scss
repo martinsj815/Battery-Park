@@ -4,29 +4,32 @@
 @import 'jekyll-theme-cayman';
 
 body {
-    background-color: #f3f3f3; /* Light gray for outside background */
-    margin: 0;
+  background-color: #f3f3f3; /* Light gray for outside background */
+  margin: 0;
 }
 
 .main-content {
+  max-width: 80rem;  
+  padding: 2rem 3rem; 
+  background: linear-gradient(to right, rgba(232,240,248,0), rgba(243,247,251,0.5), rgba(246,249,252,1));
+  font-size: 1rem;
+
   @include large {
-    max-width: 80rem;  
-    padding: 2rem 3rem; 
-    background: linear-gradient(to right, rgba(232,240,248,0), rgba(243,247,251,0.5), rgba(246,249,252,1));
+    max-width: 80rem;
+    padding: 2rem 3rem;
+    font-size: 1.2rem; 
   }
-}
 
   @include medium {
-    padding: 0rem 0rem;
-    font-size: 1.1rem;
-    background: linear-gradient(to right, rgba(232,240,248,0), rgba(243,247,251,0.5), rgba(246,249,252,1));
+    padding: 1rem;
+    font-size: 1.1rem; 
   }
 
   @include small {
-    padding: 0rem 0rem;
-    font-size: 0.8rem;
-    background: linear-gradient(to right, rgba(232,240,248,0), rgba(243,247,251,0.5), rgba(246,249,252,1));
+    padding: 0.5rem;
+    font-size: 0.8rem; 
   }
+}
 
 html {
     scroll-behavior: smooth;
