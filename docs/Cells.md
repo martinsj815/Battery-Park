@@ -23,7 +23,7 @@ description: From Chemistry to Technology
 </div>
 
 <br>
-<h2>>&#9672; Primary vs Secondary</h2>
+<h2>&#9672; Primary vs Secondary</h2>
 <br>
 - <b>Primary Cell</b>
 
