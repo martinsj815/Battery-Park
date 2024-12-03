@@ -12,7 +12,7 @@ body {
   max-width: 80rem;  
   padding: 2rem 3rem; 
   //background: #ffffff;
-  background: linear-gradient(to right, rgba(232,240,248,0), rgba(246,249,252,1));
+  background: linear-gradient(to right, #ffffff, rgba(246,249,252,1));
   font-size: 1rem;
 
   @include large {
