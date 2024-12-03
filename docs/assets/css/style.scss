@@ -12,20 +12,20 @@ body {
   @include large {
     max-width: 80rem;  
     padding: 2rem 3rem; 
-    background-color: linear-gradient(to right, rgba(232,240,248,0), rgba(243,247,251,0.5), rgba(246,249,252,1));
+    background: linear-gradient(to right, rgba(232,240,248,0), rgba(243,247,251,0.5), rgba(246,249,252,1));
   }
 }
 
   @include medium {
     padding: 0rem 0rem;
     font-size: 1.1rem;
-    background-color: linear-gradient(to right, rgba(232,240,248,0), rgba(243,247,251,0.5), rgba(246,249,252,1));
+    background: linear-gradient(to right, rgba(232,240,248,0), rgba(243,247,251,0.5), rgba(246,249,252,1));
   }
 
   @include small {
     padding: 0rem 0rem;
     font-size: 0.8rem;
-    background-color: linear-gradient(to right, rgba(232,240,248,0), rgba(243,247,251,0.5), rgba(246,249,252,1));
+    background: linear-gradient(to right, rgba(232,240,248,0), rgba(243,247,251,0.5), rgba(246,249,252,1));
   }
 
 html {
