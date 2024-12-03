@@ -149,7 +149,7 @@ The key criteria for the solvent are following: It should have 1) high dielectri
 Here is the table of properties for some of commonly studied solvents:
 <br><br>
 
-|Type|Solvent Name|Viscosity &eta; (cP)|Dielectric constant &epsilon;|E<sub>0, red</sub> (V vs. Li/Li<sup>+</sup>)|E<sub>0, ox</sub> (V vs. Li/Li<sup>+</sup>)|HOMO/LUMO|T<sub>F</sub> (<sup>o</sup>C)|
+|Type|Solvent Name|Viscosity &eta; (cP)|Dielectric constant &epsilon;|E<sub>0, red</sub> (V vs. Li/Li<sup>+</sup>)|E<sub>0, ox</sub> (V vs. Li/Li<sup>+</sup>)|HOMO/LUMO (eV)|T<sub>F</sub> (<sup>o</sup>C)|
 |:-------------|:-----------------|:-----------------|:----------|:--------------|:----------|:-------------|:-----------|
 |<b>Linear Carbonate</b>|Diethyl Carbonate|0.75|2.81|0.07|6.95|-7.63/1.25|25|
 ||Dimethyl Carbonate|0.59|3.11|0.1|7.06|-7.72/1.19|16|
