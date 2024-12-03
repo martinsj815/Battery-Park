@@ -189,7 +189,11 @@ LiPF<sub>6</sub> has no outstanding property but has the combination of its well
 
 > LiPO<sub>2</sub>F<sub>2</sub> (only as additive): Forms the stable interface film both at cathode and anode surface upon cycling, preventing decomposition/oxidation of the electrolyte. This allows impedance control of both cathode and anode and is conducive to cathode structural stability, high-rate capability, and prolonged cell cycling.
 
-Many 18650 cells use the mixture of LiPF<sub>6</sub> and LiFSI inside carbonate electrolyte as the electrolyte. For EV batteries with an increasingly rigorous demand for their performances, some of the salts above are investigated as additive to be mixed with LiPF6 electrolyte, for which its concentration varies from 5-10%.
+Many 18650 cells use the mixture of LiPF<sub>6</sub> and LiFSI inside carbonate electrolyte as the electrolyte. For EV batteries with an increasingly rigorous demand for their performances, some of the salts above are investigated as additive to be mixed with LiPF<sub>6</sub> electrolyte, for which its concentration varies from 5-10%.
+
+<br>
+<h2><li> Aqueous Electrolyte </li></h2>
+To mitigate the safety issue related to flammable organic electrolytes, non-flammable aqueous electrolytes have been proposed. Traditional aqueous electrolytes with dilute concentration offer key advantages, including low cost and higher ionic conductivity than the organic counterpart but has intrinsic problem of narrow electrochemical stability window of 1.23V; parasitic side reactions (i.e. hydrogen and oxygen evolution) occur beyond the cathodic and anodic limits, limiting the choice of electrode materials and thus affecting dearly the energy density. Many novel approaches have been explored, including super-concentration of salts, co-solvent incorporation to limit the influence of free water by controlling the inner Helmholtz layer and forming a passivating SEI layer, and employing selective ion membranes to regulate the ion movement, allowing anode and cathode operating under different pH conditions. However, these approaches may give rise to much higher costs and reduced ionic conductivity, which hinder the competitiveness of aqueous batteries as a viable alternative to current commercial battery technologies.
 
 <br>
 <h2><li> Solid Electrolyte </li></h2>
@@ -258,3 +262,7 @@ https://www.linkedin.com/pulse/application-lipo2f2-electrolyte-additive-lithium-
 Qing Zhao, et al, "Designing solid-state electrolytes for safe, energy-dense batteries", Nature Reviews, 5, 229 (2020)
 
 Arumugam Manthiram,"Lithium battery chemistries enabled by solid-state electrolytes", Nature Reviews Materials, 2, 16103 (2017)
+
+Yanliang Liang, et al., "Designing modern aqueous batteries", Nature Review Materials, 8, 109-122 (2023)
+
+Huang Zhang, et al., "Challenges and Strategies for High-Energy Aqueous Electrolyte Rechargeable Batteries", Angewandte Chemie Int. Ed., 60, 598-616 (2021)
