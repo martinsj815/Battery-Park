@@ -5,7 +5,7 @@ description: From Chemistry to Technology
 ---
 
 <head>
-  <h1> Thermal properties of cells<i class="arrow right"></i></h1>
+  <h1> Thermal Properties of Cells<i class="arrow right"></i></h1>
   <hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
   <br>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
