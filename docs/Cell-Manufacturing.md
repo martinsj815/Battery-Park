@@ -5,7 +5,7 @@ description: From Chemistry to Technology
 ---
 
 <head>
-  <h1> Cell manufacturing process <i class="arrow right"></i></h1>
+  <h1> Cell Manufacturing Process <i class="arrow right"></i></h1>
   <hr style="background: linear-gradient(#4a8049, #d8f5d0); height: 5px; border: none;">
   <br>
   <script src="https://code.highcharts.com/highcharts.js"></script>
