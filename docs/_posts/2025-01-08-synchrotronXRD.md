@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Comprehensive Characterization Tool for Modeling and Understanding the Behaviors of Li-ion Cells after Heavy Cycles
-permalink: /posts/2014-01-08-synchrotronXRD/
+permalink: /posts/2025-01-08-synchrotronXRD/
 ---
 
 <html>
