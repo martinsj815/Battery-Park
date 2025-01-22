@@ -1,26 +1,25 @@
 ---
 layout: post
-title:  Comprehensive Characterization Tool for Modeling and Understanding the Behaviors of Li-ion Cells after Heavy Cycles
-permalink: /posts/2025-01-08-synchrotronXRD/
+title:  Influence of the Electron Beam Dose on the Battery Material Characterization Using Cryo-TEM
+permalink: /posts/2025-01-22-electrondoseCryo-EM/
 ---
 
 <html>
   <body>
-    <h1>Comprehensive Characterization Tool for Modeling and Understanding the Behaviors of Li-ion Cells after Heavy Cycles</h1>
+    <h1>Influence of the Electron Beam Dose on the Battery Material Characterization Using Cryo-TEM</h1>
     <br><br>
-    <b>Title</b>: The Complex and Spatially Heterogeneous Nature of Degradation in Heavily Cycled Li-ion Cells
+    <b>Title</b>: Electron Beam-Induced Artifacts in SEI Characterization: Evidence from Controlled-Dose Diffraction Studies
     <br>
-    <b>Authors</b>: Bond et al.,
+    <b>Authors</b>: Koh et al.,
     <br>
-    <b>Journal</b>: Journal of The Electrochemical Society <a href="https://iopscience.iop.org/article/10.1149/1945-7111/ad88a8">Link</a>
+    <b>Journal</b>: ACS Energy Letters <a href="https://pubs.acs.org/doi/10.1021/acsenergylett.4c03337">Link</a>
     <br><br>
-    Synchrotron X-ray diffraction (XRD) has become a widely adopted structural characterization technique in the battery research community. However, studies utilizing this technique are often conducted in overly simplified settings with model cells (e.g., single-layer cells subjected to hundreds of cycles), raising questions about the applicability of their conclusions to commercial battery cells.
+    The solid electrolyte interphase (SEI) is a critical component in batteries, acting as a charge transport bridge between the electrode and electrolyte, significantly influencing battery performance. While cryogenic transmission electron microscopy (cryo-TEM) has been widely used to evaluate SEI, many studies assume or even claim its mighty ability to protect against electron beam irradiation damage.
     <br><br>
-    In this study, the authors characterized commercially manufactured polycrystalline NMC622 and graphite cells (prismatic wound pouch-type) cycled over more than two years using a combination of non-destructive electrochemical and imaging methods. Spatially resolved, in-situ, and operando synchrotron XRD was employed to investigate spatially heterogeneous changes across three differently cycled cells: heavily cycled, lightly cycled, and only with formation cycling.
+    This study disproves that assumption by demonstrating the formation of Li₂O under accumulated electron doses by comparing short and prolonged electron exposure of SEI. High-resolution TEM (HRTEM), used quite often in cryo-conditions in previous studies and also in this study, requires a high dose rate (~1000 e⁻/Å²·s), which can immediately induce artifacts. In contrast, scanning electron nanobeam diffraction with a small probe dose (178 e⁻/Å²) and small convergence semi-angle reveals the SEI as amorphous, contradicting HRTEM observation. Selected area electron diffraction and electron energy loss spectroscopy further indicate that total electron doses of 450 e⁻/Å² and 600 e⁻/Å² are sufficient to induce Li₂O formation in SEI layers of Li metal deposited in LiFSI+LiTFSI/DME and LiPF₆/EC-DEC electrolytes, respectively.
     <br><br>
-    Static and time-resolved data were obtained under near-equilibrium conditions (CC-CV), non-equilibrium conditions (CC only), and after open-circuit relaxation. The diffraction peaks corresponding to NMC (113) were analyzed using a three-component fitting method to quantify the temporal and spatial lithiation state distribution (i.e., active, inactive, and semi-active regions). The heavily cycled cells exhibited complex, multi-modal, and heterogeneous kinetics during charge, discharge, and after open-circuit relaxation, in contrast to the more uniform behavior of the lightly cycled and formation-only cells. The authors also demonstrated that these behaviors correlated with microcracking and surface reconstruction in the heavily cycled cells could be mitigated by employing single-crystal electrodes, which suppress microcracking, reduce pore growth, and significantly decrease the fraction of inactive material.
+    Nanostructure characterization in batteries can be challenging due to electron beam interactions that can lead to erroneous conclusions. The paper suggests the use of scanning TEM, and even more, 4D-STEM for comprehensive yet artifact-free characterization in the cryogenic environment but note that this can certainly be data-intensive and expensive to be considered for routine work.
     <br><br>
-    This study presents a robust spatial and temporal methodology to characterize the complex behavior of degraded cells through a multi-faceted approach, accounting for the extent of cell degradation, equilibrium states under varied test protocols, and rigorous quantitative analysis. By demonstrating the depth and comprehensiveness of such characterization, the authors highlight the potential for advancing the knowledge of cycle-intensive systems for commercial application.  
   </body>
 </html>
 
