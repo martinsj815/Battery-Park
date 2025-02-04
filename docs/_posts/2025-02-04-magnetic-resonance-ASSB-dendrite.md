@@ -1,24 +1,24 @@
 ---
 layout: post
-title:  Influence of the Electron Beam Dose on the Battery Material Characterization Using Cryo-TEM
-permalink: /posts/2025-01-22-electrondoseCryo-EM/
+title:  Characterizing Dendrite Formation in ASSBs using Magnetic Resonance Techniques 
+permalink: /posts/2025-02-04-magnetic-resonance-ASSB-dendrite/
 ---
 
 <html>
   <body>
-    <h1>Influence of the Electron Beam Dose on the Battery Material Characterization Using Cryo-TEM</h1>
+    <h1>Characterizing Dendrite Formation in ASSBs using Magnetic Resonance Techniques</h1>
     <br><br>
-    <b>Title</b>: Electron Beam-Induced Artifacts in SEI Characterization: Evidence from Controlled-Dose Diffraction Studies
+    <b>Title</b>: Dendrite formation in solid-state batteries arising from lithium plating and electrolyte reduction
     <br>
-    <b>Authors</b>: Koh et al.,
+    <b>Authors</b>: Liu, et al.,
     <br>
-    <b>Journal</b>: ACS Energy Letters <a href="https://pubs.acs.org/doi/10.1021/acsenergylett.4c03337">Link</a>
+    <b>Journal</b>: Nature Materials <a href="https://www.nature.com/articles/s41563-024-02094-6">Link</a>
     <br><br>
-    The solid electrolyte interphase (SEI) is a critical component in batteries, acting as a charge transport bridge between the electrode and electrolyte, significantly influencing battery performance. While cryogenic transmission electron microscopy (cryo-TEM) has been widely used to evaluate SEI, many studies simply assume and even claim its ability to protect against any electron beam irradiation damage.
+    A comprehensive understanding of dendrite formation in all-solid-state batteries (ASSBs), both spatially and temporally, is far from attainable without a proper characterization method. While numerous studies have investigated dendrite formation at the electrode-electrolyte interface, less effort has been dedicated to deciphering electrolyte grain boundaries, which are theoretically favorable sites also for dendrite formation. Transmission electron microscopy techniques provide spatial resolution of these boundaries and electronic insights; however, they are limited to local, two-dimensional structural information that is susceptible to transformation under electron beam irradiation.
     <br><br>
-    This study disproves that assumption by demonstrating the formation of Li₂O under accumulated electron doses by comparing short and prolonged electron exposure of SEI. High-resolution TEM (HRTEM), used quite often in cryo-conditions in previous studies and also in this study, requires a high dose rate (~1000 e⁻/Å²·s), which can immediately induce artifacts. In contrast, scanning electron nanobeam diffraction with a low probe dose of less than 200 e⁻/Å² and small convergence semi-angle reveals the SEI as amorphous, contradicting HRTEM observation. Selected area electron diffraction and electron energy loss spectroscopy indicate that total electron doses of 450 e⁻/Å² and 600 e⁻/Å² are sufficient to induce Li₂O formation in SEI layers of Li metal deposited in LiFSI+LiTFSI/DME and LiPF₆/EC-DEC electrolytes, respectively.
+    In this study, the authors synergistically combine non-invasive techniques such as nuclear magnetic resonance (NMR) and magnetic resonance imaging (MRI) to offer both temporal and spatial insights into dendrite formation within a moderately cycled ASSB composed of Li/Li<sub>7</sub>La<sub>3</sub>Zr<sub>2</sub>O<sub>12</sub>/Li. The study identifies two distinct formation routes: (1) the electrode-electrolyte interface route, driven by non-uniform Li deposition/stripping, and (2) the electrolyte grain surface/boundary route, involving Li+ reduction facilitated by defect-induced electronic structures. These mechanisms are differentiated by the relative abundance of ⁶Li and ⁷Li isotopes within the electrolyte. Over the course of cycling until shorting, the study demonstrated in-situ the alternating dominance of these mechanisms at different stages, with stalled growth occurring between.
     <br><br>
-    Nanostructure characterization in batteries can be challenging due to electron beam interactions that can lead to erroneous conclusions. The paper suggests the use of scanning TEM, and even more, 4D-STEM for comprehensive yet artifact-free characterization in the cryogenic environment but note that this can certainly be data-intensive and expensive to be considered for routine work.
+    Magnetic resonance techniques hold promise as non-destructive characterization tools for the battery industry, which is increasingly focused on next-generation technologies, particularly ASSBs.
     <br><br>
   </body>
 </html>
