@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Characterizing Dendrite Formation in ASSBs using Magnetic Resonance Techniques 
+title:  Characterizing Dendrite Formation in the ASSB using Magnetic Resonance Techniques 
 permalink: /posts/2025-02-04-magnetic-resonance-ASSB-dendrite/
 ---
 
 <html>
   <body>
-    <h1>Characterizing Dendrite Formation in ASSBs using Magnetic Resonance Techniques</h1>
+    <h1>Characterizing Dendrite Formation in the ASSB using Magnetic Resonance Techniques</h1>
     <br><br>
     <b>Title</b>: Dendrite formation in solid-state batteries arising from lithium plating and electrolyte reduction
     <br>
